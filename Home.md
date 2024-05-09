@@ -1,6 +1,6 @@
 Welcome to the redwitch wiki!
 
 * [Quality Management](Quality-Manual)
-* [Project Management](GitHub)
-* [Information Security](Security)
+* [Project Management](Project-Management)
+* [Information Security](Information-Security)
 * [Design Control](Design-Control)
