@@ -1,7 +1,8 @@
 ## **Ontario Service Design Framework**
 
-The Ontario [Digital and Data Directive](https://www.ontario.ca/page/ontarios-digital-and-data-directive-2021), [Digital Service Standard](https://www.ontario.ca/page/digital-service-standard), and [Service Design Playbook](https://www.ontario.ca/page/service-design-playbook) provide a framework for the design and delivery of digital services and the proactive sharing of data.
+![Digital Service Standard, 2021](ods-dss-en-2022-12-20.png)
 
+The Ontario [Digital and Data Directive](https://www.ontario.ca/page/ontarios-digital-and-data-directive-2021), [Digital Service Standard](https://www.ontario.ca/page/digital-service-standard), and [Service Design Playbook](https://www.ontario.ca/page/service-design-playbook) provide a framework for the design and delivery of digital services and the proactive sharing of data.
 
 Ontario’s service design journey follows design and release phases. Each phase is driven by user needs and prioritizes several points from the standard. Learn more about how to work in design and release phases in the [Service Design Playbook](https://www.ontario.ca/page/service-design-playbook).
 
