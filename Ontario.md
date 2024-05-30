@@ -28,7 +28,6 @@ All services are different, but most projects need 4-8 weeks to for discovery.
 * designate product manager
 * establish [agile](https://www.ontario.ca/page/being-agile-ontario-public-service) workflow
 
-
 ### **2. Alpha phase**
 
 While discovery is about research, alpha is about testing hypotheses and experimentation. The purpose of alpha is to determine how to meet the user needs that were identified in discovery. It’s an opportunity to quickly test many different approaches with users before building a service.
@@ -191,3 +190,16 @@ Open data must be released at no charge to the user (for example, for-profit bus
 No data assets released as open data are to be deleted or removed from public access except where it was published in error.
 
 Ministry open data is to be published to the [Ontario Data Catalogue](https://data.ontario.ca/) in the language in which it was collected. The dataset title, description, and all accompanying supporting information must be available simultaneously in both English and French.
+
+### **Applicable Standards**
+
+* Ontario’s Digital and Data Directive, 2021
+* Governance and Management of IT Directive, 2021
+* Governance and Management of Information Assets Directive, 2021
+* Simpler, Faster, Better Services Act, 2019
+* Archives and Recordkeeping Act, 2006
+* Freedom of Information and Protection of Privacy Act, 1990
+* Personal Health Information Protection Act, 2004
+* Anti-Racism Act, 2017
+* French Language Services Act, 1990
+* Accessibility for Ontarians with Disabilities Act, 2005

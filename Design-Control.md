@@ -2,8 +2,6 @@
 
 We will comply with the Ontario [Digital and Data Directive](https://www.ontario.ca/page/ontarios-digital-and-data-directive-2021) by conforming to the [Digital Service Standard](https://www.ontario.ca/page/digital-service-standard) via adherence to the service design framework established in the [Service Design Playbook](https://www.ontario.ca/page/service-design-playbook).
 
-
-
 ---
 
 Plan for design control as laid out in the DSS:
@@ -36,5 +34,3 @@ Plan for design control as laid out in the DSS:
 
 
 * [note to self: risk management?]
-
----
