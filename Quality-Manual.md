@@ -24,7 +24,7 @@ Link: [Red Witch Information Security](Information-Security)
 
 - **Ontario Digital and Data Directive**: Red Witch adheres to the Ontario [Digital and Data Directive](https://www.ontario.ca/page/ontarios-digital-and-data-directive-2021) of 2021, ensuring compliance with provincial data protection regulations and standards.
 
-- **General Data Protection Regulation (GDPR)** [(EU) 2016/679](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02016R0679-20160504&from=EN): Red Witch complies with the European Union GDPR requirements to safeguard user data and privacy rights.
+- **General Data Protection Regulation (GDPR)** [(EU) 2016/679](http://data.europa.eu/eli/reg/2016/679): Red Witch complies with the European Union GDPR requirements to safeguard user data and privacy rights.
 
 ## International Standards
 
