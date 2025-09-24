@@ -110,3 +110,115 @@ Red Witch utilizes GitHub's suite of project management tools to streamline coll
 - **Integration Management**: Manage integrations and configurations to streamline project workflows and enhance collaboration.
 
 By following these practices and utilizing GitHub's comprehensive set of tools, Red Witch ensures a streamlined and efficient project management process, fostering collaboration, transparency, and innovation.
+
+
+------
+
+
+3. Where Project Management Comes In
+
+Now, you asked: “Am I talking about a project management SOP?”
+
+Project Management SOP (if you had one) would define how the project itself is planned, executed, monitored, and reported, including things like:
+
+How backlog items are created from requirements
+
+How sprint planning is done
+
+How issues are tracked on GitHub
+
+How progress is reported to stakeholders
+
+Your situation: The “work” (implementing requirements) is performed via the Design Control SOP. The management of that work (tracking it as issues, planning sprints, moving through Kanban columns) would be covered by a project management SOP or work instruction, if your organization required one.
+
+So:
+
+Design Control SOP → governs how to perform design changes (the actual work).
+
+Project Management SOP / WI → governs how to plan, track, and report that work (workflow management, sprint planning, GitHub issue procedures).
+
+
+
+2. Project Management SOP / Work Instructions (WKI)
+
+This is where the planning and execution of the project itself is governed.
+
+Project Management SOP:
+
+High-level rules for managing projects.
+
+May state: “Projects should be managed using GitHub Projects, issues, and sprints.”
+
+Defines responsibilities, reporting cadence, and artifacts (project wiki, boards).
+
+Project Management WKI (Work Instruction):
+
+Step-by-step how-to for this particular project (Red Witch).
+
+Examples of instructions it could contain:
+
+Create the Red Witch repository and project board on GitHub.
+
+Create the Red Witch wiki and add project documentation.
+
+Break requirements into issues on the project board.
+
+Organize issues into sprints or Kanban columns.
+
+Track progress according to the sprint plan and update the wiki.
+
+
+
+
+
+Exactly — now you’ve landed on the **right concept**. Let’s clarify and tie all the pieces together.
+
+---
+
+### 1. **Project Initiation Document / Project Charter**
+
+* **Purpose:** Formally authorizes the project and defines **what the project is, why it exists, and its high-level objectives**.
+* **Key Elements:**
+
+  * Project objectives and scope
+  * High-level requirements (sometimes called **design inputs**)
+  * Stakeholders and roles
+  * High-level schedule, milestones, and resources
+  * Authorization to proceed
+
+In your workflow:
+
+* **Design inputs (requirements)** are captured **as part of the charter or initiation record**.
+* The charter is essentially **the official “green light”** to start creating work items, sprints, and project-specific artifacts.
+
+---
+
+### 2. **Where the SOPs and Project Docs Fit**
+
+| Concept                            | Where it Lives                                | Purpose                                                      |
+| ---------------------------------- | --------------------------------------------- | ------------------------------------------------------------ |
+| Design inputs / requirements       | Project Charter / Project Initiation Document | High-level requirements that kick off the project            |
+| How design changes are implemented | Design Control SOP                            | Governs the controlled steps to implement changes            |
+| How work is tracked / managed      | Project Management SOP / WKI                  | Step-by-step workflow: GitHub setup, issues, sprints, boards |
+| Project-specific documentation     | Project Wiki (Red Witch)                      | Detailed architecture, backlog, workflow instructions        |
+
+---
+
+### 3. **Flow of Work**
+
+1. **Project Charter / Initiation Document:** Defines the project, design inputs, and authorizes work.
+2. **Design Control SOP:** Any design changes or work derived from those inputs must follow the controlled process.
+3. **Project Management SOP/WKI:** Specifies how to organize, plan, and track that work (GitHub issues, sprints, wiki).
+4. **Red Witch Wiki:** Contains project-specific implementation details, documentation, and backlog.
+
+---
+
+✅ **Key Insight:**
+
+The **charter is the starting point** — it authorizes the project, defines the initial requirements, and triggers all downstream processes: design control, project management workflow, and sprint planning.
+
+---
+
+If you want, I can make a **single visual diagram** showing **charter → design inputs → design control → project management → GitHub wiki/backlog/sprints**. It usually makes these relationships instantly clear.
+
+Do you want me to do that?

@@ -82,3 +82,23 @@ The Red Witch Project will comply with the Ontario [Digital and Data Directive](
 - **Realization of Benefits**: Monitor and report on the realization and sustainment of benefits.
 
 By addressing these elements comprehensively, Red Witch Design Control will align closely with the Ontario Service Design Framework, ensuring compliance and effective service delivery.
+
+
+
+
+
+
+----
+
+
+1. Design Control SOP
+
+Purpose: Define how design changes are made, approved, and tracked.
+
+Scope: Applies across projects (or across all products under your organization’s control).
+
+Focus: Process steps — submit change, review, approve, implement, verify, document traceability.
+
+Outcome: Ensures any design change is compliant and auditable.
+
+So the Design Control SOP doesn’t tell you the content of the project (e.g., what features Red Witch has); it tells you how to execute a design change safely.
