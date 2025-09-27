@@ -274,3 +274,100 @@ Review cycle: Quarterly (until SOPs are established, then annually).
 ---
 
 Do you want me to also draft a **living “lessons learned → candidate SOP” log template** you can maintain during Red Witch (so you’re systematically capturing what should be generalized)?
+
+
+
+This looks like a **Phase 1 Quality Plan for the Red Witch software project** combined with a **global compliance matrix** for regulatory mapping. Here’s a structured overview and a few actionable insights:
+
+---
+
+### **Phase 1 Quality Plan – Key Highlights**
+
+1. **Purpose & Scope**
+
+   * Red Witch serves as a pilot to define project-level and organization-level SOPs.
+   * Compliance alignment with ISO 9004, GDPR, ISO/IEC 62304, and ISO 9001.
+
+2. **Quality Objectives**
+
+   * Establish foundational SOPs: Design Control, Project Management, Risk Management, Change Control.
+   * ISO 9004 self-assessment to gauge maturity.
+   * GDPR-compliant privacy process as a test case.
+   * Initial quality metrics: traceability, PR review coverage, and evidence collection.
+
+3. **Processes**
+
+   * Development governed by Software Development Plan (SDP).
+   * Mandatory PR and design reviews.
+   * Lessons captured and classified for SOP creation.
+   * Internal audits: ISO 9004 and GDPR compliance.
+
+4. **Responsibilities**
+
+   * Project Manager: plan maintenance, lessons collection.
+   * Developers: follow procedures, provide feedback.
+   * Quality Lead: facilitate assessments, ensure traceability.
+
+5. **Records & Documentation**
+
+   * Project-level documentation in Red Witch Wiki/GitHub.
+   * Draft/final SOPs in Quality System Folder.
+   * Audit/assessment reports for ISO 9004 and GDPR.
+
+6. **Continuous Improvement**
+
+   * Retrospective after first release.
+   * SOP drafts generalized from repeatable practices.
+   * Plan updates and follow-up assessments.
+
+7. **Approval**
+
+   * Authorization fields and quarterly review until SOPs stabilized.
+
+---
+
+### **Global Compliance Matrix – Key Insights**
+
+* Provides **regulatory traceability** from SOP deliverables to major standards:
+
+  * FDA 21 CFR 820 & 11
+  * EU MDR Annexes II/III
+  * ISO 13485, ISO 14971
+  * IEC 62304 & 62366
+
+* **Use Cases**
+
+  * **Auditors**: Show mapping to demonstrate compliance coverage.
+  * **Project teams**: Track implementation locations (GitHub, Jira, Confluence).
+  * **Evidence management**: Assign deliverables to repositories for traceability.
+
+* Covers typical software/dev artifacts:
+
+  * SRS, RMF, UEF, Architecture/Design Specs, Traceability Matrix, Test Plans, Release Package, CAPA, PMS, DHF/DMR/DHR, Training Records.
+
+---
+
+### **Suggestions / Next Steps**
+
+1. **Version Control**
+
+   * Commit this Quality Plan to GitHub with clear versioning (`Phase 1` tag).
+
+2. **Compliance Mapping**
+
+   * Link each SOP deliverable to evidence in your project repositories.
+   * Example: Traceability Matrix → Jira; Code → GitHub; DHF → Confluence.
+
+3. **SOP Drafting**
+
+   * Convert Red Witch project-specific practices into reusable SOP templates.
+
+4. **Continuous Monitoring**
+
+   * Schedule ISO 9004 self-assessment and GDPR audit after first release.
+
+5. **Visual Mapping**
+
+   * Consider adding color-coded compliance status in the matrix for quick review by auditors.
+
+---

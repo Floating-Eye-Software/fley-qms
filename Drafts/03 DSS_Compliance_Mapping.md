@@ -22,6 +22,41 @@ This appendix maps the Ontario Digital Service Standard (DSS) phases and deliver
 
 ---
 
+Great — here’s your **Appendix B table updated with a “Work Instruction Reference” column**, so you can show DSS → Red Witch deliverables → WIs → evidence locations.
+
+---
+
+# Appendix B – Ontario DSS Compliance Mapping (Red Witch Project)
+
+This appendix maps the Ontario Digital Service Standard (DSS) phases and deliverables to the Red Witch project documentation and processes.
+
+| DSS Phase              | DSS Deliverables / Requirements                                                                                                                                                                                                    | Red Witch Corresponding Deliverables / Processes                                                                                                             | Documentation Location                                                                                    | Work Instruction Reference                                                                                             |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Discovery**          | Conduct user research; identify user groups & needs; assess existing services; identify policies & barriers; document findings                                                                                                     | User research sessions, personas, needs analysis, feasibility research, identified barriers                                                                  | GitHub Wiki: Discovery Notes, User Personas, Feasibility Reports                                          | **WI-01 User Research & Discovery**                                                                                    |
+|                        | Designate product manager; establish agile workflow                                                                                                                                                                                | Assigned PM; Agile boards, sprint planning                                                                                                                   | GitHub Project Boards; SDP §2, §3                                                                         | **WI-02 Agile Workflow & Project Management**                                                                          |
+| **Alpha**              | Work with users to co-create solutions; build & test prototypes; validate technical & financial feasibility; plan for process changes                                                                                              | Prototypes, journey maps, user testing reports; initial project plan; financial & technical feasibility documentation                                        | GitHub Wiki: Alpha Phase, Prototypes, Journey Maps; SDP §3 & §6                                           | **WI-03 Prototyping & Testing** / **WI-04 Feasibility & Planning**                                                     |
+| **Beta**               | Build MVP; continuously test service with users; device validation; accessibility testing; measure KPIs; resolve technical/process issues; privacy/security report; automated testing; WCAG compliance; branding; maintenance plan | MVP implementation; automated test suites; accessibility tests; KPIs tracked; privacy & security documentation; branding applied; maintenance plan developed | GitHub Wiki: Beta Phase, Test Reports, Accessibility Reports, KPI Dashboard; SDP §3, §4, §6               | **WI-05 Requirements & KPI Tracking** / **WI-06 Accessibility & Compliance Testing** / **WI-07 Release & Maintenance** |
+| **Live**               | Service & maintenance; ongoing user research; release feature updates; monitor KPIs; evaluate complaints; continuous improvement; publish open data; recovery plan                                                                 | Production service; user feedback surveys; backlog updates; web analytics monitoring; performance metrics; disaster recovery plan; open data outputs         | GitHub Wiki: Live Phase Notes, Analytics Dashboard, Backlog Updates, Open Data Repository; SDP §3, §6, §7 | **WI-07 Release & Maintenance** / **WI-01 User Research & Discovery** / **WI-08 Open Data & Transparency**             |
+| **Principles**         | User needs prioritized; transparency; equitable access; data-informed; continuous improvement                                                                                                                                      | Accessibility testing (AODA/WCAG); public-facing documentation; privacy & data protection; iterative SDLC; SOPs development                                  | GitHub Wiki: Accessibility Reports, SOP Drafts, SDLC Artifacts; Quality Manual §3-7                       | **WI-06 Accessibility & Compliance Testing** / **WI-08 Open Data & Transparency**                                      |
+| **Digital Governance** | DSS assessment at each phase; evaluation through governance processes (Digital First Assessment, ARB)                                                                                                                              | Review checkpoints at end of each phase; internal governance meetings; approval sign-offs                                                                    | SDP §2, §9; Quality Manual §5, §8                                                                         | **WI-09 Governance & Sign-off**                                                                                        |
+| **Measurement**        | Define KPIs upfront; service analytics; monitor performance; report on benefits                                                                                                                                                    | KPIs defined in Beta; analytics dashboards; quarterly reporting on performance metrics                                                                       | SDP §3, §6, §9; GitHub Wiki: KPI Reports                                                                  | **WI-05 Requirements & KPI Tracking**                                                                                  |
+| **Data / Open Data**   | Transparent, accurate, timely, accessible, open; adhere to exemptions (PHIPA, FOI, etc.)                                                                                                                                           | Anonymized usage statistics, aggregated reports; privacy compliance; open data publications                                                                  | GitHub Wiki: Open Data Repository; Privacy & Security SOPs; Quality Manual §6                             | **WI-08 Open Data & Transparency**                                                                                     |
+
+---
+
+### Notes on Usage
+
+1. The **Work Instruction Reference** column ensures every DSS deliverable is backed by a project-specific WI.
+2. WI IDs (e.g., *WI-01, WI-02*) can be standardized across projects so you don’t need to renumber — just update the “how-to” inside each WI for GitHub, Jira, or text files.
+3. For auditors: this makes the trace path clear → **Regulation → SOP → WI → Evidence**.
+
+---
+
+Do you want me to also draft a **master list of these 9 WIs with short descriptions**, so you’ve got a baseline template for all projects (GitHub/ODF, Jira/SVN, etc.)?
+
+
+---
+
 # Red Witch Regulatory & Standards Compliance Matrix (Updated)
 
 This matrix maps **Ontario DSS phases**, **Red Witch deliverables**, and applicable **standards/regulations**, including optional ones, for audit, traceability, and SOP alignment.
@@ -88,5 +123,60 @@ This becomes your “single table of truth” you can show auditors from **any r
 * You prove compliance to **FDA QSR (820) + Part 11**
 * You prove compliance to **EU MDR Annex II/III**
 * You meet **ISO 13485/14971/62304/62366** (which are the globally harmonized standards used in Canada, Australia, Brazil, Japan, etc.).
+
+
+---
+
+Yes — that’s a very clean way to architect it 👍.
+What you’re describing is essentially a **two-layer matrix**:
+
+1. **Project Quality Plan (PQP)** → lists all 14 quality elements (the master WI categories).
+2. For each element → points to the *tool-specific Work Instructions* that explain how the element is carried out in that project’s toolchain.
+
+That way:
+
+* The **SOPs** stay stable and tool-agnostic.
+* The **Project Quality Plan** ensures every element is covered.
+* The **tool-specific WIs** are reusable “building blocks” you can combine depending on whether a project uses GitHub, Jira/SVN, MS OneNote, etc.
+
+---
+
+### Example: PQP Matrix for Red Witch (GitHub + ODF)
+
+| Quality Element (WI #)                  | SOP Category       | Tool-Specific WI(s) Used                                        | Notes                                                        |
+| --------------------------------------- | ------------------ | --------------------------------------------------------------- | ------------------------------------------------------------ |
+| **WI-01 Document Control**              | Document Control   | WI-GH-01 (GitHub Wiki), WI-MS-01 (OneNote for meeting notes)    | OneNote used for informal notes, Wiki for controlled records |
+| **WI-02 Project Management**            | Project Mgmt       | WI-GH-02 (GitHub Projects & Issues)                             | Agile boards + milestones                                    |
+| **WI-03 Requirements & Traceability**   | Design Control     | WI-GH-03 (Issues + PR links)                                    | Requirements as Issues, PR cross-linking                     |
+| **WI-04 Design & Development Planning** | Design Control     | WI-ODF-01 (Ontario Design Framework)                            | ODF phases & deliverables                                    |
+| **WI-05 Risk Management**               | Risk Mgmt          | WI-GH-05 (Risk register in Wiki + Issues)                       | Linked to requirements                                       |
+| **WI-06 Change Control**                | Change Control     | WI-GH-06 (PR workflow, branch protection)                       | Required reviewers & CI checks                               |
+| **WI-07 Configuration Mgmt**            | Configuration Mgmt | WI-GH-07 (Repo settings, tags, releases)                        | Controlled repo setup                                        |
+| **WI-08 Verification & Validation**     | Design Control     | WI-GH-08 (CI Actions + test reports)                            | Automated + manual testing                                   |
+| **WI-09 Release & Maintenance**         | Release Control    | WI-GH-09 (Release tags, notes, DR plan)                         | Includes recovery planning                                   |
+| **WI-10 CAPA / Nonconformity**          | CAPA               | WI-GH-10 (Issues w/ CAPA template)                              | Nonconformities tracked as Issues                            |
+| **WI-11 Governance & Sign-off**         | Governance         | WI-ODF-02 (Governance checkpoints), WI-GH-11 (GitHub Approvals) | Phase-end reviews documented                                 |
+| **WI-12 Measurement & KPIs**            | Measurement        | WI-GH-12 (Wiki KPI Dashboard, GitHub Insights)                  | KPI tracking in dashboards                                   |
+| **WI-13 Open Data & Transparency**      | Data Mgmt          | WI-GH-13 (Open Data Repo)                                       | Anonymized + published data                                  |
+| **WI-14 Training & Access Control**     | Resource Mgmt      | WI-GH-14 (Repo permissions, training logs)                      | Access tied to training completion                           |
+
+---
+
+### Why this works
+
+* **Flexibility:** Another project could swap out `WI-GH-01` (GitHub Wiki) for `WI-CF-01` (Confluence) without changing the PQP structure.
+* **Auditability:** Auditors can see every SOP element is covered, with a direct pointer to the correct WI.
+* **Reusability:** Tool-specific WIs are modular — you only write “GitHub Document Control” once, then reuse it across projects.
+
+---
+
+✅ So, in practice:
+
+* **Master list = 14 quality elements (universal).**
+* **Tool-specific WIs = small library (GitHub set, ODF set, Jira set, OneNote set, etc.).**
+* **PQP matrix = picks the right combination for the project.**
+
+---
+
 
 ---

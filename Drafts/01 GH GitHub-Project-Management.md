@@ -217,8 +217,114 @@ In your workflow:
 
 The **charter is the starting point** — it authorizes the project, defines the initial requirements, and triggers all downstream processes: design control, project management workflow, and sprint planning.
 
+--
+
+Great idea 🚀 — if you treat **QMS docs like software artifacts**, then a GitHub Project board gives you **visibility, consistency, and traceability** across projects. Here’s a reusable template you can drop into a GitHub Project (classic Kanban or new Projects Beta):
+
 ---
 
-If you want, I can make a **single visual diagram** showing **charter → design inputs → design control → project management → GitHub wiki/backlog/sprints**. It usually makes these relationships instantly clear.
+# 📋 **GitHub Project Board Template for QMS Docs**
 
-Do you want me to do that?
+### **Columns**
+
+1. **Backlog**
+
+   * New document ideas, framework references, compliance needs.
+   * Example cards: *Ontario Framework mapping*, *GDPR checklist draft*.
+
+2. **In Draft**
+
+   * Document is being written/structured.
+   * Goal: get the first working version committed to the wiki/repo.
+
+3. **In Review**
+
+   * PR submitted, waiting for comments.
+   * Reviewer checks for: completeness, compliance mapping, consistency.
+
+4. **Approved for Use**
+
+   * Document is approved for use in the current project.
+   * Becomes the "design output" in QMS language.
+
+5. **In Effectiveness Check**
+
+   * Document is being used/applied in a live project (e.g. Red Witch).
+   * Collect feedback, audit notes, lessons learned.
+
+6. **Promoted to SOP**
+
+   * Stable, proven instruction → generalized for organization-wide SOP library.
+   * Linked to regulatory deliverables in the compliance matrix.
+
+7. **Archived**
+
+   * Superseded or retired docs.
+   * Keep for historical/audit traceability.
+
+---
+
+### **Workflow (Card Lifecycle)**
+
+1. **Backlog → In Draft**
+
+   * Trigger: New doc identified, Issue opened.
+
+2. **In Draft → In Review**
+
+   * Trigger: First draft committed, PR opened.
+
+3. **In Review → Approved for Use**
+
+   * Trigger: Review complete, PR merged.
+
+4. **Approved for Use → In Effectiveness Check**
+
+   * Trigger: Applied in a project, tracked with evidence/issues.
+
+5. **In Effectiveness Check → Promoted to SOP**
+
+   * Trigger: Validation successful in at least one additional project.
+
+6. **Any stage → Archived**
+
+   * Trigger: Document deprecated or replaced.
+
+---
+
+### **Card Template (per document)**
+
+When you create a card/issue for each doc, use this checklist inside:
+
+```markdown
+**Document:** [Name of doc]
+
+**Status:**
+- [ ] Drafted
+- [ ] Reviewed
+- [ ] Approved for use
+- [ ] Effectiveness check completed
+- [ ] Promoted to SOP
+
+**Compliance Mapping:**  
+- ISO/IEC 62304  
+- ISO 13485  
+- ISO 14971  
+- GDPR  
+- [add specifics]
+
+**Evidence Links:**  
+- Repo/Wiki page: [URL]  
+- Compliance Matrix row: [URL]  
+- Review PR: [URL]
+```
+
+---
+
+### ✅ Benefits
+
+* **Reusable** → you can copy this board for each project.
+* **Traceable** → every doc has a lifecycle from draft → validated SOP.
+* **Audit-ready** → you can show auditors exactly how a work instruction was created, reviewed, applied, and validated.
+
+---
