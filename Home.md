@@ -29,38 +29,6 @@ Resources for planning and executing Red Witch projects effectively.
 
 ---
 
-## **Compliance & Governance**
-
-Information and tools to maintain regulatory compliance and traceability.
-
-* [[Audit & CAPA Records]] – Repository for CAPA logs, audit results, and related evidence.
-* [[Regulatory Guidance]] – Overview of ISO 13485, ISO 9001, 21 CFR 820, GDPR.
-* [[Governance & Review]] – Continuous improvement cycles, ISO 9004 self-assessments, and SOP updates.
-
----
-
-## **Information Security & Access**
-
-* [[Infrastructure & Security]] – Access control, repository permissions, and secure workflow practices.
-* [[Privacy & GDPR Compliance]] – Policies and procedures for protecting personal data.
-
----
-
-## **Design & Development**
-
-* [[Design Control]] – Documentation and process guidance for design and development.
-* [[Traceability & Verification]] – Mapping requirements, design outputs, and verification activities.
-* [[Document Control]] – Maintaining controlled documents and versioning.
-
----
-
-## **Getting Started**
-
-* [[README]] – Quick start guide for new team members.
-* [[Drafts Overview]] – Draft SOPs, Work Instructions, and other in-progress documentation.
-
----
-
 ### **Navigation Tips**
 
 * Use the headings above to navigate by topic.
