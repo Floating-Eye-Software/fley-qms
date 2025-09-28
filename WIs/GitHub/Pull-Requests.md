@@ -83,9 +83,3 @@ This procedure applies to all contributors working on the Red Witch project repo
 * **Developer:** Create PRs, ensure traceability, respond to review feedback.
 * **Reviewer(s):** Conduct reviews, ensure compliance with SOPs, approve or request changes.
 * **Project Maintainer:** Ensure PRs meet quality requirements before merging.
-
----
-
-# Do you want me to also **draft a PR template (Markdown)** that you can drop into `.github/pull_request_template.md`, so every PR automatically follows this procedure?
-
----
