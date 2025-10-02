@@ -1,52 +1,52 @@
-# 📄 Software Requirements Specification (SRS)
+# 📄 Red Witch – Software Requirements Specification (SRS)
 
 **System Name:** *Red Witch*
 **Location:** Ontario, Canada
 **Intended Market:** Global (Canada, U.S., EU/EEA)
-**Version:** Draft 1.0
+**Version:** Draft 2.0
 
 ---
 
 ## 1. Introduction
 
 **1.1 Purpose**
-This document specifies the software requirements for *Red Witch*, a menstrual cycle tracking application designed with a privacy-first architecture. Requirements ensure compliance with HIPAA, GDPR, PIPEDA, PHIPA, Health Canada guidance, and EU MDR where applicable.
+This document specifies the software requirements for *Red Witch*, a privacy-first menstrual and cycle tracking application. Requirements ensure compliance with HIPAA, GDPR, PIPEDA, PHIPA, Health Canada guidance, and EU MDR where applicable.
 
 **1.2 Scope**
-The application:
+Red Witch provides:
 
-* Provides menstrual cycle tracking, symptom logging, and predictions.
-* Stores all user data **locally** with **end-to-end encryption** using user-only keys.
-* Functions without cloud services, user accounts, or third-party tracking.
-* Allows encrypted export/import of user data.
-* Supports multilingual, accessible use.
+* Cycle tracking, symptom logging, and predictive insights
+* Local-only, end-to-end encrypted storage with user-controlled keys
+* Encrypted export/import of user data
+* Modular calendar overlays for fertility and cultural frameworks
+* Multilingual, accessible UI and educational content
 
 **1.3 Regulatory Context**
 
-* **Canada:** PIPEDA (federal), PHIPA (Ontario), Health Canada medical device framework.
-* **United States:** HIPAA (if marketed in U.S.), FTC privacy standards.
-* **European Union:** GDPR (data protection), MDR (if classified as a medical device).
+* Canada: PIPEDA, PHIPA, Health Canada medical device framework
+* United States: HIPAA (if marketed), FTC privacy standards
+* European Union: GDPR, MDR (if classified as medical device)
 
 **1.4 Definitions**
 
-* **PHI:** Protected Health Information.
-* **PII:** Personally Identifiable Information.
-* **E2EE:** End-to-End Encryption.
-* **Local-only storage:** Data stored exclusively on the user’s device.
+* PHI – Protected Health Information
+* PII – Personally Identifiable Information
+* E2EE – End-to-End Encryption
+* Local-only storage – Data stored exclusively on device
 
 ---
 
 ## 2. System Overview
 
 **2.1 Product Perspective**
-Standalone mobile application (iOS, Android). Optional desktop companion.
+Standalone mobile app (iOS, Android) with optional desktop companion.
 
 **2.2 User Needs**
 
-* Track cycle data without exposing it to third parties.
-* Retain full ownership and control over sensitive health data.
-* Ensure compliance with international privacy laws.
-* Have reliable predictions and reminders.
+* Privacy-first cycle tracking with ownership of data
+* Accurate predictions and reminders
+* Support for diverse reproductive goals, genders, ages, and cultural contexts
+* Accessible and inclusive interfaces for low-literacy and global users
 
 ---
 
@@ -54,84 +54,74 @@ Standalone mobile application (iOS, Android). Optional desktop companion.
 
 ### 3.1 Functional Requirements (FR)
 
-* **FR-1:** The system shall allow users to log cycle events (start/end dates, flow).
-* **FR-2:** The system shall allow symptom logging (pain, mood, basal temperature, notes).
-* **FR-3:** The system shall provide predictive insights (estimated next period, fertile window) using local algorithms.
-* **FR-4:** The system shall provide encrypted backup/export functionality.
-* **FR-5:** The system shall allow import of encrypted backup files.
-* **FR-6:** The system shall allow reminder configuration (period, ovulation, medication).
-* **FR-7:** The system shall provide full functionality offline.
+| Req ID       | Description                                                        | Priority |
+| ------------ | ------------------------------------------------------------------ | -------- |
+| FR-1         | Log cycle events (start/end, flow)                                 | MVP      |
+| FR-2         | Log symptoms (pain, mood, basal temp, notes)                       | MVP      |
+| FR-3         | Provide predictive insights (period, fertile window) locally       | MVP      |
+| FR-4         | Encrypted backup/export                                            | MVP      |
+| FR-5         | Import encrypted backup                                            | MVP      |
+| FR-6         | Configurable reminders (period, ovulation, medication)             | MVP      |
+| FR-7         | Full offline functionality                                         | MVP      |
+| FR-BOM-1     | Daily BOM cervical mucus logging                                   | MVP      |
+| FR-BOM-2     | BOM interpretation (fertile/infertile)                             | MVP      |
+| FR-BOM-3     | BOM onboarding, education, disclaimers                             | MVP      |
+| FR-BOM-4     | Multilingual BOM content                                           | Future   |
+| FR-BOM-5     | Privacy-focused BOM UI, discreet notifications                     | Future   |
+| FR-BOM-6     | Optional anonymized BOM export                                     | Future   |
+| FR-Overlay-1 | Core calendar stores neutral cycle data                            | MVP      |
+| FR-Overlay-2 | Modular overlay system for fertility/cultural layers               | MVP      |
+| FR-Overlay-3 | Users can toggle overlays independently                            | MVP      |
+| FR-Overlay-4 | Overlays display transparent visualization                         | MVP      |
+| FR-Overlay-5 | Each overlay includes legend, explanation, disclaimers             | MVP      |
+| FR-Overlay-6 | Overlays do not modify raw data                                    | MVP      |
+| FR-Overlay-7 | Overlay system modular/extensible                                  | Future   |
+| FR-Overlay-8 | Fertility overlays clearly distinguish validated vs wellness tools | MVP      |
+
+---
 
 ### 3.2 Security Requirements (SR)
 
-* **SR-1:** All data shall be encrypted at rest with AES-256.
-* **SR-2:** Keys shall be generated locally and not transmitted externally.
-* **SR-3:** Data export shall be encrypted using user-supplied passphrases.
-* **SR-4:** The app shall support biometric and/or PIN access.
-* **SR-5:** The app shall lock automatically after configurable inactivity.
-* **SR-6:** The system shall not transmit any PHI to third parties.
-* **SR-7:** The system shall maintain audit logs of failed login attempts.
+| Req ID       | Description                                         | Priority |
+| ------------ | --------------------------------------------------- | -------- |
+| SR-1         | Data encrypted at rest (AES-256)                    | MVP      |
+| SR-2         | Local-only key generation; no external transmission | MVP      |
+| SR-3         | Export encryption via user passphrase               | MVP      |
+| SR-4         | Biometric/PIN access                                | MVP      |
+| SR-5         | Automatic lock after inactivity                     | MVP      |
+| SR-6         | No PHI transmitted to third parties                 | MVP      |
+| SR-7         | Audit logs for failed login attempts                | MVP      |
+| SR-Overlay-1 | Overlay toggling respects privacy settings          | MVP      |
+| SR-Overlay-2 | Overlay processing occurs locally                   | MVP      |
+| SR-Overlay-3 | Optional anonymized overlay export                  | Future   |
+
+---
 
 ### 3.3 Regulatory Requirements (RR)
 
-* **RR-1:** The app shall provide explicit consent dialogs in compliance with GDPR and PIPEDA.
-* **RR-2:** The app shall provide a mechanism for the user to delete all data (“right to erasure”).
-* **RR-3:** The app shall implement privacy by design and by default (GDPR Art. 25).
-* **RR-4:** If marketed for contraceptive/diagnostic use, the app shall meet EU MDR Class IIa requirements.
-* **RR-5:** If marketed in Canada as a medical device, the app shall undergo Health Canada licensing review.
+| Req ID       | Description                                                      | Priority |
+| ------------ | ---------------------------------------------------------------- | -------- |
+| RR-1         | Explicit consent dialogs (GDPR, PIPEDA)                          | MVP      |
+| RR-2         | User data deletion (“right to erasure”)                          | MVP      |
+| RR-3         | Privacy by design/default                                        | MVP      |
+| RR-4         | MDR Class IIa compliance if marketed as contraceptive/diagnostic | Future   |
+| RR-5         | Health Canada licensing for medical device                       | Future   |
+| RR-Overlay-1 | Overlay system clearly labels fertility methods/disclaimers      | MVP      |
+| RR-Overlay-2 | Overlay export complies with GDPR/PIPEDA/HIPAA                   | MVP      |
+
+---
 
 ### 3.4 Non-Functional Requirements (NFR)
 
-* **NFR-1:** Response time shall be <1 second for logging events.
-* **NFR-2:** The system shall support 10 years of cycle data without degradation.
-* **NFR-3:** The UI shall meet WCAG 2.1 AA accessibility standards.
-* **NFR-4:** The app shall support English and French at launch; multilingual expansion planned.
+| Req ID        | Description                                              | Priority |
+| ------------- | -------------------------------------------------------- | -------- |
+| NFR-1         | Response <1s for logging                                 | MVP      |
+| NFR-2         | Support 10+ years of cycle data                          | MVP      |
+| NFR-3         | WCAG 2.1 AA accessibility                                | MVP      |
+| NFR-4         | English/French at launch; multilingual expansion         | MVP      |
+| NFR-Overlay-1 | Overlay rendering responsive <1s                         | MVP      |
+| NFR-Overlay-2 | Overlay offline support                                  | MVP      |
+| NFR-Overlay-3 | Overlay multilingual rendering                           | Future   |
+| NFR-Overlay-4 | Overlay integrates with privacy-first storage/encryption | MVP      |
 
 ---
-
-# 📑 Risk Management File (RMF)
-
-### 1. Hazard Identification
-
-| ID  | Hazard                       | Sequence of Events                                | Harm                               |
-| --- | ---------------------------- | ------------------------------------------------- | ---------------------------------- |
-| H-1 | Unauthorized device access   | Device lost/stolen → attacker bypasses phone lock | PHI disclosure                     |
-| H-2 | Data loss                    | User forgets key → cannot decrypt                 | Permanent loss of health data      |
-| H-3 | Supply chain attack          | Malicious update installed                        | PHI disclosure                     |
-| H-4 | Malware on device            | Spyware captures input                            | PHI disclosure                     |
-| H-5 | Legal compulsion             | Prosecutor seizes device                          | PHI disclosure used in prosecution |
-| H-6 | Regulatory misclassification | App marketed without device license               | Legal penalties, recall            |
-| H-7 | Human error                  | User exports unencrypted backup                   | PHI disclosure                     |
-
----
-
-### 2. Risk Control Measures
-
-| Hazard | Control Requirement                                    | Linked Requirement |
-| ------ | ------------------------------------------------------ | ------------------ |
-| H-1    | Biometric + PIN login, device-level encryption         | SR-4, SR-5         |
-| H-2    | Key backup mechanism with warnings                     | SR-2, FR-4         |
-| H-3    | Signed reproducible builds, app store integrity checks | NFR-2              |
-| H-4    | User guidance on secure device practices               | User manual        |
-| H-5    | Local-only storage, no developer access                | SR-2, SR-6         |
-| H-6    | Regulatory assessment prior to launch                  | RR-4, RR-5         |
-| H-7    | Encrypted-only export, no plaintext option             | SR-3, FR-4         |
-
----
-
-### 3. Residual Risk Evaluation
-
-* **H-5 (Legal compulsion):** Cannot be fully mitigated. Residual risk remains high. Users informed via privacy policy.
-* All other hazards reduced to **low/medium** through technical and procedural controls.
-
----
-
-# 📊 Traceability Matrix
-
-| Requirement                        | Linked Hazard | Mitigation                |
-| ---------------------------------- | ------------- | ------------------------- |
-| FR-4 (Export)                      | H-2, H-7      | Encrypted backups only    |
-| SR-2 (Local-only keys)             | H-1, H-2, H-5 | User-only control         |
-| SR-3 (Encrypted export)            | H-7           | Prevent plaintext leakage |
-| RR-4/5 (Regulatory classification) | H-6           | Ensure compliance review  |
-| SR-4 (Biometric/PIN)               | H-1           | Protect device access     |
