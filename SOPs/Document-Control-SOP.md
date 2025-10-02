@@ -15,7 +15,7 @@ This SOP establishes the requirements for creating, approving, revising, storing
 * **21 CFR 820.40** – Document Controls
 * **21 CFR 820.180** – Device History Record
 * **21 CFR 820.30(j)** – Design History File
-* **ISO 13485:2016 Clauses 4.2, 4.2.3, 4.2.4, 7.3.10** – Documented information, design & development file
+* **ISO 13485:2016 Clauses 4.2, 4.2.3, 4.2.4, 7.3.10** – Documented information, design & development files
 
 The SOP ensures all QMS, project-level, and regulatory documents and records are **controlled, accessible, traceable, and preserved appropriately**.
 
@@ -23,46 +23,34 @@ The SOP ensures all QMS, project-level, and regulatory documents and records are
 
 ## **2. Scope**
 
-This SOP applies to all FLEY documentation related to the QMS and regulated product development, including:
+This SOP applies to all FLEY documentation related to QMS and regulated product development, including:
 
-* **Controlled Documents:**
+* **Controlled Documents:** SOPs, Work Instructions (WIs), Quality Manuals, Templates, Design & Development documents (requirements, risk analyses, design docs, traceability matrices).
+* **Records:** Approved plans, test reports, validation results, CAPA logs, audit logs, meeting minutes, training records, CI/CD execution results.
 
-  * Standard Operating Procedures (SOPs)
-  * Work Instructions (WIs)
-  * Quality Manuals and Quality Plans (org-level and project-level)
-  * Templates
-  * Design & development documentation (requirements, risk analyses, design docs, traceability matrices)
-
-* **Records:**
-
-  * Completed Quality Plans (approved versions)
-  * Test reports, validation reports
-  * CAPA logs, audit logs, meeting minutes
-  * Training records
-  * CI/CD execution results linked as evidence
-
-This SOP applies to all FLEY employees, contractors, and collaborators involved in QMS or product development activities.
+It applies to all employees, contractors, and collaborators involved in QMS or product development activities.
 
 ---
 
 ## **3. Responsibilities**
 
-| Role                                     | Responsibility                                                                                                   |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Quality Manager / QMS Owner**          | Maintains SOP; approves controlled documents; ensures proper classification of documents vs. records.            |
-| **Project Manager**                      | Ensures project-level documents follow this SOP; ensures that completed plans and reports are stored as records. |
-| **Developers / Team Members**            | Use only approved controlled documents; submit changes via PR; generate and file records of activities.          |
-| **Privacy Officer / Compliance Officer** | Ensures regulatory content (e.g., GDPR) remains current and referenced correctly.                                |
+| Role                                     | Responsibility                                                                                                      |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Quality Manager / QMS Owner**          | Maintains SOP; approves controlled documents; ensures proper classification of documents vs. records.               |
+| **Project Manager**                      | Ensures project-level documents follow this SOP; ensures records are stored appropriately.                          |
+| **Developers / Team Members**            | Use only approved controlled documents; submit changes via change control; generate and file records of activities. |
+| **Privacy Officer / Compliance Officer** | Ensures regulatory content (e.g., GDPR, ISO standards) remains current and referenced correctly.                    |
 
 ---
 
 ## **4. Definitions**
 
-* **Controlled Document** – A living document that defines processes, procedures, requirements, or specifications. It can be revised, but only under change control.
-* **Record** – Evidence that a process has been carried out. Records are immutable after approval and may not be altered.
-* **Uncontrolled Copy** – Any exported or printed version; reference must point to the controlled wiki version.
-* **Document Owner** – The individual responsible for maintaining and ensuring a document is current.
-* **Change Control** – Formal process for proposing, reviewing, approving, and implementing revisions.
+* **Controlled Document:** Living document defining processes, procedures, requirements, or specifications; revised only under change control.
+* **Record:** Evidence that a process has been carried out; immutable after approval.
+* **Uncontrolled Copy:** Exported or printed version; reference must cite the controlled document.
+* **Document Owner:** Individual responsible for maintaining currency of the document.
+* **Change Control:** Formal process for proposing, reviewing, approving, and implementing revisions.
+* **External Document:** Document authored by a third party (standards, journal articles, regulatory guidance, market reports).
 
 ---
 
@@ -70,86 +58,97 @@ This SOP applies to all FLEY employees, contractors, and collaborators involved 
 
 ### **5.1 Creation**
 
-1. Use approved templates from `redwitch.wiki/Templates/`.
+1. Use approved templates.
 2. Assign a **Document Owner**.
-3. Create the new page or file in the appropriate wiki or repo folder:
-
-   * `/SOPs/`, `/WIs/`, `/Plans/`, `/Project-Docs/` → Controlled Documents
-   * `/Records/` → Records
+3. Store the new document in a controlled location accessible only to authorized personnel.
 
 ### **5.2 Review & Approval**
 
-1. Submit changes to controlled documents via **GitHub Pull Request (PR)**.
-2. Reference related issues, milestones, or project boards in the PR.
-3. Review by at least one approver (QM or Project Manager).
-4. Merge PR only after approval → merged version becomes the **controlled document of record**.
-5. Records (e.g., a completed Quality Plan, test report) are generated, approved, and then stored in `/Records/` without later modification.
+1. Submit changes through the formal change control process.
+2. Review by at least one approver (QM or Project Manager).
+3. Document approval must be recorded in a revision history log.
+4. Once approved, the document becomes the **controlled version of record**.
 
 ### **5.3 Revision (Controlled Documents Only)**
 
-1. Add/Update a **Revision History** table:
+1. Update **Revision History**:
 
-   ```markdown
-   | Rev | Date       | Author      | Change Description |
-   |-----|------------|-------------|--------------------|
-   | 0.1 | 2025-09-25 | M. Lehotay  | Initial Draft      |
-   ```
+   | Rev | Date       | Author | Change Description |
+   | --- | ---------- | ------ | ------------------ |
+   | 0.1 | YYYY-MM-DD | Name   | Initial Draft      |
 
-2. Update cross-references to milestones/issues as needed.
+2. Update cross-references to related documents, issues, or project milestones.
 
-3. Retain prior versions in GitHub history.
+3. Retain prior versions for traceability.
 
 ### **5.4 Distribution**
 
-* The **GitHub wiki is the single source of truth** for controlled documents.
-* Exported/printed copies are uncontrolled and must cite the canonical wiki link.
+* Controlled documents must be accessible to all authorized users.
+* Exported or printed copies are **uncontrolled**; must reference the canonical controlled document.
 
 ### **5.5 Obsolete / Retired Documents**
 
-* Mark retired controlled documents with **“Obsolete”** in the title.
-* Add reason and retirement date.
-* Preserve prior versions in GitHub history for traceability.
+* Mark as **“Obsolete”** with reason and retirement date.
+* Preserve prior versions for audit purposes.
 
 ### **5.6 Records Management**
 
-* Records are finalized versions of documents (e.g., “Quality Plan v1.0 – Approved 2025-01-15”).
-* Once approved, records are stored in `/Records/` and **must not be modified**.
-* If changes are required, a **new record** is generated (e.g., v1.1), leaving the old one intact.
+* Records are finalized, approved documents.
+* Store in a secure, access-controlled repository.
+* Records **must not be modified**; updates require a new version.
+
+### **5.7 Handling External Documents**
+
+1. **Scope:** Applies to all third-party references used in QMS, PMS, SRS, or design activities.
+
+2. **Storage:**
+
+   * Do not store copyrighted materials (e.g., ISO standards, paid journal PDFs) in shared repositories.
+   * Open-access or licensed materials may be stored locally under controlled access.
+
+3. **Metadata Requirements:** Maintain for each external document:
+
+   | Field           | Description                                           |
+   | --------------- | ----------------------------------------------------- |
+   | Document ID     | Unique identifier                                     |
+   | Title           | Official document title                               |
+   | Source / Link   | URL or publisher reference                            |
+   | Type            | Standard, Article, Market Report, Regulatory Guidance |
+   | Summary / Notes | Internal paraphrased summary relevant to QMS/PMS      |
+   | Local Copy      | Location if allowed; otherwise “None”                 |
+
+4. **Internal Summaries:** Include only key findings relevant to product safety, design, or regulatory compliance.
+
+5. **Integration:** Reference Document ID in controlled documents (SRS, RMF, SOPs, PMS logs).
+
+6. **Review:** Annually, or upon new edition release, create a new Document ID.
+
+7. **Audit Compliance:** Metadata, summaries, and links suffice for auditors; original document can be accessed externally if required.
 
 ---
 
 ## **6. Document Identification & Versioning**
 
-* Controlled document IDs:
-
-  * `SOP-XXX` for SOPs
-  * `WI-XXX` for WIs
-  * `PLAN-XXX` for Quality Plans
-
-* Records are identified with document type, title, version, and approval date (e.g., `PLAN-QMS-001_v1.0_2025-01-15`).
-
-* Revisions:
-
-  * Draft/minor changes: 0.1 → 0.2
-  * Approved major versions: 1.0 → 1.1 → 2.0
+* Controlled documents: `SOP-XXX`, `WI-XXX`, `PLAN-XXX`.
+* Records: Document type, title, version, approval date (e.g., `PLAN-QMS-001_v1.0_YYYY-MM-DD`).
+* Revisions: Draft/minor 0.1 → 0.2; Major 1.0 → 1.1 → 2.0.
 
 ---
 
 ## **7. Access & Control**
 
-* Wiki holds **controlled documents**.
-* `/Records/` repo/folder holds **immutable records**.
-* Pull request approval serves as the **formal review log**.
-* GitHub history provides full traceability.
-* Links to Issues, Milestones, and CI/CD reports establish **execution evidence**.
+* Controlled documents: accessible to authorized users only.
+* Records: stored in a secure, immutable repository.
+* Revision history must be maintained for traceability.
+* External documents are linked via metadata; PDFs stored only if permitted.
 
 ---
 
-## **8. Record of Changes / Revision History**
+## **8. Audit & Review**
 
-* All controlled documents contain a **Revision History** table.
-* All prior versions preserved in **GitHub history**.
-* Records are immutable — once finalized, they are never changed.
+* All controlled documents and records are reviewed annually.
+* Document Owners are responsible for review and ensuring updates are applied under change control.
+* External documents reviewed annually; updates generate new entries.
 
 ---
 
@@ -160,16 +159,12 @@ This SOP applies to all FLEY employees, contractors, and collaborators involved 
 * 21 CFR 820.30(j) – Design History File
 * ISO 13485:2016 – Clauses 4.2, 4.2.3, 4.2.4, 7.3.10
 * SOP-Quality-Planning
-* WI-GitHub-Project-Management
+* WI-Document Management
 
 ---
 
-## **10. Appendices**
+## **10. Revision History**
 
-### Appendix A – GitHub Integration
-
-* Controlled documents live in the **wiki**.
-* Records live in the `/Records/` directory (or separate repo).
-* All document PRs reference governing **milestones** and **issues**.
-* The “Linkage to Execution” section on wiki pages connects to relevant milestones, boards, and issues.
-* CI/CD and automated test reports are linked from Records.
+| Rev | Date       | Author | Change Description |
+| --- | ---------- | ------ | ------------------ |
+| 0.1 | YYYY-MM-DD | Name   | Initial Draft      |
