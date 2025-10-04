@@ -12,6 +12,36 @@
 
 This SOP defines the process for **post-market surveillance (PMS)** of the Red Witch menstrual cycle tracking application. PMS ensures that safety, privacy, usability, and regulatory compliance are continuously monitored, and that findings are evaluated and fed back into product improvement, risk management, and the QMS.
 
+<!--
+Compliance
+==========
+Post Market Surveillance SOP
+ISO 9001 5.1.2, 8.2, 9.1, 10.1, 10.3
+Customer Feedback Records, Complaint Logs, Trend Analysis, CAPA Records, Improvement Plans
+==========
+5 Leadership
+5.1 Leadership and commitment
+5.1.2 Customer focus
+
+8 Operation
+8.2 Requirements for products and services
+8.2.1 Customer communication
+8.2.2 Determining the requirements for products and services
+8.2.3 Review of the requirements for products and services
+8.2.4 Changes to requirements for products and services
+
+9 Performance evaluation
+9.1 Monitoring, measurement, analysis and evaluation
+9.1.1 General
+9.1.2 Customer satisfaction
+9.1.3 Analysis and evaluation
+
+10 Improvement
+10.1 General
+10.3 Continual improvement
+==========
+-->
+
 ---
 
 ## **2. Scope**

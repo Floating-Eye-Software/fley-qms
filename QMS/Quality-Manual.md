@@ -1,8 +1,8 @@
-# **Quality Manual – Floating Eye Software (FLEY)**
+# Quality Manual – Floating Eye Software (FLEY)
 
 ---
 
-## **Overview**
+## Overview
 
 The Floating Eye Software Quality Management System (QMS) provides a structured pathway from **intended use** to **regulatory compliance**. Each project begins by identifying the **applicable standards and regulations** based on its feature set, labeling, and intended use (e.g., ISO 13485, IEC 62304, GDPR).
 
@@ -16,9 +16,11 @@ This creates a clear, auditable chain:
 
 **Regulations → SOPs → WIs → Execution → Evidence**
 
+For a visual overview of the QMS processes, their interactions, and inputs/outputs, see [[QMS Process Map]].
+
 ---
 
-## **1. Purpose and Scope**
+## 1. Purpose and Scope
 
 The purpose of this Quality Manual is to define the FLEY QMS, its alignment to international standards, and its applicability to software projects.
 
@@ -26,7 +28,7 @@ The QMS applies to all FLEY activities impacting **product quality, safety, secu
 
 ---
 
-## **2. Applicable Standards and Regulations**
+## 2. Applicable Standards and Regulations
 
 The QMS integrates requirements from:
 
@@ -43,7 +45,7 @@ Compliance pages in `/Compliance/` map clauses from these standards to **SOPs, W
 
 ---
 
-## **3. QMS Structure**
+## 3. QMS Structure
 
 The QMS is organized into interconnected elements:
 
@@ -57,7 +59,7 @@ The QMS is organized into interconnected elements:
 
 ---
 
-## **4. Governance and Responsibilities**
+## 4. Governance and Responsibilities
 
 | Role                | Responsibilities                                                   |
 | ------------------- | ------------------------------------------------------------------ |
@@ -69,11 +71,13 @@ The QMS is organized into interconnected elements:
 
 ---
 
-## **5. Process Approach and PDCA Cycle**
+## 5. Process Approach and PDCA Cycle
 
 FLEY applies the **Process Approach** and **Plan–Do–Check–Act (PDCA)** cycle to ensure systematic, consistent, and continually improving quality management across all projects.
 
-### **5.1 Plan**
+For a **visual overview of QMS workflows and process interactions**, see [[QMS Process Map]].
+
+### 5.1 Plan
 
 * Define objectives, requirements, and resources.
 * Align SOPs, WIs, tools, infrastructure, and staffing with project needs.
@@ -82,7 +86,7 @@ FLEY applies the **Process Approach** and **Plan–Do–Check–Act (PDCA)** cyc
 
 **Evidence:** Project Quality Plans, risk registers, SOP assignments, documented quality objectives.
 
-### **5.2 Do**
+### 5.2 Do
 
 * Execute software design, development, and verification per SOPs/WIs.
 * Follow controlled workflows (e.g., GitHub PRs, CI/CD pipelines).
@@ -91,7 +95,7 @@ FLEY applies the **Process Approach** and **Plan–Do–Check–Act (PDCA)** cyc
 
 **Evidence:** Work logs, version-controlled code, CI/CD test reports, design reviews, risk treatment records.
 
-### **5.3 Check**
+### 5.3 Check
 
 * Monitor process outputs and software performance metrics.
 * Conduct internal audits and SOP/WI compliance reviews.
@@ -100,7 +104,7 @@ FLEY applies the **Process Approach** and **Plan–Do–Check–Act (PDCA)** cyc
 
 **Evidence:** Audit reports, KPI dashboards, test results, feedback logs, CAPA records.
 
-### **5.4 Act**
+### 5.4 Act
 
 * Implement corrective and preventive actions.
 * Update SOPs, WIs, and project plans based on lessons learned.
@@ -108,7 +112,7 @@ FLEY applies the **Process Approach** and **Plan–Do–Check–Act (PDCA)** cyc
 
 **Evidence:** Updated SOPs/WIs, CAPA records, improvement project documentation.
 
-### **5.5 Integration of the Process Approach**
+### 5.5 Integration of the Process Approach
 
 FLEY links all QMS elements:
 
@@ -117,9 +121,11 @@ FLEY links all QMS elements:
 3. **Evaluation** → Identifies gaps or deviations.
 4. **Improvement** → Feeds back into planning, closing the loop.
 
+Refer to [[QMS Process Map]] for a visual representation of how processes interact and support continuous improvement.
+
 ---
 
-## **6. Core QMS Processes**
+## 6. Core QMS Processes
 
 * **Document and Record Control:** Versioning, approval, retention via GitHub.
 * **Design and Development Control:** Requirements management, traceability, design reviews.
@@ -129,13 +135,15 @@ FLEY links all QMS elements:
 * **Training and Competence:** Role-based onboarding, GDPR/security training.
 * **Audit and Improvement:** Internal audits, CAPA, self-assessments.
 
+For process interactions and detailed workflow, see [[QMS Process Map and Interactions]].
+
 ---
 
-## **7. Planning SOP Integration**
+## 7. Planning SOP Integration
 
 The **Project & Quality Planning SOP** guides the “Plan” phase of PDCA. It defines **project plans, quality plans, milestones, risk management, and traceability**.
 
-### **7.1 Where the Planning SOP Fits in the PDCA Cycle**
+### 7.1 Where the Planning SOP Fits in the PDCA Cycle
 
 | PDCA Phase | SOP / Process                  | Key Activities                                                                                                                                                     | Evidence / Records                                                                    |
 | ---------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
@@ -146,7 +154,7 @@ The **Project & Quality Planning SOP** guides the “Plan” phase of PDCA. It d
 
 ---
 
-## **8. Compliance Mapping and Traceability**
+## 8. Compliance Mapping and Traceability
 
 Each compliance page (e.g., `ISO-13485.md`, `IEC-62304.md`) links to:
 
@@ -158,7 +166,7 @@ Project-level matrices maintain full traceability.
 
 ---
 
-## **9. Continuous Improvement**
+## 9. Continuous Improvement
 
 The QMS is a **living system**. Improvement comes from:
 
@@ -167,16 +175,15 @@ The QMS is a **living system**. Improvement comes from:
 * CAPA (Corrective and Preventive Actions)
 * ISO 9004 self-assessments and GDPR compliance checks
 
-Findings lead to updates in SOPs, WIs, and plans to mature the QMS over time.
+Findings lead to updates in SOPs, WIs, and plans to mature the QMS over time. Refer to [[QMS Process Map]] to understand how these improvements propagate across processes.
 
 ---
 
-## **10. References**
+## 10. References
 
 * `/Compliance/` – External standard mappings
 * `/SOPs/` – System-level operating procedures
 * `/WIs/` – Implementation guidance
 * `/Plans/` – Project-specific tailoring
 * `/Records/` – Evidence of compliance
-
-Versioning policy, access control, and archival rules are defined in the respective SOPs.
+* `/QMS/QMS-Process-Map.md` – Process map and interaction matrix

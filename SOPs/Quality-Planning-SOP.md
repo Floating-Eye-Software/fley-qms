@@ -7,6 +7,27 @@ This SOP establishes the process for planning and executing both projects and qu
 * 21 CFR 820.30(b) – Design and Development Planning  
 * ISO 13485:2016, Clauses 5.4.2, 7.1, and 7.3.2  
 
+<!--
+Compliance
+==========
+Quality Planning SOP
+ISO 9001 6.2, 8.1, 9.1
+Quality Objectives, KPI Dashboards, Process Planning Documents, Monitoring Reports
+==========
+6 Planning
+6.2 Quality objectives and planning to achieve them
+
+8 Operation
+8.1 Operational planning and control
+
+9 Performance evaluation
+9.1 Monitoring, measurement, analysis and evaluation
+9.1.1 General
+9.1.2 Customer satisfaction
+9.1.3 Analysis and evaluation
+==========
+-->
+
 ---
 
 ## **2. Scope**

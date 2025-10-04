@@ -12,6 +12,33 @@
 
 This SOP defines how Floating Eye Software (FLEY) ensures **bidirectional traceability** between regulatory and standards requirements (ISO 9001, ISO 13485, 21 CFR 820, Ontario Digital Service Standard) and project/organizational quality evidence. The process guarantees that each regulatory clause can be traced to documented **SOPs, Work Instructions (WIs), Project Quality Plans (PQPs), and project artifacts**.
 
+<!--
+Compliance
+==========
+Traceability SOP
+ISO 9001 8.1, 8.5, 8.6, 7.5
+Traceability Records, Device History Records, Work Instructions, Inspection & Release Records
+==========
+
+7 Support
+7.5 Documented information
+7.5.1 General
+7.5.2 Creating and updating
+7.5.3 Control of documented information
+
+8 Operation
+8.1 Operational planning and control
+8.5 Production and service provision
+8.5.1 Control of production and service provision
+8.5.2 Identification and traceability
+8.5.3 Property belonging to customers or external providers
+8.5.4 Preservation
+8.5.5 Post-delivery activities
+8.5.6 Control of changes
+8.6 Release of products and services
+
+==========
+-->
 ---
 
 ## **2. Scope**

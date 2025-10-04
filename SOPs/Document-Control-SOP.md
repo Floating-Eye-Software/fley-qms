@@ -19,6 +19,68 @@ This SOP establishes the requirements for creating, approving, revising, storing
 
 The SOP ensures all QMS, project-level, and regulatory documents and records are **controlled, accessible, traceable, and preserved appropriately**.
 
+<!--
+Compliance
+==========
+Document Control SOP
+ISO 9001 7.5, 4.4, 6.1
+Controlled Document Registers, Version Histories, Retention Logs, Evidence of Risk Mitigation
+==========
+6 Planning
+6.1 Actions to address risks and opportunities
+
+7 Support
+7.5 Documented information
+7.5.1 General
+7.5.2 Creating and updating
+7.5.3 Control of documented information
+
+4 Context of the organization
+4.4 Quality management system and its processes
+==========
+
+4.4.2 To the extent necessary, the organization shall:
+a) maintain documented information to support the operation of its processes;
+b) retain documented information to have confidence that the processes are being carried out as
+planned.
+
+7.5 Documented information
+7.5.1 General
+The organization’s quality management system shall include:
+a) documented information required by this International Standard;
+b) documented information determined by the organization as being necessary for the effectiveness
+of the quality management system.
+NOTE The extent of documented information for a quality management system can differ from one
+organization to another due to:
+— the size of organization and its type of activities, processes, products and services;
+— the complexity of processes and their interactions;
+— the competence of persons.
+7.5.2 Creating and updating
+When creating and updating documented information, the organization shall ensure appropriate:
+a) identification and description (e.g. a title, date, author, or reference number);
+b) format (e.g. language, software version, graphics) and media (e.g. paper, electronic);
+c) review and approval for suitability and adequacy.
+7.5.3 Control of documented information
+7.5.3.1 Documented information required by the quality management system and by this International
+Standard shall be controlled to ensure:
+a) it is available and suitable for use, where and when it is needed;
+b) it is adequately protected (e.g. from loss of confidentiality, improper use, or loss of integrity).
+7.5.3.2 For the control of documented information, the organization shall address the following
+activities, as applicable:
+a) distribution, access, retrieval and use;
+b) storage and preservation, including preservation of legibility;
+c) control of changes (e.g. version control);
+d) retention and disposition.
+Documented information of external origin determined by the organization to be necessary for the
+planning and operation of the quality management system shall be identified as appropriate, and
+be controlled.
+Documented information retained as evidence of conformity shall be protected from unintended
+alterations.
+NOTE Access can imply a decision regarding the permission to view the documented information only, or
+the permission and authority to view and change the documented information.
+
+-->
+
 ---
 
 ## **2. Scope**

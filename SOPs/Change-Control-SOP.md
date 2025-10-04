@@ -28,6 +28,27 @@ This SOP ensures compliance with:
 * 21 CFR 820.30(j) – Design History File
 * ISO 13485:2016 Clauses 4.2.3, 4.2.4, 7.3.10
 
+<!--
+Compliance
+==========
+Change Control SOP
+ISO 9001 6.3, 8.1, 7.5
+Change Requests, Impact Assessments, Approval Records, Updated Procedures, Revision Logs
+==========
+6 Planning
+6.3 Planning of changes
+
+8 Operation
+8.1 Operational planning and control
+
+7 Support
+7.5 Documented information
+7.5.1 General
+7.5.2 Creating and updating
+7.5.3 Control of documented information
+==========
+-->
+
 ---
 
 ## **2. Scope**
