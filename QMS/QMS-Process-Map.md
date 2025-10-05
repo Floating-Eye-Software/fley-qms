@@ -1,17 +1,16 @@
-# QMS Process Map and Interactions – FLEY
+# ✅ Updated Process Map and Interactions – FLEY QMS
 
 ---
 
 ## **1. Overview**
 
-The Floating Eye Software (FLEY) QMS provides a **structured system of interrelated processes** to ensure consistent delivery of **high-quality, safe, and compliant products**.
+The Floating Eye Software (FLEY) Quality Management System (QMS) is composed of **three interrelated workflows** that together ensure quality, compliance, and continual improvement:
 
-It is organized around two **core workflows**:
+1. **Operate the QMS (Continuous Improvement)** – The ongoing system that maintains and improves the QMS, manages risks, conducts audits, and drives maturity.
+2. **Create the QMS (Establishment Project)** – The temporary project that designs, documents, and implements the QMS framework itself.
+3. **Develop Products (Red Witch Project)** – Application of the QMS to plan, design, develop, verify, and release software products.
 
-1. **QMS Creation, Maintenance, and Improvement** – developing, operating, and continually improving the QMS itself.
-2. **Project Implementation (Red Witch Development)** – applying the QMS to design, develop, verify, and release products.
-
-Supporting processes (Document & Record Control, Change Control, Traceability, Post-Market Surveillance, Information Security) provide **resources, documentation, and controls** that enable the core workflows to operate effectively.
+Supporting processes (Document & Record Control, Change Control, Traceability, Post-Market Surveillance, Information Security) enable and interact with these three core workflows.
 
 ---
 
@@ -19,60 +18,89 @@ Supporting processes (Document & Record Control, Change Control, Traceability, P
 
 ```mermaid
 flowchart TD
-    A[Market Needs & Feedback<br>(Post-Market Surveillance)] --> B[Quality Planning]
-    B --> C[Design & Development<br>(Red Witch Project)]
-    C --> D[Release & Deployment]
-    D --> A
-    C -->|Records, Documentation| E[Document & Record Control]
-    C -->|Change Requests| F[Change Control]
-    C -->|Requirements, Tests, Risks| G[Traceability]
-    A -->|Inputs for Design| C
-    H[QMS Improvement<br>(Audits, Assessments, CAPA)] --> B
-    H --> C
-    H --> E
-    H --> F
+    subgraph A1[Operate the QMS<br>(Continuous Improvement)]
+        A11[Context & Risk Review]
+        A12[Audits & CAPA]
+        A13[Management Review]
+    end
+
+    subgraph A2[Create the QMS<br>(Establishment Project)]
+        A21[Design & Approve QMS Structure]
+        A22[Develop SOPs, WIs, Manual]
+        A23[Validate Framework via Pilot]
+    end
+
+    subgraph A3[Develop Products<br>(Red Witch Project)]
+        A31[Requirements & Planning]
+        A32[Design & Implementation]
+        A33[Verification & Release]
+    end
+
+    A11 --> A21
+    A21 --> A31
+    A33 --> A12
+    A12 --> A13
+    A13 --> A11
+
+    A31 -->|Design Inputs / Issues| A32
+    A32 -->|Change Requests / Risks| A12
+    A32 -->|Documentation| D1[Document & Record Control]
+    A32 -->|Trace Links| D2[Traceability]
+    A32 -->|Security Data| D3[Information Security]
+    A33 -->|Feedback| D4[Post-Market Surveillance]
 ```
 
 **Notes:**
 
-* Feedback loops (Post-Market Surveillance, audits, CAPA) inform both **planning** and **development**, ensuring that lessons learned are incorporated.
-* Documentation generated at every stage provides **evidence of process operation**, compliance, and decision-making.
+* The **Operate QMS workflow** governs and reviews the other two workflows.
+* The **Create QMS workflow** establishes the system framework; once complete, it feeds into Operate QMS.
+* The **Develop Products workflow** applies QMS controls and provides real-world feedback for continual improvement.
 
 ---
 
 ## **3. Process Interaction and Responsibilities**
 
-| Process                       | Inputs                                                     | Outputs                                      | Responsibilities & Resources                                | Key Controls / Methods                          | Intended Result                                         | Linked Processes                                        |
-| ----------------------------- | ---------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
-| **Quality Planning**          | Market needs, regulatory requirements, internal objectives | Project Plans, Quality Plans, Milestones     | Project Manager, Quality Manager; planning tools, templates | SOPs/WIs for planning, checklists               | Approved, actionable plans aligned to QMS & regulations | Design & Development, QMS Improvement                   |
-| **Design & Development**      | Project Plans, requirements, risk registers                | Verified product, release-ready code         | Developer, QA; CI/CD, traceability matrix                   | Verification & validation SOPs, automated tests | Product meets requirements, safety, quality             | Document & Record Control, Traceability, Change Control |
-| **Document & Record Control** | Draft docs, templates, approvals                           | Controlled, versioned documents, records     | Developer, Quality Manager; GitHub, wiki                    | Versioning, approval, access control            | Traceable, retrievable, accurate documentation          | All processes                                           |
-| **Change Control**            | Change requests, issues                                    | Authorized changes, updated docs             | Developer, Quality Manager; GitHub PRs                      | Change SOPs, review/approval criteria           | Controlled, auditable changes                           | Design & Development, QMS Improvement                   |
-| **Traceability**              | Requirements, design outputs, tests, risks                 | Trace matrices, verification evidence        | Developer, Quality Manager; traceability tools              | SOPs for mapping inputs/outputs                 | Full traceability from requirements to product          | Design & Development, PMS                               |
-| **Post-Market Surveillance**  | Feedback, complaints, market data                          | PMS reports, design inputs                   | Quality Manager, Developer; issue tracker                   | Data collection SOP, review frequency           | Continuous feedback for product improvement             | Design & Development, QMS Improvement                   |
-| **QMS Improvement**           | Audits, CAPA, assessment results                           | Updated QMS documents, SOPs, WIs             | Quality Manager; audit tools                                | Internal audit procedures, PDCA cycle           | Continually improved QMS                                | All processes                                           |
-| **Information Security**      | GDPR/NIST requirements, internal policies                  | Security policies, evidence, mitigation logs | Developer, Privacy Officer; security tools                  | Privacy & security SOPs, training               | Secure, compliant data handling                         | QMS, Development                                        |
+| Process / Workflow            | Inputs                                    | Outputs                                         | Responsible Roles               | Key Controls / Methods                          | Intended Result                                | Linked Processes               |
+| ----------------------------- | ----------------------------------------- | ----------------------------------------------- | ------------------------------- | ----------------------------------------------- | ---------------------------------------------- | ------------------------------ |
+| **Operate the QMS**           | Context, risks, audits, CAPA data         | Updated objectives, actions, improved processes | Top Management, Quality Manager | Audit program, management review, risk register | Sustained compliance and continual improvement | All                            |
+| **Create the QMS**            | ISO 9001 requirements, organization needs | Approved QMS Manual, SOPs, WIs                  | Quality Manager, Team Leads     | Planning SOP, Project Management SOP            | Established and validated QMS framework        | Operate QMS, Develop Products  |
+| **Develop Products**          | Quality Plans, requirements, risks        | Released product and evidence                   | Project Manager, Developers     | Design & Development SOPs, verification WIs     | Product meets requirements and compliance      | Operate QMS, PMS, Traceability |
+| **Document & Record Control** | Draft docs, records                       | Controlled versions                             | Quality Manager                 | Versioning in GitHub / Wiki                     | Accurate, retrievable documentation            | All                            |
+| **Change Control**            | Change requests, issues                   | Approved changes                                | Developer, Quality Manager      | PR review workflow                              | Controlled product and process changes         | Dev, Operate QMS               |
+| **Traceability**              | Requirements, tests, risks                | Trace matrices                                  | QA, Developer                   | Automated tracking tools                        | End-to-end traceability                        | Dev, Operate QMS               |
+| **Post-Market Surveillance**  | Feedback, complaints                      | PMS reports, inputs for change                  | Quality Manager                 | PMS SOP, review schedule                        | Data-driven improvement                        | Operate QMS, Develop Products  |
+| **Information Security**      | GDPR/NIST requirements                    | Security controls, logs                         | Privacy Officer                 | ISMS SOP, training                              | Secure data handling                           | All                            |
 
 ---
 
-## **4. Documented Information**
+## **4. Workflow Interactions**
 
-The FLEY QMS **relies on documented information** to:
-
-* **Support operation of processes:** Each SOP, Work Instruction, Plan, and template defines how a process should be carried out.
-* **Provide evidence:** Records demonstrate that activities are performed as planned, supporting audits and regulatory compliance.
-* **Enable traceability:** Inputs, outputs, and decisions are linked across processes for transparency and accountability.
-* **Drive continual improvement:** Documentation of findings, CAPA actions, and lessons learned feed back into planning and process updates.
-
-All documented information is maintained in **controlled repositories** (GitHub wiki, source code, and project tracking tools) and is regularly reviewed for relevance, accuracy, and completeness.
+| From             | To               | Information Flow / Feedback                     |
+| ---------------- | ---------------- | ----------------------------------------------- |
+| Operate QMS      | Create QMS       | Requirements for system design, lessons learned |
+| Create QMS       | Operate QMS      | Completed QMS framework for ongoing use         |
+| Develop Products | Operate QMS      | Quality data, audits, post-market feedback      |
+| Operate QMS      | Develop Products | Policies, objectives, approved procedures       |
+| Develop Products | Create QMS       | Validation feedback for QMS design              |
 
 ---
 
-## **5. References**
+## **5. Documented Information**
 
-* `QMS/Quality-Manual.md` – System description
-* `SOPs/` – Operating procedures
-* `WIs/` – Work instructions
-* `Plans/` – Project-specific tailoring
-* `Compliance/` – Standards mapping
-* `QMS/Risk-Register.md` – Risk mapping from context
+* **SOPs and Work Instructions** – define each process.
+* **Quality Plans** – establish objectives, deliverables, and metrics.
+* **Records** – provide evidence of performance and compliance.
+* **Repositories** – GitHub Issues, Wiki, and source control ensure traceability and version control.
+
+---
+
+## **6. References**
+
+* `Quality-Manual.md` – QMS overview and workflow description
+* `SOPs/` – Process procedures
+* `WIs/` – Tool-specific methods
+* `Plans/` – Quality and project plans
+* `Compliance/` – Standards mapping and trace matrix
+* `Risk-Register.md` – Context and risk linkages
+
+---

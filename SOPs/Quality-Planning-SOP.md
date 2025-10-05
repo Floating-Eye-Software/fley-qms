@@ -1,107 +1,87 @@
-# 📘 Project & Quality Planning SOP (Draft)
+# **Standard Operating Procedure: Quality Planning**
 
-## **1. Purpose**
-This SOP establishes the process for planning and executing both projects and quality activities across Floating Eye Software (FLEY). It ensures that all work is structured, resourced, and controlled in compliance with:
-
-* 21 CFR 820.20(d) – Quality Planning  
-* 21 CFR 820.30(b) – Design and Development Planning  
-* ISO 13485:2016, Clauses 5.4.2, 7.1, and 7.3.2  
-
-<!--
-Compliance
-==========
-Quality Planning SOP
-ISO 9001 6.2, 8.1, 9.1
-Quality Objectives, KPI Dashboards, Process Planning Documents, Monitoring Reports
-==========
-6 Planning
-6.2 Quality objectives and planning to achieve them
-
-8 Operation
-8.1 Operational planning and control
-
-9 Performance evaluation
-9.1 Monitoring, measurement, analysis and evaluation
-9.1.1 General
-9.1.2 Customer satisfaction
-9.1.3 Analysis and evaluation
-==========
--->
+**Document No.:** QMS-SOP-06
+**Title:** Quality Planning
+**Revision:** 1.0
+**Effective Date:** [Insert Date]
+**Approved by:** [Top Management]
 
 ---
 
-## **2. Scope**
-* Applies to both:
-  - **Project planning** for all organizational projects.  
-  - **Quality planning** at both the organization level (continuous improvement, audits) and project level (design and development).  
-* Applies to the planning, monitoring, and closure of projects and quality initiatives.  
-* The specific tools and platforms used to execute this SOP are defined in **Work Instructions (WIs)**.  
+### **1. Purpose**
+
+To define the process by which the organization plans its Quality Management System (QMS), including the management of risks, opportunities, quality objectives, and changes, in accordance with ISO 9001:2015 Clause 6.
 
 ---
 
-## **3. Responsibilities**
-* **Quality Manager / QMS Owner**: Maintains this SOP; reviews and approves all quality plans.  
-* **Project Managers**: Create project plans and ensure alignment with quality plans.  
-* **Compliance Officer**: Ensures GDPR and regulatory requirements are addressed.  
-* **All Team Members**: Follow approved plans, record evidence of execution.  
+### **2. Scope**
+
+This SOP applies to all planning activities related to the QMS, including risk and opportunity management, quality objective setting, and planned changes.
 
 ---
 
-## **4. Requirements**
+### **3. Responsibilities**
 
-### **4.1 Project Planning**
-- Each project shall have a **Project Plan** that defines:  
-  - Scope and deliverables.  
-  - Resources and responsibilities.  
-  - Schedule, phases, and milestones.  
-  - Risk management and reporting mechanisms.  
-- Projects must be monitored and controlled throughout their lifecycle.  
-- Tool-specific workflows (e.g., how to create issues, boards, or milestones) are defined in WIs.  
-
-### **4.2 Quality Planning (Org-Level)**
-- A documented **Quality Plan** shall define quality practices, resources, and activities relevant to organizational QMS objectives.  
-- Plans must cover:  
-  - Quality objectives (compliance, continuous improvement, risk).  
-  - Applicable standards/regulations.  
-  - Roles and responsibilities.  
-  - Quality assurance activities (reviews, audits, metrics).  
-  - Continuous improvement cycle (CAPA, ISO 9004, GDPR reviews).  
-
-### **4.3 Quality Planning (Project-Level)**
-- Each project shall include a **Quality Plan** (or reference the org-level plan) that ensures compliance with relevant standards.  
-- The plan must:  
-  - Describe or reference design and development activities.  
-  - Define responsibilities for implementation.  
-  - Identify interfaces with regulatory, privacy, and QA functions.  
-  - Include stages of design, reviews, verification/validation, and transfer.  
-  - Maintain traceability between inputs, outputs, verification, and validation.  
-
-### **4.4 Milestones**
-- Each major quality or project initiative shall be linked to a **Milestone**.  
-- Milestones must include:  
-  - Purpose, goals, and scope.  
-  - Associated issues, deliverables, or equivalent work items.  
-  - Links to relevant plans and documentation.  
-  - Acceptance criteria for closure.  
-  - Evidence and records for traceability.  
-- The method for creating and managing milestones is defined in WIs.  
-
-### **4.5 Documentation & Records**
-- All Project Plans, Quality Plans, and Milestone records shall be stored in the **controlled documentation system**.  
-- Evidence of execution (work items, design reviews, test results, audits) shall be retained as **quality records**.  
-- Records must be complete, legible, and retrievable for inspection.  
-- The tools and storage locations used are specified in WIs.  
+* **Top Management:** Approves quality objectives, ensures resources are available, and reviews planning outcomes.
+* **Quality Manager:** Maintains the risk & opportunity register, coordinates the setting and monitoring of quality objectives, ensures annual review of planning activities.
+* **Process Owners:** Identify risks and opportunities within their areas, propose and track quality objectives.
 
 ---
 
-## **5. Continuous Improvement**
-- All plans are subject to periodic review (at least annually for org-level, per-release for project-level).  
-- Findings from audits, CAPA, ISO 9004 self-assessments, and GDPR reviews shall feed into updates.  
-- Milestones must be reviewed after closure to confirm evidence completeness.  
+### **4. Definitions**
+
+* **Risk:** The effect of uncertainty that may impact conformity of products/services or customer satisfaction.
+* **Opportunity:** A favorable situation that may enhance performance, customer satisfaction, or efficiency.
+* **Quality Objectives:** Measurable goals consistent with the Quality Policy.
 
 ---
 
-## **6. Approval**
-- Project Plans require approval by the **Project Manager**.  
-- Quality Plans require approval by the **Quality Manager** (org-level) or **Project Manager + Quality Manager** (project-level).  
-- Milestones are closed when acceptance criteria are met and verified by the **Quality Manager**.  
+### **5. Procedure**
+
+5.1 **Risks and Opportunities**
+
+* Risks and opportunities shall be identified from:
+
+  * Context of the organization (Clause 4)
+  * Feedback from interested parties
+  * Audit results, process performance data, and management review inputs
+* Identified risks/opportunities shall be evaluated for significance and prioritized.
+* Actions shall be determined, implemented, and monitored for effectiveness.
+* Records shall be maintained in a structured register (see related WI).
+
+5.2 **Quality Objectives**
+
+* Quality objectives shall be:
+
+  * Consistent with the Quality Policy
+  * Measurable and monitored
+  * Communicated and updated as necessary
+* Progress toward objectives shall be reviewed during Management Review.
+
+5.3 **Planning Changes**
+
+* When significant changes to the QMS are required, the following shall be considered:
+
+  * Purpose of the change
+  * Potential consequences
+  * Resource requirements
+  * Responsibilities and authorities
+* Changes shall be documented and reviewed for effectiveness.
+
+---
+
+### **6. Records**
+
+* Risk & Opportunity Register
+* Quality Objectives Register
+* Change Records
+* Management Review Records
+
+---
+
+### **7. References**
+
+* ISO 9001:2015, Clause 6
+* QMS-SOP-05 Leadership
+
+---

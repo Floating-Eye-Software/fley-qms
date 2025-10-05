@@ -1,189 +1,146 @@
-# Quality Manual – Floating Eye Software (FLEY)
+# **Floating Eye Software (QMS v4) – Quality Manual**
+
+## 0. Introduction
+
+This Quality Manual defines the structure, scope, and operation of the Quality Management System (QMS) for **Floating Eye Software (FLEY)**.
+
+The QMS is aligned with **ISO 9001:2015**, including **Amendment 1:2024 (Climate Action)**, and incorporates:
+
+* **Process approach**
+* **Plan-Do-Check-Act (PDCA) cycle**
+* **Risk-based thinking**
+
+The QMS ensures that activities under its scope are **planned, implemented, monitored, and continually improved** to meet customer, regulatory, and ethical requirements.
 
 ---
 
-## Overview
+## 1. Organization Overview
 
-The Floating Eye Software Quality Management System (QMS) provides a structured pathway from **intended use** to **regulatory compliance**. Each project begins by identifying the **applicable standards and regulations** based on its feature set, labeling, and intended use (e.g., ISO 13485, IEC 62304, GDPR).
+FLEY is a **sole proprietorship**, founded in 2021 in Toronto, Canada.
+It develops ethical, privacy-first digital tools. Non-QMS activities (NetHack servers, blogs, unreleased product websites) are **outside the QMS**.
 
-For each standard, this wiki maintains a **compliance mapping page** linking regulatory clauses to required **quality activities**. These activities are implemented through:
+The **Red Witch** project is the first initiative formally managed under the QMS.
 
-* **Standard Operating Procedures (SOPs):** Define what must be done.
-* **Work Instructions (WIs):** Detail how tasks are executed in our tools.
-* **Records and Evidence:** Stored in controlled repositories, demonstrating compliance during audits and reviews.
-
-This creates a clear, auditable chain:
-
-**Regulations → SOPs → WIs → Execution → Evidence**
-
-For a visual overview of the QMS processes, their interactions, and inputs/outputs, see [[QMS Process Map]].
+For full organizational context, internal/external issues, interested parties, and monitoring procedures, see [[Context of the Organization]].
 
 ---
 
-## 1. Purpose and Scope
+## 2. QMS Scope
 
-The purpose of this Quality Manual is to define the FLEY QMS, its alignment to international standards, and its applicability to software projects.
+The QMS applies to all **Red Witch–related activities** impacting:
 
-The QMS applies to all FLEY activities impacting **product quality, safety, security, and regulatory compliance**.
+* Product safety, quality, and effectiveness
+* User privacy and data protection
+* Regulatory compliance
 
----
+**Boundaries:**
 
-## 2. Applicable Standards and Regulations
-
-The QMS integrates requirements from:
-
-* ISO 9001:2015 – Quality Management Systems
-* ISO 9004:2018 – Guidance for Sustained Success
-* ISO 13485:2016 – Medical Devices QMS
-* IEC 62304:2006+A1:2015 – Medical Device Software Lifecycle
-* ISO 14971:2019 – Risk Management for Medical Devices
-* 21 CFR 820 – FDA Quality System Regulation
-* GDPR – Data Protection
-* Ontario Digital Service Standard (ODF-DSS)
-
-Compliance pages in `/Compliance/` map clauses from these standards to **SOPs, WIs, and records**.
+* Excludes non-Red Witch FLEY activities (NetHack, blogs, etc.)
+* All ISO 9001 clauses apply, including climate considerations where relevant
 
 ---
 
-## 3. QMS Structure
+## 3. Purpose and Strategic Direction
 
-The QMS is organized into interconnected elements:
+**Purpose:** Enable women to manage uterine health with **privacy, safety, and effectiveness**.
 
-1. **Compliance** – External regulations and standards.
-2. **QMS Governance** – Internal system management.
-3. **SOPs** – Define required activities.
-4. **Work Instructions (WIs)** – Step-by-step guidance.
-5. **Plans** – Project-specific tailoring of QMS practices.
-6. **Records** – Evidence of execution and compliance.
-7. **Templates** – Standardized document scaffolding.
+**Strategic Direction:** Build and maintain **free, ethical, privacy-first digital tools**, beginning with Red Witch, while preparing for regulatory alignment as the organization grows.
 
 ---
 
-## 4. Governance and Responsibilities
+## 4. QMS Workflows
 
-| Role                | Responsibilities                                                   |
-| ------------------- | ------------------------------------------------------------------ |
-| **Quality Manager** | Oversees QMS operation, ensures compliance, approves SOPs/WIs      |
-| **Project Manager** | Integrates QMS into projects, ensures team adherence               |
-| **Developers**      | Follow SOPs/WIs, maintain traceability and risk mitigation records |
-| **Privacy Officer** | Ensures GDPR compliance, monitors data protection activities       |
-| **Auditors**        | Conduct internal reviews and assessments, verify compliance        |
+FLEY’s QMS consists of three interrelated workflows:
 
----
+| Workflow                            | Description                                                 | Key SOP / WI                 | Example Outputs                                         |
+| ----------------------------------- | ----------------------------------------------------------- | ---------------------------- | ------------------------------------------------------- |
+| **QMS Creation**                    | Establishing and documenting the framework                  | [[Planning SOP]]             | SOPs, Quality Manual, initial audit                     |
+| **QMS Operation**                   | Maintaining, monitoring, auditing, and improving the system | [[GitHub QMS Operation WI]]  | Context updates, Risk Register, CAPA, Improvement logs  |
+| **Product Development (Red Witch)** | Designing, developing, and maintaining Red Witch            | [[Design & Development SOP]] | Design records, verification results, release artifacts |
 
-## 5. Process Approach and PDCA Cycle
-
-FLEY applies the **Process Approach** and **Plan–Do–Check–Act (PDCA)** cycle to ensure systematic, consistent, and continually improving quality management across all projects.
-
-For a **visual overview of QMS workflows and process interactions**, see [[QMS Process Map]].
-
-### 5.1 Plan
-
-* Define objectives, requirements, and resources.
-* Align SOPs, WIs, tools, infrastructure, and staffing with project needs.
-* Identify, assess, and mitigate risks per ISO 14971.
-* Include verification and validation strategies.
-
-**Evidence:** Project Quality Plans, risk registers, SOP assignments, documented quality objectives.
-
-### 5.2 Do
-
-* Execute software design, development, and verification per SOPs/WIs.
-* Follow controlled workflows (e.g., GitHub PRs, CI/CD pipelines).
-* Implement risk mitigations.
-* Maintain records in controlled repositories.
-
-**Evidence:** Work logs, version-controlled code, CI/CD test reports, design reviews, risk treatment records.
-
-### 5.3 Check
-
-* Monitor process outputs and software performance metrics.
-* Conduct internal audits and SOP/WI compliance reviews.
-* Collect feedback, bug reports, and stakeholder validation.
-* Analyze deviations, nonconformances, and CAPA effectiveness.
-
-**Evidence:** Audit reports, KPI dashboards, test results, feedback logs, CAPA records.
-
-### 5.4 Act
-
-* Implement corrective and preventive actions.
-* Update SOPs, WIs, and project plans based on lessons learned.
-* Incorporate process improvements into subsequent cycles.
-
-**Evidence:** Updated SOPs/WIs, CAPA records, improvement project documentation.
-
-### 5.5 Integration of the Process Approach
-
-FLEY links all QMS elements:
-
-1. **Planning** → Guides execution and compliance alignment.
-2. **Execution** → Produces records and measurable outputs.
-3. **Evaluation** → Identifies gaps or deviations.
-4. **Improvement** → Feeds back into planning, closing the loop.
-
-Refer to [[QMS Process Map]] for a visual representation of how processes interact and support continuous improvement.
+For a **high-level visual of workflows and interactions**, see [[QMS Process Map]].
 
 ---
 
-## 6. Core QMS Processes
+## 5. Process Approach, PDCA, and Risk-Based Thinking
 
-* **Document and Record Control:** Versioning, approval, retention via GitHub.
-* **Design and Development Control:** Requirements management, traceability, design reviews.
-* **Risk Management:** Continuous risk identification, mitigation, and review.
-* **Change Control:** GitHub PR workflows as controlled change logs.
-* **Verification and Validation:** CI/CD pipelines, stakeholder validation.
-* **Training and Competence:** Role-based onboarding, GDPR/security training.
-* **Audit and Improvement:** Internal audits, CAPA, self-assessments.
+* **Process Approach:** Enables planning and interaction of all QMS processes
+* **PDCA Cycle:**
 
-For process interactions and detailed workflow, see [[QMS Process Map and Interactions]].
-
----
-
-## 7. Planning SOP Integration
-
-The **Project & Quality Planning SOP** guides the “Plan” phase of PDCA. It defines **project plans, quality plans, milestones, risk management, and traceability**.
-
-### 7.1 Where the Planning SOP Fits in the PDCA Cycle
-
-| PDCA Phase | SOP / Process                  | Key Activities                                                                                                                                                     | Evidence / Records                                                                    |
-| ---------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
-| **Plan**   | Project & Quality Planning SOP | - Define project scope, resources, milestones, quality objectives<br>- Identify risks and mitigation<br>- Assign responsibilities<br>- Map regulatory requirements | Project Plans, Quality Plans, Risk Registers, SOP references, Milestone documentation |
-| **Do**     | Execution per WIs              | - Follow planned project steps<br>- Perform development, testing, and design reviews<br>- Implement risk mitigations                                               | Work items, CI/CD logs, test reports, traceability matrices                           |
-| **Check**  | Audits & Reviews               | - Review milestones, QA activities, and process adherence<br>- Track metrics and KPIs                                                                              | Audit reports, KPI dashboards, milestone completion records                           |
-| **Act**    | Continuous Improvement         | - Update SOPs/WIs based on lessons learned<br>- Implement CAPA<br>- Adjust project/quality plans for next cycle                                                    | CAPA records, updated plans, updated SOPs/WIs                                         |
+  * **Plan:** Define context, objectives, risks
+  * **Do:** Implement processes per SOPs and WIs
+  * **Check:** Monitor, audit, and analyze results
+  * **Act:** Apply improvements, corrective actions, and updates
+* **Risk-Based Thinking:** Identifies factors that could cause deviations, guiding preventive controls and opportunity capture
 
 ---
 
-## 8. Compliance Mapping and Traceability
+## 6. Roles and Responsibilities
 
-Each compliance page (e.g., `ISO-13485.md`, `IEC-62304.md`) links to:
+* **QMS Owner / Top Management:** Leadership, planning, audits, management review, continual improvement
+* **Contributor / Developer:** Implements procedures and maintains records
+* **Auditors (internal/external):** Conduct audits per Audit & CAPA SOP
 
-* Relevant **SOPs** (required activities)
-* **WIs** (execution steps)
-* **Records** (evidence storage)
-
-Project-level matrices maintain full traceability.
+Detailed roles are documented in [[Leadership SOP]].
 
 ---
 
-## 9. Continuous Improvement
+## 7. Risk and Opportunity Management
 
-The QMS is a **living system**. Improvement comes from:
+* Managed via a **GitHub-based Risk Register** covering:
 
-* Sprint retrospectives (incremental process feedback)
-* Internal audits (systematic review)
-* CAPA (Corrective and Preventive Actions)
-* ISO 9004 self-assessments and GDPR compliance checks
+  * Product risks (safety, privacy, reliability)
+  * QMS risks (resource, documentation, climate)
+  * Improvement opportunities (automation, maturity growth)
+* Reviewed during **Management Review**
+* Mitigation and improvement actions documented in [[Planning SOP]] and [[Continuous Improvement Plan]]
 
-Findings lead to updates in SOPs, WIs, and plans to mature the QMS over time. Refer to [[QMS Process Map]] to understand how these improvements propagate across processes.
+---
+
+## 8. Documentation Structure
+
+| Level       | Description      | Examples                                               |
+| ----------- | ---------------- | ------------------------------------------------------ |
+| **Level 1** | Quality Manual   | This document                                          |
+| **Level 2** | SOPs             | Leadership SOP, Planning SOP, Design & Development SOP |
+| **Level 3** | WIs / Records    | GitHub QMS Operation WI, Project boards                |
+| **Level 4** | Forms / Evidence | Risk Register, Audit logs, Meeting minutes             |
+
+All documents are controlled per [[Document Control SOP]].
+
+---
+
+## 9. Management Review and Continual Improvement
+
+* Conducted annually or following major releases
+* Inputs: Context updates, audit results, KPI performance, user feedback, risk changes, climate considerations
+* Outputs: Action plans, improvement projects, resource adjustments
+* Logged in [[Continuous Improvement Plan]] and [[GitHub QMS Operation WI]]
 
 ---
 
 ## 10. References
 
-* `/Compliance/` – External standard mappings
-* `/SOPs/` – System-level operating procedures
-* `/WIs/` – Implementation guidance
-* `/Plans/` – Project-specific tailoring
-* `/Records/` – Evidence of compliance
-* `/QMS/QMS-Process-Map.md` – Process map and interaction matrix
+* ISO 9001:2015 + Amendment 1:2024 (Climate Action)
+* ISO 9000:2015 – Fundamentals & Vocabulary
+* GDPR (2016/679) – Privacy reference
+* Internal QMS SOPs, Work Instructions, and Records
+
+---
+
+## 11. Revision and Control
+
+* This manual is **controlled** and maintained in the QMS repository
+* Revisions are approved by the QMS Owner and tracked in the Document Control Register
+
+---
+
+### **Appendix A — Workflow Links & Kanban Boards (Placeholders)**
+
+| Workflow                        | Reference / Link             | Notes                                   |
+| ------------------------------- | ---------------------------- | --------------------------------------- |
+| QMS Creation                    | [[Planning SOP]]             | Placeholder for QMS Creation Board      |
+| QMS Operation                   | [[GitHub QMS Operation WI]]  | Placeholder for QMS Operation Board     |
+| Product Development (Red Witch) | [[Design & Development SOP]] | Placeholder for Red Witch Project Board |
+
+---
