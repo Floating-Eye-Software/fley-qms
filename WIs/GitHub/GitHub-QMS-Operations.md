@@ -1,117 +1,233 @@
-# **Work Instruction: Managing Context, Risks, and Objectives using GitHub Issues**
+# **Work Instruction: QMS Operations in GitHub**
 
-**Document No.:** QMS-WI-06-01
-**Title:** Using GitHub for QMS Planning & Monitoring
+**Document No.:** WI-QMS-09-01
+**Title:** QMS Operations in GitHub
 **Revision:** 1.0
 **Effective Date:** [Insert Date]
-**Approved by:** [Quality Manager]
+**Approved by:** [Top Management]
 
 ---
 
-### **1. Purpose**
+## **1. Purpose**
 
-To define the steps for using GitHub Issues and Project Boards to record, track, and monitor:
-
-* Context of the organization (issues and interested parties)
-* Risks and opportunities
-* Quality objectives
-* QMS-related changes
+To define how the organization operates its Quality Management System (QMS) within **GitHub**, ensuring leadership, planning, risk management, objectives, and continuous improvement are effectively implemented and traceable in compliance with **ISO 9001:2015 Clauses 4–10**.
 
 ---
 
-### **2. Scope**
+## **2. Scope**
 
-This WI applies to all QMS users responsible for entering, monitoring, and reviewing QMS-related items in GitHub.
+This WI applies to all QMS activities conducted in GitHub, including:
 
----
+* Leadership and management review
+* Quality planning and objective management
+* Risk and opportunity management
+* Change control and continual improvement
+* Documentation and records management
 
-### **3. Responsibilities**
+It supports implementation of:
 
-* **Quality Manager:** Maintains GitHub repositories and ensures accuracy of records.
-* **Process Owners:** Create and update GitHub issues for risks, opportunities, objectives, or context items within their scope.
-* **Top Management:** Reviews GitHub dashboards during management review.
-
----
-
-### **4. Definitions**
-
-* **GitHub Issue:** A record used to capture a risk, opportunity, objective, or context element.
-* **GitHub Project Board:** A kanban-style board for monitoring status of issues (e.g., “Open,” “In Progress,” “Closed”).
-* **Labels:** Tags applied to issues (e.g., “Risk,” “Opportunity,” “Objective,” “Context”).
+* **QMS-SOP-05 – Leadership**
+* **QMS-SOP-06 – Planning**
+* **QMS-SOP-08 – Risk & Opportunity Management**
+* **QMS-SOP-04 – Change Control**
+* **QMS-SOP-03 – Documented Information Control**
 
 ---
 
-### **5. Procedure**
+## **3. Responsibilities**
 
-#### 5.1 Creating a Context Item
-
-1. Navigate to the repository **QMS-Context** (or designated repo).
-2. Select **New Issue**.
-3. Title: Use a short description of the internal/external issue or interested party (e.g., “Supplier Reliability – External Issue”).
-4. Add **label**: `Context`.
-5. In the description, record:
-
-   * Type (Internal/External/Interested Party)
-   * Description of issue/requirement
-   * Potential impact on QMS
-6. Save issue.
+| Role                                    | Responsibilities                                                                                                                         |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Top Management**                      | Demonstrates leadership and commitment to the QMS, approves objectives, reviews QMS performance, and provides resources.                 |
+| **Quality Manager / QMS Administrator** | Maintains repositories, Projects, and records in GitHub; coordinates Management Review; monitors risk and objectives.                    |
+| **Process Owners**                      | Create and maintain Issues and Projects related to their processes; manage risks, opportunities, and objectives.                         |
+| **All Employees**                       | Follow GitHub-based procedures, update Issues and Projects relevant to their responsibilities, and participate in continual improvement. |
 
 ---
 
-#### 5.2 Creating a Risk or Opportunity
+## **4. GitHub Structure for the QMS**
 
-1. Navigate to the repository **QMS-Risks**.
-2. Select **New Issue**.
-3. Title: Use a concise risk/opportunity description (e.g., “Risk: Supplier Lead Times” or “Opportunity: New Training Program”).
-4. Add **label**: `Risk` or `Opportunity`.
-5. In the description, record:
-
-   * Related context item(s) (link issue numbers)
-   * Potential effect on product/service conformity or customer satisfaction
-   * Risk rating (likelihood x impact)
-   * Planned actions / mitigation measures
-6. Assign responsible person.
-7. Save issue and add to the **Risk & Opportunity Project Board**.
-
----
-
-#### 5.3 Creating a Quality Objective
-
-1. Navigate to the repository **QMS-Objectives**.
-2. Select **New Issue**.
-3. Title: Use SMART format (e.g., “Objective: Reduce Customer Complaints by 20% in 12 Months”).
-4. Add **label**: `Objective`.
-5. In the description, record:
-
-   * Alignment with Quality Policy
-   * Target and timeframe
-   * Responsible process owner
-   * Method of measurement (KPI, survey, audit, etc.)
-6. Save issue and add to the **Objectives Project Board**.
+| GitHub Area                          | Function in the QMS                                                                                                |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Repository (`QMS` or equivalent)** | Central home for all controlled QMS documentation (SOPs, WIs, templates, records).                                 |
+| **Wiki**                             | User-facing documentation: SOPs, WIs, policies, reference materials.                                               |
+| **Issues**                           | Records for risks, opportunities, nonconformities, corrective actions, improvements, and management review inputs. |
+| **Pull Requests**                    | Formal mechanism for approving document or process changes (supports Change Control SOP).                          |
+| **Projects**                         | Boards for tracking QMS objectives, risk actions, improvement projects, and management review tasks.               |
+| **Discussions**                      | Collaborative communication and brainstorming (optional).                                                          |
+| **Actions (CI/CD)**                  | Automation (e.g., backups, notifications, record archiving).                                                       |
+| **Security**                         | Access control and audit of contributor permissions.                                                               |
+| **Insights**                         | Analytics and history of participation, commits, and repository metrics.                                           |
+| **Settings**                         | Configuration of branches, permissions, and repository policies.                                                   |
 
 ---
 
-#### 5.4 Monitoring & Updating
+## **5. Procedure**
 
-* All items shall be reviewed **at least annually** and during **Management Review**.
-* Use **Project Board columns** (e.g., “Open,” “In Progress,” “Completed/Closed”) to monitor progress.
-* Close issues when actions are complete or objectives achieved.
-* Document results and effectiveness in the issue comments.
+### **5.1 Leadership and QMS Governance**
+
+1. **Quality Policy**
+
+   * Stored in the Wiki under `/Quality-Policy`.
+   * Reviewed annually via a GitHub Issue labeled `Management Review`.
+
+2. **Roles & Responsibilities**
+
+   * Documented in `/docs/OrganizationChart.md`.
+   * Updated via Pull Request; approved by Top Management.
+
+3. **Management Review**
+
+   * Initiated as a GitHub Issue with label `Management Review`.
+   * Links to:
+
+     * Risk Register Project
+     * Objectives Project
+     * Audit results (Issues labeled `Audit`)
+     * Feedback and customer satisfaction data
+   * Minutes are captured in the Issue body or attached as a PDF.
+   * On completion, the Issue is closed and archived under `/records/management-reviews/`.
 
 ---
 
-### **6. Records in GitHub**
+### **5.2 Quality Planning and Objectives**
 
-* **Context Repository / Issues**
-* **Risk & Opportunity Repository / Issues**
-* **Objectives Repository / Issues**
-* **Project Boards** (for monitoring status)
+1. **Setting Objectives**
+
+   * Each **Quality Objective** is created as a **GitHub Issue** labeled `Objective`.
+   * The Issue includes:
+
+     * Objective title and description
+     * Metric / target value
+     * Responsible owner
+     * Due date and milestones
+     * Links to related processes or SOPs
+
+2. **Tracking Objectives**
+
+   * Objectives are tracked using a **Project Board** named **“QMS Objectives”**, with columns:
+
+     * Planned
+     * In Progress
+     * Achieved
+     * Reviewed
+   * Each Objective Issue is moved across columns as progress is made.
+
+3. **Review**
+
+   * Reviewed quarterly or during Management Review.
+   * Objective effectiveness is noted in the corresponding Issue comments.
 
 ---
 
-### **7. References**
+### **5.3 Risk and Opportunity Management**
 
-* QMS-SOP-05 Leadership
-* QMS-SOP-06 Planning
+1. **Creating Risks or Opportunities**
+
+   * Each identified risk or opportunity is a **GitHub Issue** labeled `Risk` or `Opportunity`.
+   * Include:
+
+     * Description
+     * Source (e.g., audit, feedback, process change)
+     * Likelihood (Low / Medium / High)
+     * Impact (Low / Medium / High)
+     * Mitigation or enhancement plan
+     * Owner and due date
+
+2. **Tracking**
+
+   * Risks and opportunities are maintained on a **Project Board** titled **“QMS Risk Register”**, with columns:
+
+     * Identified
+     * Action Planned
+     * Mitigation in Progress
+     * Closed / Controlled
+
+3. **Actions**
+
+   * Mitigation or improvement actions are tracked as linked Issues (labeled `Action` or `CAPA`).
+   * Progress and closure are recorded in comments.
+
+4. **Review**
+
+   * Quality Manager reviews open risks quarterly.
+   * Major items are included in the next Management Review.
+
+5. **Records**
+
+   * Closed risk Issues are retained indefinitely as QMS records.
+   * Optionally exported quarterly to `/records/risk-register/YYYY-MM/`.
 
 ---
+
+### **5.4 Change Control and Continual Improvement**
+
+1. **Initiating a Change**
+
+   * Changes to processes, documentation, or the QMS are made through **Pull Requests**.
+   * Each PR must:
+
+     * Reference the related Change Control Issue (label `Change Request`).
+     * Describe the change and justification.
+     * Be reviewed and approved by the Quality Manager and Process Owner.
+
+2. **Approval**
+
+   * Approval is documented through GitHub’s PR review system (electronic signature).
+   * Merge = authorized implementation.
+
+3. **Post-Implementation Review**
+
+   * Linked Change Request Issue is updated with the implementation result and closed.
+
+4. **Continual Improvement**
+
+   * Improvements, suggestions, and CAPAs are logged as Issues labeled `Improvement`.
+   * Reviewed and prioritized in the **QMS Improvement Project Board**.
+
+---
+
+### **5.5 Document Control and Record Retention**
+
+* Follows the **Documented Information Control SOP (QMS-SOP-03)**.
+* All controlled documents are stored in `/docs` or the Wiki.
+* Obsolete revisions are archived automatically by Git version control.
+* Records (closed Issues, PRs, and exports) are backed up regularly.
+
+---
+
+## **6. Backup and Record Export**
+
+1. Use a GitHub Action or external tool to:
+
+   * Export all open and closed Issues (including comments and attachments) quarterly.
+   * Save under `/records/github-exports/YYYY-MM/`.
+2. The export serves as the **official QMS record backup**.
+3. For redundancy, repositories should also be cloned to an offline backup location.
+
+---
+
+## **7. References**
+
+* ISO 9001:2015 – Clauses 4, 5, 6, 8, 9, 10
+* QMS-SOP-03 – Documented Information Control
+* QMS-SOP-05 – Leadership
+* QMS-SOP-06 – Planning
+* QMS-SOP-08 – Risk & Opportunity Management
+* QMS-SOP-04 – Change Control
+
+---
+
+## **8. Revision History**
+
+| Revision | Date   | Description of Change                                                                      | Approved By |
+| -------- | ------ | ------------------------------------------------------------------------------------------ | ----------- |
+| 1.0      | [Date] | Initial release – implements Leadership, Planning, and Risk-based QMS operations in GitHub | [Name]      |
+
+---
+
+## 💡 **Implementation Notes**
+
+* GitHub repositories and Projects act as **living QMS records**, fully traceable through commits, Issues, and pull request history.
+* This WI provides a complete implementation framework for ISO 9001 risk-based thinking, leadership accountability, and continual improvement — entirely within GitHub.
+* If your organization later uses other tools (e.g., Confluence, Jira), this WI can reference external procedures while keeping GitHub as the master control system.
