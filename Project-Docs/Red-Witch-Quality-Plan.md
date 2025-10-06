@@ -124,6 +124,26 @@
 
 ---
 
+## 15. Regulatory Compliance
+
+* ISO 13485 (Medical devices – quality management systems)
+* IEC 62304 (Medical device software lifecycle)
+* IEC 27001 (Information security management)
+* GDPR (EU General Data Protection Regulation)
+* HIPAA (Health Insurance Portability and Accountability Act)
+* EU MDR (Medical Device Regulation)
+
+---
+
+## 16. International Standards
+
+* IEC 82304-1:2016 – Health Software, Product Safety
+* ISO/TS 82304-2:2021 – Health and Wellness Apps, Quality & Reliability
+* ISO/IEC 27001:2013 – Information Security Management Systems
+* ISO/IEC 27701:2019 – Privacy Information Management
+
+---
+
 ## PQP Matrix – Red Witch Project
 
 | #  | Quality Element                  | SOP Category         | Work Instruction(s)           | Evidence / Toolchain Notes                               |

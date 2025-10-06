@@ -1,123 +1,77 @@
-# **SOP – Change & Version Control (FLEY)**
+**SOP: Change Control**
+**Document Number:** [To be assigned]
+**Effective Date:** [To be assigned]
+**Revision:** [To be assigned]
 
-**SOP Number:** SOP-DOC-002
-**Title:** Change & Version Control
-**Effective Date:** ____
-**Owner:** Quality Manager
-**Review Cycle:** Annual
+### 1. Purpose
 
----
+To ensure that changes to the Quality Management System (QMS), processes, products, services, or documented information are planned, reviewed, approved, and controlled to prevent adverse impacts on conformity with requirements.
 
-## **1. Purpose**
+### 2. Scope
 
-This SOP defines the policies and responsibilities for managing changes and version control of:
+This SOP applies to all changes affecting the QMS, including organizational processes, product or service design, production, service provision, and related documented information.
 
-* Controlled documents (SOPs, WIs, Plans, Templates, Project Documentation)
-* Records (approved plans, test reports, validation evidence, CI/CD logs)
-* Software source code (Red Witch project repository)
+### 3. Responsibilities
 
-It ensures that all changes are:
+* **Process Owners:** Initiate, review, and implement changes in their areas, ensuring proper authorization and documentation.
+* **Change Control Coordinator (or equivalent):** Track changes, maintain records, and ensure compliance with this SOP.
+* **Management:** Approve significant changes and allocate resources as needed.
+* **All Employees:** Comply with approved changes and report unintended changes.
 
-* Reviewed and approved before implementation
-* Traceable to requirements, milestones, or issues
-* Preserved as an immutable record when finalized
+### 4. Definitions
 
-This SOP ensures compliance with:
+* **Change:** Any modification to the QMS, processes, products, services, or documented information.
+* **Planned Change:** A change identified and reviewed before implementation.
+* **Unintended Change:** A change that occurs without prior planning; requires review and corrective action.
 
-* 21 CFR 820.40 – Document Controls
-* 21 CFR 820.30(j) – Design History File
-* ISO 13485:2016 Clauses 4.2.3, 4.2.4, 7.3.10
+### 5. Procedure
 
-<!--
-Compliance
-==========
-Change Control SOP
-ISO 9001 6.3, 8.1, 7.5
-Change Requests, Impact Assessments, Approval Records, Updated Procedures, Revision Logs
-==========
-6 Planning
-6.3 Planning of changes
+#### 5.1 Planning of Changes
 
-8 Operation
-8.1 Operational planning and control
+All changes shall be planned, considering:
 
-7 Support
-7.5 Documented information
-7.5.1 General
-7.5.2 Creating and updating
-7.5.3 Control of documented information
-==========
--->
+1. Purpose and intended outcome of the change.
+2. Potential consequences, including risks to conformity or QMS integrity.
+3. Availability of resources for implementation.
+4. Allocation or reallocation of responsibilities and authorities.
 
----
+#### 5.2 Review and Approval
 
-## **2. Scope**
+Prior to implementation, all changes shall be:
 
-Applies to all FLEY employees, contractors, and collaborators making changes to controlled documents, records, or source code in the Red Witch project.
+1. **Reviewed** for potential impact on product/service conformity and QMS effectiveness.
+2. **Approved** by the responsible authority to ensure suitability and adequacy.
 
----
+#### 5.3 Implementation
 
-## **3. Responsibilities**
+* Changes shall be implemented in a controlled manner according to the approved plan.
+* Documented information affected by the change shall be updated and controlled as per the Document Control SOP.
 
-| Role                            | Responsibility                                                                                       |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Quality Manager / QMS Owner** | Approve changes to controlled documents; ensure versioning and change control compliance.            |
-| **Project Manager**             | Ensure project-level changes follow SOP; confirm traceability to requirements/milestones.            |
-| **Developers / Team Members**   | Submit changes via PRs or document revisions; link changes to issues, plans, or design inputs.       |
-| **Reviewer(s)**                 | Review, approve, or reject changes; ensure compliance with SOPs, coding standards, and traceability. |
+#### 5.4 Documentation and Records
 
----
+Documented information shall be retained for all changes, including:
 
-## **4. Definitions**
+1. Description of the change.
+2. Results of the review (impact assessment).
+3. Authorization of the change.
+4. Actions taken to prevent adverse impacts.
 
-* **Change Control:** Process to propose, review, approve, and implement changes.
-* **Revision / Version:** Sequential identifier for a document or software release (e.g., 0.1 → 1.0 → 1.1).
-* **Controlled Document:** Living document defining procedures, requirements, or specifications.
-* **Record:** Evidence that an action has been completed; immutable once approved.
-* **Pull Request (PR):** GitHub mechanism for proposing code changes subject to review and approval.
+#### 5.5 Control of Unintended Changes
+
+* Any unintended change shall be promptly reviewed.
+* Actions shall be taken to mitigate adverse effects, and corrective measures implemented as necessary.
+* Documentation of the review, decisions, and corrective actions shall be retained.
+
+### 6. References
+
+* ISO 9001:2015, Clauses 6.3, 7.5.2, 8.1, 8.3.6, 8.5.6
+* SOP – Documented Information Control
+* Related Work Instructions (WIs) for tool-specific change implementation
+
+### 7. Revision History
+
+| Revision | Date   | Description of Change | Approved By |
+| -------- | ------ | --------------------- | ----------- |
+| 0        | [Date] | Initial Release       | [Name]      |
 
 ---
-
-## **5. Change & Version Control Policy**
-
-1. **All changes to controlled documents or code must follow this SOP.**
-2. **Documents:**
-
-   * Revision number updated with each change.
-   * GitHub wiki tracks version history; major revisions labeled in the Revision History table.
-3. **Records:**
-
-   * Once finalized/approved, records are immutable.
-   * New records created for subsequent updates (e.g., Quality Plan v1.1).
-4. **Source Code:**
-
-   * Changes implemented via feature/bugfix branches, merged only after PR approval.
-   * Commit messages must reference GitHub issues, requirements, or design inputs.
-5. **Traceability:**
-
-   * Each change must link to an issue, milestone, or plan.
-   * Evidence (CI/CD test reports, approval records) retained in `/Records/`.
-
----
-
-## **6. Versioning Rules**
-
-* **Documents:** Major revisions (1.0, 2.0), minor revisions (1.1, 1.2)
-* **Records:** Use version + approval date in filename (e.g., `PLAN-QMS-001_v1.0_2025-09-30`)
-* **Software:** Semantic versioning (MAJOR.MINOR.PATCH), tied to milestones/releases
-
----
-
-## **7. Approval & Review**
-
-* Controlled documents or source code changes require review/approval prior to implementation.
-* PR approval or documented review in the wiki serves as the official record of approval.
-* High-risk or regulatory-impact changes may require additional sign-off by the Quality Manager.
-
----
-
-## **8. Recordkeeping**
-
-* GitHub PRs, commit history, CI/CD test results → source code records
-* Wiki version history → document change records
-* `/Records/` folder → immutable evidence (approved plans, reports, test results)
