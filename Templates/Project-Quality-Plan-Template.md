@@ -4,11 +4,38 @@
 **Date:** [YYYY-MM-DD]
 **Version:** [X.X]
 
-> The PQP defines how this project implements the FLEY QMS, integrating **design control (QMS-SOP-09)**, **risk management (QMS-SOP-08 & 06)**, and **project planning (QMS-SOP-07)**.
+> The PQP defines how this project implements the Floating Eye Software (FLEY) Quality Management System (QMS).
+> It specifies which **standards**, **SOPs**, **Work Instructions (WIs)**, and **tools** are applied to meet quality, regulatory, and operational requirements.
+>
+> This configuration ensures each project executes all required QMS activities while allowing flexibility in tools and frameworks.
 
 ---
 
-## 1. Governance & Quality Planning
+## **1. QMS Activity Configuration (Project-Specific)**
+
+Each project shall define its **QMS configuration**, identifying which **Work Instructions (WIs)** and **tools** implement each SOP.
+All QMS activities are **mandatory**, even if achieved using different frameworks or infrastructures.
+
+| SOP / QMS Activity                           | Selected Work Instruction / Method                                                                                          | Tool / Platform (if applicable) | Notes / Comments                                                            |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------- |
+| **QMS-SOP-02 Change Control**                | `WIs/GitHub/GitHub-Change-Control.md`                                                                                       | GitHub (PR workflow)            | All change requests handled via pull requests; approvals tracked in GitHub. |
+| **QMS-SOP-05 Document Control**              | `WIs/GitHub/GitHub-Document-Control.md`, `WIs/GitHub/GitHub-Version-Control.md`                                             | GitHub (repositories)           | Markdown docs under version control; approvals via PRs.                     |
+| **QMS-SOP-06 Quality Planning**              | `WIs/FLEY/04 Quality_Plan_002.md`                                                                                           | PQP in GitHub Wiki              | Defines objectives, risk linkage, and review cadence.                       |
+| **QMS-SOP-07 Project Management**            | `WIs/GitHub/GitHub-Project-Management.md`                                                                                   | GitHub Projects                 | Milestones, issues, and boards for tracking.                                |
+| **QMS-SOP-08 Risk & Opportunity Management** | FLEY Risk Framework (current) → *upgrade planned to ISO 14971*                                                              | GitHub Issues / Risk Register   | Each risk tracked as Issue; migration planned to ISO 14971 structure.       |
+| **QMS-SOP-09 Design & Development Control**  | `WIs/Ontario-Design-Framework/Ontario-Service-Design-WI.md` *(primary)* + `WIs/FLEY/FLEY-Design-Control-WI.md` *(parallel)* | GitHub Wiki / Repo              | Ontario framework for design flow; FLEY WI ensures regulated traceability.  |
+| **QMS-SOP-10 Continuous Improvement**        | *(To be determined; likely FLEY CI WI or GitHub retrospective process)*                                                     | GitHub Discussions / Confluence | Lessons learned and improvement tracking.                                   |
+
+**Configuration Rules**
+
+* All SOPs remain in effect; WIs/tools define *how* compliance is achieved.
+* Configuration must be approved by the **Project Manager** and **Quality Representative** before project kickoff.
+* Any configuration change must follow **Change Control SOP (QMS-SOP-02)**.
+* Standards and frameworks applied (e.g., ISO 9001, ISO 13485, ISO 14971) depend on the **intended use** and regulatory classification of the product/service.
+
+---
+
+## **2. Governance & Quality Planning**
 
 * *[Project objectives and success criteria]*
 * *[Roles & responsibilities]*
@@ -17,15 +44,16 @@
 
 ---
 
-## 2. Document & Record Control
+## **3. Document & Record Control**
 
 * *[Storage location for project documentation/artifacts]*
 * *[Version control method]*
-* *[Retention period per regulatory/QMS SOPs]*
+* *[Retention period per QMS/regulatory requirements]*
+* Controlled per **QMS-SOP-05** using the methods defined in Section 1.
 
 ---
 
-## 3. Training & Competence
+## **4. Training & Competence**
 
 * *[Confirm team qualifications]*
 * *[Record special training]*
@@ -33,83 +61,88 @@
 
 ---
 
-## 4. Risk Management
+## **5. Risk Management**
 
-* *[Identify and track project risks in Risk Register]*
-* *[Apply ISO 14971 (medical) or QMS-SOP-08 framework]*
+* *[Identify and track project risks]*
+* *[Framework: FLEY Risk Management → ISO 14971 (if applicable)]*
 * *[Define risk review cadence tied to milestones]*
+* *[Maintain traceability to design and verification activities]*
 
 ---
 
-## 5. Design & Development Control
+## **6. Design & Development Control**
 
 * *[Requirements capture method (user stories, specs, etc.)]*
-* *[Design planning per QMS-SOP-09: phases, milestones, stage gates]*
-* *[Traceability: Requirements → Design → Verification/Validation]*
+* *[Design planning per QMS-SOP-09]*
+* *[Traceability: Requirements → Design → V&V]*
 * *[Document design reviews and key decisions]*
-* **Design Control Plan (DCP) Reference:** *[Link or attach DCP/WI]*
+
+**Design Control Plan (DCP) Reference:** *[Link or attach DCP/WI]*
 
 ---
 
-## 6. Change & Configuration Management
+## **7. Change & Configuration Management**
 
 * *[Tool(s) for version/configuration management]*
-* *[Change workflow (pull requests, change requests, approvals)]*
+* *[Change workflow (PRs, change requests, approvals)]*
 * *[Impact analysis prior to approval]*
+* Controlled per **QMS-SOP-02** and selected GitHub WIs.
 
 ---
 
-## 7. Supplier & External Resource Management
+## **8. Supplier & External Resource Management**
 
-* *[List of suppliers/vendors]*
+* *[List suppliers/vendors]*
 * *[Qualification/approval method]*
 * *[Monitoring and acceptance criteria]*
 
 ---
 
-## 8. Production, Release & Deployment
+## **9. Production, Release & Deployment**
 
 * *[Release acceptance criteria]*
 * *[Deployment/release process]*
-* *[Sign-off authority]*
-* *[Post-release monitoring]*
+* *[Sign-off authority and post-release monitoring]*
 
 ---
 
-## 9. Verification, Validation & Testing
+## **10. Verification, Validation & Testing**
 
-* *[Define acceptance criteria and testing approach]*
-* *[Document testing results, verification/validation evidence]*
+* *[Acceptance criteria and testing approach]*
+* *[Testing results, verification/validation evidence]*
+* *[Link to DCP verification plan]*
 
 ---
 
-## 10. Nonconformance & CAPA
+## **11. Nonconformance & CAPA**
 
-* *[Defect/deviation tracking method]*
+* *[Defect/deviation tracking]*
 * *[Escalation path]*
 * *[CAPA process and evidence]*
 
 ---
 
-## 11. Audit & Continuous Improvement
+## **12. Audit & Continuous Improvement**
 
 * *[Lessons learned and retrospectives]*
 * *[Internal audit applicability, schedule, improvement tracking]*
+* *[Metrics or KPIs monitored]*
 
 ---
 
-## 12. Customer & Stakeholder Feedback
+## **13. Customer & Stakeholder Feedback**
 
-* *[Methods for collecting feedback]*
-* *[Integration into CAPA / continuous improvement]*
+* *[Feedback methods]*
+* *[Integration into CAPA / improvement actions]*
 
 ---
 
-## 13. Infrastructure, Security & Work Environment
+## **14. Infrastructure, Security & Work Environment**
 
-* *[Project environment setup (dev/test/prod)]*
+* *[Environment setup (dev/test/prod)]*
 * *[Access control and data security measures]*
-* *[Privacy, accessibility compliance]*
+* *[Privacy and accessibility compliance]*
+* *[Reference WI/NIST/Information-Security.md if applicable]*
 
 ---
 
@@ -120,3 +153,12 @@
 | Project Manager / Owner |           |      |
 | Quality Representative  |           |      |
 | Sponsor / Client        |           |      |
+
+---
+
+### 💡 *Implementation Notes*
+
+* The **QMS Activity Configuration** (Section 1) defines this project’s operational QMS profile.
+* All SOPs apply; WIs/tools specify execution details.
+* Any deviation requires a formal **Change Request**.
+* The **Design Control Plan (DCP)** must reference this PQP to stay aligned with the approved configuration.
