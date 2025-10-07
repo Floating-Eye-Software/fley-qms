@@ -1,137 +1,205 @@
-# **Standard Operating Procedure: Design and Development Control**
+# 🧩 **QMS-SOP-09 — Design and Development Control**
 
-**Document Number:** SOP-DC-001
-**Revision:** 1.1
+**Document No.:** QMS-SOP-09
+**Title:** Design and Development Control
+**Revision:** 2.0
 **Effective Date:** [Insert Date]
-**Approved by:** [Top Management]
+**Approved By:** [Top Management]
 
 ---
 
 ## **1. Purpose**
 
-To establish a standardized process for the planning, execution, review, verification, validation, and control of design and development activities in a manner compliant with ISO 9001:2015 (Clause 8.3), ensuring that all design outputs meet requirements and are auditable under the Quality Management System (QMS).
+To define the process for controlling the design and development of products, software, or systems to ensure that outputs meet input requirements and applicable regulatory, safety, and quality standards.
+
+This SOP satisfies the design control requirements of **ISO 9001:2015 Clause 8.3**, and provides a foundation for compliance with **ISO 13485:2016 Clause 7.3** and **IEC 62304** where applicable.
 
 ---
 
 ## **2. Scope**
 
-This SOP applies to all products, services, and processes developed within the organization, including:
+This procedure applies to all design and development projects undertaken by the organization, including:
 
-* New product or service development
-* Modifications to existing products or services
-* Pilot or research development projects
+* New product, system, or software development.
+* Major enhancements or redesigns of existing products.
+* Design verification and validation activities.
+* Design transfer to production or release.
 
-The SOP is framework-agnostic and may be implemented via the organizational default SDLC, the Ontario SDLC, or any other approved design framework, provided all SOP requirements are satisfied.
+Projects may follow a specific framework implemented through a **Design Control Work Instruction (WI)** — e.g.:
+
+* **WI-QMS-09-01** – Standard Software Development Lifecycle (SDLC).
+* **WI-QMS-09-02** – Ontario Design Framework.
+* **WI-QMS-09-03** – Agile / Incremental Design Model.
 
 ---
 
 ## **3. References**
 
-* ISO 9001:2015, Clause 8.3 – Design and Development of Products and Services
-* QMS-SOP-07 – Project Management
-* QMS-SOP-06 – Planning
-* QMS-SOP-05 – Leadership
-* QMS-SOP-02 – Change Control
-* WI-DC-001 – Default SDLC Design Deliverables
-* WI-DC-002 – Alternative SDLC Design Deliverables (e.g., Ontario SDLC)
+* ISO 9001:2015, Clauses 4–10
+* ISO 13485:2016, Clause 7.3
+* IEC 62304:2006/Amd1:2015
+* QMS-SOP-06 — Quality Planning
+* QMS-SOP-07 — Project Management
+* QMS-SOP-08 — Risk and Opportunity Management
+* **Template:** *Design Control Plan (DCP)*
+* **Template:** *Project Quality Plan (PQP)*
 
 ---
 
-## **4. Definitions**
+## **4. Responsibilities**
 
-* **Design Input:** Requirements, specifications, constraints, and regulatory considerations that define the product or service.
-* **Design Output:** Documented results of the design process, including drawings, specifications, procedures, and acceptance criteria.
-* **Design Review:** Formal evaluation of design work at defined stages to ensure inputs are met and risks are addressed.
-* **Design Verification:** Confirmation that design outputs meet design input requirements.
-* **Design Validation:** Confirmation that the product or service meets user needs and intended use.
-* **Design Change:** Any modification to design inputs, outputs, or procedures requiring review and approval.
-
----
-
-## **5. Responsibilities**
-
-| Role                       | Responsibilities                                                                                                                                                                                      |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Design Owner**           | Leads design activities, ensures compliance with SOP, oversees deliverables, coordinates reviews, and approves outputs. For projects under QMS-SOP-07, the Project Manager may serve as Design Owner. |
-| **Quality Assurance (QA)** | Verifies that design control activities comply with the SOP and maintains oversight of records, reviews, and approvals.                                                                               |
-| **Management**             | Provides resources, approves design outputs at key stages, and ensures alignment with organizational objectives.                                                                                      |
+| Role                              | Responsibilities                                                                                                                        |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project Manager / Design Lead** | Develop and maintain the **Design Control Plan**; coordinate design reviews; ensure deliverables meet plan and regulatory requirements. |
+| **Design & Development Team**     | Execute design tasks; maintain records and traceability of inputs, outputs, verification, and validation.                               |
+| **Quality Manager**               | Verify compliance with this SOP; ensure risk-based thinking and traceability; review and approve deliverables.                          |
+| **Top Management**                | Approve design plans, major reviews, and final design transfer.                                                                         |
+| **Process Owners / SMEs**         | Provide technical input and participate in reviews.                                                                                     |
 
 ---
 
-## **6. Procedure**
+## **5. Procedure**
 
-### **6.1 Design Planning**
+### **5.1 Design and Development Planning**
 
-* Determine stages of design and development appropriate for the product/service.
-* Assign responsibilities and authorities.
-* Define review, verification, and validation checkpoints.
-* Reference the applicable Design Deliverables WI (WI-DC-001, WI-DC-002, or other approved WI).
+1. Each project shall have a **Design Control Plan (DCP)** defining:
 
-### **6.2 Design Inputs**
-
-* Capture functional, performance, statutory, and regulatory requirements.
-* Review inputs for completeness and resolve conflicts.
-* Document inputs in a controlled record (e.g., project plan, requirement specification).
-
-### **6.3 Design Execution and Controls**
-
-* Conduct design work according to the selected WI and mapped deliverables.
-* Perform **design reviews** at defined stages, recording decisions and actions.
-* Conduct **verification** to ensure outputs satisfy inputs.
-* Conduct **validation** to ensure outputs meet intended use.
-* Record all review, verification, and validation activities as controlled evidence.
-
-### **6.4 Design Outputs**
-
-* Ensure outputs meet input requirements, are clear for production or service delivery, and include acceptance criteria.
-* Obtain approval from Design Owner and Management.
-* Document outputs as controlled records.
-
-### **6.5 Design Changes**
-
-* Identify, review, approve, and document all design changes before implementation.
-* Update all affected design outputs and records.
-* For projects under QMS-SOP-07, changes may be documented via the project tracking tool (e.g., issues, pull requests) with linked approvals.
-
-### **6.6 Records**
-
-* Maintain all design inputs, outputs, reviews, verification, validation, and approved changes as controlled records.
-* Acceptable records include: project plans, milestone logs, risk/opportunity registers, review minutes, validation and verification reports, lessons learned, and other artifacts produced via the selected SDLC framework or project management tool.
+   * Applicable development framework (referenced WI).
+   * Design stages, activities, and review points.
+   * Deliverables checklist (design outputs).
+   * Risk and opportunity integration.
+   * Verification, validation, and transfer criteria.
+2. The DCP may be integrated into the **Project Plan** or **Project Quality Plan (PQP)**.
+3. The DCP shall be reviewed and approved prior to initiating design activities.
 
 ---
 
-## **7. Integration with Project Management SOP**
+### **5.2 Design and Development Inputs**
 
-* Design control activities may be executed through the organization’s project management process (QMS-SOP-07).
-* Project milestones and review meetings may serve as design review, verification, and validation checkpoints.
-* Design changes may be tracked using project tools, provided evidence is linked and approvals are documented.
-* All project-managed artifacts used to meet SOP requirements are considered controlled records.
-* Alternative WIs implementing other SDLC frameworks may also be used as long as all SOP requirements are satisfied.
+Design inputs shall be:
 
----
+* Documented, reviewed, and approved prior to use.
+* Complete, unambiguous, and testable.
+* Derived from:
 
-## **8. Work Instructions**
+  * Customer or user requirements
+  * Regulatory and safety requirements
+  * Risk analysis and prior product experience
+  * Standards and performance criteria
 
-| WI        | Purpose                                                                                 |
-| --------- | --------------------------------------------------------------------------------------- |
-| WI-DC-001 | Maps SOP design control activities to organizational default SDLC deliverables.         |
-| WI-DC-002 | Maps SOP design control activities to alternative SDLC frameworks (e.g., Ontario SDLC). |
-| WI-DC-003 | Optional future SDLC framework integration.                                             |
+Inputs are recorded within the **Design Input Specification** or equivalent artifact (e.g., user stories, PRD, requirements database).
 
 ---
 
-## **9. Review and Approval**
+### **5.3 Design and Development Outputs**
 
-| Role         | Name | Signature | Date |
-| ------------ | ---- | --------- | ---- |
-| Design Owner |      |           |      |
-| QA           |      |           |      |
-| Management   |      |           |      |
+Design outputs shall:
+
+* Meet input requirements.
+* Provide adequate information for verification and validation.
+* Identify acceptance criteria.
+* Define critical characteristics essential for safety and performance.
+
+Outputs may include:
+
+* Architecture or design documents
+* Source code / configuration
+* Test cases and protocols
+* User documentation
+* Risk controls
+* Release notes and deployment guides
+
+Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **10. Notes**
+### **5.4 Design and Development Review**
 
-* SOP-DC-001 is framework-agnostic; work instructions implement the details of SDLC deliverables.
-* The SOP ensures traceability, compliance, and auditable records regardless of project methodology.
-* SOP can be extended to satisfy ISO 13485:2016 and IEC 62304 requirements by adding risk management and software-specific traceability in future WIs.
+* Conduct reviews at defined **milestones or stage gates** in the Design Control Plan.
+* Participants must include representatives of **design, quality, and management**.
+* Reviews evaluate:
+
+  * Conformance to requirements and plan
+  * Risk status
+  * Adequacy of verification and validation
+  * Readiness for next stage
+* Record outcomes and actions in the **Design Review Record**.
+
+---
+
+### **5.5 Design and Development Verification**
+
+* Verify that design outputs meet design inputs.
+* Verification may include:
+
+  * Inspections, walkthroughs, peer reviews
+  * Unit, integration, and system testing
+  * Static analysis or simulation results
+* Verification evidence must be documented in **Verification Reports** and linked to corresponding requirements and risk controls.
+
+---
+
+### **5.6 Design and Development Validation**
+
+* Confirm that the resulting product or system meets user and intended-use needs.
+* Validation methods include:
+
+  * User acceptance testing (UAT)
+  * Clinical evaluation (if applicable)
+  * Pilot deployment or beta testing
+* Validation records include test plans, reports, and acceptance evidence.
+
+---
+
+### **5.7 Design Risk Management**
+
+* All design risks must be identified and managed in accordance with **QMS-SOP-08 Risk and Opportunity Management**.
+* Each design risk shall have traceability to:
+
+  * A design input (source of risk).
+  * A control measure (design, process, or verification).
+  * A verification or validation record confirming control effectiveness.
+* Design risk reviews occur at each design review stage.
+
+---
+
+### **5.8 Design and Development Changes**
+
+* Proposed changes to the design shall follow the **Change Control SOP (QMS-SOP-02)**.
+* Assess the impact on requirements, verification, validation, and regulatory compliance.
+* Document approvals and maintain version control in the design repository.
+
+---
+
+### **5.9 Design Transfer and Closure**
+
+* Confirm all deliverables from the **Design Control Plan** are complete and accepted.
+* Ensure training, documentation, and configuration baselines are ready for production or release.
+* Archive all design documentation, including:
+
+  * Design Inputs/Outputs
+  * Review, Verification, and Validation Records
+  * Risk Management File
+  * Change History
+
+---
+
+## **6. Records**
+
+| Record                            | Retention                  | Location             |
+| --------------------------------- | -------------------------- | -------------------- |
+| Design Control Plan (DCP)         | Life of product + 10 years | Project repository   |
+| Design Inputs/Outputs             | Life of product            | Project repo / DHF   |
+| Verification & Validation Records | Life of product            | Test evidence folder |
+| Design Reviews                    | 10 years                   | QMS repository       |
+| Risk Management File              | 10 years                   | Risk Register / DHF  |
+
+---
+
+## **7. References**
+
+* QMS-SOP-07 — Project Management
+* QMS-SOP-08 — Risk & Opportunity Management
+* QMS-SOP-02 — Change Control
+* Project Quality Plan (PQP) Template
+* Design Control Plan (DCP) Template
