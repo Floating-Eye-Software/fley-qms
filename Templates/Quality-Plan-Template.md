@@ -1,71 +1,74 @@
-# **Quality Plan – [Name]**
+# **Quality Plan – [Project Name]**
 
 ## **1. Introduction**
 
-* **Purpose:**
-* **Scope:** (Project-specific or organization-wide)
-* **Applicable Standards & Regulations:**
+* **Purpose:** *[Describe purpose of this quality plan]*
+* **Scope:** *[Project-specific or organization-wide]*
+* **Applicable Standards & Regulations:** *[ISO 9001, ISO 13485, IEC 62304, GDPR, FDA, etc.]*
+
+---
 
 ## **2. Quality Objectives**
 
-* Compliance goals (ISO, GDPR, FDA, etc.)
-* Continuous improvement targets
-* Project-specific objectives
+* *[Compliance goals (ISO, GDPR, FDA, etc.)]*
+* *[Continuous improvement targets]*
+* *[Project-specific objectives]*
+
+---
 
 ## **3. Quality Processes**
 
-* Design & development controls
-* Regulatory compliance activities
-* Feedback & complaints handling
+* *[Design & development controls per QMS-SOP-09]*
+* *[Regulatory compliance activities]*
+* *[Feedback & complaints handling]*
+
+---
 
 ## **4. Metrics & Measurement**
 
-* Key KPIs
-* Measurement methods
+* *[Key KPIs]*
+* *[Measurement methods]*
+
+---
 
 ## **5. Quality Assurance Activities**
 
-* Reviews (design, code, docs)
-* Testing (unit, integration, regression)
-* Audits (internal, GDPR, ISO 9004)
+* *[Design reviews, code reviews, document reviews]*
+* *[Testing (unit, integration, regression)]*
+* *[Internal audits, GDPR, ISO 9001/9004 audits]*
+
+---
 
 ## **6. Roles & Responsibilities**
 
-* Quality Manager
-* Project Manager
-* Developers
-* Privacy Officer
+* *[Quality Manager]*
+* *[Project Manager / Owner]*
+* *[Design & Development Team]*
+* *[Privacy / Compliance Representative]*
+
+---
 
 ## **7. Records & Documentation**
 
-* Storage locations
-* Retention rules
+* *[Storage locations]*
+* *[Retention rules]*
+
+---
 
 ## **8. Linkage to Execution**
 
-* **Milestones:**
+* **Milestones:** *[Define deliverables, stage gates, design review checkpoints]*
+* **Project Board / Tracking Tool:** *[Kanban, Jira, GitHub Projects, etc.]*
+* **Issues / CAPA:** *[Link relevant design reviews, risk items, audit findings]*
 
-  * [QMS Foundations](https://github.com/<org>/<repo>/milestone/1)
-  * [Audit-Ready QMS Documentation](https://github.com/<org>/<repo>/milestone/2)
-
-* **Project Board:**
-
-  * [Red Witch Kanban](https://github.com/<org>/<repo>/projects/1)
-
-* **Issues (examples):**
-
-  * [#42 Draft Design Control SOP](https://github.com/<org>/<repo>/issues/42)
-  * [#55 GDPR Audit Checklist](https://github.com/<org>/<repo>/issues/55)
-  
-* **If no milestones apply:**
-
-  * Tracking method: Annual review / recurring audit / continuous monitoring
-  * Example: “ISO 9004 self-assessment performed annually; findings tracked as CAPA issues.”
+---
 
 ## **9. Continuous Improvement**
 
-* Improvement cycles (ISO 9004, retrospectives)
-* CAPA process and feedback loops
+* *[Improvement cycles (ISO 9004, retrospectives)]*
+* *[CAPA process and feedback loops]*
+
+---
 
 ## **10. Approval**
 

@@ -1,170 +1,181 @@
-# **Red Witch – Project Quality Plan (PQP)**
+# **Red Witch – Project Quality Plan (PQP) (FLEY Updated)**
 
 ## 1. Introduction
 
-**Purpose:** Define quality objectives, processes, and metrics for the Red Witch software development project.
-**Scope:** Applies to all Red Witch development activities.
-**Applicable Standards & Regulations:** ISO 13485:2016 (Clauses 7.1, 7.3), ISO 9001:2015, 21 CFR 820.30, IEC 62304, GDPR.
+**Purpose:** Define quality objectives, processes, and metrics for the Red Witch software development project under the FLEY QMS framework.
+
+**Scope:** Applies to all Red Witch development activities, including requirements, design, development, verification, validation, release, and post-release monitoring.
+
+**Applicable Standards & Regulations:** ISO 13485:2016 (Clauses 7.1, 7.3, 8.5), ISO 9001:2015, IEC 62304, IEC 62366, 21 CFR 820.30, GDPR, HIPAA, EU MDR.
 
 ---
 
 ## 2. Governance & Quality Planning
 
-* **Objectives:**
+**Objectives:**
 
-  * Maintain bidirectional requirements traceability (requirements ↔ design ↔ code ↔ test).
-  * ≥95% unit test pass rate before each release.
-  * ≥80% code coverage.
-  * All high-risk features undergo formal design review.
-* **Planning:**
+* Maintain complete bidirectional traceability: Requirements ↔ Design ↔ Implementation ↔ Verification ↔ Validation.
+* ≥95% unit test pass rate before each release.
+* ≥80% code coverage.
+* High-risk features undergo formal design and risk review.
 
-  * Milestone checkpoints per ODF framework.
-  * Sprint retrospectives for continuous improvement.
-* **KPIs:** Tracked in GitHub Insights and dashboards.
+**Planning:**
+
+* Milestone checkpoints per **ODF/FLEY framework**.
+* Sprint retrospectives for continuous improvement.
+* KPIs tracked in GitHub Insights, dashboards, and traceability matrices.
+
+**Evidence/Tools:** Milestone documentation, retrospectives, dashboards, traceability matrix (Design Trace Matrix).
 
 ---
 
 ## 3. Document & Record Control
 
-* Project documentation stored in **GitHub Wiki**.
-* Controlled through **PR approvals and revision history**.
-* Releases tagged in GitHub for baseline and traceability.
-* Test reports archived in CI/CD pipelines.
+* All project documentation maintained in **GitHub Wiki**, PRs, and CI/CD pipelines.
+* Controlled via **PR approvals, branch protection rules, and revision history**.
+* Releases tagged in GitHub for baseline control and traceability.
+* Verification/Validation reports archived in pipelines and linked to DCP/WI checkpoints.
 
 ---
 
 ## 4. Training & Competence
 
-* Developer onboarding includes GDPR and security/privacy training.
-* Training completion is tied to **repository access permissions**.
+* Developer onboarding includes GDPR, security/privacy, and QMS training.
+* Access to repositories tied to training completion.
 * Training logs maintained in Wiki.
 
 ---
 
 ## 5. Risk Management
 
-* Risk register maintained in GitHub Wiki + Issues.
-* Risks linked to specific requirements and mitigations.
-* Reviewed at design reviews and project retrospectives.
+* Risk Register maintained in GitHub Wiki + Issues, linked to specific requirements.
+* Risks reviewed during design reviews, retrospectives, and at milestone approvals.
+* Risk mitigation tracked and verified as part of **DCP deliverables**.
 
 ---
 
 ## 6. Design & Development Control
 
-* Requirements documented in GitHub Wiki.
-* Traceability maintained through Issues ↔ PRs ↔ Tests.
-* Formal design reviews at milestones (recorded in Wiki).
-* ODF framework checkpoints used for planning.
+* Requirements documented in GitHub Wiki; traceability maintained through Issues → PRs → Tests → Validation.
+* Formal design reviews at each milestone, recorded in Wiki.
+* DCP/WI-QMS-09-04 deliverables produced per phase:
+
+  * Design Planning → DCP, Risk Register
+  * Requirements Definition → Approved backlog & SRS
+  * Design & Implementation → Architecture, detailed design, code
+  * Verification → Test plans, results
+  * Validation → Validation reports, stakeholder approval
+  * Release → Release notes, deployment checklist, post-release review
 
 ---
 
 ## 7. Change & Configuration Management
 
-* Controlled via **GitHub branch protections, PR workflow, and issue links**.
-* PR approvals form the controlled change log.
-* Baselines maintained via GitHub tags and releases.
+* Controlled via **GitHub branch protection, PR workflow, linked issues**.
+* PR approvals constitute controlled change logs.
+* Baselines maintained via GitHub tags/releases.
+* Changes impact-assessed against traceability matrix and DCP deliverables.
 
 ---
 
 ## 8. Supplier & External Resource Management
 
-* No third-party suppliers requiring qualification for core Red Witch development at present.
-* Open-source components tracked via GitHub dependency management.
+* No third-party suppliers currently require qualification.
+* Open-source components tracked via GitHub dependency management and license compliance.
 
 ---
 
 ## 9. Production, Release & Deployment
 
-* Release notes documented in Wiki and tagged in GitHub.
-* Disaster recovery plan maintained as part of release process.
-* Issue backlog reviewed before release.
+* Releases documented with notes, GitHub tags, and DCP compliance evidence.
+* Disaster recovery plan maintained and verified before release.
+* Issue backlog reviewed and prioritized prior to deployment.
 
 ---
 
 ## 10. Verification, Validation & Testing
 
-* CI/CD executes **unit, integration, and regression tests**.
-* Test evidence archived in pipelines.
-* Verification evidence linked to requirements.
-* User/stakeholder validation performed on major features.
+* Automated CI/CD executes unit, integration, and regression tests.
+* Test evidence archived in pipelines and linked to requirements.
+* Validation performed with stakeholders for major features; results documented in validation reports.
+* Traceability verified against DCP/WI deliverables.
 
 ---
 
 ## 11. Nonconformance & CAPA
 
-* Defects and deviations logged as Issues using CAPA template.
+* Defects and deviations logged as GitHub Issues with CAPA label.
 * Root cause analysis conducted for recurring/high-risk issues.
-* CAPA issues tracked to closure in GitHub.
+* CAPA tracked to closure; outcomes linked to SOP/WI updates.
 
 ---
 
 ## 12. Audit & Continuous Improvement
 
-* Internal audit conducted every 6 months.
+* Internal audits every 6 months; audit findings documented in Wiki/GitHub Issues.
 * Sprint retrospectives identify process improvements.
-* SOPs/WIs updated based on audit findings and CAPA.
-* ISO 9004 self-assessment and GDPR compliance milestones used for improvement planning.
+* CAPA outcomes and audit findings feed updates to SOPs, WIs, and DCP processes.
+* ISO 9004 self-assessment and GDPR compliance milestones inform continuous improvement planning.
 
 ---
 
 ## 13. Customer & Stakeholder Feedback
 
-* Stakeholder feedback collected through usability testing and design reviews.
-* Complaints/issues logged as GitHub Issues, linked to CAPA if applicable.
-* Feedback integrated into backlog refinement and future sprints.
+* Feedback collected via usability testing, design reviews, and stakeholder workshops.
+* Issues logged, prioritized, and linked to CAPA if necessary.
+* Feedback integrated into backlog refinement, sprint planning, and future release planning.
 
 ---
 
 ## 14. Infrastructure, Security & Work Environment
 
 * Project infrastructure: GitHub repositories, CI/CD pipelines, Wiki.
-* GDPR privacy considerations reviewed during design.
-* Repo permissions aligned with training/roles.
-* Security and access control managed through GitHub and organizational IT policies.
+* GDPR, HIPAA, and security/privacy considerations reviewed during design.
+* Access permissions tied to role and training.
+* Security and access control maintained per organizational IT policies.
 
 ---
 
 ## 15. Regulatory Compliance
 
-* ISO 13485 (Medical devices – quality management systems)
-* IEC 62304 (Medical device software lifecycle)
-* IEC 27001 (Information security management)
-* GDPR (EU General Data Protection Regulation)
-* HIPAA (Health Insurance Portability and Accountability Act)
-* EU MDR (Medical Device Regulation)
+* ISO 13485:2016 – Medical device QMS
+* IEC 62304 – Medical device software lifecycle
+* IEC 62366 – Usability engineering
+* ISO 9001:2015 – Quality management systems
+* GDPR / HIPAA / EU MDR
 
 ---
 
 ## 16. International Standards
 
-* IEC 82304-1:2016 – Health Software, Product Safety
-* ISO/TS 82304-2:2021 – Health and Wellness Apps, Quality & Reliability
-* ISO/IEC 27001:2013 – Information Security Management Systems
+* IEC 82304-1:2016 – Health Software Product Safety
+* ISO/TS 82304-2:2021 – Health & Wellness Apps, Quality & Reliability
+* ISO/IEC 27001:2013 – Information Security
 * ISO/IEC 27701:2019 – Privacy Information Management
 
 ---
 
-## PQP Matrix – Red Witch Project
+## 17. PQP Matrix – Red Witch Project
 
-| #  | Quality Element                  | SOP Category         | Work Instruction(s)           | Evidence / Toolchain Notes                               |
-| -- | -------------------------------- | -------------------- | ----------------------------- | -------------------------------------------------------- |
-| 1  | Governance & Quality Planning    | Governance           | WI-ODF-01, WI-GH-02           | Milestones, retrospectives, dashboards                   |
-| 2  | Document & Record Control        | Document Control     | WI-GH-01                      | Wiki pages, PR approvals, revision history               |
-| 3  | Training & Competence            | Resource Mgmt        | WI-GH-14                      | Training logs, repo access control                       |
-| 4  | Risk Management                  | Risk Mgmt            | WI-GH-05                      | Risk register, Issues linked to requirements             |
-| 5  | Design & Development Control     | Design Control       | WI-ODF-01, WI-GH-03, WI-GH-04 | Requirements, traceability, reviews in Wiki & Issues     |
-| 6  | Change & Configuration Mgmt      | Change/Config Mgmt   | WI-GH-06, WI-GH-07            | PR workflow, branch protections, tags, baselines         |
-| 7  | Supplier & External Resources    | Supplier Mgmt        | WI-GH-15                      | Open-source dependency tracking                          |
-| 8  | Production, Release & Deployment | Release Control      | WI-GH-09                      | Release notes, GitHub tags, DR plan                      |
-| 9  | Verification, Validation, Test   | Verification/Testing | WI-GH-08                      | CI/CD test reports, verification evidence linked to reqs |
-| 10 | Nonconformance & CAPA            | CAPA                 | WI-GH-10                      | Issues logged as CAPA, tracked to closure                |
-| 11 | Audit & Continuous Improvement   | Audit Program        | WI-GH-16                      | Audit reports, retrospectives, CAPA updates              |
-| 12 | Customer & Stakeholder Feedback  | Feedback Mgmt        | WI-GH-17                      | Usability testing, Issues, stakeholder workshop notes    |
-| 13 | Infrastructure & Security        | Infrastructure Mgmt  | WI-GH-14, WI-SEC-01           | Repo permissions, GDPR compliance review, IT policies    |
+| #  | Quality Element                  | SOP Category         | Work Instruction(s)           | Evidence / Toolchain Notes                                                   |
+| -- | -------------------------------- | -------------------- | ----------------------------- | ---------------------------------------------------------------------------- |
+| 1  | Governance & Quality Planning    | Governance           | WI-ODF-01, WI-GH-02           | Milestones, retrospectives, dashboards, DCP checkpoints                      |
+| 2  | Document & Record Control        | Document Control     | WI-GH-01                      | Wiki pages, PR approvals, revision history                                   |
+| 3  | Training & Competence            | Resource Mgmt        | WI-GH-14                      | Training logs, repo access control                                           |
+| 4  | Risk Management                  | Risk Mgmt            | WI-GH-05, WI-QMS-09-04        | Risk register, linked issues, traceability to design                         |
+| 5  | Design & Development Control     | Design Control       | WI-ODF-01, WI-GH-03, WI-GH-04 | Requirements, traceability, DCP deliverables, reviews                        |
+| 6  | Change & Configuration Mgmt      | Change/Config Mgmt   | WI-GH-06, WI-GH-07            | PR workflow, branch protections, tags, baselines                             |
+| 7  | Supplier & External Resources    | Supplier Mgmt        | WI-GH-15                      | Open-source dependency tracking                                              |
+| 8  | Production, Release & Deployment | Release Control      | WI-GH-09, WI-QMS-09-04        | Release notes, GitHub tags, DR plan, DCP evidence                            |
+| 9  | Verification, Validation, Test   | Verification/Testing | WI-GH-08                      | CI/CD test reports, verification evidence linked to reqs                     |
+| 10 | Nonconformance & CAPA            | CAPA                 | WI-GH-10                      | Issues logged as CAPA, tracked to closure                                    |
+| 11 | Audit & Continuous Improvement   | Audit Program        | WI-GH-16, WI-QMS-09-04        | Audit reports, retrospectives, CAPA updates, continuous improvement tracking |
+| 12 | Customer & Stakeholder Feedback  | Feedback Mgmt        | WI-GH-17                      | Usability testing, Issues, stakeholder workshop notes                        |
+| 13 | Infrastructure & Security        | Infrastructure Mgmt  | WI-GH-14, WI-SEC-01           | Repo permissions, GDPR/HIPAA review, IT policies                             |
 
 ---
 
-## Approval
+## 18. Approval
 
 | Role / Name      | Signature | Date |
 | ---------------- | --------- | ---- |
@@ -172,5 +183,3 @@
 | Quality Manager  |           |      |
 | Privacy Officer  |           |      |
 | Sponsor / Client |           |      |
-
----

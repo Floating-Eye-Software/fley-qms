@@ -1,46 +1,64 @@
-# **Quality Plan – Pilot SOP Plan (FLEY)**
+
+# **Quality Plan – Pilot SOP Implementation (FLEY)**
 
 ## **1. Introduction**
 
-* **Purpose:** Use the Red Witch project as a pilot to draft, test, and refine SOPs for the Floating Eye Software QMS.
-* **Scope:** Organization-wide. Applies to the development of SOPs, work instructions, and templates based on Red Witch practices.
-* **Applicable Standards & Regulations:** ISO 13485:2016 (Clauses 5.4, 7.1), 21 CFR 820.20(d), 21 CFR 820.30(b), GDPR, ISO 9004.
+* **Purpose:** Pilot Red Witch project workflows to draft, test, validate, and refine FLEY SOPs, ensuring alignment with ISO 9001, ISO 13485, IEC 62304, and GDPR.
+* **Scope:** Organization-wide; applies to SOP development, WI drafting, and template standardization.
+* **Applicable Standards & Regulations:** ISO 13485:2016 Clauses 5.4, 7.1; ISO 9001:2015; IEC 62304; 21 CFR 820.20(d), 820.30(b); GDPR; ISO 9004.
+
+---
 
 ## **2. Quality Objectives**
 
-* Draft at least 5 SOPs from Red Witch pilot (Design Control, CAPA, Code Review, Testing, Privacy).
-* Validate each SOP through real project evidence.
-* Conduct lessons-learned review after each release.
+* Draft ≥5 SOPs based on Red Witch project experience (Design Control, CAPA, Code Review, Testing, Privacy).
+* Validate SOPs with real project evidence and DCP alignment.
+* Conduct post-pilot lessons learned reviews after each release.
+
+---
 
 ## **3. Quality Processes**
 
-* Identify Red Witch workflows suitable for SOP drafting.
-* Draft SOPs in wiki, review via GitHub pull request workflow.
-* Pilot SOPs in Red Witch project, gather evidence of use.
-* Revise SOPs quarterly based on pilot feedback.
+* Identify Red Witch workflows suitable for SOP standardization.
+* Draft SOPs in Wiki and submit via GitHub PR workflow for review.
+* Pilot SOPs within Red Witch project; collect usage evidence (issues, PRs, CI/CD logs).
+* Revise SOPs quarterly based on pilot feedback and CAPA findings.
+* Ensure SOPs map to DCP deliverables and WI-QMS-09-04 checkpoints.
+
+---
 
 ## **4. Metrics & Measurement**
 
-* Number of SOPs drafted vs. target.
-* Number of SOPs validated with project evidence.
-* % of SOPs updated based on feedback.
+* # of SOPs drafted vs. target.
+* # of SOPs validated through project evidence.
+* % of SOPs updated based on pilot feedback.
+* Traceability of SOPs → DCP/WI deliverables.
+
+---
 
 ## **5. Quality Assurance Activities**
 
-* SOP reviews by Quality Manager before approval.
-* Internal audits against drafted SOPs.
-* Cross-functional review with development team.
+* QA review of draft SOPs before approval.
+* Internal audits against pilot SOPs.
+* Cross-functional review and feedback sessions with development and QA teams.
+
+---
 
 ## **6. Roles & Responsibilities**
 
-* **Quality Manager:** Oversees SOP drafting and approval.
-* **Project Manager (Red Witch):** Ensures SOPs are trialed in project.
-* **Developers:** Follow SOPs, provide feedback.
+* **Quality Manager:** Oversees drafting, approval, and QA compliance of SOPs.
+* **Project Manager (Red Witch):** Ensures SOPs are trialed in active project workflows.
+* **Developers & Team Members:** Follow SOPs, provide structured feedback and evidence.
+
+---
 
 ## **7. Records & Documentation**
 
-* SOP drafts and approvals stored in GitHub Wiki.
-* Pilot evidence stored as GitHub issues, PRs, and CI/CD logs.
+* SOP drafts, approvals, and revisions stored in GitHub Wiki.
+* Pilot evidence captured in GitHub issues, PRs, and CI/CD logs.
+* Lessons learned documented in Wiki and linked to SOP updates.
+
+---
 
 ## **8. Linkage to Execution**
 
@@ -49,20 +67,23 @@
   * [QMS Foundations](https://github.com/mlehotay/redwitch/milestone/1)
   * [Audit-Ready QMS Documentation](https://github.com/mlehotay/redwitch/milestone/2)
 
-* **Project Board:**
+* **Project Board:** [Red Witch Kanban](https://github.com/users/mlehotay/projects/3)
 
-  * [Red Witch Kanban](https://github.com/users/mlehotay/projects/3)
-
-* **Issues (examples):**
+* **Sample Issues:**
 
   * [#5 Draft First SOP (SDLC)](https://github.com/mlehotay/redwitch/issues/5)
   * [#7 SOP – Pull Request Procedure (Change Control)](https://github.com/mlehotay/redwitch/issues/7)
 
+---
+
 ## **9. Continuous Improvement**
 
-* Quarterly review of pilot SOPs.
-* CAPA findings incorporated into SOP revisions.
-* Lessons learned documented in wiki.
+* Quarterly review and refinement of SOPs.
+* CAPA findings incorporated into SOP updates.
+* Lessons learned captured, shared, and used for future SOP drafting.
+* Alignment to DCP deliverables and WI-QMS-09-04 monitored continuously.
+
+---
 
 ## **10. Approval**
 
