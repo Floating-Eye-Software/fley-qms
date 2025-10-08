@@ -1,60 +1,45 @@
-# **Work Instruction: WI-QMS-09-04 — FLEY Design Control Framework**
+# **WI-QMS-09-04 — FLEY Design Control Framework**
 
-**Document Number:** WI-QMS-09-04
-**Revision:** 1.0
-**Effective Date:** [Insert Date]
+**Revision:** 1.1  **Effective Date:** [Insert Date]
 **Related SOP:** QMS-SOP-09 — Design and Development Control
 
 ---
 
-## **1. Purpose**
+## **1 Purpose**
 
-To define the **Floating Eye Software (FLEY) standard design and development framework**, ensuring that all project stages—from requirements through release—are controlled, traceable, verified, validated, and compliant with applicable regulatory and quality standards.
-
-This WI ensures that all deliverables outlined in the **FLEY Design Control Plan (DCP)** are created, reviewed, and approved in accordance with **QMS-SOP-09**.
+To define the **Floating Eye Software (FLEY)** design, development, maintenance, and retirement framework ensuring traceable, verified, and validated lifecycle control compliant with QMS-SOP-09 v 3.0.
 
 ---
 
-## **2. Scope**
+## **2 Scope**
 
-Applies to all projects that adopt the **FLEY SDLC methodology**, including software, health software, or system development projects. This WI covers:
-
-* Requirements capture and traceability
-* Design, implementation, and testing
-* Verification and validation
-* Risk and opportunity management
-* Configuration and change control
-* Design transfer and release
-
-Projects not involving design or development (e.g., operational maintenance) should reference this WI in the **Project Quality Plan (PQP)** and mark relevant sections as “Not Applicable.”
+Applies to all projects using the **FLEY SDLC**: requirements → design → implementation → V&V → release → maintenance → retirement.
+Non-design projects mark sections “N/A” in the PQP.
 
 ---
 
-## **3. References**
+## **3 References**
 
-| Reference                | Document No.                   | Title / Purpose                                         |
-| ------------------------ | ------------------------------ | ------------------------------------------------------- |
-| QMS-SOP-09               | Design and Development Control | Defines high-level design control requirements          |
-| QMS-SOP-07               | Project Management             | Defines project planning, monitoring, and closure       |
-| QMS-SOP-08               | Risk & Opportunity Management  | Defines risk identification and control                 |
-| QMS-SOP-02               | Change Control                 | Defines change evaluation and approval process          |
-| FLEY Design Control Plan | [Link]                         | Defines project-specific deliverables, reviews, and V&V |
-| Risk Register            | [Link]                         | Risk tracking and mitigation                            |
-| Design Trace Matrix      | [Link]                         | Traceability from requirements → outputs → V&V          |
+QMS-SOP-09 Design & Development Control
+QMS-SOP-07 Project Management
+QMS-SOP-08 Risk & Opportunity Management
+QMS-SOP-02 Change Control
+QMS-SOP-05 Document & Record Control
+FLEY Design Control Plan (DCP) | Risk Register | Design Trace Matrix
 
 ---
 
-## **4. Roles and Responsibilities**
+## **4 Roles & Responsibilities**
 
-| Role                                     | Responsibilities                                                        |
-| ---------------------------------------- | ----------------------------------------------------------------------- |
-| **Project Manager (PM)**                 | Maintains DCP, ensures design stages are executed and reviewed per WI.  |
-| **Design Lead / Engineer**               | Develops design outputs, ensures traceability, participates in reviews. |
-| **Quality Manager / QA Lead**            | Verifies compliance, reviews deliverables, maintains audit readiness.   |
-| **Verification & Validation (V&V) Lead** | Plans, executes, and documents V&V activities, maintains evidence.      |
-| **Regulatory / Privacy Officer**         | Reviews regulatory and data protection compliance.                      |
-| **Configuration Manager**                | Maintains baselines, version control, and change records.               |
-| **Project Team / Developers**            | Produce design and implementation deliverables, participate in reviews. |
+| Role                         | Responsibilities                                                                      |
+| ---------------------------- | ------------------------------------------------------------------------------------- |
+| Project Manager (PM)         | Owns DCP, ensures execution of all phases including post-release maintenance.         |
+| Design Lead / Engineer       | Produces design outputs, maintains traceability.                                      |
+| QA / Quality Manager         | Verifies compliance, reviews deliverables, approves releases and maintenance updates. |
+| V&V Lead                     | Plans and executes V&V activities through maintenance releases.                       |
+| Regulatory / Privacy Officer | Reviews compliance and data protection impacts.                                       |
+| Configuration Manager        | Maintains baselines and version control.                                              |
+| Maintenance Lead / Ops Team  | Implements bug fixes, patches, and retirement plans under change control.             |
 
 ---
 
@@ -131,6 +116,25 @@ Projects not involving design or development (e.g., operational maintenance) sho
 
 ---
 
+### **5.7 Post-Release Maintenance and Retirement**
+
+* Post-release activities are managed as controlled design changes.
+* Inputs → CAPA items, user feedback, vulnerability or regulatory updates.
+* Process:
+
+  1. Triage & impact assessment.
+  2. Plan maintenance (define scope, verification, validation).
+  3. Implement and test under configuration control.
+  4. Record results in Maintenance Log and DHF.
+  5. Review and approve release by PM and QA.
+* **Deliverables:** Maintenance Plan, Maintenance Log, Updated Risk Register, Updated Trace Matrix.
+* **Retirement:**
+  – Plan decommissioning, obtain approval.
+  – Ensure customer notification and data archival.
+  – Retain records per QMS-SOP-05.
+
+---
+
 ## **6. Risk & Opportunity Management**
 
 * Identify risks at each SDLC phase in the **Risk Register**.
@@ -179,28 +183,31 @@ Projects not involving design or development (e.g., operational maintenance) sho
 
 ---
 
-## **10. Deliverables Checklist by Phase**
+## **10 Deliverables Checklist by Phase**
 
-| Phase                   | Deliverable                                                        | Description                                | Responsible              | SOP / Standard           | Status | Reference / Link |
-| ----------------------- | ------------------------------------------------------------------ | ------------------------------------------ | ------------------------ | ------------------------ | ------ | ---------------- |
-| Planning                | DCP / Project Schedule / Risk Register                             | Project planning artifacts                 | PM / QA                  | QMS-SOP-09               | ☐ / ☑  |                  |
-| Requirements            | SRS / Acceptance Criteria / Risk Analysis                          | Capture user, functional, regulatory needs | Design Lead              | ISO 9001:2015, IEC 62304 | ☐ / ☑  |                  |
-| Design & Implementation | Architecture / Detailed Design / Code / Test Plan                  | Design and implementation outputs          | Design Lead / Developers | QMS-SOP-09               | ☐ / ☑  |                  |
-| Verification            | Test Reports / Inspection / Peer Review                            | Confirm outputs meet inputs                | QA / V&V Lead            | ISO 9001, IEC 62304      | ☐ / ☑  |                  |
-| Validation              | Validation Plan / Report / Stakeholder Approval                    | Confirm intended use and user satisfaction | PM / QA / Stakeholders   | ISO 9001, IEC 62304      | ☐ / ☑  |                  |
-| Release                 | Release Package / Deployment / Training / Post-Release Risk Review | Final release and documentation            | PM / QA / Ops            | ISO 9001, IEC 62304      | ☐ / ☑  |                  |
+| Phase                              | Deliverable                                           | Description                          | Responsible            | Status |
+| ---------------------------------- | ----------------------------------------------------- | ------------------------------------ | ---------------------- | ------ |
+| Planning                           | DCP / Schedule / Risk Register                        | Project planning artifacts           | PM / QA                | ☐ / ☑  |
+| Requirements                       | SRS / Acceptance Criteria / Risk Analysis             | Define user and regulatory needs     | Design Lead            | ☐ / ☑  |
+| Design & Implementation            | Architecture / Design Docs / Code / Test Plan         | Design outputs                       | Design Lead / Dev      | ☐ / ☑  |
+| Verification                       | Test Reports / Peer Reviews                           | Confirm outputs meet inputs          | QA / V&V               | ☐ / ☑  |
+| Validation                         | Validation Plan / Report                              | Confirm intended use                 | PM / QA / Stakeholders | ☐ / ☑  |
+| Release                            | Release Package / Training / Post-Release Risk Review | Ready for deployment                 | PM / QA                | ☐ / ☑  |
+| Maintenance & Retirement           | Maintenance Plan / Maintenance Log / Retirement Plan  | Post-release control and EOL records | Maintenance Lead / QA  | ☐ / ☑  |
 
 ---
 
-## **11. Records & Retention**
+## **11 Records & Retention**
 
-| Record                            | Storage Location              | Retention Period |
-| --------------------------------- | ----------------------------- | ---------------- |
-| Design Control Plan (DCP)         | Project repository            | 10 years         |
-| Design Review Minutes             | Linked to issues / Confluence | 10 years         |
-| Risk Register                     | Central QMS repository        | 10 years         |
-| Verification & Validation Records | Repository / Test system      | 10 years         |
-| Release Records                   | QMS / Product repository      | Permanent        |
+| Record                 | Storage             | Retention                  |
+| ---------------------- | ------------------- | -------------------------- |
+| Design Control Plan    | Project repo        | 10 yrs                     |
+| Design Review Minutes  | Confluence / Issues | 10 yrs                     |
+| Risk Register          | Central QMS repo    | 10 yrs                     |
+| V&V Records            | Test system         | 10 yrs                     |
+| Release Records        | QMS repo            | Permanent                  |
+| **Maintenance Logs**   | Maintenance folder  | 10 yrs after final release |
+| **Retirement Records** | QMS repo            | Permanent                  |
 
 ---
 
@@ -216,14 +223,14 @@ Projects not involving design or development (e.g., operational maintenance) sho
 
 ---
 
-## **13. Review & Approval**
+## **13 Review & Approval**
 
-| Role / Name                                  | Signature | Date |
-| -------------------------------------------- | --------- | ---- |
-| Project Manager                              |           |      |
-| Design Lead                                  |           |      |
-| Quality Manager                              |           |      |
-| Regulatory / Privacy Officer (if applicable) |           |      |
+| Role                         | Signature | Date |
+| ---------------------------- | --------- | ---- |
+| Project Manager              |           |      |
+| Design Lead                  |           |      |
+| Quality Manager              |           |      |
+| Regulatory / Privacy Officer |           |      |
 
 ---
 

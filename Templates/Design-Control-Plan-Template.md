@@ -214,15 +214,28 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 ---
 
+### **11.7 Post-Release Maintenance and Retirement**
+
+| Deliverable                      | Purpose                                                                                            | Responsible           | Status | Reference / Link |
+| -------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------- | ------ | ---------------- |
+| **Maintenance Plan**             | Defines maintenance classification (routine patch vs corrective change) and verification strategy. | Maintenance Lead / QA | ☐ / ☑  |                  |
+| **Maintenance Log**              | Tracks maintenance releases, CAPAs, verification & validation, and DHF updates.                    | Maintenance Lead      | ☐ / ☑  |                  |
+| **Post-Market Feedback Summary** | Records user feedback, complaints, or CAPA drivers used for design improvement.                    | QA / Regulatory       | ☐ / ☑  |                  |
+| **Retirement Plan**              | Defines archival, decommissioning, and record retention actions.                                   | PM / QA               | ☐ / ☑  |                  |
+
+---
+
 ## **12. Records and Retention**
 
-| Record                            | Storage Location              | Retention Period |
-| --------------------------------- | ----------------------------- | ---------------- |
-| Design Control Plan               | Project repository            | 10 years         |
-| Design Review Minutes             | Linked to issues / Confluence | 10 years         |
-| Risk Register                     | Central QMS repository        | 10 years         |
-| Verification & Validation Records | Repository / Test system      | 10 years         |
-| Release Records                   | QMS / Product repository      | Permanent        |
+| Record                              | Storage Location         | Retention Period             |
+| ----------------------------------- | ------------------------ | ---------------------------- |
+| Design Control Plan                 | Project Repository       | 10 years                     |
+| Design Review Minutes               | Linked / Confluence      | 10 years                     |
+| Risk Register                       | Central QMS Repository   | 10 years                     |
+| Verification & Validation Records   | Test System              | 10 years                     |
+| Release Records                     | QMS / Product Repository | Permanent                    |
+| **Maintenance Logs (NEW)**          | DHF / Maintenance Folder | 10 years after final release |
+| **Retirement Plan & Records (NEW)** | QMS Repository           | Permanent                    |
 
 ---
 

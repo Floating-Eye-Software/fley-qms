@@ -10,51 +10,54 @@
 
 ## **1. Purpose**
 
-To define the process for controlling the design and development of products, software, or systems to ensure that outputs meet input requirements and applicable regulatory, safety, and quality standards.
+To define the process for controlling the design, development, maintenance, and retirement of products, software, or systems to ensure that outputs meet input requirements and applicable regulatory, safety, and quality standards.
 
-This SOP satisfies the design control requirements of **ISO 9001:2015 Clause 8.3**, and provides a foundation for compliance with **ISO 13485:2016 Clause 7.3** and **IEC 62304** where applicable.
+This SOP satisfies **ISO 9001:2015 Clause 8.3**, provides a foundation for **ISO 13485:2016 Clause 7.3**, **IEC 62304**, and supports lifecycle maintenance as required by **IEC 62304 §6**.
 
 ---
 
 ## **2. Scope**
 
-This procedure applies to all design and development projects undertaken by the organization, including:
+Applies to all design, development, and post-release maintenance projects, including:
 
 * New product, system, or software development.
 * Major enhancements or redesigns of existing products.
-* Design verification and validation activities.
-* Design transfer to production or release.
+* Verification, validation, and maintenance releases.
+* Product retirement and record retention.
 
-Projects may follow a specific framework implemented through a **Design Control Work Instruction (WI)** — e.g.:
+Projects may implement a specific framework via a **Design Control Work Instruction (WI)** such as:
 
-* **WI-QMS-09-01** – Standard Software Development Lifecycle (SDLC).
-* **WI-QMS-09-02** – Ontario Design Framework.
-* **WI-QMS-09-03** – Agile / Incremental Design Model.
+* WI-QMS-09-01 – Standard SDLC
+* WI-QMS-09-02 – Ontario Design Framework
+* WI-QMS-09-03 – Agile Design Model
+* WI-QMS-09-04 – FLEY Design Framework
 
 ---
 
 ## **3. References**
 
-* ISO 9001:2015, Clauses 4–10
-* ISO 13485:2016, Clause 7.3
-* IEC 62304:2006/Amd1:2015
-* QMS-SOP-06 — Quality Planning
-* QMS-SOP-07 — Project Management
-* QMS-SOP-08 — Risk and Opportunity Management
-* **Template:** *Design Control Plan (DCP)*
-* **Template:** *Project Quality Plan (PQP)*
+* ISO 9001:2015 Clauses 4–10
+* ISO 13485:2016 Clause 7.3
+* IEC 62304:2006/Amd1:2015 (Clause 6 Maintenance)
+* QMS-SOP-05 – Document & Record Control
+* QMS-SOP-06 – Quality Planning
+* QMS-SOP-07 – Project Management
+* QMS-SOP-08 – Risk & Opportunity Management
+* QMS-SOP-02 – Change Control
+* Templates: Design Control Plan (DCP), Project Quality Plan (PQP)
 
 ---
 
 ## **4. Responsibilities**
 
-| Role                              | Responsibilities                                                                                                                        |
-| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Project Manager / Design Lead** | Develop and maintain the **Design Control Plan**; coordinate design reviews; ensure deliverables meet plan and regulatory requirements. |
-| **Design & Development Team**     | Execute design tasks; maintain records and traceability of inputs, outputs, verification, and validation.                               |
-| **Quality Manager**               | Verify compliance with this SOP; ensure risk-based thinking and traceability; review and approve deliverables.                          |
-| **Top Management**                | Approve design plans, major reviews, and final design transfer.                                                                         |
-| **Process Owners / SMEs**         | Provide technical input and participate in reviews.                                                                                     |
+| Role                              | Responsibilities                                                                                                     |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Project Manager / Design Lead** | Maintain the **Design Control Plan**; coordinate reviews; ensure deliverables meet plan and regulatory requirements. |
+| **Design & Development Team**     | Execute design tasks; maintain traceability and documentation.                                                       |
+| **Quality Manager**               | Ensure compliance, risk traceability, and approvals.                                                                 |
+| **Top Management**                | Approve design plans, reviews, and design transfer/retirement.                                                       |
+| **Process Owners / SMEs**         | Provide technical and regulatory input.                                                                              |
+| **Maintenance Lead / Ops Team**   | Plan, verify, and document post-release maintenance and retirement.                                                  |
 
 ---
 
@@ -171,35 +174,41 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.9 Design Transfer and Closure**
+### **5.9 Design Transfer, Closure & Archival**
 
-* Confirm all deliverables from the **Design Control Plan** are complete and accepted.
-* Ensure training, documentation, and configuration baselines are ready for production or release.
-* Archive all design documentation, including:
+* Confirm all deliverables in the **Design Control Plan** are complete and accepted.
+* Establish training, documentation, and configuration baselines prior to release.
+* Archive all design documentation in the Design History File (DHF) per retention schedule.
+* Transition to **Post-Release Maintenance** activities (see § 5.10).
 
-  * Design Inputs/Outputs
-  * Review, Verification, and Validation Records
-  * Risk Management File
-  * Change History
+---
+
+### **5.10 Post-Release Maintenance and Retirement**
+
+* Maintenance activities (bug fixes, patches, feature updates) are planned and executed under this SOP as **Design Changes** per § 5.8.
+* Inputs include: post-market feedback, complaints, CAPA outputs, and vulnerability reports.
+* Each maintenance release shall include:
+
+  * Impact assessment on requirements, risks, and regulatory compliance.
+  * Verification and validation appropriate to the change scope.
+  * Updated traceability, risk, and DHF records.
+* Post-market data shall feed into risk management and continuous improvement.
+* **Retirement / Decommissioning:**
+
+  * Planned, approved, and documented activity.
+  * Ensure customer notification, data migration, and record retention per **QMS-SOP-05**.
+  * Archive the final configuration baseline and mark the product as inactive.
 
 ---
 
 ## **6. Records**
 
-| Record                            | Retention                  | Location             |
-| --------------------------------- | -------------------------- | -------------------- |
-| Design Control Plan (DCP)         | Life of product + 10 years | Project repository   |
-| Design Inputs/Outputs             | Life of product            | Project repo / DHF   |
-| Verification & Validation Records | Life of product            | Test evidence folder |
-| Design Reviews                    | 10 years                   | QMS repository       |
-| Risk Management File              | 10 years                   | Risk Register / DHF  |
-
----
-
-## **7. References**
-
-* QMS-SOP-07 — Project Management
-* QMS-SOP-08 — Risk & Opportunity Management
-* QMS-SOP-02 — Change Control
-* Project Quality Plan (PQP) Template
-* Design Control Plan (DCP) Template
+| Record                            | Retention                    | Location                 |
+| --------------------------------- | ---------------------------- | ------------------------ |
+| Design Control Plan (DCP)         | Life of product + 10 years   | Project repository       |
+| Design Inputs/Outputs             | Life of product              | DHF / Project Repo       |
+| Verification & Validation Records | Life of product              | Test Repository          |
+| Design Reviews                    | 10 years                     | QMS Repository           |
+| Risk Management File              | 10 years                     | Risk Register            |
+| Maintenance Logs                  | 10 years after final release | DHF / Maintenance Folder |
+| Retirement Records                | Permanent                    | QMS Repository           |
