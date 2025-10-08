@@ -11,7 +11,7 @@ The **Red Witch** project is the first initiative formally managed under a QMS.
 
 ## 1. Purpose, Strategic Direction, and Products/Services
 
-* **Purpose & Strategic Direction:** Refer to [[Quality Manual#3-Organizational-Identity|Quality Manual §3 - Organizational Identity]] for the controlled statement.
+* **Purpose & Strategic Direction:** Refer to [[Quality Manual]] for the controlled statement.
 
 * **Products and Services (for context analysis purposes):**
 

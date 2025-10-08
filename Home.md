@@ -22,7 +22,7 @@ FLEY is committed to quality, compliance, and continuous improvement.
 * [[Quality Manual]] – Comprehensive overview of FLEY’s QMS framework.
 * [[Quality Policy]] – Organizational quality policy and objectives.
 * [[QMS Process Map]] – Visual representation of workflows and interactions.
-* [[Context]] – Organizational context, risk considerations, and interested parties.
+* [[Context of the Organization]] – Organizational context, risk considerations, and interested parties.
 * [[Org Chart]] – Roles, responsibilities, and accountabilities for QMS operations.
 * [[Risk Register]] – Active and historical risks with mitigation actions.
 
