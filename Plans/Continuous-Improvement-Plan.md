@@ -29,10 +29,10 @@
 
 ## **4. Metrics & Measurement**
 
-* # of audit findings per cycle.
-* % of findings closed within 60 days.
+* \# of audit findings per cycle.
+* \% of findings closed within 60 days.
 * QMS maturity score from ISO 9004 self-assessment.
-* % of active projects with fully completed DCP and traceability matrix.
+* \% of active projects with fully completed DCP and traceability matrix.
 
 ---
 
@@ -66,12 +66,14 @@
 
 * **Recurring Activities:**
 
-  * [ISO 9004 Self-Assessment Checklist](https://github.com/<org>/<repo>/wiki/ISO-9004-Assessment)
-  * [GDPR Audit Checklist](https://github.com/<org>/<repo>/wiki/GDPR-Audit)
+  * [[ISO 9004 Self-Assessment Checklist]]
+  * [[GDPR Audit Checklist]]
+
+
 * **Issue Tracking:**
 
-  * [CAPA Issues (label:capa)](https://github.com/<org>/<repo>/issues?q=label%3Acapa)
-  * [Audit Findings (label:audit)](https://github.com/<org>/<repo>/issues?q=label%3Aaudit)
+  * [CAPA Issues (label:capa)](https://github.com/mlehotay/redwitch/issues?q=label%3Acapa)
+  * [Audit Findings (label:audit)](https://github.com/mlehotay/redwitch/issues?q=label%3Aaudit)
 
 ---
 

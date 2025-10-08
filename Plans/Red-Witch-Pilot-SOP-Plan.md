@@ -29,9 +29,9 @@
 
 ## **4. Metrics & Measurement**
 
-* # of SOPs drafted vs. target.
-* # of SOPs validated through project evidence.
-* % of SOPs updated based on pilot feedback.
+* \# of SOPs drafted vs. target.
+* \# of SOPs validated through project evidence.
+* \% of SOPs updated based on pilot feedback.
 * Traceability of SOPs → DCP/WI deliverables.
 
 ---
@@ -66,12 +66,16 @@
 
   * [QMS Foundations](https://github.com/mlehotay/redwitch/milestone/1)
   * [Audit-Ready QMS Documentation](https://github.com/mlehotay/redwitch/milestone/2)
+  * [Compliance Backbone](https://github.com/mlehotay/redwitch/milestone/3)
 
-* **Project Board:** [Red Witch Kanban](https://github.com/users/mlehotay/projects/3)
+
+* **QMS Board:** [FLEY QMS Kanban](https://github.com/users/mlehotay/projects/3)
+
+* **Project Board:** [Red Witch Kanban](https://github.com/users/mlehotay/projects/4)
 
 * **Sample Issues:**
 
-  * [#5 Draft First SOP (SDLC)](https://github.com/mlehotay/redwitch/issues/5)
+  * [#5 Draft Software Development Lifecycle SOP](https://github.com/mlehotay/redwitch/issues/5)
   * [#7 SOP – Pull Request Procedure (Change Control)](https://github.com/mlehotay/redwitch/issues/7)
 
 ---
