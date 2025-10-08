@@ -11,8 +11,8 @@ The **Red Witch** project is the first initiative formally managed under a QMS.
 
 ## 1. Purpose, Strategic Direction, and Products/Services
 
-* **Purpose:** Enable women to manage uterine health with **privacy, safety, and effectiveness**.
-* **Strategic Direction:** Build and maintain **free, ethical, privacy-first digital tools**, starting with Red Witch, while preparing for regulatory alignment as needed.
+* **Purpose & Strategic Direction:** Refer to [[Quality Manual#3-Organizational-Identity|Quality Manual §3 - Organizational Identity]] for the controlled statement.
+
 * **Products and Services (for context analysis purposes):**
 
   * Red Witch mobile app (tracking, analytics, predictions)
@@ -90,6 +90,6 @@ The **Red Witch** project is the first initiative formally managed under a QMS.
 * Review internal and external context at least **annually**, or with major product releases
 * Monitor **climate-change signals**, regulatory updates, environmental expectations, and stakeholder demands
 * Update identified issues, risks, and controls as appropriate
-* Document context changes in management review records and reference them in [[Quality Manual]] and [[QMS Operation WI]]
+* Document context changes in management review records and reference them in [[Quality Manual]] and [[GitHub QMS Operations]]
 
 ---

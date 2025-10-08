@@ -18,19 +18,19 @@ Supporting processes (Document & Record Control, Change Control, Traceability, P
 
 ```mermaid
 flowchart TD
-    subgraph A1[Operate the QMS<br>(Continuous Improvement)]
+    subgraph A1[Operate the QMS (Continuous Improvement)]
         A11[Context & Risk Review]
         A12[Audits & CAPA]
         A13[Management Review]
     end
 
-    subgraph A2[Create the QMS<br>(Establishment Project)]
+    subgraph A2[Create the QMS (Establishment Project)]
         A21[Design & Approve QMS Structure]
         A22[Develop SOPs, WIs, Manual]
         A23[Validate Framework via Pilot]
     end
 
-    subgraph A3[Develop Products<br>(Red Witch Project)]
+    subgraph A3[Develop Products (Red Witch Project)]
         A31[Requirements & Planning]
         A32[Design & Implementation]
         A33[Verification & Release]

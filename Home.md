@@ -35,7 +35,7 @@ FLEY is committed to quality, compliance, and continuous improvement.
 * [[Leadership SOP]]
 * [[Quality Planning SOP]]
 * [[Risk and Opportunity Management SOP]]
-* Work Instructions: [[GitHub QMS Operations]], [[GitHub QMS Setup]], [[FLEY Design Control WI]], [[Information Security WI]], [[Ontario Design Framework WI]]
+* Work Instructions: [[GitHub QMS Operations]], [[GitHub QMS Setup]], [[FLEY Design Control WI]], [[Information Security]], [[Ontario Service Design WI]]
 
 **Templates:**
 
@@ -75,6 +75,7 @@ Resources for planning, execution, and organization-wide improvement.
 
 * [[Continuous Improvement Plan]] – Framework for monitoring and improving QMS maturity.
 * [[Red Witch Pilot SOP Plan]] – SOP authoring and pilot testing.
+* [[Red Witch Quality Plan]] – Project-specific quality plan.
 * Project and quality plan templates: [[Project Quality Plan Template]], [[Quality Plan Template]]
 
 > **Tip:** Track all QMS operations issues in the **FLEY QMS Kanban board**, including SOP/WI authoring, risk management, objectives, CAPA, and audits.

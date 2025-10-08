@@ -40,11 +40,22 @@ The QMS applies to all **Red Witch–related activities** impacting:
 
 ---
 
-## 3. Purpose and Strategic Direction
+## 3. Organizational Identity
 
-**Purpose:** Enable women to manage uterine health with **privacy, safety, and effectiveness**.
+**Purpose**
+Floating Eye Software (FLEY) exists to **empower individuals to manage and understand uterine health** through **private, safe, and effective** digital solutions that respect autonomy and dignity.
 
-**Strategic Direction:** Build and maintain **free, ethical, privacy-first digital tools**, beginning with Red Witch, while preparing for regulatory alignment as the organization grows.
+**Values**
+FLEY’s work is guided by a commitment to:
+
+* **Ethics and Privacy:** Protecting user data and personal information as a fundamental right.
+* **Transparency:** Ensuring that processes, algorithms, and intentions are openly communicated.
+* **Inclusivity:** Serving all individuals affected by uterine health needs, regardless of gender identity or background.
+* **Integrity and Quality:** Building trustworthy tools that prioritize user well-being over profit or exploitation.
+* **Sustainability:** Considering environmental and social impacts in all operational decisions.
+
+**Strategic Direction**
+FLEY will **develop and maintain free, ethical, privacy-first digital tools**, beginning with *Red Witch*, while progressively aligning with **regulatory and ethical standards** as the organization grows.
 
 ---
 
@@ -54,9 +65,9 @@ FLEY’s QMS consists of three interrelated workflows:
 
 | Workflow                            | Description                                                 | Key SOP / WI                 | Example Outputs                                         |
 | ----------------------------------- | ----------------------------------------------------------- | ---------------------------- | ------------------------------------------------------- |
-| **QMS Creation**                    | Establishing and documenting the framework                  | [[Planning SOP]]             | SOPs, Quality Manual, initial audit                     |
-| **QMS Operation**                   | Maintaining, monitoring, auditing, and improving the system | [[GitHub QMS Operation WI]]  | Context updates, Risk Register, CAPA, Improvement logs  |
-| **Product Development (Red Witch)** | Designing, developing, and maintaining Red Witch            | [[Design & Development SOP]] | Design records, verification results, release artifacts |
+| **QMS Creation**                    | Establishing and documenting the framework                  | [[Quality Planning SOP]]             | SOPs, Quality Manual, initial audit                     |
+| **QMS Operation**                   | Maintaining, monitoring, auditing, and improving the system | [[GitHub QMS Operations]]  | Context updates, Risk Register, CAPA, Improvement logs  |
+| **Product Development (Red Witch)** | Designing, developing, and maintaining Red Witch            | [[Design Control SOP]] | Design records, verification results, release artifacts |
 
 For a **high-level visual of workflows and interactions**, see [[QMS Process Map]].
 
@@ -93,7 +104,7 @@ Detailed roles are documented in [[Leadership SOP]].
   * QMS risks (resource, documentation, climate)
   * Improvement opportunities (automation, maturity growth)
 * Reviewed during **Management Review**
-* Mitigation and improvement actions documented in [[Planning SOP]] and [[Continuous Improvement Plan]]
+* Mitigation and improvement actions documented in [[Quality Planning SOP]] and [[Continuous Improvement Plan]]
 
 ---
 
@@ -115,7 +126,7 @@ All documents are controlled per [[Document Control SOP]].
 * Conducted annually or following major releases
 * Inputs: Context updates, audit results, KPI performance, user feedback, risk changes, climate considerations
 * Outputs: Action plans, improvement projects, resource adjustments
-* Logged in [[Continuous Improvement Plan]] and [[GitHub QMS Operation WI]]
+* Logged in [[Continuous Improvement Plan]] and [[GitHub QMS Operations]]
 
 ---
 
@@ -139,8 +150,8 @@ All documents are controlled per [[Document Control SOP]].
 
 | Workflow                        | Reference / Link             | Notes                                   |
 | ------------------------------- | ---------------------------- | --------------------------------------- |
-| QMS Creation                    | [[Planning SOP]]             | Placeholder for QMS Creation Board      |
-| QMS Operation                   | [[GitHub QMS Operation WI]]  | Placeholder for QMS Operation Board     |
-| Product Development (Red Witch) | [[Design & Development SOP]] | Placeholder for Red Witch Project Board |
+| QMS Creation                    | [[Quality Planning SOP]]     | Placeholder for QMS Creation Board      |
+| QMS Operation                   | [[GitHub QMS Operations]]    | Placeholder for QMS Operation Board     |
+| Product Development (Red Witch) | [[Design Control SOP]]       | Placeholder for Red Witch Project Board |
 
 ---
