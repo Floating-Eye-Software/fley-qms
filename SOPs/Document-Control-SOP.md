@@ -45,7 +45,31 @@ The following activities shall be addressed as applicable:
 
 #### 5.3 External Documented Information
 
-Documented information from external sources required for planning or operation of the QMS shall be identified and controlled in the same manner as internal documents.
+1. **Scope:** Applies to all third-party references used in QMS, PMS, SRS, or design activities.
+
+2. **Storage:**
+
+   * Do not store copyrighted materials (e.g., ISO standards, paid journal PDFs) in shared repositories.
+   * Open-access or licensed materials may be stored locally under controlled access.
+
+3. **Metadata Requirements:** Maintain for each external document:
+
+   | Field           | Description                                           |
+   | --------------- | ----------------------------------------------------- |
+   | Document ID     | Unique identifier                                     |
+   | Title           | Official document title                               |
+   | Source / Link   | URL or publisher reference                            |
+   | Type            | Standard, Article, Market Report, Regulatory Guidance |
+   | Summary / Notes | Internal paraphrased summary relevant to QMS/PMS      |
+   | Local Copy      | Location if allowed; otherwise “None”                 |
+
+4. **Internal Summaries:** Include only key findings relevant to product safety, design, or regulatory compliance.
+
+5. **Integration:** Reference Document ID in controlled documents (SRS, RMF, SOPs, PMS logs).
+
+6. **Review:** Annually, or upon new edition release, create a new Document ID.
+
+7. **Audit Compliance:** Metadata, summaries, and links suffice for auditors; original document can be accessed externally if required.
 
 #### 5.4 System Requirements for Electronic Control
 
