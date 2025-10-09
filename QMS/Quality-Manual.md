@@ -43,9 +43,11 @@ The QMS applies to all **Red Witch–related activities** impacting:
 ## 3. Organizational Identity
 
 **Purpose**
+
 Floating Eye Software (FLEY) exists to **empower individuals to manage and understand uterine health** through **private, safe, and effective** digital solutions that respect autonomy and dignity.
 
 **Values**
+
 FLEY’s work is guided by a commitment to:
 
 * **Ethics and Privacy:** Protecting user data and personal information as a fundamental right.
@@ -55,6 +57,7 @@ FLEY’s work is guided by a commitment to:
 * **Sustainability:** Considering environmental and social impacts in all operational decisions.
 
 **Strategic Direction**
+
 FLEY will **develop and maintain free, ethical, privacy-first digital tools**, beginning with *Red Witch*, while progressively aligning with **regulatory and ethical standards** as the organization grows.
 
 ---
