@@ -1,16 +1,73 @@
+# **Organizational Chart**
 
-<!--
-5 Leadership
-5.3 Organizational roles, responsibilities and authorities
-Top management shall ensure that the responsibilities and authorities for relevant roles are assigned,
-communicated and understood within the organization.
-Top management shall assign the responsibility and authority for:
-a) ensuring that the quality management system conforms to the requirements of this
-International Standard;
-b) ensuring that the processes are delivering their intended outputs;
-c) reporting on the performance of the quality management system and on opportunities for
-improvement (see 10.1), in particular to top management;
-d) ensuring the promotion of customer focus throughout the organization;
-e) ensuring that the integrity of the quality management system is maintained when changes to the
-quality management system are planned and implemented.
--->
+```mermaid
+graph TD
+    A["FLEY (Sole Proprietor)"]
+    A --> B["Top Management"]
+    A --> C["Quality Manager"]
+    A --> D["Project Manager"]
+    A --> E["Design Lead"]
+    A --> F["Process Owner"]
+    A --> G["All Employees"]
+```
+
+---
+
+## Overview
+
+Floating Eye Software (FLEY) is a **sole proprietorship**, managed and operated by one individual who fulfills all organizational roles defined in the Quality Management System (QMS).
+
+This structure ensures that **roles, responsibilities, and authorities** are clearly defined and implemented in compliance with ISO 9001:2015 — Clause 5.3.
+
+---
+
+## Roles, Responsibilities, and Authorities
+
+**Top Management**
+
+* Provides strategic direction and ensures alignment with FLEY’s purpose and values.
+* Establishes, implements, and maintains the Quality Policy.
+* Approves quality objectives and management review outcomes.
+* Ensures resources are available to achieve objectives.
+* Promotes customer focus and continual improvement.
+
+**Quality Manager**
+
+* Establishes, implements, and maintains the QMS.
+* Ensures processes are compliant with applicable requirements.
+* Reports on QMS performance and opportunities for improvement.
+* Maintains the risk and opportunity register.
+* Oversees document and change control.
+
+**Project Manager**
+
+* Prepares project plans and manages scope, schedule, and resources.
+* Tracks progress, risks, and deliverables.
+* Coordinates project reviews and status reporting.
+* Ensures projects align with quality and strategic objectives.
+
+**Design Lead**
+
+* Develops and maintains the Design and Development Plan.
+* Coordinates design inputs, reviews, and verifications.
+* Ensures design outputs meet regulatory and quality requirements.
+* Maintains design traceability and documentation integrity.
+
+**Process Owner**
+
+* Oversees operational and support processes.
+* Identifies and manages risks and opportunities.
+* Ensures outputs are identified, traceable, and properly documented.
+
+**All Employees**
+
+* Comply with approved procedures and documented information.
+* Report changes, issues, or risks as they arise.
+* Participate in continual improvement activities.
+
+---
+
+## Responsibility Statement
+
+All of the above functional roles are performed by **the same individual** — the sole proprietor of FLEY.
+This integrated structure ensures clear accountability, consistent decision-making, and effective management of the Quality Management System.
