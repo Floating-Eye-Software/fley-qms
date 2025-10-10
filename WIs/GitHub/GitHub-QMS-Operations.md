@@ -1,233 +1,167 @@
-# **Work Instruction: QMS Operations in GitHub**
+# ⚙️ **Work Instruction: Operate the QMS in GitHub**
 
 **Document No.:** WI-QMS-09-01
-**Title:** QMS Operations in GitHub
-**Revision:** 1.0
+**Title:** Operating the QMS in GitHub – Single FLEY Board
+**Revision:** 2.0
 **Effective Date:** [Insert Date]
-**Approved by:** [Top Management]
+**Approved By:** [Top Management]
 
 ---
 
 ## **1. Purpose**
 
-To define how the organization operates its Quality Management System (QMS) within **GitHub**, ensuring leadership, planning, risk management, objectives, and continuous improvement are effectively implemented and traceable in compliance with **ISO 9001:2015 Clauses 4–10**.
+To define how the organization **operates and maintains** its QMS using GitHub’s tools, ensuring full compliance with ISO 9001:2015 Clauses 4–10.
 
 ---
 
 ## **2. Scope**
 
-This WI applies to all QMS activities conducted in GitHub, including:
+Applies to all QMS operation activities, including:
 
-* Leadership and management review
-* Quality planning and objective management
+* Leadership and Management Review
+* Quality objectives planning and tracking
 * Risk and opportunity management
-* Change control and continual improvement
-* Documentation and records management
-
-It supports implementation of:
-
-* **QMS-SOP-05 – Leadership**
-* **QMS-SOP-06 – Planning**
-* **QMS-SOP-08 – Risk & Opportunity Management**
-* **QMS-SOP-04 – Change Control**
-* **QMS-SOP-03 – Documented Information Control**
+* CAPA and continual improvement
+* Change control and document updates
+* Records management and traceability
 
 ---
 
-## **3. Responsibilities**
+## **3. GitHub Project Tabs and Their QMS Roles**
 
-| Role                                    | Responsibilities                                                                                                                         |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Top Management**                      | Demonstrates leadership and commitment to the QMS, approves objectives, reviews QMS performance, and provides resources.                 |
-| **Quality Manager / QMS Administrator** | Maintains repositories, Projects, and records in GitHub; coordinates Management Review; monitors risk and objectives.                    |
-| **Process Owners**                      | Create and maintain Issues and Projects related to their processes; manage risks, opportunities, and objectives.                         |
-| **All Employees**                       | Follow GitHub-based procedures, update Issues and Projects relevant to their responsibilities, and participate in continual improvement. |
-
----
-
-## **4. GitHub Structure for the QMS**
-
-| GitHub Area                          | Function in the QMS                                                                                                |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| **Repository (`QMS` or equivalent)** | Central home for all controlled QMS documentation (SOPs, WIs, templates, records).                                 |
-| **Wiki**                             | User-facing documentation: SOPs, WIs, policies, reference materials.                                               |
-| **Issues**                           | Records for risks, opportunities, nonconformities, corrective actions, improvements, and management review inputs. |
-| **Pull Requests**                    | Formal mechanism for approving document or process changes (supports Change Control SOP).                          |
-| **Projects**                         | Boards for tracking QMS objectives, risk actions, improvement projects, and management review tasks.               |
-| **Discussions**                      | Collaborative communication and brainstorming (optional).                                                          |
-| **Actions (CI/CD)**                  | Automation (e.g., backups, notifications, record archiving).                                                       |
-| **Security**                         | Access control and audit of contributor permissions.                                                               |
-| **Insights**                         | Analytics and history of participation, commits, and repository metrics.                                           |
-| **Settings**                         | Configuration of branches, permissions, and repository policies.                                                   |
+| GitHub Tab                       | QMS Function                                                                       |
+| -------------------------------- | ---------------------------------------------------------------------------------- |
+| **Repository (`redwitch.wiki`)** | Home for all controlled QMS documentation (manual, SOPs, WIs, templates, records). |
+| **Wiki**                         | User-facing view for SOPs, WIs, and policies.                                      |
+| **Issues**                       | Used for all QMS records (risks, CAPAs, improvements, objectives, reviews).        |
+| **Pull Requests**                | Formal change approvals under Document Control SOP.                                |
+| **Projects**                     | The single “FLEY QMS” board for all QMS authoring and operations.                  |
+| **Discussions**                  | Optional collaboration, brainstorming, or feedback.                                |
+| **Actions (CI/CD)**              | Future automation: notifications, exports, and backups.                            |
+| **Security**                     | Controls contributor access and permissions.                                       |
+| **Insights**                     | Repository metrics and participation history.                                      |
+| **Settings**                     | Repository configuration, branch rules, and visibility.                            |
 
 ---
 
-## **5. Procedure**
+## **4. QMS Operation Using the FLEY Board**
 
-### **5.1 Leadership and QMS Governance**
+### 4.1 Issue Workflow
 
-1. **Quality Policy**
+All QMS activity is tracked through the FLEY QMS board:
 
-   * Stored in the Wiki under `/Quality-Policy`.
-   * Reviewed annually via a GitHub Issue labeled `Management Review`.
+```
+Backlog → Drafting → Review / Approval → Active → Validated / Closed
+```
 
-2. **Roles & Responsibilities**
+* **Authoring Issues**: SOPs, WIs, templates, policies
+* **Operational Issues**: Risk, Opportunity, CAPA, Improvement, Objective, Management Review
 
-   * Documented in `/docs/OrganizationChart.md`.
-   * Updated via Pull Request; approved by Top Management.
+Each Issue must:
 
-3. **Management Review**
-
-   * Initiated as a GitHub Issue with label `Management Review`.
-   * Links to:
-
-     * Risk Register Project
-     * Objectives Project
-     * Audit results (Issues labeled `Audit`)
-     * Feedback and customer satisfaction data
-   * Minutes are captured in the Issue body or attached as a PDF.
-   * On completion, the Issue is closed and archived under `/records/management-reviews/`.
+* Use the appropriate label and Issue template
+* Link related Issues and PRs
+* Include responsible owner and due dates
 
 ---
 
-### **5.2 Quality Planning and Objectives**
+### 4.2 Leadership and Governance
 
-1. **Setting Objectives**
+1. Quality Policy and Objectives are stored in `/QMS/Quality-Manual.md`.
+2. Management Review is initiated quarterly using the `Management Review` Issue template.
+3. Review input includes:
 
-   * Each **Quality Objective** is created as a **GitHub Issue** labeled `Objective`.
-   * The Issue includes:
-
-     * Objective title and description
-     * Metric / target value
-     * Responsible owner
-     * Due date and milestones
-     * Links to related processes or SOPs
-
-2. **Tracking Objectives**
-
-   * Objectives are tracked using a **Project Board** named **“QMS Objectives”**, with columns:
-
-     * Planned
-     * In Progress
-     * Achieved
-     * Reviewed
-   * Each Objective Issue is moved across columns as progress is made.
-
-3. **Review**
-
-   * Reviewed quarterly or during Management Review.
-   * Objective effectiveness is noted in the corresponding Issue comments.
+   * Internal/external issues
+   * Interested parties
+   * Risks, opportunities, objectives
+   * CAPA, audit, and feedback results
+4. Minutes and actions are attached to the Issue and archived in `/records/management-reviews/`.
 
 ---
 
-### **5.3 Risk and Opportunity Management**
+### 4.3 Risk and Opportunity Management
 
-1. **Creating Risks or Opportunities**
-
-   * Each identified risk or opportunity is a **GitHub Issue** labeled `Risk` or `Opportunity`.
-   * Include:
-
-     * Description
-     * Source (e.g., audit, feedback, process change)
-     * Likelihood (Low / Medium / High)
-     * Impact (Low / Medium / High)
-     * Mitigation or enhancement plan
-     * Owner and due date
-
-2. **Tracking**
-
-   * Risks and opportunities are maintained on a **Project Board** titled **“QMS Risk Register”**, with columns:
-
-     * Identified
-     * Action Planned
-     * Mitigation in Progress
-     * Closed / Controlled
-
-3. **Actions**
-
-   * Mitigation or improvement actions are tracked as linked Issues (labeled `Action` or `CAPA`).
-   * Progress and closure are recorded in comments.
-
-4. **Review**
-
-   * Quality Manager reviews open risks quarterly.
-   * Major items are included in the next Management Review.
-
-5. **Records**
-
-   * Closed risk Issues are retained indefinitely as QMS records.
-   * Optionally exported quarterly to `/records/risk-register/YYYY-MM/`.
+1. Create an Issue labeled `Risk` or `Opportunity`.
+2. Include likelihood, impact, mitigation/enhancement, and owner.
+3. Review open risks quarterly in Management Review.
+4. Mitigation actions tracked as linked Issues (`Action` or `CAPA`).
+5. Closed Issues serve as permanent risk records.
 
 ---
 
-### **5.4 Change Control and Continual Improvement**
+### 4.4 Corrective Action and Continual Improvement
 
-1. **Initiating a Change**
-
-   * Changes to processes, documentation, or the QMS are made through **Pull Requests**.
-   * Each PR must:
-
-     * Reference the related Change Control Issue (label `Change Request`).
-     * Describe the change and justification.
-     * Be reviewed and approved by the Quality Manager and Process Owner.
-
-2. **Approval**
-
-   * Approval is documented through GitHub’s PR review system (electronic signature).
-   * Merge = authorized implementation.
-
-3. **Post-Implementation Review**
-
-   * Linked Change Request Issue is updated with the implementation result and closed.
-
-4. **Continual Improvement**
-
-   * Improvements, suggestions, and CAPAs are logged as Issues labeled `Improvement`.
-   * Reviewed and prioritized in the **QMS Improvement Project Board**.
+1. Create Issues labeled `CAPA` or `Improvement`.
+2. Root cause and corrective actions are documented within the Issue.
+3. Approval and closure recorded via comments or linked PRs.
+4. Review open actions in the next Management Review.
 
 ---
 
-### **5.5 Document Control and Record Retention**
+### 4.5 Quality Objectives
 
-* Follows the **Documented Information Control SOP (QMS-SOP-03)**.
-* All controlled documents are stored in `/docs` or the Wiki.
-* Obsolete revisions are archived automatically by Git version control.
-* Records (closed Issues, PRs, and exports) are backed up regularly.
-
----
-
-## **6. Backup and Record Export**
-
-1. Use a GitHub Action or external tool to:
-
-   * Export all open and closed Issues (including comments and attachments) quarterly.
-   * Save under `/records/github-exports/YYYY-MM/`.
-2. The export serves as the **official QMS record backup**.
-3. For redundancy, repositories should also be cloned to an offline backup location.
+1. Each Quality Objective = one Issue labeled `Objective`.
+2. Define metric, target, owner, due date, and link to relevant process/SOP.
+3. Move through the FLEY board as progress occurs.
+4. Review quarterly and update results in comments.
 
 ---
 
-## **7. References**
+### 4.6 Change Control and Documented Information
 
-* ISO 9001:2015 – Clauses 4, 5, 6, 8, 9, 10
+* Use Pull Requests for any QMS document or SOP/WI modification.
+* Reference the associated `Change Request` Issue.
+* Merge only after review and approval (digital signature).
+* Obsolete versions are automatically preserved in Git history.
+
+---
+
+### 4.7 Records and Traceability
+
+* All Issues, PRs, and comments are QMS records.
+* Closed Issues and PRs remain accessible for audit.
+* Periodic exports (manual backup) per WI-QMS-10-02 Section 9.
+* Documented Information Control SOP applies to all repositories.
+
+---
+
+## **5. Continual Improvement Cycle**
+
+Every quarter (or during each Management Review):
+
+1. Reassess internal/external issues.
+2. Update interested parties and requirements.
+3. Review objectives, risks, and opportunities.
+4. Verify effectiveness of actions taken.
+5. Identify new improvements.
+6. Document all updates in the relevant Issues and files.
+
+---
+
+## **6. References**
+
+* ISO 9001:2015 – Clauses 4–10
+* ISO 9004:2018 – Clauses 4–9
 * QMS-SOP-03 – Documented Information Control
+* QMS-SOP-04 – Change Control
 * QMS-SOP-05 – Leadership
 * QMS-SOP-06 – Planning
 * QMS-SOP-08 – Risk & Opportunity Management
-* QMS-SOP-04 – Change Control
+* WI-QMS-10-02 – QMS Setup in GitHub
 
 ---
 
-## **8. Revision History**
+## **7. Revision History**
 
-| Revision | Date   | Description of Change                                                                      | Approved By |
-| -------- | ------ | ------------------------------------------------------------------------------------------ | ----------- |
-| 1.0      | [Date] | Initial release – implements Leadership, Planning, and Risk-based QMS operations in GitHub | [Name]      |
+| Rev | Date   | Description                                                                   | Approved By |
+| --- | ------ | ----------------------------------------------------------------------------- | ----------- |
+| 2.0 | [Date] | Integrated Establish and Operation content; aligned to single-board QMS model | [Name]      |
 
 ---
 
 ## 💡 **Implementation Notes**
 
-* GitHub repositories and Projects act as **living QMS records**, fully traceable through commits, Issues, and pull request history.
-* This WI provides a complete implementation framework for ISO 9001 risk-based thinking, leadership accountability, and continual improvement — entirely within GitHub.
-* If your organization later uses other tools (e.g., Confluence, Jira), this WI can reference external procedures while keeping GitHub as the master control system.
+* The **FLEY QMS board** in `redwitch.wiki` is the *only* board used for QMS activity — covering authoring, risks, CAPA, objectives, and management review.
+* Product repos (e.g., `redwitch`, `snowplow`) maintain their own project boards for development and link relevant QMS Issues.
+* Periodic exports and manual backups ensure ISO 9001 record control until automation (via Actions) is implemented.
+* The Management Review ensures all ISO-required “determine / monitor / review / establish / update” actions are documented and traceable.
