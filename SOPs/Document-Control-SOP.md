@@ -1,101 +1,153 @@
-**SOP: Documented Information Control**
-**Document Number:** [To be assigned]
+## 🧾 **SOP: Document Control**
+
+**Document Number:** SOP-003
 **Effective Date:** [To be assigned]
-**Revision:** [To be assigned]
+**Revision:** r1
+**Title:** Document Control
+**Controlled Source:** [GitHub Repository URL]
 
-### 1. Purpose
+---
 
-To define the requirements for creating, updating, and controlling documented information within the organization’s Quality Management System (QMS) in accordance with ISO 9001:2015, ensuring its availability, adequacy, and protection.
+### **1. Purpose**
 
-### 2. Scope
+To ensure all QMS documents are identified, approved, maintained, and controlled in a manner that guarantees availability of current, authorized versions and prevents unintended use of obsolete or draft material.
 
-This SOP applies to all documented information required by the QMS and by ISO 9001, including documents of internal and external origin, used throughout the organization.
+---
 
-### 3. Responsibilities
+### **2. Scope**
 
-* **Process Owners:** Ensure documents within their areas are created, reviewed, approved, maintained, and made available as required.
-* **Document Control Coordinator (or equivalent):** Maintain master lists of QMS documents, track revisions, and ensure proper control of documented information.
-* **All Employees:** Use documented information in accordance with this SOP and related WIs.
+This procedure applies to all documented information that forms part of the Quality Management System (QMS), including policies, procedures, work instructions, templates, and records, regardless of medium or format.
+It also applies to all repositories, systems, and locations where such documents are created, stored, or used.
 
-### 4. Definitions
+---
 
-* **Documented Information:** Information required by the QMS and by ISO 9001, including records, manuals, procedures, forms, drawings, and external standards.
-* **Records:** Evidence of conformity to requirements and operation of the QMS.
+### **3. Responsibilities**
 
-### 5. Procedure
+| Role                                               | Responsibilities                                                                                                                             |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Process Owners**                                 | Develop, maintain, and review documents related to their processes. Ensure accuracy, relevance, and compliance with applicable requirements. |
+| **Quality Manager / Document Control Coordinator** | Maintain the controlled repository, ensure appropriate document identification, versioning, approval, and access control.                    |
+| **Management**                                     | Approve new or revised documents affecting the QMS.                                                                                          |
+| **All Employees**                                  | Use only approved and current versions of controlled documents. Report obsolete or inconsistent content.                                     |
 
-#### 5.1 Creation and Updating
+---
 
-When creating or updating documented information, ensure:
+### **4. Definitions**
 
-1. **Identification and Description:** Include title, date, author, reference number, or other identifiers.
-2. **Format and Media:** Specify language, software version, graphics, or media type (paper, electronic, etc.). Acceptable electronic formats include PDF, DOCX, XLSX, digital forms, databases, or controlled repositories (e.g., SharePoint, GitHub, document control software).
-3. **Review and Approval:** Documented information must be reviewed and approved for suitability and adequacy prior to release. Electronic approvals (digital signatures, workflow approvals, or authenticated logins) are acceptable when traceable to the responsible individual.
+| Term                    | Definition                                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Controlled Document** | A document maintained under version control, approved for use, and accessible to authorized personnel.                          |
+| **Document Number**     | A unique identifier assigned to each controlled document, composed of a type prefix (e.g., SOP, WI, TPL) and sequential number. |
+| **Revision**            | The current, approved version of a controlled document, identified using the format `r#` (e.g., r2).                            |
+| **Git Tag**             | A permanent marker in Git that identifies a specific approved revision of a controlled document.                                |
+| **GitHub Repository**   | The official controlled source of QMS documents and their full revision history.                                                |
 
-#### 5.2 Control of Documented Information
+---
 
-Documented information shall be controlled to ensure it is available where and when needed and protected against loss or unauthorized use.
+### **5. Procedure**
 
-The following activities shall be addressed as applicable:
+#### **5.1 Creation and Approval of Documents**
 
-1. **Distribution, Access, Retrieval, and Use:** Ensure appropriate access and authority to view or modify information.
-2. **Storage and Preservation:** Protect documented information from damage, deterioration, or loss, preserving legibility and integrity.
-3. **Control of Changes:** Maintain version control to prevent unintended alterations.
-4. **Retention and Disposition:** Retain documented information as required and dispose of it appropriately when no longer needed.
+1. New documents shall be authored by the responsible Process Owner or delegate.
+2. Each new document shall:
 
-#### 5.3 External Documented Information
+   * Use the approved template and metadata header.
+   * Be assigned a document number and title according to Section 5.6.
+   * Be submitted via GitHub Pull Request for review and approval.
+3. Documents must be **reviewed and approved** prior to merging to the main branch.
 
-1. **Scope:** Applies to all third-party references used in QMS, PMS, SRS, or design activities.
+   * Approval is provided via GitHub Pull Request (PR) approval feature.
+   * The merged and tagged version represents the official approved document.
 
-2. **Storage:**
+---
 
-   * Do not store copyrighted materials (e.g., ISO standards, paid journal PDFs) in shared repositories.
-   * Open-access or licensed materials may be stored locally under controlled access.
+#### **5.2 Review and Revision**
 
-3. **Metadata Requirements:** Maintain for each external document:
+1. Controlled documents shall be reviewed periodically, typically every two years, or sooner if a change in process or requirement occurs.
+2. Revisions are proposed via Pull Request in accordance with the **Change Control SOP**.
+3. Upon approval and merge, a new Git tag (e.g., `SOP-003_r2`) shall be created to identify the approved revision.
 
-   | Field           | Description                                           |
-   | --------------- | ----------------------------------------------------- |
-   | Document ID     | Unique identifier                                     |
-   | Title           | Official document title                               |
-   | Source / Link   | URL or publisher reference                            |
-   | Type            | Standard, Article, Market Report, Regulatory Guidance |
-   | Summary / Notes | Internal paraphrased summary relevant to QMS/PMS      |
-   | Local Copy      | Location if allowed; otherwise “None”                 |
+---
 
-4. **Internal Summaries:** Include only key findings relevant to product safety, design, or regulatory compliance.
+#### **5.3 Control of Obsolete Documents**
 
-5. **Integration:** Reference Document ID in controlled documents (SRS, RMF, SOPs, PMS logs).
+1. Superseded or obsolete versions shall be retained in the repository’s history but not accessible as the default version.
+2. Obsolete documents may be moved to an `/archive/` directory or clearly marked as **OBSOLETE** in the file header.
+3. Only the **main branch** and latest Git tag represent current, controlled versions.
 
-6. **Review:** Annually, or upon new edition release, create a new Document ID.
+---
 
-7. **Audit Compliance:** Metadata, summaries, and links suffice for auditors; original document can be accessed externally if required.
+#### **5.4 Availability and Access**
 
-#### 5.4 System Requirements for Electronic Control
+1. Approved documents are available in read-only form through the GitHub repository or published GitHub Pages site.
+2. Editing rights are restricted to authorized personnel with designated access.
+3. Public or internal read access is determined by management and repository settings.
 
-* The system used for electronic document control shall:
-  * Provide authentication (unique login IDs, passwords, or SSO)
-  * Prevent unauthorized access or modification
-  * Maintain audit trails for creation, modification, approval, and deletion
-  * Support electronic signatures or workflow approvals traceable to individuals
-  * Be periodically backed up and validated for functionality and data integrity
-* When operating under regulatory control (e.g., FDA, EU GMP), the system must also comply with **21 CFR Part 11** or **EU Annex 11** requirements.
+---
 
+#### **5.5 Control of External Documents**
 
-#### 5.5 Records
+Documents of external origin that are necessary for the QMS (e.g., standards, supplier manuals) shall be:
 
-Records serving as evidence of conformity must be protected from unintended alterations and maintained according to retention requirements.
+* Listed in an external document register or referenced within applicable SOPs.
+* Verified as current and relevant.
+* Stored or linked in the controlled repository or management system.
 
-### 6. References
+---
 
-* ISO 9001:2015, Clause 7.5 – Documented Information
-* ISO 27001:2022 – Information Security Management (optional)
-* FDA 21 CFR Part 11 – Electronic Records; Electronic Signatures (if applicable)
-* EU GMP Annex 11 – Computerized Systems (if applicable)
-* Related Work Instructions (WIs) for tool-specific procedures
+#### **5.6 Document Identification and Numbering**
 
-### 7. Revision History
+1. Each controlled document shall have a **unique identifier** consisting of:
 
-| Revision | Date   | Description of Change | Approved By |
-| -------- | ------ | --------------------- | ----------- |
-| 0        | [Date] | Initial Release       | [Name]      |
+   * **Prefix:** Document type (SOP, WI, TPL, POL, REC)
+   * **Sequential Number:** Three-digit, incrementing identifier (e.g., `SOP-003`)
+   * **Title:** Short, descriptive name separated by underscores.
+   * Example filename:
+
+     ```
+     SOP-003_Document-Control.md
+     ```
+
+2. The document header shall include the following metadata fields:
+
+   ```markdown
+   # SOP-003 – Document Control  
+   **Revision:** r1  
+   **Effective Date:** 2025-10-11  
+   **Approved By:** [Name / Title]  
+   **Controlled Source:** https://github.com/[org]/[repo]/SOPs/SOP-003_Document-Control.md  
+   ```
+
+3. **Revisions** are identified using `r#` notation, matching the Git tag (e.g., `SOP-003_r1`).
+
+4. The **GitHub repository** and associated **Git tags** constitute the single source of truth for document identification and revision history.
+
+---
+
+#### **5.7 Records and Retention**
+
+| Record Type              | Location          | Retention                                                                    |
+| ------------------------ | ----------------- | ---------------------------------------------------------------------------- |
+| Document files           | GitHub Repository | Current version: active; prior versions retained indefinitely in Git history |
+| Pull Request approvals   | GitHub            | Permanent                                                                    |
+| Git tags and releases    | GitHub            | Permanent                                                                    |
+| Metadata (header fields) | Within document   | Permanent                                                                    |
+
+---
+
+### **6. References**
+
+* ISO 9001:2015, Clauses 7.5, 6.3, and 8.5.6
+* SOP – Change Control
+* SOP – Identification and Traceability
+* WI – GitHub Document Control
+* WI – GitHub Pull Request and Branch Management
+* WI – Git Version Control and Traceability
+
+---
+
+### **7. Revision History**
+
+| Revision | Date       | Description of Change                                                              | Approved By |
+| -------- | ---------- | ---------------------------------------------------------------------------------- | ----------- |
+| r1       | 2025-10-11 | Initial release integrating Git-based document identification and revision control | [Name]      |
