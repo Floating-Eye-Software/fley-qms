@@ -1,31 +1,33 @@
-## **Work Instruction (WI): GitHub Pull Request and Branch Management**
+## 🧭 **Work Instruction (WI): GitHub Pull Request and Branch Management**
 
-**Document Number:** [To be assigned]
-**Effective Date:** [To be assigned]
-**Revision:** [To be assigned]
+**Document Number:** WI-005
+**Effective Date:** 2025-10-11
+**Revision:** r1
 **Related SOP:** Change Control
+**Controlled Source:** [GitHub Repository URL]
 
 ---
 
 ### **1. Purpose**
 
-To define the process for proposing, reviewing, approving, and implementing changes to controlled information using GitHub branches and Pull Requests (PRs), ensuring changes are authorized, traceable, and properly recorded.
+To define the standardized method for proposing, reviewing, approving, and implementing changes to controlled QMS documents and records using GitHub branches and Pull Requests (PRs).
 
 ---
 
 ### **2. Scope**
 
-Applies to all repositories containing QMS documents, processes, or controlled outputs subject to change control requirements.
+Applies to all repositories containing QMS-controlled documentation or configuration data managed through GitHub.
 
 ---
 
 ### **3. Responsibilities**
 
-| Role                                 | Responsibilities                                                                           |
-| ------------------------------------ | ------------------------------------------------------------------------------------------ |
-| **Change Requestor**                 | Initiates a change by creating a branch and PR with a clear description and justification. |
-| **Reviewer/Approver**                | Reviews the change for accuracy, completeness, and impact.                                 |
-| **Change Control Coordinator (CCC)** | Ensures changes follow approval workflows and that records are properly maintained.        |
+| Role                                 | Responsibilities                                                                |
+| ------------------------------------ | ------------------------------------------------------------------------------- |
+| **Change Requestor**                 | Create and document proposed changes using a GitHub Issue and corresponding PR. |
+| **Reviewer/Approver**                | Evaluate changes for completeness, accuracy, and compliance before approval.    |
+| **Change Control Coordinator (CCC)** | Verify the PR includes appropriate links, approvals, and tags before merging.   |
+| **Quality Manager**                  | Ensure adherence to approval requirements and retention of all records.         |
 
 ---
 
@@ -33,71 +35,127 @@ Applies to all repositories containing QMS documents, processes, or controlled o
 
 #### **4.1 Initiating a Change**
 
-1. Create a **GitHub Issue** describing the proposed change. Include:
+1. Create a **GitHub Issue** to describe the proposed change, including:
 
-   * Reason for change
-   * Impact assessment (if applicable)
-   * Linked related SOPs or records
-2. Create a **branch** from `main` to implement the change.
+   * Change reason and summary
+   * Impact assessment
+   * Related SOPs, WIs, or CAPAs
 
-   * Branch naming convention: `change/<short-description>`
-   * Example: `change/update-traceability-wi`
-3. Commit updates with clear, descriptive commit messages referencing the Issue (e.g., `Fixes #27 – Updated review workflow section`).
+2. Create a **branch** from `main`:
 
----
+   ```
+   git checkout -b change/update-document-control
+   ```
 
-#### **4.2 Review and Approval**
+3. Implement changes in the branch.
 
-1. Submit a **Pull Request (PR)** to merge the change into `main`.
-2. Assign required reviewers according to repository CODEOWNERS or approval matrix.
-3. Reviewers assess:
+4. Commit updates with a clear message referencing the CR Issue:
 
-   * Impact on related processes or documents
-   * Compliance with QMS and SOPs
-   * Clarity and adequacy of documentation
-4. Approval is provided through GitHub’s PR approval feature, which serves as an authenticated digital signature.
-5. Once approved, the PR is merged into `main` by an authorized user (typically the CCC or Process Owner).
+   ```
+   git commit -m "Fixes #42 – Updated numbering and revision control section"
+   ```
 
 ---
 
-#### **4.3 Implementation and Tagging**
+#### **4.2 Submitting for Review**
 
-1. After merging, create a new **Git tag** representing the approved revision (e.g., `SOP-002_r3`).
-2. The tag must be referenced in the document header and recorded in the revision history.
-3. If the change is significant, update the GitHub Wiki and/or notify affected users.
+1. Open a **Pull Request** (PR) to merge the branch into `main`.
+2. PR title should summarize the change, e.g.:
+
+   ```
+   SOP-004_r2 – Updated review and tagging section
+   ```
+3. PR description must include:
+
+   * Link to CR Issue (e.g., `Fixes #42`)
+   * Summary of changes
+   * Any validation or verification results (if applicable)
 
 ---
 
-#### **4.4 Control of Unintended Changes**
+#### **4.3 Review and Approval**
 
-1. Unintended or unauthorized commits to `main` are prevented through branch protection.
-2. If an unintended change occurs, it must be reviewed via a corrective Pull Request referencing a CAPA Issue.
-3. The correction must include root cause and preventive actions documented in the linked Issue.
+1. Reviewers evaluate the PR using GitHub’s review features:
+
+   * “Approve” = formal approval
+   * “Request changes” = return to author for updates
+
+2. Required reviewers are determined by the repository’s `CODEOWNERS` or approval matrix.
+
+3. Approval in GitHub constitutes an **electronic signature** in compliance with 21 CFR Part 11 and ISO 13485 requirements.
 
 ---
 
-#### **4.5 Records**
+#### **4.4 Merging and Tagging**
 
-| Record Type               | Location      | Retention |
-| ------------------------- | ------------- | --------- |
-| Issues (change requests)  | GitHub Issues | Permanent |
-| Pull Requests (approvals) | GitHub        | Permanent |
-| Commit history            | Repository    | Permanent |
-| Tags/releases             | GitHub        | Permanent |
+1. Once approved:
+
+   * Merge the PR into the `main` branch.
+   * Create a Git tag corresponding to the new revision (e.g., `SOP-004_r2`).
+   * Push the tag:
+
+     ```bash
+     git push origin SOP-004_r2
+     ```
+2. The tag represents the official approved version.
+3. Update the document header to reflect the new revision and effective date.
+
+---
+
+#### **4.5 Branch and Access Control**
+
+1. The `main` branch is **protected**:
+
+   * Requires PR review before merge
+   * Prevents direct commits
+   * Restricts deletion or force-push operations
+
+2. All draft work occurs in feature branches:
+
+   ```
+   feature/update-sop-004
+   ```
+
+3. Obsolete branches may be deleted after the PR is merged.
+
+---
+
+#### **4.6 Handling Unintended Changes**
+
+1. If an unapproved commit appears in `main`, open a CAPA Issue immediately.
+2. Document:
+
+   * Nature of the unintended change
+   * Root cause analysis
+   * Corrective and preventive actions
+3. Revert the change via corrective PR and tag the corrected revision.
+
+---
+
+#### **4.7 Records and Retention**
+
+| Record Type    | Description                  | Location   | Retention |
+| -------------- | ---------------------------- | ---------- | --------- |
+| GitHub Issues  | Change requests and CAPAs    | GitHub     | Permanent |
+| Pull Requests  | Change review and approval   | GitHub     | Permanent |
+| Commit history | Complete change log          | Repository | Permanent |
+| Tags/releases  | Approved version identifiers | GitHub     | Permanent |
 
 ---
 
 ### **5. References**
 
-* Change Control SOP
-* Documented Information Control SOP
-* Identification and Traceability SOP
-* GitHub Documentation ([docs.github.com](https://docs.github.com))
+* SOP – Change Control
+* SOP – Document Control
+* SOP – Identification and Traceability
+* WI – Git Version Control and Traceability
+* ISO 9001:2015, Clauses 6.3, 7.5, 8.5.6
+* 21 CFR Part 11 – Electronic Records and Signatures
 
 ---
 
 ### **6. Revision History**
 
-| Revision | Date   | Description of Change | Approved By |
-| -------- | ------ | --------------------- | ----------- |
-| 0        | [Date] | Initial Release       | [Name]      |
+| Revision | Date       | Description of Change                                              | Approved By |
+| -------- | ---------- | ------------------------------------------------------------------ | ----------- |
+| r1       | 2025-10-11 | Initial release integrating Git-based change and approval workflow | [Name]      |

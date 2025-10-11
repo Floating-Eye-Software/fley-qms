@@ -1,214 +1,153 @@
-# 🧩 **QMS-SOP-09 — Design and Development Control**
+## 🧾 **SOP: Document Control**
 
-**Document No.:** QMS-SOP-09
-**Title:** Design and Development Control
-**Revision:** 2.0
-**Effective Date:** [Insert Date]
-**Approved By:** [Top Management]
-
----
-
-## **1. Purpose**
-
-To define the process for controlling the design, development, maintenance, and retirement of products, software, or systems to ensure that outputs meet input requirements and applicable regulatory, safety, and quality standards.
-
-This SOP satisfies **ISO 9001:2015 Clause 8.3**, provides a foundation for **ISO 13485:2016 Clause 7.3**, **IEC 62304**, and supports lifecycle maintenance as required by **IEC 62304 §6**.
+**Document Number:** SOP-003
+**Effective Date:** [To be assigned]
+**Revision:** r1
+**Title:** Document Control
+**Controlled Source:** [GitHub Repository URL]
 
 ---
 
-## **2. Scope**
+### **1. Purpose**
 
-Applies to all design, development, and post-release maintenance projects, including:
-
-* New product, system, or software development.
-* Major enhancements or redesigns of existing products.
-* Verification, validation, and maintenance releases.
-* Product retirement and record retention.
-
-Projects may implement a specific framework via a **Design Control Work Instruction (WI)** such as:
-
-* WI-QMS-09-01 – Standard SDLC
-* WI-QMS-09-02 – Ontario Design Framework
-* WI-QMS-09-03 – Agile Design Model
-* WI-QMS-09-04 – FLEY Design Framework
+To ensure all QMS documents are identified, approved, maintained, and controlled in a manner that guarantees availability of current, authorized versions and prevents unintended use of obsolete or draft material.
 
 ---
 
-## **3. References**
+### **2. Scope**
 
-* ISO 9001:2015 Clauses 4–10
-* ISO 13485:2016 Clause 7.3
-* IEC 62304:2006/Amd1:2015 (Clause 6 Maintenance)
-* QMS-SOP-05 – Document & Record Control
-* QMS-SOP-06 – Quality Planning
-* QMS-SOP-07 – Project Management
-* QMS-SOP-08 – Risk & Opportunity Management
-* QMS-SOP-02 – Change Control
-* Templates: Design Control Plan (DCP), Project Quality Plan (PQP)
+This procedure applies to all documented information that forms part of the Quality Management System (QMS), including policies, procedures, work instructions, templates, and records, regardless of medium or format.
+It also applies to all repositories, systems, and locations where such documents are created, stored, or used.
 
 ---
 
-## **4. Responsibilities**
+### **3. Responsibilities**
 
-| Role                              | Responsibilities                                                                                                     |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Project Manager / Design Lead** | Maintain the **Design Control Plan**; coordinate reviews; ensure deliverables meet plan and regulatory requirements. |
-| **Design & Development Team**     | Execute design tasks; maintain traceability and documentation.                                                       |
-| **Quality Manager**               | Ensure compliance, risk traceability, and approvals.                                                                 |
-| **Top Management**                | Approve design plans, reviews, and design transfer/retirement.                                                       |
-| **Process Owners / SMEs**         | Provide technical and regulatory input.                                                                              |
-| **Maintenance Lead / Ops Team**   | Plan, verify, and document post-release maintenance and retirement.                                                  |
+| Role                                               | Responsibilities                                                                                                                             |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Process Owners**                                 | Develop, maintain, and review documents related to their processes. Ensure accuracy, relevance, and compliance with applicable requirements. |
+| **Quality Manager / Document Control Coordinator** | Maintain the controlled repository, ensure appropriate document identification, versioning, approval, and access control.                    |
+| **Management**                                     | Approve new or revised documents affecting the QMS.                                                                                          |
+| **All Employees**                                  | Use only approved and current versions of controlled documents. Report obsolete or inconsistent content.                                     |
 
 ---
 
-## **5. Procedure**
+### **4. Definitions**
 
-### **5.1 Design and Development Planning**
-
-1. Each project shall have a **Design Control Plan (DCP)** defining:
-
-   * Applicable development framework (referenced WI).
-   * Design stages, activities, and review points.
-   * Deliverables checklist (design outputs).
-   * Risk and opportunity integration.
-   * Verification, validation, and transfer criteria.
-2. The DCP may be integrated into the **Project Plan** or **Project Quality Plan (PQP)**.
-3. The DCP shall be reviewed and approved prior to initiating design activities.
+| Term                    | Definition                                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Controlled Document** | A document maintained under version control, approved for use, and accessible to authorized personnel.                          |
+| **Document Number**     | A unique identifier assigned to each controlled document, composed of a type prefix (e.g., SOP, WI, TPL) and sequential number. |
+| **Revision**            | The current, approved version of a controlled document, identified using the format `r#` (e.g., r2).                            |
+| **Git Tag**             | A permanent marker in Git that identifies a specific approved revision of a controlled document.                                |
+| **GitHub Repository**   | The official controlled source of QMS documents and their full revision history.                                                |
 
 ---
 
-### **5.2 Design and Development Inputs**
+### **5. Procedure**
 
-Design inputs shall be:
+#### **5.1 Creation and Approval of Documents**
 
-* Documented, reviewed, and approved prior to use.
-* Complete, unambiguous, and testable.
-* Derived from:
+1. New documents shall be authored by the responsible Process Owner or delegate.
+2. Each new document shall:
 
-  * Customer or user requirements
-  * Regulatory and safety requirements
-  * Risk analysis and prior product experience
-  * Standards and performance criteria
+   * Use the approved template and metadata header.
+   * Be assigned a document number and title according to Section 5.6.
+   * Be submitted via GitHub Pull Request for review and approval.
+3. Documents must be **reviewed and approved** prior to merging to the main branch.
 
-Inputs are recorded within the **Design Input Specification** or equivalent artifact (e.g., user stories, PRD, requirements database).
-
----
-
-### **5.3 Design and Development Outputs**
-
-Design outputs shall:
-
-* Meet input requirements.
-* Provide adequate information for verification and validation.
-* Identify acceptance criteria.
-* Define critical characteristics essential for safety and performance.
-
-Outputs may include:
-
-* Architecture or design documents
-* Source code / configuration
-* Test cases and protocols
-* User documentation
-* Risk controls
-* Release notes and deployment guides
-
-Outputs are reviewed and approved before release to the next phase.
+   * Approval is provided via GitHub Pull Request (PR) approval feature.
+   * The merged and tagged version represents the official approved document.
 
 ---
 
-### **5.4 Design and Development Review**
+#### **5.2 Review and Revision**
 
-* Conduct reviews at defined **milestones or stage gates** in the Design Control Plan.
-* Participants must include representatives of **design, quality, and management**.
-* Reviews evaluate:
-
-  * Conformance to requirements and plan
-  * Risk status
-  * Adequacy of verification and validation
-  * Readiness for next stage
-* Record outcomes and actions in the **Design Review Record**.
+1. Controlled documents shall be reviewed periodically, typically every two years, or sooner if a change in process or requirement occurs.
+2. Revisions are proposed via Pull Request in accordance with the **Change Control SOP**.
+3. Upon approval and merge, a new Git tag (e.g., `SOP-003_r2`) shall be created to identify the approved revision.
 
 ---
 
-### **5.5 Design and Development Verification**
+#### **5.3 Control of Obsolete Documents**
 
-* Verify that design outputs meet design inputs.
-* Verification may include:
-
-  * Inspections, walkthroughs, peer reviews
-  * Unit, integration, and system testing
-  * Static analysis or simulation results
-* Verification evidence must be documented in **Verification Reports** and linked to corresponding requirements and risk controls.
+1. Superseded or obsolete versions shall be retained in the repository’s history but not accessible as the default version.
+2. Obsolete documents may be moved to an `/archive/` directory or clearly marked as **OBSOLETE** in the file header.
+3. Only the **main branch** and latest Git tag represent current, controlled versions.
 
 ---
 
-### **5.6 Design and Development Validation**
+#### **5.4 Availability and Access**
 
-* Confirm that the resulting product or system meets user and intended-use needs.
-* Validation methods include:
-
-  * User acceptance testing (UAT)
-  * Clinical evaluation (if applicable)
-  * Pilot deployment or beta testing
-* Validation records include test plans, reports, and acceptance evidence.
+1. Approved documents are available in read-only form through the GitHub repository or published GitHub Pages site.
+2. Editing rights are restricted to authorized personnel with designated access.
+3. Public or internal read access is determined by management and repository settings.
 
 ---
 
-### **5.7 Design Risk Management**
+#### **5.5 Control of External Documents**
 
-* All design risks must be identified and managed in accordance with **QMS-SOP-08 Risk and Opportunity Management**.
-* Each design risk shall have traceability to:
+Documents of external origin that are necessary for the QMS (e.g., standards, supplier manuals) shall be:
 
-  * A design input (source of risk).
-  * A control measure (design, process, or verification).
-  * A verification or validation record confirming control effectiveness.
-* Design risk reviews occur at each design review stage.
+* Listed in an external document register or referenced within applicable SOPs.
+* Verified as current and relevant.
+* Stored or linked in the controlled repository or management system.
 
 ---
 
-### **5.8 Design and Development Changes**
+#### **5.6 Document Identification and Numbering**
 
-* Proposed changes to the design shall follow the **Change Control SOP (QMS-SOP-02)**.
-* Assess the impact on requirements, verification, validation, and regulatory compliance.
-* Document approvals and maintain version control in the design repository.
+1. Each controlled document shall have a **unique identifier** consisting of:
 
----
+   * **Prefix:** Document type (SOP, WI, TPL, POL, REC)
+   * **Sequential Number:** Three-digit, incrementing identifier (e.g., `SOP-003`)
+   * **Title:** Short, descriptive name separated by underscores.
+   * Example filename:
 
-### **5.9 Design Transfer, Closure & Archival**
+     ```
+     SOP-003_Document-Control.md
+     ```
 
-* Confirm all deliverables in the **Design Control Plan** are complete and accepted.
-* Establish training, documentation, and configuration baselines prior to release.
-* Archive all design documentation in the Design History File (DHF) per retention schedule.
-* Transition to **Post-Release Maintenance** activities (see § 5.10).
+2. The document header shall include the following metadata fields:
 
----
+   ```markdown
+   # SOP-003 – Document Control  
+   **Revision:** r1  
+   **Effective Date:** 2025-10-11  
+   **Approved By:** [Name / Title]  
+   **Controlled Source:** https://github.com/[org]/[repo]/SOPs/SOP-003_Document-Control.md  
+   ```
 
-### **5.10 Post-Release Maintenance and Retirement**
+3. **Revisions** are identified using `r#` notation, matching the Git tag (e.g., `SOP-003_r1`).
 
-* Maintenance activities (bug fixes, patches, feature updates) are planned and executed under this SOP as **Design Changes** per § 5.8.
-* Inputs include: post-market feedback, complaints, CAPA outputs, and vulnerability reports.
-* Each maintenance release shall include:
-
-  * Impact assessment on requirements, risks, and regulatory compliance.
-  * Verification and validation appropriate to the change scope.
-  * Updated traceability, risk, and DHF records.
-* Post-market data shall feed into risk management and continuous improvement.
-* **Retirement / Decommissioning:**
-
-  * Planned, approved, and documented activity.
-  * Ensure customer notification, data migration, and record retention per **QMS-SOP-05**.
-  * Archive the final configuration baseline and mark the product as inactive.
+4. The **GitHub repository** and associated **Git tags** constitute the single source of truth for document identification and revision history.
 
 ---
 
-## **6. Records**
+#### **5.7 Records and Retention**
 
-| Record                            | Retention                    | Location                 |
-| --------------------------------- | ---------------------------- | ------------------------ |
-| Design Control Plan (DCP)         | Life of product + 10 years   | Project repository       |
-| Design Inputs/Outputs             | Life of product              | DHF / Project Repo       |
-| Verification & Validation Records | Life of product              | Test Repository          |
-| Design Reviews                    | 10 years                     | QMS Repository           |
-| Risk Management File              | 10 years                     | Risk Register            |
-| Maintenance Logs                  | 10 years after final release | DHF / Maintenance Folder |
-| Retirement Records                | Permanent                    | QMS Repository           |
+| Record Type              | Location          | Retention                                                                    |
+| ------------------------ | ----------------- | ---------------------------------------------------------------------------- |
+| Document files           | GitHub Repository | Current version: active; prior versions retained indefinitely in Git history |
+| Pull Request approvals   | GitHub            | Permanent                                                                    |
+| Git tags and releases    | GitHub            | Permanent                                                                    |
+| Metadata (header fields) | Within document   | Permanent                                                                    |
+
+---
+
+### **6. References**
+
+* ISO 9001:2015, Clauses 7.5, 6.3, and 8.5.6
+* SOP – Change Control
+* SOP – Identification and Traceability
+* WI – GitHub Document Control
+* WI – GitHub Pull Request and Branch Management
+* WI – Git Version Control and Traceability
+
+---
+
+### **7. Revision History**
+
+| Revision | Date       | Description of Change                                                              | Approved By |
+| -------- | ---------- | ---------------------------------------------------------------------------------- | ----------- |
+| r1       | 2025-10-11 | Initial release integrating Git-based document identification and revision control | [Name]      |

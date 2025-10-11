@@ -1,135 +1,155 @@
-## **Work Instruction (WI): GitHub Repository and Wiki Management**
+## 🧭 **Work Instruction (WI): GitHub Document Control**
 
-**Document Number:** [To be assigned]
-**Effective Date:** [To be assigned]
-**Revision:** [To be assigned]
-**Related SOP:** Documented Information Control
+**Document Number:** WI-004
+**Effective Date:** 2025-10-11
+**Revision:** r1
+**Related SOP:** Document Control SOP
+**Controlled Source:** [GitHub Repository URL]
 
 ---
 
 ### **1. Purpose**
 
-To define how GitHub repositories, Wikis, and Issues are used to create, update, and control documented information required by the QMS, ensuring identification, availability, and protection in accordance with the Documented Information Control SOP.
+To define how controlled QMS documents are created, numbered, revised, and maintained within GitHub, ensuring unique identification, revision tracking, and control of approved versions.
 
 ---
 
 ### **2. Scope**
 
-This WI applies to all QMS documents, procedures, work instructions, templates, and records maintained within GitHub repositories and Wikis.
+Applies to all QMS documents and controlled files managed in GitHub, including Standard Operating Procedures (SOPs), Work Instructions (WIs), Policies (POLs), Templates (TPLs), and Records (REC).
 
 ---
 
 ### **3. Responsibilities**
 
-| Role                                   | Responsibilities                                                                                           |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Process Owners**                     | Ensure controlled documents in their area are accurate, current, and approved.                             |
-| **Document Control Coordinator (DCC)** | Maintain repository structure, branch protections, access permissions, and tag versions.                   |
-| **All Employees**                      | Use the latest approved documents (from the `main` branch or GitHub Pages) and report any inconsistencies. |
+| Role                         | Responsibilities                                                               |
+| ---------------------------- | ------------------------------------------------------------------------------ |
+| **Authors / Process Owners** | Create and maintain documents according to numbering and metadata standards.   |
+| **Reviewers / Approvers**    | Review Pull Requests and approve document changes in GitHub.                   |
+| **Quality Manager / CCC**    | Verify correct numbering, tagging, and repository organization.                |
+| **All Users**                | Access and use only approved versions from the main branch or tagged releases. |
 
 ---
 
 ### **4. Procedure**
 
-#### **4.1 Creation and Updating**
+#### **4.1 Document Numbering**
 
-1. **Document Creation**
+1. Document numbers follow the format:
 
-   * New or revised documents are drafted in Markdown (`.md`), DOCX, or other approved formats in a feature branch.
-   * Drafts must follow standard naming conventions (e.g., `SOP-001_DocumentedInformationControl.md`).
-   * Each document includes:
+   ```
+   [PREFIX]-[###]_[Title].md
+   ```
 
-     * Title and document number
-     * Effective date and revision number
-     * Version history table
+   Example: `SOP-003_Document-Control.md`
 
-2. **Review and Approval**
+2. Prefix conventions:
 
-   * All proposed updates are submitted as a **Pull Request (PR)** for review (see Change Control WI).
-   * Reviewers verify accuracy, formatting, and adequacy before merging.
-   * The PR approval serves as the digital signature of reviewers and approvers.
+   | Type                         | Prefix |
+   | ---------------------------- | ------ |
+   | Standard Operating Procedure | SOP    |
+   | Work Instruction             | WI     |
+   | Template                     | TPL    |
+   | Policy                       | POL    |
+   | Record                       | REC    |
 
-3. **Identification and Metadata**
-
-   * The Git commit history automatically tracks author, date, and change summary.
-   * The document’s revision number must match the latest approved tag.
-
----
-
-#### **4.2 Control of Documented Information**
-
-1. **Availability and Access**
-
-   * Approved documents are stored in the `main` branch.
-   * GitHub’s default view and/or GitHub Pages publish the current controlled version.
-   * Access is restricted via repository permissions:
-
-     * **Read-only** for general users
-     * **Write access** only for authorized editors
-     * **Admin rights** reserved for the DCC or designated leads
-
-2. **Storage and Preservation**
-
-   * GitHub automatically maintains redundant copies and version history.
-   * Regular repository backups may be exported to `.zip` archives and stored offline for contingency.
-
-3. **Control of Changes**
-
-   * All document modifications occur through Git commits and Pull Requests.
-   * Branch protection prevents direct edits to `main`.
-   * Git tags identify approved document revisions (e.g., `SOP-001_r1`, `WI-002_v3`).
-
-4. **Retention and Disposition**
-
-   * All past document versions are retained indefinitely within Git history.
-   * Superseded documents may be archived in an `/archive` directory with a note in the header: “Obsolete – Superseded by [Tag].”
+3. Sequential numbering is assigned manually by the author, verified by the reviewer to ensure uniqueness.
 
 ---
 
-#### **4.3 External Documented Information**
+#### **4.2 File Header Metadata**
 
-* External standards (e.g., ISO 9001, regulations) are referenced via links in the Wiki.
-* Controlled copies (e.g., PDFs or supplier docs) may be stored in a repository `/external` folder with restricted access.
+Each controlled document must include the following Markdown header at the top of the file:
 
----
+```markdown
+# SOP-003 – Document Control
+**Revision:** r1  
+**Effective Date:** 2025-10-11  
+**Approved By:** [Name / Title]  
+**Controlled Source:** https://github.com/[org]/[repo]/SOPs/SOP-003_Document-Control.md
+```
 
-#### **4.4 System Requirements for Electronic Control**
-
-GitHub and associated workflows fulfill system control requirements:
-
-| Requirement                          | GitHub Feature                                     |
-| ------------------------------------ | -------------------------------------------------- |
-| Authentication                       | Unique user logins via GitHub accounts or SSO      |
-| Unauthorized modification prevention | Branch protection, required reviews                |
-| Audit trails                         | Commit history and PR logs                         |
-| Electronic signatures                | PR approvals traceable to authenticated users      |
-| Backup and recovery                  | GitHub’s distributed redundancy + periodic exports |
+Optional fields (e.g., “Supersedes” or “Obsolete Date”) may be added if applicable.
 
 ---
 
-#### **4.5 Records**
+#### **4.3 Creating and Tagging Approved Versions**
 
-| Record Type                 | Location             | Retention                  |
-| --------------------------- | -------------------- | -------------------------- |
-| Repository commit history   | GitHub               | Permanent                  |
-| Pull Requests and approvals | GitHub               | Permanent                  |
-| Tagged document versions    | GitHub Releases      | Permanent                  |
-| Archived files              | `/archive` directory | Permanent                  |
-| Access logs                 | GitHub Admin Console | As per IT retention policy |
+1. All document updates are submitted via a **Pull Request (PR)**.
 
----
+2. After review and approval, the PR is merged into the `main` branch.
 
-### **5. References**
+3. Create a Git tag to mark the approved revision:
 
-* Documented Information Control SOP
-* Change Control SOP
-* Identification and Traceability SOP
-* GitHub Documentation ([docs.github.com](https://docs.github.com))
+   ```bash
+   git tag SOP-003_r2
+   git push origin SOP-003_r2
+   ```
+
+4. The tag name must match the document identifier and revision number.
+
+5. The tag and corresponding commit serve as the **official record** of approval and revision.
 
 ---
 
-### **6. Revision History**
+#### **4.4 Locating the Next Available Document Number**
 
-| Revision | Date   | Description of Change | Approved By |
-| -------- | ------ | --------------------- | ----------- |
-| 0        | [Date] | Initial Release       | [Name]      |
+1. Review the `/SOPs`, `/WIs`, or applicable folder to determine the next sequential number.
+2. Search for existing filenames using:
+
+   ```bash
+   ls SOP-* | sort
+   ```
+3. Assign the next number in sequence.
+
+---
+
+#### **4.5 Managing Obsolete or Superseded Documents**
+
+1. When a document is replaced:
+
+   * Update the header to indicate **OBSOLETE** and include the superseding document number.
+   * Optionally move the file to `/archive/`.
+2. The previous tag remains in Git as a permanent record.
+
+---
+
+#### **4.6 Viewing Revision History**
+
+To view all revisions and authors for a document:
+
+```bash
+git log --follow --pretty=format:"%h %ad %an %s" --date=iso path/to/SOP-003_Document-Control.md
+```
+
+This provides the traceability record required by ISO 9001 Clause 7.5.
+
+---
+
+### **5. Records and Retention**
+
+| Record Type    | Location          | Retention  |
+| -------------- | ----------------- | ---------- |
+| Document files | GitHub repository | Indefinite |
+| Git tags       | GitHub            | Indefinite |
+| Pull Requests  | GitHub            | Indefinite |
+| Commit history | Git repository    | Indefinite |
+
+---
+
+### **6. References**
+
+* SOP – Document Control
+* SOP – Change Control
+* SOP – Identification and Traceability
+* WI – GitHub Pull Request & Branch Management
+* WI – Git Version Control and Traceability
+* ISO 9001:2015, Clauses 7.5.2 and 7.5.3
+
+---
+
+### **7. Revision History**
+
+| Revision | Date       | Description of Change                                                         | Approved By |
+| -------- | ---------- | ----------------------------------------------------------------------------- | ----------- |
+| r1       | 2025-10-11 | Initial release implementing Git-based document numbering and revision system | [Name]      |
