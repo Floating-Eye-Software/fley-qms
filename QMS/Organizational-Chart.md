@@ -6,9 +6,8 @@ graph TD
     A --> B["Top Management"]
     A --> C["Quality Manager"]
     A --> D["Project Manager"]
-    A --> E["Design Lead"]
-    A --> F["Process Owner"]
-    A --> G["All Employees"]
+    A --> E["Process Owner"]
+    A --> F["All Employees"]
 ```
 
 ---
@@ -45,13 +44,6 @@ This structure ensures that **roles, responsibilities, and authorities** are cle
 * Tracks progress, risks, and deliverables.
 * Coordinates project reviews and status reporting.
 * Ensures projects align with quality and strategic objectives.
-
-**Design Lead**
-
-* Develops and maintains the Design and Development Plan.
-* Coordinates design inputs, reviews, and verifications.
-* Ensures design outputs meet regulatory and quality requirements.
-* Maintains design traceability and documentation integrity.
 
 **Process Owner**
 

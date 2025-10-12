@@ -1,23 +1,8 @@
-# **Context of the Organization (COTO) – Floating Eye Software (FLEY)**
+# **Context Analysis – Floating Eye Software (FLEY)**
 
-## 0. Organization Overview
+## 1. Purpose
 
-Floating Eye Software (FLEY) is a sole proprietorship founded in 2021 in Toronto, Canada.
-FLEY develops ethical, privacy-first digital tools. Non-QMS activities (NetHack servers, blogs, unreleased product websites) are **outside the QMS**.
-
-The **Red Witch** project is the first initiative formally managed under a QMS.
-
----
-
-## 1. Purpose, Strategic Direction, and Products/Services
-
-* **Purpose & Strategic Direction:** Refer to [[Quality Manual]] for the controlled statement.
-
-* **Products and Services (for context analysis purposes):**
-
-  * Red Witch mobile app (tracking, analytics, predictions)
-  * GitHub project: source code, documentation, wiki
-  * Supporting transparency, traceability, and user guidance
+Identify internal and external issues influencing FLEY’s ability to achieve QMS outcomes (ISO 9001 Clause 4.1).
 
 ---
 

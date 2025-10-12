@@ -1,6 +1,6 @@
-# **Floating Eye Software (QMS v4) – Quality Manual**
+# **Quality Manual – Floating Eye Software (FLEY)**
 
-## 0. Introduction
+## 1. Purpose
 
 This Quality Manual defines the structure, scope, and operation of the Quality Management System (QMS) for **Floating Eye Software (FLEY)**.
 
@@ -14,18 +14,18 @@ The QMS ensures that activities under its scope are **planned, implemented, moni
 
 ---
 
-## 1. Organization Overview
+## 2. Organization Overview
 
 FLEY is a **sole proprietorship**, founded in 2021 in Toronto, Canada.
-It develops ethical, privacy-first digital tools. Non-QMS activities (NetHack servers, blogs, unreleased product websites) are **outside the QMS**.
+It develops ethical, privacy-first digital tools. Non-QMS activities (NetHack servers, blogs, websites) are **outside the QMS**.
 
 The **Red Witch** project is the first initiative formally managed under the QMS.
 
-For full organizational context, internal/external issues, interested parties, and monitoring procedures, see [[Context of the Organization]].
+See [[Context Analysis]] for the full organizational context.
 
 ---
 
-## 2. QMS Scope
+## 3. QMS Scope
 
 The QMS applies to all **Red Witch–related activities** impacting:
 
@@ -40,7 +40,7 @@ The QMS applies to all **Red Witch–related activities** impacting:
 
 ---
 
-## 3. Organizational Identity
+## 4. Organizational Identity
 
 **Purpose**
 
@@ -60,23 +60,25 @@ FLEY’s work is guided by a commitment to:
 
 FLEY will **develop and maintain free, ethical, privacy-first digital tools**, beginning with *Red Witch*, while progressively aligning with **regulatory and ethical standards** as the organization grows.
 
+See also the approved [[Quality Policy]] for FLEY’s top-level commitments.
+
 ---
 
-## 4. QMS Workflows
+## 5. QMS Workflows
 
 FLEY’s QMS consists of three interrelated workflows:
 
-| Workflow                            | Description                                                 | Key SOP / WI                 | Example Outputs                                         |
-| ----------------------------------- | ----------------------------------------------------------- | ---------------------------- | ------------------------------------------------------- |
-| **QMS Creation**                    | Establishing and documenting the framework                  | [[Quality Planning SOP]]             | SOPs, Quality Manual, initial audit                     |
-| **QMS Operation**                   | Maintaining, monitoring, auditing, and improving the system | [[GitHub QMS Operations]]  | Context updates, Risk Register, CAPA, Improvement logs  |
-| **Product Development (Red Witch)** | Designing, developing, and maintaining Red Witch            | [[Design Control SOP]] | Design records, verification results, release artifacts |
+| Workflow                            | Description                                                 | Key SOP / WI              | Example Outputs                                         |
+| ----------------------------------- | ----------------------------------------------------------- | ------------------------- | ------------------------------------------------------- |
+| **QMS Creation**                    | Establishing and documenting the framework                  | [[Quality Planning SOP]]  | SOPs, Quality Manual, initial audit                     |
+| **QMS Operation**                   | Maintaining, monitoring, auditing, and improving the system | [[GitHub QMS Operations]] | Context updates, Risk Register, CAPA, Improvement logs  |
+| **Product Development (Red Witch)** | Designing, developing, and maintaining Red Witch            | [[Design Control SOP]]    | Design records, verification results, release artifacts |
 
-For a **high-level visual of workflows and interactions**, see [[QMS Process Map]].
+For a high-level visual of workflows and interactions, see [[Process Map]].
 
 ---
 
-## 5. Process Approach, PDCA, and Risk-Based Thinking
+## 6. Process Approach, PDCA, and Risk-Based Thinking
 
 * **Process Approach:** Enables planning and interaction of all QMS processes
 * **PDCA Cycle:**
@@ -89,17 +91,21 @@ For a **high-level visual of workflows and interactions**, see [[QMS Process Map
 
 ---
 
-## 6. Roles and Responsibilities
+## 7. Roles and Responsibilities
 
-* **QMS Owner / Top Management:** Leadership, planning, audits, management review, continual improvement
-* **Contributor / Developer:** Implements procedures and maintains records
-* **Auditors (internal/external):** Conduct audits per Audit & CAPA SOP
+| Role                           | Key Responsibilities                                    |
+| ------------------------------ | ------------------------------------------------------- |
+| **Top Management / QMS Owner** | Leadership, policy, objectives, management review       |
+| **Quality Manager**            | Maintains QMS, audits, risk register, change control    |
+| **Project Manager**            | Plans and tracks product development                    |
+| **Process Owner**              | Oversees operational processes, ensures documentation   |
+| **All Employees**              | Follow procedures, report issues, engage in improvement |
 
-Detailed roles are documented in [[Leadership SOP]].
+Detailed roles are documented in [[Organizational Chart]].
 
 ---
 
-## 7. Risk and Opportunity Management
+## 8. Risk and Opportunity Management
 
 * Managed via a **GitHub-based Risk Register** covering:
 
@@ -111,20 +117,20 @@ Detailed roles are documented in [[Leadership SOP]].
 
 ---
 
-## 8. Documentation Structure
+## 9. Documentation Structure
 
-| Level       | Description      | Examples                                               |
-| ----------- | ---------------- | ------------------------------------------------------ |
-| **Level 1** | Quality Manual   | This document                                          |
-| **Level 2** | SOPs             | Leadership SOP, Planning SOP, Design & Development SOP |
-| **Level 3** | WIs / Records    | GitHub QMS Operation WI, Project boards                |
-| **Level 4** | Forms / Evidence | Risk Register, Audit logs, Meeting minutes             |
+| Level       | Description                                           | Examples                                               |
+| ----------- | ----------------------------------------------------- | ------------------------------------------------------ |
+| **Level 1** | Quality Manual (this document) and [[Quality Policy]] | Top-level commitments and framework                    |
+| **Level 2** | SOPs                                                  | Leadership SOP, Planning SOP, Design & Development SOP |
+| **Level 3** | WIs / Records                                         | GitHub QMS Operation WI, Project boards                |
+| **Level 4** | Forms / Evidence                                      | Risk Register, Audit logs, Meeting minutes             |
 
 All documents are controlled per [[Document Control SOP]].
 
 ---
 
-## 9. Management Review and Continual Improvement
+## 10. Management Review and Continual Improvement
 
 * Conducted annually or following major releases
 * Inputs: Context updates, audit results, KPI performance, user feedback, risk changes, climate considerations
@@ -133,28 +139,27 @@ All documents are controlled per [[Document Control SOP]].
 
 ---
 
-## 10. References
+## 11. References
 
 * ISO 9001:2015 + Amendment 1:2024 (Climate Action)
 * ISO 9000:2015 – Fundamentals & Vocabulary
 * GDPR (2016/679) – Privacy reference
 * Internal QMS SOPs, Work Instructions, and Records
+* [[Quality Policy]] – Top-level commitment statement
 
 ---
 
-## 11. Revision and Control
+## 12. Revision and Control
 
-* This manual is **controlled** and maintained in the QMS repository
-* Revisions are approved by the QMS Owner and tracked in the Document Control Register
+* This manual is **controlled** and maintained in the QMS repository.
+* Revisions are approved by the QMS Owner and tracked in the Document Control Register.
 
 ---
 
 ### **Appendix A — Workflow Links & Kanban Boards (Placeholders)**
 
-| Workflow                        | Reference / Link             | Notes                                   |
-| ------------------------------- | ---------------------------- | --------------------------------------- |
-| QMS Creation                    | [[Quality Planning SOP]]     | Placeholder for QMS Creation Board      |
-| QMS Operation                   | [[GitHub QMS Operations]]    | Placeholder for QMS Operation Board     |
-| Product Development (Red Witch) | [[Design Control SOP]]       | Placeholder for Red Witch Project Board |
-
----
+| Workflow                        | Reference / Link          | Notes                                   |
+| ------------------------------- | ------------------------- | --------------------------------------- |
+| QMS Creation                    | [[Quality Planning SOP]]  | Placeholder for QMS Creation Board      |
+| QMS Operation                   | [[GitHub QMS Operations]] | Placeholder for QMS Operation Board     |
+| Product Development (Red Witch) | [[Design Control SOP]]    | Placeholder for Red Witch Project Board |
