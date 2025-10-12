@@ -1,105 +1,140 @@
 # **Red Witch Wiki**
 
-Welcome to the **Red Witch Wiki**, the central hub for documentation, quality management, project planning, compliance, and operational guidance for Floating Eye Software (FLEY) and the Red Witch pilot project.
+Welcome to the **Red Witch Wiki**, the central hub for documentation, quality management, compliance, and project planning for **Floating Eye Software (FLEY)** and the **Red Witch pilot project**.
 
-This wiki organizes all key information for team members, auditors, and stakeholders, including:
+This wiki organizes all controlled documentation for team members, auditors, and stakeholders, including:
 
-* **QMS authoring and operations** (SOPs, WIs, policies, quality manual)
+* **QMS authoring and operations** (Quality Manual, Policy, SOPs, WIs)
 * **Project documentation** for Red Witch
 * **Compliance standards and frameworks**
-* **Templates, plans, and operational guidance**
+* **Plans and templates** for implementation and improvement
 
-> Use this page as your starting point to navigate QMS, Red Witch, and organizational resources.
+> Use this page as your starting point to navigate FLEY’s Quality Management System (QMS) and Red Witch project documentation.
 
 ---
 
 ## **1. Quality Management System (QMS)**
 
-FLEY is committed to quality, compliance, and continuous improvement.
+FLEY’s QMS is built around ISO 9001:2015 and ISO 9001:2024 (Climate Action Amendment) principles, emphasizing risk-based thinking, PDCA, and continual improvement.
 
-**Key QMS Documentation:**
+**Core QMS Documents**
 
-* [[Quality Manual]] – Comprehensive overview of FLEY’s QMS framework.
-* [[Quality Policy]] – Organizational quality policy and objectives.
-* [[QMS Process Map]] – Visual representation of workflows and interactions.
-* [[Context of the Organization]] – Organizational context, risk considerations, and interested parties.
-* [[Org Chart]] – Roles, responsibilities, and accountabilities for QMS operations.
-* [[Risk Register]] – Active and historical risks with mitigation actions.
+* [[Quality Manual]] – Overview of FLEY’s QMS framework and scope.
+* [[Quality Policy]] – Organizational quality commitments and objectives.
+* [[Context Analysis]] – Internal/external issues and interested parties.
+* [[Organizational Chart]] – Roles, responsibilities, and authorities.
+* [[Process Map]] – Process interactions and workflow visualization.
+* [[Risk Register]] – Centralized record of QMS and project risks.
+* [[QMS Coverage]] – Matrix of ISO clauses and corresponding QMS documents.
 
-**SOPs & WIs:**
+---
+
+### **Standard Operating Procedures (SOPs)**
 
 * [[Document Control SOP]]
 * [[Change Control SOP]]
 * [[Design Control SOP]]
-* [[Project Management SOP]]
+* [[Identification and Traceability SOP]]
 * [[Leadership SOP]]
+* [[Project Management SOP]]
 * [[Quality Planning SOP]]
 * [[Risk and Opportunity Management SOP]]
-* Work Instructions: [[GitHub QMS Operations]], [[GitHub QMS Setup]], [[FLEY Design Control WI]], [[Information Security]], [[Ontario Service Design WI]]
 
-**Templates:**
+---
+
+### **Work Instructions (WIs)**
+
+**GitHub Operational WIs**
+
+* [[GitHub QMS Setup]]
+* [[GitHub QMS Operations]]
+* [[GitHub Document Control]]
+* [[GitHub Project Management]]
+* [[GitHub Change Control]]
+* [[GitHub Continuous Improvement]]
+* [[GitHub Version Control]]
+
+**FLEY-Specific WIs**
+
+* [[FLEY Design Control WI]]
+
+**Information Security & Standards**
+
+* [[Information Security]] – Based on NIST guidelines.
+
+**Ontario Design Framework**
+
+* [[Ontario Design Framework]] – Overview of the Ontario Service Design Framework.
+* [[Ontario Service Design WI]] – Implementation work instruction.
+
+---
+
+### **Templates**
 
 * [[Standard Operating Procedure Template]]
+* [[Work Instruction Template]]
 * [[Quality Plan Template]]
 * [[Project Quality Plan Template]]
 * [[Design Control Plan Template]]
 * [[Design Output Template]]
+* [[DCP Template Ontario DSS]]
 
-> **Tip:** Start with the [[Quality Manual]] to understand the overall QMS structure and workflows.
+> **Tip:** Start with the [[Quality Manual]] for a complete overview of the QMS structure and document hierarchy.
 
 ---
 
 ## **2. Red Witch Project Documentation**
 
-Centralized documentation for the Red Witch pilot project.
+All documentation specific to the **Red Witch pilot project**.
 
 * [[Red Witch Master Document List]] – Index linking all Red Witch documents.
-* [[Red Witch Quality Plan]] – Project-specific quality plan.
-* [[Red Witch Privacy]] – Privacy considerations.
-* [[Red Witch Accessibility]] – Accessibility requirements.
-* [[Red Witch Users]] – User analysis and personas.
-* [[Red Witch Requirements]] – Functional and non-functional requirements.
-* [[Red Witch Roadmap]] – Development roadmap and milestones.
-* [[Red Witch Risk Management]] – Risk analysis and mitigation.
-* [[Red Witch Post-Market Surveillance]] – Post-market monitoring and reporting.
-* [[Red Witch Software Architecture]] – Technical architecture overview.
-* [[Red Witch Market Analysis]] – Market research documentation.
-* [[Red Witch Market Comparison]] – Comparative research insights.
-* [[Red Witch Peer Review]] – More comparative research insights.
+* [[Red Witch Quality Plan]] – Project-specific quality and compliance plan.
+* [[Red Witch Privacy]] – Privacy and ethical data handling approach.
+* [[Red Witch Accessibility]] – Accessibility requirements and standards.
+* [[Red Witch Users]] – Personas and user analysis.
+* [[Red Witch Requirements]] – Functional and non-functional specifications.
+* [[Red Witch Software Architecture]] – System and module overview.
+* [[Red Witch Roadmap]] – Development milestones and release planning.
+* [[Red Witch Risk Management]] – Risk identification and mitigation.
+* [[Red Witch Post-Market Surveillance]] – Monitoring, feedback, and CAPA process.
+* [[Red Witch Market Analysis]] – Market and competitive assessment.
+* [[Red Witch Market Comparison]] – Comparative insights.
+* [[Red Witch Peer Review]] – Expert and internal review documentation.
 
 ---
 
-## **3. Project Planning & Continuous Improvement**
+## **3. Planning & Continuous Improvement**
 
-Resources for planning, execution, and organization-wide improvement.
+Planning, improvement, and monitoring resources.
 
-* [[Continuous Improvement Plan]] – Framework for monitoring and improving QMS maturity.
-* [[Red Witch Pilot SOP Plan]] – SOP authoring and pilot testing.
-* [[Red Witch Quality Plan]] – Project-specific quality plan.
-* Project and quality plan templates: [[Project Quality Plan Template]], [[Quality Plan Template]]
+* [[Continuous Improvement Plan]] – Continuous improvement framework and KPIs.
+* [[Red Witch Pilot SOP Plan]] – SOP authoring, pilot testing, and validation.
+* [[Red Witch Quality Plan]] – Repeated link for quick access.
+* Templates: [[Project Quality Plan Template]], [[Quality Plan Template]]
 
-> **Tip:** Track all QMS operations issues in the **FLEY QMS Kanban board**, including SOP/WI authoring, risk management, objectives, CAPA, and audits.
+> Track operational issues, risks, and improvements in the **FLEY QMS Kanban Board**.
 
 ---
 
 ## **4. Compliance Standards**
 
-Reference documents for internal and external compliance requirements.
+Compliance references tracked internally for audit readiness.
 
-* [[Compliance Index]] – Overview of all compliance frameworks tracked.
-* [[21 CFR 820]] – FDA QSR for medical devices.
-* [[ISO 13485]] – Medical device quality management standard.
+* [[Compliance Index]] – Index of all regulatory and quality standards.
+* [[21 CFR 820]] – FDA Quality System Regulation.
+* [[ISO 13485]] – Medical device quality management.
 * [[ISO 14971]] – Risk management for medical devices.
-* [[ISO 9001]] – International quality management system standard.
-* [[IEC 62304]] – Medical device software lifecycle processes.
+* [[ISO 9001]] – Quality management systems (core QMS alignment).
+* [[ISO 9004]] – Quality management for sustained success.
+* [[IEC 62304]] – Medical device software lifecycle.
 * [[Ontario DSS]] – Ontario Digital Service Standard compliance.
 
 ---
 
-## **5. Navigation & Usage Tips**
+## **5. Governance and Usage**
 
-* Use the headings above to find QMS, Red Witch, or compliance content quickly.
-* Issue, PR, and board links provide **traceability** from SOPs/WIs to QMS operations.
-* Use labels and links to track dependencies between QMS authoring, operations, and product validation.
-* Start with [[Quality Manual]] to understand the FLEY QMS structure.
-* Red Witch-specific issues should reference QMS SOP/WI Issues where validation is required.
+* Use this wiki for **official QMS and Red Witch documentation**.
+* All SOPs and WIs are version-controlled and linked to GitHub Issues for traceability.
+* Compliance and project pages reference controlled documents for audits.
+* Always start from the [[Quality Manual]] or [[Red Witch Master Document List]] when onboarding or preparing for review.
+* Updates, changes, and CAPA are tracked through Issues linked to the **FLEY QMS** project board.
