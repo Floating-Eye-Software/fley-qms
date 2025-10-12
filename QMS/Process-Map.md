@@ -17,19 +17,19 @@ flowchart TD
 
     %% SOP Layer
     subgraph SOP[SOP Layer]
-        SOP3[Document & Record Control SOP<br/>(QMS-SOP-03)]
-        SOP4[Change Control SOP<br/>(QMS-SOP-04)]
-        SOP5[Leadership SOP<br/>(QMS-SOP-05)]
-        SOP6[Quality Planning SOP<br/>(QMS-SOP-06)]
-        SOP7[Project Management SOP<br/>(QMS-SOP-07)]
-        SOP8[Risk & Opportunity SOP<br/>(QMS-SOP-08)]
-        SOP9[Design & Development SOP<br/>(QMS-SOP-09)]
+        SOP3[Document & Record Control SOP]
+        SOP4[Change Control SOP]
+        SOP5[Leadership SOP]
+        SOP6[Quality Planning SOP]
+        SOP7[Project Management SOP]
+        SOP8[Risk & Opportunity SOP]
+        SOP9[Design & Development SOP]
     end
 
     %% Operational Layer
     subgraph WI[Operational Layer]
-        WISetup[WI-QMS-10-02: Set Up QMS in GitHub]
-        WIOperate[WI-QMS-09-01: Operate QMS in GitHub]
+        WISetup[WI: Set Up QMS in GitHub]
+        WIOperate[WI: Operate QMS in GitHub]
         ProductBoards[Red Witch Project Boards]
     end
 
