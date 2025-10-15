@@ -1,166 +1,143 @@
 # 🧾 **SOP: Identification and Traceability**
 
-**Effective Date:** 2025-10-12
-**Revision:** r2
+**Revision:** r3
 **Title:** Identification and Traceability
-**Controlled Source:** [GitHub Repository URL]
+**Controlled Source:** [Organization Wiki or Repository URL]
 
 ---
 
 ## **1. Purpose**
 
-To establish and maintain a consistent method for identifying and tracing controlled documents, products, components, and records within the Quality Management System (QMS).
-This ensures each item’s origin, revision, and status can be verified at any stage, supporting product quality, regulatory compliance, and audit readiness.
+To define consistent methods for identifying and tracing all controlled documents, records, products, and configurations within the Quality Management System (QMS), ensuring each item’s origin, revision, and status are verifiable at any time.
+Traceability supports product quality, regulatory compliance, and audit readiness.
 
 ---
 
 ## **2. Scope**
 
-This SOP applies to:
+This SOP applies to all QMS elements that require unique identification or traceability, including:
 
-* All controlled documents managed in GitHub (SOPs, WIs, Templates, Policies, etc.)
-* Electronic records, datasets, and configurations affecting quality or regulatory compliance
-* Products, components, or materials requiring batch, lot, or configuration traceability
-* Change records, CAPAs, and verification/validation outputs
+* Controlled documents (SOPs, WIs, forms, templates, policies)
+* Quality records and logs (CAPA, Risk Register, Master Planning Log)
+* Products, components, materials, and configurations
+* Change records, approvals, and verification/validation outputs
+
+It applies across all systems used to create, store, or publish QMS information.
 
 ---
 
 ## **3. Responsibilities**
 
-| Role                                 | Responsibilities                                                                         |
-| ------------------------------------ | ---------------------------------------------------------------------------------------- |
-| **Quality Manager**                  | Ensures identification and traceability are maintained across all QMS elements.          |
-| **Document Owners**                  | Maintain unique slugs and revision metadata for controlled documents.                    |
-| **Process Owners**                   | Ensure traceability of records and data within their process area.                       |
-| **Change Control Coordinator (CCC)** | Verifies that all controlled changes retain linkage between revisions, issues, and tags. |
-| **All Employees**                    | Follow traceability requirements and report missing or inconsistent identifiers.         |
+| Role                                   | Responsibilities                                                                                                                           |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Quality Manager**                    | Ensures consistent application of identification and traceability practices across the QMS.                                                |
+| **Document Control Coordinator (DCC)** | Maintains identifiers for controlled documents and ensures that current approved revisions are clearly published at the controlled source. |
+| **Process Owners**                     | Maintain traceability of records and process data; ensure links between records, changes, and affected documents.                          |
+| **Change Control Coordinator (CCC)**   | Verifies that identification and traceability are preserved through change implementation.                                                 |
+| **All Personnel**                      | Follow traceability rules and report any missing or inconsistent identifiers.                                                              |
 
 ---
 
 ## **4. Definitions**
 
-| Term             | Definition                                                                                                                                                                     |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Identifier**   | A unique tag, slug, or code that distinguishes a document, item, or record from all others.                                                                                    |
-| **Slug**         | A standardized, unique identifier based on document type and title (e.g., `SOP_Identification-and-Traceability`). Used consistently in filenames and Git tags.                 |
-| **Version**      | Any iteration of a document within the Git repository, including drafts and commits. Versions may or may not be approved.                                                      |
-| **Revision**     | A formally approved and controlled version of a document, identified by a Git tag (e.g., `SOP_Identification-and-Traceability_r2`). Each revision supersedes the previous one. |
-| **Traceability** | The ability to track the history, application, or location of an item through recorded identification.                                                                         |
-| **Git Tag**      | A permanent, immutable label assigned to a specific commit in Git representing an approved revision.                                                                           |
-| **Commit Hash**  | The cryptographic identifier (e.g., `a1b2c3d`) that uniquely represents a change event in Git history.                                                                         |
+| Term                         | Definition                                                                                                                                |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Identifier**               | A unique code, name, or label that distinguishes a document, item, or record from all others.                                             |
+| **Slug**                     | A standardized identifier derived from document type and title (e.g., `SOP_Identification-and-Traceability`).                             |
+| **Revision (`r#`)**          | The approved and published iteration of a controlled document.                                                                            |
+| **Version**                  | Any iteration within a repository or document system, including drafts.                                                                   |
+| **Traceability**             | The ability to follow the history, application, or location of an item through recorded identification.                                   |
+| **Controlled Source**        | The authoritative system location (e.g., wiki, controlled repository, DMS) that contains the current approved revision.                   |
+| **Configuration Identifier** | A unique reference used to trace specific versions of digital assets, code, or datasets (e.g., checksum, timestamp, or configuration ID). |
 
 ---
 
 ## **5. Procedure**
 
-### **5.1 Document Identification**
+### **5.1 Identification of Controlled Documents**
 
-All controlled documents must include the following header metadata:
+1. Each controlled document shall include the following header fields:
 
-```markdown
-# SOP – Identification and Traceability
-**Revision:** r2  
-**Effective Date:** 2025-10-12  
-**Approved By:** [Name]  
-**Controlled Source:** https://github.com/<org>/<repo>/SOPs/SOP_Identification-and-Traceability.md
-```
+   * Title
+   * Revision (e.g., `r3`)
+   * Controlled Source link
 
-Each document shall:
+2. Each document has a unique **slug** identifier (e.g., `SOP_Identification-and-Traceability`) that appears in:
 
-* Use the **slug-based naming convention** defined in the Document Control SOP.
-* Include a revision identifier in the header (`r#`).
-* Be traceable to its corresponding Git tag (e.g., `SOP_Identification-and-Traceability_r2`).
-* Maintain linkage to the related Pull Request and Change Request.
+   * The filename and/or title
+   * The controlled source listing
+   * Related change or approval records
 
----
+3. The **current approved revision** is the version published at the **HEAD of the main branch** or its equivalent within the controlled source.
 
-### **5.2 Product and Record Identification**
-
-1. **Products and Materials**
-
-   * Must be identified by unique batch, lot, or serial number.
-   * Records must link this identifier to the corresponding production, inspection, and release documentation.
-
-2. **Electronic Records**
-
-   * Files, scripts, or configurations affecting quality must include identifiable metadata (e.g., version string, filename, or commit reference).
-   * The Git commit hash provides the traceability record.
-
-3. **Data Exports or Reports**
-
-   * Must include the Git tag, revision number, and timestamp of generation to confirm source data integrity.
+4. Document approval, effective date, and reviewer metadata are maintained by the document control system, not repeated within the document itself.
 
 ---
 
-### **5.3 Revision and Tagging Control**
+### **5.2 Identification of Records**
 
-1. Every approved revision of a controlled document is associated with a Git tag matching the revision identifier, using the format:
+1. Each record entry or dataset must be traceable to:
 
-   ```
-   [Slug]_r#
-   ```
+   * A responsible owner
+   * A date or timestamp
+   * Related process, document, or change identifier
 
-   Example:
+2. Records may be continuously updated, but each modification is logged automatically by the record system or repository to preserve traceability.
 
-   ```
-   SOP_Identification-and-Traceability_r2
-   ```
-2. Each Git tag must include:
+3. Records are identified by stable names or identifiers such as:
 
-   * Tag name (matching slug + revision)
-   * Tagger (approver)
-   * Date/time of approval
-3. Tags serve as immutable references for auditors to retrieve specific approved revisions.
+   * CAPA ID (e.g., `CAPA-2025-003`)
+   * Change Request ID (e.g., `CR-2025-014`)
+   * Log Entry Number or Timestamp
 
 ---
 
-### **5.4 Linking Change Records**
+### **5.3 Identification of Products and Configurations**
 
-Each controlled document or record must link to:
+1. Physical products, components, and materials shall be identified by unique lot, batch, or serial numbers.
+2. Electronic configurations or digital assets shall include:
 
-* The corresponding Change Request (Issue ID)
-* The Pull Request implementing the change
-* The Git tag representing the approved revision
-
-Example reference section (at document end):
-
-```
-Change Request: CR-2025-014  
-Pull Request: #45  
-Approved Tag: SOP_Identification-and-Traceability_r2
-```
+   * A configuration identifier (checksum, timestamp, or version string)
+   * Reference to associated documentation or test records
+3. Product and configuration identifiers must be linked to corresponding inspection, release, and change records to maintain full traceability.
 
 ---
 
-### **5.5 Traceability Chain**
+### **5.4 Traceability Relationships**
 
-| Entity              | Identified By           | Traceability Link                               |
-| ------------------- | ----------------------- | ----------------------------------------------- |
-| Controlled Document | Slug, Revision, Git Tag | Linked to Change Request and Pull Request       |
-| Product Batch       | Batch/Lot Number        | Linked to inspection and release records        |
-| Configuration File  | Commit Hash             | Linked to software build or deployment          |
-| CAPA Record         | CAPA ID                 | Linked to corrective actions and affected items |
+Every controlled item should be traceable along a chain linking its origin, approval, and effect:
 
----
+| Entity                    | Identified By     | Traceability Links                             |
+| ------------------------- | ----------------- | ---------------------------------------------- |
+| Controlled Document       | Slug + Revision   | Linked to Change Request, Approval Record      |
+| Record (e.g., CAPA, Risk) | Record ID         | Linked to related documents or actions         |
+| Product or Material       | Lot/Serial Number | Linked to inspection and release data          |
+| Configuration Item        | Configuration ID  | Linked to associated tests and deployment logs |
 
-### **5.6 Obsolete and Superseded Items**
-
-1. Obsolete revisions are retained in the Git history and/or moved to an `/archive` directory.
-2. Headers must include the note:
-
-   > *“Obsolete – Superseded by SOP_Identification-and-Traceability_r3 (Effective 2025-11-01)”*
-3. Obsolete revisions remain traceable but are not editable.
+These relationships ensure that any document, product, or record can be traced backward to its source and forward to its use or outcome.
 
 ---
 
-### **5.7 Verification and Audit**
+### **5.5 Control of Obsolete and Superseded Items**
 
-1. During internal or external audits, traceability shall be demonstrated by showing:
+1. When a new revision of a controlled document is published, the previous revision becomes **obsolete**.
+2. Obsolete documents are retained in the archive or historical view of the controlled source but clearly marked as superseded.
+3. The header of an obsolete document should include a note such as:
 
-   * The document header metadata
-   * The Git tag and associated commit history
-   * The linked Change Request and Pull Request records
-2. The Change Control Coordinator verifies traceability quarterly or upon request by Quality Management.
+   > *“Obsolete – Superseded by Revision r4 (Effective 2025-11-01)”*
+4. Records are not obsolete; they remain part of the permanent QMS evidence base.
+
+---
+
+### **5.6 Verification of Traceability**
+
+1. During audits or reviews, traceability shall be demonstrated by showing:
+
+   * The identifier and revision visible in the document header.
+   * The document’s location at the controlled source.
+   * The corresponding approval or change record maintained in the system.
+2. The DCC and CCC verify traceability quarterly or as part of management review.
+3. Missing or broken traceability links must be corrected promptly through the Change Control or CAPA process.
 
 ---
 
@@ -168,7 +145,6 @@ Approved Tag: SOP_Identification-and-Traceability_r2
 
 * SOP – Document Control
 * SOP – Change Control
-* WI – Git Version Control and Traceability
 * ISO 9001:2015 §7.5.2–7.5.3
 * ISO 13485:2016 §4.2.4, §7.5.9
 * 21 CFR Part 11 – Electronic Records and Signatures
@@ -177,7 +153,8 @@ Approved Tag: SOP_Identification-and-Traceability_r2
 
 ## **7. Revision History**
 
-| Revision | Date       | Description of Change                                                           | Approved By |
-| -------- | ---------- | ------------------------------------------------------------------------------- | ----------- |
-| r1       | 2025-10-11 | Initial release integrating Git-based document and record traceability          | [Name]      |
-| r2       | 2025-10-12 | Updated to align with slug-based identification and Git-native revision control | [Name]      |
+| Revision | Date       | Description of Change                                                                         | Approved By |
+| -------- | ---------- | --------------------------------------------------------------------------------------------- | ----------- |
+| r1       | 2025-10-11 | Initial release defining Git-based document and record traceability                           | [Name]      |
+| r2       | 2025-10-12 | Aligned with slug-based identification and digital revision control                           | [Name]      |
+| **r3**   | 2025-10-15 | Updated for system-maintained approvals, minimal header, and tool-agnostic traceability model | [Name]      |

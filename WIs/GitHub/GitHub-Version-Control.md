@@ -1,136 +1,222 @@
-## ⚙️ **WI: Git Version Control and Traceability**
+# ⚙️ **WI: GitHub Version Control and Traceability**
 
 **Document Number:** WI-007
-**Effective Date:** 2025-10-11
-**Revision:** r1
+**Revision:** r2
 **Related SOPs:** Document Control, Change Control, Identification and Traceability
 **Controlled Source:** [GitHub Repository URL]
 
 ---
 
-### **1. Purpose**
+## **1. Purpose**
 
-To define the standardized use of Git and GitHub for ensuring identification, version control, and traceability of QMS-controlled documents and records.
-
----
-
-### **2. Scope**
-
-Applies to all repositories, documents, and configurations managed under QMS control that utilize Git for version management and approval tracking.
+To define the standardized use of Git and GitHub for maintaining identification, version control, and traceability of all controlled QMS documents and records.
+This WI implements the requirements of the SOPs through specific Git and GitHub actions.
 
 ---
 
-### **3. Responsibilities**
+## **2. Scope**
 
-| Role                                 | Responsibilities                                                       |
-| ------------------------------------ | ---------------------------------------------------------------------- |
-| **Document Authors**                 | Commit and tag changes according to approved SOPs.                     |
-| **Reviewers/Approvers**              | Verify traceability between commits, tags, and CRs.                    |
-| **Change Control Coordinator (CCC)** | Ensure traceability data is complete and consistent before PR closure. |
-| **Quality Manager**                  | Audit version control compliance.                                      |
+Applies to all controlled repositories, documents, configurations, and records under QMS control that use Git for version management, approval tracking, and audit traceability.
 
 ---
 
-### **4. Procedure**
+## **3. Responsibilities**
 
-#### **4.1 Viewing Revision History for a Single File**
+| Role                                 | Responsibilities                                                                                                                       |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Authors / Process Owners**         | Commit and tag updates according to approved QMS processes. Ensure commits and branches reference the appropriate Change Request (CR). |
+| **Reviewers / Approvers**            | Review Pull Requests (PRs) and verify complete traceability between CRs, commits, and tags.                                            |
+| **Change Control Coordinator (CCC)** | Confirm traceability data is complete before PR closure and tag creation.                                                              |
+| **Quality Manager**                  | Audit repository structure, tag integrity, and traceability compliance.                                                                |
+
+---
+
+## **4. Procedure**
+
+### **4.1 Version Control Model**
+
+1. Each controlled repository must include:
+
+   * A protected `main` branch representing **current approved revisions**.
+   * Branch protection rules requiring review and approval before merging.
+   * Tags representing **approved revisions** (immutable identifiers).
+
+2. All controlled changes must be made through a **Pull Request (PR)** linked to a **Change Request (CR)**.
+
+3. The **merged commit** and corresponding **Git tag** together serve as the official approval record.
+
+---
+
+### **4.2 Commit Standards**
+
+Each commit should:
+
+* Use descriptive messages summarizing the change.
+* Reference related records:
+
+  ```
+  Fixes #23  # (Change Request or Issue)
+  Related: CAPA-2025-004
+  ```
+* Contain only approved content relevant to the scope of the CR.
+
+Commit history provides traceability of who made each change, when, and why.
+
+---
+
+### **4.3 Viewing Revision History for a Single File**
+
+To demonstrate document-level traceability:
 
 ```bash
 git log --follow --pretty=format:"%h %ad %an %s" --date=iso path/to/document.md
 ```
 
-* `--follow` tracks renames and moves.
-* Output provides commit hash, author, date, and message.
-* Use this log to demonstrate traceability for audits.
+This shows:
+
+* Commit hash (unique ID)
+* Author
+* Date/time
+* Commit message
+
+The `--follow` flag ensures full history even across file renames or moves.
 
 ---
 
-#### **4.2 Viewing Repository-Wide History**
+### **4.4 Viewing Repository-Wide History**
+
+To view all commits in chronological order:
 
 ```bash
 git log main --pretty=format:"%h %ad %an %s" --date=iso
 ```
 
-Shows all repository commits in chronological order.
-Can be filtered by branch or directory to isolate specific changes.
+Use filters to isolate specific branches or folders as needed.
 
 ---
 
-#### **4.3 Viewing Approved Versions**
+### **4.5 Approved Revisions (Tags)**
+
+Tags represent **formally approved revisions**.
+To list all approved versions:
 
 ```bash
-git for-each-ref --format="%(refname:short) %(taggerdate:iso)" refs/tags
+git for-each-ref --format="%(refname:short)  %(taggerdate:iso)" refs/tags
 ```
 
-Lists all tags (approved revisions) with their approval timestamps.
-Auditors can use this list to identify all released versions.
+Each tag is:
+
+* Named to match the document and revision (e.g., `SOP-006_r2`)
+* Created only after PR approval and merge
+* Immutable once pushed
 
 ---
 
-#### **4.4 Linking Changes to CRs and PRs**
+### **4.6 Retrieving an Approved Revision**
 
-Each approved change must include:
-
-* Commit message referencing the Change Request (e.g., `Fixes #23`)
-* Merge via approved PR with review signatures
-* Tag matching the document number and revision (e.g., `SOP-006_r2`)
-
----
-
-#### **4.5 Retrieving a Specific Approved Version**
-
-To access an approved revision:
+To view or restore a specific approved revision:
 
 ```bash
-git checkout tags/SOP-006_r1
+git checkout tags/SOP-006_r2
 ```
 
-The working directory will reflect the exact approved version for audit or distribution.
+This provides the exact approved content for audit, review, or controlled reproduction.
 
 ---
 
-#### **4.6 Verifying Integrity**
+### **4.7 Verifying Approval and Integrity**
+
+To view the tag metadata:
 
 ```bash
-git show SOP-006_r1
+git show SOP-006_r2
 ```
 
-Displays metadata (author, date, commit hash) proving the record’s integrity and authenticity.
+Displays:
+
+* Tagger (approver)
+* Tag date (effective date)
+* Linked commit hash
+* Commit message (summary of change)
+
+Together, this demonstrates:
+
+* Identity of approver (GitHub account / PR approver)
+* Approval timestamp
+* Immutable cryptographic link between document and approval
 
 ---
 
-#### **4.7 Archiving and Retention**
+### **4.8 Linking Commits, PRs, and CRs**
 
-1. No manual deletion of historical tags or branches is permitted.
-2. Repositories are backed up regularly and mirrored as read-only archives for record retention.
-3. Tags and commit history serve as permanent traceability records.
+Each approved change must maintain traceability between:
 
----
+* **Change Request (Issue ID)** – why the change occurred
+* **Pull Request (PR)** – review and approval discussion
+* **Git Tag** – the official approved revision
 
-### **5. Audit Demonstration Checklist**
+These links are established automatically when:
 
-| Verification Step         | Git Command                       | Output                               |
-| ------------------------- | --------------------------------- | ------------------------------------ |
-| Identify current version  | `git describe --tags`             | Shows current tag (e.g., SOP-006_r2) |
-| View revision log         | `git log --follow path/to/doc.md` | Displays file-specific history       |
-| Confirm approved revision | `git tag -l`                      | Lists all released versions          |
-| Verify approver and date  | `git show <tag>`                  | Displays approval metadata           |
+* PR descriptions reference Issues (e.g., `Fixes #23`)
+* Tags are created on the merged commit of the PR
+
+This chain provides full, auditable traceability from intent → implementation → approval.
 
 ---
 
-### **6. References**
+### **4.9 Integrity and Retention**
 
-* SOP – Document Control
-* SOP – Change Control
-* SOP – Identification and Traceability
-* ISO 9001:2015 §7.5.2–7.5.3
-* ISO 13485:2016 §4.2.4
+1. Git history and tags are **permanent and immutable**; they must never be deleted or rewritten.
+2. Repository settings must:
+
+   * Enforce branch protection on `main`
+   * Restrict force-pushes and tag deletions
+3. Repositories are backed up and mirrored for redundancy.
+4. Git metadata (commits, tags, PRs) serves as the **official QMS record** of document approval and revision history.
+
+---
+
+### **4.10 Audit Demonstration Commands**
+
+| Purpose                     | Command                               | Example Output                 |
+| --------------------------- | ------------------------------------- | ------------------------------ |
+| Show current version        | `git describe --tags`                 | `SOP-006_r2`                   |
+| List all approved revisions | `git tag -l`                          | `SOP-006_r1`, `SOP-006_r2`     |
+| Show approval details       | `git show SOP-006_r2`                 | Tagger, date, commit hash      |
+| Show file history           | `git log --follow path/to/SOP-006.md` | Commit-by-commit audit trail   |
+| Confirm links               | PR → Tag → CR                         | Linked automatically in GitHub |
+
+---
+
+## **5. Records and Retention**
+
+| Record Type                        | Location          | Retention |
+| ---------------------------------- | ----------------- | --------- |
+| Commits and commit history         | Git repository    | Permanent |
+| Tags (approved revisions)          | GitHub repository | Permanent |
+| Pull Requests (reviews, approvals) | GitHub            | Permanent |
+| Change Requests (Issues)           | GitHub            | Permanent |
+| Repository backups                 | Mirrored archive  | Permanent |
+
+GitHub and Git history together form the immutable audit trail of document approval and control.
+
+---
+
+## **6. References**
+
+* SOP – Document Control (r4)
+* SOP – Change Control (r3)
+* SOP – Identification and Traceability (r3)
+* WI – GitHub Document Control
+* ISO 9001:2015 §§7.5.2–7.5.3
+* ISO 13485:2016 §§4.2.4–4.2.5
 * 21 CFR Part 11 – Electronic Records and Signatures
 
 ---
 
-### **7. Revision History**
+## **7. Revision History**
 
-| Revision | Date       | Description of Change                                              | Approved By |
-| -------- | ---------- | ------------------------------------------------------------------ | ----------- |
-| r1       | 2025-10-11 | Initial release defining Git-based traceability and audit commands | [Name]      |
+| Revision | Date       | Description of Change                                                                                                   | Approved By |
+| -------- | ---------- | ----------------------------------------------------------------------------------------------------------------------- | ----------- |
+| r1       | 2025-10-11 | Initial release defining Git-based traceability and audit commands                                                      | [Name]      |
+| **r2**   | 2025-10-15 | Updated to align with tool-agnostic SOPs; clarified system-managed approvals, HEAD=approved version, and immutable tags | [Name]      |
