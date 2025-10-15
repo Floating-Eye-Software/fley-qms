@@ -1,7 +1,7 @@
 # 🧾 **SOP: Document Control**
 
 **Effective Date:** [To be assigned]
-**Revision:** r2
+**Revision:** r3
 **Title:** Document Control
 **Controlled Source:** [GitHub Repository URL]
 
@@ -9,139 +9,146 @@
 
 ## **1. Purpose**
 
-To ensure all QMS documents are identified, approved, maintained, and controlled so that only current, authorized revisions are available for use and obsolete or draft material is not used unintentionally.
+To ensure all QMS documents and records are identified, maintained, and controlled so that:
+
+* Only current, authorized revisions of controlled documents are used.
+* Records accurately capture what has occurred in the QMS and remain auditable.
+* Obsolete or draft material is not used unintentionally.
 
 ---
 
 ## **2. Scope**
 
-This procedure applies to all documented information that forms part of the Quality Management System (QMS), including policies, procedures, work instructions, templates, and records, regardless of medium or format.
-It covers all repositories, systems, and locations where such documents are created, stored, or used.
+Applies to **all documented information** within the QMS, including:
+
+* Controlled documents: SOPs, WIs, templates, policies
+* Records: logs, registers, the Master Planning Log (MPL), CAPA log, Risk Register
+* All repositories, systems, and locations where such documents or records are created, stored, or used
+
+> **Note:** Controlled documents require formal approval and revision control.
+> Records are maintained in a structured, version-controlled system (e.g., Git) and updated by process owners without formal approval for each entry, but are subject to traceability, integrity, and periodic review.
 
 ---
 
 ## **3. Responsibilities**
 
-| Role                                               | Responsibilities                                                                                                                             |
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Process Owners**                                 | Develop, maintain, and review documents related to their processes. Ensure accuracy, relevance, and compliance with applicable requirements. |
-| **Quality Manager / Document Control Coordinator** | Maintain the controlled repository, ensure appropriate document identification, revision control, approval, and access management.           |
-| **Management**                                     | Approve new or revised documents that affect the QMS.                                                                                        |
-| **All Employees**                                  | Use only approved and current revisions of controlled documents. Report obsolete or inconsistent content.                                    |
+| Role                                               | Responsibilities                                                                                                                                    |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Process Owners**                                 | Develop, maintain, and review documents; update records (MPL, CAPA log, Risk Register) as part of their process; ensure accuracy and traceability.  |
+| **Quality Manager / Document Control Coordinator** | Maintain controlled repository, oversee document approval, revision, and access; ensure records are complete, traceable, and reviewed periodically. |
+| **Management**                                     | Approve controlled documents that affect the QMS; support governance and resource allocation.                                                       |
+| **All Employees**                                  | Use only approved and current revisions of controlled documents; update records as required; report discrepancies.                                  |
 
 ---
 
 ## **4. Definitions**
 
-| Term                    | Definition                                                                                                                                                      |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Controlled Document** | A document maintained under version control, approved for use, and accessible to authorized personnel.                                                          |
-| **Slug**                | A standardized, unique identifier based on document type and title (e.g., `SOP_Document-Control`). Used consistently in filenames and Git tags.                 |
-| **Version**             | Any iteration of a document within the Git repository, including drafts and commits. Versions may or may not be approved.                                       |
-| **Revision**            | A formally approved and controlled version of a document, identified by a Git tag (e.g., `SOP_Document-Control_r2`). Each revision supersedes the previous one. |
-| **Git Tag**             | A permanent marker in Git identifying an approved revision of a controlled document.                                                                            |
-| **GitHub Repository**   | The official controlled source of QMS documents and their full revision history.                                                                                |
+| Term                          | Definition                                                                                                                                      |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Controlled Document**       | A document maintained under version control, approved for use, and accessible to authorized personnel.                                          |
+| **Record**                    | Information created, received, and maintained as evidence of activities or compliance; includes MPL, CAPA Log, Risk Register, audit records.    |
+| **Slug**                      | A standardized, unique identifier based on document type and title (e.g., `SOP_Document-Control`). Used consistently in filenames and Git tags. |
+| **Version / Revision**        | Version is any iteration of a document in Git; revision (`r#`) is a formally approved version.                                                  |
+| **Git Tag**                   | Permanent marker identifying an approved revision in Git.                                                                                       |
+| **Master Planning Log (MPL)** | A record capturing planning activities, decisions, and QMS changes; maintained in Markdown in the wiki and updated by process owners.           |
 
 ---
 
 ## **5. Procedure**
 
-### **5.1 Creation and Approval of Documents**
+### **5.1 Creation and Approval of Controlled Documents**
 
-1. New documents shall be authored by the responsible Process Owner or delegate.
-2. Each new document shall:
+1. Authoring is done by Process Owners or delegates.
+2. Each document must:
 
-   * Use the approved template and metadata header.
-   * Be assigned a unique **slug** (see Section 5.6).
-   * Be submitted via a GitHub Pull Request (PR) for review and approval.
-3. Documents must be **reviewed and approved** prior to merging to the `main` branch.
-
-   * Approval is provided through GitHub PR approval.
-   * The merged and tagged revision represents the official approved document.
+   * Use an approved template and header
+   * Have a unique **slug**
+   * Be submitted via GitHub Pull Request (PR) for review and approval
+3. Approved PRs are merged to `main` and tagged; this constitutes the official revision.
 
 ---
 
-### **5.2 Review and Revision**
+### **5.2 Review and Revision of Controlled Documents**
 
-1. Controlled documents shall be reviewed periodically—typically every two years—or sooner if a change in process, regulation, or requirement occurs.
-2. Revisions are proposed via Pull Request in accordance with the **Change Control SOP**.
-3. Upon approval and merge, a new Git tag shall be created to identify the approved revision, using the format:
+1. Periodic review (typically every two years) or upon regulatory/process change.
+2. Revision proposed via PR per **Change Control SOP**.
+3. Approved revisions tagged with the format:
 
    ```
-   SOP_Document-Control_r2
+   SOP_Document-Control_r3
    ```
 
-   where the **slug** identifies the document and the **r#** identifies the approved revision.
+---
+
+### **5.3 Control of Records (MPL, CAPA Log, Risk Register, etc.)**
+
+1. Records **document what has happened**, not what should happen.
+2. **Updates are made by process owners** or designated personnel in real time.
+3. Records must include:
+
+   * Date of entry
+   * Responsible owner
+   * Links to related GitHub Issues, PRs, or Milestones
+4. Records are **version-controlled** via Git and/or stored in the QMS Wiki.
+5. Records are **reviewed periodically** (quarterly) for completeness, integrity, and alignment with Management Review.
+6. Historical entries are **never deleted**; audit trails are preserved automatically by Git.
 
 ---
 
-### **5.3 Control of Obsolete Documents**
+### **5.4 Control of Obsolete Documents**
 
-1. Superseded or obsolete revisions remain in the repository’s history but are not accessible as the default revision.
-2. Obsolete documents may be moved to an `/archive/` directory or clearly marked as **OBSOLETE** in the file header.
-3. Only the **main branch** and latest Git tag represent current, controlled revisions.
-
----
-
-### **5.4 Availability and Access**
-
-1. Approved documents are available in read-only form through the GitHub repository or published GitHub Pages site.
-2. Editing rights are restricted to authorized personnel with designated access.
-3. Public or internal read access is determined by management and repository settings.
+1. Superseded or obsolete controlled documents remain in Git history but are not the default version.
+2. Obsolete documents may be archived or marked `OBSOLETE`.
+3. Records are never considered obsolete; they remain accessible for audit and traceability.
 
 ---
 
-### **5.5 Control of External Documents**
+### **5.5 Availability and Access**
 
-Documents of external origin that are necessary for the QMS (e.g., standards, supplier manuals) shall be:
-
-* Listed in an external document register or referenced within applicable SOPs.
-* Verified as current and relevant.
-* Stored or linked within the controlled repository or document management system.
+1. Controlled documents are available in read-only form to all relevant personnel.
+2. Editing privileges are restricted to authorized personnel.
+3. Records are updated in their structured repository by assigned owners.
+4. Access permissions in GitHub ensure integrity and traceability.
 
 ---
 
 ### **5.6 Document Identification**
 
-1. Each controlled document shall have a **unique slug** constructed as:
-
-   ```
-   [Type]_[Descriptive-Title]
-   ```
-
+1. Controlled documents have a **slug**: `[Type]_[Descriptive-Title]`
    Examples:
 
    * `SOP_Document-Control.md`
    * `WI_Pull-Request-Workflow.md`
    * `TPL_Corrective-Action-Form.md`
-2. The document header shall include the following metadata fields:
+2. Header metadata includes:
 
    ```markdown
    # SOP – Document Control  
-   **Revision:** r2  
-   **Effective Date:** 2025-10-12  
+   **Revision:** r3  
+   **Effective Date:** 2025-10-14  
    **Approved By:** [Name / Title]  
-   **Controlled Source:** https://github.com/[org]/[repo]/SOPs/SOP_Document-Control.md  
+   **Controlled Source:** https://github.com/[org]/[repo]/SOPs/SOP_Document-Control.md
    ```
-3. **Revisions** are identified using the `r#` notation, matching the Git tag (e.g., `SOP_Document-Control_r2`).
-4. The **GitHub repository** and associated **Git tags** constitute the single source of truth for document identification and revision history.
+3. **Revisions** identified by `r#` and Git tag.
 
 ---
 
-### **5.7 Records and Retention**
+### **5.7 Retention**
 
-| Record Type              | Location          | Retention                                                                      |
-| ------------------------ | ----------------- | ------------------------------------------------------------------------------ |
-| Document files           | GitHub Repository | Current revision: active; prior revisions retained indefinitely in Git history |
-| Pull Request approvals   | GitHub            | Permanent                                                                      |
-| Git tags and releases    | GitHub            | Permanent                                                                      |
-| Metadata (header fields) | Within document   | Permanent                                                                      |
+| Record/Document Type         | Location          | Retention                                                                     |
+| ---------------------------- | ----------------- | ----------------------------------------------------------------------------- |
+| Controlled Documents         | GitHub Repository | Current revision active; prior revisions retained indefinitely in Git history |
+| Pull Request approvals       | GitHub            | Permanent                                                                     |
+| Git tags / releases          | GitHub            | Permanent                                                                     |
+| Metadata (headers)           | Within document   | Permanent                                                                     |
+| MPL, CAPA Log, Risk Register | GitHub / Wiki     | Permanent; updated continuously by process owners                             |
 
 ---
 
 ## **6. References**
 
-* ISO 9001:2015 – Clauses 7.5, 6.3, and 8.5.6
+* ISO 9001:2015 – Clauses 7.5, 6.3, 8.5.6
+* ISO 13485:2016 – Clauses 4–8, document & record control
 * SOP – Change Control
 * SOP – Identification and Traceability
 * WI – GitHub Document Control
@@ -154,5 +161,6 @@ Documents of external origin that are necessary for the QMS (e.g., standards, su
 
 | Revision | Date       | Description of Change                                                                        | Approved By |
 | -------- | ---------- | -------------------------------------------------------------------------------------------- | ----------- |
-| r1       | 2025-10-11 | Initial release integrating Git-based document control                                       | [Name]      |
-| r2       | 2025-10-12 | Updated to slug-based identification; clarified Version definition; removed document numbers | [Name]      |
+| r1       | 2025-10-11 | Initial Git-based document control                                                           | [Name]      |
+| r2       | 2025-10-12 | Updated to slug-based identification; clarified Version definition                           | [Name]      |
+| r3       | 2025-10-14 | Added guidance for **records** (MPL, CAPA Log, Risk Register) and distinction from documents | [Name]      |
