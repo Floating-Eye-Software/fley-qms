@@ -1,12 +1,10 @@
-# ✅ **Work Instruction (WI) Template**
+# **TPL - Work Instruction (WI) Template**
 
-# **WI – [Task / Activity Name]**
-
-**Slug:** `WI_[Task-Name]`  
-**Revision:** r#  
-**Controlled Source:** [Primary Wiki or Repository URL — e.g., `https://github.com/[org]/[repo]/wiki/WI_[Task-Name]`]  
-**Related SOP:** `SOP_[Process-Name]`  
+**Slug:** Work-Instruction-Template  
+**Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Document-Control-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Work-Instruction-Template  
 
 ---
 
@@ -40,30 +38,20 @@ List related documents, standards, and references that support this WI.
 
 ---
 
-## **4. Resources**
-
-List all tools, templates, access requirements, or systems necessary to perform the steps.
-
-* Required tools or software (e.g., Git, GitHub access)
-* Approved templates or forms (if any)
-* Access permissions to repositories or wiki
-* Trained personnel or assigned roles
-
----
-
-## **5. Responsibilities**
+## **4. Responsibilities and Authorities**
 
 Define roles responsible for performing, reviewing, or verifying the activity described in this WI.
 
-| Role                       | Responsibilities                                                                   |
-| -------------------------- | ---------------------------------------------------------------------------------- |
-| [Role]                     | Perform the steps in this Work Instruction as described.                           |
-| [Role]                     | Review and approve results, ensuring compliance with related SOPs.                 |
-| [Quality or Process Owner] | Ensure the instruction remains accurate and aligned with current systems or tools. |
+| Role                   | Responsibilities                                                                   | Authority / Decision Rights                             |
+| ---------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| Operator / Technician  | Perform the steps in this Work Instruction as described.                           | Can execute the task; report issues to Supervisor/Lead. |
+| Supervisor / Team Lead | Review and approve results, ensuring compliance with related SOPs.                 | Can approve task completion and escalate deviations.    |
+| Process Owner          | Ensure the WI remains accurate and aligned with the SOP and current systems/tools. | Can request updates and approve minor revisions.        |
+| Quality Manager / QA   | Ensure compliance with document control and quality requirements.                  | Can approve release and enforce corrective actions.     |
 
 ---
 
-## **6. Step-by-Step Procedure**
+## **5. Step-by-Step Procedure**
 
 Provide a detailed, sequential description of how to perform the task. Use clear, numbered steps and include code examples, screenshots, or command snippets as needed.
 
@@ -87,7 +75,7 @@ git push origin change/<short-description>
 
 ---
 
-## **7. Records / Documented Information**
+## **6. Records**
 
 List any records, outputs, or evidence generated when executing this WI, and specify how they are controlled.
 

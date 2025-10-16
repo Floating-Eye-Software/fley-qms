@@ -2,9 +2,9 @@
 
 **Slug:** Document-Control-SOP  
 **Revision:** r1  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Document-Control-SOP  
-**Process Owner:** Quality Manager  
 **Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Quality Manager  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Document-Control-SOP  
 
 ---
 
@@ -49,19 +49,7 @@ This SOP applies to **all documented information** within the QMS, including:
 
 ---
 
-## **5. Resources**
-
-This process requires:
-
-* A document control system or repository
-* Approved document templates
-* Defined approval and change control workflows
-* Access controls for publication and maintenance
-* Personnel trained in document control procedures
-
----
-
-## **6. Responsibilities and Authorities**
+## **5. Responsibilities and Authorities**
 
 | Role                                                     | Responsibilities                                                                                                                                              | Authorities                                                                                               |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -72,9 +60,9 @@ This process requires:
 
 ---
 
-## **7. Process Description**
+## **6. Process Description**
 
-### **7.1 Document Creation and Approval**
+### **6.1 Document Creation and Approval**
 
 1. Controlled documents are authored using approved templates and structure.
 2. Each document must include:
@@ -89,7 +77,7 @@ This process requires:
 
 ---
 
-### **7.2 Review and Revision**
+### **6.2 Review and Revision**
 
 1. Controlled documents are reviewed:
 
@@ -101,7 +89,7 @@ This process requires:
 
 ---
 
-### **7.3 Control of Records**
+### **6.3 Control of Records**
 
 1. Records provide **objective evidence** of QMS implementation.
 2. Process Owners maintain records in their designated controlled areas.
@@ -115,7 +103,7 @@ This process requires:
 
 ---
 
-### **7.4 Identification and Status**
+### **6.4 Identification and Status**
 
 1. Controlled documents include in their header:
 
@@ -127,7 +115,7 @@ This process requires:
 
 ---
 
-### **7.5 Control of Obsolete Documents**
+### **6.5 Control of Obsolete Documents**
 
 1. When a new revision is approved, the previous revision becomes **obsolete**.
 2. Obsolete documents remain available for reference but are clearly identified as superseded.
@@ -136,7 +124,7 @@ This process requires:
 
 ---
 
-### **7.6 Availability and Access**
+### **6.6 Availability and Access**
 
 1. The controlled source serves as the **single source of truth** for all approved QMS documents.
 2. All personnel have read access to controlled documents.
@@ -145,7 +133,7 @@ This process requires:
 
 ---
 
-### **7.7 Retention**
+### **6.7 Retention**
 
 | Type                                       | Retention                                                      | Control Method                                |
 | ------------------------------------------ | -------------------------------------------------------------- | --------------------------------------------- |
@@ -155,7 +143,7 @@ This process requires:
 
 ---
 
-## **8. Records / Documented Information**
+## **7. Records**
 
 | Record / Artifact                  | Responsible Owner            | Storage Location        | Retention | Control Method     |
 | ---------------------------------- | ---------------------------- | ----------------------- | --------- | ------------------ |

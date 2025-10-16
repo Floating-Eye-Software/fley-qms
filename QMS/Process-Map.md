@@ -1,4 +1,11 @@
-# **Process Map – FLEY QMS**
+# **QMS – FLEY Process Map**
+
+**Slug:** Process-Map  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Process-Map  
+
+---
 
 ## **1. QMS Structure Overview**
 
@@ -6,47 +13,55 @@ This diagram shows the **hierarchical structure of the FLEY Quality Management S
 
 ```mermaid
 flowchart TD
-    %% Core Definition Layer
-    subgraph Core[Core Definition Layer]
+    %% ======== COLORS / STYLES ========
+    classDef core fill:#f9f,stroke:#333,stroke-width:1px,color:#000;
+    classDef sop fill:#bbf,stroke:#333,stroke-width:1px,color:#000;
+    classDef op fill:#bfb,stroke:#333,stroke-width:1px,color:#000;
+    classDef support fill:#ffb,stroke:#333,stroke-width:1px,color:#000;
+
+    %% ======== CORE LAYER ========
+    subgraph Core[CORE – Definition & Direction]
         QM[Quality Manual]
         CA[Context Analysis]
         QP[Quality Policy]
         PM[Process Map]
         OC[Organizational Chart]
     end
+    class QM,CA,QP,PM,OC core
 
-    %% SOP Layer
-    subgraph SOP[SOP Layer]
-        SOP3[Document & Record Control SOP]
-        SOP4[Change Control SOP]
-        SOP5[Leadership SOP]
-        SOP6[Quality Planning SOP]
-        SOP7[Project Management SOP]
-        SOP8[Risk & Opportunity SOP]
-        SOP9[Design & Development SOP]
+    %% ======== SOP LAYER ========
+    subgraph SOP[SOPs – Governance & Control]
+        SOP3[Document & Record Control]
+        SOP4[Change Control]
+        SOP5[Leadership & Management]
+        SOP6[Quality Planning]
+        SOP7[Project Management]
+        SOP8[Risk & Opportunity]
+        SOP9[Design & Development]
     end
+    class SOP3,SOP4,SOP5,SOP6,SOP7,SOP8,SOP9 sop
 
-    %% Operational Layer
-    subgraph WI[Operational Layer]
+    %% ======== OPERATIONAL LAYER ========
+    subgraph OP[Operational – Execution & Records]
         WISetup[WI: Set Up QMS in GitHub]
         WIOperate[WI: Operate QMS in GitHub]
-        ProductBoards[Red Witch Project Boards]
+        ProductBoards[Project Boards – Red Witch]
     end
+    class WISetup,WIOperate,ProductBoards op
 
-    %% Connections
-    QM --> SOP3
-    QM --> SOP4
-    QM --> SOP5
-    QM --> SOP6
-    QM --> SOP7
-    QM --> SOP8
-    QM --> SOP9
+    %% ======== SUPPORTING PROCESSES ========
+    subgraph Support[Supporting Processes – Enabling Resources]
+        Training[Training & Competence Mgmt]
+        Resources[Infrastructure & Tools]
+        AuditMgmt[Audits & CAPA Management]
+    end
+    class Training,Resources,AuditMgmt support
 
+    %% ======== INTERACTIONS ========
+    QM --> SOP3 & SOP4 & SOP5 & SOP6 & SOP7 & SOP8 & SOP9
     CA --> SOP6
-    PM --> SOP7
-    PM --> SOP9
-    OC --> SOP5
-    OC --> SOP7
+    PM --> SOP7 & SOP9
+    OC --> SOP5 & SOP7
 
     SOP3 --> WISetup
     SOP4 --> WISetup
@@ -56,8 +71,16 @@ flowchart TD
     SOP8 --> WIOperate
     SOP9 --> WIOperate
 
-    WISetup --> WIOperate
-    WIOperate --> ProductBoards
+    WISetup --> WIOperate --> ProductBoards
+
+    %% SUPPORT FLOWS
+    Training --> WIOperate
+    Resources --> WIOperate
+    AuditMgmt --> WIOperate
+
+    %% FEEDBACK
+    ProductBoards -. improvement feedback .-> AuditMgmt
+    AuditMgmt -. CAPA results .-> SOP4
 ```
 
 **Explanation:**
@@ -75,20 +98,42 @@ The diagram shows the **flow from definition → procedures → execution**, ens
 The following diagram illustrates how the three main workflows interact dynamically within the FLEY QMS:
 
 ```mermaid
-flowchart TD
+flowchart LR
+    %% COLORS
+    classDef qms fill:#bfb,stroke:#333,stroke-width:1px,color:#000;
+    classDef create fill:#bbf,stroke:#333,stroke-width:1px,color:#000;
+    classDef product fill:#ffb,stroke:#333,stroke-width:1px,color:#000;
+
+    %% QMS OPERATION
     subgraph Operate[Operate the QMS – Continuous Improvement]
-        A1[Context & Risk Review] --> A2[Audits & CAPA]
-        A2 --> A3[Management Review]
-        A3 --> A1
+        A1[Context & Risk Review]
+        A2[Audits / CAPA Execution]
+        A3[Management Review]
+        A1 --> A2 --> A3 --> A1
     end
-    subgraph Create[Create the QMS – Establishment Project]
-        B1[Design QMS Structure] --> B2[Develop SOPs/WIs] --> B3[Validate Framework]
-        B3 --> A1
+    class A1,A2,A3 qms
+
+    %% QMS CREATION
+    subgraph Create[Create / Update QMS Framework]
+        B1[Design QMS Structure]
+        B2[Develop SOPs & WIs]
+        B3[Validate Framework]
+        B1 --> B2 --> B3 --> A1
     end
-    subgraph Develop[Develop Products – Red Witch Project]
-        C1[Requirements & Planning] --> C2[Design & Implementation] --> C3[Verification & Release]
-        C3 --> A2
+    class B1,B2,B3 create
+
+    %% PRODUCT DEVELOPMENT
+    subgraph Develop[Develop Products – Red Witch]
+        C1[Requirements & Planning]
+        C2[Design & Implementation]
+        C3[Verification & Release]
+        C1 --> C2 --> C3 --> A2
     end
+    class C1,C2,C3 product
+
+    %% CONTINUAL IMPROVEMENT FEEDBACK
+    A3 -.Outputs to Leadership & Planning.-> B1
+    A3 -.Policy & Objective Update.-> C1
 ```
 
 **Workflow Summary:**
@@ -113,38 +158,17 @@ flowchart TD
 
 ---
 
-## **3. Process Interactions Table**
+## **3. QMS Process Table**
 
-| Process               | Inputs                       | Outputs                      | Responsible Roles     | Key Controls               | Intended Result       |
-| --------------------- | ---------------------------- | ---------------------------- | --------------------- | -------------------------- | --------------------- |
-| **Operate the QMS**   | Context, risks, audits       | Updated objectives & actions | Top Management        | Risk register, Mgmt Review | Continual improvement |
-| **Create the QMS**    | ISO requirements, org needs  | Approved manual, SOPs & WIs  | Quality Manager       | Planning SOP               | Validated framework   |
-| **Develop Products**  | Quality plans & requirements | Verified releases            | Project Manager / Dev | Design SOP                 | Compliant product     |
-| **Support Processes** | Docs / records               | Controlled information       | Quality Manager       | GitHub control rules       | Traceable records     |
-
----
-
-| **Process / SOP**                   | **Purpose / Description**                                                            | **Key Inputs**                                 | **Key Outputs**                                             | **Main Risks / Opportunities**                             | **Performance Criteria / Metrics**          | **Linked SOPs / WIs**                                            |
-| ----------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------- | ---------------------------------------------------------------- |
-| **Operate the QMS**                 | Maintain and improve the effectiveness of the QMS through audits, reviews, and CAPA. | Context analysis, risk register, audit results | Updated objectives, CAPA actions, management review outputs | Risk of ineffective CAPA, missed improvement opportunities | % CAPA closed on time, audit findings trend | SOP – Leadership, SOP – Risk & Opportunity, SOP – Change Control |
-| **Create the QMS**                  | Establish and maintain QMS structure, documentation, and governance.                 | ISO 9001 requirements, organizational needs    | Approved Quality Manual, SOPs, WIs                          | Scope gaps, over-documentation, misalignment with ISO      | % documents validated, time to approval     | SOP – Quality Planning, WI – Setup QMS in GitHub                 |
-| **Develop Products (Red Witch)**    | Plan, design, verify, and release products compliant with QMS.                       | Requirements, quality plans                    | Verified releases, product records                          | Missed requirements, design errors, uncontrolled releases  | % requirements verified, defect rate        | SOP – Design & Development, WI – Operate QMS in GitHub           |
-| **Support Processes**               | Control documents, records, and configuration in GitHub.                             | SOP/WI drafts, forms                           | Controlled and traceable records                            | Unauthorized edits, loss of control                        | Audit compliance, version accuracy          | SOP – Document & Record Control, WI – Operate QMS in GitHub      |
-| **SOP – Document & Record Control** | Define how documents and records are created, reviewed, approved, and maintained.    | Draft documents, templates                     | Approved, version-controlled docs                           | Uncontrolled documents, outdated information               | 100 % docs versioned in Git                 | WI – GitHub Setup, WI – Operate QMS                              |
-| **SOP – Change Control**            | Manage changes to QMS and project artifacts.                                         | Change requests, issues                        | Approved PRs, updated docs                                  | Unreviewed changes, lost traceability                      | % changes reviewed / approved               | WI – GitHub PR Workflow                                          |
-| **SOP – Leadership**                | Ensure leadership commitment and communication.                                      | Org. context, policy inputs                    | Quality objectives, mgmt review outputs                     | Weak commitment, unclear direction                         | Completion of management reviews            | N/A                                                              |
-| **SOP – Quality Planning**          | Translate policy into actionable quality objectives and plans.                       | Policy, risks, context analysis                | Quality plans, objectives                                   | Unrealistic objectives, lack of alignment                  | % objectives achieved                       | WI – Plan Quality Objectives                                     |
-| **SOP – Project Management**        | Control project execution under QMS.                                                 | Requirements, resources                        | Project deliverables, reports                               | Schedule delays, unclear scope                             | On-time delivery %, milestone tracking      | WI – Red Witch Boards                                            |
-| **SOP – Risk & Opportunity**        | Identify and manage risks and opportunities.                                         | Context, process feedback                      | Updated risk register                                       | Unidentified risks, over-control                           | Risk review completion rate                 | WI – Update Risk Register                                        |
-| **SOP – Design & Development**      | Define product design and verification methodology.                                  | Requirements, design inputs                    | Verified design, release package                            | Design errors, missing verification                        | Verification / validation success rate      | WI – Product Dev Process                                         |
-
----
-
-## **4. References**
-
-* `Quality-Manual.md` – overview
-* `Context-Analysis.md` – internal/external issues
-* `Quality-Policy.md` – top-level commitments
-* `SOPs/` – operational procedures
-* `WIs/` – Work Instructions and records
-* `records/` – objective evidence
+| Process                           | Inputs                                 | Outputs                                 | Resources                                                   | Responsible Roles                 | Risks & Opportunities                                                    | Monitoring & Control                                       | Documented Information / Retention                                                                 |
+| --------------------------------- | -------------------------------------- | --------------------------------------- | ----------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Operate the QMS**               | Context, risks, audits, feedback       | Updated objectives & actions            | Risk register, audit checklist, management review templates | Top Management, Quality Manager   | Ineffective CAPA, missed improvements / Proactive improvements           | Audit schedule, CAPA closure tracking, Mgmt review minutes | SOPs: Leadership, Risk & Opportunity, Change Control; WI: Operate QMS; Retain in GitHub / records/ |
+| **Create the QMS**                | ISO requirements, organizational needs | Approved Quality Manual, SOPs & WIs     | Documentation tools, SME inputs                             | Quality Manager, SMEs             | Scope gaps, misalignment with ISO / Efficient QMS implementation         | Document review & approval process, validation checklist   | SOP: Quality Planning; WI: Setup QMS; Quality-Manual.md; Retain in GitHub                          |
+| **Develop Products (Red Witch)**  | Requirements, quality plans            | Verified releases                       | Design software, project boards, testing facilities         | Project Manager, Development Team | Missed requirements, design errors / Early validation, design automation | Verification & validation reviews, milestone checks        | SOP: Design & Development; WI: Operate QMS, Product Dev; Product records in GitHub                 |
+| **Document & Record Control**     | Draft docs, templates                  | Approved, version-controlled docs       | Document management system, GitHub                          | Quality Manager                   | Unauthorized edits, outdated docs / Controlled documentation             | Review & approval workflow, version check                  | SOP: Document & Record Control; WI: GitHub Setup; Retain in GitHub                                 |
+| **Change Control**                | Change requests, issues                | Approved PRs, updated docs              | GitHub, change log                                          | Quality Manager, Project Lead     | Unreviewed changes / Controlled updates                                  | PR review workflow, approval check                         | SOP: Change Control; WI: GitHub PR Workflow; Retain in GitHub                                      |
+| **Leadership / Management**       | Org. context, policy inputs            | Quality objectives, Mgmt review outputs | Meeting templates, dashboards                               | Top Management                    | Weak commitment, unclear direction / Improved engagement                 | Completion of management reviews, action tracking          | SOP: Leadership; Meeting minutes in GitHub                                                         |
+| **Risk & Opportunity Management** | Context, process feedback              | Updated risk register                   | Risk register tool                                          | Quality Manager, Process Owners   | Unidentified risks, over-control / Risk mitigation, opportunity capture  | Risk review schedule, update log                           | SOP: Risk & Opportunity; WI: Update Risk Register; Retain in GitHub                                |
+| **Project Management**            | Requirements, resources                | Project deliverables, reports           | Project boards, scheduling tools                            | Project Manager                   | Schedule delays, unclear scope / Efficient execution                     | Milestone tracking, progress reporting                     | SOP: Project Management; WI: Red Witch Boards; Retain in GitHub                                    |
+| **Quality Planning**              | Policy, risks, context                 | Quality plans, objectives               | Templates, planning tools                                   | Quality Manager                   | Unrealistic objectives / Alignment with ISO                              | Objective tracking, review of plans                        | SOP: Quality Planning; WI: Plan Quality Objectives; Retain in GitHub                               |
+| **Training Management**           | Training needs                         | Trained personnel                       | Learning platform, training materials                       | HR / Quality Manager              | Skills gaps / Competency improvement                                     | Training completion records, competency checks             | Training records in GitHub                                                                         |

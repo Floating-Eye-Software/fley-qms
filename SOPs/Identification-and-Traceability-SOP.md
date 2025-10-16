@@ -1,10 +1,10 @@
 # **SOP – Identification and Traceability**
 
-**Slug:** Identification-and-Traceability-SOP
-**Revision:** r1
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Identification-and-Traceability-SOP
-**Process Owner:** Quality Manager
-**Effective Date:** [YYYY-MM-DD]
+**Slug:** Identification-and-Traceability-SOP  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Quality Manager  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Identification-and-Traceability-SOP  
 
 ---
 
@@ -53,17 +53,7 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-## **5. Resources**
-
-* Document and record repository (controlled source)
-* Approved templates and forms
-* Change Control workflow
-* Access control and permissions management
-* Trained personnel responsible for document and record handling
-
----
-
-## **6. Responsibilities and Authorities**
+## **5. Responsibilities and Authorities**
 
 | Role                                   | Responsibilities                                                                                                      | Authorities                                                         |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -75,9 +65,9 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-## **7. Process Description**
+## **6. Process Description**
 
-### **7.1 Identification of Controlled Documents**
+### **6.1 Identification of Controlled Documents**
 
 1. Each controlled document includes in its header:
 
@@ -94,7 +84,7 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-### **7.2 Identification of Records**
+### **6.2 Identification of Records**
 
 1. Each record or dataset must be traceable to:
 
@@ -110,7 +100,7 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-### **7.3 Identification of Products and Configurations**
+### **6.3 Identification of Products and Configurations**
 
 1. Physical products, components, or materials are uniquely identified by **lot, batch, or serial numbers**.
 2. Digital assets or configurations include:
@@ -121,7 +111,7 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-### **7.4 Traceability Relationships**
+### **6.4 Traceability Relationships**
 
 | Entity                    | Identified By     | Traceability Links                                         |
 | ------------------------- | ----------------- | ---------------------------------------------------------- |
@@ -134,7 +124,7 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-### **7.5 Control of Obsolete and Superseded Items**
+### **6.5 Control of Obsolete and Superseded Items**
 
 1. Superseded document revisions become **obsolete**.
 2. Obsolete documents are retained in the archive or historical view of the controlled source, clearly marked as superseded.
@@ -145,7 +135,7 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-### **7.6 Verification of Traceability**
+### **6.6 Verification of Traceability**
 
 1. Traceability is verified during audits or management review by confirming:
 
@@ -157,7 +147,7 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
-## **8. Records / Documented Information**
+## **7. Records**
 
 | Record / Artifact         | Responsible Owner            | Storage Location        | Retention | Control Method           |
 | ------------------------- | ---------------------------- | ----------------------- | --------- | ------------------------ |

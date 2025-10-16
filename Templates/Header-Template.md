@@ -1,9 +1,7 @@
-# ✅ **Document Header Template**
+# **TPL – Document Header Template**
 
-# **[TYPE] – [Title]**
-
-**Slug:** [TYPE_Title]  
-**Revision:** r#  
-**Controlled Source:** https://github.com/[org]/[repo]/wiki/[slug]  
-**Related SOP:** SOP_[Process-Name] _(optional)_  
+**Slug:** Header-Template  
+**Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Document-Control-SOP _(optional)_  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Header-Template  

@@ -1,12 +1,10 @@
-# ✅ **Standard Operating Procedure (SOP) Template**
+# **TPL - Standard Operating Procedure (SOP) Template**
 
-# **SOP – [Process Name]**
-
-**Slug:** `SOP_[Process-Name]`  
-**Revision:** r#  
-**Controlled Source:** [Primary Wiki or Repository URL — e.g., `https://github.com/[org]/[repo]/wiki/SOP_[Process-Name]`]  
-**Process Owner:** [Role or Department]  
+**Slug:** Standard-Operating-Procedure-Template  
+**Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Quality Manager  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Standard-Operating-Procedure-Template  
 
 ---
 
@@ -54,19 +52,7 @@ Provide clear definitions for all process-specific terms or abbreviations.
 
 ---
 
-## **5. Resources**
-
-List all required tools, systems, personnel, or templates necessary to perform this process.
-
-* Document repository (e.g., GitHub Wiki or controlled main branch)
-* Approved templates and forms
-* Change Control or review workflow
-* Access control and permissions management
-* Trained personnel
-
----
-
-## **6. Responsibilities and Authorities**
+## **5. Responsibilities and Authorities**
 
 Define roles, responsibilities, and authority levels.
 
@@ -78,9 +64,9 @@ Define roles, responsibilities, and authority levels.
 
 ---
 
-## **7. Process Description**
+## **6. Process Description**
 
-### **7.1 Overview and Sequence**
+### **6.1 Overview and Sequence**
 
 Describe the high-level workflow or steps for this process.
 Use numbered steps, sub-sections, or a flowchart for clarity.
@@ -94,13 +80,13 @@ Use numbered steps, sub-sections, or a flowchart for clarity.
 
 ---
 
-### **7.2 Detailed Steps (Optional)**
+### **6.2 Detailed Steps (Optional)**
 
 Break down complex processes here, referencing any supporting Work Instructions (WIs) or templates.
 
 ---
 
-## **8. Records / Documented Information**
+## **7. Records**
 
 List records or outputs created by this process and how they are controlled.
 

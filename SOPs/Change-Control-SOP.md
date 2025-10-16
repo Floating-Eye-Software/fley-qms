@@ -1,10 +1,10 @@
 # **SOP – Change Control**
 
-**Slug:** Change-Control-SOP
-**Revision:** r1
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Change-Control-SOP
-**Process Owner:** Quality Manager
-**Effective Date:** [YYYY-MM-DD]
+**Slug:** Change-Control-SOP  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Quality Manager  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Change-Control-SOP  
 
 ---
 
@@ -53,19 +53,7 @@ This SOP governs both **planned** and **unintended** changes.
 
 ---
 
-## **5. Resources**
-
-This process requires:
-
-* A change control system or workflow
-* Approved templates and forms for recording changes
-* Access control and permissions management
-* Trained personnel with defined responsibilities
-* Document repository or QMS database for storing change records
-
----
-
-## **6. Responsibilities and Authorities**
+## **5. Responsibilities and Authorities**
 
 | Role                                 | Responsibilities                                                                                                     | Authorities                                                                    |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -77,9 +65,9 @@ This process requires:
 
 ---
 
-## **7. Process Description**
+## **6. Process Description**
 
-### **7.1 Initiating a Change**
+### **6.1 Initiating a Change**
 
 1. Any individual may propose a change by submitting a **Change Request (CR)** using the approved form or digital system.
 2. Each CR must include:
@@ -93,7 +81,7 @@ This process requires:
 
 ---
 
-### **7.2 Review and Approval**
+### **6.2 Review and Approval**
 
 1. The CCC assigns reviewers and approvers based on scope, risk, and potential impact.
 2. Reviewers evaluate the proposal for:
@@ -108,7 +96,7 @@ This process requires:
 
 ---
 
-### **7.3 Implementation**
+### **6.3 Implementation**
 
 1. Approved changes are implemented by the responsible Process Owner or designated personnel.
 2. Controlled documents impacted by the change are revised and reissued under the **Document Control SOP**.
@@ -117,7 +105,7 @@ This process requires:
 
 ---
 
-### **7.4 Control of Unintended Changes**
+### **6.4 Control of Unintended Changes**
 
 1. Any unintended or unauthorized change must be documented immediately as a **Corrective and Preventive Action (CAPA)**.
 2. The CAPA record must include:
@@ -130,7 +118,7 @@ This process requires:
 
 ---
 
-### **7.5 Closure**
+### **6.5 Closure**
 
 1. The CCC verifies that:
 
@@ -142,7 +130,7 @@ This process requires:
 
 ---
 
-### **7.6 Verification and Audit**
+### **6.6 Verification and Audit**
 
 1. The change control process is reviewed periodically (e.g., annually) for compliance and effectiveness.
 2. During audits, traceability of a change is demonstrated by linking the CR, review records, and resulting document revisions.
@@ -150,7 +138,7 @@ This process requires:
 
 ---
 
-## **8. Records / Documented Information**
+## **7. Records**
 
 | Record / Artifact            | Description                                                | Responsible Owner          | Retention | Control Method                      |
 | ---------------------------- | ---------------------------------------------------------- | -------------------------- | --------- | ----------------------------------- |
