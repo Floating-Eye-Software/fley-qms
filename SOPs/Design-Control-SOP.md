@@ -1,10 +1,10 @@
-# 🧩 **QMS-SOP-09 — Design and Development Control**
+# **SOP - Design and Development Control**
 
-**Document No.:** QMS-SOP-09
-**Title:** Design and Development Control
-**Revision:** 2.0
-**Effective Date:** [Insert Date]
-**Approved By:** [Top Management]
+**Slug:** Design-Control-SOP  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Project Manager (Process Owner)  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Design-Control-SOP  
 
 ---
 
@@ -44,26 +44,35 @@ Projects may implement a specific framework via a **Design Control Work Instruct
 * QMS-SOP-07 – Project Management
 * QMS-SOP-08 – Risk & Opportunity Management
 * QMS-SOP-02 – Change Control
-* Templates: Design Control Plan (DCP), Project Quality Plan (PQP)
+
+* **Templates:**
+  * *Design Control Plan (DCP)*
+  * *Project Quality Plan (PQP)*
 
 ---
 
-## **4. Responsibilities**
+## **4. Definitions**
 
-| Role                              | Responsibilities                                                                                                     |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Project Manager / Design Lead** | Maintain the **Design Control Plan**; coordinate reviews; ensure deliverables meet plan and regulatory requirements. |
-| **Design & Development Team**     | Execute design tasks; maintain traceability and documentation.                                                       |
-| **Quality Manager**               | Ensure compliance, risk traceability, and approvals.                                                                 |
-| **Top Management**                | Approve design plans, reviews, and design transfer/retirement.                                                       |
-| **Process Owners / SMEs**         | Provide technical and regulatory input.                                                                              |
-| **Maintenance Lead / Ops Team**   | Plan, verify, and document post-release maintenance and retirement.                                                  |
+None
 
 ---
 
-## **5. Procedure**
+## **5. Responsibilities and Authorities**
 
-### **5.1 Design and Development Planning**
+| **Role**                               | **Responsibilities**                                                                                                                              | **Authorities**                                               |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Project Manager / Design Lead**      | • Maintain and update the Design Control Plan (DCP).<br>• Coordinate reviews and ensure deliverables meet quality and regulatory requirements.    | • Approves DCP and project-level design deliverables.         |
+| **Design & Development Team**          | • Execute design tasks and maintain documentation traceability.<br>• Ensure verification and validation evidence is collected.                    | • Approves technical deliverables within assigned work scope. |
+| **Quality Manager**                    | • Verify compliance, risk traceability, and documentation integrity.<br>• Review and approve verification, validation, and design review records. | • Final approval for QMS-controlled design records.           |
+| **Top Management**                     | • Approve design plans, reviews, and design transfer or retirement activities.<br>• Ensure resources and strategic alignment.                     | • Final authorization for design initiation and release.      |
+| **Process Owners / SMEs**              | • Provide technical, regulatory, or domain-specific expertise.                                                                                    | • Approve specialized input requirements.                     |
+| **Maintenance Lead / Operations Team** | • Plan and document post-release maintenance and product retirement.                                                                              | • Approve maintenance and decommissioning activities.         |
+
+---
+
+## **6. Procedure**
+
+### **6.1 Design and Development Planning**
 
 1. Each project shall have a **Design Control Plan (DCP)** defining:
 
@@ -77,7 +86,7 @@ Projects may implement a specific framework via a **Design Control Work Instruct
 
 ---
 
-### **5.2 Design and Development Inputs**
+### **6.2 Design and Development Inputs**
 
 Design inputs shall be:
 
@@ -94,7 +103,7 @@ Inputs are recorded within the **Design Input Specification** or equivalent arti
 
 ---
 
-### **5.3 Design and Development Outputs**
+### **6.3 Design and Development Outputs**
 
 Design outputs shall:
 
@@ -116,7 +125,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.4 Design and Development Review**
+### **6.4 Design and Development Review**
 
 * Conduct reviews at defined **milestones or stage gates** in the Design Control Plan.
 * Participants must include representatives of **design, quality, and management**.
@@ -130,7 +139,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.5 Design and Development Verification**
+### **6.5 Design and Development Verification**
 
 * Verify that design outputs meet design inputs.
 * Verification may include:
@@ -142,7 +151,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.6 Design and Development Validation**
+### **6.6 Design and Development Validation**
 
 * Confirm that the resulting product or system meets user and intended-use needs.
 * Validation methods include:
@@ -154,7 +163,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.7 Design Risk Management**
+### **6.7 Design Risk Management**
 
 * All design risks must be identified and managed in accordance with **QMS-SOP-08 Risk and Opportunity Management**.
 * Each design risk shall have traceability to:
@@ -166,7 +175,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.8 Design and Development Changes**
+### **6.8 Design and Development Changes**
 
 * Proposed changes to the design shall follow the **Change Control SOP (QMS-SOP-02)**.
 * Assess the impact on requirements, verification, validation, and regulatory compliance.
@@ -174,7 +183,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.9 Design Transfer, Closure & Archival**
+### **6.9 Design Transfer, Closure & Archival**
 
 * Confirm all deliverables in the **Design Control Plan** are complete and accepted.
 * Establish training, documentation, and configuration baselines prior to release.
@@ -183,7 +192,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-### **5.10 Post-Release Maintenance and Retirement**
+### **6.10 Post-Release Maintenance and Retirement**
 
 * Maintenance activities (bug fixes, patches, feature updates) are planned and executed under this SOP as **Design Changes** per § 5.8.
 * Inputs include: post-market feedback, complaints, CAPA outputs, and vulnerability reports.
@@ -201,7 +210,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ---
 
-## **6. Records**
+## **7. Records**
 
 | Record                            | Retention                    | Location                 |
 | --------------------------------- | ---------------------------- | ------------------------ |

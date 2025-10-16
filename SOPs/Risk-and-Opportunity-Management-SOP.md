@@ -1,24 +1,24 @@
-# **Standard Operating Procedure: Risk and Opportunity Management**
+# **SOP - Risk and Opportunity Management**
 
-**Document No.:** QMS-SOP-08
-**Title:** Risk and Opportunity Management
-**Revision:** 1.0
-**Effective Date:** [Insert Date]
-**Approved by:** [Top Management]
+**Slug:** Risk-and-Opportunity-Management-SOP  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Quality Manager  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Risk-and-Opportunity-Management-SOP  
 
 ---
 
 ### **1. Purpose**
 
-To define the organization’s method for identifying, assessing, controlling, and reviewing **risks and opportunities** that can affect the achievement of intended results of the Quality Management System (QMS), and to demonstrate application of **risk-based thinking** in accordance with ISO 9001:2015.
+To define the method for identifying, assessing, controlling, and reviewing risks and opportunities that can affect QMS performance, and to demonstrate application of risk-based thinking per ISO 9001:2015.
 
 ---
 
 ### **2. Scope**
 
-This SOP applies to all processes, projects, and functions within the organization that could influence product or service conformity, customer satisfaction, or QMS performance.
+Applies to all processes, projects, and functions that could influence product or service conformity, customer satisfaction, or QMS effectiveness.
 
-It covers:
+Covers:
 
 * Identification and evaluation of risks and opportunities
 * Planning and implementation of actions
@@ -26,14 +26,12 @@ It covers:
 
 ---
 
-### **3. Responsibilities**
+### **3. References**
 
-| Role                | Responsibilities                                                                                                                                             |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Top Management**  | Promote risk-based thinking, ensure significant risks are addressed in strategic and operational planning, and review risk status during management reviews. |
-| **Quality Manager** | Maintain the Risk & Opportunity Register, coordinate reviews, monitor effectiveness of actions, and ensure integration with QMS objectives and changes.      |
-| **Process Owners**  | Identify and evaluate risks/opportunities in their processes, propose mitigation or enhancement actions, and maintain records.                               |
-| **All Employees**   | Report new or emerging risks and participate in mitigation activities as required.                                                                           |
+* ISO 9001:2015 — Clauses 4.1, 4.2, 6.1, 8.1, 9.1, 10.2
+* ISO 31000:2018 — Risk Management — Guidelines (informative reference)
+* QMS-SOP-05 Leadership
+* QMS-SOP-06 Planning
 
 ---
 
@@ -46,9 +44,20 @@ It covers:
 
 ---
 
-### **5. Procedure**
+## **5. Responsibilities and Authorities**
 
-#### **5.1 Identification of Risks and Opportunities**
+| **Role**            | **Responsibilities**                                                                                                                                                                      | **Authorities**                                                                            |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Top Management**  | • Promote risk-based thinking across all processes.<br>• Ensure significant risks are addressed in strategic and operational planning.<br>• Review risk status during management reviews. | • Approves risk management approach.<br>• Authorizes actions addressing significant risks. |
+| **Quality Manager** | • Maintain the Risk & Opportunity Register.<br>• Coordinate reviews and monitor effectiveness of actions.<br>• Ensure integration with QMS objectives and changes.                        | • Approves risk assessment methodology.<br>• Final approval for QMS risk documentation.    |
+| **Process Owners**  | • Identify and evaluate risks/opportunities in their processes.<br>• Propose mitigation or enhancement actions.<br>• Maintain related records.                                            | • Approve and implement local mitigation actions.                                          |
+| **All Employees**   | • Report new or emerging risks.<br>• Participate in mitigation or improvement activities as required.                                                                                     | • Request review or escalation of risk concerns.                                           |
+
+---
+
+### **6. Procedure**
+
+#### **6.1 Identification of Risks and Opportunities**
 
 Risks and opportunities may be identified through:
 
@@ -63,7 +72,7 @@ Each risk or opportunity shall be recorded in the **Risk & Opportunity Register*
 
 ---
 
-#### **5.2 Risk Assessment**
+#### **6.2 Risk Assessment**
 
 1. Evaluate each risk using a consistent method, such as **Likelihood × Impact** or a qualitative rating (Low / Medium / High).
 2. Prioritize risks based on their significance to:
@@ -76,7 +85,7 @@ Each risk or opportunity shall be recorded in the **Risk & Opportunity Register*
 
 ---
 
-#### **5.3 Planning Actions**
+#### **6.3 Planning Actions**
 
 For each significant risk or opportunity:
 
@@ -90,7 +99,7 @@ For each significant risk or opportunity:
 
 ---
 
-#### **5.4 Implementation and Monitoring**
+#### **6.4 Implementation and Monitoring**
 
 * Process owners implement assigned actions and update status in the Risk & Opportunity Register.
 * The Quality Manager monitors progress and verifies implementation.
@@ -102,7 +111,7 @@ For each significant risk or opportunity:
 
 ---
 
-#### **5.5 Review and Continuous Improvement**
+#### **6.5 Review and Continuous Improvement**
 
 1. **Periodic Review:** At least annually (or during Management Review), assess the status of significant risks and opportunities.
 2. **Emerging Risks:** Add new risks as they arise from changes, audits, or feedback.
@@ -112,7 +121,19 @@ The outcome of risk and opportunity reviews shall feed into the **Planning** and
 
 ---
 
-### **6. Records**
+### **7. Integration with Other QMS Processes**
+
+| Related SOP                       | Linkage                                                           |
+| --------------------------------- | ----------------------------------------------------------------- |
+| **Leadership SOP**                | Leadership promotes risk-based thinking.                          |
+| **Quality Planning SOP**          | Planning process identifies risks & opportunities for objectives. |
+| **Change Control SOP**            | Changes evaluated for potential risks before implementation.      |
+| **Project Management SOP**        | Projects track and mitigate risks within their lifecycle.         |
+| **Document Control SOP**          | Records of risk activities are maintained and protected.          |
+
+---
+
+### **8. Records**
 
 | Record                          | Location                                                        | Retention                               |
 | ------------------------------- | --------------------------------------------------------------- | --------------------------------------- |
@@ -120,40 +141,3 @@ The outcome of risk and opportunity reviews shall feed into the **Planning** and
 | Risk Assessments / Action Plans | Attached to Risk Records                                        | 10 years                                |
 | Management Review Outputs       | Discussions / Meeting Minutes                                   | Permanent                               |
 | Audit Findings and Risk Updates | Audit Reports                                                   | 10 years                                |
-
----
-
-### **7. Integration with Other QMS Processes**
-
-| Related SOP                       | Linkage                                                           |
-| --------------------------------- | ----------------------------------------------------------------- |
-| **QMS-SOP-05 Leadership**         | Leadership promotes risk-based thinking.                          |
-| **QMS-SOP-06 Planning**           | Planning process identifies risks & opportunities for objectives. |
-| **QMS-SOP-02 Change Control**     | Changes evaluated for potential risks before implementation.      |
-| **QMS-SOP-07 Project Management** | Projects track and mitigate risks within their lifecycle.         |
-| **QMS-SOP-01 Document Control**   | Records of risk activities are maintained and protected.          |
-
----
-
-### **8. References**
-
-* ISO 9001:2015 — Clauses 4.1, 4.2, 6.1, 8.1, 9.1, 10.2
-* ISO 31000:2018 — Risk Management — Guidelines (informative reference)
-* QMS-SOP-05 Leadership
-* QMS-SOP-06 Planning
-
----
-
-### **9. Revision History**
-
-| Revision | Date   | Description of Change | Approved By |
-| -------- | ------ | --------------------- | ----------- |
-| 0        | [Date] | Initial Release       | [Name]      |
-
----
-
-### 💡 *Implementation Notes (Optional for WI link)*
-
-* When implemented in **GitHub**, each risk or opportunity can be logged as an **Issue** labeled “Risk” or “Opportunity” and tracked on a **Project board**.
-* When implemented in **Confluence**, use a **Risk Register table** or **Page tree** with status macros.
-* Link major risks to corresponding **Quality Objectives**, **Change Requests**, or **Project Plans** for full traceability.

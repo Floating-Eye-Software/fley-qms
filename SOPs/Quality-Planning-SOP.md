@@ -1,10 +1,10 @@
-# **Standard Operating Procedure: Quality Planning**
+# **SOP - Quality Planning**
 
-**Document No.:** QMS-SOP-06
-**Title:** Quality Planning
-**Revision:** 1.0
-**Effective Date:** [Insert Date]
-**Approved by:** [Top Management]
+**Slug:** Quality-Planning-SOP  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Top Management  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Quality-Planning-SOP  
 
 ---
 
@@ -16,15 +16,14 @@ To define the process by which the organization plans its Quality Management Sys
 
 ### **2. Scope**
 
-This SOP applies to all planning activities related to the QMS, including risk and opportunity management, quality objective setting, and planned changes.
+Applies to all planning activities related to the QMS, including risk and opportunity management, establishment of quality objectives, and control of planned changes.
 
 ---
 
-### **3. Responsibilities**
+### **3. References**
 
-* **Top Management:** Approves quality objectives, ensures resources are available, and reviews planning outcomes.
-* **Quality Manager:** Maintains the risk & opportunity register, coordinates the setting and monitoring of quality objectives, ensures annual review of planning activities.
-* **Process Owners:** Identify risks and opportunities within their areas, propose and track quality objectives.
+* ISO 9001:2015, Clause 6
+* QMS-SOP-05 Leadership
 
 ---
 
@@ -36,9 +35,18 @@ This SOP applies to all planning activities related to the QMS, including risk a
 
 ---
 
-### **5. Procedure**
+## **5. Responsibilities and Authorities**
 
-5.1 **Risks and Opportunities**
+| **Role**            | **Responsibilities**                                                                                                                                           | **Authorities**                                                               |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Top Management**  | • Approves quality objectives.<br>• Ensures resources are available.<br>• Reviews planning outcomes and effectiveness.                                         | • Approves QMS plans and objectives.<br>• Authorizes resource allocation.     |
+| **Quality Manager** | • Maintains the Risk & Opportunity Register.<br>• Coordinates setting and monitoring of quality objectives.<br>• Ensures annual review of planning activities. | • Approves QMS planning documentation.<br>• Final approval for SOP revisions. |
+
+---
+
+### **6. Procedure**
+
+6.1 **Risks and Opportunities**
 
 * Risks and opportunities shall be identified from:
 
@@ -49,7 +57,7 @@ This SOP applies to all planning activities related to the QMS, including risk a
 * Actions shall be determined, implemented, and monitored for effectiveness.
 * Records shall be maintained in a structured register (see related WI).
 
-5.2 **Quality Objectives**
+6.2 **Quality Objectives**
 
 * Quality objectives shall be:
 
@@ -58,7 +66,7 @@ This SOP applies to all planning activities related to the QMS, including risk a
   * Communicated and updated as necessary
 * Progress toward objectives shall be reviewed during Management Review.
 
-5.3 **Planning Changes**
+6.3 **Planning Changes**
 
 * When significant changes to the QMS are required, the following shall be considered:
 
@@ -70,18 +78,9 @@ This SOP applies to all planning activities related to the QMS, including risk a
 
 ---
 
-### **6. Records**
+### **7. Records**
 
 * Risk & Opportunity Register
 * Quality Objectives Register
 * Change Records
 * Management Review Records
-
----
-
-### **7. References**
-
-* ISO 9001:2015, Clause 6
-* QMS-SOP-05 Leadership
-
----
