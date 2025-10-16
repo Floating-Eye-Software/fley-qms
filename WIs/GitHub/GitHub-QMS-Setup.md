@@ -1,10 +1,10 @@
-# 🧭 **Work Instruction: Set Up the QMS in GitHub**
+# **WI - Set Up the QMS in GitHub**
 
-**Document No.:** WI-QMS-10-02
-**Title:** QMS Setup – Single FLEY Board in GitHub
-**Revision:** 3.2
-**Effective Date:** [Insert Date]
-**Approved By:** [Top Management]
+**Slug:** GitHub-QMS-Setup  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Quality-Planning-SOP, Project-Management-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Setup  
 
 ---
 
@@ -34,7 +34,21 @@ This WI applies to all setup and configuration activities required to establish 
 
 ---
 
-## **3. Responsibilities**
+## **3. References**
+
+* ISO 9001:2015 – Clauses 4–6
+* ISO 9004:2018 – Clauses 4–5
+* QMS-SOP-03 – Documented Information Control
+* QMS-SOP-04 – Change Control
+* QMS-SOP-05 – Leadership
+* QMS-SOP-06 – Planning
+* QMS-SOP-08 – Risk & Opportunity Management
+* [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
+* WI-QMS-09-01 – QMS Operations in GitHub
+
+---
+
+## **4. Responsibilities**
 
 | Role                                    | Responsibility                                                                                         |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------ |
@@ -45,7 +59,7 @@ This WI applies to all setup and configuration activities required to establish 
 
 ---
 
-## **4. Repository and Wiki Structure**
+## **5. Repository and Wiki Structure**
 
 Create or verify the following structure in `redwitch.wiki`:
 
@@ -67,7 +81,7 @@ The **Wiki** mirrors key documents (manual, SOPs, WIs) for user-friendly navigat
 
 ---
 
-## **5. Kanban Board: FLEY QMS**
+## **6. Kanban Board: FLEY QMS**
 
 **Purpose:** To manage all QMS setup and operational activities using one board.
 
@@ -84,7 +98,7 @@ Backlog → In Progress → In Test → Closed
 
 ---
 
-### **5.1 Label Scheme**
+### **6.1 Label Scheme**
 
 The following labels are used to organize and track QMS setup and operations:
 
@@ -100,7 +114,7 @@ Each issue type has a **GitHub Issue Template** in `.github/ISSUE_TEMPLATE/` for
 
 ---
 
-## **6. Automation and Workflows**
+## **7. Automation and Workflows**
 
 1. **Enable Auto-Add to Project**
 
@@ -123,40 +137,40 @@ Each issue type has a **GitHub Issue Template** in `.github/ISSUE_TEMPLATE/` for
 
 ---
 
-## **7. Establish the QMS Framework**
+## **8. Establish the QMS Framework**
 
-### 7.1 Quality Manual (`/QMS/Quality-Manual.md`)
+### 8.1 Quality Manual (`/QMS/Quality-Manual.md`)
 
 * Defines the scope of the QMS and its interaction with related processes.
 * References the Quality Policy, Context Analysis, and Process Map.
 * Approved by Top Management via Pull Request.
 * Tracked using an issue labeled `Setup` during authoring; closed when approved.
 
-### 7.2 Context Analysis (`/QMS/Context-Analysis.md`)
+### 8.2 Context Analysis (`/QMS/Context-Analysis.md`)
 
 * Identifies internal and external issues affecting the QMS.
 * Updated as part of each Management Review cycle.
 * Each revision approved through a Pull Request and recorded in comments.
 
-### 7.3 Organizational Chart (`/QMS/Organizational-Chart.md`)
+### 8.3 Organizational Chart (`/QMS/Organizational-Chart.md`)
 
 * Defines reporting lines, roles, and responsibilities.
 * Updated when structure changes; linked to related procedures.
 
-### 7.4 Process Map (`/QMS/Process-Map.md`)
+### 8.4 Process Map (`/QMS/Process-Map.md`)
 
 * Lists all core and support processes, their inputs, outputs, and interactions.
 * Includes references to related SOPs/WIs.
 * Optionally includes a `Process-Map.png` diagram.
 
-### 7.5 Quality Policy (`/QMS/Quality-Policy.md`)
+### 8.5 Quality Policy (`/QMS/Quality-Policy.md`)
 
 * States the organization’s quality commitments and objectives.
 * Approved by Top Management; displayed in the Wiki.
 
 ---
 
-## **8. Configure Management Review Recurrence**
+## **9. Configure Management Review Recurrence**
 
 1. Create an issue labeled `Management Review` using the `management-review.yml` template.
 2. Schedule quarterly recurrence (manual duplication or via GitHub Action).
@@ -171,7 +185,7 @@ Each issue type has a **GitHub Issue Template** in `.github/ISSUE_TEMPLATE/` for
 
 ---
 
-## **9. Integration with Product Repositories**
+## **10. Integration with Product Repositories**
 
 * Each product repository (e.g., `redwitch`, `snowplow`) maintains its own development board.
 * QMS-related issues (e.g., validation, CAPA, risk) are **linked** back to the FLEY QMS board for traceability.
@@ -180,7 +194,7 @@ Each issue type has a **GitHub Issue Template** in `.github/ISSUE_TEMPLATE/` for
 
 ---
 
-## **10. Backup and Export**
+## **11. Backup and Export**
 
 Until automation is deployed:
 
@@ -193,7 +207,7 @@ Until automation is deployed:
 
 ---
 
-## **11. Records**
+## **12. Records**
 
 | Record                    | Location                           | Retention                     |
 | ------------------------- | ---------------------------------- | ----------------------------- |
@@ -204,27 +218,3 @@ Until automation is deployed:
 | Quality Policy            | `/QMS/Quality-Policy.md`           | Permanent                     |
 | Management Review Minutes | `/records/management-reviews/`     | Permanent                     |
 | Repository Exports        | `/records/github-exports/YYYY-MM/` | 5 years                       |
-
----
-
-## **12. References**
-
-* ISO 9001:2015 – Clauses 4–6
-* ISO 9004:2018 – Clauses 4–5
-* QMS-SOP-03 – Documented Information Control
-* QMS-SOP-04 – Change Control
-* QMS-SOP-05 – Leadership
-* QMS-SOP-06 – Planning
-* QMS-SOP-08 – Risk & Opportunity Management
-* [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
-* WI-QMS-09-01 – QMS Operations in GitHub
-
----
-
-## **13. Revision History**
-
-| Rev     | Date   | Description                                                                                                                                                                      | Approved By |
-| ------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| 3.0     | [Date] | Consolidated establish-QMS content; integrated context/manual setup and exports                                                                                                  | [Name]      |
-| 3.1     | [Date] | Updated columns to “Backlog → In Progress → In Test → Closed”; added Planning List view and automation setup                                                                     | [Name]      |
-| **3.2** | [Date] | Simplified label scheme to core operational set (Audit, CAPA, Change Request, Improvement, Management Review, Objective, Opportunity, Risk, Setup); removed document-type labels | [Name]      |

@@ -1,9 +1,10 @@
-# 🧭 **Work Instruction (WI): GitHub Document Control**
+# **WI - GitHub Document Control**
 
-**Document Number:** WI-004
-**Revision:** r2
-**Related SOP:** Document Control SOP
-**Controlled Source:** [GitHub Repository URL]
+**Slug:** GitHub-Document-Control  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Document-Control-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Document-Control  
 
 ---
 
@@ -21,7 +22,18 @@ This WI describes *how* to perform document control in GitHub — the SOP define
 
 ---
 
-## **3. Responsibilities**
+## **3. References**
+
+* SOP – Document Control (r4)
+* SOP – Identification and Traceability (r3)
+* SOP – Change Control (r3)
+* WI – GitHub Branch & Pull Request Management
+* ISO 9001:2015, Clauses 7.5.2 & 7.5.3
+* ISO 13485:2016, Clauses 4.2.4 & 4.2.5
+
+---
+
+## **4. Responsibilities**
 
 | Role                            | Responsibilities                                                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -32,9 +44,9 @@ This WI describes *how* to perform document control in GitHub — the SOP define
 
 ---
 
-## **4. Procedure**
+## **5. Procedure**
 
-### **4.1 Document Identification and Naming**
+### **5.1 Document Identification and Naming**
 
 1. Each controlled document is stored in the relevant folder (`/SOPs`, `/WIs`, `/TPLs`, `/POLs`, `/RECs`).
 
@@ -62,7 +74,7 @@ This WI describes *how* to perform document control in GitHub — the SOP define
 
 ---
 
-### **4.2 Document Header Format**
+### **5.2 Document Header Format**
 
 Each controlled Markdown file begins with a minimal header aligned with the Document Control SOP:
 
@@ -80,7 +92,7 @@ Each controlled Markdown file begins with a minimal header aligned with the Docu
 
 ---
 
-### **4.3 Drafting and Review Workflow**
+### **5.3 Drafting and Review Workflow**
 
 1. Authors create a new branch for the draft or revision:
 
@@ -102,7 +114,7 @@ Each controlled Markdown file begins with a minimal header aligned with the Docu
 
 ---
 
-### **4.4 Tagging Approved Revisions**
+### **5.4 Tagging Approved Revisions**
 
 After the PR is merged, the DCC or Quality Manager creates a tag to mark the official revision:
 
@@ -121,7 +133,7 @@ git push origin SOP-003_r5
 
 ---
 
-### **4.5 Publication and Controlled Source**
+### **5.5 Publication and Controlled Source**
 
 1. The **HEAD of `main`** branch represents the **current approved revision** of every controlled document.
 2. The repository’s **wiki or published documentation site** displays the same content for user access.
@@ -129,7 +141,7 @@ git push origin SOP-003_r5
 
 ---
 
-### **4.6 Managing Obsolete or Superseded Documents**
+### **5.6 Managing Obsolete or Superseded Documents**
 
 1. When a new revision is approved:
 
@@ -143,7 +155,7 @@ git push origin SOP-003_r5
 
 ---
 
-### **4.7 Traceability and Audit History**
+### **5.7 Traceability and Audit History**
 
 GitHub inherently records all changes and approvals.
 Key commands:
@@ -168,7 +180,7 @@ These records demonstrate full compliance with ISO 9001 §7.5.2–7.5.3 and ISO 
 
 ---
 
-## **5. Records and Retention**
+## **6. Records and Retention**
 
 | Record Type                             | Location                   | Retention  |
 | --------------------------------------- | -------------------------- | ---------- |
@@ -179,23 +191,3 @@ These records demonstrate full compliance with ISO 9001 §7.5.2–7.5.3 and ISO 
 | Archived/Obsolete Files                 | `/archive/` or Git history | Indefinite |
 
 All Git metadata serves as the official QMS record of document control activities.
-
----
-
-## **6. References**
-
-* SOP – Document Control (r4)
-* SOP – Identification and Traceability (r3)
-* SOP – Change Control (r3)
-* WI – GitHub Branch & Pull Request Management
-* ISO 9001:2015, Clauses 7.5.2 & 7.5.3
-* ISO 13485:2016, Clauses 4.2.4 & 4.2.5
-
----
-
-## **7. Revision History**
-
-| Revision | Date       | Description of Change                                                                            | Approved By |
-| -------- | ---------- | ------------------------------------------------------------------------------------------------ | ----------- |
-| r1       | 2025-10-11 | Initial release implementing Git-based numbering and revision control                            | [Name]      |
-| **r2**   | 2025-10-15 | Updated to align with new tool-agnostic SOPs; minimal header; approvals managed via PRs and tags | [Name]      |

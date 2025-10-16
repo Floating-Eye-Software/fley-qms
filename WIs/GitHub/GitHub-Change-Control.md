@@ -1,9 +1,10 @@
-# 🧭 **Work Instruction (WI): GitHub Pull Request and Branch Management**
+# **WI - GitHub Pull Request and Branch Management**
 
-**Document Number:** WI-005
-**Revision:** r2
-**Related SOPs:** Change Control, Document Control, Identification and Traceability
-**Controlled Source:** [GitHub Repository URL]
+**Slug:** GitHub-Change-Control  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Change-Control  
 
 ---
 
@@ -20,7 +21,19 @@ Applies to all repositories containing QMS-controlled documentation or configura
 
 ---
 
-## **3. Responsibilities**
+## **3. References**
+
+* SOP – Change Control (r3)
+* SOP – Document Control (r4)
+* SOP – Identification and Traceability (r3)
+* WI – GitHub Version Control and Traceability (r2)
+* ISO 9001:2015 §§6.3, 7.5.2–7.5.3, 8.5.6
+* ISO 13485:2016 §4.2.4–4.2.5
+* 21 CFR Part 11 – Electronic Records and Signatures
+
+---
+
+## **4. Responsibilities**
 
 | Role                                 | Responsibilities                                                                           |
 | ------------------------------------ | ------------------------------------------------------------------------------------------ |
@@ -31,9 +44,9 @@ Applies to all repositories containing QMS-controlled documentation or configura
 
 ---
 
-## **4. Procedure**
+## **5. Procedure**
 
-### **4.1 Initiating a Change**
+### **5.1 Initiating a Change**
 
 1. Open a **GitHub Issue** to serve as the Change Request (CR). Include:
 
@@ -59,7 +72,7 @@ Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and I
 
 ---
 
-### **4.2 Submitting for Review**
+### **5.2 Submitting for Review**
 
 1. Open a **Pull Request (PR)** to merge the change branch into `main`.
 
@@ -79,7 +92,7 @@ Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and I
 
 ---
 
-### **4.3 Review and Approval**
+### **5.3 Review and Approval**
 
 1. Reviewers use GitHub’s built-in review tools:
 
@@ -94,7 +107,7 @@ Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and I
 
 ---
 
-### **4.4 Merging and Tagging Approved Changes**
+### **5.4 Merging and Tagging Approved Changes**
 
 1. After approval:
 
@@ -114,7 +127,7 @@ Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and I
 
 ---
 
-### **4.5 Branch and Access Control**
+### **5.5 Branch and Access Control**
 
 1. The `main` branch must be **protected** to ensure control integrity:
 
@@ -136,7 +149,7 @@ Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and I
 
 ---
 
-### **4.6 Handling Unintended or Noncompliant Changes**
+### **5.6 Handling Unintended or Noncompliant Changes**
 
 1. If an unauthorized change is detected in `main`, immediately:
 
@@ -153,7 +166,17 @@ Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and I
 
 ---
 
-### **4.7 Records and Retention**
+## **6. Integration with Related Procedures**
+
+This WI implements and interfaces with:
+
+* **SOP – Change Control:** Defines system-level requirements for evaluating, approving, and implementing changes.
+* **SOP – Document Control:** Establishes that the HEAD of `main` is the controlled source.
+* **WI – GitHub Version Control and Traceability:** Provides technical traceability and audit commands.
+
+---
+
+### **7. Records and Retention**
 
 | Record Type             | Description                                                | Location            | Retention |
 | ----------------------- | ---------------------------------------------------------- | ------------------- | --------- |
@@ -164,34 +187,3 @@ Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and I
 | Branch protection rules | Configuration record of controls                           | Repository Settings | Permanent |
 
 The GitHub system itself serves as the **record of change control**, approval, and traceability.
-
----
-
-## **5. Integration with Related Procedures**
-
-This WI implements and interfaces with:
-
-* **SOP – Change Control:** Defines system-level requirements for evaluating, approving, and implementing changes.
-* **SOP – Document Control:** Establishes that the HEAD of `main` is the controlled source.
-* **WI – GitHub Version Control and Traceability:** Provides technical traceability and audit commands.
-
----
-
-## **6. References**
-
-* SOP – Change Control (r3)
-* SOP – Document Control (r4)
-* SOP – Identification and Traceability (r3)
-* WI – GitHub Version Control and Traceability (r2)
-* ISO 9001:2015 §§6.3, 7.5.2–7.5.3, 8.5.6
-* ISO 13485:2016 §4.2.4–4.2.5
-* 21 CFR Part 11 – Electronic Records and Signatures
-
----
-
-## **7. Revision History**
-
-| Revision | Date       | Description of Change                                                                                                         | Approved By |
-| -------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| r1       | 2025-10-11 | Initial release integrating Git-based change and approval workflow                                                            | [Name]      |
-| **r2**   | 2025-10-15 | Updated to align with new SOPs; clarified PR/tag approval model, main=approved version, and eliminated manual approval fields | [Name]      |

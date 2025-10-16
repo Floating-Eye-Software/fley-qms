@@ -1,9 +1,10 @@
-# **Work Instruction (WI): Project Management Using GitHub**
+# **WI - Project Management Using GitHub**
 
-**Document Number:** WI-QMS-07-01
-**Effective Date:** [To be assigned]
-**Revision:** [To be assigned]
-**Related SOP:** QMS-SOP-07 Project Management
+**Slug:** GitHub-Project-Management  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Project-Management-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Project-Management  
 
 ---
 
@@ -19,7 +20,18 @@ This WI applies to all projects managed in GitHub under the organization’s QMS
 
 ---
 
-### **3. Responsibilities**
+### **3. References**
+
+* QMS-SOP-07 Project Management
+* QMS-SOP-06 Planning
+* QMS-SOP-05 Leadership
+* WI-QMS-09-01 Operating the QMS in GitHub
+* ISO 9001:2015, Clauses 4, 5, 6, 8, 9
+* GitHub Documentation: [https://docs.github.com](https://docs.github.com)
+
+---
+
+### **4. Responsibilities**
 
 | Role                     | Responsibilities                                                                                |
 | ------------------------ | ----------------------------------------------------------------------------------------------- |
@@ -30,9 +42,9 @@ This WI applies to all projects managed in GitHub under the organization’s QMS
 
 ---
 
-### **4. Procedure**
+### **5. Procedure**
 
-#### **4.1 Overview of GitHub Project Environment**
+#### **5.1 Overview of GitHub Project Environment**
 
 A typical project workspace on GitHub (example: [https://github.com/mlehotay/redwitch](https://github.com/mlehotay/redwitch)) includes the following tabs and functions:
 
@@ -51,7 +63,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ---
 
-#### **4.2 Project Initiation**
+#### **5.2 Project Initiation**
 
 1. **Create a Repository or Project Board**
 
@@ -76,7 +88,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ---
 
-#### **4.3 Project Planning**
+#### **5.3 Project Planning**
 
 1. **Create Tasks**
 
@@ -99,7 +111,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ---
 
-#### **4.4 Project Execution and Monitoring**
+#### **5.4 Project Execution and Monitoring**
 
 1. **Update Progress**
 
@@ -122,7 +134,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ---
 
-#### **4.5 Project Review and Control**
+#### **5.5 Project Review and Control**
 
 1. **Performance Reviews**
 
@@ -140,7 +152,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ---
 
-#### **4.6 Project Closure**
+#### **5.6 Project Closure**
 
 1. Confirm all deliverables and Issues are complete.
 2. Update the Wiki with a final summary (objectives achieved, lessons learned, links to records).
@@ -149,7 +161,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ---
 
-### **5. Integration with the QMS**
+### **6. Integration with the QMS**
 
 | Related SOP                     | Integration                                            |
 | ------------------------------- | ------------------------------------------------------ |
@@ -160,7 +172,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ---
 
-### **6. Records**
+### **7. Records**
 
 | Record Type                  | Location                   | Retention |
 | ---------------------------- | -------------------------- | --------- |
@@ -169,22 +181,3 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 | Meeting notes and summaries  | Wiki or repository `/docs` | Permanent |
 | Lessons learned              | Wiki / Discussion          | Permanent |
 | Tag (project closure record) | Repository tags            | Permanent |
-
----
-
-### **7. References**
-
-* QMS-SOP-07 Project Management
-* QMS-SOP-06 Planning
-* QMS-SOP-05 Leadership
-* WI-QMS-09-01 Operating the QMS in GitHub
-* ISO 9001:2015, Clauses 4, 5, 6, 8, 9
-* GitHub Documentation: [https://docs.github.com](https://docs.github.com)
-
----
-
-### **8. Revision History**
-
-| Revision | Date   | Description of Change | Approved By |
-| -------- | ------ | --------------------- | ----------- |
-| 0        | [Date] | Initial Release       | [Name]      |

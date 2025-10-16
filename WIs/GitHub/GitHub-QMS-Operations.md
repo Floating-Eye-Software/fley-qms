@@ -1,10 +1,10 @@
-# ⚙️ **Work Instruction: Operate the QMS in GitHub – Single FLEY Board**
+# **WI - Operate the QMS in GitHub – Single FLEY Board**
 
-**Document No.:** WI-QMS-09-01
-**Title:** Operating the QMS in GitHub – Single FLEY Board
-**Revision:** 3.1
-**Effective Date:** [Insert Date]
-**Approved By:** [Top Management]
+**Slug:** GitHub-QMS-Operations  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Quality-Planning-SOP, Leadership-SOP, Project-Management-SOP, Risk-and-Opportunity-Management-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Operations  
 
 ---
 
@@ -30,6 +30,19 @@ Applies to all operational QMS activities, including:
 * Management review and leadership activities
 * Change control and document management
 * Record control and periodic export
+
+---
+
+## **3. References**
+
+* ISO 9001:2015 – Clauses 4 through 10
+* ISO 9004:2018 – Clauses 4 through 9
+* QMS-SOP-03 – Documented Information Control
+* QMS-SOP-04 – Change Control
+* QMS-SOP-05 – Leadership
+* QMS-SOP-06 – Planning
+* QMS-SOP-08 – Risk & Opportunity Management
+* WI-QMS-10-02 – QMS Setup in GitHub
 
 ---
 
@@ -152,25 +165,3 @@ At least quarterly (or during each Management Review):
 3. Review CAPA status and verify effectiveness.
 4. Identify and record new improvement opportunities.
 5. Update relevant issues and QMS documents.
-
----
-
-## **11. References**
-
-* ISO 9001:2015 – Clauses 4 through 10
-* ISO 9004:2018 – Clauses 4 through 9
-* QMS-SOP-03 – Documented Information Control
-* QMS-SOP-04 – Change Control
-* QMS-SOP-05 – Leadership
-* QMS-SOP-06 – Planning
-* QMS-SOP-08 – Risk & Opportunity Management
-* WI-QMS-10-02 – QMS Setup in GitHub
-
----
-
-## **12. Revision History**
-
-| Rev     | Date   | Description                                                                                                                                                                                  | Approved By |
-| ------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| 3.0     | [Date] | Aligned with simplified workflow (“Backlog → In Progress → In Test → Closed”); updated file set (`/QMS/Quality-Manual.md`, `Context-Analysis.md`, etc.).                                     | [Name]      |
-| **3.1** | [Date] | Updated label scheme to match active set (`Audit`, `CAPA`, `Change Request`, `Improvement`, `Management Review`, `Objective`, `Opportunity`, `Risk`, `Setup`); removed document-type labels. | [Name]      |

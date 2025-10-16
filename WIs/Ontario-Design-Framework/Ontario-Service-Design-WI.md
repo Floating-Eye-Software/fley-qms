@@ -1,9 +1,10 @@
-# **Work Instruction: WI-DC-002 — Ontario Design System Implementation**
+# **WI - Ontario Design System Implementation**
 
-**Document Number:** WI-DC-002
-**Revision:** 1.0
-**Effective Date:** [Insert Date]
-**Related SOP:** SOP-DC-001 — Design and Development Control
+**Slug:** Ontario-Service-Design-WI  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Design-Control-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Ontario-Service-Design-WI  
 
 ---
 
@@ -115,17 +116,7 @@ Traceability between DSS phases, Red Witch deliverables, and applicable standard
 
 ---
 
-## **11. Review & Approval**
-
-| Role                           | Name | Signature | Date |
-| ------------------------------ | ---- | --------- | ---- |
-| Design Owner / Product Manager |      |           |      |
-| QA / Compliance Lead           |      |           |      |
-| Management                     |      |           |      |
-
----
-
-### **12. Notes**
+### **11. Notes**
 
 * WI-DC-002 is **modular** and can be used as a drop-in work instruction instead of WI-DC-001 for projects adopting the Ontario DSS.
 * All DSS deliverables satisfy SOP-DC-001 requirements for design control: inputs, outputs, verification, validation, change control, and records.

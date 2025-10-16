@@ -1,7 +1,10 @@
-# **WI-QMS-09-04 — FLEY Design Control Framework**
+# **WI - FLEY Design Control Framework**
 
-**Revision:** 1.1  **Effective Date:** [Insert Date]
-**Related SOP:** QMS-SOP-09 — Design and Development Control
+**Slug:** FLEY-Design-Control-WI  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Design-Control-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/FLEY-Design-Control-WI  
 
 ---
 
@@ -220,17 +223,6 @@ FLEY Design Control Plan (DCP) | Risk Register | Design Trace Matrix
 | Verification            | Unit / Integration / System Testing         | ISO 9001:2015 8.3, IEC 62304            |
 | Validation              | UAT, Pilot Testing                          | ISO 9001:2015 8.3, IEC 62304            |
 | Release                 | Deployment, Training, Documentation         | ISO 9001:2015 8.3, IEC 62304            |
-
----
-
-## **13 Review & Approval**
-
-| Role                         | Signature | Date |
-| ---------------------------- | --------- | ---- |
-| Project Manager              |           |      |
-| Design Lead                  |           |      |
-| Quality Manager              |           |      |
-| Regulatory / Privacy Officer |           |      |
 
 ---
 

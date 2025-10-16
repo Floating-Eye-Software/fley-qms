@@ -1,9 +1,10 @@
-# ⚙️ **WI: GitHub Version Control and Traceability**
+# **WI - GitHub Version Control and Traceability**
 
-**Document Number:** WI-007
-**Revision:** r2
-**Related SOPs:** Document Control, Change Control, Identification and Traceability
-**Controlled Source:** [GitHub Repository URL]
+**Slug:** GitHub-Version-Control  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP   
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Version-Control  
 
 ---
 
@@ -20,7 +21,19 @@ Applies to all controlled repositories, documents, configurations, and records u
 
 ---
 
-## **3. Responsibilities**
+## **3. References**
+
+* SOP – Document Control (r4)
+* SOP – Change Control (r3)
+* SOP – Identification and Traceability (r3)
+* WI – GitHub Document Control
+* ISO 9001:2015 §§7.5.2–7.5.3
+* ISO 13485:2016 §§4.2.4–4.2.5
+* 21 CFR Part 11 – Electronic Records and Signatures
+
+---
+
+## **4. Responsibilities**
 
 | Role                                 | Responsibilities                                                                                                                       |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,9 +44,9 @@ Applies to all controlled repositories, documents, configurations, and records u
 
 ---
 
-## **4. Procedure**
+## **5. Procedure**
 
-### **4.1 Version Control Model**
+### **5.1 Version Control Model**
 
 1. Each controlled repository must include:
 
@@ -47,7 +60,7 @@ Applies to all controlled repositories, documents, configurations, and records u
 
 ---
 
-### **4.2 Commit Standards**
+### **5.2 Commit Standards**
 
 Each commit should:
 
@@ -64,7 +77,7 @@ Commit history provides traceability of who made each change, when, and why.
 
 ---
 
-### **4.3 Viewing Revision History for a Single File**
+### **5.3 Viewing Revision History for a Single File**
 
 To demonstrate document-level traceability:
 
@@ -85,7 +98,7 @@ The `--follow` flag ensures full history even across file renames or moves.
 
 ---
 
-### **4.4 Viewing Repository-Wide History**
+### **5.4 Viewing Repository-Wide History**
 
 To view all commits in chronological order:
 
@@ -99,7 +112,7 @@ Use filters to isolate specific branches or folders as needed.
 
 ---
 
-### **4.5 Approved Revisions (Tags)**
+### **5.5 Approved Revisions (Tags)**
 
 Tags represent **formally approved revisions**. To list all approved versions:
 
@@ -117,7 +130,7 @@ Each tag is:
 
 ---
 
-### **4.6 Retrieving an Approved Revision**
+### **5.6 Retrieving an Approved Revision**
 
 To view or restore a specific approved revision:
 
@@ -131,7 +144,7 @@ This provides the exact approved content for audit, review, or controlled reprod
 
 ---
 
-### **4.7 Verifying Approval and Integrity**
+### **5.7 Verifying Approval and Integrity**
 
 To view tag metadata:
 
@@ -150,7 +163,7 @@ Displays:
 
 ---
 
-### **4.8 Linking Commits, PRs, and CRs**
+### **5.8 Linking Commits, PRs, and CRs**
 
 Each approved change must maintain traceability between:
 
@@ -164,7 +177,7 @@ These links are established automatically when PR descriptions reference Issues 
 
 ---
 
-### **4.9 Integrity and Retention**
+### **5.9 Integrity and Retention**
 
 1. Git history and tags are **permanent and immutable**; never delete or rewrite.
 
@@ -179,7 +192,7 @@ These links are established automatically when PR descriptions reference Issues 
 
 ---
 
-### **4.10 Audit Demonstration**
+### **5.10 Audit Demonstration**
 
 The following commands demonstrate that documents are **controlled, approved, traceable, and current**:
 
@@ -198,7 +211,7 @@ The following commands demonstrate that documents are **controlled, approved, tr
 
 ---
 
-## **5. Records and Retention**
+## **6. Records and Retention**
 
 | Record Type                        | Location          | Retention |
 | ---------------------------------- | ----------------- | --------- |
@@ -209,24 +222,3 @@ The following commands demonstrate that documents are **controlled, approved, tr
 | Repository backups                 | Mirrored archive  | Permanent |
 
 GitHub and Git history together form the immutable audit trail of document approval and control.
-
----
-
-## **6. References**
-
-* SOP – Document Control (r4)
-* SOP – Change Control (r3)
-* SOP – Identification and Traceability (r3)
-* WI – GitHub Document Control
-* ISO 9001:2015 §§7.5.2–7.5.3
-* ISO 13485:2016 §§4.2.4–4.2.5
-* 21 CFR Part 11 – Electronic Records and Signatures
-
----
-
-## **7. Revision History**
-
-| Revision | Date       | Description of Change                                                                                    | Approved By |
-| -------- | ---------- | -------------------------------------------------------------------------------------------------------- | ----------- |
-| r1       | 2025-10-11 | Initial release defining Git-based traceability and audit commands                                       | [Name]      |
-| **r2**   | 2025-10-15 | Integrated audit guidance; clarified system-managed approvals, HEAD=approved version, and immutable tags | [Name]      |
