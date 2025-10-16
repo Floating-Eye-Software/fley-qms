@@ -1,6 +1,6 @@
 # ✅ **Work Instruction (WI) Template**
 
-# WI – [Task / Activity Name]
+# **WI – [Task / Activity Name]**
 
 **Slug:** WI_[Task-Name]  
 **Revision:** r#  
@@ -41,15 +41,7 @@ Example: “Defines the steps for submitting and approving QMS document changes 
 
 ---
 
-## **5. Inputs**
-
-| Input              | Source              | Notes            |
-| ------------------ | ------------------- | ---------------- |
-| [File, Form, Data] | [Location / System] | [Optional notes] |
-
----
-
-## **6. Step-by-Step Procedure**
+## **5. Step-by-Step Procedure**
 
 1. **Step 1:** [Describe first step]
 2. **Step 2:** [Describe next step]
@@ -73,15 +65,7 @@ git push origin change/<short-description>
 
 ---
 
-## **7. Outputs / Results**
-
-| Output                   | Destination / Usage            | Notes            |
-| ------------------------ | ------------------------------ | ---------------- |
-| [Document, File, Record] | [Repository / Folder / System] | [Optional notes] |
-
----
-
-## **8. Records / Documentation**
+## **6. Records / Documentation**
 
 * All changes are traceable via Git commit history and Pull Requests.
 * Approved versions are tagged in Git and accessible in the repository history.

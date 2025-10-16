@@ -1,4 +1,4 @@
-# [TYPE] – [Title]
+# **[TYPE] – [Title]**
 
 **Slug:** [TYPE_Title]  
 **Revision:** r#  
