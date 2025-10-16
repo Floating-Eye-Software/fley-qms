@@ -50,6 +50,7 @@ This structure ensures that **roles, responsibilities, and authorities** are cle
 * Oversees operational and support processes.
 * Identifies and manages risks and opportunities.
 * Ensures outputs are identified, traceable, and properly documented.
+* Includes ownership of process-specific areas such as Project Management and Design & Development Control.
 
 **All Employees**
 
