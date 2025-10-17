@@ -66,6 +66,8 @@ Applies to all planning activities related to the QMS, including risk and opport
   * Communicated and updated as necessary
 * Progress toward objectives shall be reviewed during Management Review.
 
+Progress toward quality objectives shall be reviewed during Management Review meetings per *Management-Review-SOP*.
+
 6.3 **Planning Changes**
 
 * When significant changes to the QMS are required, the following shall be considered:
@@ -76,6 +78,8 @@ Applies to all planning activities related to the QMS, including risk and opport
   * Responsibilities and authorities
 * Changes shall be documented and reviewed for effectiveness.
 
+Results and decisions from Management Reviews may initiate planned changes to the QMS, implemented per the *Change-Control-SOP*.
+
 ---
 
 ### **7. Records**
@@ -83,4 +87,4 @@ Applies to all planning activities related to the QMS, including risk and opport
 * Risk & Opportunity Register
 * Quality Objectives Register
 * Change Records
-* Management Review Records
+* Management Review Records (decisions, actions, policy updates)

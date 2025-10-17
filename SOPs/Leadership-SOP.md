@@ -52,6 +52,8 @@ Applies to all top management activities related to leadership, customer focus, 
 * Ensure that the QMS achieves its intended results.
 * Support continual improvement across all processes.
 
+Top Management shall ensure Management Reviews are conducted in accordance with the *Management-Review-SOP* at planned intervals to verify QMS suitability, adequacy, and effectiveness.
+
 6.2 **Customer Focus**
 
 * Ensure customer requirements are determined, understood, and met.
@@ -74,4 +76,4 @@ Applies to all top management activities related to leadership, customer focus, 
 
 * Quality Policy
 * Organization Chart (roles and responsibilities)
-* Management Review Records
+* Management Review Minutes and Action Tracker (see Management-Review-SOP)

@@ -119,6 +119,8 @@ For each significant risk or opportunity:
 
 The outcome of risk and opportunity reviews shall feed into the **Planning** and **Leadership** processes.
 
+The status and effectiveness of significant risk and opportunity actions shall be reviewed during Management Review meetings per the *Management-Review-SOP*.
+
 ---
 
 ### **7. Integration with Other QMS Processes**
@@ -140,4 +142,5 @@ The outcome of risk and opportunity reviews shall feed into the **Planning** and
 | Risk & Opportunity Register     | QMS Repository / Tool (e.g., GitHub Project or Confluence page) | 10 years or per record retention policy |
 | Risk Assessments / Action Plans | Attached to Risk Records                                        | 10 years                                |
 | Management Review Outputs       | Discussions / Meeting Minutes                                   | Permanent                               |
+| Audit Findings and Risk Updates | Audit Reports                                                   | 10 years                                |
 | Audit Findings and Risk Updates | Audit Reports                                                   | 10 years                                |
