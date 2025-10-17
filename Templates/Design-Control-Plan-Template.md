@@ -1,11 +1,10 @@
-# **Design Control Plan (DCP)**
+# **TPL – Design Control Plan (DCP) Template**
 
-**Document No.:** [Auto/Manual ID]
-**Project Name:**
-**Version:**
-**Date:**
-**Prepared by:**
-**Approved by:**
+**Slug:** Design-Control-Plan-Template  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Design-Control-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Design-Control-Plan-Template  
 
 ---
 
@@ -236,17 +235,6 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 | Release Records                     | QMS / Product Repository | Permanent                    |
 | **Maintenance Logs (NEW)**          | DHF / Maintenance Folder | 10 years after final release |
 | **Retirement Plan & Records (NEW)** | QMS Repository           | Permanent                    |
-
----
-
-## **13. Approval**
-
-| Role / Name                                  | Signature | Date |
-| -------------------------------------------- | --------- | ---- |
-| Project Manager                              |           |      |
-| Design Lead                                  |           |      |
-| Quality Manager                              |           |      |
-| Regulatory / Privacy Officer (if applicable) |           |      |
 
 ---
 

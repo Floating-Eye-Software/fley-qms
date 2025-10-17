@@ -1,8 +1,15 @@
-# **Red Witch QMS Base System Vision**
+# **REF - Red Witch QMS Base System Vision**
 
-*Version 0.1 – Draft for Milestone 1 (QMS Foundations)*
+**Slug:** GitHub-QMS-Overview  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Overview  
+
+---
 
 ## 1  Purpose
+
+*Version 0.1 – Draft for Milestone 1 (QMS Foundations)*
 
 The Red Witch Quality Management System (QMS) establishes a lightweight, fully traceable, and continuously improving framework for managing software quality and compliance using **GitHub as the system of record**.
 

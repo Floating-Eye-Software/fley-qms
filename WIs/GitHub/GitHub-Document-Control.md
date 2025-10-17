@@ -61,13 +61,18 @@ This WI describes *how* to perform document control in GitHub — the SOP define
 
 3. Prefix conventions:
 
-   | Type                         | Prefix |
-   | ---------------------------- | ------ |
-   | Standard Operating Procedure | SOP    |
-   | Work Instruction             | WI     |
-   | Policy                       | POL    |
-   | Template                     | TPL    |
-   | Record                       | REC    |
+| Type                           | Prefix    | Example                           | Notes                            |
+| ------------------------------ | --------- | --------------------------------- | -------------------------------- |
+| Quality Management System Core | **QMS**   | `QMS-Quality-Manual.md`           | Foundational system docs         |
+| Standard Operating Procedure   | **SOP**   | `SOP-Document-Control.md`         | Process-level instructions       |
+| Work Instruction               | **WI**    | `WI-Change-Control.md`            | Stepwise task details            |
+| Template                       | **TPL**   | `TPL-Design-Control-Plan.md`      | Forms and starting points        |
+| Reference / Overview           | **REF**   | `REF-GitHub-QMS-Overview.md`      | Contextual or descriptive guides |
+| Compliance Mapping             | **MAP**   | `MAP-ISO-13485.md`                | Maps to standards / regs         |
+| Corrective & Preventive Action | **CAPA**  | `CAPA-0001-Nonconformance.md`     | Issue tracking and resolution    |
+| Complaint                      | **CMPL**  | `CMPL-0001-Customer-Complaint.md` | Complaint records                |
+| Record / Evidence              | **REC**   | `RECR-Design-Review.md`           | Controlled evidence outputs      |
+| Plan                           | **PLAN**  | `PLAN-Continuous-Improvement.md`  | Project or system plans          |
 
 4. Document numbers are sequential and unique within each type.
    *Authors propose the next number; the reviewer or DCC confirms uniqueness.*

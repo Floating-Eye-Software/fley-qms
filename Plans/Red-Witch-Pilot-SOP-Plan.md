@@ -1,5 +1,12 @@
+# **PLAN - Quality Plan – Pilot SOP Implementation (FLEY)**
 
-# **Quality Plan – Pilot SOP Implementation (FLEY)**
+**Slug:** Red-Witch-Pilot-SOP-Plan  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Quality-Planning-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Red-Witch-Pilot-SOP-Plan  
+
+---
 
 ## **1. Introduction**
 
@@ -86,11 +93,3 @@
 * CAPA findings incorporated into SOP updates.
 * Lessons learned captured, shared, and used for future SOP drafting.
 * Alignment to DCP deliverables and WI-QMS-09-04 monitored continuously.
-
----
-
-## **10. Approval**
-
-* **Authorized By:** Quality Manager
-* **Date:** ____
-* **Review Cycle:** Quarterly

@@ -1,4 +1,11 @@
-# 📘 **Ontario Digital Service Standard (DSS)**
+# **MAP - Ontario Digital Service Standard (DSS)**
+
+**Slug:** Ontario-DSS  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Ontario-DSS  
+
+---
 
 ### Overview
 

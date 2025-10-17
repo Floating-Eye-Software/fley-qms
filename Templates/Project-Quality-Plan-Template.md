@@ -1,17 +1,19 @@
-# **Project Quality Plan (PQP) – [Project Name]**
+# **TPL – Project Quality Plan (PQP) Template**
 
-**Project Manager / Owner:** [Name]
-**Date:** [YYYY-MM-DD]
-**Version:** [X.X]
+**Slug:** Project-Quality-Plan-Template  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Quality-Planning-SOP, Project-Management-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Project-Quality-Plan-Template  
+
+---
+
+## **1. QMS Activity Configuration (Project-Specific)**
 
 > The PQP defines how this project implements the Floating Eye Software (FLEY) Quality Management System (QMS).
 > It specifies which **standards**, **SOPs**, **Work Instructions (WIs)**, and **tools** are applied to meet quality, regulatory, and operational requirements.
 >
 > This configuration ensures each project executes all required QMS activities while allowing flexibility in tools and frameworks.
-
----
-
-## **1. QMS Activity Configuration (Project-Specific)**
 
 Each project shall define its **QMS configuration**, identifying which **Work Instructions (WIs)** and **tools** implement each SOP.
 All QMS activities are **mandatory**, even if achieved using different frameworks or infrastructures.
@@ -143,16 +145,6 @@ All QMS activities are **mandatory**, even if achieved using different framework
 * *[Access control and data security measures]*
 * *[Privacy and accessibility compliance]*
 * *[Reference WI/NIST/Information-Security.md if applicable]*
-
----
-
-## **Approval**
-
-| Role / Name             | Signature | Date |
-| ----------------------- | --------- | ---- |
-| Project Manager / Owner |           |      |
-| Quality Representative  |           |      |
-| Sponsor / Client        |           |      |
 
 ---
 

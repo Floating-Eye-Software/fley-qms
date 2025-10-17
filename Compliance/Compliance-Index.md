@@ -1,9 +1,9 @@
-# **Red Witch Compliance Index**
+# **MAP - Red Witch Compliance Index**
 
-**Page:** Compliance-Index
-**Version:** 2025-10-06
-**Maintainer:** Quality Manager
-**Review Frequency:** Annual (Management Review)
+**Slug:** Compliance-Index  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Compliance-Index  
 
 ---
 

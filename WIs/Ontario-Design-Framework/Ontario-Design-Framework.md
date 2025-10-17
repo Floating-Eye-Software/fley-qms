@@ -1,4 +1,12 @@
-## **Ontario Service Design Framework**
+# **REF – Ontario Service Design Framework**
+
+**Slug:** Ontario-Design-Framework  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Design-Control-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Ontario-Design-Framework  
+
+---
 
 ![Digital Service Standard, 2021](ods-dss-en-2022-12-20.png)
 

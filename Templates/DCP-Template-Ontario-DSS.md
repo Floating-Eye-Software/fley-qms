@@ -1,10 +1,10 @@
-# **Design Control Plan (Ontario DSS Framework — Generic Template)**
+# **TPL - Design Control Plan (Ontario DSS Framework)**
 
-**Project Name:** [Insert Project Name]
-**Version:** [Insert Version]
-**Date:** [Insert Date]
-**Prepared by:** [Insert Name / Role]
-**Approved by:** [Insert Name / Role]
+**Slug:** DCP-Template-Ontario-DSS  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Design-Control-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/DCP-Template-Ontario-DSS  
 
 ---
 
@@ -221,13 +221,3 @@ Applies to any project adopting the **Ontario DSS framework**, including digital
 | Alpha     | Prototypes, journey maps, feasibility assessment                                    | ISO 90003, IEC 62304, IEC 62366, ISO 13485                               |
 | Beta      | MVP, user testing, device & accessibility validation, KPIs, privacy/security report | ISO 90003, IEC 62304, IEC 62366, ISO 13485, ISO/IEC 27001, ISO/IEC 27701 |
 | Live      | Service maintenance, updates, web analytics, open data, disaster recovery           | ISO 9001, ISO 90003, IEC 62304, IEC 62366, ISO/IEC 27001                 |
-
----
-
-## **13. Approval**
-
-| Role                           | Name | Signature | Date |
-| ------------------------------ | ---- | --------- | ---- |
-| Design Owner / Product Manager |      |           |      |
-| QA / Compliance Lead           |      |           |      |
-| Management                     |      |           |      |

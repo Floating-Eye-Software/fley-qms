@@ -1,8 +1,14 @@
-# **Red Witch – Project Quality Plan (PQP)**
+# **PLAN - Red Witch – Project Quality Plan (PQP)**
+
+**Slug:** Red-Witch-Quality-Plan  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Project-Management-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Red-Witch-Quality-Plan  
+
+---
 
 **Project Manager / Owner:** [Name]
-**Date:** [YYYY-MM-DD]
-**Version:** [X.X]
 
 > This PQP defines how the **Red Witch** project implements the **Floating Eye Software (FLEY) QMS**, including configuration of SOPs, Work Instructions (WIs), and tools used to achieve compliance.
 
@@ -175,14 +181,3 @@ All SOPs remain in effect; this table specifies the **selected methods, tools, a
 * IEC 82304-1:2016 — Health Software Product Safety
 * ISO/TS 82304-2:2021 — Health & Wellness Apps
 * ISO/IEC 27001 & 27701 — Information & Privacy Security
-
----
-
-## **16. Approval**
-
-| Role / Name      | Signature | Date |
-| ---------------- | --------- | ---- |
-| Project Manager  |           |      |
-| Quality Manager  |           |      |
-| Privacy Officer  |           |      |
-| Sponsor / Client |           |      |

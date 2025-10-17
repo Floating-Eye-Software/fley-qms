@@ -1,4 +1,12 @@
-# **Quality Plan – Continuous Improvement (FLEY)**
+# **PLAN - Quality Plan – Continuous Improvement (FLEY)**
+
+**Slug:** Continuous-Improvement-Plan  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Quality-Planning-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Continuous-Improvement-Plan  
+
+---
 
 ## **1. Introduction**
 
@@ -82,11 +90,3 @@
 * Audit results feed into SOP updates, process refinements, and system enhancements.
 * Year-over-year benchmarking of QMS maturity scores.
 * Lessons learned from CAPA and audits integrated into WI-QMS-09-04 and DCP improvements.
-
----
-
-## **10. Approval**
-
-* **Authorized By:** Quality Manager
-* **Date:** ____
-* **Review Cycle:** Annual

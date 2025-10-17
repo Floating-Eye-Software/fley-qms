@@ -1,8 +1,15 @@
+# **REF - Red Witch Information Security**
+
+**Slug:** Information-Security  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Information-Security  
+
+---
+
 # Red Witch Information Security
 
 Red Witch will comply with the NIST minimum requirements for Information Security.
-
-TODO: find Ontario guidance on security frameworks, continuous improvement
 
 ## Information Security Process
 
@@ -40,6 +47,4 @@ This standard specifies minimum security requirements for federal information an
 [SP 800-53B](https://csrc.nist.gov/pubs/sp/800/53/b/upd1/final) Control Baselines for Information Systems and Organizations
 [SP 800-53A Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) Assessing Security and Privacy Controls in Information Systems and Organizations
 
-
-
-NIST Special Publication 800-53, Recommended Security Controls for Federal Information Systems,
+NIST Special Publication 800-53, Recommended Security Controls for Federal Information Systems

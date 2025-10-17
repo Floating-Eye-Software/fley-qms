@@ -1,4 +1,11 @@
-# **Organizational Chart**
+# **QMS - Organizational Chart**
+
+**Slug:** Organizational-Chart  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Organizational-Chart  
+
+---
 
 ```mermaid
 graph TD

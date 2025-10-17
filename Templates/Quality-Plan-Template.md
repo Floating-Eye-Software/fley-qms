@@ -1,4 +1,12 @@
-# **Quality Plan – [Project Name]**
+# **TPL – Quality Plan Template**
+
+**Slug:** Quality-Plan-Template  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Quality-Planning-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Quality-Plan-Template  
+
+---
 
 ## **1. Introduction**
 
@@ -67,11 +75,3 @@
 
 * *[Improvement cycles (ISO 9004, retrospectives)]*
 * *[CAPA process and feedback loops]*
-
----
-
-## **10. Approval**
-
-* **Authorized By:** ____
-* **Date:** ____
-* **Review Cycle:** ____
