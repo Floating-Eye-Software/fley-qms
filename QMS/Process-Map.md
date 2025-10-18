@@ -13,55 +13,47 @@ This diagram shows the **hierarchical structure of the FLEY Quality Management S
 
 ```mermaid
 flowchart TD
-    %% ======== COLORS / STYLES ========
-    classDef core fill:#f9f,stroke:#333,stroke-width:1px,color:#000;
-    classDef sop fill:#bbf,stroke:#333,stroke-width:1px,color:#000;
-    classDef op fill:#bfb,stroke:#333,stroke-width:1px,color:#000;
-    classDef support fill:#ffb,stroke:#333,stroke-width:1px,color:#000;
-
-    %% ======== CORE LAYER ========
-    subgraph Core[CORE – Definition & Direction]
+    %% Core Definition Layer
+    subgraph Core[Core Definition Layer]
         QM[Quality Manual]
         CA[Context Analysis]
         QP[Quality Policy]
         PM[Process Map]
         OC[Organizational Chart]
     end
-    class QM,CA,QP,PM,OC core
 
-    %% ======== SOP LAYER ========
-    subgraph SOP[SOPs – Governance & Control]
-        SOP3[Document & Record Control]
-        SOP4[Change Control]
-        SOP5[Leadership & Management]
-        SOP6[Quality Planning]
-        SOP7[Project Management]
-        SOP8[Risk & Opportunity]
-        SOP9[Design & Development]
+    %% SOP Layer
+    subgraph SOP[SOP Layer]
+        SOP3[Document & Record Control SOP]
+        SOP4[Change Control SOP]
+        SOP5[Leadership SOP]
+        SOP6[Quality Planning SOP]
+        SOP7[Project Management SOP]
+        SOP8[Risk & Opportunity SOP]
+        SOP9[Design & Development SOP]
     end
-    class SOP3,SOP4,SOP5,SOP6,SOP7,SOP8,SOP9 sop
 
-    %% ======== OPERATIONAL LAYER ========
-    subgraph OP[Operational – Execution & Records]
+    %% Operational Layer
+    subgraph WI[Operational Layer]
         WISetup[WI: Set Up QMS in GitHub]
         WIOperate[WI: Operate QMS in GitHub]
-        ProductBoards[Project Boards – Red Witch]
+        ProductBoards[Red Witch Project Boards]
     end
-    class WISetup,WIOperate,ProductBoards op
 
-    %% ======== SUPPORTING PROCESSES ========
-    subgraph Support[Supporting Processes – Enabling Resources]
-        Training[Training & Competence Mgmt]
-        Resources[Infrastructure & Tools]
-        AuditMgmt[Audits & CAPA Management]
-    end
-    class Training,Resources,AuditMgmt support
+    %% Connections
+    QM --> SOP3
+    QM --> SOP4
+    QM --> SOP5
+    QM --> SOP6
+    QM --> SOP7
+    QM --> SOP8
+    QM --> SOP9
 
-    %% ======== INTERACTIONS ========
-    QM --> SOP3 & SOP4 & SOP5 & SOP6 & SOP7 & SOP8 & SOP9
     CA --> SOP6
-    PM --> SOP7 & SOP9
-    OC --> SOP5 & SOP7
+    PM --> SOP7
+    PM --> SOP9
+    OC --> SOP5
+    OC --> SOP7
 
     SOP3 --> WISetup
     SOP4 --> WISetup
@@ -71,16 +63,8 @@ flowchart TD
     SOP8 --> WIOperate
     SOP9 --> WIOperate
 
-    WISetup --> WIOperate --> ProductBoards
-
-    %% SUPPORT FLOWS
-    Training --> WIOperate
-    Resources --> WIOperate
-    AuditMgmt --> WIOperate
-
-    %% FEEDBACK
-    ProductBoards -. improvement feedback .-> AuditMgmt
-    AuditMgmt -. CAPA results .-> SOP4
+    WISetup --> WIOperate
+    WIOperate --> ProductBoards
 ```
 
 **Explanation:**
@@ -98,42 +82,20 @@ The diagram shows the **flow from definition → procedures → execution**, ens
 The following diagram illustrates how the three main workflows interact dynamically within the FLEY QMS:
 
 ```mermaid
-flowchart LR
-    %% COLORS
-    classDef qms fill:#bfb,stroke:#333,stroke-width:1px,color:#000;
-    classDef create fill:#bbf,stroke:#333,stroke-width:1px,color:#000;
-    classDef product fill:#ffb,stroke:#333,stroke-width:1px,color:#000;
-
-    %% QMS OPERATION
+flowchart TD
     subgraph Operate[Operate the QMS – Continuous Improvement]
-        A1[Context & Risk Review]
-        A2[Audits / CAPA Execution]
-        A3[Management Review]
-        A1 --> A2 --> A3 --> A1
+        A1[Context & Risk Review] --> A2[Audits & CAPA]
+        A2 --> A3[Management Review]
+        A3 --> A1
     end
-    class A1,A2,A3 qms
-
-    %% QMS CREATION
-    subgraph Create[Create / Update QMS Framework]
-        B1[Design QMS Structure]
-        B2[Develop SOPs & WIs]
-        B3[Validate Framework]
-        B1 --> B2 --> B3 --> A1
+    subgraph Create[Create the QMS – Establishment Project]
+        B1[Design QMS Structure] --> B2[Develop SOPs/WIs] --> B3[Validate Framework]
+        B3 --> A1
     end
-    class B1,B2,B3 create
-
-    %% PRODUCT DEVELOPMENT
-    subgraph Develop[Develop Products – Red Witch]
-        C1[Requirements & Planning]
-        C2[Design & Implementation]
-        C3[Verification & Release]
-        C1 --> C2 --> C3 --> A2
+    subgraph Develop[Develop Products – Red Witch Project]
+        C1[Requirements & Planning] --> C2[Design & Implementation] --> C3[Verification & Release]
+        C3 --> A2
     end
-    class C1,C2,C3 product
-
-    %% CONTINUAL IMPROVEMENT FEEDBACK
-    A3 -.Outputs to Leadership & Planning.-> B1
-    A3 -.Policy & Objective Update.-> C1
 ```
 
 **Workflow Summary:**

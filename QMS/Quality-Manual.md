@@ -40,6 +40,14 @@ The QMS applies to all **Red Witch–related activities** impacting:
 * User privacy and data protection
 * Regulatory compliance
 
+**Activities Covered:**
+
+* Software, product, and system design & development
+* Project and operational execution
+* Risk management and quality planning
+* Verification, validation, and release activities
+* Post-release maintenance, retirement, and CAPA tracking
+
 **Boundaries:**
 
 * Excludes non-Red Witch FLEY activities (NetHack, blogs, etc.)

@@ -147,6 +147,12 @@ It applies across all systems and repositories used to create, store, or publish
 
 ---
 
+### **6.7 Regulatory Traceability:**
+The organization maintains mappings between applicable standards/regulations and internal QMS processes to demonstrate traceability and compliance.
+These matrices are reviewed during Management Review and updated through Change Control when new standards are adopted.
+
+---
+
 ## **7. Records**
 
 | Record / Artifact         | Responsible Owner            | Storage Location        | Retention | Control Method           |
