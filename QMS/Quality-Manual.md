@@ -91,6 +91,19 @@ FLEY’s QMS consists of three interrelated workflows:
 
 For a high-level visual of workflows and interactions, see [[Process Map]].
 
+The three workflows operate cyclically and interdependently:
+
+ * The **QMS Creation** workflow defines and documents the structure of the management system.
+ * The **QMS Operation** workflow maintains, monitors, and improves that structure over time.
+ * The **Product Development** workflow applies the QMS framework to the Red Witch product lifecycle.
+
+These workflows exchange information continuously:
+
+ * Outputs from **Product Development** (e.g., design reviews, release records) feed back into **QMS Operation** as evidence and improvement inputs.
+ * Updates from **QMS Operation** (e.g., CAPA actions, audit results) inform **QMS Creation** for system redesign or procedural refinement.
+
+This relationship is illustrated in the [[Process Map]], where each workflow is represented as a distinct process lane with feedback connections.
+
 ---
 
 ## 6. Process Approach, PDCA, and Risk-Based Thinking

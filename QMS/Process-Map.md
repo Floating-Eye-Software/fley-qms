@@ -24,13 +24,15 @@ flowchart TD
 
     %% SOP Layer
     subgraph SOP[SOP Layer]
-        SOP3[Document & Record Control SOP]
-        SOP4[Change Control SOP]
-        SOP5[Leadership SOP]
-        SOP6[Quality Planning SOP]
-        SOP7[Project Management SOP]
-        SOP8[Risk & Opportunity SOP]
-        SOP9[Design & Development SOP]
+        SOP1[Document Control SOP]
+        SOP2[Change Control SOP]
+        SOP3[Leadership SOP]
+        SOP4[Management Review SOP]
+        SOP5[Quality Planning SOP]
+        SOP6[Project Management SOP]
+        SOP7[Risk and Opportunity Management SOP]
+        SOP8[Design Control SOP]
+        SOP9[Identification and Traceability SOP]
     end
 
     %% Operational Layer
@@ -40,7 +42,9 @@ flowchart TD
         ProductBoards[Red Witch Project Boards]
     end
 
-    %% Connections
+    %% Connections between Core and SOPs
+    QM --> SOP1
+    QM --> SOP2
     QM --> SOP3
     QM --> SOP4
     QM --> SOP5
@@ -49,20 +53,24 @@ flowchart TD
     QM --> SOP8
     QM --> SOP9
 
-    CA --> SOP6
-    PM --> SOP7
-    PM --> SOP9
-    OC --> SOP5
-    OC --> SOP7
+    CA --> SOP5
+    PM --> SOP6
+    PM --> SOP8
+    OC --> SOP3
+    OC --> SOP4
 
-    SOP3 --> WISetup
-    SOP4 --> WISetup
+    %% SOPs to Operational Layer
+    SOP1 --> WISetup
+    SOP2 --> WISetup
+    SOP3 --> WIOperate
+    SOP4 --> WIOperate
     SOP5 --> WIOperate
     SOP6 --> WIOperate
     SOP7 --> WIOperate
     SOP8 --> WIOperate
     SOP9 --> WIOperate
 
+    %% Workflow progression
     WISetup --> WIOperate
     WIOperate --> ProductBoards
 ```
@@ -79,23 +87,46 @@ The diagram shows the **flow from definition → procedures → execution**, ens
 
 ## **2. QMS Operational Workflow**
 
-The following diagram illustrates how the three main workflows interact dynamically within the FLEY QMS:
+The following diagram illustrates the three primary workflows defined in the Quality Manual (§5. QMS Workflows).
+
+Each workflow corresponds to a set of Standard Operating Procedures (SOPs) and Work Instructions that define how FLEY’s QMS is created, operated, and applied in product development.
+
+Feedback loops between workflows support continual improvement in alignment with ISO 9001:2015 + Amd 1:2024.
+
 
 ```mermaid
 flowchart TD
-    subgraph Operate[Operate the QMS – Continuous Improvement]
-        A1[Context & Risk Review] --> A2[Audits & CAPA]
-        A2 --> A3[Management Review]
-        A3 --> A1
+    %% --- QMS Workflows Overview ---
+    subgraph Create[QMS Creation Workflow]
+        C1[Design QMS Structure]
+        C2[Develop SOPs & WIs]
+        C3[Validate Framework]
+        C1 --> C2 --> C3
     end
-    subgraph Create[Create the QMS – Establishment Project]
-        B1[Design QMS Structure] --> B2[Develop SOPs/WIs] --> B3[Validate Framework]
-        B3 --> A1
+
+    subgraph Operate[QMS Operation Workflow]
+        O1[Monitor Context & Risks]
+        O2[Audits & CAPA]
+        O3[Management Review]
+        O1 --> O2 --> O3 --> O1
     end
-    subgraph Develop[Develop Products – Red Witch Project]
-        C1[Requirements & Planning] --> C2[Design & Implementation] --> C3[Verification & Release]
-        C3 --> A2
+
+    subgraph Develop[Product Development Workflow]
+        D1[Requirements & Planning]
+        D2[Design & Implementation]
+        D3[Verification & Release]
+        D1 --> D2 --> D3
     end
+
+    %% --- Interactions Between Workflows ---
+    C3 --> O1
+    D3 --> O2
+    O3 --> C1
+
+    %% --- SOP references ---
+    C2 -.->|"[[Quality Planning SOP]]"| C3
+    O2 -.->|"[[Leadership SOP]], [[Management Review SOP]]"| O3
+    D2 -.->|"[[Design Control SOP]]"| D3
 ```
 
 **Workflow Summary:**
