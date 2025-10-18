@@ -3,7 +3,7 @@
 **Slug:** GitHub-QMS-Operations  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Quality-Planning-SOP, Leadership-SOP, Project-Management-SOP, Risk-and-Opportunity-Management-SOP   
+**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP, Quality-Planning-SOP, Leadership-SOP, Management-Review-SOP, Risk-and-Opportunity-Management-SOP, Project-Management-SOP, Design-Control-SOP  
 **Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Operations  
 
 ---
@@ -35,14 +35,20 @@ Applies to all operational QMS activities, including:
 
 ## **3. References**
 
-* ISO 9001:2015 – Clauses 4 through 10
-* ISO 9004:2018 – Clauses 4 through 9
-* QMS-SOP-03 – Documented Information Control
-* QMS-SOP-04 – Change Control
-* QMS-SOP-05 – Leadership
-* QMS-SOP-06 – Planning
-* QMS-SOP-08 – Risk & Opportunity Management
-* WI-QMS-10-02 – QMS Setup in GitHub
+* SOP – Document Control
+* SOP – Change Control
+* SOP – Leadership
+* SOP – Management Review
+* SOP – Quality Planning
+* SOP – Project Management
+* SOP – Risk and Opportunity Management
+* SOP – Design Control
+* SOP – Identification and Traceability
+* WI – GitHub–Document–Control
+* WI – GitHub–Change–Control
+* WI – GitHub–Version–Control
+* WI – GitHub–QMS–Setup
+* WI – GitHub–Project–Management
 
 ---
 

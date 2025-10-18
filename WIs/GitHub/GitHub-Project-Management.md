@@ -22,11 +22,8 @@ This WI applies to all projects managed in GitHub under the organization’s QMS
 
 ### **3. References**
 
-* QMS-SOP-07 Project Management
-* QMS-SOP-06 Planning
-* QMS-SOP-05 Leadership
-* WI-QMS-09-01 Operating the QMS in GitHub
-* ISO 9001:2015, Clauses 4, 5, 6, 8, 9
+* SOP – Project Management
+* WI – GitHub–QMS–Operations
 * GitHub Documentation: [https://docs.github.com](https://docs.github.com)
 
 ---

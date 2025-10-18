@@ -22,15 +22,15 @@ Applies to all projects adopting the Ontario Service Design Framework, including
 
 ## **3. References**
 
-* SOP-DC-001 — Design and Development Control
-* Ontario Digital Service Standard (DSS)
-* Ontario Service Design Playbook
-* Red Witch Design Control Plan
-* ISO 9001:2015 Clause 8.3
-* ISO 90003 — Software engineering guidelines
-* IEC 62304, IEC 62366, ISO 14971, ISO 13485
-* ISO/IEC 27001, ISO/IEC 27701
-* FDA 21 CFR Part 11
+  * SOP – Design Control
+  * SOP – Identification and Traceability
+  * SOP – Risk and Opportunity Management
+  * WI – GitHub–Document–Control
+  * WI – GitHub–Version–Control
+  * WI – GitHub–QMS–Operations
+  * ISO 13485:2016 § 7.3 (Design & Development)
+  * ISO 9001:2015 §§ 6.1, 7.5.2–7.5.3 (Risk & Documented Information)
+  * 21 CFR Part 11 – Electronic Records and Signatures
 
 ---
 

@@ -22,8 +22,9 @@ Applies to all top management activities related to leadership, customer focus, 
 
 ### **3. References**
 
-* ISO 9001:2015, Clause 5
-* QMS-SOP-06 Planning
+* ISO 9001:2015 §§ 5.1–5.2
+* ISO 13485:2016 § 5.1
+* SOP – Management Review
 
 ---
 

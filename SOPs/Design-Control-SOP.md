@@ -36,14 +36,8 @@ Projects may implement a specific framework via a **Design Control Work Instruct
 
 ## **3. References**
 
-* ISO 9001:2015 Clauses 4–10
-* ISO 13485:2016 Clause 7.3
-* IEC 62304:2006/Amd1:2015 (Clause 6 Maintenance)
-* QMS-SOP-05 – Document & Record Control
-* QMS-SOP-06 – Quality Planning
-* QMS-SOP-07 – Project Management
-* QMS-SOP-08 – Risk & Opportunity Management
-* QMS-SOP-02 – Change Control
+* ISO 13485:2016 § 7.3
+* SOP – Identification and Traceability
 
 * **Templates:**
   * *Design Control Plan (DCP)*

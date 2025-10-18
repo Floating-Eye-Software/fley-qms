@@ -3,7 +3,7 @@
 **Slug:** GitHub-Change-Control  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP   
+**Related SOPs:** Change-Control-SOP  
 **Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Change-Control  
 
 ---
@@ -23,13 +23,10 @@ Applies to all repositories containing QMS-controlled documentation or configura
 
 ## **3. References**
 
-* SOP – Change Control (r3)
-* SOP – Document Control (r4)
-* SOP – Identification and Traceability (r3)
-* WI – GitHub Version Control and Traceability (r2)
-* ISO 9001:2015 §§6.3, 7.5.2–7.5.3, 8.5.6
-* ISO 13485:2016 §4.2.4–4.2.5
-* 21 CFR Part 11 – Electronic Records and Signatures
+* SOP – Change Control
+* WI – GitHub–QMS–Setup
+* ISO 9001:2015 § 6.3
+* 21 CFR Part 11
 
 ---
 

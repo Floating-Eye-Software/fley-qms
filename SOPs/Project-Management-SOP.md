@@ -28,11 +28,8 @@ Applies to all projects within the organization, including:
 
 ## **3. References**
 
-* ISO 9001:2015 Clauses 4–10
-* ISO 13485:2016 Clause 7.3 (where applicable)
-* QMS-SOP-06 — Quality Planning
-* QMS-SOP-08 — Risk & Opportunity Management
-* QMS-SOP-09 — Design and Development Control
+* SOP – Quality Planning
+* WI – GitHub–Project–Management
 
 * **Templates:**
 

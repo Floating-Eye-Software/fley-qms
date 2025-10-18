@@ -3,7 +3,7 @@
 **Slug:** GitHub-Document-Control  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Related SOP:** Document-Control-SOP   
+**Related SOPs:** Document-Control-SOP  
 **Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Document-Control  
 
 ---
@@ -24,12 +24,10 @@ This WI describes *how* to perform document control in GitHub — the SOP define
 
 ## **3. References**
 
-* SOP – Document Control (r4)
-* SOP – Identification and Traceability (r3)
-* SOP – Change Control (r3)
-* WI – GitHub Branch & Pull Request Management
-* ISO 9001:2015, Clauses 7.5.2 & 7.5.3
-* ISO 13485:2016, Clauses 4.2.4 & 4.2.5
+* SOP – Document Control
+* WI – GitHub–QMS–Setup
+* ISO 9001:2015 §§ 7.5.2–7.5.3
+* 21 CFR Part 11
 
 ---
 

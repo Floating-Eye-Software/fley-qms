@@ -27,12 +27,8 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 
 ## **3. References**
 
-* ISO 9001:2015 — Clause 9.3 (Management Review)
-* QMS-SOP-05 Leadership
-* QMS-SOP-06 Quality Planning
-* QMS-SOP-07 Risk-and-Opportunity Management
-* QMS-WI-Leadership-Management Review (optional detailed work instruction)
-* Continuous-Improvement-Plan.md
+* ISO 9001:2015 § 9.3
+* SOP – Leadership
 
 ---
 

@@ -23,12 +23,15 @@ Non-design projects mark sections “N/A” in the PQP.
 
 ## **3 References**
 
-QMS-SOP-09 Design & Development Control
-QMS-SOP-07 Project Management
-QMS-SOP-08 Risk & Opportunity Management
-QMS-SOP-02 Change Control
-QMS-SOP-05 Document & Record Control
-FLEY Design Control Plan (DCP) | Risk Register | Design Trace Matrix
+  * SOP – Design Control
+  * SOP – Identification and Traceability
+  * SOP – Project Management
+  * WI – GitHub–Document–Control
+  * WI – GitHub–Version–Control
+  * WI – GitHub–QMS–Operations
+  * ISO 13485:2016 § 7.3 (Design & Development)
+  * ISO 9001:2015 §§ 7.5.2–7.5.3 (Documented Information)
+  * 21 CFR Part 11 – Electronic Records and Signatures
 
 ---
 

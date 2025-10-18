@@ -22,8 +22,8 @@ Applies to all planning activities related to the QMS, including risk and opport
 
 ### **3. References**
 
-* ISO 9001:2015, Clause 6
-* QMS-SOP-05 Leadership
+* ISO 9001:2015 § 6.3
+* SOP – Risk and Opportunity Management
 
 ---
 

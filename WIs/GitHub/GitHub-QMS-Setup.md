@@ -3,7 +3,7 @@
 **Slug:** GitHub-QMS-Setup  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Quality-Planning-SOP, Project-Management-SOP   
+**Related SOPs:** Document-Control-SOP, Change-Control-SOP  
 **Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Setup  
 
 ---
@@ -36,15 +36,12 @@ This WI applies to all setup and configuration activities required to establish 
 
 ## **3. References**
 
-* ISO 9001:2015 – Clauses 4–6
-* ISO 9004:2018 – Clauses 4–5
-* QMS-SOP-03 – Documented Information Control
-* QMS-SOP-04 – Change Control
-* QMS-SOP-05 – Leadership
-* QMS-SOP-06 – Planning
-* QMS-SOP-08 – Risk & Opportunity Management
+* SOP – Document Control
+* SOP – Change Control
+* WI – GitHub–Document–Control
+* WI – GitHub–Change–Control
+* WI – GitHub–Version–Control
 * [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
-* WI-QMS-09-01 – QMS Operations in GitHub
 
 ---
 

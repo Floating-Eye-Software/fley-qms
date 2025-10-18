@@ -3,7 +3,7 @@
 **Slug:** GitHub-Version-Control  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP   
+**Related SOPs:** Identification-and-Traceability-SOP   
 **Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Version-Control  
 
 ---
@@ -23,13 +23,9 @@ Applies to all controlled repositories, documents, configurations, and records u
 
 ## **3. References**
 
-* SOP – Document Control (r4)
-* SOP – Change Control (r3)
-* SOP – Identification and Traceability (r3)
-* WI – GitHub Document Control
-* ISO 9001:2015 §§7.5.2–7.5.3
-* ISO 13485:2016 §§4.2.4–4.2.5
-* 21 CFR Part 11 – Electronic Records and Signatures
+* SOP – Identification and Traceability
+* WI – GitHub–QMS–Setup
+* 21 CFR Part 11
 
 ---
 

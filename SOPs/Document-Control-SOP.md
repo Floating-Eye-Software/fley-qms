@@ -28,11 +28,10 @@ This SOP applies to **all documented information** within the QMS, including:
 
 ## **3. References**
 
-* ISO 9001:2015 — Clauses 7.5.2, 7.5.3
-* ISO 13485:2016 — Clauses 4.2.4, 4.2.5
-* SOP – Change Control
-* SOP – Identification and Traceability
-* WI – Documented Information and Repository Management
+* ISO 9001:2015 §§ 7.5.2–7.5.3
+* ISO 13485:2016 §§ 4.2.4–4.2.5
+* 21 CFR Part 11 – Electronic Records and Signatures
+* WI – GitHub–Document–Control
 
 ---
 

@@ -30,13 +30,9 @@ This SOP governs both **planned** and **unintended** changes.
 
 ## **3. References**
 
-* SOP – Document Control
-* SOP – Identification and Traceability
-* SOP – Risk and Opportunity Management
-* CAPA Procedure
-* ISO 9001:2015 — Clauses 6.3, 7.5, 8.1, 8.5.6
-* ISO 13485:2016 — Clauses 4.2.4, 4.2.5, 7.5.6
-* 21 CFR Part 11 — Electronic Records and Signatures
+* ISO 9001:2015 § 6.3
+* ISO 9001:2015 § 8.5.6
+* WI – GitHub–Change–Control
 
 ---
 

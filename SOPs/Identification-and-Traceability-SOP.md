@@ -31,11 +31,8 @@ It applies across all systems and repositories used to create, store, or publish
 
 ## **3. References**
 
-* SOP – Document Control
-* SOP – Change Control
-* ISO 9001:2015 — Clauses 7.5.2–7.5.3
-* ISO 13485:2016 — Clauses 4.2.4, 7.5.9
-* 21 CFR Part 11 — Electronic Records and Signatures
+* ISO 9001:2015 § 8.5.2
+* WI – GitHub–Version–Control
 
 ---
 

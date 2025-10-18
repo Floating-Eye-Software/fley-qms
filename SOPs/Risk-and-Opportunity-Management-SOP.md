@@ -28,10 +28,9 @@ Covers:
 
 ### **3. References**
 
-* ISO 9001:2015 — Clauses 4.1, 4.2, 6.1, 8.1, 9.1, 10.2
+* ISO 9001:2015 § 6.1
 * ISO 31000:2018 — Risk Management — Guidelines (informative reference)
-* QMS-SOP-05 Leadership
-* QMS-SOP-06 Planning
+* SOP – Quality Planning
 
 ---
 
