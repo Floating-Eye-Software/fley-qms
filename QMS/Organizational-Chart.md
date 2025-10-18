@@ -19,7 +19,7 @@ graph TD
 
 ---
 
-## Overview
+## **1. Overview**
 
 Floating Eye Software (FLEY) is a **sole proprietorship**, managed and operated by one individual who fulfills all organizational roles defined in the Quality Management System (QMS).
 
@@ -27,7 +27,7 @@ This structure ensures that **roles, responsibilities, and authorities** are cle
 
 ---
 
-## Roles, Responsibilities, and Authorities
+## 2. **Roles, Responsibilities, and Authorities**
 
 **Top Management**
 
@@ -67,7 +67,7 @@ This structure ensures that **roles, responsibilities, and authorities** are cle
 
 ---
 
-## Responsibility Statement
+## **3. Responsibility Statement**
 
 All of the above functional roles are performed by **the same individual** — the sole proprietor of FLEY.
 This integrated structure ensures clear accountability, consistent decision-making, and effective management of the Quality Management System.

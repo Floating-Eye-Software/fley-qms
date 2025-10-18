@@ -7,42 +7,42 @@
 
 ---
 
-## 1. Purpose
+## **1. Purpose**
 
 Identify internal and external issues influencing FLEY’s ability to achieve QMS outcomes (ISO 9001 Clause 4.1).
 
 ---
 
-## 2. Internal Issues
+## **2. Internal Issues**
 
-### 2.1 Startup / Lean / Volunteer Model
+### **2.1 Startup / Lean / Volunteer Model**
 
 * Strengths: Lean approach, ethical mission, flexibility
 * Weaknesses: Limited capacity and redundancy (sole proprietor)
 * Opportunities: Automation, community contributions
 * Threats: Burnout, delays, inability to scale
 
-### 2.2 Privacy & Trust
+### **2.2 Privacy & Trust**
 
 * Strengths: Privacy-first philosophy, transparent operations
 * Weaknesses: No formal certifications initially
 * Opportunities: Strong positioning as an ad-free, trust-based app
 * Threats: Any data breach or privacy lapse will significantly damage reputation
 
-### 2.3 Clinical & Regulatory
+### **2.3 Clinical & Regulatory**
 
 * Strengths: QMS foundation aligned to ISO / medical software standards
 * Weaknesses: Lack of clinical advisory resources
 * Opportunities: Compliance as differentiator
 * Threats: Regulatory classification may impose burdens
 
-### 2.4 Knowledge, Culture & Values
+### **2.4 Knowledge, Culture & Values**
 
 * Volunteer-driven, centered around mission and ethics
 * Knowledge concentrated in one person — risk of loss
 * Culture of openness, transparency, minimalism
 
-### 2.5 Climate Change Consideration
+### **2.5 Climate Change Consideration**
 
 * Determine whether **climate change is relevant** to organizational context
 * Potential issues: infrastructure energy consumption, service hosting carbon footprint, extreme weather disruptions, regulatory or stakeholder expectations regarding sustainability
@@ -50,7 +50,7 @@ Identify internal and external issues influencing FLEY’s ability to achieve QM
 
 ---
 
-## 3. External Issues (PESTEL + Climate)
+## **3. External Issues (PESTEL + Climate)**
 
 | Factor                  | Relevant Issues                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------- |
@@ -63,7 +63,7 @@ Identify internal and external issues influencing FLEY’s ability to achieve QM
 
 ---
 
-## 4. Interested Parties and Requirements
+## **4. Interested Parties and Requirements**
 
 | Stakeholder              | Needs & Expectations                                             | Implementation / Response                                            |
 | ------------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -77,7 +77,7 @@ Identify internal and external issues influencing FLEY’s ability to achieve QM
 
 ---
 
-## 5. Monitoring & Review
+## **5. Monitoring & Review**
 
 * Review internal and external context at least **annually**, or with major product releases
 * Monitor **climate-change signals**, regulatory updates, environmental expectations, and stakeholder demands

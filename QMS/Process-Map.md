@@ -7,7 +7,56 @@
 
 ---
 
-## **1. QMS Structure Overview**
+## **1. QMS Process Framework**
+
+The following diagram illustrates how FLEY’s **Standard Operating Procedures (SOPs)** are organized into three conceptual groups.
+These groups represent the **foundation, direction, and execution** of the Quality Management System (QMS):
+
+* **QMS Infrastructure** – foundational control and traceability systems
+* **Strategy & Action** – leadership, planning, and improvement functions
+* **Controlled Workflows** – execution and delivery of product activities
+
+Each group interacts with the others in a logical top-down sequence:
+Infrastructure supports Strategy, Strategy directs Controlled Work, and Controlled Work feeds results and records back into Infrastructure.
+
+```mermaid
+flowchart TB
+    %% --- Conceptual Groups ---
+    subgraph INFRA[QMS Infrastructure]
+        direction TB
+        INF1[Document Control SOP]
+        INF2[Change Control SOP]
+        INF3[Identification & Traceability SOP]
+    end
+
+    subgraph STRAT[Strategy & Action]
+        direction TB
+        SA1[Leadership SOP]
+        SA2[Risk & Opportunity Management SOP]
+        SA3[Quality Planning SOP]
+        SA4[Management Review SOP]
+    end
+
+    subgraph WORK[Controlled Workflows]
+        direction TB
+        CW1[Project Management SOP]
+        CW2[Design Control SOP]
+    end
+
+    %% --- Relationships ---
+    INFRA --> STRAT
+    STRAT --> WORK
+```
+
+**Interpretation:**
+This diagram shows the logical flow of control within the QMS.
+Foundational **Infrastructure SOPs** establish document and change control systems; these enable and support **Strategy & Action SOPs**, which define direction, risks, and improvement activities.
+Finally, **Controlled Workflows** execute the actual product and project work under those established controls.
+Together, these three groups ensure the QMS remains consistent, effective, and continually improvable.
+
+---
+
+## **2. QMS Document Structure**
 
 This diagram shows the **hierarchical structure of the FLEY Quality Management System**, from foundational documents through SOPs to operational implementation.
 
@@ -85,7 +134,7 @@ The diagram shows the **flow from definition → procedures → execution**, ens
 
 ---
 
-## **2. QMS Operational Workflow**
+## **3. QMS Workflow Interactions**
 
 The following diagram illustrates the three primary workflows defined in the Quality Manual (§5. QMS Workflows).
 
@@ -151,16 +200,33 @@ flowchart TD
 
 ---
 
-## **3. QMS Process Table**
+## **4. QMS Process Summary Tables**
 
-| Process                           | Inputs                                 | Outputs                               | Resources                       | Responsible Roles               |
-| --------------------------------- | -------------------------------------- | ------------------------------------- | ------------------------------- | ------------------------------- |
-| **Operate the QMS**               | Context, risks, audits, feedback       | Updated objectives & actions          | Risk register, audit checklist  | Top Management, Quality Manager |
-| **Create the QMS**                | ISO requirements, organizational needs | Approved QMS framework, SOPs & WIs    | Documentation tools, SME inputs | Quality Manager, SMEs           |
-| **Develop Products (Red Witch)**  | Requirements, quality plans            | Verified releases                     | Design tools, project boards    | Project Manager, Dev Team       |
-| **Document & Record Control**     | Draft docs, templates                  | Approved, version-controlled docs     | GitHub, templates               | Quality Manager                 |
-| **Change Control**                | Change requests, issues                | Approved changes, updated documents   | GitHub, change log              | Project Lead, Quality Manager   |
-| **Leadership / Management**       | Policy inputs, context                 | Objectives, management review outputs | Dashboards, meeting templates   | Top Management                  |
-| **Risk & Opportunity Management** | Context, feedback                      | Updated risk register                 | Risk register tool              | Quality Manager, Process Owners |
-| **Project Management**            | Requirements, resources                | Project deliverables                  | Scheduling tools, boards        | Project Manager                 |
-| **Quality Planning**              | Policy, risks, context                 | Quality plans, objectives             | Planning tools                  | Quality Manager                 |
+### **4.1 QMS Workflows Overview**
+
+| **Workflow**                     | **Inputs**                             | **Outputs**                           | **Resources**                   | **Responsible Roles**           |
+| -------------------------------- | -------------------------------------- | ------------------------------------- | ------------------------------- | ------------------------------- |
+| **Operate the QMS**              | Context, risks, audits, feedback       | Updated objectives & actions          | Risk register, audit checklist  | Top Management, Quality Manager |
+| **Create the QMS**               | ISO requirements, organizational needs | Approved QMS framework, SOPs & WIs    | Documentation tools, SME inputs | Quality Manager, SMEs           |
+| **Develop Products (Red Witch)** | Requirements, quality plans            | Verified and released product outputs | Design tools, project boards    | Project Manager, Dev Team       |
+
+*These three workflows represent the primary operational cycles of the FLEY Quality Management System and define how the system is created, maintained, and applied.*
+
+---
+
+### **4.2 SOP Process Summary**
+
+| **SOP Group**            | **Process / SOP**                     | **Inputs**                                | **Outputs**                                | **Resources**                    | **Responsible Roles**           |
+| ------------------------ | ------------------------------------- | ----------------------------------------- | ------------------------------------------ | -------------------------------- | ------------------------------- |
+| **QMS Infrastructure**   | **Document Control SOP**              | Draft documents, templates                | Approved, version-controlled documents     | GitHub, templates                | Quality Manager                 |
+|                          | **Change Control SOP**                | Change requests, issues                   | Approved changes, updated documentation    | GitHub, change log               | Project Lead, Quality Manager   |
+|                          | **Identification & Traceability SOP** | Work records, component IDs               | Traceable records and configurations       | Tracking tools, GitHub issues    | Quality Manager, Project Team   |
+| **Strategy & Action**    | **Leadership SOP**                    | Policy inputs, context                    | Objectives, quality direction              | Dashboards, meeting templates    | Top Management                  |
+|                          | **Risk & Opportunity Management SOP** | Context, audit feedback, performance data | Updated risk register and mitigation plans | Risk register, assessment tools  | Quality Manager, Process Owners |
+|                          | **Quality Planning SOP**              | Policy, risks, context                    | Quality objectives, quality plans          | Planning tools                   | Quality Manager                 |
+|                          | **Management Review SOP**             | Audit results, performance data, risks    | Management review minutes & action items   | Review templates, reports        | Top Management, Quality Manager |
+| **Controlled Workflows** | **Project Management SOP**            | Requirements, resources                   | Project deliverables, performance records  | Scheduling tools, project boards | Project Manager                 |
+|                          | **Design Control SOP**                | Requirements, specifications              | Verified and validated design outputs      | Design tools, test plans         | Project Manager, Dev Team       |
+
+*This table summarizes the nine SOPs that implement the QMS.
+Each SOP transforms controlled inputs into verified outputs, ensuring consistency, traceability, and continual improvement across all QMS processes.*

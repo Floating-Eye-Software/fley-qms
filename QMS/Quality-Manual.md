@@ -7,7 +7,7 @@
 
 ---
 
-## 1. Purpose
+## **1. Purpose**
 
 This Quality Manual defines the structure, scope, and operation of the Quality Management System (QMS) for **Floating Eye Software (FLEY)**.
 
@@ -21,7 +21,7 @@ The QMS ensures that activities under its scope are **planned, implemented, moni
 
 ---
 
-## 2. Organization Overview
+## **2. Organization Overview**
 
 FLEY is a **sole proprietorship**, founded in 2021 in Toronto, Canada.
 It develops ethical, privacy-first digital tools. Non-QMS activities (NetHack servers, blogs, websites) are **outside the QMS**.
@@ -32,7 +32,7 @@ See [[Context Analysis]] for the full organizational context.
 
 ---
 
-## 3. QMS Scope
+## **3. QMS Scope**
 
 The QMS applies to all **Red Witch–related activities** impacting:
 
@@ -51,11 +51,11 @@ The QMS applies to all **Red Witch–related activities** impacting:
 **Boundaries:**
 
 * Excludes non-Red Witch FLEY activities (NetHack, blogs, etc.)
-* All ISO 9001 clauses apply, including climate considerations where relevant
+* All ISO 9001 clauses apply. No exclusions are claimed.
 
 ---
 
-## 4. Organizational Identity
+## **4. Organizational Identity**
 
 **Purpose**
 
@@ -79,7 +79,7 @@ See also the approved [[Quality Policy]] for FLEY’s top-level commitments.
 
 ---
 
-## 5. QMS Workflows
+## **5. QMS Workflows**
 
 FLEY’s QMS consists of three interrelated workflows:
 
@@ -106,7 +106,7 @@ This relationship is illustrated in the [[Process Map]], where each workflow is 
 
 ---
 
-## 6. Process Approach, PDCA, and Risk-Based Thinking
+## **6. Process Approach, PDCA, and Risk-Based Thinking**
 
 * **Process Approach:** Enables planning and interaction of all QMS processes
 * **PDCA Cycle:**
@@ -117,9 +117,11 @@ This relationship is illustrated in the [[Process Map]], where each workflow is 
   * **Act:** Apply improvements, corrective actions, and updates
 * **Risk-Based Thinking:** Identifies factors that could cause deviations, guiding preventive controls and opportunity capture
 
+QMS Processes and their interactions are defined in [[Process Map]].
+
 ---
 
-## 7. Roles and Responsibilities
+## **7. Roles and Responsibilities**
 
 | Role                           | Key Responsibilities                                    |
 | ------------------------------ | ------------------------------------------------------- |
@@ -133,7 +135,7 @@ Detailed roles are documented in [[Organizational Chart]].
 
 ---
 
-## 8. Risk and Opportunity Management
+## **8. Risk and Opportunity Management**
 
 * Managed via a **GitHub-based Risk Register** covering:
 
@@ -145,7 +147,7 @@ Detailed roles are documented in [[Organizational Chart]].
 
 ---
 
-## 9. Documentation Structure
+## **9. Documentation Structure**
 
 | Level       | Description                                           | Examples                                               |
 | ----------- | ----------------------------------------------------- | ------------------------------------------------------ |
@@ -158,7 +160,7 @@ All documents are controlled per [[Document Control SOP]].
 
 ---
 
-## 10. Management Review and Continual Improvement
+## **10. Management Review and Continual Improvement**
 
 * Conducted annually or following major releases
 * Inputs: Context updates, audit results, KPI performance, user feedback, risk changes, climate considerations
@@ -167,7 +169,7 @@ All documents are controlled per [[Document Control SOP]].
 
 ---
 
-## 11. References
+## **11. References**
 
 * ISO 9001:2015 + Amendment 1:2024 (Climate Action)
 * ISO 9000:2015 – Fundamentals & Vocabulary
@@ -177,17 +179,17 @@ All documents are controlled per [[Document Control SOP]].
 
 ---
 
-## 12. Revision and Control
+## **12. Revision and Control**
 
 * This manual is **controlled** and maintained in the QMS repository.
 * Revisions are approved by the QMS Owner and tracked in the Document Control Register.
 
 ---
 
-### **Appendix A — Workflow Links & Kanban Boards (Placeholders)**
+### **Appendix A — Workflow Links & Kanban Boards**
 
-| Workflow                        | Reference / Link          | Notes                                   |
-| ------------------------------- | ------------------------- | --------------------------------------- |
-| QMS Creation                    | [[Quality Planning SOP]]  | Placeholder for QMS Creation Board      |
-| QMS Operation                   | [[GitHub QMS Operations]] | Placeholder for QMS Operation Board     |
-| Product Development (Red Witch) | [[Design Control SOP]]    | Placeholder for Red Witch Project Board |
+| Workflow                        | Reference / Link          | Kanban Board                                              |
+| ------------------------------- | ------------------------- | --------------------------------------------------------- |
+| QMS Creation                    | [[Quality Planning SOP]]  | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
+| QMS Operation                   | [[GitHub QMS Operations]] | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
+| Product Development (Red Witch) | [[Design Control SOP]]    | [Red Witch](https://github.com/users/mlehotay/projects/4) |
