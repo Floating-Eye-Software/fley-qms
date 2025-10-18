@@ -46,7 +46,18 @@ Applies to all operational QMS activities, including:
 
 ---
 
-## **3. GitHub Components and QMS Roles**
+## **4. Responsibilities and Authorities**
+
+| Role                            | Responsibilities                                                        | Authority / Decision Rights                   |
+| ------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------- |
+| **Quality Manager / QMS Admin** | Maintain the QMS board, monitor issues, and oversee Management Reviews. | Approve closure of QMS issues.                |
+| **Top Management**              | Lead Management Reviews and approve outputs.                            | Final approval of review records and actions. |
+| **Process Owners**              | Manage CAPAs, risks, and objectives in their process areas.             | Close related issues upon completion.         |
+| **Contributors / SMEs**         | Provide data, context, and inputs for reviews and improvements.         | Propose and comment on QMS issues.            |
+
+---
+
+## **5. GitHub Components and QMS Roles**
 
 | GitHub Area                      | QMS Function                                             |
 | -------------------------------- | -------------------------------------------------------- |
@@ -60,7 +71,7 @@ Applies to all operational QMS activities, including:
 
 ---
 
-## **4. FLEY QMS Board Workflow**
+## **6. FLEY QMS Board Workflow**
 
 **Columns:**
 
@@ -77,7 +88,7 @@ Backlog → In Progress → In Test → Closed
 
 ---
 
-## **5. Typical Issue Lifecycles**
+## **7. Typical Issue Lifecycles**
 
 ### 5.1 CAPA (Corrective or Preventive Action)
 
@@ -109,7 +120,7 @@ Backlog → In Progress → In Test → Closed
 
 ---
 
-## **6. Labels and Templates**
+## **8. Labels and Templates**
 
 The following labels are used for operational QMS management:
 
@@ -123,22 +134,38 @@ Each label corresponds to an Issue Template under `.github/ISSUE_TEMPLATE/` to e
 
 ---
 
-## **7. Leadership and Management Review**
+## **9. Leadership and Management Review**
 
 * Quality Policy and Objectives are defined in `/QMS/Quality-Policy.md` and `/QMS/Quality-Manual.md`.
+
 * Management Reviews are initiated quarterly using an issue labeled `Management Review`.
+
 * Each review includes:
 
+  * Status of previous MR actions
   * QMS performance and effectiveness
   * Internal/external issues and interested parties
   * Risks, opportunities, and objectives
   * CAPA status and audit results
   * Continual improvement actions
+  * Customer satisfaction and feedback results
+  * Adequacy of resources
+
 * Minutes and supporting records are stored in `/records/management-reviews/`.
+
+**Outputs and Follow-Up Actions:**
+
+* New or revised **Quality Objectives** are created as GitHub issues labeled `Objective`.
+* Each objective issue includes:
+
+  * A clear measurable target or KPI
+  * Assigned owner and due date
+  * Links to the originating Management Review issue
+* Objectives are tracked on the QMS Project Board and reviewed at the next Management Review.
 
 ---
 
-## **8. Change Control and Documented Information**
+## **10. Change Control and Documented Information**
 
 * All controlled document updates occur through Pull Requests.
 * Each Pull Request must reference its originating `Change Request` issue.
@@ -147,7 +174,7 @@ Each label corresponds to an Issue Template under `.github/ISSUE_TEMPLATE/` to e
 
 ---
 
-## **9. Records and Traceability**
+## **11. Records and Traceability**
 
 * All Issues, Pull Requests, and comments are official QMS records.
 * Closed issues remain permanently accessible in GitHub for audit purposes.
@@ -156,7 +183,7 @@ Each label corresponds to an Issue Template under `.github/ISSUE_TEMPLATE/` to e
 
 ---
 
-## **10. Continual Improvement Cycle**
+## **12. Continual Improvement Cycle**
 
 At least quarterly (or during each Management Review):
 

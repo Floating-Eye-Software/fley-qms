@@ -3,7 +3,7 @@
 **Slug:** GitHub-QMS-Setup  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Related SOP:** Quality-Planning-SOP, Project-Management-SOP   
+**Related SOPs:** Quality-Planning-SOP, Project-Management-SOP   
 **Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Setup  
 
 ---
@@ -48,14 +48,14 @@ This WI applies to all setup and configuration activities required to establish 
 
 ---
 
-## **4. Responsibilities**
+## **4. Responsibilities and Authorities**
 
-| Role                                    | Responsibility                                                                                         |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Top Management**                      | Approves the QMS setup, Quality Manual, and ensures adequate resources.                                |
-| **Quality Manager / QMS Administrator** | Creates repository structure, configures the FLEY QMS board, maintains templates, and manages records. |
-| **Process Owners**                      | Define their processes, interactions, and supply input for the process map.                            |
-| **Contributors / SMEs**                 | Participate in authoring, review, and data collection for context, risks, and interested parties.      |
+| Role                            | Responsibilities                                                                                                   | Authority / Decision Rights                |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
+| **Quality Manager / QMS Admin** | Create repository structure, configure board, define issue templates, and initialize management review recurrence. | Approve initial setup and request changes. |
+| **Top Management**              | Approve the Quality Manual, Policy, and Review Schedule.                                                           | Final approval of QMS readiness.           |
+| **Process Owners**              | Provide process inputs and validate SOP/WI links.                                                                  | Approve their process definitions.         |
+| **Contributors / SMEs**         | Assist in drafting and populating base documents.                                                                  | Suggest edits; no direct approval rights.  |
 
 ---
 
@@ -74,7 +74,7 @@ SOPs/
 WIs/
 Plans/
 Templates/
-records/
+Records/
 ```
 
 The **Wiki** mirrors key documents (manual, SOPs, WIs) for user-friendly navigation.

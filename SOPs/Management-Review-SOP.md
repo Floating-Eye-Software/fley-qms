@@ -1,10 +1,10 @@
 # **SOP – Management Review**
 
-**Slug:** Management-Review-SOP
-**Revision:** r1
-**Effective Date:** [YYYY-MM-DD]
-**Process Owner:** Top Management
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Management-Review-SOP
+**Slug:** Management-Review-SOP  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Process Owner:** Top Management  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Management-Review-SOP  
 
 ---
 
