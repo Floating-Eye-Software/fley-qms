@@ -29,6 +29,7 @@ Non-design projects mark sections “N/A” in the PQP.
   * WI – GitHub–Document–Control
   * WI – GitHub–Version–Control
   * WI – GitHub–QMS–Operations
+  * TPL - Design-Control-Plan-Template
   * ISO 13485:2016 § 7.3 (Design & Development)
   * ISO 9001:2015 §§ 7.5.2–7.5.3 (Documented Information)
   * 21 CFR Part 11 – Electronic Records and Signatures

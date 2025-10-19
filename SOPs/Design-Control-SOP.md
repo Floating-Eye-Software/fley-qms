@@ -27,10 +27,9 @@ Applies to all design, development, and post-release maintenance projects, inclu
 
 Projects may implement a specific framework via a **Design Control Work Instruction (WI)** such as:
 
-* WI-QMS-09-01 – Standard SDLC
-* WI-QMS-09-02 – Ontario Design Framework
-* WI-QMS-09-03 – Agile Design Model
-* WI-QMS-09-04 – FLEY Design Framework
+* FLEY-Design-Control-WI – FLEY Design Framework
+* Ontario-Service-Design-WI – Ontario Design Framework
+* TDB - Agile Design Model
 
 ---
 
@@ -38,10 +37,9 @@ Projects may implement a specific framework via a **Design Control Work Instruct
 
 * ISO 13485:2016 § 7.3
 * SOP – Identification and Traceability
-
-* **Templates:**
-  * *Design Control Plan (DCP)*
-  * *Project Quality Plan (PQP)*
+* WI - FLEY-Design-Control-WI
+* TPL - Design-Control-Plan-Template
+* TPL - DCP-Template-Ontario-DSS
 
 ---
 
@@ -75,7 +73,7 @@ None
    * Deliverables checklist (design outputs).
    * Risk and opportunity integration.
    * Verification, validation, and transfer criteria.
-2. The DCP may be integrated into the **Project Plan** or **Project Quality Plan (PQP)**.
+2. The DCP may be integrated into the **Project Quality Plan (PQP)**.
 3. The DCP shall be reviewed and approved prior to initiating design activities.
 
 ---
@@ -159,7 +157,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ### **6.7 Design Risk Management**
 
-* All design risks must be identified and managed in accordance with **QMS-SOP-08 Risk and Opportunity Management**.
+* All design risks must be identified and managed in accordance with **Risk and Opportunity Management SOP**.
 * Each design risk shall have traceability to:
 
   * A design input (source of risk).
@@ -171,7 +169,7 @@ Outputs are reviewed and approved before release to the next phase.
 
 ### **6.8 Design and Development Changes**
 
-* Proposed changes to the design shall follow the **Change Control SOP (QMS-SOP-02)**.
+* Proposed changes to the design shall follow the **Change Control SOP**.
 * Assess the impact on requirements, verification, validation, and regulatory compliance.
 * Document approvals and maintain version control in the design repository.
 
@@ -182,13 +180,13 @@ Outputs are reviewed and approved before release to the next phase.
 * Confirm all deliverables in the **Design Control Plan** are complete and accepted.
 * Establish training, documentation, and configuration baselines prior to release.
 * Archive all design documentation in the Design History File (DHF) per retention schedule.
-* Transition to **Post-Release Maintenance** activities (see § 5.10).
+* Transition to **Post-Release Maintenance** activities (see § 6.10).
 
 ---
 
 ### **6.10 Post-Release Maintenance and Retirement**
 
-* Maintenance activities (bug fixes, patches, feature updates) are planned and executed under this SOP as **Design Changes** per § 5.8.
+* Maintenance activities (bug fixes, patches, feature updates) are planned and executed under this SOP as **Design Changes** per § 6.8.
 * Inputs include: post-market feedback, complaints, CAPA outputs, and vulnerability reports.
 * Each maintenance release shall include:
 
@@ -199,7 +197,7 @@ Outputs are reviewed and approved before release to the next phase.
 * **Retirement / Decommissioning:**
 
   * Planned, approved, and documented activity.
-  * Ensure customer notification, data migration, and record retention per **QMS-SOP-05**.
+  * Ensure customer notification, data migration, and record retention per **Document Control SOP**.
   * Archive the final configuration baseline and mark the product as inactive.
 
 ---

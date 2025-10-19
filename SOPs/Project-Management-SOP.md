@@ -30,12 +30,8 @@ Applies to all projects within the organization, including:
 
 * SOP – Quality Planning
 * WI – GitHub–Project–Management
-
-* **Templates:**
-
-  * *Project Quality Plan (PQP)*
-  * *Project Plan Template*
-  * *Design Control Plan (if applicable)*
+* TPL - Project-Quality-Plan-Template
+* TPL - Design-Control-Plan-Template
 
 ---
 
@@ -62,10 +58,8 @@ None
 
 1. Define project purpose, objectives, scope, and deliverables.
 2. Assign a Project Manager and core team.
-3. Conduct an initial **risk and opportunity assessment** per QMS-SOP-08.
+3. Conduct an initial **risk and opportunity assessment** per Risk-and-Opportunity-Management-SOP.
 4. Determine applicable QMS SOPs and required planning templates:
-
-   * **Project Plan Template** (baseline schedule, milestones, communication).
    * **Project Quality Plan (PQP)** (quality, risk, and compliance structure).
    * **Design Control Plan (DCP)** (if design/development project).
 5. Obtain top management approval before proceeding.
@@ -82,7 +76,7 @@ None
 2. Complete the **Project Quality Plan (PQP)**:
 
    * Quality objectives, risk management, training, configuration, and verification.
-   * Reference to **QMS-SOP-08** for risk control.
+   * Reference to **Risk and Opportunity Management SOP** for risk control.
    * Identify deliverables per project type (Full / Mini).
 3. For design projects, integrate or attach the **Design Control Plan (DCP)**.
 
@@ -93,7 +87,7 @@ None
 1. Track task completion, risks, and deliverables in the project tracking tool.
 2. Hold **regular review meetings** (weekly, biweekly, or at stage gates).
 3. Update risk status and link to mitigation actions in the register.
-4. Record design or process changes using **QMS-SOP-02 Change Control**.
+4. Record design or process changes using **Change Control SOP**.
 5. Ensure QMS records (plans, reviews, test results) are current and auditable.
 
 ---
@@ -123,14 +117,13 @@ None
 
 ## **7. Integration with the QMS**
 
-| SOP / Template                    | Purpose                                         |
-| --------------------------------- | ----------------------------------------------- |
-| QMS-SOP-06 — Quality Planning     | Risk, opportunity, and objective linkage        |
-| QMS-SOP-08 — Risk & Opportunity   | Method for risk identification and control      |
-| QMS-SOP-09 — Design & Development | Framework for controlled design projects        |
-| Project Quality Plan (PQP)        | Defines project-specific quality framework      |
-| Design Control Plan (DCP)         | Defines design-specific deliverables            |
-| Project Plan Template             | Defines schedule, milestones, and communication |
+| SOP / Template                      | Purpose                                         |
+| ----------------------------------- | ----------------------------------------------- |
+| Quality-Planning-SOP                | Risk, opportunity, and objective linkage        |
+| Risk-and-Opportunity-Management-SOP | Method for risk identification and control      |
+| Design-Control-SOP                  | Framework for controlled design projects        |
+| Project Quality Plan (PQP)          | Defines project-specific quality framework      |
+| Design Control Plan (DCP)           | Defines design-specific deliverables            |
 
 ---
 
@@ -138,8 +131,8 @@ None
 
 | Record                     | Retention | Location                   |
 | -------------------------- | --------- | -------------------------- |
-| Project Plan               | 10 years  | Project repository         |
 | Project Quality Plan (PQP) | 10 years  | QMS repository             |
+| Design Control Plan (DCP)  | 10 years  | Project repository         |
 | Risk Register Entries      | 10 years  | Risk Register              |
 | Review Minutes             | 10 years  | QMS / Project repo         |
 | Lessons Learned            | 5 years   | Continuous improvement log |

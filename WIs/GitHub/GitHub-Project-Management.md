@@ -24,6 +24,7 @@ This WI applies to all projects managed in GitHub under the organization’s QMS
 
 * SOP – Project Management
 * WI – GitHub–QMS–Operations
+* TPL - Project-Quality-Plan-Template
 * GitHub Documentation: [https://docs.github.com](https://docs.github.com)
 
 ---

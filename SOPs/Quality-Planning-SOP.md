@@ -24,6 +24,7 @@ Applies to all planning activities related to the QMS, including risk and opport
 
 * ISO 9001:2015 § 6.3
 * SOP – Risk and Opportunity Management
+* TPL - Quality-Plan-Template
 
 ---
 

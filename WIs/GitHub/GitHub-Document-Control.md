@@ -26,6 +26,9 @@ This WI describes *how* to perform document control in GitHub — the SOP define
 
 * SOP – Document Control
 * WI – GitHub–QMS–Setup
+* TPL - Standard-Operating-Procedure-Template
+* TPL - Work-Instruction-Template
+* TPL - Header-Template
 * ISO 9001:2015 §§ 7.5.2–7.5.3
 * 21 CFR Part 11
 

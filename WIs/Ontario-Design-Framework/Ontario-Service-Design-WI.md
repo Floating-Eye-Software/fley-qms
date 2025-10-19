@@ -28,6 +28,7 @@ Applies to all projects adopting the Ontario Service Design Framework, including
   * WI – GitHub–Document–Control
   * WI – GitHub–Version–Control
   * WI – GitHub–QMS–Operations
+  * TPL - DCP-Template-Ontario-DSS
   * ISO 13485:2016 § 7.3 (Design & Development)
   * ISO 9001:2015 §§ 6.1, 7.5.2–7.5.3 (Risk & Documented Information)
   * 21 CFR Part 11 – Electronic Records and Signatures

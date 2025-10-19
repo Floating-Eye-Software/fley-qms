@@ -32,6 +32,9 @@ This SOP applies to **all documented information** within the QMS, including:
 * ISO 13485:2016 §§ 4.2.4–4.2.5
 * 21 CFR Part 11 – Electronic Records and Signatures
 * WI – GitHub–Document–Control
+* TPL - Standard-Operating-Procedure-Template
+* TPL - Work-Instruction-Template
+* TPL - Header-Template
 
 ---
 
