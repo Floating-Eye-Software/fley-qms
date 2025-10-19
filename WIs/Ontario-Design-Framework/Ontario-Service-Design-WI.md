@@ -10,13 +10,13 @@
 
 ## **1. Purpose**
 
-To define how the Ontario Service Design Framework (Digital Service Standard, Service Design Playbook) is implemented to satisfy the organization’s Design Control SOP (SOP-DC-001). This WI ensures traceability, verification, validation, and controlled records for projects following the Ontario design and release methodology.
+To define how the Ontario Service Design Framework (Digital Service Standard, Service Design Playbook) is implemented to satisfy the organization’s Design Control SOP. This WI ensures traceability, verification, validation, and controlled records for projects following the Ontario design and release methodology.
 
 ---
 
 ## **2. Scope**
 
-Applies to all projects adopting the Ontario Service Design Framework, including digital services, software development, and health software projects. This WI maps the **DSS phases** (Discovery, Alpha, Beta, Live) to **design control requirements** in SOP-DC-001.
+Applies to all projects adopting the Ontario Service Design Framework, including digital services, software development, and health software projects. This WI maps the **DSS phases** (Discovery, Alpha, Beta, Live) to **design control requirements** in Design-Control-SOP.
 
 ---
 
@@ -39,7 +39,7 @@ Applies to all projects adopting the Ontario Service Design Framework, including
 
 | Role                                       | Responsibilities                                                                                                                                                         |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Design Owner / Product Manager**         | Leads the Ontario DSS implementation, ensures compliance with SOP-DC-001, approves deliverables, oversees user research, prototypes, MVP, and live service improvements. |
+| **Design Owner / Product Manager**         | Leads the Ontario DSS implementation, ensures compliance with Design-Control-SOP, approves deliverables, oversees user research, prototypes, MVP, and live service improvements. |
 | **QA / Compliance Lead**                   | Ensures DSS activities meet design control, ISO 9001, and regulatory standards. Reviews evidence and traceability.                                                       |
 | **Management**                             | Reviews and approves outputs at key DSS phase checkpoints. Ensures resources and governance oversight.                                                                   |
 | **Team Members / Multi-disciplinary Team** | Execute discovery, alpha, beta, and live activities. Conduct usability testing, prototype development, and documentation.                                                |
@@ -73,7 +73,7 @@ Applies to all projects adopting the Ontario Service Design Framework, including
 ## **7. Design Change Management**
 
 1. Document all changes during any DSS phase (Discovery → Live) in the project tracking tool or controlled record repository.
-2. Review changes by Design Owner and QA for compliance with SOP-DC-001 and DSS principles.
+2. Review changes by Design Owner and QA for compliance with Design-Control-SOP and DSS principles.
 3. Approve changes prior to implementation.
 4. Update related deliverables, prototypes, MVP, or live service components.
 
@@ -89,7 +89,7 @@ Applies to all projects adopting the Ontario Service Design Framework, including
 
 ## **9. Records**
 
-Acceptable records for compliance with SOP-DC-001 include:
+Acceptable records for compliance with Design-Control-SOP include:
 
 * Discovery reports, personas, feasibility studies
 * Alpha prototypes, usability testing reports, journey maps

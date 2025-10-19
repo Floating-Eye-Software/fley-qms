@@ -10,7 +10,7 @@
 
 ## **1 Purpose**
 
-To define the **Floating Eye Software (FLEY)** design, development, maintenance, and retirement framework ensuring traceable, verified, and validated lifecycle control compliant with QMS-SOP-09 v 3.0.
+To define the **Floating Eye Software (FLEY)** design, development, maintenance, and retirement framework ensuring traceable, verified, and validated lifecycle control compliant with Design-Control-SOP.
 
 ---
 
