@@ -161,12 +161,12 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 
 ### **6. Integration with the QMS**
 
-| Related SOP                     | Integration                                            |
-| ------------------------------- | ------------------------------------------------------ |
-| **QMS-SOP-05 Leadership**       | Management reviews and strategic oversight.            |
-| **QMS-SOP-06 Planning**         | Risk and opportunity management, objectives alignment. |
-| **QMS-SOP-02 Change Control**   | PR-based control of changes.                           |
-| **QMS-SOP-01 Document Control** | Storage and versioning of project records in Git.      |
+| Related SOP              | Integration                                            |
+| ------------------------ | ------------------------------------------------------ |
+| **Leadership SOP**       | Management reviews and strategic oversight.            |
+| **Quality Planning SOP** | Risk and opportunity management, objectives alignment. |
+| **Change Control SOP**   | PR-based control of changes.                           |
+| **Document Control SOP** | Storage and versioning of project records in Git.      |
 
 ---
 

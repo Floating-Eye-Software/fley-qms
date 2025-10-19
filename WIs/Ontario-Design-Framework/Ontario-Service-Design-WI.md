@@ -119,7 +119,7 @@ Traceability between DSS phases, Red Witch deliverables, and applicable standard
 
 ### **11. Notes**
 
-* WI-DC-002 is **modular** and can be used as a drop-in work instruction instead of WI-DC-001 for projects adopting the Ontario DSS.
-* All DSS deliverables satisfy SOP-DC-001 requirements for design control: inputs, outputs, verification, validation, change control, and records.
+* Ontario-Service-Design-WI is **modular** and can be used as a drop-in work instruction instead of FLEY-Design-Control-WI for projects adopting the Ontario DSS.
+* All DSS deliverables satisfy Design-Control-SOP requirements for design control: inputs, outputs, verification, validation, change control, and records.
 * Traceability of design decisions and approvals is mandatory.
 * Risk management, usability, accessibility, security, privacy, and governance activities are integral to every DSS phase.

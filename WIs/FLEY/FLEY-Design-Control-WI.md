@@ -138,7 +138,7 @@ Non-design projects mark sections “N/A” in the PQP.
 * **Retirement:**
   – Plan decommissioning, obtain approval.
   – Ensure customer notification and data archival.
-  – Retain records per QMS-SOP-05.
+  – Retain records per Document-Control-SOP.
 
 ---
 
@@ -147,7 +147,7 @@ Non-design projects mark sections “N/A” in the PQP.
 * Identify risks at each SDLC phase in the **Risk Register**.
 * Assign mitigation actions and track closure.
 * Review key risks during design, verification, validation, and release phases.
-* Apply ISO 14971, IEC 62304, and QMS-SOP-08 principles.
+* Apply ISO 14971, IEC 62304, and Risk-and-Opportunity-Management-SOP principles.
 
 ---
 
@@ -213,8 +213,8 @@ Non-design projects mark sections “N/A” in the PQP.
 | Risk Register          | Central QMS repo    | 10 yrs                     |
 | V&V Records            | Test system         | 10 yrs                     |
 | Release Records        | QMS repo            | Permanent                  |
-| **Maintenance Logs**   | Maintenance folder  | 10 yrs after final release |
-| **Retirement Records** | QMS repo            | Permanent                  |
+| Maintenance Logs       | Maintenance folder  | 10 yrs after final release |
+| Retirement Records     | QMS repo            | Permanent                  |
 
 ---
 
