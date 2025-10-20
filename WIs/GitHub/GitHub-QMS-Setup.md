@@ -3,14 +3,14 @@
 **Slug:** GitHub-QMS-Setup  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Document-Control-SOP, Change-Control-SOP  
+**Related SOPs:** Document-Control-SOP, Change-Control-SOP, Identification-and-Traceability-SOP  
 **Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Setup  
 
 ---
 
 ## **1. Purpose**
 
-To define the method for **establishing the FLEY Quality Management System (QMS)** in GitHub using a **single Kanban board** named **“FLEY QMS”** within the `redwitch.wiki` repository.
+To define the method for **establishing the FLEY Quality Management System (QMS)** in GitHub using a **single Kanban board** named **“FLEY QMS”** within the `redwitch` repository.
 
 This work instruction ensures that:
 
@@ -103,9 +103,6 @@ The following labels are used to organize and track QMS setup and operations:
 | ----------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Setup Phase**         | `Setup`                                                                                                   | Used for all activities related to establishing or configuring the QMS (e.g., creating documents, setting up repositories, defining workflows). |
 | **QMS Operations**      | `Audit`, `CAPA`, `Change Request`, `Improvement`, `Management Review`, `Objective`, `Opportunity`, `Risk` | Used for active QMS management once the system is operational. These correspond to key ISO 9001 records and processes.                          |
-| **Planning (Optional)** | `Plan`                                                                                                    | *(Optional)* – used only if specific planning documents or initiatives are tracked separately.                                                  |
-
-> **Note:** During initial implementation, all issues related to setup activities are labeled only `Setup`. Operational labels are applied once the QMS transitions into steady-state use.
 
 Each issue type has a **GitHub Issue Template** in `.github/ISSUE_TEMPLATE/` for consistent metadata.
 

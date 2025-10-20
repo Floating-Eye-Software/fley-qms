@@ -192,15 +192,15 @@ Non-design projects mark sections “N/A” in the PQP.
 
 ## **10 Deliverables Checklist by Phase**
 
-| Phase                              | Deliverable                                           | Description                          | Responsible            | Status |
-| ---------------------------------- | ----------------------------------------------------- | ------------------------------------ | ---------------------- | ------ |
-| Planning                           | DCP / Schedule / Risk Register                        | Project planning artifacts           | PM / QA                | ☐ / ☑  |
-| Requirements                       | SRS / Acceptance Criteria / Risk Analysis             | Define user and regulatory needs     | Design Lead            | ☐ / ☑  |
-| Design & Implementation            | Architecture / Design Docs / Code / Test Plan         | Design outputs                       | Design Lead / Dev      | ☐ / ☑  |
-| Verification                       | Test Reports / Peer Reviews                           | Confirm outputs meet inputs          | QA / V&V               | ☐ / ☑  |
-| Validation                         | Validation Plan / Report                              | Confirm intended use                 | PM / QA / Stakeholders | ☐ / ☑  |
-| Release                            | Release Package / Training / Post-Release Risk Review | Ready for deployment                 | PM / QA                | ☐ / ☑  |
-| Maintenance & Retirement           | Maintenance Plan / Maintenance Log / Retirement Plan  | Post-release control and EOL records | Maintenance Lead / QA  | ☐ / ☑  |
+| Phase                              | Deliverable                                           | Description                          | Responsible            |
+| ---------------------------------- | ----------------------------------------------------- | ------------------------------------ | ---------------------- |
+| Planning                           | DCP / Schedule / Risk Register                        | Project planning artifacts           | PM / QA                |
+| Requirements                       | SRS / Acceptance Criteria / Risk Analysis             | Define user and regulatory needs     | Design Lead            |
+| Design & Implementation            | Architecture / Design Docs / Code / Test Plan         | Design outputs                       | Design Lead / Dev      |
+| Verification                       | Test Reports / Peer Reviews                           | Confirm outputs meet inputs          | QA / V&V               |
+| Validation                         | Validation Plan / Report                              | Confirm intended use                 | PM / QA / Stakeholders |
+| Release                            | Release Package / Training / Post-Release Risk Review | Ready for deployment                 | PM / QA                |
+| Maintenance & Retirement           | Maintenance Plan / Maintenance Log / Retirement Plan  | Post-release control and EOL records | Maintenance Lead / QA  |
 
 ---
 

@@ -10,7 +10,7 @@
 
 ## **1. Purpose**
 
-To define how the organization operates and maintains its Quality Management System (QMS) in GitHub using a single integrated Kanban board (**FLEY QMS**) within the `redwitch.wiki` repository.
+To define how the organization operates and maintains its Quality Management System (QMS) in GitHub using a single integrated Kanban board (**FLEY QMS**) within the `redwitch` repository.
 
 This instruction ensures that:
 
@@ -96,33 +96,66 @@ Backlog → In Progress → In Test → Closed
 
 ## **7. Typical Issue Lifecycles**
 
-### 5.1 CAPA (Corrective or Preventive Action)
+Each controlled Issue type follows a consistent four-stage lifecycle: **Backlog → In Progress → In Test → Closed**.
+Labels and templates ensure consistent tracking across all repositories.
+
+---
+
+### **7.1 Change Request (CR)**
+
+Used to propose, review, and implement controlled changes to QMS documents, configurations, or systems.
+
+1. **Backlog:** Change identified and Issue created (via `Change Request` template).
+2. **In Progress:** Pull Request (PR) opened, referencing this Issue.
+3. **In Test:** Changes verified for effectiveness
+4. **Closed:** PR merged, tag created, and records verified.
+
+---
+
+### **7.2 Improvement**
+
+Used to propose enhancements that are not corrective actions but support continual improvement of the QMS or processes.
+
+1. **Backlog:** Improvement idea or opportunity identified.
+2. **In Progress:** Analysis or implementation underway.
+3. **In Test:** Results or data collected to verify benefit or impact.
+4. **Closed:** Improvement implemented successfully or deemed not beneficial.
+
+---
+
+### **7.3 CAPA (Corrective or Preventive Action)**
 
 1. **Backlog:** Nonconformance or issue recorded.
-2. **In Progress:** Root cause and actions defined and implemented.
+2. **In Progress:** Root cause and corrective/preventive actions defined and implemented.
 3. **In Test:** Effectiveness verified.
-4. **Closed:** Action confirmed effective; evidence attached.
+4. **Closed:** Actions confirmed effective; evidence attached.
 
-### 5.2 Risk or Opportunity
+---
+
+### **7.4 Risk or Opportunity**
 
 1. **Backlog:** Risk or opportunity identified.
-2. **In Progress:** Evaluation, mitigation, or implementation.
+2. **In Progress:** Evaluation, mitigation, or implementation underway.
 3. **In Test:** Results monitored.
 4. **Closed:** Effectiveness confirmed or residual risk accepted.
 
-### 5.3 Objective
+---
+
+### **7.5 Objective**
 
 1. **Backlog:** New objective proposed.
 2. **In Progress:** Target and plan defined; implementation underway.
 3. **In Test:** Results under review.
 4. **Closed:** Objective achieved or concluded with justification.
 
-### 5.4 Audit or Management Review
+---
+
+### **7.6 Audit or Management Review**
 
 1. **Backlog:** Audit or review scheduled.
-2. **In Progress:** Conducted; data and evidence gathered.
-3. **In Test:** Findings analyzed, actions assigned.
-4. **Closed:** Records and conclusions approved and filed.
+2. **In Progress:** Audit conducted or review in progress; data gathered.
+3. **In Test:** Findings analyzed; actions assigned.
+4. **Closed:** Records approved and filed; follow-up actions tracked if applicable.
 
 ---
 
@@ -132,9 +165,8 @@ The following labels are used for operational QMS management:
 
 | Category                 | Labels                                                                                                    | Description                                                                |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| **Operational Records**  | `Audit`, `CAPA`, `Change Request`, `Improvement`, `Management Review`, `Objective`, `Opportunity`, `Risk` | Used for all ongoing QMS activities and ISO 9001 records.                  |
-| **Setup Phase (legacy)** | `Setup`                                                                                                   | Used only for issues created during the initial establishment of the QMS.  |
-| **Planning (optional)**  | `Plan`                                                                                                    | *(Optional)* Used if specific plans or initiatives are tracked separately. |
+| **Operational Records**  | `Audit`, `CAPA`, `Change Request`, `Improvement`, `Management Review`, `Objective`, `Opportunity`, `Risk` | Used for all active QMS records and ongoing improvement activities.        |
+| **Setup Phase (legacy)** | `Setup`                                                                                                   | Used only for records created during the initial establishment of the QMS. |
 
 Each label corresponds to an Issue Template under `.github/ISSUE_TEMPLATE/` to ensure metadata consistency.
 
@@ -185,7 +217,7 @@ Each label corresponds to an Issue Template under `.github/ISSUE_TEMPLATE/` to e
 * All Issues, Pull Requests, and comments are official QMS records.
 * Closed issues remain permanently accessible in GitHub for audit purposes.
 * Files under `/QMS/`, `/SOPs/`, `/WIs/`, and `/records/` constitute documented information.
-* Manual exports per WI-QMS-10-02 ensure offline backup and long-term retention.
+* Manual exports per GitHub-QMS-Setup ensure offline backup and long-term retention.
 
 ---
 

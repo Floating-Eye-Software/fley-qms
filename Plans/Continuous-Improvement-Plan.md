@@ -49,7 +49,7 @@
 * Annual ISO 9004 self-assessment.
 * Annual GDPR compliance audit.
 * Quarterly CAPA review meetings with project leads.
-* Periodic audit of design control compliance (WI-QMS-09-04) in active projects.
+* Periodic audit of design control compliance (Design-Control-SOP) in active projects.
 
 ---
 
@@ -89,4 +89,4 @@
 
 * Audit results feed into SOP updates, process refinements, and system enhancements.
 * Year-over-year benchmarking of QMS maturity scores.
-* Lessons learned from CAPA and audits integrated into WI-QMS-09-04 and DCP improvements.
+* Lessons learned from CAPA and audits integrated into Design-Control-SOP and DCP improvements.

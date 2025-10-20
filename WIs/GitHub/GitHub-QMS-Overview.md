@@ -9,7 +9,7 @@
 
 ## 1  Purpose
 
-*Version 0.1 – Draft for Milestone 1 (QMS Foundations)*
+*Draft for Milestone 1 (QMS Foundations)*
 
 The Red Witch Quality Management System (QMS) establishes a lightweight, fully traceable, and continuously improving framework for managing software quality and compliance using **GitHub as the system of record**.
 
@@ -52,7 +52,7 @@ This “Base System” defines the minimum viable configuration required to:
 
 | Function                   | Mechanism                                      | Reference                                     |
 | -------------------------- | ---------------------------------------------- | --------------------------------------------- |
-| **Document Control**       | Git history + PR review under Change Control   | `SOPs/Change-Control-SOP.md`                  |
+| **Document Control**       | Git history + PR review under Change Control   | `WIs/GitHub/GitHub-Document-Control.md`                  |
 | **Version Control**        | Git branching model                            | `WIs/GitHub/GitHub-Version-Control.md`        |
 | **Change Requests**        | GitHub Issues + Pull Requests                  | `WIs/GitHub/GitHub-Change-Control.md`         |
 | **Continuous Improvement** | CONTRIBUTING.md workflow + To-do tracking      | `WIs/GitHub/GitHub-Continuous-Improvement.md` |

@@ -26,7 +26,7 @@
 
 ## **3. Quality Processes**
 
-* *[Design & development controls per QMS-SOP-09]*
+* *[Design & development controls per Design-Control-SOP]*
 * *[Regulatory compliance activities]*
 * *[Feedback & complaints handling]*
 

@@ -32,8 +32,8 @@ Applies to any project adopting the **Ontario DSS framework**, including digital
 
 ## **3. References**
 
-* SOP-DC-001 — Design and Development Control
-* WI-DC-002 — Ontario DSS Implementation
+* Design-Control-SOP
+* Ontario-Service-Design-WI - Ontario DSS Implementation
 * Ontario Digital Service Standard (DSS)
 * Service Design Playbook
 * ISO 9001:2015, ISO 90003, ISO 13485 (if applicable)
@@ -141,7 +141,7 @@ Applies to any project adopting the **Ontario DSS framework**, including digital
 
 * Maintain a **Risk Log** for all phases.
 * Identify, assess, and mitigate design, operational, and regulatory risks.
-* Apply ISO 14971, IEC 62304, and SOP-DC-001 principles.
+* Apply ISO 14971, IEC 62304, and Risk-and-Opportunity-Management-SOP principles.
 * Review risks at each phase and at project closure.
 
 ---
@@ -165,7 +165,7 @@ Applies to any project adopting the **Ontario DSS framework**, including digital
 
 ## **10. Deliverables Checklist (Generic, DSS-Aligned)**
 
-| DSS Phase     | Deliverable                         | SOP Clause | DSS Principle / Objective            | Applicable Standards / Regulations         | Completed (✓) | Reference / Record |
+| DSS Phase     | Deliverable                         | SOP Clause | DSS Principle / Objective            | Applicable Standards / Regulations         | Status        | Reference / Record |
 | ------------- | ----------------------------------- | ---------- | ------------------------------------ | ------------------------------------------ | ------------- | ------------------ |
 | **Discovery** | User research report                | 6.2        | Data-informed, prioritize user needs | ISO 9001:2015, ISO 90003, ISO/IEC 27001    |               |                    |
 |               | Personas & primary user groups      | 6.2, 6.3   | Equitable access, user-centered      | ISO 9001:2015, IEC 62366                   |               |                    |

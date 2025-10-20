@@ -11,6 +11,7 @@
 ## **1. Purpose**
 
 To define the standardized use of Git and GitHub for maintaining identification, version control, and traceability of all controlled QMS documents and records.
+
 This WI implements the requirements of the SOPs through specific Git and GitHub actions.
 
 ---
@@ -118,7 +119,7 @@ git for-each-ref --format="%(refname:short)  %(taggerdate:iso)" refs/tags
 
 Each tag is:
 
-* Named to match the document and revision (e.g., `SOP-006_r2`)
+* Named to match the document and revision (e.g., `Change-Control-SOP_r2`)
 * Created only after PR approval and merge
 * Immutable once pushed
 
@@ -131,7 +132,7 @@ Each tag is:
 To view or restore a specific approved revision:
 
 ```bash
-git checkout tags/SOP-006_r2
+git checkout tags/Change-Control-SOP_r2
 ```
 
 This provides the exact approved content for audit, review, or controlled reproduction.
@@ -145,7 +146,7 @@ This provides the exact approved content for audit, review, or controlled reprod
 To view tag metadata:
 
 ```bash
-git show SOP-006_r2
+git show Change-Control-SOP_r2
 ```
 
 Displays:

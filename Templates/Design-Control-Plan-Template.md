@@ -30,15 +30,15 @@ If this project does **not** include design or development (e.g., purely operati
 
 ## **3. References**
 
-| Reference            | Document No.                    | Title                                                    |
-| -------------------- | ------------------------------- | -------------------------------------------------------- |
-| QMS-SOP-09           | Design and Development Control  | Defines FLEY’s standard design control process           |
-| QMS-SOP-07           | Project Management              | Defines project planning, monitoring, and closure        |
-| QMS-SOP-08           | Risk and Opportunity Management | Defines risk identification and control                  |
-| QMS-SOP-02           | Change Control                  | Defines change evaluation and approval                   |
-| Project Quality Plan | [Link]                          | Project-specific quality management plan                 |
-| Risk Register        | [Link]                          | Risk log and mitigation actions                          |
-| Design Trace Matrix  | [Link]                          | Requirement → Design → Verification → Validation mapping |
+| Document                            | Description                                              |
+| ----------------------------------- | -------------------------------------------------------- |
+| Design Control SOP                  | Defines FLEY’s standard design control process           |
+| Project Management SOP              | Defines project planning, monitoring, and closure        |
+| Risk and Opportunity Management SOP | Defines risk identification and control                  |
+| Change Control SOP                  | Defines change evaluation and approval                   |
+| [Project Quality Plan]              | Project-specific quality management plan                 |
+| [Risk Register]                     | Risk log and mitigation actions                          |
+| [Design Trace Matrix]               | Requirement → Design → Verification → Validation mapping |
 
 ---
 
@@ -83,7 +83,7 @@ If this project does **not** include design or development (e.g., purely operati
 
 ## **7. Risk and Opportunity Management**
 
-* Risks shall be identified and tracked per **QMS-SOP-08**.
+* Risks shall be identified and tracked per **Risk-and-Opportunity-Management-SOP**.
 * Use the project’s **Risk Register** or linked Issues in GitHub/Confluence.
 * Key risks should include:
 
@@ -101,10 +101,10 @@ If this project does **not** include design or development (e.g., purely operati
 
 All design outputs must be traceable to their corresponding inputs, verification, and validation evidence.
 
-| Requirement ID | Design Output(s)         | Verification Evidence  | Validation Evidence              | Status        |
-| -------------- | ------------------------ | ---------------------- | -------------------------------- | ------------- |
-| REQ-001        | [Design Spec / Code Ref] | [Unit Test # / Report] | [User Test / Validation Summary] | ✅ Complete    |
-| REQ-002        | ...                      | ...                    | ...                              | ⏳ In Progress |
+| Requirement ID | Design Output(s)         | Verification Evidence  | Validation Evidence              | Status      |
+| -------------- | ------------------------ | ---------------------- | -------------------------------- | ----------- |
+| REQ-001        | [Design Spec / Code Ref] | [Unit Test # / Report] | [User Test / Validation Summary] | Complete    |
+| REQ-002        | ...                      | ...                    | ...                              | In Progress |
 
 (Attach or link to a complete traceability matrix where appropriate.)
 
@@ -146,11 +146,11 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 | Deliverable                   | Description                                            | Responsible     | Status | Reference / Link |
 | ----------------------------- | ------------------------------------------------------ | --------------- | ------ | ---------------- |
-| Design Control Plan (DCP)     | Defines framework, stages, and reviews for the project | Project Manager | ☐ / ☑  |                  |
-| Project Quality Plan (PQP)    | Defines quality and compliance requirements            | Quality Manager | ☐ / ☑  |                  |
-| Project Plan / Schedule       | Defines tasks, milestones, and dependencies            | Project Manager | ☐ / ☑  |                  |
-| Risk & Opportunity Register   | Project-level risks, updated throughout design         | Risk Owner / QA | ☐ / ☑  |                  |
-| Configuration Management Plan | Defines versioning and change control tools            | Design Lead     | ☐ / ☑  |                  |
+| Design Control Plan (DCP)     | Defines framework, stages, and reviews for the project | Project Manager |        |                  |
+| Project Quality Plan (PQP)    | Defines quality and compliance requirements            | Quality Manager |        |                  |
+| Project Plan / Schedule       | Defines tasks, milestones, and dependencies            | Project Manager |        |                  |
+| Risk & Opportunity Register   | Project-level risks, updated throughout design         | Risk Owner / QA |        |                  |
+| Configuration Management Plan | Defines versioning and change control tools            | Design Lead     |        |                  |
 
 ---
 
@@ -158,10 +158,10 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 | Deliverable                             | Description                                                 | Responsible          | Status | Reference / Link |
 | --------------------------------------- | ----------------------------------------------------------- | -------------------- | ------ | ---------------- |
-| User Needs / Intended Use               | Problem statement, user stories, or stakeholder needs       | Project Manager      | ☐ / ☑  |                  |
-| System Requirements Specification (SRS) | Functional and non-functional requirements                  | Design Lead          | ☐ / ☑  |                  |
-| Regulatory / Compliance Requirements    | Applicable standards, laws, or regulatory clauses           | Quality / Regulatory | ☐ / ☑  |                  |
-| Risk Analysis (Initial)                 | Design risk assessment — hazard identification and controls | QA / Risk Lead       | ☐ / ☑  |                  |
+| User Needs / Intended Use               | Problem statement, user stories, or stakeholder needs       | Project Manager      |        |                  |
+| System Requirements Specification (SRS) | Functional and non-functional requirements                  | Design Lead          |        |                  |
+| Regulatory / Compliance Requirements    | Applicable standards, laws, or regulatory clauses           | Quality / Regulatory |        |                  |
+| Risk Analysis (Initial)                 | Design risk assessment — hazard identification and controls | QA / Risk Lead       |        |                  |
 
 ---
 
@@ -169,11 +169,11 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 | Deliverable                                | Description                                        | Responsible            | Status | Reference / Link |
 | ------------------------------------------ | -------------------------------------------------- | ---------------------- | ------ | ---------------- |
-| System Architecture / Design Specification | High-level design and interfaces                   | Design Lead            | ☐ / ☑  |                  |
-| Detailed Design Documents                  | Component or module-level design                   | Developers / Engineers | ☐ / ☑  |                  |
-| Source Code / Implementation Artifacts     | Executable design outputs                          | Developers             | ☐ / ☑  |                  |
-| Test Specifications / Procedures           | Verification protocols                             | QA / V&V               | ☐ / ☑  |                  |
-| Traceability Matrix                        | Links Inputs → Outputs → Verification → Validation | Design Lead            | ☐ / ☑  |                  |
+| System Architecture / Design Specification | High-level design and interfaces                   | Design Lead            |        |                  |
+| Detailed Design Documents                  | Component or module-level design                   | Developers / Engineers |        |                  |
+| Source Code / Implementation Artifacts     | Executable design outputs                          | Developers             |        |                  |
+| Test Specifications / Procedures           | Verification protocols                             | QA / V&V               |        |                  |
+| Traceability Matrix                        | Links Inputs → Outputs → Verification → Validation | Design Lead            |        |                  |
 
 ---
 
@@ -181,13 +181,13 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 | Deliverable                     | Description                                               | Responsible           | Status | Reference / Link |
 | ------------------------------- | --------------------------------------------------------- | --------------------- | ------ | ---------------- |
-| Kickoff / Planning Review       | Confirms plan, roles, and deliverables                    | PM / QA               | ☐ / ☑  |                  |
-| Requirements Review             | Confirms completeness and testability of inputs           | PM / QA               | ☐ / ☑  |                  |
-| Preliminary Design Review (PDR) | Verifies initial architecture/design                      | Design Lead / QA      | ☐ / ☑  |                  |
-| Critical Design Review (CDR)    | Confirms detailed design and readiness for implementation | Design Lead / QA      | ☐ / ☑  |                  |
-| Verification Review             | Confirms all verification evidence is complete            | QA / V&V              | ☐ / ☑  |                  |
-| Validation Review               | Confirms intended use is achieved                         | PM / QA / Stakeholder | ☐ / ☑  |                  |
-| Release Review                  | Final approval before release                             | PM / QA / Regulatory  | ☐ / ☑  |                  |
+| Kickoff / Planning Review       | Confirms plan, roles, and deliverables                    | PM / QA               |        |                  |
+| Requirements Review             | Confirms completeness and testability of inputs           | PM / QA               |        |                  |
+| Preliminary Design Review (PDR) | Verifies initial architecture/design                      | Design Lead / QA      |        |                  |
+| Critical Design Review (CDR)    | Confirms detailed design and readiness for implementation | Design Lead / QA      |        |                  |
+| Verification Review             | Confirms all verification evidence is complete            | QA / V&V              |        |                  |
+| Validation Review               | Confirms intended use is achieved                         | PM / QA / Stakeholder |        |                  |
+| Release Review                  | Final approval before release                             | PM / QA / Regulatory  |        |                  |
 
 ---
 
@@ -195,10 +195,10 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 | Deliverable         | Description                                                    | Responsible | Status | Reference / Link |
 | ------------------- | -------------------------------------------------------------- | ----------- | ------ | ---------------- |
-| Verification Plan   | Defines test methods, responsibilities, and pass/fail criteria | QA / V&V    | ☐ / ☑  |                  |
-| Verification Report | Results demonstrating design meets requirements                | QA / V&V    | ☐ / ☑  |                  |
-| Validation Plan     | Defines validation environment and acceptance criteria         | PM / QA     | ☐ / ☑  |                  |
-| Validation Report   | Confirms final product meets intended use                      | QA / PM     | ☐ / ☑  |                  |
+| Verification Plan   | Defines test methods, responsibilities, and pass/fail criteria | QA / V&V    |        |                  |
+| Verification Report | Results demonstrating design meets requirements                | QA / V&V    |        |                  |
+| Validation Plan     | Defines validation environment and acceptance criteria         | PM / QA     |        |                  |
+| Validation Report   | Confirms final product meets intended use                      | QA / PM     |        |                  |
 
 ---
 
@@ -206,10 +206,10 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 | Deliverable                   | Description                                   | Responsible      | Status | Reference / Link |
 | ----------------------------- | --------------------------------------------- | ---------------- | ------ | ---------------- |
-| Release Record / Package      | Configuration baseline for release            | PM / QA          | ☐ / ☑  |                  |
-| Deployment Checklist          | Validation of deployment steps                | PM / Ops         | ☐ / ☑  |                  |
-| User Documentation / Training | Manuals, help guides, training materials      | PM / Tech Writer | ☐ / ☑  |                  |
-| Post-Release Risk Review      | Final check of residual risks and mitigations | QA / Risk Lead   | ☐ / ☑  |                  |
+| Release Record / Package      | Configuration baseline for release            | PM / QA          |        |                  |
+| Deployment Checklist          | Validation of deployment steps                | PM / Ops         |        |                  |
+| User Documentation / Training | Manuals, help guides, training materials      | PM / Tech Writer |        |                  |
+| Post-Release Risk Review      | Final check of residual risks and mitigations | QA / Risk Lead   |        |                  |
 
 ---
 
@@ -217,10 +217,10 @@ Full V&V evidence shall be attached to this plan or referenced by link.
 
 | Deliverable                      | Purpose                                                                                            | Responsible           | Status | Reference / Link |
 | -------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------- | ------ | ---------------- |
-| **Maintenance Plan**             | Defines maintenance classification (routine patch vs corrective change) and verification strategy. | Maintenance Lead / QA | ☐ / ☑  |                  |
-| **Maintenance Log**              | Tracks maintenance releases, CAPAs, verification & validation, and DHF updates.                    | Maintenance Lead      | ☐ / ☑  |                  |
-| **Post-Market Feedback Summary** | Records user feedback, complaints, or CAPA drivers used for design improvement.                    | QA / Regulatory       | ☐ / ☑  |                  |
-| **Retirement Plan**              | Defines archival, decommissioning, and record retention actions.                                   | PM / QA               | ☐ / ☑  |                  |
+| **Maintenance Plan**             | Defines maintenance classification (routine patch vs corrective change) and verification strategy. | Maintenance Lead / QA |        |                  |
+| **Maintenance Log**              | Tracks maintenance releases, CAPAs, verification & validation, and DHF updates.                    | Maintenance Lead      |        |                  |
+| **Post-Market Feedback Summary** | Records user feedback, complaints, or CAPA drivers used for design improvement.                    | QA / Regulatory       |        |                  |
+| **Retirement Plan**              | Defines archival, decommissioning, and record retention actions.                                   | PM / QA               |        |                  |
 
 ---
 

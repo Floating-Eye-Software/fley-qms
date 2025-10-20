@@ -30,7 +30,7 @@
 * Draft SOPs in Wiki and submit via GitHub PR workflow for review.
 * Pilot SOPs within Red Witch project; collect usage evidence (issues, PRs, CI/CD logs).
 * Revise SOPs quarterly based on pilot feedback and CAPA findings.
-* Ensure SOPs map to DCP deliverables and WI-QMS-09-04 checkpoints.
+* Ensure SOPs map to DCP deliverables and Design-Control-SOP checkpoints.
 
 ---
 
@@ -92,4 +92,4 @@
 * Quarterly review and refinement of SOPs.
 * CAPA findings incorporated into SOP updates.
 * Lessons learned captured, shared, and used for future SOP drafting.
-* Alignment to DCP deliverables and WI-QMS-09-04 monitored continuously.
+* Alignment to DCP deliverables and Design-Control-SOP monitored continuously.

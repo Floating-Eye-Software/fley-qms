@@ -81,6 +81,15 @@ Progress toward quality objectives shall be reviewed during Management Review me
 
 Results and decisions from Management Reviews may initiate planned changes to the QMS, implemented per the *Change-Control-SOP*.
 
+6.4 **Quality Planning Execution**
+
+* Track task completion and deliverables in the project tracking tool.
+* Update risk status and link to mitigation actions in the register.
+* Record design or process changes using **Change Control SOP**.
+* Ensure QMS records (objectives, action results) are current and auditable.
+
+Effectiveness of executed actions shall be reviewed during Management Review meetings per *Management-Review-SOP*.
+
 ---
 
 ### **7. Records**

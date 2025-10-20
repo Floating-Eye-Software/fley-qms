@@ -1,43 +1,45 @@
-# **WI - GitHub Pull Request and Branch Management**
+# **WI – GitHub Pull Request and Branch Management**
 
-**Slug:** GitHub-Change-Control  
-**Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Change-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Change-Control  
+**Slug:** GitHub-Change-Control
+**Revision:** r1
+**Effective Date:** [YYYY-MM-DD]
+**Related SOP:** Change-Control-SOP
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Change-Control
 
 ---
 
 ## **1. Purpose**
 
 To define the standardized method for proposing, reviewing, approving, and implementing changes to QMS-controlled documents and configurations using GitHub Issues, branches, and Pull Requests (PRs).
-This Work Instruction implements the Change Control process in a Git-based environment.
+
+This Work Instruction implements the Change Control SOP within a Git-based environment.
 
 ---
 
 ## **2. Scope**
 
-Applies to all repositories containing QMS-controlled documentation or configuration data managed in GitHub, including Standard Operating Procedures (SOPs), Work Instructions (WIs), Policies (POLs), and Records (RECs).
+This WI applies to all repositories containing QMS-controlled documentation or configuration data managed in GitHub, including Standard Operating Procedures (SOPs), Work Instructions (WIs), Templates (TPLs), and Records (RECs).
 
 ---
 
 ## **3. References**
 
 * SOP – Change Control
+* SOP – Document Control
 * WI – GitHub–QMS–Setup
-* ISO 9001:2015 § 6.3
+* ISO 9001:2015 §§6.3, 7.5.3
 * 21 CFR Part 11
 
 ---
 
 ## **4. Responsibilities**
 
-| Role                                 | Responsibilities                                                                           |
-| ------------------------------------ | ------------------------------------------------------------------------------------------ |
-| **Change Requestor (Author)**        | Initiates the change via a GitHub Issue and creates a branch implementing the update.      |
-| **Reviewer / Approver**              | Reviews PRs for completeness, accuracy, and compliance before approval.                    |
-| **Change Control Coordinator (CCC)** | Ensures each PR includes the correct Issue references, approvals, and tags before merging. |
-| **Quality Manager**                  | Oversees adherence to change control and ensures retention of all electronic records.      |
+| Role                                 | Responsibilities                                                                          |
+| ------------------------------------ | ----------------------------------------------------------------------------------------- |
+| **Change Requestor (Author)**        | Initiates the change through a GitHub Issue and implements updates in a dedicated branch. |
+| **Reviewer / Approver**              | Reviews and approves PRs for completeness, accuracy, and compliance before merge.         |
+| **Change Control Coordinator (CCC)** | Verifies correct Issue linkage, approvals, and tags before merging.                       |
+| **Quality Manager**                  | Ensures adherence to the change control process and maintains record integrity in GitHub. |
 
 ---
 
@@ -45,142 +47,148 @@ Applies to all repositories containing QMS-controlled documentation or configura
 
 ### **5.1 Initiating a Change**
 
-1. Open a **GitHub Issue** to serve as the Change Request (CR). Include:
+1. Open a **GitHub Issue** to serve as the Change Request (CR).
+   Include:
 
-   * Purpose and reason for change
+   * Purpose and justification for change
    * Impact and risk assessment
-   * Related SOPs, WIs, or CAPAs
+   * References to affected SOPs, WIs, or CAPAs
 
-2. Create a **branch** from the protected `main` branch:
+2. Create a new **branch** from the protected `main` branch to implement the change:
 
    ```bash
    git checkout -b change/update-document-control
    ```
 
-3. Implement the required changes in the branch.
+3. Implement and test changes as needed.
 
-4. Commit with a clear message referencing the CR:
+4. Commit with a descriptive message referencing the Issue number:
 
    ```bash
-   git commit -m "Fixes #42 – Updated document numbering section per new SOP"
+   git commit -m "Fixes #42 – Updated document identification process"
    ```
 
-Each commit and Issue reference provides traceability per ISO 9001 §7.5.3 and ISO 13485 §4.2.4.
+> Each commit referencing an Issue provides traceability and establishes a record of implementation activity.
 
 ---
 
 ### **5.2 Submitting for Review**
 
 1. Open a **Pull Request (PR)** to merge the change branch into `main`.
-
-2. PR title should clearly identify the document and revision, for example:
+2. The PR title must clearly identify the document and revision, for example:
 
    ```
-   SOP-004_r2 – Updated review and tagging procedure
+   WI-GitHub-Change-Control_r2 – Revised PR procedure
    ```
-
 3. The PR description must include:
 
-   * Link to the related Issue (CR), e.g. `Fixes #42`
-   * Summary of changes
-   * Verification or validation notes (if applicable)
-
-4. The PR acts as the **formal review and approval record**.
+   * A link to the related Issue (CR), e.g. `Fixes #42`
+   * A concise summary of the proposed changes
+   * Any relevant testing, verification, or validation notes
+4. The PR serves as the **formal review and approval record** for the change.
 
 ---
 
 ### **5.3 Review and Approval**
 
-1. Reviewers use GitHub’s built-in review tools:
+1. Reviewers provide comments or approvals directly in GitHub using the review tools:
 
    * **“Approve”** = electronic approval
    * **“Request changes”** = return to author for correction
 
-2. Required reviewers are defined in the repository’s `CODEOWNERS` file or approval matrix.
+2. Required reviewers are designated in the repository’s `CODEOWNERS` file.
 
-3. Approvals within GitHub constitute **electronic signatures** in accordance with 21 CFR Part 11 and ISO 13485 §4.2.4.
+3. GitHub approval actions constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
 
-4. Once all required reviewers have approved, the PR is ready to merge.
+4. Once all required approvals are complete, the PR is ready for merge.
 
 ---
 
 ### **5.4 Merging and Tagging Approved Changes**
 
-1. After approval:
+1. After approval, the **Change Control Coordinator (CCC)** performs the merge:
 
-   * The **Change Control Coordinator** merges the PR into the `main` branch.
-   * Create a Git tag matching the document identifier and revision:
+   * Confirm all required approvals are present.
+   * Merge the PR into the protected `main` branch using **“Squash and Merge”** or **“Merge Commit”** (per repository policy).
 
-     ```bash
-     git tag SOP-004_r2
-     git push origin SOP-004_r2
-     ```
+2. Create a Git **tag** to mark the approved and effective revision:
 
-2. The tag marks the **approved and effective revision**.
+   ```bash
+   git tag GitHub-Change-Control_r2
+   git push origin GitHub-Change-Control_r2
+   ```
 
-3. The **HEAD of `main`** always represents the **current approved version** published to the QMS Wiki or controlled site.
+3. The tag must match the document slug and revision exactly (e.g., `Document-Control-SOP_r5`).
 
-4. Approval metadata (reviewers, timestamp, linked CR, and tag) are stored automatically in GitHub and Git history — no manual “Approved By” or “Effective Date” fields are required in the document header.
+4. Each tag represents a controlled, approved, and effective revision.
+
+5. Tags are **immutable** — do **not** delete or reuse them.
+
+6. The **HEAD of `main`** always represents the **current approved version** displayed on the QMS Wiki.
+
+> The PR, merge commit, and associated tag together form the complete electronic approval and effective-date record.
 
 ---
 
 ### **5.5 Branch and Access Control**
 
-1. The `main` branch must be **protected** to ensure control integrity:
+1. The `main` branch must be **protected** to ensure data integrity:
 
-   * PR review required before merging
-   * No direct commits
-   * No force pushes or branch deletions
-   * Require status checks to pass (optional)
+   * Require PR reviews before merging
+   * Disallow direct commits
+   * Disallow force pushes and branch deletions
+   * Require passing status checks (if configured)
 
-2. Draft or in-progress changes must occur in branches named by convention:
+2. Branch naming conventions promote traceability:
 
    ```
-   feature/update-sop-004
+   change/update-sop-004
    fix/typo-wi-002
-   change/update-qms-template
+   feature/new-qms-template
    ```
 
-3. After the PR is merged, branches may be deleted to reduce clutter.
-   The full history remains preserved in the repository and associated PR.
+3. After merge, branches may be deleted to maintain repository hygiene.
+   All history remains traceable in Git logs and the closed PR.
 
 ---
 
-### **5.6 Handling Unintended or Noncompliant Changes**
+### **5.6 Handling Unauthorized or Noncompliant Changes**
 
-1. If an unauthorized change is detected in `main`, immediately:
+1. If an unapproved or incorrect change is discovered in `main`:
 
-   * Open a **CAPA Issue** referencing the affected commit or PR.
-   * Document the event, impact, and root cause.
+   * Immediately open a **CAPA Issue** referencing the affected commit or PR.
+   * Document the event, impact, and corrective action.
 
-2. Revert the change using a corrective PR, referencing the CAPA:
+2. Revert the unauthorized change using a new PR that references the CAPA:
 
    ```bash
    git revert <commit-hash>
    ```
 
-3. Tag the corrected version (e.g., `_r3`) and close the CAPA once verified.
+3. After verification and approval, merge the corrective PR and create a new tag (e.g., `_r3`).
+
+4. Close the CAPA when corrective actions are verified as effective.
 
 ---
 
 ## **6. Integration with Related Procedures**
 
-This WI implements and interfaces with:
+This WI interfaces with and supports:
 
-* **SOP – Change Control:** Defines system-level requirements for evaluating, approving, and implementing changes.
-* **SOP – Document Control:** Establishes that the HEAD of `main` is the controlled source.
-* **WI – GitHub Version Control and Traceability:** Provides technical traceability and audit commands.
+* **SOP – Change Control:** Defines evaluation and approval requirements for controlled changes.
+* **SOP – Document Control:** Establishes that `main` and its tags represent approved source records.
+* **WI – GitHub Version Control** Provides commands and audit methods for historical review.
 
 ---
 
-### **7. Records and Retention**
+## **7. Records and Retention**
 
-| Record Type             | Description                                                | Location            | Retention |
-| ----------------------- | ---------------------------------------------------------- | ------------------- | --------- |
-| GitHub Issues           | Change Requests (CRs), CAPAs, and linked documentation     | GitHub              | Permanent |
-| Pull Requests           | Review, approval, and merge record (electronic signatures) | GitHub              | Permanent |
-| Commits                 | Change implementation history                              | GitHub Repository   | Permanent |
-| Tags                    | Approved revision identifiers                              | GitHub              | Permanent |
-| Branch protection rules | Configuration record of controls                           | Repository Settings | Permanent |
+| Record Type             | Description                                                | Location            | Retention  |
+| ----------------------- | ---------------------------------------------------------- | ------------------- | ---------- |
+| GitHub Issues           | Change Requests (CRs), CAPAs, and related records          | GitHub              | Indefinite |
+| Pull Requests           | Review, approval, and merge record (electronic signatures) | GitHub              | Indefinite |
+| Commits                 | Implementation history and traceability                    | Git repository      | Indefinite |
+| Tags                    | Approved and effective revision identifiers                | GitHub              | Indefinite |
+| Branch Protection Rules | Configuration record of repository controls                | Repository Settings | Indefinite |
 
-The GitHub system itself serves as the **record of change control**, approval, and traceability.
+> All GitHub metadata and configuration serve as the official QMS record of change control and approval.

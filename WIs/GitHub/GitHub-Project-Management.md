@@ -53,7 +53,7 @@ A typical project workspace on GitHub (example: [https://github.com/mlehotay/red
 | **Pull Requests** | Used for review and approval of document or code changes. Serves as the official change control mechanism.                                              |
 | **Discussions**   | Enables threaded dialogue, brainstorming, or project review meetings. May substitute for email chains and serve as communication records.               |
 | **Actions**       | Automates workflows such as notifications, document checks, or task updates (optional for automation).                                                  |
-| **Projects**      | The Kanban-style project board used to plan and monitor project progress (Backlog → In Progress → Done).                                                |
+| **Projects**      | The Kanban-style project board used to plan and monitor project progress (Backlog → In Progress → In Test → Closed).                                                |
 | **Wiki**          | Used for static documentation—such as the project plan, objectives, or meeting summaries.                                                               |
 | **Security**      | Displays repository security settings and dependency alerts (applicable to development projects).                                                       |
 | **Insights**      | Provides analytics on activity, progress, and contributor participation. Useful for management reviews.                                                 |

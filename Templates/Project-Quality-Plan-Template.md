@@ -20,19 +20,19 @@ All QMS activities are **mandatory**, even if achieved using different framework
 
 | SOP / QMS Activity                           | Selected Work Instruction / Method                                                                                          | Tool / Platform (if applicable) | Notes / Comments                                                            |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------- |
-| **QMS-SOP-02 Change Control**                | `WIs/GitHub/GitHub-Change-Control.md`                                                                                       | GitHub (PR workflow)            | All change requests handled via pull requests; approvals tracked in GitHub. |
-| **QMS-SOP-05 Document Control**              | `WIs/GitHub/GitHub-Document-Control.md`, `WIs/GitHub/GitHub-Version-Control.md`                                             | GitHub (repositories)           | Markdown docs under version control; approvals via PRs.                     |
-| **QMS-SOP-06 Quality Planning**              | `Project-Docs/Red-Witch-Quality-Plan.md`                                                                                           | PQP in GitHub Wiki              | Defines objectives, risk linkage, and review cadence.                       |
-| **QMS-SOP-07 Project Management**            | `WIs/GitHub/GitHub-Project-Management.md`                                                                                   | GitHub Projects                 | Milestones, issues, and boards for tracking.                                |
-| **QMS-SOP-08 Risk & Opportunity Management** | FLEY Risk Framework (current) → *upgrade planned to ISO 14971*                                                              | GitHub Issues / Risk Register   | Each risk tracked as Issue; migration planned to ISO 14971 structure.       |
-| **QMS-SOP-09 Design & Development Control**  | `WIs/Ontario-Design-Framework/Ontario-Service-Design-WI.md` *(primary)* + `WIs/FLEY/FLEY-Design-Control-WI.md` *(parallel)* | GitHub Wiki / Repo              | Ontario framework for design flow; FLEY WI ensures regulated traceability.  |
-| **QMS-SOP-10 Continuous Improvement**        | *(To be determined; likely FLEY CI WI or GitHub retrospective process)*                                                     | GitHub Discussions / Confluence | Lessons learned and improvement tracking.                                   |
+| **Change-Control-SOP**                | `GitHub-Change-Control`                                                                                       | GitHub (PR workflow)            | All change requests handled via pull requests; approvals tracked in GitHub. |
+| **Document-Control-SOP**              | `GitHub-Document-Control`, `GitHub-Version-Control`                                             | GitHub (repositories)           | Markdown docs under version control; approvals via PRs.                     |
+| **Quality-Planning-SOP**              | `Red-Witch-Quality-Plan`                                                                                           | PQP in GitHub Wiki              | Defines objectives, risk linkage, and review cadence.                       |
+| **Project-Management-SOP**            | `GitHub-Project-Management`                                                                                   | GitHub Projects                 | Milestones, issues, and boards for tracking.                                |
+| **Risk-and-Opportunity-Management-SOP** | FLEY Risk Framework (current) → *upgrade planned to ISO 14971*                                                              | GitHub Issues / Risk Register   | Each risk tracked as Issue; migration planned to ISO 14971 structure.       |
+| **Design-Control-SOP**  | `Ontario-Service-Design-WI` *(primary)* + `FLEY-Design-Control-WI` *(parallel)* | GitHub Wiki / Repo              | Ontario framework for design flow; FLEY WI ensures regulated traceability.  |
+| **Continuous Improvement**        | *(To be determined; likely FLEY CI WI or GitHub retrospective process)*                                                     | GitHub Discussions / Confluence | Lessons learned and improvement tracking.                                   |
 
 **Configuration Rules**
 
 * All SOPs remain in effect; WIs/tools define *how* compliance is achieved.
 * Configuration must be approved by the **Project Manager** and **Quality Representative** before project kickoff.
-* Any configuration change must follow **Change Control SOP (QMS-SOP-02)**.
+* Any configuration change must follow **Change Control SOP**.
 * Standards and frameworks applied (e.g., ISO 9001, ISO 13485, ISO 14971) depend on the **intended use** and regulatory classification of the product/service.
 
 ---
@@ -42,7 +42,7 @@ All QMS activities are **mandatory**, even if achieved using different framework
 * *[Project objectives and success criteria]*
 * *[Roles & responsibilities]*
 * *[Review cadence, stage gates, retrospectives]*
-* *[Reference QMS-SOP-06 for quality objectives & risk planning]*
+* *[Reference Quality-Planning-SOP for quality objectives & risk planning]*
 
 ---
 
@@ -51,7 +51,7 @@ All QMS activities are **mandatory**, even if achieved using different framework
 * *[Storage location for project documentation/artifacts]*
 * *[Version control method]*
 * *[Retention period per QMS/regulatory requirements]*
-* Controlled per **QMS-SOP-05** using the methods defined in Section 1.
+* Controlled per **Document-Control-SOP** using the methods defined in Section 1.
 
 ---
 
@@ -75,7 +75,7 @@ All QMS activities are **mandatory**, even if achieved using different framework
 ## **6. Design & Development Control**
 
 * *[Requirements capture method (user stories, specs, etc.)]*
-* *[Design planning per QMS-SOP-09]*
+* *[Design planning per Design-Control-SOP]*
 * *[Traceability: Requirements → Design → V&V]*
 * *[Document design reviews and key decisions]*
 
@@ -88,7 +88,7 @@ All QMS activities are **mandatory**, even if achieved using different framework
 * *[Tool(s) for version/configuration management]*
 * *[Change workflow (PRs, change requests, approvals)]*
 * *[Impact analysis prior to approval]*
-* Controlled per **QMS-SOP-02** and selected GitHub WIs.
+* Controlled per **Change-Control-SOP** and selected GitHub WIs.
 
 ---
 
