@@ -36,6 +36,7 @@ FLEY’s QMS is built around ISO 9001:2015 and ISO 9001:2024 (Climate Action Ame
 * [[Design Control SOP]]
 * [[Identification and Traceability SOP]]
 * [[Leadership SOP]]
+* [[Management Review SOP]]
 * [[Project Management SOP]]
 * [[Quality Planning SOP]]
 * [[Risk and Opportunity Management SOP]]
@@ -47,6 +48,7 @@ FLEY’s QMS is built around ISO 9001:2015 and ISO 9001:2024 (Climate Action Ame
 **GitHub Operational WIs**
 
 * [[GitHub QMS Setup]]
+* [[GitHub QMS Overview]]
 * [[GitHub QMS Operations]]
 * [[GitHub Document Control]]
 * [[GitHub Project Management]]
@@ -78,6 +80,7 @@ FLEY’s QMS is built around ISO 9001:2015 and ISO 9001:2024 (Climate Action Ame
 * [[Design Control Plan Template]]
 * [[Design Output Template]]
 * [[DCP Template Ontario DSS]]
+* [[Header Template]]
 
 > **Tip:** Start with the [[Quality Manual]] for a complete overview of the QMS structure and document hierarchy.
 
@@ -109,6 +112,7 @@ Planning, improvement, and monitoring resources.
 
 * [[Continuous Improvement Plan]] – Continuous improvement framework and KPIs.
 * [[Red Witch Pilot SOP Plan]] – SOP authoring, pilot testing, and validation.
+* [[Repo Migration Plan]] – Migration and repository transition strategy.
 * [[Red Witch Quality Plan]] – Repeated link for quick access.
 * Templates: [[Project Quality Plan Template]], [[Quality Plan Template]]
 
