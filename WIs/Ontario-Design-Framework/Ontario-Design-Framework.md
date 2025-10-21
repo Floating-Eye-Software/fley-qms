@@ -8,7 +8,7 @@
 
 ---
 
-![Digital Service Standard, 2021](ods-dss-en-2022-12-20.png)
+![Digital Service Standard, 2021](https://github.com/mlehotay/redwitch/wiki/WIs/Ontario-Design-Framework/ods-dss-en-2022-12-20.png)
 
 The Ontario [Digital and Data Directive](https://www.ontario.ca/page/ontarios-digital-and-data-directive-2021), [Digital Service Standard](https://www.ontario.ca/page/digital-service-standard), and [Service Design Playbook](https://www.ontario.ca/page/service-design-playbook) provide a framework for the design and delivery of digital services and the proactive sharing of data.
 
