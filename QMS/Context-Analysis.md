@@ -9,79 +9,85 @@
 
 ## **1. Purpose**
 
-Identify internal and external issues influencing FLEY’s ability to achieve QMS outcomes (ISO 9001 Clause 4.1).
+Identify internal and external issues influencing FLEY’s ability to achieve intended Quality Management System (QMS) outcomes (ISO 9001 Clause 4.1).
 
 ---
 
-## **2. Internal Issues**
+## **2. Overview**
 
-### **2.1 Startup / Lean / Volunteer Model**
+Floating Eye Software (FLEY) is a small, ethics-driven software organization focused on **uterine and reproductive health** through privacy-first digital tools.  
 
-* Strengths: Lean approach, ethical mission, flexibility
-* Weaknesses: Limited capacity and redundancy (sole proprietor)
-* Opportunities: Automation, community contributions
-* Threats: Burnout, delays, inability to scale
+This document summarizes the internal and external factors that affect how the QMS operates and evolves.
 
-### **2.2 Privacy & Trust**
+| **Strengths** | **Weaknesses** |
+| -------------- | -------------- |
+| Lean, flexible structure; strong ethical and privacy foundations; clear social mission in reproductive-health technology | Limited capacity and redundancy; reliance on one individual; dependence on external platforms |
 
-* Strengths: Privacy-first philosophy, transparent operations
-* Weaknesses: No formal certifications initially
-* Opportunities: Strong positioning as an ad-free, trust-based app
-* Threats: Any data breach or privacy lapse will significantly damage reputation
-
-### **2.3 Clinical & Regulatory**
-
-* Strengths: QMS foundation aligned to ISO / medical software standards
-* Weaknesses: Lack of clinical advisory resources
-* Opportunities: Compliance as differentiator
-* Threats: Regulatory classification may impose burdens
-
-### **2.4 Knowledge, Culture & Values**
-
-* Volunteer-driven, centered around mission and ethics
-* Knowledge concentrated in one person — risk of loss
-* Culture of openness, transparency, minimalism
-
-### **2.5 Climate Change Consideration**
-
-* Determine whether **climate change is relevant** to organizational context
-* Potential issues: infrastructure energy consumption, service hosting carbon footprint, extreme weather disruptions, regulatory or stakeholder expectations regarding sustainability
-* If relevant, integrate into risk management and monitoring processes
+| **Opportunities** | **Threats** |
+| ----------------- | ----------- |
+| Growth through open-source collaboration, automation, and advocacy partnerships; leadership in ethical AI and health software | Burnout, regulatory burden, or shifts in legal and political climates around reproductive health and data privacy |
 
 ---
 
-## **3. External Issues (PESTEL + Climate)**
+## **3. Internal Context**
 
-| Factor                  | Relevant Issues                                                                 |
-| ----------------------- | ------------------------------------------------------------------------------- |
-| Political / Legal       | Evolving regulations on climate disclosure, environmental standards             |
-| Economic                | Pressure for sustainable and eco-conscious services, volunteer cost constraints |
-| Social / Cultural       | Growing expectations for ethical and sustainable technology                     |
-| Technological           | Need for low-energy hosting, on-device processing to reduce cloud load          |
-| Environmental / Climate | Service resilience, carbon footprint of infrastructure, extreme weather         |
-| Market / Competitive    | Users may prefer apps with “green” or sustainability commitments                |
+### **3.1 Startup / Lean Model**
+
+* Sole-proprietor structure allows rapid change and ethical consistency  
+* Limited capacity introduces continuity and workload risks  
+* Automation and open collaboration present growth opportunities  
+
+### **3.2 Privacy & Trust**
+
+* Privacy-first philosophy is a core differentiator  
+* Lack of formal certifications initially limits external assurance  
+* Any privacy failure would significantly harm credibility  
+
+### **3.3 Clinical, Ethical & Regulatory**
+
+* QMS aligned with ISO 9001 and relevant medical-software principles  
+* Limited access to clinical and ethical advisory resources  
+* Ongoing monitoring required for evolving reproductive-health regulations  
+
+### **3.4 Knowledge, Culture & Values**
+
+* Centered on ethics, transparency, inclusivity, and respect for bodily autonomy  
+* Knowledge concentrated in a single developer; documentation and continuity planning are essential  
+
+---
+
+## **4. External Context**
+
+FLEY operates in an environment shaped by social expectations, legal frameworks, and technological change.
+
+| **Factor** | **Relevant Issues** |
+|-------------|--------------------|
+| **Political / Legal** | Divergent laws governing reproductive-health technologies and personal data; increasing expectations for ethical AI and privacy; potential future sustainability or environmental reporting requirements |
+| **Economic** | Volunteer-based startup; limited resources; potential for funding or partnerships tied to ethical and social-impact commitments |
+| **Social / Cultural** | Growing awareness of reproductive autonomy and digital-privacy rights; expectation for inclusive, stigma-free technology |
+| **Technological** | Dependence on third-party platforms (GitHub, OpenAI, hosting providers); need for transparent, efficient, and privacy-preserving design |
+| **Environmental / Climate** | Minimal direct environmental impact at current scale. Primary activity is remote software development with standard computing resources. FLEY monitors supplier compliance with **ISO 14001 (Environmental Management Systems)** where feasible and will reassess environmental relevance as operations expand. Objective, evidence-based evaluation of AI-related energy and water use will inform any future sustainability measures. |
+| **Ethical / Human Rights** | Reproductive freedom, bodily autonomy, and digital ethics are central to stakeholder trust and alignment |
 
 ---
 
-## **4. Interested Parties and Requirements**
+## **5. Interested Parties and Requirements**
 
-| Stakeholder              | Needs & Expectations                                             | Implementation / Response                                            |
-| ------------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Users                    | Privacy, accuracy, ethical app with minimal environmental impact | Efficient hosting, transparent practices, clear environmental stance |
-| Regulators / Authorities | Compliance with laws, potential environmental reporting          | Monitor climate-related regulatory changes                           |
-| Privacy Officers / DPOs  | GDPR / data protection compliance                                | DPIA, minimal data collection, consent management                    |
-| Open-source community    | Transparency, sustainability                                     | Public repo, documented practices, potential energy statements       |
-| Clinical Advisors        | Scientific validity, safety                                      | Evidence, validation, risk mitigation                                |
-| Volunteer Developer(s)   | Feasible workload, mission alignment                             | Lean structures, automation, prioritization                          |
-| Collaborators / Partners | Credibility, values alignment (including climate responsibility) | Ethical charter, documented sustainable practices                    |
-
----
-
-## **5. Monitoring & Review**
-
-* Review internal and external context at least **annually**, or with major product releases
-* Monitor **climate-change signals**, regulatory updates, environmental expectations, and stakeholder demands
-* Update identified issues, risks, and controls as appropriate
-* Document context changes in management review records and reference them in [[Quality Manual]] and [[GitHub QMS Operations]]
+| **Stakeholder** | **Needs & Expectations** | **Implementation / Response** |
+| ---------------- | ------------------------ | ------------------------------ |
+| **Users** | Private, accurate, inclusive reproductive-health tools | Privacy-first architecture; ethical design; transparent communication |
+| **Regulators / Authorities** | Compliance with data-protection, medical, and human-rights frameworks | Monitor applicable laws; maintain compliance evidence |
+| **Privacy Officers / DPOs** | GDPR and sensitive-health-data compliance | DPIA, minimal data collection, informed consent |
+| **Open-Source Community** | Transparency and sustainability | Public repository; ethical and environmental documentation |
+| **Clinical / Ethical Advisors** | Scientific validity and equity | Evidence, validation, and ethical risk management |
+| **Volunteers / Collaborators** | Feasible workload, value alignment | Lean workflows; clear mission statements |
+| **Suppliers / Partners** | Ethical compatibility and sustainability awareness | Supplier evaluation (ISO 9001 / 14001 / 27001 as applicable) |
 
 ---
+
+## **6. Monitoring and Review**
+
+* Review internal and external context at least **annually** or with major product releases  
+* Track developments in **reproductive-health regulation**, **data ethics**, and **environmental responsibility**  
+* Verify ongoing supplier compliance with relevant ISO standards  
+* Record context updates during Management Review and maintain links to the [[Quality Manual]] and [[GitHub QMS Operations]]  

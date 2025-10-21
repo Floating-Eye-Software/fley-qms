@@ -7,11 +7,11 @@
 
 ---
 
-Floating Eye Software (FLEY) develops ethical, privacy-first digital tools to support uterine health.  
+Floating Eye Software (FLEY) develops ethical, privacy-first digital tools to support uterine and reproductive health.
 
 We commit to:
 
-1. Satisfying applicable requirements and stakeholder expectations.  
-2. Setting and reviewing measurable quality objectives.  
-3. Continually improving the effectiveness of the QMS.  
+1. Satisfying applicable requirements and stakeholder expectations.
+2. Setting and reviewing measurable quality objectives in support of our strategic direction.
+3. Continually improving the effectiveness of the Quality Management System (QMS).
 4. Considering climate impacts and sustainability in our operations.

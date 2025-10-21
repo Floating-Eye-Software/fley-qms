@@ -74,13 +74,13 @@ flowchart TD
     %% --- SOP Layer ---
     subgraph SOP[SOP Layer]
         direction TB
-        SOP3[Document & Record Control SOP]
+        SOP3[Document Control SOP]
         SOP4[Change Control SOP]
         SOP5[Leadership SOP]
         SOP6[Quality Planning SOP]
         SOP7[Project Management SOP]
         SOP8[Risk & Opportunity SOP]
-        SOP9[Design & Development SOP]
+        SOP9[Design Control SOP]
     end
 
     %% --- Operational Layer ---
