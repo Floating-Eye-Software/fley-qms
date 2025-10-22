@@ -104,7 +104,7 @@
 * **Issues / CAPA References:**
 
   * [#7 SOP – Pull Request Procedure (Change Control)](https://github.com/mlehotay/redwitch/issues/7)
-  * Observation recorded under [Issue #7 comment](https://github.com/mlehotay/redwitch/issues/7#issuecomment-3393627464) (QMS pilot finding).
+  * Observation recorded under [Issue #7 comment](https://github.com/mlehotay/redwitch/issues/7#issuecomment-3430253297) (QMS pilot finding).
 
 ---
 
