@@ -1,10 +1,10 @@
 # **Design Control Plan (DCP) – FLEY Quality Management System (QMS)**
 
 **Slug:** QMS-Design-Control-Plan  
-**Revision:** r1
-**Effective Date:** [YYYY-MM-DD]
-**Related SOP:** Design-Control-SOP
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/QMS-Design-Control-Plan
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Design-Control-SOP  
+**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/QMS-Design-Control-Plan  
 
 ---
 
