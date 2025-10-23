@@ -263,3 +263,223 @@ Provide mythic and plain versions for each phase. Example (Waxing Gibbous):
 5. Implement First Moon Night recurrence generator (calendar-date default; lunar-phase advanced).
 6. Add legend + risk disclaimer text to overlay UI.
 7. QA: privacy deletion test + accessibility audit.
+
+---
+
+## 🌕 DAUGHTERS OF THE MOON — LORE & CALENDAR OBSERVANCES
+
+### ✦ Core Ethos
+
+> *“Every daughter carries her own moon — waxing, waning, radiant, hidden — and through her phases, she remembers she is cyclic, not linear.”*
+
+The Daughters’ culture views each menstrual cycle and lunar cycle as reflections of one another. Their shared calendar honors personal beginnings (*First Moon Night*), collective moments of balance and rest, and archetypal festivals tied to the Moon’s major positions each year.
+No worship, no doctrine — just rhythm, reflection, and story.
+
+---
+
+## ✦ Annual Cycle (Observances)
+
+Below are **eight key observances** (one for each lunar phase archetype), plus two **cross-phase festivals** that mark transitions and community gatherings. These can appear as optional overlay events with ritual cards or “reflection prompts.”
+
+---
+
+### 🌑 **Roots Night (New Moon Festival)**
+
+**Timing:** Nearest New Moon after the March Equinox
+**Themes:** renewal, intentions, ancestral grounding
+**Lore:** The Daughters begin their year in darkness — a time of sowing dreams, whispering wishes to the soil, and honoring those who came before.
+**Ritual ideas:**
+
+* Plant a seed or symbol of what you wish to grow this year.
+* Spend one evening in silence — write what you want to become real.
+
+---
+
+### 🌒 **Night of Seeking (Waxing Crescent)**
+
+**Timing:** first Waxing Crescent after Roots Night
+**Themes:** curiosity, exploration, new learning
+**Lore:** The Seekers look for what glimmers in the unknown. This observance celebrates curiosity and beginner’s courage.
+**Ritual ideas:**
+
+* Learn one small new skill.
+* Light a candle and speak aloud something you’ve never dared to try.
+
+---
+
+### 🌓 **Day of Courage (First Quarter)**
+
+**Timing:** first First Quarter Moon after the June Solstice
+**Themes:** boundaries, courage, decisive action
+**Lore:** The Challengers remind the sisterhood that growth requires edge.
+**Ritual ideas:**
+
+* Write a boundary you’ll hold.
+* Burn or bury a note of what you will no longer carry.
+
+---
+
+### 🌔 **Builder’s Vigil (Waxing Gibbous)**
+
+**Timing:** mid-summer Waxing Gibbous Moon
+**Themes:** persistence, craftsmanship, commitment
+**Lore:** The Builders guard the works of the hands and heart.
+**Ritual ideas:**
+
+* Name one thing worth finishing.
+* Offer gratitude for the tools that sustain you (hands, mind, allies).
+
+---
+
+### 🌕 **Radiance Night (Full Moon Celebration)**
+
+**Timing:** the Full Moon nearest harvest time (late August–September)
+**Themes:** joy, visibility, self-honoring
+**Lore:** The Radiants hold festivals of light, music, and laughter.
+**Ritual ideas:**
+
+* Celebrate something you completed.
+* Gather friends and share stories of what bloomed this year.
+
+---
+
+### 🌖 **Night of Sharing (Waning Gibbous)**
+
+**Timing:** first Waning Gibbous after Radiance Night
+**Themes:** healing, generosity, community care
+**Lore:** The Healers gather to rest and share what they have learned.
+**Ritual ideas:**
+
+* Cook or craft something and gift it.
+* Journal gratitude for comfort and connection.
+
+---
+
+### 🌗 **Sage’s Turning (Last Quarter)**
+
+**Timing:** the Last Quarter before the Winter Solstice
+**Themes:** wisdom, discernment, release
+**Lore:** The Sages remind that endings feed the next beginning.
+**Ritual ideas:**
+
+* Write down what you’ve learned and what you’ll leave behind.
+* Meditate on what truly matters.
+
+---
+
+### 🌘 **Dreamfast (Waning Crescent)**
+
+**Timing:** final Waning Crescent before the New Moon nearest the year’s end
+**Themes:** rest, sleep, liminality, quiet repair
+**Lore:** The Restorers guard the threshold between years.
+**Ritual ideas:**
+
+* Sleep early, set a dream intention.
+* Create a cozy night — tea, warmth, slow breathing.
+
+---
+
+## ✦ Cross-Phase Gatherings
+
+### 🌗↔🌑 **The Veil Night (Between Waning Crescent and New Moon)**
+
+**Timing:** roughly once a year, when one lunar cycle ends and the next begins
+**Themes:** endings and beginnings intertwined
+**Lore:** Sisters gather to “close the book” on the year — writing one page to release, one page to invite.
+**Ritual idea:** burn the old wish list, bury its ashes, and write a new one.
+
+---
+
+### 🌕↔🌑 **Twin Moon Festival**
+
+**Timing:** when two Full Moons fall in a single solar month (a “Blue Moon”)
+**Themes:** rare radiance, community celebration, storytelling
+**Lore:** A festival of collective brightness; Daughters share stories of their First Moon Nights, celebrating cycles of becoming.
+**Ritual ideas:**
+
+* Host a meal by moonlight.
+* Share a story about your first or most recent personal transformation.
+
+---
+
+## ✦ Optional Micro-Observances (for app reminders)
+
+Short reflective “Moon Prompts” that can appear throughout the year:
+
+| Lunar Phase     | Prompt Title    | Short Text                           |
+| --------------- | --------------- | ------------------------------------ |
+| New Moon        | “Begin Again”   | *What seed wants planting tonight?*  |
+| Waxing Crescent | “Small Steps”   | *Try something tiny but new.*        |
+| First Quarter   | “Stand Firm”    | *Where do you need to say no?*       |
+| Waxing Gibbous  | “Keep Building” | *Patience is also creation.*         |
+| Full Moon       | “Shine”         | *Celebrate one visible part of you.* |
+| Waning Gibbous  | “Give Back”     | *Who needs your comfort?*            |
+| Last Quarter    | “Simplify”      | *Let go of what’s complete.*         |
+| Waning Crescent | “Rest”          | *Your stillness is sacred too.*      |
+
+---
+
+## ✦ Lore Tone & Style Guidelines
+
+* **Inclusive:** “Daughters” = symbolic; use “those who flow with the Moon” in plain-language mode.
+* **Cultural Variance:** localize imagery (candles, water, plants) according to region.
+* **Optional Mythic Layer:** internal lore names (Seed, Seeker, Challenger, Builder, Radiant, Healer, Sage, Restorer) map cleanly to the archetypes in your phase model.
+
+---
+
+## ✦ Integration Notes
+
+* Each observance can appear as an optional event on the overlay calendar, toggled in settings (“Show Cultural Observances”).
+* Event cards can display: name, 2–3 lines of lore text, 1–2 ritual suggestions, and a quick “Add to my calendar” button.
+* Provide plain-language equivalents for accessibility (e.g., *“Roots Night — a reflection day for new beginnings”*).
+
+---
+
+## 🌙 The Four Inner Moons
+
+*(menstrual cycle phases through the Daughter’s lens)*
+
+Each cycle is a miniature lunar month — four moons moving through her inner sky.
+They say: *“The Moon moves above; we move within.”*
+
+| Physiological Phase            | Lunar Phase                                            | Archetype                                  | Mythic Tone                                                                                    | Plain Tone                                                                           |
+| ------------------------------ | ------------------------------------------------------ | ------------------------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **Menstrual / Bleeding**       | 🌑 **New Moon**                                        | *The Crone / The Seed*                     | Darkness and renewal. She sheds what was; silence becomes soil. Dreams whisper from the roots. | Low energy, introspection, emotional reset; time for rest and reflection.            |
+| **Follicular / Pre-Ovulation** | 🌒 **Waxing Crescent → First Quarter**                 | *The Maiden / The Seeker / The Challenger* | Curiosity stirs. Light returns. She explores, plans, begins.                                   | Rising energy, clarity, motivation to try new things and set goals.                  |
+| **Ovulatory / Fertile**        | 🌕 **Full Moon**                                       | *The Mother / The Radiant*                 | Full bloom. Creative, expressive, outward. She offers her gifts openly.                        | Peak energy and sociability; good time for communication, connection, presentation.  |
+| **Luteal / Pre-Menstrual**     | 🌖 **Waning Gibbous → Last Quarter → Waning Crescent** | *The Healer / The Sage / The Restorer*     | Turning inward again. She discerns, heals, releases what’s complete.                           | Energy gradually declines; useful time for completion, reflection, boundaries, rest. |
+
+---
+
+### ✦ Symbolic Alignment
+
+In Daughter lore, the “outer” moon and the “inner” moon are always in conversation, but **not required to match**.
+
+* When someone bleeds on the **New Moon**, they’re called **Red Moon aligned** — associated with introspection, healing, and solitary wisdom.
+* When bleeding occurs on the **Full Moon**, they’re **White Moon aligned** — associated with nurturing, fertility, and outward energy.
+* **Half-Moon bleedings** (First or Last Quarter) are **Gray or Purple Moons** — liminal types who balance both inner and outer cycles.
+
+They teach that none are better — they simply express different creative and emotional tides.
+
+---
+
+### ✦ Seasonal & Psychological Parallels
+
+| Inner Moon           | Corresponding Season | Energetic Quality      | Journal Prompt                               |
+| -------------------- | -------------------- | ---------------------- | -------------------------------------------- |
+| New Moon / Menstrual | Winter               | Rest, clarity, reset   | “What do I release so new growth can begin?” |
+| Waxing / Follicular  | Spring               | Growth, curiosity      | “What is calling me to explore?”             |
+| Full / Ovulatory     | Summer               | Vitality, expression   | “Where can I shine or share more freely?”    |
+| Waning / Luteal      | Autumn               | Reflection, refinement | “What needs completion before I rest?”       |
+
+---
+
+### ✦ In App Context
+
+If you include this lore in *Daughters of the Moon*:
+
+* It can appear as an **optional “Cycle Archetype” overlay**, toggled inside the same cultural layer.
+* Users could see both **outer moon** and **inner moon** progress rings, with short micro-texts (“Your inner moon is waning; take things slow.”).
+* Never medicalize: frame it as *cultural reflection* and *emotional journaling aid*.
+
+---
