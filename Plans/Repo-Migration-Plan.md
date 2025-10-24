@@ -126,97 +126,148 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 ---
 
-# **Appendix A – Repository Transition Execution**
+# **Appendix A - Repository Migration Execution**
 
-**Linked Plan:** Repo-Migration-Plan  
-**Purpose:** Define the controlled technical execution steps for migrating and activating the `fley-qms` repository as the authoritative QMS configuration source.  
+**Linked Plan:** Repo-Migration-Plan
+**Purpose:** Define controlled steps for migrating `redwitch.wiki` to `fley-qms` while preserving full commit history, setting up an empty controlled `main` branch, and enforcing branch protection and approvals via GitHub web interface.
 
 ---
 
-### **A1. Pre-Execution Checklist**
+## **A1. Pre-Execution Checklist**
 
 1. Plan approved by Quality Manager and Top Management.
-2. Confirm access to source (`redwitch.wiki`) and target (`fley-qms`).
-3. Verify draft branch protection and CODEOWNERS file exist.
-4. Communicate go-live readiness to all approvers.
+2. Confirm access to `redwitch.wiki` and `fley-qms` repositories.
+3. Prepare `CODEOWNERS` file for `main` branch, specifying `@mlehotay` as reviewer.
 
 ---
 
-### **A2. Migration Preparation**
+## **A2. Migration Preparation (Preserve History and Rename Branch)**
+
+### **Step 1: Clone the source wiki repository**
 
 ```bash
 git clone https://github.com/mlehotay/redwitch.wiki.git
-git clone https://github.com/mlehotay/fley-qms.git
-cp -r redwitch.wiki/* fley-qms/
-cd fley-qms
-git checkout -b qms-setup
-git add .
-git commit -m "Import Red Witch QMS content"
-git push origin qms-setup
+cd redwitch.wiki
 ```
-
-Verify content completeness and integrity.
 
 ---
 
-### **A3. Initialize Controlled Branch**
+### **Step 2: Rename `master` branch to `qms-setup`**
+
+```bash
+git branch -m master qms-setup
+```
+
+* This branch will serve as the historical import branch in the new repository.
+
+---
+
+### **Step 3: Add target repository as remote**
+
+```bash
+git remote add fley git@github.com:mlehotay/fley-qms.git
+```
+
+---
+
+### **Step 4: Push `qms-setup` to target repository**
+
+```bash
+git push -u fley qms-setup
+```
+
+* Commit history is preserved.
+* `qms-setup` will be read-only after go-live.
+
+---
+
+## **A3. Initialize Empty Controlled `main` Branch**
 
 ```bash
 git checkout --orphan main
-echo "# FLEY QMS" > README.md
-git add README.md
-git commit -m "Initialize controlled main branch"
+git reset --hard
 git push origin main
 ```
 
-**Configure GitHub repository settings:**
-
-* Set `main` as the default branch
-* Enable branch protection
-* Require Pull Request reviews
-* Disallow force pushes and direct commits
-* Require `CODEOWNERS` review
+* `main` is empty and ready for controlled Pull Requests only.
 
 ---
 
-### **A4. Go-Live Pull Request**
+## **A4. Configure Branch Protection and CODEOWNERS via GitHub Web UI**
 
-1. **Create PR**
+### **Step 1: Add `CODEOWNERS` file**
 
-   * Base: `main`
-   * Compare: `qms-setup`
-   * Title: “FLEY QMS Go-Live – Initial Controlled Baseline”
-   * Description references this Plan and Appendix A.
+1. In the GitHub repository, navigate to `fley-qms`.
+2. Go to the folder `.github` (create it if it doesn’t exist).
+3. Create a file named `CODEOWNERS` with the following content:
 
-2. **Review & Merge**
+```
+/* @mlehotay
+```
 
-   * Follow *Change-Control-SOP* approval process.
-   * Approvers: Quality Manager and Top Management.
-   * Merge via **Merge Commit** (retain history).
-
-3. **Tag Baseline**
-
-   ```bash
-   git tag QMS_Baseline_r1
-   git push origin QMS_Baseline_r1
-   ```
+4. Commit directly to the `main` branch.
 
 ---
 
-### **A5. Post-Merge Configuration**
+### **Step 2: Enable branch protection**
 
-* Verify that branch protection is enforced.
-* Lock or archive the `qms-setup` branch.
+1. In the repository, go to **Settings → Branches → Branch protection rules**.
+2. Click **Add rule** and enter `main` as the branch name pattern.
+3. Enable the following options:
+
+   * **Require pull request reviews before merging**
+
+     * Set **Required approving reviewers** to **1**
+     * Require review from **CODEOWNERS**
+   * **Require status checks to pass before merging** (optional if you have CI)
+   * **Include administrators** (enforce rules even for admins)
+   * **Restrict who can push to matching branches** → add **mlehotay** only
+   * **Disallow force pushes**
+   * **Disallow deletions**
+4. Click **Create** to save the rule.
+
+---
+
+## **A5. Go-Live Pull Request**
+
+1. Create a Pull Request:
+
+   * **Base:** `main`
+   * **Compare:** `qms-setup`
+   * **Title:** “FLEY QMS Go-Live – Initial Controlled Baseline”
+   * **Description:** “Migration of Red Witch wiki content with full history. Controlled under QMS change control plan.”
+2. Review & merge PR:
+
+   * Approver: `mlehotay`
+   * Merge via **Merge Commit** to retain full commit history.
+
+---
+
+## **A6. Tag Baseline**
+
+```bash
+git tag QMS_Baseline_r1
+git push origin QMS_Baseline_r1
+```
+
+* Establishes official QMS baseline.
+
+---
+
+## **A7. Post-Merge Configuration**
+
+* Verify branch protection is active in the GitHub web UI.
+* Archive or lock the `qms-setup` branch to prevent direct edits.
 * Create a **Go-Live Verification Record** issue including:
 
   * PR number
   * Tag name (`QMS_Baseline_r1`)
-  * Approval date and approvers
+  * Approval date
   * Verification checklist results
 
 ---
 
-### **A6. Verification Checklist**
+## **A8. Verification Checklist**
 
 | Verification Item             | Evidence            |
 | ----------------------------- | ------------------- |
@@ -228,21 +279,21 @@ git push origin main
 
 ---
 
-### **A7. Post-Go-Live Branch Model**
+## **A9. Post-Go-Live Branch Model**
 
-| Branch      | Purpose                           |
-| ----------- | --------------------------------- |
-| `main`      | Controlled, approved QMS baseline |
-| `qms-setup` | Archived import (read-only)       |
-| `change/*`  | Active change requests            |
-| `feature/*` | New processes or documents        |
-| `fix/*`     | Minor corrections                 |
+| Branch      | Purpose                            |
+| ----------- | ---------------------------------- |
+| `main`      | Controlled, empty QMS baseline     |
+| `qms-setup` | Historical wiki import (read-only) |
+| `change/*`  | Active change requests             |
+| `feature/*` | New processes or documents         |
+| `fix/*`     | Minor corrections                  |
 
-All changes to `main` require approved Pull Requests.
+*All changes to `main` require approved Pull Requests.*
 
 ---
 
-### **A8. Records and Retention**
+## **A10. Records and Retention**
 
 | Record                   | Location             | Retention |
 | ------------------------ | -------------------- | --------- |
@@ -250,14 +301,15 @@ All changes to `main` require approved Pull Requests.
 | Tag `QMS_Baseline_r1`    | Repository tags      | Permanent |
 | Branch protection config | Repo settings        | Permanent |
 | Verification Record      | GitHub Issues        | Permanent |
-| Archived `redwitch.wiki` | Git Repository       | Permanent |
+| Archived `redwitch.wiki` | `qms-setup` branch   | Permanent |
 
 ---
 
 ### ✅ **Outcome**
 
-* Controlled repository (`fley-qms`) created and active.
-* Historical data from `redwitch.wiki` preserved.
-* Protected `main` branch established.
+* `fley-qms` repository created with **full history preserved**.
+* Empty `main` branch is protected and controlled.
+* `qms-setup` branch retains historical commits.
+* Only `mlehotay` can approve Pull Requests.
 * Baseline `QMS_Baseline_r1` approved by Top Management.
-* QMS is now operational under formal change control.
+* QMS operational under formal change control.
