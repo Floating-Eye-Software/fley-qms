@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Top Management  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Management-Review-SOP  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/SOPs/Management-Review-SOP.md  
 
 ---
 

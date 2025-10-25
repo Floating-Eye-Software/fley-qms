@@ -1,10 +1,10 @@
 # **WI – GitHub Pull Request and Branch Management**
 
-**Slug:** GitHub-Change-Control
-**Revision:** r1
-**Effective Date:** [YYYY-MM-DD]
-**Related SOP:** Change-Control-SOP
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Change-Control
+**Slug:** GitHub-Change-Control  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Change-Control-SOP  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md  
 
 ---
 

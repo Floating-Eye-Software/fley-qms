@@ -1,10 +1,10 @@
 # **WI – GitHub Document Control**
 
-**Slug:** GitHub-Document-Control
-**Revision:** r1
-**Effective Date:** [YYYY-MM-DD]
-**Related SOP:** Document-Control-SOP, Identification-and-Traceability-SOP
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Document-Control
+**Slug:** GitHub-Document-Control  
+**Revision:** r1  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Document-Control-SOP, Identification-and-Traceability-SOP  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-Document-Control.md  
 
 ---
 

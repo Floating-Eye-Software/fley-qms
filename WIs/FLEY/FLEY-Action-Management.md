@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Project-Management-SOP, Quality-Planning-SOP, Change-Control-SOP, Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/FLEY-Action-Management  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md  
 
 ---
 

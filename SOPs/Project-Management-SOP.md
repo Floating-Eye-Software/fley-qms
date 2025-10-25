@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Project Manager  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Project-Management-SOP  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/SOPs/Project-Management-SOP.md  
 
 ---
 

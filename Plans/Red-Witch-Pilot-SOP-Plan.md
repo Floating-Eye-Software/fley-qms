@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Quality-Planning-SOP, Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Red-Witch-Pilot-SOP-Plan  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Plans/Red-Witch-Pilot-SOP-Plan.md  
 
 ---
 
@@ -122,7 +122,7 @@
 * Pilot evidence captured in GitHub Issues, Pull Requests, and CI/CD logs.
 * Lessons learned and design refinement decisions documented in GitHub Issues (e.g., [#7 Change Control SOP](https://github.com/mlehotay/redwitch/issues/7)).
 * Traceability matrices link SOPs/WIs to DCP inputs/outputs and verification/validation evidence.
-* Repository migration actions governed by: [PLAN – QMS Repository Architecture and Go-Live Transition](https://github.com/mlehotay/redwitch/wiki/Repo-Migration-Plan).
+* Repository migration actions governed by: [PLAN – QMS Repository Architecture and Go-Live Transition](https://github.com/mlehotay/fley-qms/blob/main/<dir>/Repo-Migration-Plan).
 
 ---
 
@@ -149,7 +149,7 @@
 ## **10. Continuous Improvement & Design Changes**
 
 * Design improvement feedback captured as design changes in GitHub Issues.
-* Implement corrective design changes per [Repo Migration Plan](https://github.com/mlehotay/redwitch/wiki/Repo-Migration-Plan).
+* Implement corrective design changes per [Repo Migration Plan](https://github.com/mlehotay/fley-qms/blob/main/<dir>/Repo-Migration-Plan).
 * Integrate validated SOPs/WIs into controlled repository under formal change control.
 * Conduct post-pilot **Management Review**: assess pilot results, approve baseline, define Milestone 2 objectives.
 * Align ongoing improvements with **Continuous Improvement Plan** and CAPA SOP once established.

@@ -3,7 +3,7 @@
 **Slug:** GitHub-QMS-Overview  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Overview  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Overview.md  
 
 ---
 

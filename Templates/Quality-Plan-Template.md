@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Quality-Planning-SOP  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Quality-Plan-Template  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Templates/Quality-Plan-Template.md  
 
 ---
 

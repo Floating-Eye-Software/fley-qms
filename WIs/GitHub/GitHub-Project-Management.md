@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Project-Management-SOP   
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Project-Management  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-Project-Management.md  
 
 ---
 

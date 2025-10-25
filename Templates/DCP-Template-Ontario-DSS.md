@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/DCP-Template-Ontario-DSS  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Templates/DCP-Template-Ontario-DSS.md  
 
 ---
 

@@ -3,7 +3,7 @@
 **Slug:** Organizational-Chart  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Organizational-Chart  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/QMS/Organizational-Chart.md  
 
 ---
 

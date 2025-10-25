@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Quality Manager  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Document-Control-SOP  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/SOPs/Document-Control-SOP.md  
 
 ---
 

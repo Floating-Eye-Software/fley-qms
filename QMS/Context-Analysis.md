@@ -3,7 +3,7 @@
 **Slug:** Context-Analysis  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Context-Analysis  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/QMS/Context-Analysis.md  
 
 ---
 

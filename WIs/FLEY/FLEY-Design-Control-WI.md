@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Design-Control-SOP   
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/FLEY-Design-Control-WI  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/FLEY/FLEY-Design-Control-WI.md  
 
 ---
 

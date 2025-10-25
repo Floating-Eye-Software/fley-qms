@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Identification-and-Traceability-SOP   
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-Version-Control  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-Version-Control.md  
 
 ---
 

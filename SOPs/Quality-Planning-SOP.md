@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Top Management  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Quality-Planning-SOP  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/SOPs/Quality-Planning-SOP.md  
 
 ---
 

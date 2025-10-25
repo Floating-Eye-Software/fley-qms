@@ -3,7 +3,7 @@
 **Slug:** Process-Map  
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Process-Map  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/QMS/Process-Map.md  
 
 ---
 

@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Design-Control-Plan-Template  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Templates/Design-Control-Plan-Template.md  
 
 ---
 

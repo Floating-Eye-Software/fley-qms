@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Document-Control-SOP   
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Work-Instruction-Template  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Templates/Work-Instruction-Template.md  
 
 ---
 

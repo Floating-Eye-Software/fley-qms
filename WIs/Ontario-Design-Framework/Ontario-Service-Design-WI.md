@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Design-Control-SOP   
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Ontario-Service-Design-WI  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/Ontario-Design-Framework/Ontario-Service-Design-WI.md  
 
 ---
 

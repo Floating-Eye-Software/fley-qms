@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Project Manager (Process Owner)  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/Design-Control-SOP  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/SOPs/Design-Control-SOP.md  
 
 ---
 

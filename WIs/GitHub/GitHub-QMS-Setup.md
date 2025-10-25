@@ -4,7 +4,7 @@
 **Revision:** r1  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Document-Control-SOP, Change-Control-SOP, Identification-and-Traceability-SOP  
-**Controlled Source:** https://github.com/mlehotay/redwitch/wiki/GitHub-QMS-Setup  
+**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Setup.md  
 
 ---
 
