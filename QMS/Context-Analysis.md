@@ -97,4 +97,4 @@ FLEY operates in an environment shaped by social expectations, legal frameworks,
 * Review internal and external context at least **annually** or with major product releases.
 * Track developments in **reproductive-health regulation**, **data ethics**, and **environmental responsibility**.
 * Verify ongoing supplier compliance with relevant ISO standards.
-* Record context updates during Management Review and maintain links to the [[Quality Manual]] and [[GitHub QMS Operations]].
+* Record context updates during Management Review and maintain links to the [Quality Manual](../QMS/Quality-Manual.md) and [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md).

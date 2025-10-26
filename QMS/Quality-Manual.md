@@ -28,7 +28,7 @@ It develops ethical, privacy-first digital tools. Non-QMS activities (NetHack se
 
 The **Red Witch** project is the first initiative formally managed under the QMS.
 
-See [[Context Analysis]] for the full organizational context.
+See [Context Analysis](Context-Analysis.md) for the full organizational context.
 
 ---
 
@@ -75,7 +75,7 @@ FLEY’s work is guided by a commitment to:
 
 FLEY will **develop and maintain free, ethical, privacy-first digital tools**, beginning with *Red Witch*, while progressively aligning with **regulatory and ethical standards** as the organization grows.
 
-See also the approved [[Quality Policy]] for FLEY’s top-level commitments.
+See also the approved [Quality Policy](Quality-Policy.md) for FLEY’s top-level commitments.
 
 ---
 
@@ -85,9 +85,9 @@ FLEY’s QMS consists of three interrelated workflows:
 
 | Workflow                            | Description                                                 | Key SOP / WI              | Example Outputs                                         |
 | ----------------------------------- | ----------------------------------------------------------- | ------------------------- | ------------------------------------------------------- |
-| **QMS Creation**                    | Establishing and documenting the framework                  | [[Quality Planning SOP]]  | SOPs, Quality Manual, initial audit                     |
-| **QMS Operation**                   | Maintaining, monitoring, auditing, and improving the system | [[GitHub QMS Operations]] | Context updates, Risk Register, CAPA, Improvement logs  |
-| **Product Development (Red Witch)** | Designing, developing, and maintaining Red Witch            | [[Design Control SOP]]    | Design records, verification results, release artifacts |
+| **QMS Creation**                    | Establishing and documenting the framework                  | [Quality Planning SOP](../SOPs/Quality-Planning-SOP.md)  | SOPs, Quality Manual, initial audit                     |
+| **QMS Operation**                   | Maintaining, monitoring, auditing, and improving the system | [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md) | Context updates, Risk Register, CAPA, Improvement logs  |
+| **Product Development (Red Witch)** | Designing, developing, and maintaining Red Witch            | [Design Control SOP](../SOPs/Design-Control-SOP.md)    | Design records, verification results, release artifacts |
 
 The three workflows operate cyclically and interdependently:
 
@@ -95,7 +95,7 @@ The three workflows operate cyclically and interdependently:
  * The **QMS Operation** workflow maintains, monitors, and improves that structure over time.
  * The **Product Development** workflow applies the QMS framework to the Red Witch product lifecycle.
 
-For a high-level visual of workflows and interactions, see [[Process Map]].
+For a high-level visual of workflows and interactions, see [Process Map](Process-Map.md).
 
 ---
 
@@ -110,7 +110,7 @@ For a high-level visual of workflows and interactions, see [[Process Map]].
   * **Act:** Apply improvements, corrective actions, and updates
 * **Risk-Based Thinking:** Identifies factors that could cause deviations, guiding preventive controls and opportunity capture
 
-QMS Processes and their interactions are defined in [[Process Map]].
+QMS Processes and their interactions are defined in [Process Map](Process-Map.md).
 
 ---
 
@@ -124,7 +124,7 @@ QMS Processes and their interactions are defined in [[Process Map]].
 | **Process Owner**              | Oversees operational processes, ensures documentation   |
 | **All Employees**              | Follow procedures, report issues, engage in improvement |
 
-Detailed roles are documented in [[Organizational Chart]].
+Detailed roles are documented in [Organizational Chart](Organizational-Chart.md).
 
 ---
 
@@ -136,7 +136,7 @@ Detailed roles are documented in [[Organizational Chart]].
   * QMS risks (resource, documentation, climate)
   * Improvement opportunities (automation, maturity growth)
 * Reviewed during **Management Review**
-* Mitigation and improvement actions documented in [[Quality Planning SOP]] and [[Continuous Improvement Plan]]
+* Mitigation and improvement actions documented in [Quality Planning SOP](../SOPs/Quality-Planning-SOP.md) and [Continuous Improvement Plan](../Plans/Continuous-Improvement-Plan.md)
 
 ---
 
@@ -144,12 +144,12 @@ Detailed roles are documented in [[Organizational Chart]].
 
 | Level       | Description                                           | Examples                                               |
 | ----------- | ----------------------------------------------------- | ------------------------------------------------------ |
-| **Level 1** | Quality Manual (this document) and [[Quality Policy]] | Top-level commitments and framework                    |
+| **Level 1** | Quality Manual (this document) and [Quality Policy](Quality-Policy.md) | Top-level commitments and framework                    |
 | **Level 2** | SOPs                                                  | Leadership SOP, Planning SOP, Design & Development SOP |
 | **Level 3** | WIs / Records                                         | GitHub QMS Operation WI, Project boards                |
 | **Level 4** | Forms / Evidence                                      | Risk Register, Audit logs, Meeting minutes             |
 
-All documents are controlled per [[Document Control SOP]].
+All documents are controlled per [Document Control SOP](../SOPs/Document-Control-SOP.md).
 
 ---
 
@@ -158,7 +158,7 @@ All documents are controlled per [[Document Control SOP]].
 * Conducted annually or following major releases
 * Inputs: Context updates, audit results, KPI performance, user feedback, risk changes, climate considerations
 * Outputs: Action plans, improvement projects, resource adjustments
-* Logged in [[Continuous Improvement Plan]] and [[GitHub QMS Operations]]
+* Logged in [Continuous Improvement Plan](../Plans/Continuous-Improvement-Plan.md) and [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md)
 
 ---
 
@@ -168,7 +168,7 @@ All documents are controlled per [[Document Control SOP]].
 * ISO 9000:2015 – Fundamentals & Vocabulary
 * GDPR (2016/679) – Privacy reference
 * Internal QMS SOPs, Work Instructions, and Records
-* [[Quality Policy]] – Top-level commitment statement
+* [Quality Policy](Quality-Policy.md) – Top-level commitment statement
 
 ---
 
@@ -183,6 +183,6 @@ All documents are controlled per [[Document Control SOP]].
 
 | Workflow                        | Reference / Link          | Kanban Board                                              |
 | ------------------------------- | ------------------------- | --------------------------------------------------------- |
-| QMS Creation                    | [[Quality Planning SOP]]  | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
-| QMS Operation                   | [[GitHub QMS Operations]] | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
-| Product Development (Red Witch) | [[Design Control SOP]]    | [Red Witch](https://github.com/users/mlehotay/projects/4) |
+| QMS Creation                    | [Quality Planning SOP](../SOPs/Quality-Planning-SOP.md)  | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
+| QMS Operation                   | [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md) | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
+| Product Development (Red Witch) | [Design Control SOP](../SOPs/Design-Control-SOP.md)    | [Red Witch](https://github.com/users/mlehotay/projects/4) |

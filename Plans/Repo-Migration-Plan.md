@@ -108,12 +108,12 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 * **Linked Work Instructions:**
 
-  * [WI – GitHub-Change-Control](https://github.com/mlehotay/fley-qms/blob/main/<dir>/GitHub-Change-Control)
-  * [WI – GitHub-QMS-Setup](https://github.com/mlehotay/fley-qms/blob/main/<dir>/GitHub-QMS-Setup)
+  * [WI – GitHub-Change-Control](../WIs/GitHub/GitHub-Change-Control.md)
+  * [WI – GitHub-QMS-Setup](../WIs/GitHub/GitHub-QMS-Setup.md)
 
 * **Appendix:**
 
-  * [Appendix A – Repository Migration Execution](https://github.com/mlehotay/fley-qms/blob/main/<dir>/Repo-Migration-Plan) – Defines the controlled step-by-step execution process referenced by this plan.
+  * [Appendix A – Repository Migration Execution](../WIs/GitHub/Repo-Migration-Plan.md) – Defines the controlled step-by-step execution process referenced by this plan.
 
 ---
 
