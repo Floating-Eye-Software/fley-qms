@@ -113,7 +113,7 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 * **Appendix:**
 
-  * [Appendix A – Repository Migration Execution](../WIs/GitHub/Repo-Migration-Plan.md) – Defines the controlled step-by-step execution process referenced by this plan.
+  * [Appendix A – Repository Migration Execution](#appendix-a--repository-migration-execution) – Defines the controlled step-by-step execution process referenced by this plan.
 
 ---
 
@@ -126,7 +126,7 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 ---
 
-# **Appendix A – Repository Migration and Controlled Baseline Execution**
+# **Appendix A – Repository Migration Execution**
 
 **Linked Plan:** Repo-Migration-Plan  
 **Purpose:**

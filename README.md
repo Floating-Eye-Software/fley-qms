@@ -50,9 +50,9 @@ The FLEY QMS is aligned with **ISO 9001:2015** and **ISO 9001:2024 (Climate Acti
 * [GitHub QMS Setup](WIs/GitHub/GitHub-QMS-Setup.md)
 * [GitHub QMS Operations](WIs/GitHub/GitHub-QMS-Operations.md)
 * [GitHub Document Control](WIs/GitHub/GitHub-Document-Control.md)
-* [GitHub Project Management](WIs/GitHub/GitHub-Project-Management.md)
 * [GitHub Change Control](WIs/GitHub/GitHub-Change-Control.md)
 * [GitHub Version Control](WIs/GitHub/GitHub-Version-Control.md)
+* [GitHub Project Management](WIs/GitHub/GitHub-Project-Management.md)
 
 **FLEY-Specific WIs**
 * [FLEY Design Control WI](WIs/FLEY/FLEY-Design-Control-WI.md)
@@ -78,6 +78,7 @@ The FLEY QMS is aligned with **ISO 9001:2015** and **ISO 9001:2024 (Climate Acti
 
 ## **2. Planning and Continuous Improvement**
 
+* [Continuous Improvement Plan](Plans/Continuous-Improvement-Plan.md)
 * [QMS Design Control Plan](Plans/QMS-Design-Control-Plan.md)
 * [Red Witch Pilot SOP Plan](Plans/Red-Witch-Pilot-SOP-Plan.md)
 * [Repo Migration Plan](Plans/Repo-Migration-Plan.md)
