@@ -2,9 +2,9 @@
 
 **Slug:** Repo-Migration-Plan  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Quality-Planning-SOP, Change-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Plans/Repo-Migration-Plan.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Plans/Repo-Migration-Plan.md  
 
 ---
 
@@ -96,24 +96,24 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 ## **8. Linkage to Execution**
 
 * **Milestones:**
-  * [QMS Foundations](https://github.com/mlehotay/redwitch/milestone/1)
+  * [FLEY-QMS Launch (Go-Live)](https://github.com/Floating-Eye-Software/fley-qms/milestone/1)
+  * [QMS Foundations](https://github.com/Floating-Eye-Software/redwitch/milestone/1)
 
 * **Project Board:**
-  * [FLEY QMS Kanban](https://github.com/users/mlehotay/projects/3)
+  * [FLEY QMS Kanban](https://github.com/orgs/Floating-Eye-Software/projects/1)
 
 * **Issues:**
-
-  * [#28 Create Controlled QMS Repository](https://github.com/mlehotay/redwitch/issues/28)
-  * [#7 - SOP: Pull Request Procedure (Change Control)](https://github.com/mlehotay/redwitch/issues/7)
+  * [#28 - Create Controlled QMS Repository](https://github.com/Floating-Eye-Software/redwitch/issues/28)
+  * [#7 - SOP: Pull Request Procedure (Change Control)](https://github.com/Floating-Eye-Software/redwitch/issues/7)
+  * [#2 - Create Organization and Update CODEOWNERS](https://github.com/Floating-Eye-Software/fley-qms/issues/2)
 
 * **Linked Work Instructions:**
+  * [WI - GitHub-Change-Control](../WIs/GitHub/GitHub-Change-Control.md)
+  * [WI - GitHub-QMS-Setup](../WIs/GitHub/GitHub-QMS-Setup.md)
 
-  * [WI – GitHub-Change-Control](../WIs/GitHub/GitHub-Change-Control.md)
-  * [WI – GitHub-QMS-Setup](../WIs/GitHub/GitHub-QMS-Setup.md)
-
-* **Appendix:**
-
-  * [Appendix A – Repository Migration Execution](#appendix-a--repository-migration-execution) – Defines the controlled step-by-step execution process referenced by this plan.
+* **Appendices:**
+  * [Appendix A - Repository Migration Execution](#appendix-a--repository-migration-execution)
+  * [Appendix B - Organization Configuration](#appendix-b--organization-configuration)
 
 ---
 
@@ -128,8 +128,8 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 # **Appendix A – Repository Migration Execution**
 
-**Linked Plan:** Repo-Migration-Plan  
-**Purpose:**
+## **Purpose:**
+
 Define the controlled, auditable process for migrating the Red Witch QMS wiki to `fley-qms`, preserving full commit history, establishing a controlled baseline (`main`), and segregating work-in-progress (WIP) materials for continued development.  
 
 ---
@@ -378,6 +378,88 @@ git push origin QMS_Baseline_r1
 | Verification Record                                  | GitHub Issues        | Permanent |
 | Archived wiki import (`qms-setup`)                   | Git repository       | Permanent |
 | Active development branch (`feature/qms-foundation`) | Git repository       | Ongoing   |
+
+---
+
+# **Appendix B - Organization Configuration**
+
+## **Purpose**
+To establish a minimal, auditable permission structure within the **Floating Eye Software (FLEY)** GitHub Organization that enforces QMS change-control requirements using role-based access and mandatory peer review.
+
+---
+
+## **B.1 Teams**
+
+| Team | Access Level | Purpose | Typical Members |
+|------|---------------|----------|----------------|
+| **@Floating-Eye-Software/qms-authors** | **Write** | Create branches, draft and submit Pull Requests for controlled documentation. | Process Owners, Project Managers, Document Authors |
+| **@Floating-Eye-Software/qms-approvers** | **Maintain** | Review, approve, and merge Pull Requests after required approvals. | Quality Manager, Top Management, Compliance Approvers |
+
+> Only these two teams are required to support full QMS change control.  
+> Administrators (org owners) retain configuration rights but do not participate in routine change approvals.
+
+---
+
+## **B.2 Repository Transfer and Team Setup Steps**
+
+1. **Transfer Repository**
+   - Move `fley-qms` into the **Floating Eye Software** organization.
+
+2. **Create Teams**
+   - Under *Organization → Teams*, create:
+     - `qms-authors`
+     - `qms-approvers`
+
+3. **Assign Permissions**
+   - In the `fley-qms` repository:
+     - Grant **Write** access to `qms-authors`.
+     - Grant **Maintain** access to `qms-approvers`.
+
+4. **Add Members**
+   - Add contributors to `qms-authors`.
+   - Add reviewers and QA leadership to `qms-approvers`.
+
+---
+
+## **B.3 CODEOWNERS Configuration**
+
+Create `.github/CODEOWNERS` with the following content:
+
+```plaintext
+# Require approval from Approvers for any change to controlled content
+* @Floating-Eye-Software/qms-approvers
+````
+
+This ensures all pull requests modifying any file require at least one review from the **qms-approvers** team before merge.
+
+---
+
+## **B.4 Branch Protection Rules**
+
+Apply the following protection to the `main` (controlled) branch:
+
+| Rule                                   | Setting                |
+| -------------------------------------- | ---------------------- |
+| Require pull request before merging    | ✅ Enabled              |
+| Restrict who can push                  | ✅ Only `qms-approvers` |
+| Dismiss stale approvals on new commits | ✅ Recommended          |
+| Do not allow bypassing settings        | ✅ Recommended          |
+
+---
+
+## **B.5 Controlled Change Flow**
+
+```
+Author (qms-authors)
+   ↓  opens Pull Request
+Approver (qms-approvers)
+   ↓  reviews & approves
+Branch Protection enforces approval
+   ↓
+Approver merges → controlled baseline or release tag
+```
+
+This two-team model satisfies QMS requirements for separation of duties, traceable review, and controlled baseline creation with minimal administrative overhead.
 
 ---
 

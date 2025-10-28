@@ -2,9 +2,9 @@
 
 **Slug:** Continuous-Improvement-Plan  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Quality-Planning-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Plans/Continuous-Improvement-Plan.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Plans/Continuous-Improvement-Plan.md  
 
 ---
 
@@ -99,9 +99,9 @@
 
 * **Tracking:**
 
-  * [CAPA Issues (label:capa)](https://github.com/mlehotay/redwitch/issues?q=label%3Acapa)
-  * [Audit Findings (label:audit)](https://github.com/mlehotay/redwitch/issues?q=label%3Aaudit)
-  * [Improvement Actions (label:improvement)](https://github.com/mlehotay/redwitch/issues?q=label%3Aimprovement)
+  * [CAPA Issues (label:capa)](https://github.com/Floating-Eye-Software/redwitch/issues?q=label%3Acapa)
+  * [Audit Findings (label:audit)](https://github.com/Floating-Eye-Software/redwitch/issues?q=label%3Aaudit)
+  * [Improvement Actions (label:improvement)](https://github.com/Floating-Eye-Software/redwitch/issues?q=label%3Aimprovement)
 
 * **Related Plans:**
 

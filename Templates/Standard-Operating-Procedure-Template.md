@@ -2,9 +2,9 @@
 
 **Slug:** Standard-Operating-Procedure-Template  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Process Owner:** Quality Manager  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Templates/Standard-Operating-Procedure-Template.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Standard-Operating-Procedure-Template.md  
 
 ---
 

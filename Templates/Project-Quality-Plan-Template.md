@@ -2,9 +2,9 @@
 
 **Slug:** Project-Quality-Plan-Template  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Quality-Planning-SOP, Project-Management-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Templates/Project-Quality-Plan-Template.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Project-Quality-Plan-Template.md  
 
 ---
 

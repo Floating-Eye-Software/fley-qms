@@ -2,9 +2,9 @@
 
 **Slug:** DCP-Template-Ontario-DSS  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Templates/DCP-Template-Ontario-DSS.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/DCP-Template-Ontario-DSS.md  
 
 ---
 

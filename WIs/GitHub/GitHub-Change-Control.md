@@ -2,9 +2,9 @@
 
 **Slug:** GitHub-Change-Control  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Change-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md  
 
 ---
 

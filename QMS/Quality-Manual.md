@@ -2,8 +2,8 @@
 
 **Slug:** Quality-Manual  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/QMS/Quality-Manual.md  
+**Effective Date:** 2025-10-28  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Quality-Manual.md  
 
 ---
 
@@ -183,6 +183,6 @@ All documents are controlled per [Document Control SOP](../SOPs/Document-Control
 
 | Workflow                        | Reference / Link          | Kanban Board                                              |
 | ------------------------------- | ------------------------- | --------------------------------------------------------- |
-| QMS Creation                    | [Quality Planning SOP](../SOPs/Quality-Planning-SOP.md)  | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
-| QMS Operation                   | [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md) | [FLEY QMS](https://github.com/users/mlehotay/projects/3)  |
-| Product Development (Red Witch) | [Design Control SOP](../SOPs/Design-Control-SOP.md)    | [Red Witch](https://github.com/users/mlehotay/projects/4) |
+| QMS Creation                    | [Quality Planning SOP](../SOPs/Quality-Planning-SOP.md)  | [FLEY QMS](https://github.com/orgs/Floating-Eye-Software/projects/1)  |
+| QMS Operation                   | [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md) | [FLEY QMS](https://github.com/orgs/Floating-Eye-Software/projects/1)  |
+| Product Development (Red Witch) | [Design Control SOP](../SOPs/Design-Control-SOP.md)    | TBD |

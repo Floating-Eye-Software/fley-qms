@@ -2,9 +2,9 @@
 
 **Slug:** QMS-Design-Control-Plan  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Plans/QMS-Design-Control-Plan.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Plans/QMS-Design-Control-Plan.md  
 
 ---
 

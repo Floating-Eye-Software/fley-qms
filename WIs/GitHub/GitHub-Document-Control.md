@@ -2,9 +2,9 @@
 
 **Slug:** GitHub-Document-Control  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Document-Control-SOP, Identification-and-Traceability-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-Document-Control.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Document-Control.md  
 
 ---
 
@@ -83,7 +83,7 @@ Each controlled Markdown file begins with the following header:
 
 **Slug:** [Slug-Name]  
 **Revision:** r[#]  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** [Linked SOP] _(optional)_  
 **Controlled Source:** https://github.com/[org]/[repo]/[path]/[file].md
 ```

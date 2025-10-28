@@ -2,9 +2,9 @@
 
 **Slug:** GitHub-QMS-Operations  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP, Quality-Planning-SOP, Leadership-SOP, Management-Review-SOP, Risk-and-Opportunity-Management-SOP, Project-Management-SOP, Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Operations.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Operations.md  
 
 ---
 
@@ -67,7 +67,7 @@ Applies to all operational QMS activities, including:
 
 | GitHub Area                      | QMS Function                                             |
 | -------------------------------- | -------------------------------------------------------- |
-| **Repository (`redwitch.wiki`)** | Controlled home for QMS documentation and records.       |
+| **Repository (`fley-qms`)**      | Controlled home for QMS documentation and records.       |
 | **Wiki**                         | User-friendly access to policies, SOPs, and WIs.         |
 | **Issues**                       | Primary mechanism for QMS records and actions.           |
 | **Pull Requests**                | Formal approvals and document control.                   |

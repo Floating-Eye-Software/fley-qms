@@ -2,9 +2,9 @@
 
 **Slug:** GitHub-Project-Management  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Project-Management-SOP   
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/GitHub/GitHub-Project-Management.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Project-Management.md  
 
 ---
 
@@ -44,7 +44,7 @@ This WI applies to all projects managed in GitHub under the organization’s QMS
 
 #### **5.1 Overview of GitHub Project Environment**
 
-A typical project workspace on GitHub (example: [https://github.com/mlehotay/redwitch](https://github.com/mlehotay/redwitch)) includes the following tabs and functions:
+A typical project workspace on GitHub (example: [https://github.com/Floating-Eye-Software/redwitch](https://github.com/Floating-Eye-Software/redwitch)) includes the following tabs and functions:
 
 | GitHub Feature    | Description and QMS Use                                                                                                                                 |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |

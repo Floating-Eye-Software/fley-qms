@@ -2,9 +2,9 @@
 
 **Slug:** Project-Management-SOP  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Process Owner:** Project Manager  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/SOPs/Project-Management-SOP.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Project-Management-SOP.md  
 
 ---
 

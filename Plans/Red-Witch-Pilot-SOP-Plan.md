@@ -2,9 +2,9 @@
 
 **Slug:** Red-Witch-Pilot-SOP-Plan  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOPs:** Quality-Planning-SOP, Design-Control-SOP  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/Plans/Red-Witch-Pilot-SOP-Plan.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Plans/Red-Witch-Pilot-SOP-Plan.md  
 
 ---
 
@@ -120,9 +120,9 @@
 
 * SOP/WI drafts, approvals, and revisions stored in controlled repository (`fley-qms`).
 * Pilot evidence captured in GitHub Issues, Pull Requests, and CI/CD logs.
-* Lessons learned and design refinement decisions documented in GitHub Issues (e.g., [#7 Change Control SOP](https://github.com/mlehotay/redwitch/issues/7)).
+* Lessons learned and design refinement decisions documented in GitHub Issues (e.g., [#7 Change Control SOP](https://github.com/Floating-Eye-Software/redwitch/issues/7)).
 * Traceability matrices link SOPs/WIs to DCP inputs/outputs and verification/validation evidence.
-* Repository migration actions governed by: [PLAN – QMS Repository Architecture and Go-Live Transition](https://github.com/mlehotay/fley-qms/blob/main/<dir>/Repo-Migration-Plan).
+* Repository migration actions governed by: [PLAN – QMS Repository Architecture and Go-Live Transition](Repo-Migration-Plan.md).
 
 ---
 
@@ -130,26 +130,26 @@
 
 * **Milestones / Stage Gates (per DCP):**
 
-  * [QMS Foundations](https://github.com/mlehotay/redwitch/milestone/1)
-  * [Audit-Ready QMS Documentation](https://github.com/mlehotay/redwitch/milestone/2)
-  * [Compliance Backbone](https://github.com/mlehotay/redwitch/milestone/3)
+  * [QMS Foundations](https://github.com/Floating-Eye-Software/redwitch/milestone/1)
+  * [Audit-Ready QMS Documentation](https://github.com/Floating-Eye-Software/redwitch/milestone/2)
+  * [Compliance Backbone](https://github.com/Floating-Eye-Software/redwitch/milestone/3)
 
 * **Project Boards:**
 
-  * [FLEY QMS Kanban](https://github.com/users/mlehotay/projects/3)
-  * [Red Witch Kanban](https://github.com/users/mlehotay/projects/4)
+  * [FLEY QMS Kanban](https://github.com/orgs/Floating-Eye-Software/projects/1)
+  * Red Witch Kanban *(coming soon)*
 
 * **Key Issues:**
 
-  * [#5 Draft Software Development Lifecycle SOP](https://github.com/mlehotay/redwitch/issues/5)
-  * [#7 SOP – Pull Request Procedure (Change Control)](https://github.com/mlehotay/redwitch/issues/7)
+  * [#5 Draft Software Development Lifecycle SOP](https://github.com/Floating-Eye-Software/redwitch/issues/5)
+  * [#7 SOP – Pull Request Procedure (Change Control)](https://github.com/Floating-Eye-Software/redwitch/issues/7)
 
 ---
 
 ## **10. Continuous Improvement & Design Changes**
 
 * Design improvement feedback captured as design changes in GitHub Issues.
-* Implement corrective design changes per [Repo Migration Plan](https://github.com/mlehotay/fley-qms/blob/main/<dir>/Repo-Migration-Plan).
+* Implement corrective design changes per [Repo Migration Plan](Repo-Migration-Plan.md).
 * Integrate validated SOPs/WIs into controlled repository under formal change control.
 * Conduct post-pilot **Management Review**: assess pilot results, approve baseline, define Milestone 2 objectives.
 * Align ongoing improvements with **Continuous Improvement Plan** and CAPA SOP once established.

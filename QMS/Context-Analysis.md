@@ -2,8 +2,8 @@
 
 **Slug:** Context-Analysis  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/QMS/Context-Analysis.md  
+**Effective Date:** 2025-10-28  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Context-Analysis.md  
 
 ---
 

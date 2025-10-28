@@ -2,9 +2,9 @@
 
 **Slug:** Ontario-Service-Design-WI  
 **Revision:** r1  
-**Effective Date:** [YYYY-MM-DD]  
+**Effective Date:** 2025-10-28  
 **Related SOP:** Design-Control-SOP   
-**Controlled Source:** https://github.com/mlehotay/fley-qms/blob/main/WIs/Ontario-Design-Framework/Ontario-Service-Design-WI.md  
+**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/Ontario-Design-Framework/Ontario-Service-Design-WI.md  
 
 ---
 
