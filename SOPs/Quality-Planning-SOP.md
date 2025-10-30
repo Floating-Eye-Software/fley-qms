@@ -1,8 +1,8 @@
 # **SOP - Quality Planning**
 
 **Slug:** Quality-Planning-SOP  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
+**Revision:** r2 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Top Management  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Quality-Planning-SOP.md  
 
@@ -90,6 +90,17 @@ Results and decisions from Management Reviews may initiate planned changes to th
 
 Effectiveness of executed actions shall be reviewed during Management Review meetings per *Management-Review-SOP*.
 
+6.5 **Verification of Effectiveness**
+
+Verification of effectiveness confirms that planned quality activities have achieved their intended results and that the QMS remains suitable, adequate, and effective.
+
+The responsible **Process Owner** or **Project Owner** shall:
+
+   * Verify that all deliverables, planned actions, and milestones under the Plan or Project have been completed or appropriately dispositioned.
+   * Assess implementation results against defined **objectives, success criteria, and acceptance metrics** in the approved Plan.
+   * Record the verification summary, results, and supporting evidence within the governing Plan or associated Issues.
+   * Capture any residual risks, improvement opportunities, or lessons learned to inform future planning activities.
+
 ---
 
 ### **7. Records**
@@ -98,3 +109,4 @@ Effectiveness of executed actions shall be reviewed during Management Review mee
 * Quality Objectives Register
 * Change Records
 * Management Review Records (decisions, actions, policy updates)
+* Effectiveness verification (within Plan or Issue)

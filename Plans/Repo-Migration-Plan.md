@@ -1,9 +1,9 @@
 # **PLAN – QMS Repository Architecture and Go-Live Transition**
 
 **Slug:** Repo-Migration-Plan  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Related SOP:** Quality-Planning-SOP, Change-Control-SOP  
+**Revision:** r2 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
+**Related SOP:** Quality-Planning-SOP, Change-Control-SOP, Document-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Plans/Repo-Migration-Plan.md  
 
 ---
@@ -28,7 +28,7 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 * Establish a **controlled repository** (`fley-qms`) with protected `main` branch and enforced review rules.
 * Preserve the **complete commit history** from the Red Witch wiki.
-* Achieve **baseline sign-off** (`QMS_Baseline_r1`) by Top Management.
+* Achieve **baseline sign-off** (`FLEY-QMS_r1`) by Top Management.
 * Ensure **change control readiness**: no direct commits to `main`; all future edits via PR workflow.
 * Separate **product website** (`redwitch`) from **QMS governance system** (`fley-qms`).
 
@@ -41,7 +41,7 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 * **Configuration Management:**
   Establish protected `main` branch and enforce CODEOWNERS approvals.
 * **Verification of Effectiveness:**
-  Verify that Pull Request workflow, branch protection, and publication synchronization operate as intended.
+  Verify that Pull Request workflow and branch protection operate as intended.
 * **Risk & Opportunity Management:**
   Address the limitation identified during pilot (“GitHub wikis cannot support Pull Requests”) by implementing a compliant architecture.
 
@@ -49,13 +49,13 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 ## **4. Metrics & Measurement**
 
-| Metric                         | Target            | Measurement Method          |
-| ------------------------------ | ----------------- | --------------------------- |
-| Controlled repository created  | 1 (`fley-qms`)    | GitHub UI verification      |
-| Branch protection enabled      | 100% (`main`)     | Review repository settings  |
-| Successful migration PR merged | ≥ 1 baseline PR   | Pull Request logs           |
-| Baseline tag created           | `QMS_Baseline_r1` | `git tag -l` output         |
-| Verification record approved   | 1 completed issue | Go-Live Verification Record |
+| Metric                                 | Target                   | Measurement Method          |
+| -------------------------------------- | ------------------------ | --------------------------- |
+| Controlled repository created          | 1 (`fley-qms`)           | GitHub UI verification      |
+| Branch protection enabled              | 100% (`main`)            | Review repository settings  |
+| Successful migration PR merged         | ≥ 1 baseline PR          | Pull Request logs           |
+| Baseline tag created                   | `FLEY-QMS_r1`            | `git tag -l` output         |
+| Per-document approval tags created     | ≥ 1 per updated document | `git tag -l` output         |
 
 ---
 
@@ -65,7 +65,7 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 * Pull Request approval by Quality Manager and Top Management.
 * Post-merge verification of protection rules and `CODEOWNERS`.
 * Tag creation and validation of repository integrity.
-* Independent verification of migration effectiveness using checklist in Appendix A.
+* Verification of migration effectiveness using checklist in Appendix A.
 
 ---
 
@@ -87,8 +87,8 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 | Controlled QMS repository        | `fley-qms`           | Permanent |
 | Migration / Go-Live PR           | GitHub Pull Requests | Permanent |
 | Branch protection configuration  | GitHub settings      | Permanent |
-| Tag `QMS_Baseline_r1`            | Git repository       | Permanent |
-| Go-Live Verification Record      | GitHub Issues        | Permanent |
+| Tag `FLEY-QMS_r1`                | Git repository       | Permanent |
+| Verification evidence            | GitHub Issues        | Permanent |
 | Archived `redwitch.wiki` content | Git repository       | Permanent |
 
 ---
@@ -102,6 +102,10 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 * **Project Board:**
   * [FLEY QMS Kanban](https://github.com/orgs/Floating-Eye-Software/projects/1)
 
+* **Pull Requests:**
+  * [#1 - FLEY-QMS_r1 - Initial Controlled QMS Baseline](https://github.com/Floating-Eye-Software/fley-qms/pull/1)
+  * [#3 - Create FLEY Organization and Teams](https://github.com/Floating-Eye-Software/fley-qms/pull/3)
+
 * **Issues:**
   * [#28 - Create Controlled QMS Repository](https://github.com/Floating-Eye-Software/redwitch/issues/28)
   * [#7 - SOP: Pull Request Procedure (Change Control)](https://github.com/Floating-Eye-Software/redwitch/issues/7)
@@ -113,16 +117,28 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 * **Appendices:**
   * [Appendix A - Repository Migration Execution](#appendix-a--repository-migration-execution)
-  * [Appendix B - Organization Configuration](#appendix-b--organization-configuration)
+  * [Appendix B - Organization Configuration](#appendix-b---organization-configuration)
 
 ---
 
-## **9. Continuous Improvement**
+## **9. Verification of Effectiveness**
 
-* The migration serves as the **first continuous improvement cycle** validating QMS configuration management.
-* Capture lessons learned and review during the next Management Review.
-* Update *Document-Control-SOP*  to reference `fley-qms` as the controlled document source.
-* Conduct annual verification of branch protection, tagging, and access control effectiveness.
+* **Verification Date:** *[YYYY-MM-DD]*  
+* **Summary:** *[Confirm that all deliverables and planned actions have been completed or dispositioned]*  
+* **Evidence:** *[Evaluate evidence of implementation and performance against objectives and acceptance criteria]*  
+* **Follow-up:** *[Identify residual risks, follow-up actions, and lessons learned]*  
+* **Assessment:** *[Effective / Partially Effective / Ineffective]*  
+
+---
+
+### ✅ **Outcome**
+
+* Full commit history from `redwitch.wiki` preserved.
+* Controlled `main` branch initialized with `.github/CODEOWNERS`.
+* Branch protection and approval rules enforced.
+* Baseline PR merged and tagged `FLEY-QMS_r1`.
+* WIP and project documentation preserved under `feature/qms-foundation`.
+* QMS now operates under formal change control in compliance with ISO 9001, ISO 13485, and 21 CFR 820.40.
 
 ---
 
@@ -317,8 +333,8 @@ After PR merge:
 ```bash
 git fetch origin
 git checkout main
-git tag QMS_Baseline_r1
-git push origin QMS_Baseline_r1
+git tag FLEY-QMS_r1
+git push origin FLEY-QMS_r1
 ```
 
 ✅ This tag represents the first controlled QMS baseline.
@@ -330,26 +346,21 @@ git push origin QMS_Baseline_r1
 1. Confirm `main` is protected and approvals are enforced.
 2. Lock or archive `qms-setup` branch (read-only).
 3. Verify that `feature/qms-foundation` remains available for active development.
-4. Create a **Go-Live Verification Record** issue including:
-
-   * PR number
-   * Tag (`QMS_Baseline_r1`)
-   * Date and approver (`@mlehotay`)
-   * Verification results (see below)
+4. Update GitHub issues and comments with screenshots and other evidence.
 
 ---
 
 ## **A9. Verification Checklist**
 
-| Verification Item              | Evidence Source               |
-| ------------------------------ | ----------------------------- |
-| Controlled repo created        | GitHub UI                     |
-| Branch protection active       | Settings screenshot           |
-| Migration PR merged            | PR log                        |
-| Tag `QMS_Baseline_r1` created  | `git tag -l` output           |
-| Feature branches created       | `git branch -a` output        |
-| Verification record approved   | GitHub Issue                  |
-| WIP and project docs preserved | `feature/qms-foundation` view |
+| Verification Item              | Evidence Source                 |
+| ------------------------------ | ------------------------------- |
+| Controlled repo created        | GitHub UI                       |
+| Branch protection active       | Settings screenshot             |
+| Migration PR merged            | PR log                          |
+| Tag `FLEY-QMS_r1` created      | `git tag -l` output             |
+| Feature branches created       | `git branch -a` output          |
+| Verification evidence recorded | GitHub Issues                   |
+| WIP and project docs preserved | `feature/qms-foundation` branch |
 
 ---
 
@@ -373,9 +384,9 @@ git push origin QMS_Baseline_r1
 | Record                                               | Location             | Retention |
 | ---------------------------------------------------- | -------------------- | --------- |
 | Go-Live PR and approvals                             | GitHub Pull Requests | Permanent |
-| Tag `QMS_Baseline_r1`                                | Git tags             | Permanent |
+| Tag `FLEY-QMS_r1`                                    | Git tags             | Permanent |
 | Branch protection configuration                      | GitHub settings      | Permanent |
-| Verification Record                                  | GitHub Issues        | Permanent |
+| Verification evidence                                | GitHub Issues        | Permanent |
 | Archived wiki import (`qms-setup`)                   | Git repository       | Permanent |
 | Active development branch (`feature/qms-foundation`) | Git repository       | Ongoing   |
 
@@ -430,7 +441,7 @@ Create `.github/CODEOWNERS` with the following content:
 * @Floating-Eye-Software/qms-approvers
 ````
 
-This ensures all pull requests modifying any file require at least one review from the **qms-approvers** team before merge.
+This configuration enforces that only members of the **qms-approvers** team may merge changes to controlled content.
 
 ---
 
@@ -462,12 +473,3 @@ Approver merges → controlled baseline or release tag
 This two-team model satisfies QMS requirements for separation of duties, traceable review, and controlled baseline creation with minimal administrative overhead.
 
 ---
-
-### ✅ **Outcome**
-
-* Full commit history from `redwitch.wiki` preserved.
-* Controlled `main` branch initialized with `.github/CODEOWNERS`.
-* Branch protection and approval rules enforced.
-* Baseline PR merged and tagged `QMS_Baseline_r1`.
-* WIP and project documentation preserved under `feature/qms-foundation`.
-* QMS now operates under formal change control in compliance with ISO 9001, ISO 13485, and 21 CFR 820.40.

@@ -1,8 +1,8 @@
 # **TPL – Quality Plan Template**
 
 **Slug:** Quality-Plan-Template  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
+**Revision:** r2 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Quality-Planning-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Quality-Plan-Template.md  
 
@@ -67,11 +67,15 @@
 
 * **Milestones:** *[Define deliverables, stage gates, design review checkpoints]*
 * **Project Board / Tracking Tool:** *[Kanban, Jira, GitHub Projects, etc.]*
+* **Pull Requests:** *[Link changes that realize or verify planned actions]*
 * **Issues / CAPA:** *[Link relevant design reviews, risk items, audit findings]*
 
 ---
 
-## **9. Continuous Improvement**
+## **9. Verification of Effectiveness**
 
-* *[Improvement cycles (ISO 9004, retrospectives)]*
-* *[CAPA process and feedback loops]*
+* **Verification Date:** *[YYYY-MM-DD]*  
+* **Summary:** *[Confirm that all deliverables and planned actions have been completed or dispositioned]*  
+* **Evidence:** *[Evaluate evidence of implementation and performance against objectives and acceptance criteria]*  
+* **Follow-up:** *[Identify residual risks, follow-up actions, and lessons learned]*  
+* **Assessment:** *[Effective / Partially Effective / Ineffective]*  

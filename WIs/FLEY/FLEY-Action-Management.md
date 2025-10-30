@@ -1,8 +1,8 @@
 # **WI – FLEY Action Management**
 
 **Slug:** FLEY-Action-Management  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
+**Revision:** r2 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Project-Management-SOP, Quality-Planning-SOP, Change-Control-SOP, Design-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md  
 
@@ -41,7 +41,6 @@ This WI ensures that:
 * SOP – Project-Management
 * SOP – Quality-Planning
 * SOP – Change-Control
-* SOP – Continuous-Improvement
 * WI – GitHub-QMS-Setup
 * WI – GitHub-Document-Control
 * Template – Quality Plan
@@ -143,16 +142,43 @@ All actions fall under one of four tiers of control:
 
 ---
 
-### **5.7 Execution and Closure in GitHub**
+### **5.7 Execution and Closure**
 
-1. All Issues are automatically added to the **FLEY QMS Board** (Backlog → In Progress → In Test → Closed).
-2. Attach or link all evidence within the Issue.
-3. Upon completion, confirm:
+All actions and records in GitHub shall be executed and closed according to their governance level. The following subsections define execution and closure requirements for Issues, Plans, and Projects.
 
-   * Objectives met
-   * Records updated or archived
-   * Linked Issues closed
-4. Comment “**Action complete – evidence attached**” and close the Issue.
+#### **1. Issues**
+
+   1. All Issues are automatically added to the **FLEY QMS Board** (Backlog → In Progress → In Test → Closed).
+   2. Attach or link all evidence within the Issue.
+   3. Upon completion, confirm:
+
+     * Objectives met
+     * Records updated or archived
+     * Linked Issues closed
+   4. Comment “**Action complete – evidence attached**” and close the Issue.
+
+#### **2. Plans**
+
+   1. Group related Issues under a **Milestone** or **linked board view** corresponding to the Plan deliverables and stages.
+   2. Monitor progress toward objectives and update the Plan status as milestones are achieved.
+   3. **Perform Verification of Effectiveness (VoE):**
+
+      * Verify deliverables and evidence against the objectives, success criteria, and acceptance metrics defined in the governing Plan.
+      * Record a summary of verification results and effectiveness assessment (“Effective / Partially Effective / Ineffective”) in **Plan §9**.
+      * Create a **new revision** of the Plan per *Change-Control-SOP* when verification results are added.
+      * Capture residual risks, lessons learned, or follow-up actions as new Issues if applicable.
+   4. Comment “**Verification complete – Plan closed**” on the Plan Issue or board item when completed.
+
+#### **3. Projects**
+
+   1. Manage all project-related Issues and deliverables under the approved **Project Quality Plan (PQP)** or **Design Control Plan (DCP)**.
+   2. Track progress using GitHub **Milestones**, **Boards**, or **linked repositories**, ensuring each major phase or gate review corresponds to defined PQP milestones.
+   3. Perform Verification and Validation (V&V) per the PQP or DCP; use testing evidence, review minutes, and release records as proof of effectiveness.
+   4. When all milestones are complete, perform a **Verification of Effectiveness** review at the project level:
+      * Confirm that all PQP or DCP objectives were achieved and that outputs meet acceptance criteria.
+      * Record the summary and effectiveness outcome in the **final PQP revision** or closing GitHub record.
+      * Log any lessons learned or improvement actions as new Issues under the Continuous Improvement board.
+   5. The **Project Manager** and **Quality Manager** jointly approve project closure and effectiveness verification.
 
 ---
 
