@@ -64,7 +64,7 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 * Internal review of the `qms-setup` branch before migration PR.
 * Pull Request approval by Quality Manager and Top Management.
 * Post-merge verification of protection rules and `CODEOWNERS`.
-* Tag creation and validation of repository integrity.
+* Tag creation and confirmation of repository integrity.
 * Verification of migration effectiveness using checklist in Appendix A.
 
 ---
@@ -127,9 +127,9 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 **Summary:**  
 Verification confirmed completion of the organizational transition defined in Appendix B, following the initial migration executed under Appendix A.
-All deliverables were implemented and validated through Pull Requests [fley-qms #1](https://github.com/Floating-Eye-Software/fley-qms/pull/1) and [fley-qms #3](https://github.com/Floating-Eye-Software/fley-qms/pull/3).
+All deliverables were implemented through Pull Requests [fley-qms #1](https://github.com/Floating-Eye-Software/fley-qms/pull/1) and [fley-qms #3](https://github.com/Floating-Eye-Software/fley-qms/pull/3).
 The QMS repository now operates under controlled, role-based governance within the Floating Eye Software organization.
-The Verification of Effectiveness (VoE) process was introduced in this revision to formally close the migration plan and establish a recurring effectiveness review framework.
+The Verification of Effectiveness (VoE) process was introduced to formally close this migration plan and establish a recurring effectiveness review framework.
 
 
 **Evidence:**  
@@ -140,8 +140,8 @@ The Verification of Effectiveness (VoE) process was introduced in this revision 
   * Controlled document revisions showing updated VoE sections
 
 **Residual Risk:**  
-During verification it was confirmed that GitHub’s built-in “Approve / Request Changes” feature cannot be used in a single-person organization.
-Current approvals are documented via PR comments instead of the formal approval UI.
+During verification it was determined that GitHub’s built-in “Approve / Request Changes” feature cannot be used in a single-person organization.
+Current approvals are documented via Pull Request comments instead of the GitHub approval UI.
 While configuration control remains effective, this limitation reduces visual traceability of approvals.
 A new Risk & Opportunity Register entry will be opened to track and evaluate this constraint.
 
