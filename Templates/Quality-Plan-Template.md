@@ -1,8 +1,8 @@
 # **TPL – Quality Plan Template**
 
 **Slug:** Quality-Plan-Template  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
+**Revision:** r2  
+**Effective Date:** 2025-10-31  
 **Related SOP:** Quality-Planning-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Quality-Plan-Template.md  
 

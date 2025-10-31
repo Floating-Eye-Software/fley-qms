@@ -1,8 +1,8 @@
 # **WI – FLEY Action Management**
 
 **Slug:** FLEY-Action-Management  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
+**Revision:** r2  
+**Effective Date:** 2025-10-31  
 **Related SOPs:** Project-Management-SOP, Quality-Planning-SOP, Change-Control-SOP, Design-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md  
 
@@ -155,7 +155,6 @@ All actions and records in GitHub shall be executed and closed according to thei
      * Objectives met
      * Records updated or archived
      * Linked Issues closed
-   4. Comment “**Action complete – evidence attached**” and close the Issue.
 
 #### **2. Plans**
 
@@ -164,10 +163,9 @@ All actions and records in GitHub shall be executed and closed according to thei
    3. **Perform Verification of Effectiveness (VoE):**
 
       * Verify deliverables and evidence against the objectives, success criteria, and acceptance metrics defined in the governing Plan.
-      * Record a summary of verification results and effectiveness assessment (“Effective / Partially Effective / Ineffective”) in **Plan §9**.
+      * Record a summary of verification results and effectiveness assessment in the Plan.
       * Create a **new revision** of the Plan per *Change-Control-SOP* when verification results are added.
       * Capture residual risks, lessons learned, or follow-up actions as new Issues if applicable.
-   4. Comment “**Verification complete – Plan closed**” on the Plan Issue or board item when completed.
 
 #### **3. Projects**
 
