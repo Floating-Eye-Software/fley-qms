@@ -2,7 +2,7 @@
 
 **Slug:** FLEY-Action-Management  
 **Revision:** r2  
-**Effective Date:** 2025-10-31  
+**Effective Date:** 2025-11-01  
 **Related SOPs:** Project-Management-SOP, Quality-Planning-SOP, Change-Control-SOP, Design-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md  
 

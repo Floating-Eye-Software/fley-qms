@@ -2,7 +2,7 @@
 
 **Slug:** Repo-Migration-Plan  
 **Revision:** r2  
-**Effective Date:** 2025-10-31  
+**Effective Date:** 2025-11-01  
 **Related SOP:** Quality-Planning-SOP, Change-Control-SOP, Document-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Plans/Repo-Migration-Plan.md  
 
@@ -123,7 +123,7 @@ Define and control the transition from the Red Witch wiki-based QMS prototype to
 
 ## **9. Verification of Effectiveness**
 
-**Verification Date:** 2025-10-31  
+**Verification Date:** 2025-11-01  
 
 **Summary:**  
 Verification confirmed completion of the organizational transition defined in Appendix B, following the initial migration executed under Appendix A.
@@ -143,7 +143,7 @@ The Verification of Effectiveness (VoE) process was introduced to formally close
 During verification it was determined that GitHub’s built-in “Approve / Request Changes” feature cannot be used in a single-person organization.
 Current approvals are documented via Pull Request comments instead of the GitHub approval UI.
 While configuration control remains effective, this limitation reduces visual traceability of approvals.
-A new Risk & Opportunity Register entry will be opened to track and evaluate this constraint.
+A new Risk & Opportunity Register entry will be opened to track and evaluate this constraint.  
 
 **Follow-Up Actions:**
 * Create risk record *Single-Person Approval Constraint* to document and monitor the limitation.

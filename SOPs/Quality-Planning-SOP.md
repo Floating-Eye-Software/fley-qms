@@ -2,7 +2,7 @@
 
 **Slug:** Quality-Planning-SOP  
 **Revision:** r2  
-**Effective Date:** 2025-10-31  
+**Effective Date:** 2025-11-01  
 **Process Owner:** Top Management  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Quality-Planning-SOP.md  
 
@@ -96,10 +96,20 @@ Verification of effectiveness confirms that planned quality activities have achi
 
 The responsible **Process Owner** or **Project Owner** shall:
 
-   * Verify that all deliverables, planned actions, and milestones under the Plan or Project have been completed or appropriately dispositioned.
-   * Assess implementation results against defined **objectives, success criteria, and acceptance metrics** in the approved Plan.
-   * Record the verification summary, results, and supporting evidence within the governing Plan or associated Issues.
-   * Capture any residual risks, improvement opportunities, or lessons learned to inform future planning activities.
+* Verify that all deliverables, planned actions, and milestones under the Plan or Project have been completed or appropriately dispositioned.  
+* Assess implementation results against defined **objectives, success criteria, and acceptance metrics** in the approved Plan.  
+* Record the verification summary, results, and supporting evidence within the governing Plan or associated Issues.  
+* Capture any residual risks, improvement opportunities, or lessons learned to inform future planning activities.  
+
+**Effectiveness Outcomes:**
+
+| **Assessment** | **Definition** | **Required Follow-up** |
+|----------------|----------------|------------------------|
+| **Effective** | All planned objectives were achieved and controls function as intended. | Close the Plan or Project. No further action required beyond routine monitoring. |
+| **Partially Effective** | Objectives were met in principle, but one or more controls did not operate as intended or cannot yet be fully verified. | Create or link an Issue in the QMS repository to document the limitation, residual risk, or improvement action. Track the issue until resolution, re-verify effectiveness after the issue has been addressed, and include the results in the next Management Review. |
+| **Ineffective** | Objectives were not achieved or the implemented controls failed to ensure conformity or intended performance. | Escalate to Top Management. Open an Issue in the QMS repository to document the failure, identify root cause, and define corrective action per the **Corrective and Preventive Action SOP**. Effectiveness shall be re-verified after corrective measures are implemented. |
+
+Verification outcomes and any related Issues shall be referenced in Management Review inputs and retained as controlled records.
 
 ---
 
