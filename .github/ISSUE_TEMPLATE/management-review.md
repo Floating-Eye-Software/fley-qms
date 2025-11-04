@@ -1,6 +1,8 @@
 ---
 name: Management Review
 about: Conduct a QMS Management Review per ISO 9001 §9.3
+title: "MR: [Brief description]"
+labels: ["Management Review"]
 ---
 
 # Management Review

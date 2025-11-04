@@ -1,6 +1,7 @@
 ---
 name: Pull Request
 about: Template for controlled QMS pull requests
+title: "PR: [Brief description]"
 ---
 
 ## Pull Request
@@ -21,5 +22,7 @@ about: Template for controlled QMS pull requests
 ### Reviewer Checklist  
 - [ ] Confirm all affected documents, processes, or systems are updated.  
 - [ ] Approvals follow Change-Control-SOP and relevant Work Instructions.  
-- [ ] Branch protection and CODEOWNERS are correctly configured (if applicable).  
 - [ ] Verification evidence is attached or referenced.  
+
+### Approvals
+Merge of this Pull Request constitutes formal approval per [WI–GitHub–Change–Control].

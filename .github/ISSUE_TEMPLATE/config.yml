@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Discussion
+    url: https://github.com/Floating-Eye-Software/fley-qms/discussions
+    about: Use Discussions for informal or exploratory topics.

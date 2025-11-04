@@ -1,6 +1,8 @@
 ---
 name: Change Request
 about: Request a change to QMS processes, systems, or documentation
+title: "CR: [Brief description]"
+labels: ["Change Request"]
 ---
 
 ## Change Request
