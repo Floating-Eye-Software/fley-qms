@@ -1,0 +1,18 @@
+---
+name: Change Request
+about: Request a change to QMS processes, systems, or documentation
+---
+
+## Change Request
+
+**Purpose and Justification**  
+[Provide a one-sentence reason for the change.]
+
+**Impact and Risk Assessment**  
+[Summarize expected impact on quality, compliance, or operations. Note if risk is low/medium/high.]
+
+**Affected Processes, Systems, or Documents**  
+[List all affected processes, documents, and/or systems.]
+
+**Additional Notes / References**  
+[Include any relevant references, links, or attachments.]
