@@ -1,9 +1,3 @@
----
-name: Pull Request
-about: Template for controlled QMS pull requests
-title: "PR: [Brief description]"
----
-
 ## Pull Request
 
 **Linked Change Request Issue**  
