@@ -1,8 +1,8 @@
 # **SOP – Management Review**
 
 **Slug:** Management-Review-SOP  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
+**Revision:** r2  
+**Effective Date:** 2025-11-04  
 **Process Owner:** Top Management  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Management-Review-SOP.md  
 
@@ -10,7 +10,7 @@
 
 ## **1. Purpose**
 
-To define the process for conducting Management Reviews of the Quality Management System (QMS) in accordance with ISO 9001:2015 Clause 9.3.
+To define the process for conducting Management Reviews (MR) of the Quality Management System (QMS) in accordance with ISO 9001:2015 Clause 9.3.
 This procedure ensures that top management periodically evaluates QMS performance, suitability, and effectiveness, and determines necessary actions for improvement.
 
 ---
@@ -18,10 +18,10 @@ This procedure ensures that top management periodically evaluates QMS performanc
 ## **2. Scope**
 
 Applies to all QMS processes and activities under organizational control.
-Covers the planning, execution, documentation, and follow-up of Management Review meetings.
+Covers the planning, execution, documentation, and follow-up of Management Reviews conducted via electronic records (e.g., GitHub issues).
 
 * **Applicability:** All functions contributing to the QMS, including leadership, planning, risk management, and operations.
-* **Exclusions:** Department-level performance meetings not designated as formal Management Reviews.
+* **Exclusions:** Department-level performance discussions not designated as formal Management Reviews.
 
 ---
 
@@ -34,22 +34,22 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 
 ## **4. Definitions**
 
-| Term                        | Definition                                                                                                      |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Management Review (MR):** | A formal, documented meeting where top management evaluates QMS performance and determines improvement actions. |
-| **Inputs:**                 | Data and information considered during MR (e.g., audits, feedback, objectives, nonconformities).                |
-| **Outputs:**                | Decisions and actions arising from MR (e.g., improvement initiatives, resource allocations).                    |
-| **Action Tracker:**         | A controlled record used to monitor progress of MR action items.                                                |
+| Term                        | Definition                                                                                                         |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Management Review (MR):** | A formal, documented evaluation of the QMS performed by top management, recorded in controlled electronic records. |
+| **Inputs:**                 | Data and information considered during MR (e.g., audits, feedback, objectives, nonconformities).                   |
+| **Outputs:**                | Decisions and actions arising from MR (e.g., improvement initiatives, resource allocations).                       |
+| **Action Tracker:**         | A controlled record used to monitor progress of MR action items.                                                   |
 
 ---
 
 ## **5. Responsibilities and Authorities**
 
-| Role                | Responsibilities                                                                                                                                                                                    | Authority                                                                   |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Top Management**  | • Chairs the Management Review.<br>• Ensures participation of relevant leadership and process owners.<br>• Approves resulting actions and resource changes.<br>• Ensures MR frequency and adequacy. | • Final approval of MR outcomes and improvement actions.                    |
-| **Quality Manager** | • Plans, schedules, and documents MRs.<br>• Compiles inputs (KPIs, audit results, risks, objectives, customer data).<br>• Maintains records and ensures follow-up on actions.                       | • Approves MR agenda and minutes.<br>• Updates QMS documentation as needed. |
-| **Process Owners**  | • Provide data and reports for MR inputs.<br>• Implement assigned actions.                                                                                                                          | • Approve process-level changes from MR decisions.                          |
+| Role                | Responsibilities                                                                                                                                                                | Authority                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Top Management**  | • Reviews MR records and evaluates QMS performance and suitability.<br>• Approves resulting actions and resource changes.<br>• Ensures MR frequency and adequacy.               | • Final approval of MR outcomes and improvement actions.                   |
+| **Quality Manager** | • Initiates and maintains MR records in the electronic system.<br>• Compiles inputs (KPIs, audit results, risks, objectives, customer data).<br>• Ensures follow-up on actions. | • Updates QMS documentation as needed.<br>• Maintains MR record integrity. |
+| **Process Owners**  | • Provide data and reports for MR inputs.<br>• Implement assigned actions.                                                                                                      | • Approve process-level changes from MR decisions.                         |
 
 ---
 
@@ -60,7 +60,7 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 1. **Plan the Review**
 
    * Frequency: at least annually, or more often if significant changes occur (e.g., new product, major nonconformity, strategic shift).
-   * Quality Manager drafts agenda and collects required inputs.
+   * Quality Manager drafts MR template and collects required inputs.
 
 2. **Collect Inputs**
    Inputs shall include, at minimum (ISO 9001 §9.3.2):
@@ -72,15 +72,15 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
    * Audit results (internal and external)
    * Nonconformities and corrective actions
    * Monitoring and measurement trends
-   * Fulfilment of quality objectives
+   * Fulfillment of quality objectives
    * Status of risk and opportunity actions
    * Adequacy of resources
    * Improvement recommendations
 
-3. **Conduct the Review Meeting**
+3. **Conduct the Review**
 
-   * Top Management leads discussion of each agenda topic.
-   * Key decisions and assigned actions are recorded.
+   * Top Management reviews the MR record asynchronously or synchronously within the electronic system.
+   * Key decisions and assigned actions are documented directly in the MR record.
    * Significant risks, opportunities, or strategic issues are escalated to planning or leadership processes.
 
 4. **Determine Outputs**
@@ -93,22 +93,21 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 
 5. **Document and Communicate Results**
 
-   * Quality Manager prepares meeting minutes and updates the MR Action Tracker.
+   * Quality Manager ensures the MR record is complete and maintained in the controlled repository (e.g., GitHub issue).
    * Relevant changes to policies, objectives, or SOPs are initiated through the Change Control SOP.
-   * Summary results are communicated to all affected personnel.
+   * Summary results are communicated to all affected personnel via appropriate channels.
 
 6. **Follow-up and Closure**
 
-   * Progress on MR actions is reviewed monthly or quarterly until closure.
+   * Progress on MR actions is tracked in the Action Tracker until closure.
    * Effectiveness of actions is evaluated at the next MR.
 
 ---
 
 ## **7. Records**
 
-| Record / Artifact                  | Responsible Owner | Storage Location                            | Retention                          | Control Method                          |
-| ---------------------------------- | ----------------- | ------------------------------------------- | ---------------------------------- | --------------------------------------- |
-| Management Review Agenda & Minutes | Quality Manager   | Controlled Repository (GitHub / QMS Folder) | Permanent                          | Version-controlled PDF or Markdown file |
-| MR Action Tracker                  | Quality Manager   | QMS Repository / Issue Tracker              | Until all actions closed + 3 years | Controlled by Change Control SOP        |
-| MR Attendance List                 | Quality Manager   | Attached to MR Minutes                      | Permanent                          | As part of MR record                    |
-| Updated Policies or Objectives     | Quality Manager   | QMS Documents                               | Per document control policy        | Controlled versioning                   |
+| Record / Artifact              | Responsible Owner | Storage Location                            | Retention                          | Control Method                          |
+| ------------------------------ | ----------------- | ------------------------------------------- | ---------------------------------- | --------------------------------------- |
+| Management Review Record       | Quality Manager   | Controlled Repository (GitHub / QMS Folder) | Permanent                          | Version-controlled Markdown or PDF file |
+| MR Action Tracker              | Quality Manager   | QMS Repository / Issue Tracker              | Until all actions closed + 3 years | Controlled by Change Control SOP        |
+| Updated Policies or Objectives | Quality Manager   | QMS Documents                               | Per document control policy        | Controlled versioning                   |

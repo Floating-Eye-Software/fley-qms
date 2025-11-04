@@ -12,8 +12,6 @@ Evaluate the QMS for suitability, adequacy, and effectiveness, and decide on act
 
 **Date:** [YYYY-MM-DD]  
 **Period Covered:** [Quarter/Year]  
-**Attendees:** [Names/Titles]  
-**Recorder:** [Name]  
 
 ---
 
@@ -60,9 +58,7 @@ Record agreed actions and decisions (per ISO 9001 §9.3.3):
 ---
 
 **Attachments / References**  
-[List or link to supporting data, reports, or meeting minutes.]
+[List or link to supporting data or reports.]
 
 **Record Storage**  
-`/records/management-reviews/[YYYY-MM-DD].md`
-
-**Next Scheduled Review:** [YYYY-MM-DD]  
+`/records/management-reviews/MR-[YYYY-MM-DD].md`

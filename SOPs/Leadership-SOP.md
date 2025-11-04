@@ -77,4 +77,4 @@ Top Management shall ensure Management Reviews are conducted in accordance with 
 
 * Quality Policy
 * Organization Chart (roles and responsibilities)
-* Management Review Minutes and Action Tracker (see Management-Review-SOP)
+* Management Review Records and Action Tracker (see Management-Review-SOP)

@@ -67,7 +67,7 @@ Applies to all planning activities related to the QMS, including risk and opport
   * Communicated and updated as necessary
 * Progress toward objectives shall be reviewed during Management Review.
 
-Progress toward quality objectives shall be reviewed during Management Review meetings per *Management-Review-SOP*.
+Progress toward quality objectives shall be reviewed during Management Reviews per *Management-Review-SOP*.
 
 6.3 **Planning Changes**
 
@@ -88,7 +88,7 @@ Results and decisions from Management Reviews may initiate planned changes to th
 * Record design or process changes using **Change Control SOP**.
 * Ensure QMS records (objectives, action results) are current and auditable.
 
-Effectiveness of executed actions shall be reviewed during Management Review meetings per *Management-Review-SOP*.
+Effectiveness of executed actions shall be reviewed during Management Reviews per *Management-Review-SOP*.
 
 6.5 **Verification of Effectiveness**
 
