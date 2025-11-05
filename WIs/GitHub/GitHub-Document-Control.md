@@ -185,6 +185,45 @@ These controls demonstrate compliance with ISO 9001 §7.5.2–7.5.3 and ISO 1348
 
 ---
 
+#### **5.8 External and Special Files**
+
+1. **External Document Metadata**
+
+   * Store metadata files in `/External-Docs/` or `/References/`.
+   * File naming: `EXT-[Source]-[ShortTitle]-r#.md` (e.g., `EXT-ISO-13485-r1.md`).
+   * Include the document header and metadata table.
+   * Tag metadata revisions the same way as internal documents.
+   * Do **not** commit copyrighted full texts unless licensing explicitly allows.
+
+2. **GitHub-Controlled Operational Files**
+
+   * The following files are **QMS-controlled artifacts**, even if not authored in Markdown:
+
+     ```
+     /.github/ISSUE_TEMPLATE/config.yml
+     /.github/workflows/*
+     /.github/labels.yml
+     /.github/CODEOWNERS
+     ```
+   * These are controlled by:
+
+     * Maintaining a **placeholder file** in `/WIs/GitHub/` or `/SOPs/` containing:
+
+       * Full header metadata (Title, Slug, Revision, Controlled Source)
+       * Link to the actual file
+       * Short description of purpose
+   * Placeholder filename example:
+     `WI-GitHub-Issue-Template-Config.md`
+   * The GitHub file itself remains “headerless” but is referenced in the controlled placeholder.
+   * Changes to such files must proceed via **Pull Request with Quality or DCC review** and receive a revision tag.
+
+3. **Audit Evidence**
+
+   * Git history and PR approvals for these files are treated as **document control records**.
+   * Placeholder files link to the tagged commit as the **approved revision**.
+
+---
+
 ## **6. Records and Retention**
 
 | Record Type                      | Location                   | Retention  |

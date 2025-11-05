@@ -145,6 +145,53 @@ This SOP applies to **all documented information** within the QMS, including:
 
 ---
 
+#### **6.8 External and Special Controlled Documents**
+
+1. **External Documents**
+
+   * External documents (e.g., ISO standards, regulatory guidance, academic articles, or supplier specifications) are not stored directly in the QMS repository unless permitted by license.
+
+   * Each external document shall be represented by a **controlled metadata placeholder file** in the relevant directory (e.g., `/External-Docs/` or `/References/`), containing:
+
+     | Field                 | Description                                                                       |
+     | --------------------- | --------------------------------------------------------------------------------- |
+     | **Title**             | Official title of the document                                                    |
+     | **Document ID**       | Unique internal identifier (e.g., EXT-ISO-13485-2016)                             |
+     | **Source / Link**     | URL or citation to publisher or authoritative location                            |
+     | **Type**              | Standard, Guidance, Market Report, Journal, etc.                                  |
+     | **Summary / Notes**   | Internal paraphrased summary relevant to QMS or design                            |
+     | **Controlled Source** | Link to the approved metadata file in `fley-qms` (or designated repository) |
+
+   * External documents must be **reviewed annually** or when a new edition is issued. A new metadata revision (`r#`) is approved through standard document control.
+
+   * Auditors are provided the metadata record and the external source link. Full-text documents are accessed only via licensed or public channels.
+
+2. **GitHub Special Files**
+
+   * Certain files required for GitHub repository automation and configuration cannot include standard document headers due to file-format constraints (e.g., YAML, JSON, workflow `.yml` files).
+   * These include, but are not limited to:
+
+     * `.github/ISSUE_TEMPLATE/config.yml`
+     * `.github/workflows/*`
+     * `.github/labels.yml`
+     * `.github/CODEOWNERS`
+   * For each such file:
+
+     * A **controlled placeholder file** must exist in the SOPs or WIs directory containing:
+
+       * The standard document header
+       * A **Controlled Source** link pointing to the actual file
+     * The body of the placeholder shall include:
+
+       ```
+       [Controlled Source – Live File]
+       https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/config.yml
+       ```
+   * Changes to these live files follow the same **review, approval, and tagging** rules as controlled Markdown documents.
+   * The **Pull Request approval record** serves as formal approval evidence.
+
+---
+
 ## **7. Records**
 
 | Record / Artifact                  | Responsible Owner            | Storage Location        | Retention | Control Method     |
