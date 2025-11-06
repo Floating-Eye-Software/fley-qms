@@ -1,7 +1,7 @@
 # **Management Review – QMS Launch**
 
-**Date:** 2025-11-05
-**Period Covered:** Q4 2025 - QMS Establishment Phase
+**Date:** 2025-11-05  
+**Period Covered:** Q4 2025 - QMS Establishment Phase  
 
 ---
 
