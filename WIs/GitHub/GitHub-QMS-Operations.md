@@ -1,8 +1,8 @@
-# **WI - Operate the QMS in GitHub – Single FLEY Board**
+# **WI – Operate the QMS in GitHub – Single FLEY Board**
 
 **Slug:** GitHub-QMS-Operations  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
+**Revision:** r2 **Draft**  
+**Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP, Quality-Planning-SOP, Leadership-SOP, Management-Review-SOP, Risk-and-Opportunity-Management-SOP, Project-Management-SOP, Design-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Operations.md  
 
@@ -10,26 +10,25 @@
 
 ## **1. Purpose**
 
-To define how the organization operates and maintains its Quality Management System (QMS) in GitHub using a single integrated Kanban board (**FLEY QMS**) within the `redwitch` repository.
+To define how the organization **operates and maintains its Quality Management System (QMS)** in GitHub using a single integrated Kanban board (**FLEY QMS**) that supports both **Development** and **Operation** issue types.
 
-This instruction ensures that:
+This ensures:
 
-* All QMS records (e.g., CAPAs, risks, objectives, reviews, changes, improvements) are managed in a consistent, auditable workflow.
-* All required ISO 9001:2015 actions — determine, implement, review, and improve — are traceable.
-* Digital evidence is retained as permanent quality records.
+* Unified management of QMS setup, improvement, and records.
+* Full traceability of ISO 9001:2015 activities from creation to closure.
+* Controlled, auditable digital records for all QMS functions.
 
 ---
 
 ## **2. Scope**
 
-Applies to all operational QMS activities, including:
+Applies to all operational QMS activities and quality records managed in GitHub, including:
 
-* Risk and opportunity management
-* CAPA and continual improvement
-* Quality objectives planning and monitoring
-* Management review and leadership activities
-* Change control and document management
-* Record control and periodic export
+* CAPA and Nonconformances
+* Risk and Opportunity management
+* Change Control and Document Management
+* Quality Objectives and Management Reviews
+* Internal Audits and Continual Improvement
 
 ---
 
@@ -39,194 +38,151 @@ Applies to all operational QMS activities, including:
 * SOP – Change Control
 * SOP – Leadership
 * SOP – Management Review
-* SOP – Quality Planning
-* SOP – Project Management
 * SOP – Risk and Opportunity Management
-* SOP – Design Control
-* SOP – Identification and Traceability
-* WI – GitHub–Document–Control
-* WI – GitHub–Change–Control
-* WI – GitHub–Version–Control
 * WI – GitHub–QMS–Setup
-* WI – GitHub–Project–Management
+* WI – GitHub–Change–Control
+* WI – GitHub–Document–Control
+* WI – GitHub–Version–Control
 
 ---
 
 ## **4. Responsibilities and Authorities**
 
-| Role                            | Responsibilities                                                        | Authority / Decision Rights                   |
-| ------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------- |
-| **Quality Manager / QMS Admin** | Maintain the QMS board, monitor issues, and oversee Management Reviews. | Approve closure of QMS issues.                |
-| **Top Management**              | Lead Management Reviews and approve outputs.                            | Final approval of review records and actions. |
-| **Process Owners**              | Manage CAPAs, risks, and objectives in their process areas.             | Close related issues upon completion.         |
-| **Contributors / SMEs**         | Provide data, context, and inputs for reviews and improvements.         | Propose and comment on QMS issues.            |
+| Role                            | Responsibilities                                             | Authority / Decision Rights               |
+| ------------------------------- | ------------------------------------------------------------ | ----------------------------------------- |
+| **Quality Manager / QMS Admin** | Maintain board, monitor issues, ensure records completeness. | Approve closure of QMS issues.            |
+| **Top Management**              | Conduct Management Reviews, approve outputs.                 | Approve final records and policy changes. |
+| **Process Owners**              | Manage assigned CAPAs, risks, and objectives.                | Approve closure of their process issues.  |
+| **Contributors / SMEs**         | Provide data, evidence, and recommendations.                 | May open or comment on issues.            |
 
 ---
 
-## **5. GitHub Components and QMS Roles**
+## **5. FLEY QMS Board Workflow**
 
-| GitHub Area                      | QMS Function                                             |
-| -------------------------------- | -------------------------------------------------------- |
-| **Repository (`fley-qms`)**      | Controlled home for QMS documentation and records.       |
-| **Wiki**                         | User-friendly access to policies, SOPs, and WIs.         |
-| **Issues**                       | Primary mechanism for QMS records and actions.           |
-| **Pull Requests**                | Formal approvals and document control.                   |
-| **Projects → FLEY QMS Board**    | Workflow management for all QMS issues.                  |
-| **Discussions**                  | Optional collaboration and feedback.                     |
-| **Actions**                      | Optional automation for reminders, exports, and metrics. |
-
----
-
-## **6. FLEY QMS Board Workflow**
-
-**Columns:**
+**Columns**
 
 ```
 Backlog → In Progress → In Test → Closed
 ```
 
-| Column          | Description                                             | Example Activities                                               |
-| --------------- | ------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Backlog**     | New or planned QMS items awaiting assignment.           | New objective, identified risk, audit finding, improvement idea. |
-| **In Progress** | Active work or implementation in progress.              | Implementing CAPA, mitigating a risk, executing an objective.    |
-| **In Test**     | Awaiting validation, approval, or effectiveness review. | CAPA verification, risk monitoring, objective review.            |
-| **Closed**      | Fully approved, verified, or completed.                 | CAPA effective, risk closed, audit complete, objective achieved. |
+| Column          | Description                            | Examples                                          |
+| --------------- | -------------------------------------- | ------------------------------------------------- |
+| **Backlog**     | New or proposed items awaiting triage. | New objective, identified risk, improvement idea. |
+| **In Progress** | Active work or investigation.          | CAPA implementation, document update.             |
+| **In Test**     | Awaiting verification or approval.     | Effectiveness check, PR review.                   |
+| **Closed**      | Verified and complete.                 | CAPA effective, audit approved.                   |
 
 ---
 
-## **7. Typical Issue Lifecycles**
+## **6. Issue Types and QMS Roles**
 
-Each controlled Issue type follows a consistent four-stage lifecycle: **Backlog → In Progress → In Test → Closed**.
-Labels and templates ensure consistent tracking across all repositories.
+| Issue Type      | Purpose                                                                       | Typical Usage                                              |
+| --------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **Development** | Used for creating, modifying, or configuring systems, documents, or software. | New WI, automation workflow, system setup.                 |
+| **Operation**   | Used for QMS process records and actions under ISO 9001.                      | Audit, CAPA, Risk, Opportunity, Objective, Change Request. |
 
----
-
-### **7.1 Change Request (CR)**
-
-Used to propose, review, and implement controlled changes to QMS documents, configurations, or systems.
-
-1. **Backlog:** Change identified and Issue created (via `Change Request` template).
-2. **In Progress:** Pull Request (PR) opened, referencing this Issue.
-3. **In Test:** Changes verified for effectiveness
-4. **Closed:** PR merged, tag created, and records verified.
+All issues of either type flow through the same four status columns.
 
 ---
 
-### **7.2 Improvement**
+## **7. Operational Record Labels**
 
-Used to propose enhancements that are not corrective actions but support continual improvement of the QMS or processes.
+| Label               | Description                                                 |
+| ------------------- | ----------------------------------------------------------- |
+| `Audit`             | Internal or supplier audit activity.                        |
+| `CAPA`              | Corrective or Preventive Action, including Nonconformances. |
+| `Change Request`    | Proposed modification to documents, procedures, or systems. |
+| `Improvement`       | Opportunities or ideas for continual improvement.           |
+| `Management Review` | Quarterly or ad hoc review of QMS effectiveness.            |
+| `Objective`         | Measurable quality goal or KPI.                             |
+| `Opportunity`       | Positive factor to enhance QMS or performance.              |
+| `Risk`              | Identified threat to QMS performance or compliance.         |
 
-1. **Backlog:** Improvement idea or opportunity identified.
-2. **In Progress:** Analysis or implementation underway.
-3. **In Test:** Results or data collected to verify benefit or impact.
-4. **Closed:** Improvement implemented successfully or deemed not beneficial.
-
----
-
-### **7.3 CAPA (Corrective or Preventive Action)**
-
-1. **Backlog:** Nonconformance or issue recorded.
-2. **In Progress:** Root cause and corrective/preventive actions defined and implemented.
-3. **In Test:** Effectiveness verified.
-4. **Closed:** Actions confirmed effective; evidence attached.
+Each label aligns with a GitHub Issue Template for metadata consistency.
 
 ---
 
-### **7.4 Risk or Opportunity**
+## **8. Issue Lifecycle Examples**
 
-1. **Backlog:** Risk or opportunity identified.
-2. **In Progress:** Evaluation, mitigation, or implementation underway.
-3. **In Test:** Results monitored.
-4. **Closed:** Effectiveness confirmed or residual risk accepted.
+### **8.1 Change Request**
 
----
+1. **Backlog:** Issue created with summary and justification.
+2. **In Progress:** PR opened; work implemented.
+3. **In Test:** Changes reviewed and verified.
+4. **Closed:** PR merged and approved.
 
-### **7.5 Objective**
+### **8.2 CAPA / Nonconformance**
 
-1. **Backlog:** New objective proposed.
-2. **In Progress:** Target and plan defined; implementation underway.
-3. **In Test:** Results under review.
-4. **Closed:** Objective achieved or concluded with justification.
+1. **Backlog:** Nonconformance recorded (Operation Issue + `CAPA`).
+2. **In Progress:** Root cause and actions defined and implemented.
+3. **In Test:** Effectiveness review conducted.
+4. **Closed:** Verified as effective; evidence attached.
 
----
+### **8.3 Objective**
 
-### **7.6 Audit or Management Review**
+1. **Backlog:** Objective defined from MR or planning.
+2. **In Progress:** Plan executed; data collected.
+3. **In Test:** KPI results evaluated.
+4. **Closed:** Objective achieved or redefined.
 
-1. **Backlog:** Audit or review scheduled.
-2. **In Progress:** Audit conducted or review in progress; data gathered.
-3. **In Test:** Findings analyzed; actions assigned.
-4. **Closed:** Records approved and filed; follow-up actions tracked if applicable.
+### **8.4 Audit or Management Review**
 
----
-
-## **8. Labels and Templates**
-
-The following labels are used for operational QMS management:
-
-| Category                 | Labels                                                                                                    | Description                                                                |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| **Operational Records**  | `Audit`, `CAPA`, `Change Request`, `Improvement`, `Management Review`, `Objective`, `Opportunity`, `Risk` | Used for all active QMS records and ongoing improvement activities.        |
-| **Setup Phase (legacy)** | `Setup`                                                                                                   | Used only for records created during the initial establishment of the QMS. |
-
-Each label corresponds to an Issue Template under `.github/ISSUE_TEMPLATE/` to ensure metadata consistency.
+1. **Backlog:** Review scheduled or triggered.
+2. **In Progress:** Execution and data collection.
+3. **In Test:** Findings analyzed, actions assigned.
+4. **Closed:** Records completed; outputs tracked as new issues.
 
 ---
 
-## **9. Leadership and Management Review**
+## **9. Change Control and Approvals**
 
-* Quality Policy and Objectives are defined in `/QMS/Quality-Policy.md` and `/QMS/Quality-Manual.md`.
-
-* Management Reviews are initiated quarterly using an issue labeled `Management Review`.
-
-* Each review includes:
-
-  * Status of previous MR actions
-  * QMS performance and effectiveness
-  * Internal/external issues and interested parties
-  * Risks, opportunities, and objectives
-  * CAPA status and audit results
-  * Continual improvement actions
-  * Customer satisfaction and feedback results
-  * Adequacy of resources
-
-* Minutes and supporting records are stored in `/records/management-reviews/`.
-
-**Outputs and Follow-Up Actions:**
-
-* New or revised **Quality Objectives** are created as GitHub issues labeled `Objective`.
-* Each objective issue includes:
-
-  * A clear measurable target or KPI
-  * Assigned owner and due date
-  * Links to the originating Management Review issue
-* Objectives are tracked on the QMS Project Board and reviewed at the next Management Review.
+* All QMS documents are updated via Pull Requests linked to their `Change Request` issue.
+* PR merge = approval.
+* Obsolete information remains in repo history for audit traceability.
 
 ---
 
-## **10. Change Control and Documented Information**
+## **10. Records and Evidence**
 
-* All controlled document updates occur through Pull Requests.
-* Each Pull Request must reference its originating `Change Request` issue.
-* Merge completion constitutes formal approval.
-* Obsolete information remains preserved in repository history for audit traceability.
+| Record                                   | Location                           | Retention |
+| ---------------------------------------- | ---------------------------------- | --------- |
+| All QMS Issues (Development + Operation) | GitHub Project                     | Permanent |
+| Management Review Minutes                | `/records/management-reviews/`     | Permanent |
+| Audit Reports and CAPAs                  | `/records/`                        | Permanent |
+| Repository Exports                       | `/records/github-exports/YYYY-MM/` | 5 years   |
 
----
-
-## **11. Records and Traceability**
-
-* All Issues, Pull Requests, and comments are official QMS records.
-* Closed issues remain permanently accessible in GitHub for audit purposes.
-* Files under `/QMS/`, `/SOPs/`, `/WIs/`, and `/records/` constitute documented information.
-* Manual exports per GitHub-QMS-Setup ensure offline backup and long-term retention.
+All comments, linked PRs, and attachments are part of the auditable record.
 
 ---
 
-## **12. Continual Improvement Cycle**
+## **11. Continual Improvement Cycle**
 
-At least quarterly (or during each Management Review):
+Quarterly or as needed:
 
-1. Reassess context and interested parties.
-2. Update risks, opportunities, and objectives.
-3. Review CAPA status and verify effectiveness.
-4. Identify and record new improvement opportunities.
-5. Update relevant issues and QMS documents.
+1. Review context and interested parties.
+2. Evaluate risks, opportunities, and objectives.
+3. Assess CAPA effectiveness and improvement results.
+4. Identify new improvement or development actions.
+5. Record all updates via new or linked Issues.
+
+---
+
+## **12. Integration with Other Repositories**
+
+* Each product repository uses the same two issue types (`Development`, `Operation`) for consistency.
+* Issues related to QMS compliance or actions are linked back to the FLEY QMS Project.
+* This linkage maintains traceability between quality system and development work.
+
+---
+
+## **13. Backup and Export**
+
+Follow the schedule defined in WI – GitHub-QMS-Setup.
+Quarterly manual export until automation is implemented.
+
+---
+
+## **14. Legacy Note**
+
+The previous Issue types (`Task`, `Feature`, `Bug`) are **deprecated** and replaced by `Development` and `Operation`.
+Existing issues may retain historical type for reference but should not be reused.

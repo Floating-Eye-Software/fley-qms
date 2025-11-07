@@ -1,8 +1,8 @@
 # **WI – GitHub Document Control**
 
 **Slug:** GitHub-Document-Control  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
+**Revision:** r2 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Related SOP:** Document-Control-SOP, Identification-and-Traceability-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Document-Control.md  
 

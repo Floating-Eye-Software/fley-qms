@@ -1,8 +1,8 @@
 # **SOP – Management Review**
 
 **Slug:** Management-Review-SOP  
-**Revision:** r2  
-**Effective Date:** 2025-11-04  
+**Revision:** r2 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Top Management  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Management-Review-SOP.md  
 

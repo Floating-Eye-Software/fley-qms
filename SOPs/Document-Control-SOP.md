@@ -1,8 +1,8 @@
 # **SOP – Document Control**
 
 **Slug:** Document-Control-SOP  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
+**Revision:** r2 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Quality Manager  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Document-Control-SOP.md  
 

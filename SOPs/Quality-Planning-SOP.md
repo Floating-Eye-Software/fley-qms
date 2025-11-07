@@ -1,8 +1,8 @@
 # **SOP - Quality Planning**
 
 **Slug:** Quality-Planning-SOP  
-**Revision:** r2  
-**Effective Date:** 2025-11-01  
+**Revision:** r3 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Process Owner:** Top Management  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Quality-Planning-SOP.md  
 
