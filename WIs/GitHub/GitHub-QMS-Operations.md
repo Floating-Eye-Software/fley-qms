@@ -12,12 +12,7 @@
 
 To define how FLEY operates and maintains its **Quality Management System (QMS)** in GitHub using a single **Project (“FLEY QMS”)** that integrates both **Development** and **Operations** Issue Types and QMS Label categories.
 
-This ensures:
-
-* Unified management of QMS operations, improvement, and records.
-* Full traceability of ISO 9001:2015 activities from creation to closure.
-* Controlled, auditable digital records for all QMS functions.
-
+This instruction ensures consistent operation and continual improvement of the QMS through a **unified digital workflow** accessible to all process owners.
 
 ---
 
@@ -55,10 +50,28 @@ Applies to all operational QMS activities and quality records managed in GitHub,
 
 ---
 
-## **5. FLEY QMS Workflow**
+## **5. QMS Operations in GitHub**
+
+Day-to-day QMS activity is driven through GitHub Issues, Projects, and Pull Requests. These tools together ensure that every quality record - whether a Risk, CAPA, or Audit - is **visible, traceable, and closed through a controlled workflow**.
+
+### **5.1 GitHub Components and QMS Roles**
+
+| GitHub Area                      | QMS Function                                             |
+| -------------------------------- | -------------------------------------------------------- |
+| **Repository (`fley-qms`)**      | Controlled home for QMS documentation and records.       |
+| **Issues**                       | Primary mechanism for QMS records and actions.           |
+| **Pull Requests**                | Formal approvals and document control.                   |
+| **Projects → FLEY QMS Board**    | Workflow management for all QMS issues.                  |
+| **Discussions**                  | Optional collaboration and feedback.                     |
+| **Actions**                      | Optional automation for reminders, exports, and metrics. |
+| **Wiki**                         | Optional user-friendly access to documentation.          |
+
+---
+
+### **5.2 FLEY QMS Workflow**
 
 ```
-Backlog → In Progress → In Test → Closed
+Backlog (GREY) → In Progress (GREEN) → In Test (YELLOW) → Closed (BLUE)
 ```
 
 | Column      | Purpose                                     | Examples                         |
@@ -70,7 +83,7 @@ Backlog → In Progress → In Test → Closed
 
 ---
 
-## **6. Issue Types**
+### **5.3 Issue Types**
 
 | Type            | Definition                                                  | Use                                    |
 | --------------- | ----------------------------------------------------------- | -------------------------------------- |
@@ -79,7 +92,7 @@ Backlog → In Progress → In Test → Closed
 
 ---
 
-## **7. QMS Label Definitions**
+### **5.4 QMS Label Definitions**
 
 | Label                 | Definition                                | Typical Usage                       |
 | --------------------- | ----------------------------------------- | ----------------------------------- |
@@ -98,63 +111,57 @@ Each Label corresponds to a GitHub Issue Template for consistent metadata and tr
 
 ---
 
-## **8. Project Views**
+### **5.5 Project Views**
 
 | View                  | Filter                                 | Purpose                                  |
 | --------------------- | -------------------------------------- | ---------------------------------------- |
 | Development           | `type:Development`                     | Track QMS framework creation or updates. |
 | QMS Actions           | `label:"Management Review", Objective` | Plan and track leadership actions.       |
-| Change Log            | `label:"Change Request", Change`       | Full lifecycle of changes.               |
-| Risks & Opportunities | `label:Risk, Opportunity`              | Risk-based thinking dashboard.           |
-| CAPAs                 | `label:CAPA`                           | Corrective/Preventive Actions.           |
-| Audits                | `label:Audit`                          | Internal and external audits.            |
-| Nonconformances       | `label:Nonconformance`                 | Track deviations.                        |
+| Changes               | `label:"Change Request", Change`       | Full lifecycle of changes.               |
 | Improvements          | `label:Improvement`                    | Continual improvement.                   |
+| Risks & Opportunities | `label:Risk, Opportunity`              | Risk-based thinking dashboard.           |
+| Audits                | `label:Audit`                          | Internal and external audits.            |
+| CAPAs                 | `label:CAPA`                           | Corrective/Preventive Actions.           |
+| Nonconformances       | `label:Nonconformance`                 | Track deviations.                        |
 | Missing Label         | `no:label -type:Development`           | Classification completeness check.       |
+| All Issues            | *(no filter)*                          | Complete record view.                    |
 
 ---
 
-## **9. Issue Lifecycle Examples**
+### **5.6 Milestone-Based MR Workflow**
 
-### **9.1 Change Request**
+The Management Review (MR) cycle in GitHub ensures that leadership oversight, performance review, and strategic actions are structured, traceable, and auditable. Each MR cycle corresponds to a **GitHub milestone** that ties together related quality records.
 
-1. **Backlog:** Issue created with summary and justification.
-2. **In Progress:** PR opened; work implemented.
-3. **In Test:** Changes reviewed and verified.
-4. **Closed:** PR merged and approved.
+#### **1. MR Issue Creation**
 
-### **9.2 CAPA / Nonconformance**
+1. Create a **Management Review (MR) issue** documenting decisions, outputs, and links to related issues.
+2. This MR issue is **the source of truth** for the cycle.
 
-1. **Backlog:** Nonconformance recorded (Operation Issue + `CAPA`).
-2. **In Progress:** Root cause and actions defined and implemented.
-3. **In Test:** Effectiveness review conducted.
-4. **Closed:** Verified as effective; evidence attached.
+#### **2. Milestone Creation**
 
-### **9.3 Objective**
+1. Create a **milestone** corresponding to the MR issue (e.g., `MR-1: QMS Launch`).
+2. Assign **Objectives, Risks, Improvements, and Opportunities** issues to this milestone.
+3. Keep the milestone open until all assigned issues are completed.
 
-1. **Backlog:** Objective defined from MR or planning.
-2. **In Progress:** Plan executed; data collected.
-3. **In Test:** KPI results evaluated.
-4. **Closed:** Objective achieved or redefined.
+#### **3. Sub-Issues & Linking**
 
-### **9.4 Audit or Management Review**
+* Create sub-issues under Objectives or Improvements for actionable tasks.
+* Link each issue back to the originating MR issue for traceability.
 
-1. **Backlog:** Review scheduled or triggered.
-2. **In Progress:** Execution and data collection.
-3. **In Test:** Findings analyzed, actions assigned.
-4. **Closed:** Records completed; outputs tracked as new issues.
+#### **4. Progress Tracking**
 
-### **9.5 MR Milestone Guidelines**
+* Use GitHub milestone progress bars to track completion of all assigned issues.
+* Sub-issue progress rolls up to parent issue completion.
 
-1. Each Management Review event shall have a corresponding milestone.
-2. All Objectives, Risks, Improvements, and Opportunities from the MR are assigned to the milestone.
-3. Sub-issues may be created under Objectives or Improvements to track actionable tasks.
-4. Milestone progress bars shall be used to track completion of all MR outputs.
-5. Milestone names should be consistent across repositories for unified tracking and reporting.
+#### **5. Event-Driven Cycle Updates**
+
+* For a new MR, create a new MR issue and milestone.
+* Incomplete issues from prior cycles may be reassigned to the new milestone.
+* Milestone names should remain consistent across repositories.
 
 ---
 
-## **10. Change Control and Approvals**
+### **5.7 Change Control and Approvals**
 
 * Controlled documents updated through Pull Requests linked to `Change Request` issues.
 * Merge approval = official change approval.
@@ -162,29 +169,7 @@ Each Label corresponds to a GitHub Issue Template for consistent metadata and tr
 
 ---
 
-## **11. Records and Evidence**
-
-| Record                    | Location                           | Retention |
-| ------------------------- | ---------------------------------- | --------- |
-| QMS Issues (all)          | GitHub Project                     | Permanent |
-| Management Review Minutes | `/records/management-reviews/`     | Permanent |
-| Audit Reports & CAPAs     | `/records/`                        | Permanent |
-| Repository Exports        | `/records/github-exports/YYYY-MM/` | 5 years   |
-
----
-
-## **12. Continual Improvement**
-
-Quarterly:
-
-1. Review context and interested parties.
-2. Evaluate risks, opportunities, and objectives.
-3. Assess CAPA and improvement results.
-4. Record new actions as Issues.
-
----
-
-## **13. Integration and Traceability**
+### **5.8 Integration and Traceability**
 
 * All repos use same Issue Types and Label scheme.
 * QMS Project serves as the traceability hub.
@@ -192,12 +177,19 @@ Quarterly:
 
 ---
 
-## **14. Backup and Export**
+### **5.9 Backup and Export**
+
+Backups preserve the long-term integrity of the QMS record set and provide a disaster-recovery measure aligned with Document Control retention requirements.
 
 Follow WI – GitHub-QMS-Setup (quarterly manual export until automated).
 
 ---
 
-## **15. Legacy Note**
+## **6. Records**
 
-Old GitHub issue types (`Task`, `Feature`, `Bug`) are **deprecated** and replaced with standardized `Development` and `Operations`.
+| Record                    | Location                           | Retention |
+| ------------------------- | ---------------------------------- | --------- |
+| QMS Issues (all)          | GitHub Project                     | Permanent |
+| Management Review Records | GitHub Project                     | Permanent |
+| Audit Reports & CAPAs     | GitHub Project                     | Permanent |
+| Repository Exports        | `/records/github-exports/YYYY-MM/` | 5 years   |

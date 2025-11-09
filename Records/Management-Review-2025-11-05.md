@@ -74,8 +74,8 @@ Contained nonconformance managed; no active risks affecting operation.
 | **Risk**        | *Single-Person Approval Constraint* – inherent GitHub limitation on approvals.                        | Record in Risk Register; monitor until multi-reviewer configuration possible.  |
 | **Risk**        | *Dependence on GitHub as critical external provider.*                                                 | Add to Risk Register; evaluate under Supplier-Control SOP.                     |
 | **Risk**        | *Partial SOP coverage – key processes (CAPA, Audit, Complaint, Supplier Control) not yet documented.* | Track under *Audit-Ready QMS* milestone; complete once QMS Foundations closes. |
-| **Opportunity** | Develop and release *Supplier Evaluation and Qualification Procedure*.                                | Planned after QMS Foundations milestone.                                       |
-| **Opportunity** | Define QMS KPIs and effectiveness criteria.                                                           | Implement once Continuous-Improvement Plan framework validated.                |
+| **Improvement** | Develop and release *Supplier Evaluation and Qualification Procedure*.                                | Planned after QMS Foundations milestone.                                       |
+| **Improvement** | Define QMS KPIs and effectiveness criteria.                                                           | Implement once Continuous-Improvement Plan framework validated.                |
 | **Improvement** | Establish recurring Management Review schedule and Action Tracker per MR SOP §6.6.                    | Next review planned after Audit-Ready QMS documentation milestone.             |
 | **Improvement** | Refine QMS-Design-Control Plan and Red-Witch-Quality Plan based on pilot feedback.                    | Planned; see §9 Outputs.                                                       |
 

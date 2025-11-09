@@ -12,6 +12,8 @@
 
 To define the method for **establishing and configuring the FLEY Quality Management System (QMS)** in GitHub using a single controlled Project titled **“FLEY QMS”** within the `fley-qms` repository.
 
+This setup event represents the formal creation of the organization’s **controlled digital quality environment**, forming the foundation upon which all QMS evidence, workflows, and continual improvement activities are built.
+
 This ensures that:
 
 * The QMS framework is built in a fully traceable, auditable environment.
@@ -28,7 +30,7 @@ Applies to all activities required to create and configure the **QMS infrastruct
 * Issue Type and Label configuration
 * Project View configuration
 * Creation of QMS framework documents (Manual, Context, Policy, Process Map)
-* Setup of automation, recurrence, and export routines
+* Setup of automation and export routines
 
 ---
 
@@ -53,10 +55,11 @@ Applies to all activities required to create and configure the **QMS infrastruct
 | **Contributors / SMEs**         | Provide technical or procedural input.                                                 | Suggest edits only.                          |
 
 ---
+## **5. Establishing the QMS in GitHub**
 
-## **5. Repository Structure**
+The following steps define how the FLEY QMS is formally initialized and configured in GitHub. Completing this setup establishes the baseline for controlled documentation and operational traceability.
 
-Verify the following structure in the `fley-qms` repository:
+### **5.1 Repository Structure**
 
 ```
 QMS/
@@ -76,122 +79,125 @@ The `fley-qms` repository serves as the published, user-friendly interface for c
 
 ---
 
-## **6. Project: FLEY QMS**
+### **5.2 Project: FLEY QMS**
 
-### **Purpose**
-
-To manage both **Development** (creation and improvement) and **Operations** (execution and maintenance) within one integrated project.
-
-### **Columns**
+#### **1. Columns & Status Colors**
 
 ```
-Backlog → In Progress → In Test → Closed
+Backlog (GREY) → In Progress (GREEN) → In Test (YELLOW) → Closed (BLUE)
 ```
 
-### **Views**
+#### **2. Project Views**
 
-| View                              | Type  | Filter                                 | Purpose                                                            |
-| --------------------------------- | ----- | -------------------------------------- | ------------------------------------------------------------------ |
-| **Development (Board)**           | Board | `type:Development`                     | Tracks creation or improvement of products, processes, or systems. |
-| **QMS Actions (Board)**           | Board | `label:"Management Review", Objective` | Management reviews and objectives tracking.                        |
-| **Change Log (Table)**            | Table | `label:"Change Request", Change`       | Records lifecycle of proposed and implemented changes.             |
-| **Risks & Opportunities (Table)** | Table | `label:Risk, Opportunity`              | Risk and opportunity management overview.                          |
-| **CAPAs (Table)**                 | Table | `label:CAPA`                           | Corrective and preventive action tracking.                         |
-| **Audits (Table)**                | Table | `label:Audit`                          | Internal/external audit registry.                                  |
-| **Nonconformances (Table)**       | Table | `label:Nonconformance`                 | Nonconformance tracking.                                           |
-| **Improvements (Table)**          | Table | `label:Improvement`                    | Continual improvement opportunities.                               |
-| **Missing Label (Table)**         | Table | `no:label -type:Development`           | Detects issues missing proper QMS classification.                  |
-
-Use the QMS Actions board to track all MR outputs. Each Objective, Risk, Improvement, or Opportunity is an issue linked to its MR milestone.
-
----
-
-## **7. Issue Types**
-
-| Type            | Definition                                                                     | Typical Use                                       |
-| --------------- | ------------------------------------------------------------------------------ | ------------------------------------------------- |
-| **Development** | Activities that create, enhance, or implement products, processes, or systems. | QMS framework setup, automation, template design. |
-| **Operations**  | Activities that manage, maintain, or monitor processes and systems.            | CAPA, Audit, Objective, Risk, Management Review.  |
-
-Templates for each Issue Type are stored in `.github/ISSUE_TEMPLATE/`.
+| View                          | Type / Filter                       | Purpose                                  |
+| ----------------------------- | ----------------------------------- | ---------------------------------------- |
+| Development (Board)           | type:Development                    | Track QMS framework creation or updates. |
+| QMS Actions (Table)           | label:"Management Review",Objective | Plan and track leadership actions.       |
+| Changes (Table)               | label:"Change Request",Change       | Full lifecycle of changes.               |
+| Improvements (Table)          | label:Improvement                   | Continual improvement actions.           |
+| Risks & Opportunities (Table) | label:Risk,Opportunity              | Risk-based thinking dashboard.           |
+| Audits (Table)                | label:Audit                         | Internal and external audits.            |
+| CAPAs (Table)                 | label:CAPA                          | Corrective/Preventive Actions.           |
+| Nonconformances (Table)       | label:Nonconformance                | Track deviations.                        |
+| Missing Label (Table)         | no:label -type:Development          | Classification completeness check.       |
+| All Issues (Table)            | *(no filter)*                       | Complete record view.                    |
 
 ---
 
-## **8. Label Scheme**
+### **5.3 Issue Types & Colors**
 
-| Label                 | Definition                                                                     | Use Case                                     |
-| --------------------- | ------------------------------------------------------------------------------ | -------------------------------------------- |
-| **Audit**             | Record of an internal or external audit, including findings and actions.       | Create an issue for each audit event.        |
-| **CAPA**              | Corrective or Preventive Action to address a nonconformity or potential issue. | Link to related risks or audits.             |
-| **Change**            | Implementation of an approved Change Request.                                  | Execution step post-approval.                |
-| **Change Request**    | Proposal for a controlled QMS change requiring review/approval.                | Initiate here; link related “Change” issues. |
-| **Improvement**       | Continual improvement action not requiring CAPA.                               | General enhancements or optimization.        |
-| **Management Review** | Record of management review meeting and outputs.                               | Quarterly or ad hoc MR issues.               |
-| **Nonconformance**    | Record of failure to meet a requirement or standard.                           | Document deviations, link to CAPA.           |
-| **Objective**         | Quality objective or KPI for performance tracking.                             | Link to MR or Risk issues.                   |
-| **Opportunity**       | Positive factor or idea for improvement.                                       | Link to MR or Objective.                     |
-| **Risk**              | Source of uncertainty affecting objectives; includes mitigation actions.       | Link to Objective or CAPA.                   |
+| Type            | Color  | Definition                                                          | Typical Use                                       |
+| --------------- | ------ | ------------------------------------------------------------------- | ------------------------------------------------- |
+| **Development** | BLUE   | Activities that create or improve products, processes, or systems.  | QMS framework setup, automation, template design. |
+| **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems. | CAPA, Audit, Objective, Risk, Management Review.  |
 
 ---
 
-## **9. Automation Rules**
+### **5.4 Label Scheme & Colors**
 
-1. **Auto-Add to Project:** Enabled so all new issues are captured.
-2. **Default Column:**
+| Label             | Color   | Definition                                           |
+| ----------------- | ------- | ---------------------------------------------------- |
+| Audit             | #0E8A16 | Internal/external audit records                      |
+| CAPA              | #B60205 | Corrective and preventive actions                    |
+| Change            | #F9D71C | Implementation of a Change Request                   |
+| Change Request    | #E4B400 | Proposed QMS-level change needing review or approval |
+| Improvement       | #2EA44F | General improvement actions not requiring CAPA       |
+| Management Review | #7057FF | MR records and outputs                               |
+| Nonconformance    | #D73A49 | Record of non-fulfilment of a requirement            |
+| Objective         | #0366D6 | Quality objectives and performance tracking          |
+| Opportunity       | #34D058 | Positive improvement opportunities                   |
+| Risk              | #E36209 | Risk identification, evaluation, and mitigation      |
 
-   ```
-   When: Item added to project  
-   Then: Set status to "Backlog"
-   ```
-3. **Reference:** [GitHub Project Automation Docs](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project)
-
----
-
-## **10. Establish the QMS Framework**
-
-| Document             | Purpose                                        | Control                      |
-| -------------------- | ---------------------------------------------- | ---------------------------- |
-| Quality Manual       | Defines scope and structure of QMS.            | Controlled via Pull Request. |
-| Context Analysis     | Captures internal/external issues and parties. | Reviewed during MR.          |
-| Organizational Chart | Defines roles and responsibilities.            | Updated as needed.           |
-| Process Map          | Shows process relationships.                   | Reviewed during MR.          |
-| Quality Policy       | Declares company quality commitments.          | Approved by Top Management.  |
-
-Each tracked as a **Development Issue**, closed upon PR approval.
+Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
 
 ---
 
-## **11. Configure Management Review Recurrence**
+### **5.5 Automation and Workflows**
 
-1. Create an Operations Issue labeled `Management Review` to represent the MR event.
-2. If appropriate, create a corresponding milestone for the MR cycle.
-3. All related Objectives, Risks, Improvements, and Opportunities shall be assigned to this milestone to track progress until completion.
-4. Ensure each MR output issue links back to the originating MR issue for traceability.
+1. **Enable Auto-Add to Project**
+
+   * In project settings, enable *Auto-add new issues* for the repository.
+   * Ensures all new issues are automatically added to the FLEY QMS board.
+
+2. **Set Default Column for New Items**
+
+   * Add a workflow rule:
+     ```
+     When: Item added to project  
+     Then: Set status to "Backlog"
+     ```
+   * Ensures every new issue starts in the Backlog column.
+
+3. **Reference:**
+
+   See GitHub’s official documentation for setup details and advanced options:
+   [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 
 ---
 
-## **12. Integration with Other Repositories**
+### **5.6 Establish the QMS Framework**
+
+| Document             | Purpose                                        |
+| -------------------- | ---------------------------------------------- |
+| Quality Manual       | Defines scope and structure of QMS.            |
+| Context Analysis     | Captures internal/external issues and parties. |
+| Organizational Chart | Defines roles and responsibilities.            |
+| Process Map          | Shows process relationships.                   |
+| Quality Policy       | Declares company quality commitments.          |
+
+Tracked as **Development Issues**, closed upon PR approval.
+
+The formal approval and release of the **Quality Manual** marks the **official activation of the QMS**, signifying management’s commitment and the readiness of the system to enter operation under ISO 9001 principles.
+
+---
+
+### **5.7 Integration with Other Repositories**
 
 * `fley-qms` remains the QMS master record.
+* Each product repository (e.g., redwitch, snowplow) maintains its own development board.
 * Product repositories maintain consistent Issue Type and Label use.
 * Use Linked Issues for traceability between QMS and development work.
 
 ---
 
-## **13. Backup and Export**
+### **5.8 Backup and Export**
 
-Quarterly (until automated):
+Regular exports safeguard QMS continuity and provide offline verification of controlled records in the event of repository loss or service disruption.
 
-1. Export issues, Wiki, and repo ZIPs.
-2. Store under `/records/github-exports/YYYY-MM/`.
+Until automation is deployed:
+
+1. Perform **manual quarterly exports**:
+   * Use `gh issue list` or GitHub’s export feature for issues and comments.
+   * Download Wiki and repo as ZIP.
+   * Save under `/records/github-exports/YYYY-MM/`.
+2. Clone repository locally for offline backup and verification.
 
 ---
 
-## **14. Records**
+## **6. Records**
 
 | Record                     | Location                           | Retention |
 | -------------------------- | ---------------------------------- | --------- |
 | QMS Framework Docs         | `/QMS/`                            | Permanent |
-| Management Review Minutes  | `/records/management-reviews/`     | Permanent |
 | Repository Exports         | `/records/github-exports/YYYY-MM/` | 5 years   |
 | Setup Issues (Development) | GitHub Project                     | Permanent |
