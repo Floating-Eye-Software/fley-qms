@@ -65,9 +65,10 @@ Applies to all planning activities related to the QMS, including risk and opport
   * Consistent with the Quality Policy
   * Measurable and monitored
   * Communicated and updated as necessary
-* Progress toward objectives shall be reviewed during Management Review.
+  
+* Quality objectives established during a Management Review may be **tracked within a defined cycle or milestone**, ensuring all actions required to achieve them are monitored and completed.
 
-Progress toward quality objectives shall be reviewed during Management Reviews per *Management-Review-SOP*.
+* Progress toward objectives shall be reviewed regularly and evaluated during subsequent Management Reviews, maintaining traceability to the originating MR instance.
 
 6.3 **Planning Changes**
 
@@ -92,7 +93,9 @@ Effectiveness of executed actions shall be reviewed during Management Reviews pe
 
 6.5 **Verification of Effectiveness**
 
-Verification of effectiveness confirms that planned quality activities have achieved their intended results and that the QMS remains suitable, adequate, and effective.
+* Verification of effectiveness confirms that planned quality activities have achieved their intended results and that the QMS remains suitable, adequate, and effective.
+* Verification outcomes may reference progress within a cycle or milestone to confirm that all Objectives, Improvements, Risks, and Opportunities from a Management Review have been completed and properly implemented.
+* Residual risks, improvement opportunities, or lessons learned shall be recorded for future planning cycles or Management Reviews.
 
 The responsible **Process Owner** or **Project Owner** shall:
 

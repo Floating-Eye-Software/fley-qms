@@ -1,8 +1,8 @@
 # **WI – FLEY Action Management**
 
 **Slug:** FLEY-Action-Management  
-**Revision:** r2  
-**Effective Date:** 2025-11-01  
+**Revision:** r3 **DRAFT**  
+**Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Project-Management-SOP, Quality-Planning-SOP, Change-Control-SOP, Design-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md  
 
@@ -74,6 +74,9 @@ All actions fall under one of four tiers of control:
 | **3** | Project          | Project Quality Plan (PQP) | Formal project requiring defined governance  | `/Plans/<Project>/`     |
 | **4** | Design Control   | Design Control Plan (DCP)  | Regulated design/development activities      | `/Plans/<Project>/DCP/` |
 
+- Management Review outputs are generally tracked as Issues under a milestone representing the MR cycle.
+- Sub-issues may be created under Objectives or Improvements for detailed actionable tasks.
+
 ---
 
 ### **5.2 When to Use an Issue Only**
@@ -144,17 +147,17 @@ All actions fall under one of four tiers of control:
 
 ### **5.7 Execution and Closure**
 
-All actions and records in GitHub shall be executed and closed according to their governance level. The following subsections define execution and closure requirements for Issues, Plans, and Projects.
+- All actions and records in GitHub shall be executed and closed according to their governance level. The following subsections define execution and closure requirements for Issues, Plans, and Projects.
+- If an MR output requires a Plan or PQP, assign the Plan’s deliverables to the MR milestone.
+- Verification of Effectiveness shall confirm completion of all linked outputs before the milestone is closed.
 
 #### **1. Issues**
 
    1. All Issues are automatically added to the **FLEY QMS Board** (Backlog → In Progress → In Test → Closed).
    2. Attach or link all evidence within the Issue.
-   3. Upon completion, confirm:
-
-     * Objectives met
-     * Records updated or archived
-     * Linked Issues closed
+   3. MR-related Issues are assigned to the MR milestone.
+   4. Each MR-related issue must reference the originating MR issue for traceability.
+   5. Close the issue only when the action is complete and verified.
 
 #### **2. Plans**
 
@@ -188,6 +191,15 @@ All actions and records in GitHub shall be executed and closed according to thei
 | Plan  | Quality Manager / Process Owner   | Quality Manager                                 |
 | PQP   | Project Manager + Quality Manager | Both                                            |
 | DCP   | Design Lead + Quality Manager     | Quality Manager / Top Management (if regulated) |
+
+---
+
+### **5.9 MR Milestone Management**
+
+1. Create a new milestone for each MR cycle.
+2. Carry forward incomplete outputs from the previous milestone if necessary.
+3. Track all progress through the milestone until completion.
+4. Ensure all outputs remain linked to the originating MR issue for full traceability.
 
 ---
 

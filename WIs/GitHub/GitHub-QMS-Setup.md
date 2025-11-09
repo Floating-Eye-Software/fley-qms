@@ -1,7 +1,7 @@
 # **WI – Set Up the QMS in GitHub**
 
 **Slug:** GitHub-QMS-Setup  
-**Revision:** r2 **Draft**  
+**Revision:** r2 **DRAFT**  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Document-Control-SOP, Change-Control-SOP, Identification-and-Traceability-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Setup.md  
@@ -102,6 +102,8 @@ Backlog → In Progress → In Test → Closed
 | **Improvements (Table)**          | Table | `label:Improvement`                    | Continual improvement opportunities.                               |
 | **Missing Label (Table)**         | Table | `no:label -type:Development`           | Detects issues missing proper QMS classification.                  |
 
+Use the QMS Actions board to track all MR outputs. Each Objective, Risk, Improvement, or Opportunity is an issue linked to its MR milestone.
+
 ---
 
 ## **7. Issue Types**
@@ -161,9 +163,10 @@ Each tracked as a **Development Issue**, closed upon PR approval.
 
 ## **11. Configure Management Review Recurrence**
 
-1. Create an **Operations Issue** labeled `Management Review`.
-2. Schedule recurrence quarterly (manual or automated).
-3. Store records in `/records/management-reviews/`.
+1. Create an Operations Issue labeled `Management Review` to represent the MR event.
+2. If appropriate, create a corresponding milestone for the MR cycle.
+3. All related Objectives, Risks, Improvements, and Opportunities shall be assigned to this milestone to track progress until completion.
+4. Ensure each MR output issue links back to the originating MR issue for traceability.
 
 ---
 

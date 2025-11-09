@@ -1,7 +1,7 @@
 # **WI – Operate the QMS in GitHub – Single FLEY Board**
 
 **Slug:** GitHub-QMS-Operations  
-**Revision:** r2 **Draft**  
+**Revision:** r2 **DRAFT**  
 **Effective Date:** [YYYY-MM-DD]  
 **Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP, Quality-Planning-SOP, Leadership-SOP, Management-Review-SOP, Risk-and-Opportunity-Management-SOP, Project-Management-SOP, Design-Control-SOP  
 **Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Operations.md  
@@ -143,6 +143,14 @@ Each Label corresponds to a GitHub Issue Template for consistent metadata and tr
 2. **In Progress:** Execution and data collection.
 3. **In Test:** Findings analyzed, actions assigned.
 4. **Closed:** Records completed; outputs tracked as new issues.
+
+### **9.5 MR Milestone Guidelines**
+
+1. Each Management Review event shall have a corresponding milestone.
+2. All Objectives, Risks, Improvements, and Opportunities from the MR are assigned to the milestone.
+3. Sub-issues may be created under Objectives or Improvements to track actionable tasks.
+4. Milestone progress bars shall be used to track completion of all MR outputs.
+5. Milestone names should be consistent across repositories for unified tracking and reporting.
 
 ---
 

@@ -52,7 +52,9 @@ Applies to all top management activities related to leadership, customer focus, 
 * Actively promote risk-based thinking and process approach.
 * Ensure the QMS achieves its intended results.
 * Support continual improvement across all processes.
-* Top Management shall ensure Management Reviews are conducted in accordance with the *Management-Review-SOP* at planned intervals to verify QMS suitability, adequacy, and effectiveness.
+* Top Management shall ensure that Management Reviews are conducted and that outputs (Objectives, Risks, Improvements, Opportunities) are tracked to completion within a defined cycle or milestone.
+* Progress toward completion of MR outputs shall be monitored and linked to the originating MR to maintain traceability.
+* Leadership shall support continual improvement across all processes and ensure the QMS achieves its intended results.
 
 #### 6.2 Customer Focus
 
@@ -72,8 +74,8 @@ Applies to all top management activities related to leadership, customer focus, 
 
 #### 6.5 Work Environment & Organizational Culture
 
-* Promote a flexible, dependency-based work environment in which work progress is guided by milestone prerequisites and readiness rather than fixed due dates.
-* Encourage intrinsic motivation, collaboration, and responsibility while maintaining alignment with risk-based QMS controls.
+* Promote a controlled and motivating work environment that supports milestone-based or cycle-based tracking of QMS actions, allowing work progress to be guided by prerequisites and readiness rather than strictly fixed due dates.
+* Encourage collaboration, responsibility, and intrinsic motivation while maintaining alignment with risk-based QMS controls.
 * Document and monitor work-environment controls as part of QMS performance.
 * Reference this work-environment model in Management Reviews, SOPs, and process improvements to ensure controlled and auditable implementation.
 

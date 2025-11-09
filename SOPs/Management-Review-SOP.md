@@ -57,12 +57,12 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 
 ### **6.1 Overview and Sequence**
 
-1. **Plan the Review**
+* Management Reviews (MRs) shall be conducted at planned intervals or in response to significant events.
+* Each MR cycle is represented by a **review instance**, which may include a defined **milestone or tracking container** to group related objectives, risks, improvements, and opportunities.
+* All outputs of the MR shall be assigned to the cycle/milestone and monitored until completion.
 
-   * Frequency: at least annually, or more often if significant changes occur (e.g., new product, major nonconformity, strategic shift).
-   * Quality Manager drafts MR template and collects required inputs.
+### **6.2 Collect Inputs**
 
-2. **Collect Inputs**
    Inputs shall include, at minimum (ISO 9001 §9.3.2):
 
    * Status of previous MR actions
@@ -77,27 +77,33 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
    * Adequacy of resources
    * Improvement recommendations
 
-3. **Conduct the Review**
+### **6.3 Conduct the Review**
 
-   * Top Management reviews the MR record asynchronously or synchronously within the electronic system.
-   * Key decisions and assigned actions are documented directly in the MR record.
-   * Significant risks, opportunities, or strategic issues are escalated to planning or leadership processes.
+* Top Management reviews inputs, evaluates performance, and documents decisions and actions in the controlled record for the MR.
+* Outputs (Objectives, Risks, Improvements, Opportunities) may be **tracked within a milestone or cycle container**, which remains open until all associated actions are complete.
+* Each action shall be linked to the originating MR to maintain traceability.
 
-4. **Determine Outputs**
-   Outputs shall include, at minimum (ISO 9001 §9.3.3):
+### **6.4 Determine Outputs**
 
-   * Decisions and actions related to QMS improvement and effectiveness
-   * Updates to quality objectives and policy
-   * Resource needs and assignments
-   * Action items with responsibilities and due dates
+* Outputs shall include, at minimum:
 
-5. **Document and Communicate Results**
+  * Decisions and actions related to QMS improvement and effectiveness.
+  * Updates to quality objectives and policy.
+  * Resource needs and assignments.
+  * Action items with responsibilities and due dates.
 
-   * Quality Manager ensures the MR record is complete and maintained in the controlled repository (e.g., GitHub issue).
-   * Relevant changes to policies, objectives, or SOPs are initiated through the Change Control SOP.
-   * Summary results are communicated to all affected personnel via appropriate channels.
+* Outputs may be tracked as **discrete actions assigned to the MR cycle or milestone**, with progress monitored until closure.
 
-6. **Follow-up and Closure**
+
+### **6.5 Document and Communicate Results**
+
+* The MR record shall be complete and maintained in the controlled repository.
+* The MR cycle/milestone shall remain open until all associated outputs are closed or otherwise dispositioned.
+* Progress of all MR outputs shall be monitored, and any incomplete actions carried forward to the next cycle if required.
+* Relevant changes to policies, objectives, or SOPs are initiated through the Change Control SOP.
+* Summary results are communicated to all affected personnel via appropriate channels.
+
+### **6.6 Follow-up and Closure**
 
    * Progress on MR actions is tracked in the Action Tracker until closure.
    * Effectiveness of actions is evaluated at the next MR.
