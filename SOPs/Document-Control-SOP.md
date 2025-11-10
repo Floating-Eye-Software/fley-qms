@@ -1,12 +1,13 @@
-# **SOP – Document Control**
-
-**Slug:** Document-Control-SOP  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
-**Process Owner:** Quality Manager  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Document-Control-SOP.md  
-
 ---
+slug: Document-Control-SOP
+revision: r2
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Document-Control-SOP.md  
+---
+
+# **SOP – Document Control**
 
 ## **1. Purpose**
 
@@ -45,7 +46,7 @@ This SOP applies to **all documented information** within the QMS, including:
 | **Controlled Document**    | A formally reviewed, approved, and version-controlled document made available for operational use within the QMS. Examples include SOPs, WIs, templates, and policies. |
 | **Record**                 | Factual evidence of QMS activities or results. Records are maintained for traceability and compliance (e.g., logs, registers, forms, meeting minutes).                 |
 | **Documented Information** | A collective term referring to both controlled documents and records as defined in ISO 9001:2015 Clause 7.5.                                                           |
-| **Slug**                   | A standardized identifier for each controlled document, typically combining type and title (e.g., `SOP_Document-Control`).                                             |
+| **Slug**                   | A standardized identifier for each controlled document, typically combining type and title (e.g., `Document-Control-SOP`).                                             |
 | **Revision (`r#`)**        | The controlled, approved iteration of a document. Each approved revision supersedes the prior one.                                                                     |
 | **Controlled Source**      | The authoritative publication location for the current approved revision (e.g., QMS document repository, official wiki, or dedicated platform).                        |
 
@@ -55,7 +56,7 @@ This SOP applies to **all documented information** within the QMS, including:
 
 | Role                                                     | Responsibilities                                                                                                                                              | Authorities                                                                                               |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| **Process Owners**                                       | Develop, maintain, and review controlled documents within their process area; ensure records (e.g., MPL, CAPA log, Risk Register) are accurate and traceable. | Approve draft updates within their process area prior to Quality review.                                  |
+| **Process Owners**                                       | Develop, maintain, and review controlled documents within their process area; ensure records (e.g., CAPA log, Risk Register) are accurate and traceable. | Approve draft updates within their process area prior to Quality review.                                  |
 | **Quality Manager / Document Control Coordinator (DCC)** | Administer the document control system; ensure approval, publication, and retention requirements are met.                                                     | Final approval authority for controlled documents prior to release; manage document access and archiving. |
 | **Management**                                           | Approve QMS-level documents impacting governance and resource allocation.                                                                                     | Endorse policies and system-level procedures.                                                             |
 | **All Personnel**                                        | Use only current, approved documents; maintain accurate records; report discrepancies.                                                                        | None beyond authorized document use.                                                                      |
@@ -145,50 +146,26 @@ This SOP applies to **all documented information** within the QMS, including:
 
 ---
 
-#### **6.8 External and Special Controlled Documents**
+### **6.8 External Controlled Documents**
 
 1. **External Documents**
 
-   * External documents (e.g., ISO standards, regulatory guidance, academic articles, or supplier specifications) are not stored directly in the QMS repository unless permitted by license.
+   * External standards, regulations, or supplier documents are not stored directly in the QMS unless permitted by license.
 
-   * Each external document shall be represented by a **controlled metadata placeholder file** in the relevant directory (e.g., `/External-Docs/` or `/References/`), containing:
+   * Each external document shall have a **controlled metadata file** containing:
 
-     | Field                 | Description                                                                       |
-     | --------------------- | --------------------------------------------------------------------------------- |
-     | **Title**             | Official title of the document                                                    |
-     | **Document ID**       | Unique internal identifier (e.g., EXT-ISO-13485-2016)                             |
-     | **Source / Link**     | URL or citation to publisher or authoritative location                            |
-     | **Type**              | Standard, Guidance, Market Report, Journal, etc.                                  |
-     | **Summary / Notes**   | Internal paraphrased summary relevant to QMS or design                            |
-     | **Controlled Source** | Link to the approved metadata file in `fley-qms` (or designated repository) |
+     | Field                 | Description                                              |
+     | --------------------- | -------------------------------------------------------- |
+     | **Title**             | Official title of the document                           |
+     | **Document ID**       | Unique internal identifier (e.g., EXT-ISO-13485-2016)    |
+     | **Source / Link**     | URL or citation to publisher or authoritative location   |
+     | **Type**              | Standard, Guidance, Market Report, Journal, etc.         |
+     | **Summary / Notes**   | Internal summary relevant to QMS or design               |
+     | **Controlled Source** | Link to the approved metadata file in the QMS repository |
 
-   * External documents must be **reviewed annually** or when a new edition is issued. A new metadata revision (`r#`) is approved through standard document control.
+   * External document metadata is reviewed annually or when a new edition is issued.
 
-   * Auditors are provided the metadata record and the external source link. Full-text documents are accessed only via licensed or public channels.
-
-2. **GitHub Special Files**
-
-   * Certain files required for GitHub repository automation and configuration cannot include standard document headers due to file-format constraints (e.g., YAML, JSON, workflow `.yml` files).
-   * These include, but are not limited to:
-
-     * `.github/ISSUE_TEMPLATE/config.yml`
-     * `.github/workflows/*`
-     * `.github/labels.yml`
-     * `.github/CODEOWNERS`
-   * For each such file:
-
-     * A **controlled placeholder file** must exist in the SOPs or WIs directory containing:
-
-       * The standard document header
-       * A **Controlled Source** link pointing to the actual file
-     * The body of the placeholder shall include:
-
-       ```
-       [Controlled Source – Live File]
-       https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/config.yml
-       ```
-   * Changes to these live files follow the same **review, approval, and tagging** rules as controlled Markdown documents.
-   * The **Pull Request approval record** serves as formal approval evidence.
+   * Full-text access must comply with copyright or licensing restrictions.
 
 ---
 

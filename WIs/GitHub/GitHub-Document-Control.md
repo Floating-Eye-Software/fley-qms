@@ -1,12 +1,13 @@
-# **WI – GitHub Document Control**
-
-**Slug:** GitHub-Document-Control  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
-**Related SOP:** Document-Control-SOP, Identification-and-Traceability-SOP  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Document-Control.md  
-
 ---
+slug: GitHub-Document-Control
+revision: r2
+type: WI
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Document-Control.md  
+---
+
+# **WI – GitHub Document Control**
 
 ## **1. Purpose**
 
@@ -49,178 +50,114 @@ It describes *how* document control is implemented within GitHub. The SOP define
 
 ### **5.1 Document Identification and Naming**
 
-1. Each controlled document resides in the appropriate folder (`/SOPs`, `/WIs`, `/Templates`, `/Records`, etc.).
-2. The **document slug** serves as the unique identifier and is derived from the filename.
-   *Example:*
-   `Document-Control-SOP.md` → **Slug:** Document-Control-SOP
-3. Documents are referenced in text using double brackets, e.g., `[[Document Control SOP]]`.
-   This links directly to the file in the GitHub wiki.
-4. Document prefixes are shown below.
+1. Each controlled document resides in the appropriate folder (`/SOPs`, `/WIs`, `/Templates`, `/Records`, `/External/`, etc.).
+2. Every document must have a **unique slug** that identifies it within the QMS.
+3. Document type is indicated in the header (`type` field) and may be any of: SOP, WI, TPL, REC, CFG, MAP, PLAN, EXT, or others.
+4. Type codes may appear in the filename but are **not required**.
+5. Each document or metadata file must be versioned and traceable through Git commits and tags.
+6. Superseded revisions remain accessible via tags; only the latest approved revision is present on `main`.
 
-| Type                           | Prefix   | Example                           | Notes                         |
-| ------------------------------ | -------- | --------------------------------- | ----------------------------- |
-| Quality Management System Core | **QMS**  | `QMS-Quality-Manual.md`           | Foundational documents        |
-| Standard Operating Procedure   | **SOP**  | `SOP-Document-Control.md`         | Process-level control         |
-| Work Instruction               | **WI**   | `WI-GitHub-Document-Control.md`   | Detailed procedural steps     |
-| Template                       | **TPL**  | `TPL-Design-Control-Plan.md`      | Controlled templates or forms |
-| Reference / Overview           | **REF**  | `REF-GitHub-QMS-Overview.md`      | Context or guidance           |
-| Compliance Mapping             | **MAP**  | `MAP-ISO-13485.md`                | Standards mapping             |
-| Corrective & Preventive Action | **CAPA** | `CAPA-0001-Nonconformance.md`     | Issue and resolution tracking |
-| Complaint                      | **CMPL** | `CMPL-0001-Customer-Complaint.md` | Complaint records             |
-| Record / Evidence              | **REC**  | `REC-Design-Review.md`            | Controlled evidence outputs   |
-| Plan                           | **PLAN** | `PLAN-Continuous-Improvement.md`  | Project or system plans       |
-
-5. Where used, document numbers are sequential and unique within each type. Authors propose the next number; the reviewer or DCC confirms uniqueness.
+| Type                         | Code | Example                          |
+| ---------------------------- | ---- | -------------------------------- |
+| Standard Operating Procedure | SOP  | `Document-Control-SOP.md`        |
+| Work Instruction             | WI   | `GitHub-Document-Control.md`     |
+| Template / Form              | TPL  | `Design-Review-Form.md`          |
+| Record / Evidence            | REC  | `CAPA-Log.md`                    |
+| Configuration / Automation   | CFG  | `GH-Issue-Templates.yml`         |
+| External Document Metadata   | EXT  | `EXT-ISO-13485-r1.md`            |
 
 ---
 
-### **5.2 Document Header Format**
+### **5.2 Embedded QMS Headers**
 
-Each controlled Markdown file begins with the following header:
+All QMS-controlled files must include **embedded metadata headers** that identify and control the document.
+Headers may be written as YAML front matter, Markdown metadata, or comment blocks depending on file type.
 
-```markdown
-# **[TYPE] – [Title]**
+#### **5.2.1 Header Format**
 
-**Slug:** [Slug-Name]  
-**Revision:** r[#]  
-**Effective Date:** 2025-10-28  
-**Related SOP:** [Linked SOP] _(optional)_  
-**Controlled Source:** https://github.com/[org]/[repo]/[path]/[file].md
-```
+| File Type                         | Header Format                                | Example                                  |
+| --------------------------------- | -------------------------------------------- | ---------------------------------------- |
+| Markdown (`.md`)                  | YAML front matter block or Markdown metadata | `---\n# FLEY QMS Header\nslug: ...\n---` |
+| YAML / JSON                       | YAML keys under a “FLEY QMS Header” comment  | `# FLEY QMS Header\nslug: ...`           |
+| HTML / Markdown comment templates | HTML comment block containing header         | `<!-- slug: ..., revision: ... -->`      |
 
-**Notes:**
+#### **5.2.2 Required Header Fields**
 
-* “Approved By” is not required; approvals are recorded in the GitHub Pull Request history.
-* The “Effective Date” is retained for clarity, though not required by the SOP.
-* The header is updated only when a new revision is approved and merged.
+| Field               | Description                                               |
+| ------------------- | --------------------------------------------------------- |
+| `slug`              | Unique document identifier (e.g., `Document-Control-SOP`) |
+| `revision`          | Approved revision identifier (`r#`)                       |
+| `type`              | Document type (SOP, WI, TPL, REC, CFG, etc.)              |
+| `status`            | One of: `draft`, `approved`                               |
+| `effective`         | Effective date (or `null` if pending)                     |
+| `controlled_source` | URL of the authoritative repository file                  |
+| `related`           | (Optional) Related SOPs, WIs, or documents                |
+
+> Markdown files with legacy headers may retain them until next revision.
+> Future updates will standardize on YAML headers.
 
 ---
 
 ### **5.3 Drafting and Review Workflow**
 
-1. Authors create a new branch for each draft or revision:
+1. Authors create a feature branch for each new draft or revision:
 
    ```bash
-   git checkout -b update/Document-Control-SOP_r5
+   git checkout -b update/SOP-Document-Control_r3
    ```
+2. Edit the file using the correct header and format.
+3. Commit changes with a clear message.
+4. Push the branch and open a **Pull Request (PR)** for review.
+5. Reviewers comment or approve within the PR.
+6. Once all approvals are complete, the PR is merged into `main`.
 
-2. Edit the Markdown file following the header template.
-
-3. Commit with a clear, descriptive message.
-
-4. Push the branch and open a **Pull Request (PR)** for review and approval.
-
-5. Reviewers add comments or approve directly in GitHub.
-
-6. When all approvals are complete, merge the PR into `main`.
-
-> The merged commit represents the official approved revision and serves as the formal approval record.
+> The merged commit serves as the official approval record.
 
 ---
 
 ### **5.4 Tagging Approved Revisions**
 
-After merging, the DCC or Quality Manager tags the new approved revision:
+After merging, the DCC or Quality Manager creates a tag matching the document slug and revision:
 
 ```bash
-git tag Document-Control-SOP_r5
-git push origin Document-Control-SOP_r5
+git tag SOP-Document-Control_r3
+git push origin SOP-Document-Control_r3
 ```
 
 **Rules:**
 
-* Tag names must match the slug and revision exactly.
-* Each tag represents one approved revision.
-* Tags are immutable — do **not** delete or reuse tags.
-
-> The tag, merge commit, and PR together form the complete approval and effective-date record.
+* Tag names must match slug and revision exactly.
+* Tags are immutable and uniquely identify each approved revision.
+* Tags represent the effective record of approval.
 
 ---
 
 ### **5.5 Publication and Controlled Source**
 
-1. The **HEAD of `main`** branch represents the **current approved revision**.
-2. The repository **wiki** displays this same content for user access.
-3. Users confirm document currency by comparing the wiki version to the HEAD of `main`.
+1. The `main` branch (HEAD) represents the **current approved revision** of each document.
+2. The repository wiki or equivalent publication surface displays the same content for user access.
+3. Users verify document currency by confirming the file matches the `main` branch or latest approved tag.
 
 ---
 
-### **5.6 Managing Obsolete or Superseded Documents**
+### **5.6 Control of Superseded and Obsolete Documents**
 
-1. When a new revision is approved:
-
-   * The previous version remains accessible through its tag.
-   * Do **not** delete historical files or tags.
-2. When a document is retired:
-
-   * Add `**Status:** Obsolete` in the header.
-   * Move the file to `/archive/` or mark it clearly as obsolete.
-   * Reference the superseding document, if applicable.
-3. The tag of the last active revision remains the official record of its approval.
+* When a new revision is approved, prior revisions are superseded.
+* Superseded revisions remain traceable via **Git tags**.
+* Only the latest approved revision exists on the `main` branch.
+* Obsolete documents (for discontinued processes) are removed from `main`.
+* No “obsolete” status is required in file headers.
+* Tags serve as the permanent historical and audit record.
+* Users access controlled documents only from the `main` branch or approved publication locations.
+* Removal from the controlled source prevents unintended use.
 
 ---
 
-### **5.7 Traceability and Audit History**
+### **5.7 Audit Evidence**
 
-GitHub provides a full audit trail of all document activity.
-
-**Commands:**
-
-*View revision history for a document:*
-
-```bash
-git log --follow -- SOPs/Document-Control-SOP.md
-```
-
-*List revision tags:*
-
-```bash
-git tag --list | grep Document-Control-SOP
-```
-
-*View approval record:*
-Open the tagged commit in GitHub → click **Pull Request** to view reviews and approvals.
-
-These controls demonstrate compliance with ISO 9001 §7.5.2–7.5.3 and ISO 13485 §4.2.4.
-
----
-
-#### **5.8 External and Special Files**
-
-1. **External Document Metadata**
-
-   * Store metadata files in `/External-Docs/` or `/References/`.
-   * File naming: `EXT-[Source]-[ShortTitle]-r#.md` (e.g., `EXT-ISO-13485-r1.md`).
-   * Include the document header and metadata table.
-   * Tag metadata revisions the same way as internal documents.
-   * Do **not** commit copyrighted full texts unless licensing explicitly allows.
-
-2. **GitHub-Controlled Operational Files**
-
-   * The following files are **QMS-controlled artifacts**, even if not authored in Markdown:
-
-     ```
-     /.github/ISSUE_TEMPLATE/config.yml
-     /.github/workflows/*
-     /.github/labels.yml
-     /.github/CODEOWNERS
-     ```
-   * These are controlled by:
-
-     * Maintaining a **placeholder file** in `/WIs/GitHub/` or `/SOPs/` containing:
-
-       * Full header metadata (Title, Slug, Revision, Controlled Source)
-       * Link to the actual file
-       * Short description of purpose
-   * Placeholder filename example:
-     `WI-GitHub-Issue-Template-Config.md`
-   * The GitHub file itself remains “headerless” but is referenced in the controlled placeholder.
-   * Changes to such files must proceed via **Pull Request with Quality or DCC review** and receive a revision tag.
-
-3. **Audit Evidence**
-
-   * Git history and PR approvals for these files are treated as **document control records**.
-   * Placeholder files link to the tagged commit as the **approved revision**.
+* Each file’s QMS header provides identification and revision metadata.
+* Git tags, PRs, and commit history provide immutable approval traceability.
+* Auditors can confirm compliance by cross-referencing a file’s header, tag, and associated PR.
 
 ---
 
@@ -232,6 +169,6 @@ These controls demonstrate compliance with ISO 9001 §7.5.2–7.5.3 and ISO 1348
 | Tags (approved revisions)        | GitHub repository          | Indefinite |
 | Pull Requests (approval records) | GitHub                     | Indefinite |
 | Commit history (traceability)    | Git repository             | Indefinite |
-| Archived/Obsolete Files          | `/archive/` or Git history | Indefinite |
+| Archived/Obsolete Files          | Git history                | Indefinite |
 
 All GitHub metadata serves as the official QMS record of document control activities.
