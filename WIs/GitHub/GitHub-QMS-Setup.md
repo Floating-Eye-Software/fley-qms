@@ -1,12 +1,13 @@
-# **WI – Set Up the QMS in GitHub**
-
-**Slug:** GitHub-QMS-Setup  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Document-Control-SOP, Change-Control-SOP, Identification-and-Traceability-SOP  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Setup.md  
-
 ---
+slug: GitHub-QMS-Setup
+revision: r2
+type: WI
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Setup.md
+---
+
+# **WI – Set Up the QMS in GitHub**
 
 ## **1. Purpose**
 

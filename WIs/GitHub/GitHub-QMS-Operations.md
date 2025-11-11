@@ -1,12 +1,13 @@
-# **WI – Operate the QMS in GitHub – Single FLEY Board**
-
-**Slug:** GitHub-QMS-Operations  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
-**Related SOPs:** Change-Control-SOP, Document-Control-SOP, Identification-and-Traceability-SOP, Quality-Planning-SOP, Leadership-SOP, Management-Review-SOP, Risk-and-Opportunity-Management-SOP, Project-Management-SOP, Design-Control-SOP  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Operations.md  
-
 ---
+slug: GitHub-QMS-Operations
+revision: r2
+type: WI
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Operations.md
+---
+
+# **WI – Operate the QMS in GitHub**
 
 ## **1. Purpose**
 
