@@ -1,8 +1,19 @@
+---
+slug: GitHub-Pull-Test
+revision: r1
+type: REF
+status: draft
+effective: null
+related:
+  - redwitch#7
+  - redwitch#29
+  - fley-qms#16
+  - fley-qms#19
+---
+
 ## **Walkthrough Plan – Pull Request Process (Supports Implementation of redwitch#7)**
 
 ### **Execution Context: redwitch#29 (Implements fley-qms#16, fley-qms#19)**
-
----
 
 ### **Purpose**
 
@@ -14,6 +25,8 @@ It executes **redwitch#29 – Establish GitHub Project Views for QMS Workflows**
 * **fley-qms#19** – Adopt YAML Headers for all controlled documents
 
 The outcome of this walkthrough will confirm that the Work Instructions, templates, and configuration files can be fully managed through the standardized PR workflow under the FLEY QMS.
+
+This document serves as a *reflexive process validation run* demonstrating and refining the PR-based change control workflow. The steps defined here both execute and inform the evolving process definition under *redwitch#7*. Finalized procedures will integrate validated elements from this run.
 
 ---
 
