@@ -94,20 +94,18 @@ Backlog (GREY) → In Progress (GREEN) → In Test (YELLOW) → Closed (BLUE)
 
 ### **5.4 QMS Label Definitions**
 
-| Label                 | Definition                                | Typical Usage                       |
-| --------------------- | ----------------------------------------- | ----------------------------------- |
-| **Audit**             | Record of internal/external audit.        | Audit plan or report.               |
-| **CAPA**              | Corrective or Preventive Action.          | Linked to NC or Risk.               |
-| **Change**            | Approved change implementation.           | Executing updates.                  |
-| **Change Request**    | Proposed controlled change.               | Requesting a QMS update.            |
-| **Improvement**       | Continual improvement initiative.         | Minor optimizations.                |
-| **Management Review** | QMS review meeting record.                | Quarterly MR.                       |
-| **Nonconformance**    | Requirement not fulfilled.                | Deviations or failures.             |
-| **Objective**         | Quality KPI or goal.                      | Planning and review.                |
-| **Opportunity**       | Positive potential for improvement.       | Linked to MR or Risk.               |
-| **Risk**              | Potential negative impact or uncertainty. | Risk identification and mitigation. |
-
-Each Label corresponds to a GitHub Issue Template for consistent metadata and traceability.
+| Label             | Definition                                | Typical Usage                       |
+| ----------------- | ----------------------------------------- | ----------------------------------- |
+| Audit             | Record of internal/external audit.        | Audit plan or report.               |
+| CAPA              | Corrective or Preventive Action.          | Linked to NC or Risk.               |
+| Change Request    | Proposed controlled change.               | Requesting a QMS update.            |
+| Change            | Implementation of approved change.        | PR merged for controlled content.   |
+| Improvement       | Continual improvement initiative.         | Minor optimizations.                |
+| Management Review | QMS review meeting record.                | Quarterly MR.                       |
+| Nonconformance    | Requirement not fulfilled.                | Deviations or failures.             |
+| Objective         | Quality KPI or goal.                      | Planning and review.                |
+| Opportunity       | Positive potential for improvement.       | Linked to MR or Risk.               |
+| Risk              | Potential negative impact or uncertainty. | Risk identification and mitigation. |
 
 ---
 
@@ -128,56 +126,35 @@ Each Label corresponds to a GitHub Issue Template for consistent metadata and tr
 
 ---
 
-### **5.6 Milestone-Based MR Workflow**
+### **5.6 Document Status and Approval**
 
-The Management Review (MR) cycle in GitHub ensures that leadership oversight, performance review, and strategic actions are structured, traceable, and auditable. Each MR cycle corresponds to a **GitHub milestone** that ties together related quality records.
+All QMS documents and templates follow the controlled workflows defined in
+GitHub-Document-Control and GitHub-Change-Control.
 
-#### **1. MR Issue Creation**
-
-1. Create a **Management Review (MR) issue** documenting decisions, outputs, and links to related issues.
-2. This MR issue is **the source of truth** for the cycle.
-
-#### **2. Milestone Creation**
-
-1. Create a **milestone** corresponding to the MR issue (e.g., `MR-1: QMS Launch`).
-2. Assign **Objectives, Risks, Improvements, and Opportunities** issues to this milestone.
-3. Keep the milestone open until all assigned issues are completed.
-
-#### **3. Sub-Issues & Linking**
-
-* Create sub-issues under Objectives or Improvements for actionable tasks.
-* Link each issue back to the originating MR issue for traceability.
-
-#### **4. Progress Tracking**
-
-* Use GitHub milestone progress bars to track completion of all assigned issues.
-* Sub-issue progress rolls up to parent issue completion.
-
-#### **5. Event-Driven Cycle Updates**
-
-* For a new MR, create a new MR issue and milestone.
-* Incomplete issues from prior cycles may be reassigned to the new milestone.
-* Milestone names should remain consistent across repositories.
+* Drafts are created in **feature branches** off `main`.
+* When ready for formal review, create a **Pull Request (PR)** targeting `main`.
+* Link all PRs to the corresponding Change Request Issue.
+* Required reviewers provide approvals within the PR; review comments serve as audit evidence.
+* PR merge is the **formal approval event** for controlled content.
+* Feature branches may be deleted after merge; Git history preserves prior drafts.
+* `main` always reflects the **current approved version**.
+* Git tags capture the **official revision identifier** for the approved content.
 
 ---
 
-### **5.7 Change Control and Approvals**
+### **5.7 Milestone-Based Management Review (MR) Workflow**
 
-* Controlled documents updated through Pull Requests linked to `Change Request` issues.
-* Merge approval = official change approval.
-* Old versions retained in Git history.
+The MR cycle in GitHub ensures leadership oversight, performance review, and traceable actions. Each MR cycle is represented by a **GitHub milestone** linking related Issues.
 
----
-
-### **5.8 Integration and Traceability**
-
-* All repos use same Issue Types and Label scheme.
-* QMS Project serves as the traceability hub.
-* Use “Linked Issues” for cross-repo connections.
+1. **MR Issue Creation** – Create an MR issue documenting decisions, outputs, and links to related Issues (Objectives, Risks, CAPAs, Improvements).
+2. **Milestone Assignment** – Assign related Issues to the milestone; keep it open until all are complete.
+3. **Sub-Issues & Linking** – Create actionable sub-Issues and link them to the MR issue for traceability.
+4. **Progress Tracking** – Use milestone progress bars and Project boards to monitor completion.
+5. **Cycle Updates** – For new MR cycles, create a new MR issue and milestone; reassign incomplete Issues from prior cycles as needed.
 
 ---
 
-### **5.9 Backup and Export**
+### **5.8 Backup and Export**
 
 Backups preserve the long-term integrity of the QMS record set and provide a disaster-recovery measure aligned with Document Control retention requirements.
 
