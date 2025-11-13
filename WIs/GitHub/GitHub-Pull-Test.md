@@ -4,6 +4,7 @@ revision: r1
 type: REF
 status: draft
 effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Pull-Test.md
 related:
   - redwitch#7
   - redwitch#29
@@ -47,7 +48,7 @@ git checkout feature/qms-foundation -- .github .gitignore Templates/Header-Templ
 
 ```bash
 git add .
-git commit -m "Implements redwitch#29 (child of redwitch#7); integrates fley-qms#16, fley-qms#19 – Walkthrough of standardized QMS workflows"
+git commit -m "Implements redwitch#29 (child of redwitch#7); integrates fley-qms#16, fley-qms#19 – Establish GitHub Project Views for QMS workflows"
 git push origin change/establish-qms-workflows
 ```
 
@@ -62,7 +63,7 @@ Open a PR using the template (`TPL-GH-Pull-Request`) and complete these fields:
 | Section  | Entry |
 | -------- | ----- |
 | **Linked Change Request Issue**  | `Fixes redwitch#29 (child of redwitch#7)` |
-| **Summary of Proposed Changes** | Updates all GitHub Work Instructions and templates for standardized QMS workflows; integrates Management Review linkages and YAML header adoption. |
+| **Summary of Proposed Changes** | Updates GitHub Work Instructions and templates for standardized QMS workflows; integrates Management Review linkages and YAML header adoption. |
 | **Verification / Validation Notes** | YAML headers validate via linter; PR process verified against WI–GitHub–Change–Control; all CODEOWNERS rules enforced in branch protection. |
 
 ---
@@ -73,7 +74,6 @@ Open a PR using the template (`TPL-GH-Pull-Request`) and complete these fields:
 
 * Confirm YAML headers follow the new template (`slug`, `revision`, `type`, `status`, `effective`, `controlled_source`).
 * Verify cross-references between:
-
   * *WI–GitHub–Document–Control*
   * *WI–GitHub–Change–Control*
   * *WI–GitHub–QMS–Setup*
@@ -91,21 +91,16 @@ Open a PR using the template (`TPL-GH-Pull-Request`) and complete these fields:
 
 After approval, update document headers to mark as approved and effective:
 
-```bash
-sed -i 's/status: draft/status: approved/' WIs/GitHub/*.md
-```
-
-Then manually update YAML headers to include:
-
 ```yaml
-effective: 2025-11-11
+status: approved
+effective: 2025-11-13
 ```
 
 Commit and push:
 
 ```bash
 git add .
-git commit -m "Finalize approval and effective dates for WI and template updates (redwitch#29 walkthrough)"
+git commit -m "Finalize approval and effective dates for WI and template updates (redwitch#29 QMS workflows)"
 git push
 ```
 
@@ -119,7 +114,7 @@ git push
 
 ---
 
-### **7. Tag All Document Revisions (Per WI–GitHub–Change–Control §5.4)**
+### **7. Tag All Document Revisions (Per WI–GitHub–Change–Control)**
 
 After the merge, tag all approved controlled files as individual revision identifiers:
 
@@ -138,6 +133,7 @@ git tag Header-Template_r2
 
 # Work Instructions
 git tag GitHub-Document-Control_r2
+git tag GitHub-Pull-Test_r1
 git tag GitHub-QMS-Operations_r2
 git tag GitHub-QMS-Setup_r2
 

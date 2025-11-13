@@ -1,12 +1,13 @@
-# **SOP - Quality Planning**
-
-**Slug:** Quality-Planning-SOP  
-**Revision:** r3 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
-**Process Owner:** Top Management  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Quality-Planning-SOP.md  
-
 ---
+slug: Quality-Planning-SOP
+revision: r3
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Quality-Planning-SOP.md
+---
+
+# **SOP - Quality Planning**
 
 ### **1. Purpose**
 
@@ -40,8 +41,8 @@ Applies to all planning activities related to the QMS, including risk and opport
 
 | **Role**            | **Responsibilities**                                                                                                                                           | **Authorities**                                                               |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Top Management**  | • Approves quality objectives.<br>• Ensures resources are available.<br>• Reviews planning outcomes and effectiveness.                                         | • Approves QMS plans and objectives.<br>• Authorizes resource allocation.     |
-| **Quality Manager** | • Maintains the Risk & Opportunity Register.<br>• Coordinates setting and monitoring of quality objectives.<br>• Ensures annual review of planning activities. | • Approves QMS planning documentation.<br>• Final approval for SOP revisions. |
+| **Top Management**  |  Approves quality objectives; Ensures resources are available; Reviews planning outcomes and effectiveness.                                         |  Approves QMS plans and objectives; Authorizes resource allocation.     |
+| **Quality Manager** |  Maintains the Risk & Opportunity Register; Coordinates setting and monitoring of quality objectives; Ensures annual review of planning activities. |  Approves QMS planning documentation; Final approval for SOP revisions. |
 
 ---
 
@@ -50,37 +51,38 @@ Applies to all planning activities related to the QMS, including risk and opport
 6.1 **Risks and Opportunities**
 
 * Risks and opportunities shall be identified from:
-
   * Context of the organization (Clause 4)
   * Feedback from interested parties
   * Audit results, process performance data, and management review inputs
 * Identified risks/opportunities shall be evaluated for significance and prioritized.
 * Actions shall be determined, implemented, and monitored for effectiveness.
 * Records shall be maintained in a structured register (see related WI).
+* Actions taken shall be proportionate to the potential impact on product and service conformity and customer satisfaction, consistent with ISO 9001:2015 § 6.1.2.
+* Integration: Mitigation or enhancement actions shall be incorporated into relevant QMS processes, plans, or procedures (see **Risk-and-Opportunity-Management-SOP § 6.3**).
+* Effectiveness of these actions shall be evaluated during Management Reviews and internal audits; results recorded in the **Risk & Opportunity Register** and linked to the originating Plan or Issue.
 
 6.2 **Quality Objectives**
 
 * Quality objectives shall be:
-
   * Consistent with the Quality Policy
   * Measurable and monitored
   * Communicated and updated as necessary
-  
+  * Established considering applicable statutory, regulatory, and customer requirements
+  * Documented with assigned responsibility, required resources, and target completion conditions (e.g., milestone or readiness trigger)
+  * Evaluated for achievement through defined metrics in the **Quality Objectives Register**
 * Quality objectives established during a Management Review may be **tracked within a defined cycle or milestone**, ensuring all actions required to achieve them are monitored and completed.
-
 * Progress toward objectives shall be reviewed regularly and evaluated during subsequent Management Reviews, maintaining traceability to the originating MR instance.
+* Customer satisfaction and process performance data used for evaluating quality objectives shall feed directly into Management Review inputs per **Management-Review-SOP §6.2**.
 
 6.3 **Planning Changes**
 
 * When significant changes to the QMS are required, the following shall be considered:
-
   * Purpose of the change
   * Potential consequences
   * Resource requirements
   * Responsibilities and authorities
 * Changes shall be documented and reviewed for effectiveness.
-
-Results and decisions from Management Reviews may initiate planned changes to the QMS, implemented per the *Change-Control-SOP*.
+* The Quality Manager shall ensure the integrity of the QMS is maintained during all planned or unplanned changes, in coordination with the **Change-Control-SOP** and **Leadership-SOP § 6.1**.
 
 6.4 **Quality Planning Execution**
 
@@ -113,6 +115,10 @@ The responsible **Process Owner** or **Project Owner** shall:
 | **Ineffective** | Objectives were not achieved or the implemented controls failed to ensure conformity or intended performance. | Escalate to Top Management. Open an Issue in the QMS repository to document the failure, identify root cause, and define corrective action per the **Corrective and Preventive Action SOP**. Effectiveness shall be re-verified after corrective measures are implemented. |
 
 Verification outcomes and any related Issues shall be referenced in Management Review inputs and retained as controlled records.
+
+Effectiveness verification shall also serve as evidence that risk and opportunity actions (per § 6.1) have achieved intended results, providing assurance that the QMS can achieve its objectives, enhance desirable effects, and prevent undesired effects.
+
+Results from effectiveness verification shall serve as evidence of leadership accountability and QMS performance per **Leadership-SOP §6.1**, and be summarized in KPI dashboards or reports maintained by the Quality Manager.
 
 ---
 

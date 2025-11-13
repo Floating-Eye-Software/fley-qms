@@ -1,12 +1,13 @@
-# **WI - Project Management Using GitHub**
-
-**Slug:** GitHub-Project-Management  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Related SOP:** Project-Management-SOP   
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Project-Management.md  
-
 ---
+slug: GitHub-Project-Management
+revision: r2
+type: WI
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Project-Management.md
+---
+
+# **WI - Project Management Using GitHub**
 
 ### **1. Purpose**
 
@@ -152,21 +153,22 @@ A typical project workspace on GitHub (example: [https://github.com/Floating-Eye
 
 #### **5.6 Project Closure**
 
-1. Confirm all deliverables and Issues are complete.
-2. Update the Wiki with a final summary (objectives achieved, lessons learned, links to records).
-3. Archive or close the GitHub Project Board.
-4. Tag the repository (e.g., `ProjectName_Completed_v1.0`) to mark final closure.
+1. Perform Verification of Effectiveness per WI – FLEY-Action-Management.
+2. Confirm all deliverables and Issues are complete.
+3. Update the Wiki with a final summary (objectives achieved, lessons learned, links to records).
+4. Archive or close the GitHub Project Board.
+5. Tag the repository (e.g., `ProjectName_Completed_v1.0`) to mark final closure.
 
 ---
 
 ### **6. Integration with the QMS**
 
-| Related SOP              | Integration                                            |
-| ------------------------ | ------------------------------------------------------ |
-| **Leadership SOP**       | Management reviews and strategic oversight.            |
-| **Quality Planning SOP** | Risk and opportunity management, objectives alignment. |
-| **Change Control SOP**   | PR-based control of changes.                           |
-| **Document Control SOP** | Storage and versioning of project records in Git.      |
+| Related SOP              | Integration                                                |
+| ------------------------ | ---------------------------------------------------------- |
+| **Leadership SOP**       | Strategic oversight and alignment with leadership actions. |
+| **Quality Planning SOP** | Risk and opportunity management, objectives alignment.     |
+| **Change Control SOP**   | PR-based control of changes.                               |
+| **Document Control SOP** | Storage and versioning of project records in Git.          |
 
 ---
 

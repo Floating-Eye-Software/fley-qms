@@ -1,12 +1,13 @@
-# **SOP - Risk and Opportunity Management**
-
-**Slug:** Risk-and-Opportunity-Management-SOP  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
-**Process Owner:** Quality Manager  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Risk-and-Opportunity-Management-SOP.md  
-
 ---
+slug: Risk-and-Opportunity-Management-SOP
+revision: r2
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Risk-and-Opportunity-Management-SOP.md
+---
+
+# **SOP - Risk and Opportunity Management**
 
 ### **1. Purpose**
 
@@ -47,10 +48,10 @@ Covers:
 
 | **Role**            | **Responsibilities**                                                                                                                                                                      | **Authorities**                                                                            |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| **Top Management**  | • Promote risk-based thinking across all processes.<br>• Ensure significant risks are addressed in strategic and operational planning.<br>• Review risk status during management reviews. | • Approves risk management approach.<br>• Authorizes actions addressing significant risks. |
-| **Quality Manager** | • Maintain the Risk & Opportunity Register.<br>• Coordinate reviews and monitor effectiveness of actions.<br>• Ensure integration with QMS objectives and changes.                        | • Approves risk assessment methodology.<br>• Final approval for QMS risk documentation.    |
-| **Process Owners**  | • Identify and evaluate risks/opportunities in their processes.<br>• Propose mitigation or enhancement actions.<br>• Maintain related records.                                            | • Approve and implement local mitigation actions.                                          |
-| **All Employees**   | • Report new or emerging risks.<br>• Participate in mitigation or improvement activities as required.                                                                                     | • Request review or escalation of risk concerns.                                           |
+| **Top Management**  |  Promote risk-based thinking across all processes; Ensure significant risks are addressed in strategic and operational planning; Review risk status during management reviews. |  Approves risk management approach; Authorizes actions addressing significant risks. |
+| **Quality Manager** |  Maintain the Risk & Opportunity Register; Coordinate reviews and monitor effectiveness of actions; Ensure integration with QMS objectives and changes.                        |  Approves risk assessment methodology; Final approval for QMS risk documentation.    |
+| **Process Owners**  |  Identify and evaluate risks/opportunities in their processes; Propose mitigation or enhancement actions; Maintain related records.                                            |  Approve and implement local mitigation actions.                                          |
+| **All Employees**   |  Report new or emerging risks; Participate in mitigation or improvement activities as required.                                                                                     |  Request review or escalation of risk concerns.                                           |
 
 ---
 
@@ -91,10 +92,11 @@ For each significant risk or opportunity:
 1. Define **mitigation or enhancement actions**, responsible person, and timeline.
 2. Integrate these actions into relevant processes or projects (e.g., project plan, process improvement).
 3. Where applicable, link to:
-
    * **Change Control SOP** for process changes
    * **Project Management SOP** for implementation
    * **Quality Objectives** for performance monitoring
+4. The scale and type of action shall be proportionate to the potential impact of the identified risk or opportunity on product/service conformity, customer satisfaction, or QMS performance.
+5. Each action plan shall include how its effectiveness will be evaluated (e.g., target metrics, review date, or verification step).
 
 ---
 
@@ -103,10 +105,10 @@ For each significant risk or opportunity:
 * Process owners implement assigned actions and update status in the Risk & Opportunity Register.
 * The Quality Manager monitors progress and verifies implementation.
 * Actions shall be evaluated for **effectiveness**, typically during:
-
   * Management Reviews
   * Internal Audits
   * Process performance evaluations
+* Effectiveness evaluation results shall be recorded in the **Risk & Opportunity Register** and referenced in the next Management Review input set.
 
 ---
 

@@ -1,12 +1,13 @@
-# **SOP - Project Management**
-
-**Slug:** Project-Management-SOP  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Process Owner:** Project Manager  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Project-Management-SOP.md  
-
 ---
+slug: Project-Management-SOP
+revision: r2
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Project-Management-SOP.md
+---
+
+# **SOP - Project Management**
 
 ## **1. Purpose**
 
@@ -45,10 +46,10 @@ None
 
 | **Role**                        | **Responsibilities**                                                                                                                                                                                      | **Authorities**                                                                                                                 |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **Project Manager**             | • Prepare and maintain the Project Plan and Project Quality Plan (PQP).<br>• Manage scope, schedule, resources, risks, and deliverables.<br>• Conduct project reviews and maintain project documentation. | • Approves project-level documentation and changes within scope.<br>• Escalates strategic or resource issues to Top Management. |
-| **Process Owners / Team Leads** | • Execute assigned project tasks.<br>• Report progress, issues, and risks.<br>• Maintain process compliance with QMS requirements.                                                                        | • Approve local task changes and process-level deliverables.                                                                    |
-| **Quality Manager**             | • Ensure project adherence to QMS SOPs.<br>• Support audits and management reviews.<br>• Verify QMS record accuracy and traceability.                                                                     | • Approves project QMS records for compliance and release.                                                                      |
-| **Top Management**              | • Approve major projects and key milestones.<br>• Review project progress and ensure alignment with strategic and quality objectives.<br>• Allocate necessary resources.                                  | • Final approval for project initiation and closure.                                                                            |
+| **Project Manager**             |  Prepare and maintain the Project Plan and Project Quality Plan (PQP); Manage scope, schedule, resources, risks, and deliverables; Conduct project reviews and maintain project documentation. |  Approves project-level documentation and changes within scope; Escalates strategic or resource issues to Top Management. |
+| **Process Owners / Team Leads** |  Execute assigned project tasks; Report progress, issues, and risks; Maintain process compliance with QMS requirements.                                                                        |  Approve local task changes and process-level deliverables.                                                                    |
+| **Quality Manager**             |  Ensure project adherence to QMS SOPs; Support audits and management reviews; Verify QMS record accuracy and traceability.                                                                     |  Approves project QMS records for compliance and release.                                                                      |
+| **Top Management**              |  Approve major projects and key milestones; Review project progress and ensure alignment with strategic and quality objectives; Allocate necessary resources.                                  |  Final approval for project initiation and closure.                                                                            |
 
 ---
 

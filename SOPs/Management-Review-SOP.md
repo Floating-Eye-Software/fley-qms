@@ -1,27 +1,24 @@
-# **SOP – Management Review**
-
-**Slug:** Management-Review-SOP  
-**Revision:** r2 **DRAFT**  
-**Effective Date:** [YYYY-MM-DD]  
-**Process Owner:** Top Management  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Management-Review-SOP.md  
-
 ---
+slug: Management-Review-SOP
+revision: r2
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Management-Review-SOP.md
+---
+
+# **SOP – Management Review**
 
 ## **1. Purpose**
 
-To define the process for conducting Management Reviews (MR) of the Quality Management System (QMS) in accordance with ISO 9001:2015 Clause 9.3.
-This procedure ensures that top management periodically evaluates QMS performance, suitability, and effectiveness, and determines necessary actions for improvement.
+To define how the organization conducts **Management Reviews** that evaluate the continuing suitability, adequacy, and effectiveness of the QMS.
+This revision introduces an **event-driven, dependency-based review-cycle system** that replaces fixed-interval scheduling with flexible triggers tied to meaningful organizational events.
 
 ---
 
 ## **2. Scope**
 
-Applies to all QMS processes and activities under organizational control.
-Covers the planning, execution, documentation, and follow-up of Management Reviews conducted via electronic records (e.g., GitHub issues).
-
-* **Applicability:** All functions contributing to the QMS, including leadership, planning, risk management, and operations.
-* **Exclusions:** Department-level performance discussions not designated as formal Management Reviews.
+Applies to all QMS activities that require top-management oversight, including review of performance data, risks and opportunities, audit results, policy changes, and improvement initiatives.
 
 ---
 
@@ -29,6 +26,12 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 
 * ISO 9001:2015 § 9.3
 * SOP – Leadership
+* SOP – Quality-Planning
+* WI – FLEY-Action-Management
+* SOP – Change-Control
+* SOP – Corrective and Preventive Action
+* SOP – Risk and Opportunity Management
+
 
 ---
 
@@ -36,77 +39,89 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 
 | Term                        | Definition                                                                                                         |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Management Review (MR):** | A formal, documented evaluation of the QMS performed by top management, recorded in controlled electronic records. |
-| **Inputs:**                 | Data and information considered during MR (e.g., audits, feedback, objectives, nonconformities).                   |
-| **Outputs:**                | Decisions and actions arising from MR (e.g., improvement initiatives, resource allocations).                       |
-| **Action Tracker:**         | A controlled record used to monitor progress of MR action items.                                                   |
+| **Management Review (MR)** | A formal evaluation by top management of QMS performance and strategic alignment. |
+| **Review Cycle**           | The interval between Management Reviews, determined by completion of defined triggers rather than time periods. |
+| **Trigger**                | A condition or event that initiates a new review cycle. |
+| **Action Tracker:**        | A controlled record used to monitor progress of MR action items. |
 
 ---
 
 ## **5. Responsibilities and Authorities**
 
-| Role                | Responsibilities                                                                                                                                                                | Authority                                                                  |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| **Top Management**  | • Reviews MR records and evaluates QMS performance and suitability.<br>• Approves resulting actions and resource changes.<br>• Ensures MR frequency and adequacy.               | • Final approval of MR outcomes and improvement actions.                   |
-| **Quality Manager** | • Initiates and maintains MR records in the electronic system.<br>• Compiles inputs (KPIs, audit results, risks, objectives, customer data).<br>• Ensures follow-up on actions. | • Updates QMS documentation as needed.<br>• Maintains MR record integrity. |
-| **Process Owners**  | • Provide data and reports for MR inputs.<br>• Implement assigned actions.                                                                                                      | • Approve process-level changes from MR decisions.                         |
+| **Role**            | **Responsibilities**                                                                                                                                                              | **Authorities**                                                                 |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Top Management**  |  Lead each Management Review; Ensure inputs are complete and factual; Approve review outputs and assign follow-up actions; Verify QMS adequacy and effectiveness. |  Convene Management Reviews; Approve policies, objectives, and resources. |
+| **Quality Manager** |  Coordinate preparation of review inputs; Maintain records of reviews and outcomes; Ensure follow-up actions are tracked to completion.                                |  Ensure completeness of inputs and records.                                  |
+| **Process Owners**  |  Supply data and evidence from their process areas; Report on progress, risks, and opportunities.                                                                           |  Implement review outputs relevant to their processes.                         |
+| **All Personnel**   |  Participate in improvement actions as assigned; Provide feedback and data when requested.                                                                                  |  Raise issues or suggestions for leadership consideration.                     |
 
 ---
 
 ## **6. Process Description**
 
-### **6.1 Overview and Sequence**
+### **6.1 Initiating a Review Cycle**
 
-* Management Reviews (MRs) shall be conducted at planned intervals or in response to significant events.
-* Each MR cycle is represented by a **review instance**, which may include a defined **milestone or tracking container** to group related objectives, risks, improvements, and opportunities.
-* All outputs of the MR shall be assigned to the cycle/milestone and monitored until completion.
+A new **Management Review Cycle** begins when one or more triggers occur, such as:
 
-### **6.2 Collect Inputs**
+1. Completion of a **major plan, project, or change initiative**.
+2. Achievement of a **defined readiness or maturity milestone** (e.g., *Audit-Ready QMS*).
+3. Occurrence of a **significant risk, nonconformance, or compliance event**.
 
-   Inputs shall include, at minimum (ISO 9001 §9.3.2):
+The **Quality Manager** proposes initiation of the cycle; **Top Management** confirms commencement and designates participants.
+If no triggering event occurs within a twelve (12) month period, a Management Review shall be convened proactively to ensure the QMS is reviewed at least annually, maintaining conformance with ISO 9001:2015 §9.3.1.
 
-   * Status of previous MR actions
-   * Changes in external/internal context relevant to the QMS
-   * QMS performance and process effectiveness
-   * Customer satisfaction and feedback results
-   * Audit results (internal and external)
-   * Nonconformities and corrective actions
-   * Monitoring and measurement trends
-   * Fulfillment of quality objectives
-   * Status of risk and opportunity actions
-   * Adequacy of resources
-   * Improvement recommendations
+### **6.2 Review Inputs**
 
-### **6.3 Conduct the Review**
+Each review shall consider, as applicable:
 
-* Top Management reviews inputs, evaluates performance, and documents decisions and actions in the controlled record for the MR.
-* Outputs (Objectives, Risks, Improvements, Opportunities) may be **tracked within a milestone or cycle container**, which remains open until all associated actions are complete.
-* Each action shall be linked to the originating MR to maintain traceability.
+1. Status of actions from previous review cycles.
+2. Changes in external or internal context relevant to the QMS.
+3. Performance data and metrics (objectives, KPIs, trend analysis).
+4. Results of audits and evaluations of compliance.
+5. Effectiveness of risk and opportunity actions.
+6. Adequacy of resources, competence, and infrastructure.
+7. Customer and stakeholder feedback.
+8. Process and product performance, including incidents or nonconformities.
+9. Emerging opportunities for improvement or innovation.
 
-### **6.4 Determine Outputs**
+Inputs may be compiled through reports, dashboards, or linked records within the organization’s QMS tools.
+The Quality Manager shall verify that all required inputs listed in ISO 9001:2015 §9.3.2 are complete, current, and supported by evidence before the review begins.
+Customer satisfaction and feedback data shall include quantitative trends from the **Quality Objectives Register** or related customer metrics as defined in the **Quality-Planning-SOP**.
 
-* Outputs shall include, at minimum:
+### **6.3 Conducting the Review**
 
-  * Decisions and actions related to QMS improvement and effectiveness.
-  * Updates to quality objectives and policy.
-  * Resource needs and assignments.
-  * Action items with responsibilities and due dates.
+1. **Preparation** – The Quality Manager consolidates inputs and circulates a draft agenda.
+2. **Discussion and Evaluation** – Top Management reviews each input, assesses overall QMS health, and identifies needed changes.
+3. **Decision Recording** – Outcomes are captured in a *Management Review Record* noting:
 
-* Outputs may be tracked as **discrete actions assigned to the MR cycle or milestone**, with progress monitored until closure.
+   * Decisions made
+   * Actions assigned
+   * Responsible owners and dependencies
+   * Target conditions for closure (not deadlines)
+4. **Communication** – Key decisions are communicated to all relevant personnel.
 
+### **6.4 Outputs of the Management Review**
 
-### **6.5 Document and Communicate Results**
+Outputs shall include:
 
-* The MR record shall be complete and maintained in the controlled repository.
-* The MR cycle/milestone shall remain open until all associated outputs are closed or otherwise dispositioned.
-* Progress of all MR outputs shall be monitored, and any incomplete actions carried forward to the next cycle if required.
-* Relevant changes to policies, objectives, or SOPs are initiated through the Change Control SOP.
-* Summary results are communicated to all affected personnel via appropriate channels.
+* Decisions and actions related to:
 
-### **6.6 Follow-up and Closure**
+  * Improvement of the QMS and its processes
+  * Updates to the Quality Policy or objectives
+  * Resource and competence needs
+  * Risk mitigation or opportunity exploitation
+* Confirmation of QMS adequacy and continued alignment with organizational direction
+* Identification of follow-up items for the next review cycle
 
-   * Progress on MR actions is tracked in the Action Tracker until closure.
-   * Effectiveness of actions is evaluated at the next MR.
+Each output is entered into the **Action-Management** system for tracking and verification of effectiveness.
+
+### **6.5 Follow-Up and Effectiveness Verification**
+
+1. Each action from the Management Review is tracked until verified effective.
+2. Verification confirms that the intended result has been achieved and sustained.
+3. Any incomplete or partially effective actions are carried forward into the next review cycle.
+4. Evidence of completion (plans, reports, metrics) is linked to the governing review record.
+5. Verification should occur before the next scheduled or triggered Management Review to ensure closure timeliness.
 
 ---
 
@@ -114,6 +129,6 @@ Covers the planning, execution, documentation, and follow-up of Management Revie
 
 | Record / Artifact              | Responsible Owner | Storage Location                            | Retention                          | Control Method                          |
 | ------------------------------ | ----------------- | ------------------------------------------- | ---------------------------------- | --------------------------------------- |
-| Management Review Record       | Quality Manager   | Controlled Repository (GitHub / QMS Folder) | Permanent                          | Version-controlled Markdown or PDF file |
+| Management Review Record       | Quality Manager   | Controlled QMS Repository | Permanent                          | Version-controlled Markdown or PDF file |
 | MR Action Tracker              | Quality Manager   | QMS Repository / Issue Tracker              | Until all actions closed + 3 years | Controlled by Change Control SOP        |
 | Updated Policies or Objectives | Quality Manager   | QMS Documents                               | Per document control policy        | Controlled versioning                   |

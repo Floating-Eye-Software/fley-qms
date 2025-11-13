@@ -1,12 +1,13 @@
-# **SOP - Design and Development Control**
-
-**Slug:** Design-Control-SOP  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Process Owner:** Project Manager (Process Owner)  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Design-Control-SOP.md  
-
 ---
+slug: Design-Control-SOP
+revision: r2
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Design-Control-SOP.md
+---
+
+# **SOP - Design and Development Control**
 
 ## **1. Purpose**
 
@@ -53,12 +54,12 @@ None
 
 | **Role**                               | **Responsibilities**                                                                                                                              | **Authorities**                                               |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| **Project Manager / Design Lead**      | • Maintain and update the Design Control Plan (DCP).<br>• Coordinate reviews and ensure deliverables meet quality and regulatory requirements.    | • Approves DCP and project-level design deliverables.         |
-| **Design & Development Team**          | • Execute design tasks and maintain documentation traceability.<br>• Ensure verification and validation evidence is collected.                    | • Approves technical deliverables within assigned work scope. |
-| **Quality Manager**                    | • Verify compliance, risk traceability, and documentation integrity.<br>• Review and approve verification, validation, and design review records. | • Final approval for QMS-controlled design records.           |
-| **Top Management**                     | • Approve design plans, reviews, and design transfer or retirement activities.<br>• Ensure resources and strategic alignment.                     | • Final authorization for design initiation and release.      |
-| **Process Owners / SMEs**              | • Provide technical, regulatory, or domain-specific expertise.                                                                                    | • Approve specialized input requirements.                     |
-| **Maintenance Lead / Operations Team** | • Plan and document post-release maintenance and product retirement.                                                                              | • Approve maintenance and decommissioning activities.         |
+| **Project Manager / Design Lead**      |  Maintain and update the Design Control Plan (DCP); Coordinate reviews and ensure deliverables meet quality and regulatory requirements.    |  Approves DCP and project-level design deliverables.         |
+| **Design & Development Team**          |  Execute design tasks and maintain documentation traceability; Ensure verification and validation evidence is collected.                    |  Approves technical deliverables within assigned work scope. |
+| **Quality Manager**                    |  Verify compliance, risk traceability, and documentation integrity; Review and approve verification, validation, and design review records. |  Final approval for QMS-controlled design records.           |
+| **Top Management**                     |  Approve design plans, reviews, and design transfer or retirement activities; Ensure resources and strategic alignment.                     |  Final authorization for design initiation and release.      |
+| **Process Owners / SMEs**              |  Provide technical, regulatory, or domain-specific expertise.                                                                                    |  Approve specialized input requirements.                     |
+| **Maintenance Lead / Operations Team** |  Plan and document post-release maintenance and product retirement.                                                                              |  Approve maintenance and decommissioning activities.         |
 
 ---
 
