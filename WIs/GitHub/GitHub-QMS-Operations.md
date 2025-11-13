@@ -11,15 +11,15 @@ controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/W
 
 ## **1. Purpose**
 
-To define how FLEY operates and maintains its **Quality Management System (QMS)** in GitHub using a single **Project (“FLEY QMS”)** that integrates both **Development** and **Operations** Issue Types and QMS Label categories.
+To define how the Floating Eye Software (FLEY) Quality Management System (QMS) operates within GitHub.
 
-This instruction ensures consistent operation and continual improvement of the QMS through a **unified digital workflow** accessible to all process owners.
+This work instruction ensures consistent operation and continual improvement of the QMS through a **unified digital workflow** accessible to all process owners. It provides the operational foundation used by FLEY-Action-Management and GitHub-Project-Management.
 
 ---
 
 ## **2. Scope**
 
-Applies to all operational QMS activities and quality records managed in GitHub, including:
+Applies to all QMS-related records and activities maintained in GitHub repositories, including:
 
 * CAPA and Nonconformance management
 * Risk and Opportunity tracking
@@ -33,6 +33,8 @@ Applies to all operational QMS activities and quality records managed in GitHub,
 
 * SOP – Document Control
 * SOP – Change Control
+* SOP – Quality-Planning
+* WI – FLEY-Action-Management
 * WI – GitHub–Document–Control
 * WI – GitHub–Change–Control
 * WI – GitHub–Version–Control
@@ -42,12 +44,11 @@ Applies to all operational QMS activities and quality records managed in GitHub,
 
 ## **4. Responsibilities and Authorities**
 
-| Role                            | Responsibilities                                            | Authority / Decision Rights        |
-| ------------------------------- | ----------------------------------------------------------- | ---------------------------------- |
-| **Quality Manager / QMS Admin** | Maintain board and automations; verify record completeness. | Approve closure of QMS records.    |
-| **Top Management**              | Conduct and approve Management Reviews and key changes.     | Approve QMS direction and policy.  |
-| **Process Owners**              | Manage assigned CAPAs, Risks, and Objectives.               | Approve closure of related Issues. |
-| **Contributors / SMEs**         | Provide input, data, and recommendations.                   | May open or comment on Issues.     |
+| **Role**                        | **Responsibilities**                                                                                                                                                                                                      | **Authorities**                                                                         |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Quality Manager / QMS Admin** |  Oversees repository configuration and structure; Ensures all QMS artifacts are properly linked and controlled; Maintains traceability across repositories and ensures linkage to governing FLEY Actions; Maintains cross-repository traceability. |  Approve QMS-level Issues, Plans, and Milestones; Create and close MR milestones. |
+| **Process Owners**              |  Maintain Issues and Plans relevant to their processes; Link work to the correct MR milestone; Provide inputs for MR records.                                                                                  |  Approve Issue closure for their process areas.                                        |
+| **Contributors / Team Members** |  Execute assigned actions and attach evidence; Use GitHub’s dependency and linking features to maintain traceability; Participate in MR-related actions.                                                       |  Close low-risk Issues with peer review.                                               |
 
 ---
 
@@ -143,19 +144,7 @@ GitHub-Document-Control and GitHub-Change-Control.
 
 ---
 
-### **5.7 Milestone-Based Management Review (MR) Workflow**
-
-The MR cycle in GitHub ensures leadership oversight, performance review, and traceable actions. Each MR cycle is represented by a **GitHub milestone** linking related Issues.
-
-1. **MR Issue Creation** – Create an MR issue documenting decisions, outputs, and links to related Issues (Objectives, Risks, CAPAs, Improvements).
-2. **Milestone Assignment** – Assign related Issues to the milestone; keep it open until all are complete.
-3. **Sub-Issues & Linking** – Create actionable sub-Issues and link them to the MR issue for traceability.
-4. **Progress Tracking** – Use milestone progress bars and Project boards to monitor completion.
-5. **Cycle Updates** – For new MR cycles, create a new MR issue and milestone; reassign incomplete Issues from prior cycles as needed.
-
----
-
-### **5.8 Backup and Export**
+### **5.7 Backup and Export**
 
 Backups preserve the long-term integrity of the QMS record set and provide a disaster-recovery measure aligned with Document Control retention requirements.
 
@@ -165,9 +154,10 @@ Follow WI – GitHub-QMS-Setup (quarterly manual export until automated).
 
 ## **6. Records**
 
-| Record                    | Location                           | Retention |
-| ------------------------- | ---------------------------------- | --------- |
-| QMS Issues (all)          | GitHub Project                     | Permanent |
-| Management Review Records | GitHub Project                     | Permanent |
-| Audit Reports & CAPAs     | GitHub Project                     | Permanent |
-| Repository Exports        | `/records/github-exports/YYYY-MM/` | 5 years   |
+| **Record / Artifact**       | **Responsible Owner** | **Storage Location**  | **Retention**        |
+| --------------------------- | --------------------- | --------------------- | -------------------- |
+| Issues                      | Quality Manager       | QMS GitHub repository | 5 years              |
+| Milestones                  | Quality Manager       | GitHub Milestones     | 5 years              |
+| Linked Issues               | Process Owners        | Respective repos      | 5 years              |
+| Configuration and templates | QMS Admin             | `/Templates/`         | Current + 1 revision |
+| Repository Exports          | QMS Admin             | `/Records/github-exports/`| 5 years          |
