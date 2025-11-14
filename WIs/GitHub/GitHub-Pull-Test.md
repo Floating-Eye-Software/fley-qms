@@ -125,13 +125,16 @@ git pull
 # Core configuration and templates
 git tag CFG-GH-CODEOWNERS_r1
 git tag TPL-GH-Change-Request_r1
-git tag CFG-GH-Issue-Templates_r1
+git tag CFG-GH-Issues_r1
 git tag TPL-GH-Management-Review_r1
 git tag TPL-GH-Pull-Request_r1
 git tag CFG-gitignore_r1
 git tag Header-Template_r2
 
-# Work Instructions
+# SOPs and Work Instructions
+git tag Management-Review-SOP_r2
+git tag Leadership-SOP_r2
+git tag FLEY-Action-Management_r3
 git tag GitHub-Document-Control_r2
 git tag GitHub-Pull-Test_r1
 git tag GitHub-QMS-Operations_r2
