@@ -2,8 +2,8 @@
 slug: CFG-GH-Issues
 revision: r1
 type: CFG
-status: draft
-effective: null
+status: approved
+effective: 2025-11-14
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/config.yml
 
 # GitHub Config

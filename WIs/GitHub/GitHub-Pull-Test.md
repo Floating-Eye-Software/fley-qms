@@ -2,8 +2,8 @@
 slug: GitHub-Pull-Test
 revision: r1
 type: REF
-status: draft
-effective: null
+status: approved
+effective: 2025-11-14
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Pull-Test.md
 related:
   - redwitch#7
@@ -73,11 +73,6 @@ Open a PR using the template (`TPL-GH-Pull-Request`) and complete these fields:
 **Review Scope:**
 
 * Confirm YAML headers follow the new template (`slug`, `revision`, `type`, `status`, `effective`, `controlled_source`).
-* Verify cross-references between:
-  * *WI–GitHub–Document–Control*
-  * *WI–GitHub–Change–Control*
-  * *WI–GitHub–QMS–Setup*
-  * *WI–GitHub–QMS–Operations*
 * Ensure `effective` fields are `null` (draft) prior to approval.
 * Confirm `.github` configuration and templates match approved workflow definitions.
 
@@ -93,7 +88,7 @@ After approval, update document headers to mark as approved and effective:
 
 ```yaml
 status: approved
-effective: 2025-11-13
+effective: 2025-11-14
 ```
 
 Commit and push:
@@ -108,7 +103,7 @@ git push
 
 ### **6. Merge to Main**
 
-* Merge via Pull Request (do **not** squash — preserve commit signatures).
+* Merge via Pull Request.
 * Verify all required CODEOWNERS approvals and automated checks pass.
 * The merged PR serves as the electronic approval record for this walkthrough.
 
