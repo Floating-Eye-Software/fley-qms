@@ -1,9 +1,13 @@
-# **TPL – Document Header Template**
-
-**Slug:** Header-Template  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Related SOP:** Document-Control-SOP _(optional)_  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Header-Template.md  
-
 ---
+slug: Header-Template
+revision: r2
+type: TPL
+status: approved
+effective: 2025-11-14
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Header-Template.md
+related:
+  - Document-Control-SOP
+  - GitHub-Document-Control
+---
+
+# **TPL – Document Header Template**

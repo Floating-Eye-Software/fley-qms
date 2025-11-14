@@ -1,0 +1,14 @@
+# FLEY QMS Header
+slug: CFG-GH-Issues
+revision: r1
+type: CFG
+status: approved
+effective: 2025-11-14
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/config.yml
+
+# GitHub Config
+blank_issues_enabled: false
+contact_links:
+  - name: Red Witch Discussions
+    url: https://github.com/Floating-Eye-Software/redwitch/discussions
+    about: Use Red Witch Discussions for questions, feedback, or feature ideas related to the QMS or Red Witch.

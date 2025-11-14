@@ -1,2 +1,9 @@
+# slug: CFG-GH-CODEOWNERS
+# revision: r1
+# type: CFG
+# status: approved
+# effective: 2025-11-14
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/CODEOWNERS
+
 # Require approval from Approvers for any change to controlled content
 * @Floating-Eye-Software/qms-approvers

@@ -1,12 +1,13 @@
-# **WI – FLEY Action Management**
-
-**Slug:** FLEY-Action-Management  
-**Revision:** r2  
-**Effective Date:** 2025-11-01  
-**Related SOPs:** Project-Management-SOP, Quality-Planning-SOP, Change-Control-SOP, Design-Control-SOP  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md  
-
 ---
+slug: FLEY-Action-Management
+revision: r3
+type: WI
+status: approved
+effective: 2025-11-14
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md
+---
+
+# **WI – FLEY Action Management**
 
 ## **1. Purpose**
 
@@ -50,10 +51,23 @@ This WI ensures that:
 
 ---
 
-## **4. Responsibilities and Authorities**
+## **4. Definitions**
+
+| **Term**                         | **Definition**                                                                                                                  |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Milestone**                    | A GitHub object used to group related Issues or Pull Requests representing a defined phase, cycle, or objective within the QMS. |
+| **Management Review (MR) Issue** | A GitHub Issue that represents a formal Management Review event, documenting decisions and outcomes.                            |
+| **MR Milestone**                 | A milestone representing the active Management Review Cycle — the period between one MR and the next.                           |
+| **Dependency**                   | A defined relationship between Issues, Plans, or Milestones indicating that one item blocks or triggers another.                |
+| **Cycle Trigger**                | A condition or event (e.g., audit completion, major project closure) that initiates a new MR Cycle.                             |
+
+---
+
+## **5. Responsibilities and Authorities**
 
 | Role                            | Responsibilities                                                                  | Authority / Decision Rights                  |
 | ------------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------- |
+| **Top Management**                   | Conducts Management Reviews, evaluates QMS performance, approves strategic actions, and ensures resources are available. | Approve MR outcomes and resulting actions. |
 | **Quality Manager / QMS Admin** | Oversees use of this WI and verifies traceability and closure quality.            | Approve QMS-level Plans and changes.         |
 | **Project Manager / Owner**     | Defines project scope and ensures all related work has an associated Plan or PQP. | Approve project-level actions and schedules. |
 | **Process Owner**               | Ensures actions within their process area follow this WI.                         | Approve closure of assigned actions.         |
@@ -61,9 +75,9 @@ This WI ensures that:
 
 ---
 
-## **5. Step-by-Step Procedure**
+## **6. Step-by-Step Procedure**
 
-### **5.1 Decide Governance Level**
+### **6.1 Decide Governance Level**
 
 All actions fall under one of four tiers of control:
 
@@ -74,9 +88,13 @@ All actions fall under one of four tiers of control:
 | **3** | Project          | Project Quality Plan (PQP) | Formal project requiring defined governance  | `/Plans/<Project>/`     |
 | **4** | Design Control   | Design Control Plan (DCP)  | Regulated design/development activities      | `/Plans/<Project>/DCP/` |
 
+- Tiers 3-4 follow additional procedures under GitHub-Project-Management.
+- Management Review outputs are generally tracked as Issues under a milestone representing the MR cycle.
+- Sub-issues may be created under Objectives or Improvements for detailed actionable tasks.
+
 ---
 
-### **5.2 When to Use an Issue Only**
+### **6.2 When to Use an Issue Only**
 
 1. Create a **GitHub Issue** using the relevant template.
 2. Apply the correct **label** (`Audit`, `CAPA`, `Improvement`, `Change Request`, etc.).
@@ -93,7 +111,7 @@ All actions fall under one of four tiers of control:
 
 ---
 
-### **5.3 When a Plan Is Required**
+### **6.3 When a Plan Is Required**
 
 1. If the action introduces new deliverables, measurable outcomes, or cross-functional collaboration, create a **Quality Plan** (`/Plans/`).
 2. Use the *Quality Plan Template* to define:
@@ -107,7 +125,7 @@ All actions fall under one of four tiers of control:
 
 ---
 
-### **5.4 When a PQP Is Required**
+### **6.4 When a PQP Is Required**
 
 1. If the activity constitutes a formal **Project**, create a **Project Quality Plan (PQP)**.
 2. Define in the PQP:
@@ -122,7 +140,7 @@ All actions fall under one of four tiers of control:
 
 ---
 
-### **5.5 When a DCP Is Required**
+### **6.5 When a DCP Is Required**
 
 1. Prepare a **Design Control Plan (DCP)** whenever design or development work affects regulated product performance, safety, or compliance.
 2. Link the DCP to its governing PQP.
@@ -131,7 +149,7 @@ All actions fall under one of four tiers of control:
 
 ---
 
-### **5.6 Managing Unplanned Work**
+### **6.6 Managing Unplanned Work**
 
 1. If work arises outside an approved Plan or PQP:
 
@@ -142,21 +160,21 @@ All actions fall under one of four tiers of control:
 
 ---
 
-### **5.7 Execution and Closure**
+### **6.7 Execution and Closure**
 
-All actions and records in GitHub shall be executed and closed according to their governance level. The following subsections define execution and closure requirements for Issues, Plans, and Projects.
+- All actions and records in GitHub shall be executed and closed according to their governance level. The following subsections define execution and closure requirements for Issues, Plans, and Projects.
+- If an MR output requires a Plan or PQP, assign the Plan’s deliverables to the MR milestone.
+- Verification of Effectiveness shall confirm completion of all linked outputs before the milestone is closed.
 
-#### **1. Issues**
+#### **6.7.1 Issues**
 
    1. All Issues are automatically added to the **FLEY QMS Board** (Backlog → In Progress → In Test → Closed).
    2. Attach or link all evidence within the Issue.
-   3. Upon completion, confirm:
+   3. MR-related Issues are assigned to the MR milestone.
+   4. Each MR-related issue must reference the originating MR issue for traceability.
+   5. Close the issue only when the action is complete and verified.
 
-     * Objectives met
-     * Records updated or archived
-     * Linked Issues closed
-
-#### **2. Plans**
+#### **6.7.2 Plans**
 
    1. Group related Issues under a **Milestone** or **linked board view** corresponding to the Plan deliverables and stages.
    2. Monitor progress toward objectives and update the Plan status as milestones are achieved.
@@ -167,7 +185,7 @@ All actions and records in GitHub shall be executed and closed according to thei
       * Create a **new revision** of the Plan per *Change-Control-SOP* when verification results are added.
       * Capture residual risks, lessons learned, or follow-up actions as new Issues if applicable.
 
-#### **3. Projects**
+#### **6.7.3 Projects**
 
    1. Manage all project-related Issues and deliverables under the approved **Project Quality Plan (PQP)** or **Design Control Plan (DCP)**.
    2. Track progress using GitHub **Milestones**, **Boards**, or **linked repositories**, ensuring each major phase or gate review corresponds to defined PQP milestones.
@@ -180,7 +198,7 @@ All actions and records in GitHub shall be executed and closed according to thei
 
 ---
 
-### **5.8 Review and Approval**
+### **6.8 Review and Approval**
 
 | Level | Reviewer(s)                       | Approval Authority                              |
 | ----- | --------------------------------- | ----------------------------------------------- |
@@ -191,12 +209,64 @@ All actions and records in GitHub shall be executed and closed according to thei
 
 ---
 
-## **6. Records**
+### **6.9 Management Review (MR) Workflow**
+
+The MR process in GitHub ensures leadership oversight, performance review, and a traceable record of decisions and actions. Each MR cycle is represented by a **GitHub milestone** linking related Issues.
+
+#### **6.9.1 MR Cycle and Milestones**
+
+Top Management leads each MR cycle with support from the Quality Manager, ensuring all required inputs per ISO 9001:2015 §9.3 are reviewed.
+
+1. **MR Issue Creation** – Create an MR issue documenting decisions, outputs, and links to related Issues (Objectives, Risks, CAPAs, Improvements).
+2. **Milestone Assignment** – Assign related Issues to the milestone; keep it open until all are complete.
+3. **Related Work & Linking** – Assign all relevant Issues, Plans, and Projects arising from that MR to the MR milestone. Use **Blocks / Blocked-by** relationships to represent dependencies between actions.
+4. **Progress Tracking** – Use milestone progress bars and Project boards to monitor completion.
+5. **Cycle Updates** – For new MR cycles, create a new MR issue and milestone; reassign incomplete Issues from prior cycles as needed.
+
+#### **6.9.2 Dependencies and Triggers for MR Cycles**
+
+MR cycles are **event-driven** and may begin when any of the following occurs:
+
+1. Completion of a major Plan, Project, or Change initiative.
+2. Achievement of a defined readiness or maturity milestone (e.g., *Audit-Ready QMS*).
+3. Occurrence of a significant nonconformance, risk, or policy change.
+
+Each trigger is documented as an Issue that either:
+
+* **Blocks** the next MR milestone until resolved, or
+* **Unblocks** the next MR milestone once complete.
+
+The Quality Manager tracks these dependencies across repositories to ensure that MR cycles start under appropriate conditions.
+
+#### **6.9.3 Managing MR Milestones**
+
+1. **Initiation** – When a trigger is met, create a new MR Issue and corresponding milestone; assign ownership to Top Management or the Quality Manager.
+2. **During the Cycle** – Link all relevant Issues (Objectives, Risks, Improvements, CAPAs) to the MR milestone; update status and evidence regularly; monitor progress via milestone bar or dashboards.
+3. **Closing the Cycle** – When all linked Issues are verified effective, close the milestone; record summary of outcomes in the MR Issue; initiate the next cycle if needed.
+
+#### **6.9.4 Traceability and Evidence**
+
+* Each MR milestone links to its MR Issue.
+* Linked Issues must reference the MR (e.g., “Linked to MR-2”).
+* Cross-repository Issues use GitHub cross-reference syntax or dependency links.
+* All MR-related records remain visible in GitHub history for full traceability.
+
+#### **6.9.5 Verification of Effectiveness**
+
+* Before closing an MR milestone, verify that all linked Issues are completed and effective.
+* Record verification summaries in the MR Issue per *Action-Management WI*.
+* If any action is Partially Effective or Ineffective, reassign it to the next MR milestone for continued tracking.
+
+---
+
+## **7. Records**
 
 | Record / Artifact            | Responsible Owner | Storage Location          | Retention                   | Control Method   |
 | ---------------------------- | ----------------- | ------------------------- | --------------------------- | ---------------- |
-| Issues (completed)           | Process Owner     | GitHub QMS Board          | 5 years                     | System record    |
+| Issues              | Process Owner     | GitHub QMS Board          | 5 years                     | System record    |
+| Milestones      | Process Owner       | GitHub Milestones     | 5 years                     | System record    |
 | Quality Plans                | Quality Manager   | `/Plans/`                 | 5 years                     | Version control  |
-| Project Quality Plans (PQP)  | Project Manager   | `/Plans/<Project>/`     | 10 years                    | Revision control |
-| Design Control Plans (DCP)   | Design Lead       | `/Plans/<Project>/DCP/` | 10 years or life of product | Revision control |
+| Project Quality Plans (PQP)  | Project Manager   | `/Plans/<Project>/`     | 10 years                    | Version control |
+| Design Control Plans (DCP)   | Design Lead       | `/Plans/<Project>/DCP/` | 10 years or life of product | Version control |
+| Management Review records    | Quality Manager   | GitHub Issues & Milestones      | 5 years                     | System record   |
 | Evidence attachments / links | Action Owner      | GitHub / Wiki             | Match governing record      | Linked records   |
