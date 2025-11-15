@@ -2,8 +2,8 @@
 slug: FLEY-Action-Management
 revision: r3
 type: WI
-status: draft
-effective: null
+status: approved
+effective: 2025-11-14
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md
 ---
 
