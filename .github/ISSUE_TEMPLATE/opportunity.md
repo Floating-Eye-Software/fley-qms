@@ -1,26 +1,32 @@
 ---
+# FLEY QMS Header
+slug: TPL-GH-Opportunity
+revision: r1
+type: TPL
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/opportunity.md
+
+# GitHub Header
 name: Opportunity
-about: Capture a potential opportunity for improvement or expansion within the QMS
+about: Potential opportunity to improve QMS performance, efficiency, reliability, or quality
 title: "Opportunity: [Brief description]"
 labels: ["Opportunity"]
 ---
 
-## Purpose
-[Describe the opportunity and how it supports improvement, compliance, or efficiency.]
+## Opportunity
+[Describe the opportunity, including expected positive effect and alignment with QMS improvement, efficiency, or quality objectives.]
 
-## Key Activities
-[List steps to evaluate and realize the opportunity. Include planning or SOP dependencies.]
+## Initial Evaluation
+- **Potential Benefit:** [Low / Medium / High]  
+- **Feasibility:** [Low / Medium / High]  
+- **Effort Required:** [Low / Medium / High]
 
-## Acceptance / Verification
-[Define measurable results or verification method showing the opportunity has been realized.]
+## Decision
+[State whether the opportunity is:  
+- **Not Pursued** (explain briefly), or  
+- **Approved for Implementation → Converts to an Improvement**  
+If approved, reference the Improvement record created under the Change Control process.]
 
-## References
-[List related SOPs, Plans, or Management Review findings.]
-
----
-
-**Linked Milestone(s):**
-[Reference associated milestone or improvement plan.]
-
-**Linked Issues / Dependencies:**
-[Connect to related objectives or improvement issues.]
+## Related Processes / References
+[List relevant SOPs, processes, planning documents, or records.]
