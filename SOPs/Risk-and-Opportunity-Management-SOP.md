@@ -40,11 +40,13 @@ This SOP does **not** govern:
 
 # **3. References**
 
-* ISO 9001:2015 — Clause 6.1: Actions to Address Risks and Opportunities
+* ISO 9001:2015 — Clause 6.1
 * ISO 31000:2018 — Risk Management (informative)
 * SOP – Quality Planning
 * SOP – Change Control
 * SOP – Management Review
+* WI – FLEY Action Management
+* WI – GitHub-QMS-Setup
 
 ---
 
@@ -61,7 +63,7 @@ This SOP does **not** govern:
 
 ---
 
-# **5. Responsibilities and Authorities**
+# **5. Responsibilities**
 
 | Role                    | Responsibilities                                                                                                                                 | Authority                                                          |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
@@ -72,7 +74,7 @@ This SOP does **not** govern:
 
 ---
 
-# **6. Process Description**
+# **6. Procedure**
 
 ## **6.1 Identification of Risks and Opportunities**
 
@@ -88,22 +90,22 @@ Risks and opportunities may be identified from:
 * Staff suggestions and observations
 * Management Review
 
-### **Recording Method**
+### 6.1.1 Recording
 
-Each risk or opportunity must be recorded as a **Tracked Item / Issue** in the QMS repository, including:
+Each Risk or Opportunity is logged as a **GitHub Issue**, containing:
 
 1. Title
 2. Description and context
-3. Potential impact
+3. Potential impact (risk) or benefit (opportunity)
 4. Initial evaluation
-5. Links to related processes, records, or issues
+5. Related Issues or linked Plans / Projects
 6. Assigned owner
 
 All active items collectively form the **Risk & Opportunity Register**.
 
----
+## **6.2 Evaluation**
 
-## **6.2 Evaluation of Risks**
+### 6.2.1 Risk Evaluation
 
 Each risk is qualitatively evaluated based on:
 
@@ -118,9 +120,25 @@ Risks rated as **High** in either dimension require:
 
 Numerical scoring is optional and not required.
 
+### 6.2.2 Opportunity Evaluation
+
+Opportunities are evaluated for:
+
+* Benefit
+* Feasibility
+* Effort
+
+Lightweight evaluation is intentionally encouraged.
+
 ---
 
-## **6.3 Risk Treatment**
+## **6.3 Decision and Response**
+
+After evaluation, the owner selects a disposition.
+
+---
+
+### **6.3.1 Risk Responses**
 
 When addressing risks, the following response types may be used:
 
@@ -137,34 +155,9 @@ Mitigation actions may be documented:
 
 ---
 
-## **6.4 Opportunity Identification & Evaluation**
+### **6.3.2 Opportunity Responses**
 
-### **6.4.1 Definition of Opportunities**
-
-Opportunities include possible improvements such as:
-
-* Increased automation or efficiency
-* Improved quality or consistency
-* More reliable or resilient processes
-* Reduced burden or complexity
-* Enhanced documentation or traceability
-* Better use of available tools and technology
-
-### **6.4.2 Evaluation**
-
-Each opportunity is evaluated using lightweight criteria:
-
-1. **Potential Benefit**
-2. **Feasibility**
-3. **Effort Required**
-
-Associated risks may be captured if relevant but are not required.
-
----
-
-## **6.5 Opportunity Decisions**
-
-### **Option A: Not Pursued → Opportunity Closed**
+#### **Option A — Not Pursued**
 
 Reasons may include:
 
@@ -175,19 +168,18 @@ Reasons may include:
 
 Closing an opportunity is **not** a nonconformance.
 
-### **Option B: Pursued → Converts to an Improvement**
+#### **Option B — Pursued**
 
 If approved:
 
-1. The opportunity record is linked to a new **Improvement** record.
-2. The improvement follows the **Change Control SOP**.
-3. The opportunity record is closed with a note indicating approval and cross-reference.
+1. The opportunity record is linked to a new **Improvement** or **Change Request** record to be implemented under the **Change Control SOP**.
+2. The opportunity record is closed with a note indicating approval and cross-reference.
 
 This ensures clear separation between **uncertain ideas** and **approved changes**.
 
 ---
 
-## **6.6 Monitoring and Review**
+## **6.4 Monitoring and Review**
 
 The Quality Manager and Process Owners must monitor:
 
@@ -206,6 +198,7 @@ Results are documented in the Risk & Opportunity Register.
 ---
 
 # **7. Records**
+
 
 | Record / Artifact               | Owner           | Storage Location                      | Retention              | Control Method                      |
 | ------------------------------- | --------------- | ------------------------------------- | ---------------------- | ----------------------------------- |
