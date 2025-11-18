@@ -20,7 +20,7 @@ controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.
 
 ## Reviewer Checklist  
 - [ ] Confirm all affected documents, processes, or systems are updated.  
-- [ ] Ensure all documents contain current revision of Header-Template.
+- [ ] Ensure all documents contain current revision of Header-Template and metadata is correct.
 - [ ] Approvals follow Change-Control-SOP and relevant Work Instructions.  
 - [ ] Verification evidence is attached or referenced.  
 

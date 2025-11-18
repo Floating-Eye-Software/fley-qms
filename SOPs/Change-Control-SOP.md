@@ -56,7 +56,8 @@ This SOP governs both **planned** and **unintended** changes.
 
 | Role                                 | Responsibilities                                                                                                     | Authorities                                                                    |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Process Owners**                   | Initiate change requests, evaluate impact, and ensure proper review, implementation, and documentation. Ensure that improvement actions implemented through this procedure achieve their intended outcomes. | Approve technical and process-related changes within their domain.             |
+| **Change Requestor**                 | Proposes changes and provides justification         | Initiate CRs.                               |
+| **Process Owners**                   | Evaluate impact of change requests and ensure proper review, implementation, and documentation. Ensure that improvement actions implemented through this procedure achieve their intended outcomes. | Approve technical and process-related changes within their domain.             |
 | **Change Control Coordinator (CCC)** | Administers the change control system; ensures compliance with this procedure and maintains traceability of records. | Assign reviewers and control CR workflow status.                               |
 | **Reviewers / Approvers**            | Evaluate proposed changes for adequacy, risk, and compliance; approve, reject, or request revisions.                 | Authorize change approval within assigned scope.                               |
 | **Quality Manager**                  | Oversees the change control process and ensures alignment with QMS and regulatory requirements.                      | Final authority for release of changes impacting QMS governance or compliance. |
@@ -75,7 +76,7 @@ This SOP governs both **planned** and **unintended** changes.
    * Assessment of impact on quality, compliance, or operations
    * Affected documents, systems, or processes
    * Proposed effective date (if applicable)
-3. The CR is assigned a unique identifier (e.g., `CR-2025-014`).
+3. The CR is assigned a unique identifier (e.g., `fley-qms#42`).
 4. The **Change Control Coordinator (CCC)** registers the CR and routes it for review.
 
 ---
@@ -86,8 +87,9 @@ This SOP governs both **planned** and **unintended** changes.
 2. Reviewers evaluate the proposal for:
 
    * Adequacy and completeness
-   * Risks or unintended effects
+   * Risks, dependencies, or unintended effects
    * Need for verification, validation, or training
+   * Effects on compliance, quality, or operations
 3. Approvals are recorded in the change control system. Digital approvals or equivalent acknowledgments constitute formal authorization.
 4. Once approved, the change is cleared for implementation.
 

@@ -1,12 +1,13 @@
-# **WI – GitHub Pull Request and Branch Management**
-
-**Slug:** GitHub-Change-Control  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Related SOP:** Change-Control-SOP  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md  
-
 ---
+slug: GitHub-Change-Control
+revision: r2
+type: WI
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md
+---
+
+# **WI – GitHub Pull Request and Branch Management**
 
 ## **1. Purpose**
 
@@ -27,6 +28,8 @@ This WI applies to all repositories containing QMS-controlled documentation or c
 * SOP – Change Control
 * SOP – Document Control
 * WI – GitHub–QMS–Setup
+* TPL-GH-Change-Request template
+* TPL-GH-Pull-Request template
 * ISO 9001:2015 §§6.3, 7.5.3
 * 21 CFR Part 11
 
@@ -53,6 +56,7 @@ This WI applies to all repositories containing QMS-controlled documentation or c
    * Purpose and justification for change
    * Impact and risk assessment
    * References to affected SOPs, WIs, or CAPAs
+   * The Issue ID becomes the CR identifier
 
 2. Create a new **branch** from the protected `main` branch to implement the change:
 
@@ -75,17 +79,12 @@ This WI applies to all repositories containing QMS-controlled documentation or c
 ### **5.2 Submitting for Review**
 
 1. Open a **Pull Request (PR)** to merge the change branch into `main`.
-2. The PR title must clearly identify the document and revision, for example:
-
-   ```
-   WI-GitHub-Change-Control_r2 – Revised PR procedure
-   ```
-3. The PR description must include:
+2. The PR description must include:
 
    * A link to the related Issue (CR), e.g. `Fixes #42`
    * A concise summary of the proposed changes
    * Any relevant testing, verification, or validation notes
-4. The PR serves as the **formal review and approval record** for the change.
+3. The PR serves as the **formal review and approval record** for the change.
 
 ---
 
@@ -104,33 +103,69 @@ This WI applies to all repositories containing QMS-controlled documentation or c
 
 ---
 
-### **5.4 Merging and Tagging Approved Changes**
+### **5.4 Finalize Metadata Before Merge**
 
-1. After approval, the **Change Control Coordinator (CCC)** performs the merge:
+Before merge, update each controlled file’s header per GitHub-Document-Control, including:
 
-   * Confirm all required approvals are present.
-   * Merge the PR into the protected `main` branch using **“Squash and Merge”** or **“Merge Commit”** (per repository policy).
+```yaml
+revision: r#
+status: approved
+effective: YYYY-MM-DD
+```
 
-2. Create a Git **tag** to mark the approved and effective revision:
+Commit metadata updates to the same branch:
 
-   ```bash
-   git tag GitHub-Change-Control_r2
-   git push origin GitHub-Change-Control_r2
-   ```
+```bash
+git add .
+git commit -m "Finalize approval metadata (CR #42)"
+git push
+```
 
-3. The tag must match the document slug and revision exactly (e.g., `Document-Control-SOP_r5`).
+---
 
-4. Each tag represents a controlled, approved, and effective revision.
+### **5.5 Merge and Release**
 
-5. Tags are **immutable** — do **not** delete or reuse them.
+CCC verifies:
 
-6. The **HEAD of `main`** always represents the **current approved version** displayed on the QMS Wiki.
+* Proper CR linkage
+* Required approvals
+* Metadata correctness
+* All checks passed
+
+Then merges via PR.
+
+Merge constitutes **formal release approval**.
+
+---
+
+### **5.6 Tagging Approved Revisions**
+
+For each affected file:
+
+```bash
+git tag <slug>_r#
+git push origin <slug>_r#
+```
+
+Examples:
+
+```
+Change-Control-SOP_r3
+GitHub-Change-Control_r2
+```
+
+Tags:
+
+* Must match slug + revision
+* Are immutable
+* Represent the effective revision
+* `main` always reflects the current approved version
 
 > The PR, merge commit, and associated tag together form the complete electronic approval and effective-date record.
 
 ---
 
-### **5.5 Branch and Access Control**
+### **5.7 Branch and Access Control**
 
 1. The `main` branch must be **protected** to ensure data integrity:
 
@@ -142,17 +177,17 @@ This WI applies to all repositories containing QMS-controlled documentation or c
 2. Branch naming conventions promote traceability:
 
    ```
-   change/update-sop-004
-   fix/typo-wi-002
+   change/update-decision-matrix
    feature/new-qms-template
+   objective/establish-metrics
    ```
 
-3. After merge, branches may be deleted to maintain repository hygiene.
+3. After merge, local branches may be deleted to maintain repository hygiene.
    All history remains traceable in Git logs and the closed PR.
 
 ---
 
-### **5.6 Handling Unauthorized or Noncompliant Changes**
+### **5.8 Handling Unauthorized or Noncompliant Changes**
 
 1. If an unapproved or incorrect change is discovered in `main`:
 
