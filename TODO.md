@@ -10,14 +10,15 @@ please request its removal from the branch before approval.
 ### QMS Needs
 
 #### **Now**  
-- Continuous Improvement
+- Pull Request process (finalized)
+- Monitoring and Measurement
 - Mechanism for milestone dependencies/triggers - fley-qms#22
 - Verification of branch protection - need VoE for QMS Foundation milestone
-- Quality Plan for QMS Foundation milestone? Already part of Red-Witch-Pilot-SOP-Plan?
 - Verification of FLEY Governance Model
 
 #### **Later**  
 - Guidance for branching model, coding standards
+- CONTRIBUTING.md - enables Continuous Improvement
 - ISO 9004 self assessments
 - GDPR compliance
 
@@ -29,7 +30,6 @@ please request its removal from the branch before approval.
 - [ ] Complete Audit-Ready-QMS milestone - fley-qms#10
 
 ### QMS Foundations milestone
-- [x] Evidence storage location - redwitch#4
 - [x] VoE for QMS, projects, processes and actions - redwitch#6
 - [ ] Change Control process - redwitch#7
 - [ ] GitHub export process, document retention times - fley-qms#23

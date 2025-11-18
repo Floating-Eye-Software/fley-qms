@@ -1,9 +1,9 @@
 ---
 slug: Management-Review-SOP
-revision: r2
+revision: r3
 type: SOP
-status: approved
-effective: 2025-11-14
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Management-Review-SOP.md
 ---
 
@@ -102,10 +102,11 @@ Customer satisfaction and feedback data shall include quantitative trends from t
 
 ### **6.4 Outputs of the Management Review**
 
+Management Review shall identify needs and opportunities for improvement, including actions related to process performance, customer satisfaction, resource adequacy, risk and opportunity status, and the effectiveness of previously implemented changes. These outputs form part of the organization’s continual improvement process.
+
 Outputs shall include:
 
 * Decisions and actions related to:
-
   * Improvement of the QMS and its processes
   * Updates to the Quality Policy or objectives
   * Resource and competence needs

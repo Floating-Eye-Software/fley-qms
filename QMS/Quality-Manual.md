@@ -1,11 +1,13 @@
-# **QMS - Quality Manual – Floating Eye Software (FLEY)**
-
-**Slug:** Quality-Manual  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Quality-Manual.md  
-
 ---
+slug: Quality-Manual
+revision: r2
+type: QMS
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Quality-Manual.md
+---
+
+# **QMS - Quality Manual – Floating Eye Software (FLEY)**
 
 ## **1. Purpose**
 
@@ -155,10 +157,16 @@ All documents are controlled per [Document Control SOP](../SOPs/Document-Control
 
 ## **10. Management Review and Continual Improvement**
 
-* Conducted annually or following major releases
-* Inputs: Context updates, audit results, KPI performance, user feedback, risk changes, climate considerations
-* Outputs: Action plans, improvement projects, resource adjustments
-* Logged in [Continuous Improvement Plan](../Plans/Continuous-Improvement-Plan.md) and [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md)
+Improvement is achieved through corrective actions, results of risk/opportunity management, management review decisions, and achievement of quality objectives.
+The organization conducts **Management Reviews** to evaluate the continuing suitability, adequacy, and effectiveness of the Quality Management System (QMS) and to drive continual improvement.
+Management Reviews are performed according to the [Management Review SOP](../SOPs/Management-Review-SOP.md).
+
+### **10.1 Review Frequency and Triggers**
+
+Management Review follows an **event-driven, dependency-based review-cycle**, initiated when one or more defined triggers occur (e.g., completion of major initiatives, maturity milestones, or significant risks/nonconformities).
+If no trigger occurs within twelve (12) months, a review is held proactively to maintain conformance with ISO 9001:2015 §9.3.
+
+Top Management confirms the start of each review cycle.
 
 ---
 

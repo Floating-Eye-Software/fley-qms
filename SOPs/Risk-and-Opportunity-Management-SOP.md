@@ -172,10 +172,11 @@ Closing an opportunity is **not** a nonconformance.
 
 If approved:
 
-1. The opportunity record is linked to a new **Improvement** or **Change Request** record to be implemented under the **Change Control SOP**.
-2. The opportunity record is closed with a note indicating approval and cross-reference.
-
-This ensures clear separation between **uncertain ideas** and **approved changes**.
+1. Approved opportunities that require planned changes, new controls, or enhancements constitute improvement actions under ISO 9001:2015 §10.1 and are implemented through the Change Control SOP.
+2. The Opportunity record is either:
+  * converted directly into a Change Request, or
+  * linked to a newly created Change Request that will implement the improvement.
+3. The opportunity record is updated with a note indicating approval.
 
 ---
 

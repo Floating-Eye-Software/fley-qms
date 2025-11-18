@@ -73,6 +73,7 @@ Applies to all planning activities related to the QMS, including risk and opport
 * Quality objectives established during a Management Review may be **tracked within a defined cycle or milestone**, ensuring all actions required to achieve them are monitored and completed.
 * Progress toward objectives shall be reviewed regularly and evaluated during subsequent Management Reviews, maintaining traceability to the originating MR instance.
 * Customer satisfaction and process performance data used for evaluating quality objectives shall feed directly into Management Review inputs per **Management-Review-SOP §6.2**.
+* Quality objectives may include continual improvement objectives at the organizational, process, or project level, consistent with ISO 9000:2015 §2.3.5.4.
 
 6.3 **Planning Changes**
 
@@ -98,6 +99,7 @@ Effectiveness of executed actions shall be reviewed during Management Reviews pe
 * Verification of effectiveness confirms that planned quality activities have achieved their intended results and that the QMS remains suitable, adequate, and effective.
 * Verification outcomes may reference progress within a cycle or milestone to confirm that all Objectives, Improvements, Risks, and Opportunities from a Management Review have been completed and properly implemented.
 * Residual risks, improvement opportunities, or lessons learned shall be recorded for future planning cycles or Management Reviews.
+* Improvement actions (including corrections, corrective actions, opportunity responses, innovation, and breakthrough changes) shall be verified for effectiveness as part of the planning cycle. The results of effectiveness verification serve as evidence of continual improvement of the QMS, and are inputs to Management Review in accordance with ISO 9001:2015 §10.3.
 
 The responsible **Process Owner** or **Project Owner** shall:
 

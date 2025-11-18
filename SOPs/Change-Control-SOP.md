@@ -1,16 +1,19 @@
-# **SOP – Change Control**
-
-**Slug:** Change-Control-SOP  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Process Owner:** Quality Manager  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Change-Control-SOP.md  
-
 ---
+slug: Change-Control-SOP
+revision: r2
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Change-Control-SOP.md
+---
+
+# **SOP – Change Control**
 
 ## **1. Purpose**
 
 To ensure that all changes affecting the Quality Management System (QMS), processes, documents, software, or products are identified, reviewed, approved, implemented, and recorded in a **controlled** manner that preserves compliance, traceability, and quality integrity throughout the change lifecycle.
+
+This procedure also governs the implementation of improvement actions arising from Management Review, Risk & Opportunity evaluation, effectiveness verification, or quality planning activities.
 
 ---
 
@@ -53,7 +56,7 @@ This SOP governs both **planned** and **unintended** changes.
 
 | Role                                 | Responsibilities                                                                                                     | Authorities                                                                    |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Process Owners**                   | Initiate change requests, evaluate impact, and ensure proper review, implementation, and documentation.              | Approve technical and process-related changes within their domain.             |
+| **Process Owners**                   | Initiate change requests, evaluate impact, and ensure proper review, implementation, and documentation. Ensure that improvement actions implemented through this procedure achieve their intended outcomes. | Approve technical and process-related changes within their domain.             |
 | **Change Control Coordinator (CCC)** | Administers the change control system; ensures compliance with this procedure and maintains traceability of records. | Assign reviewers and control CR workflow status.                               |
 | **Reviewers / Approvers**            | Evaluate proposed changes for adequacy, risk, and compliance; approve, reject, or request revisions.                 | Authorize change approval within assigned scope.                               |
 | **Quality Manager**                  | Oversees the change control process and ensures alignment with QMS and regulatory requirements.                      | Final authority for release of changes impacting QMS governance or compliance. |
@@ -131,6 +134,7 @@ This SOP governs both **planned** and **unintended** changes.
 1. The change control process is reviewed periodically (e.g., annually) for compliance and effectiveness.
 2. During audits, traceability of a change is demonstrated by linking the CR, review records, and resulting document revisions.
 3. Deficiencies or nonconformities are addressed through the CAPA process.
+4. The effectiveness of improvement-related changes shall be evaluated after implementation and reported during Management Review.
 
 ---
 
