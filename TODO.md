@@ -10,13 +10,14 @@ please request its removal from the branch before approval.
 ### QMS Needs
 
 #### **Now**  
-- Pull Request process (finalized)
-- Monitoring and Measurement
+- Approved Pull Request process - fley-qms#25
 - Mechanism for milestone dependencies/triggers - fley-qms#22
-- Verification of branch protection - need VoE for QMS Foundation milestone
-- Verification of FLEY Governance Model
+- Verification of branch protection
+- Verification of FLEY Action Governance Model
+- VoE for QMS Foundation milestone
 
 #### **Later**  
+- Monitoring and Measurement - fley-qms#15 (KPI's)
 - Guidance for branching model, coding standards
 - CONTRIBUTING.md - enables Continuous Improvement
 - ISO 9004 self assessments
@@ -31,8 +32,9 @@ please request its removal from the branch before approval.
 
 ### QMS Foundations milestone
 - [x] VoE for QMS, projects, processes and actions - redwitch#6
-- [ ] Change Control process - redwitch#7
+- [ ] Develop Change Control procedures - redwitch#7
 - [ ] GitHub export process, document retention times - fley-qms#23
+- [ ] Establish Pull Request process - fley-qms#25
 
 ### Improvements
 - [ ] Supplier Qualification SOP - fley-qms#14
