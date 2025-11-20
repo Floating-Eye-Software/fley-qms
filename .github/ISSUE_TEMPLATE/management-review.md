@@ -2,8 +2,8 @@
 # slug: TPL-GH-Management-Review
 # revision: r2
 # type: TPL
-# status: draft
-# effective: null
+# status: approved
+# effective: 2025-11-19
 # controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/management-review.md
 
 name: Management Review
