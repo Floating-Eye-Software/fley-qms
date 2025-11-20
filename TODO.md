@@ -20,6 +20,7 @@ please request its removal from the branch before approval.
 - Monitoring and Measurement - fley-qms#15 (KPI's)
 - Guidance for branching model, coding standards
 - CONTRIBUTING.md - enables Continuous Improvement
+- [GitHub community health](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)
 - ISO 9004 self assessments
 - GDPR compliance
 
@@ -55,7 +56,7 @@ please request its removal from the branch before approval.
 ### Nonconformances
 - [ ] Branch protection oddities - fley-qms#4
 - [ ] Incorrect GitHub issue links - fley-qms#20
-- [ ] GitHub issue templates misconfigured - fley-qms#24
+- [x] GitHub issue templates misconfigured - fley-qms#24
 
 ### Audit-Ready QMS milestone
 - SOPs for all remaining QMS activities (CAPA, Training, Audits, etc)
