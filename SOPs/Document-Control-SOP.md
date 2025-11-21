@@ -1,12 +1,13 @@
-# **SOP – Document Control**
-
-**Slug:** Document-Control-SOP  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Process Owner:** Quality Manager  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Document-Control-SOP.md  
-
 ---
+slug: Document-Control-SOP
+revision: r2
+type: SOP
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Document-Control-SOP.md  
+---
+
+# **SOP – Document Control**
 
 ## **1. Purpose**
 
@@ -45,7 +46,7 @@ This SOP applies to **all documented information** within the QMS, including:
 | **Controlled Document**    | A formally reviewed, approved, and version-controlled document made available for operational use within the QMS. Examples include SOPs, WIs, templates, and policies. |
 | **Record**                 | Factual evidence of QMS activities or results. Records are maintained for traceability and compliance (e.g., logs, registers, forms, meeting minutes).                 |
 | **Documented Information** | A collective term referring to both controlled documents and records as defined in ISO 9001:2015 Clause 7.5.                                                           |
-| **Slug**                   | A standardized identifier for each controlled document, typically combining type and title (e.g., `SOP_Document-Control`).                                             |
+| **Slug**                   | A standardized identifier for each controlled document, typically combining type and title (e.g., `Document-Control-SOP`).                                             |
 | **Revision (`r#`)**        | The controlled, approved iteration of a document. Each approved revision supersedes the prior one.                                                                     |
 | **Controlled Source**      | The authoritative publication location for the current approved revision (e.g., QMS document repository, official wiki, or dedicated platform).                        |
 
@@ -55,7 +56,7 @@ This SOP applies to **all documented information** within the QMS, including:
 
 | Role                                                     | Responsibilities                                                                                                                                              | Authorities                                                                                               |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| **Process Owners**                                       | Develop, maintain, and review controlled documents within their process area; ensure records (e.g., MPL, CAPA log, Risk Register) are accurate and traceable. | Approve draft updates within their process area prior to Quality review.                                  |
+| **Process Owners**                                       | Develop, maintain, and review controlled documents within their process area; ensure records (e.g., CAPA log, Risk Register) are accurate and traceable. | Approve draft updates within their process area prior to Quality review.                                  |
 | **Quality Manager / Document Control Coordinator (DCC)** | Administer the document control system; ensure approval, publication, and retention requirements are met.                                                     | Final approval authority for controlled documents prior to release; manage document access and archiving. |
 | **Management**                                           | Approve QMS-level documents impacting governance and resource allocation.                                                                                     | Endorse policies and system-level procedures.                                                             |
 | **All Personnel**                                        | Use only current, approved documents; maintain accurate records; report discrepancies.                                                                        | None beyond authorized document use.                                                                      |
@@ -142,6 +143,29 @@ This SOP applies to **all documented information** within the QMS, including:
 | Controlled Documents                       | Current revision active; prior revisions archived indefinitely | Version control or document tracking system   |
 | Records (Logs, Registers, CAPA, Risk, MPL) | Permanent                                                      | Secure storage and access control             |
 | Approval / Change Metadata                 | Permanent                                                      | Maintained within the document control system |
+
+---
+
+### **6.8 External Controlled Documents**
+
+1. **External Documents**
+
+   * External standards, regulations, or supplier documents are not stored directly in the QMS unless permitted by license.
+
+   * Each external document shall have a **controlled metadata file** containing:
+
+     | Field                 | Description                                              |
+     | --------------------- | -------------------------------------------------------- |
+     | **Title**             | Official title of the document                           |
+     | **Document ID**       | Unique internal identifier (e.g., EXT-ISO-13485-2016)    |
+     | **Source / Link**     | URL or citation to publisher or authoritative location   |
+     | **Type**              | Standard, Guidance, Market Report, Journal, etc.         |
+     | **Summary / Notes**   | Internal summary relevant to QMS or design               |
+     | **Controlled Source** | Link to the approved metadata file in the QMS repository |
+
+   * External document metadata is reviewed annually or when a new edition is issued.
+
+   * Full-text access must comply with copyright or licensing restrictions.
 
 ---
 
