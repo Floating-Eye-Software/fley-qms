@@ -1,9 +1,9 @@
 ---
 slug: GitHub-QMS-Setup
-revision: r2
+revision: r3
 type: WI
-status: approved
-effective: 2025-11-14
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Setup.md
 ---
 
@@ -31,6 +31,8 @@ Applies to all activities required to create and configure the **QMS infrastruct
 * Issue Type and Label configuration
 * Project View configuration
 * Creation of QMS framework documents (Manual, Context, Policy, Process Map)
+* Users assigned to QMS GitHub teams (qms-authors, qms-approvers)
+* GitHub organization settings
 * Setup of automation and export routines
 
 ---
@@ -82,13 +84,13 @@ The `fley-qms` repository serves as the published, user-friendly interface for c
 
 ### **5.2 Project: FLEY QMS**
 
-#### **1. Columns & Status Colors**
+#### **5.2.1 Columns & Status Colors**
 
 ```
 Backlog (GREY) → In Progress (GREEN) → In Test (YELLOW) → Closed (BLUE)
 ```
 
-#### **2. Project Views**
+#### **5.2.2 Project Views**
 
 | View                          | Type / Filter                       | Purpose                                  |
 | ----------------------------- | ----------------------------------- | ---------------------------------------- |
@@ -133,14 +135,105 @@ Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
 
 ---
 
-### **5.5 Automation and Workflows**
+### **5.5 Branch Protection Rules**
 
-1. **Enable Auto-Add to Project**
+Apply the following configuration in:
+
+**Repository → Settings → Branches → Add Protection Rule → `main`**
+
+#### **5.5.1 Pull Request & Approval Requirements**
+
+| Setting                                                 | Required                                      | Rationale                                                            |
+| ------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------- |
+| Require a pull request before merging               | ✅                                             | Enforces controlled approval workflow                                |
+| Require approvals                                   | ⚠️ *Enabled if organization has ≥2 approvers* | GitHub limitation when single-person org                             |
+| Required number of approvals                        | 1                                         | Minimum viable QMS approval                                          |
+| Require review from CODEOWNERS                      | ✅ Required                                | Ensures approval by QMS approvers (Quality Manager / Top Management) |
+| Dismiss stale approvals when new commits are pushed | Recommended                               | Ensures final commit is reviewed                                     |
+| Require conversation resolution before merging      | Recommended                               | Required in Change-Control WI                                        |
+
+#### **5.5.2 Push Restrictions**
+
+| Rule                                           | Required                  | Notes                                         |
+| ---------------------------------------------- | ------------------------- | --------------------------------------------- |
+| Restrict who can push to matching branches | Enabled               | Enforcement mechanism for no-direct-commits   |
+| Allowed pushers                            | `qms-approvers` team only | Prevents bypass except through PR merges      |
+| Allow force pushes                         | ❌ Disabled                | Prevents rewriting of controlled history      |
+| Allow branch deletion                      | ❌ Disabled                | Controlled branch must not be deletable       |
+| Allow bypassing branch protection          | ❌ Disabled                | No exceptions allowed (per Change-Control WI) |
+
+You already have:
+
+✔ Require PRs
+✔ Require CODEOWNERS
+✔ No direct pushes
+✔ No bypass
+✔ No force pushes
+✔ Require conversation resolution
+
+Two more recommended settings:
+
+| Setting                                 | Reason                                                 |
+| --------------------------------------- | ------------------------------------------------------ |
+| ✔ Require linear history = Disabled | Allows merge commits, required for auditability        |
+| ✔ Require status checks = Optional  | If you add linters or markdown schema validation later |
+
+### **5.6 Merge Strategy Restrictions**
+
+**Settings → General → Pull Requests**
+
+Set:
+
+| Setting                   | Required     | Reason                                              |
+| ------------------------- | ------------ | --------------------------------------------------- |
+| ✔ Allow merge commits | Required | Preserves full audit trail                          |
+| ❌ Squash merging          | Disable  | Merges hide intermediate history                    |
+| ❌ Rebase merging          | Disable  | Rewrites commits; violates controlled recordkeeping |
+
+This matches the workflow validated in **GitHub-Pull-Test**.
+
+
+### **5.7 Repository Visibility & Access Control**
+
+You should set:
+
+| Setting                            | Required                       | Reason                                       |
+| ---------------------------------- | ------------------------------ | -------------------------------------------- |
+| Repository visibility: Private | Required                       | Ensures QMS confidentiality & draft control  |
+| Manage access using teams      | `qms-authors`, `qms-approvers` | Required for separation of duties            |
+| Admin bypass: disable          | Required                       | Prevents accidental override of QMS controls |
+| Restrict forking               | Recommended                    | Avoids uncontrolled clones of draft content  |
+
+### **5.8 Protected default branch**
+
+Mandatory:
+
+| Setting                    | Required    |
+| -------------------------- | ----------- |
+| Default branch = `main`    | Required    |
+| Lock other legacy branches | Recommended |
+
+### **5.9 Disable wiki & projects unless controlled**
+
+In **Settings → Features**:
+
+| Feature      | Required                              |
+| ------------ | ------------------------------------- |
+| Wiki     | OFF                                   |
+| Projects | Optional (you use org-level projects) |
+| Issues   | ON (required for QMS workflows)       |
+
+Wiki must be off because **wiki edits are not PR-controlled**.
+
+### **5.10 Actions / Workflows Security**
+
+
+#### **5.10.1 Enable Auto-Add to Project**
 
    * In project settings, enable *Auto-add new issues* for the repository.
    * Ensures all new issues are automatically added to the FLEY QMS board.
 
-2. **Set Default Column for New Items**
+#### **5.10.2 Set Default Column for New Items**
 
    * Add a workflow rule:
      ```
@@ -149,14 +242,32 @@ Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
      ```
    * Ensures every new issue starts in the Backlog column.
 
-3. **Reference:**
+#### **5.10.3 Reference:**
 
    See GitHub’s official documentation for setup details and advanced options:
    [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 
+Even if you don’t use actions yet, set:
+
+| Setting                                                           | Required |
+| ----------------------------------------------------------------- | -------- |
+| Disable “Allow GitHub Actions to create or approve pull requests” | Required |
+| Disable “Allow GitHub Actions to bypass rules”                    | Required |
+
+This prevents automation from bypassing QMS approvals.
+
+### **5.11 Audit Log Availability (Org-level)**
+
+Not a repo setting, but required for compliance:
+
+✔ Ensure GitHub **Organization Audit Log** is enabled
+✔ Retain logs for minimum retention period (5 years typical for ISO; 2 for FDA)
+
+This is automatic for paid orgs.
+
 ---
 
-### **5.6 Establish the QMS Framework**
+### **5.12 Establish the QMS Framework**
 
 | Document             | Purpose                                        |
 | -------------------- | ---------------------------------------------- |
@@ -172,7 +283,7 @@ The formal approval and release of the **Quality Manual** marks the **official a
 
 ---
 
-### **5.7 Integration with Other Repositories**
+### **5.13 Integration with Other Repositories**
 
 * `fley-qms` remains the QMS master record.
 * Each product repository (e.g., redwitch, snowplow) maintains its own development board.
@@ -181,7 +292,7 @@ The formal approval and release of the **Quality Manual** marks the **official a
 
 ---
 
-### **5.8 Backup and Export**
+### **5.14 Backup and Export**
 
 Regular exports safeguard QMS continuity and provide offline verification of controlled records in the event of repository loss or service disruption.
 
