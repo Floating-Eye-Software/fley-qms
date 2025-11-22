@@ -10,7 +10,7 @@ please request its removal from the branch before approval.
 ### QMS Needs
 
 #### **Now**  
-- Approved Pull Request process - fley-qms#25
+- Approved Pull Request process - fley-qms#25, fley-qms#28
 - Mechanism for milestone dependencies/triggers - fley-qms#22
 - Verification of branch protection
 - Verification of FLEY Action Governance Model
@@ -56,7 +56,7 @@ please request its removal from the branch before approval.
 ### Nonconformances
 - [ ] Branch protection oddities - fley-qms#4
 - [ ] Incorrect GitHub issue links - fley-qms#20
-- [x] GitHub issue templates misconfigured - fley-qms#24
+- [x] GitHub issue templates misconfigured - fley-qms#24, fley-qms#26, fley-qms#27
 
 ### Audit-Ready QMS milestone
 - SOPs for all remaining QMS activities (CAPA, Training, Audits, etc)

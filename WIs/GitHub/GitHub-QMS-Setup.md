@@ -67,6 +67,8 @@ The following steps define how the FLEY QMS is initialized and configured in Git
 ### **5.1 Repository Structure**
 
 ```
+.github/
+    CODEOWNERS
 QMS/
    Quality-Manual.md
    Context-Analysis.md
@@ -84,7 +86,29 @@ The `fley-qms` repository serves as the published, user-facing interface for con
 
 ### **5.2 Repository Configuration**
 
-#### **5.2.1 Branch Protection Rules**
+#### **5.2.1 General Settings**
+
+**Repository → Settings → General → Default branch**
+
+| Setting        | Value  | Notes                           |
+| -------------- | ------ | ------------------------------- |
+| Default branch | `main` | Location of approved documents  |
+
+**Repository → Settings → General → Releases**
+
+| Setting                     | Value   | Notes                                         |
+| --------------------------- | ------- | --------------------------------------------- |
+| Enable release immutability | Enabled | Prevents modification of released assets/tags |
+
+**Repository → Settings → General → Pull Requests**
+
+| Setting             | Value    | Notes                                    |
+| ------------------- | -------- | ---------------------------------------- |
+| Allow merge commits | Enabled  | Preserves full audit trail               |
+| Squash merging      | Disabled | Squash hides intermediate history        |
+| Rebase merging      | Disabled | Rewriting commits violates recordkeeping |
+
+#### **5.2.2 Branch Protection Rules**
 
 Apply the following configuration:
 
@@ -100,27 +124,36 @@ Apply the following configuration:
 | Require linear history                     | Disabled        | Merge commits permitted for auditability                |
 | Do not allow bypassing protections         | Enabled         | Applies to admins and bypass-enabled roles              |
 | Restrict who can push to matching branches | Enabled         | Prevents direct commits                                 |
-| Push access                                | `qms-approvers` | Only qms-approvers may merge PRs                        |
+| Push access                                | `qms-approvers` | Only qms-approvers make changes in `main`               |
 | Allow force pushes                         | Disabled        | Prevents history modification                           |
 | Allow branch deletions                     | Disabled        | Controlled branch must not be deletable                 |
 
 (\*) *Enabled only if the organization has ≥2 approvers*
 
-#### **5.2.2 Releases & Pull Requests**
+#### **5.2.3 Tag Rulesets**
 
-**Repository → Settings → General → Releases**
+**Repository → Settings → Rules → Rulesets → New ruleset → New tag ruleset**
 
-| Setting                     | Value   | Notes                                         |
-| --------------------------- | ------- | --------------------------------------------- |
-| Enable release immutability | Enabled | Prevents modification of released assets/tags |
+Create the following tag rulesets:
 
-**Repository → Settings → General → Pull Requests**
+* **Restrict tag creation**
+  Bypass list: QMS-Approvers
+  Target tags: \*r_\*,
+  Rules: Restrict creations, Block force pushes
 
-| Setting             | Value    | Notes                                    |
-| ------------------- | -------- | ---------------------------------------- |
-| Allow merge commits | Enabled  | Preserves full audit trail               |
-| Squash merging      | Disabled | Squash hides intermediate history        |
-| Rebase merging      | Disabled | Rewriting commits violates recordkeeping |
+* **Restrict tag modification**
+  Bypass list: None
+  Target tags: \*r_\*,
+  Rules: Restrict updates, Restrict deletions, Block force pushes
+
+#### **5.2.4 CODEOWNERS Configuration**
+
+Create `.github/CODEOWNERS` in the `main` branch with the following content:
+
+```plaintext
+# Require approval from Approvers for any change to controlled content
+* @Floating-Eye-Software/qms-approvers
+````
 
 ### **5.3 Project Configuration**
 
@@ -200,7 +233,19 @@ Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
 | **Development** | BLUE   | Activities that create or improve products, processes, or systems.  | QMS framework setup, automation, template design. |
 | **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems. | CAPA, Audit, Objective, Risk, Management Review.  |
 
-#### **5.4.3 Actions & Logs**
+#### **5.4.3 Teams**
+
+**Organization → Teams → New Team**
+
+* QMS-Authors: Creates or updates controlled docs
+* QMS-Approvers: Reviews, approves, and merges
+
+**Organization → Settings → Organization roles → Role assignments → New role assignment**
+
+* QMS-Authors: All-repository write
+* QMS-Approvers: All-repository maintain
+
+#### **5.4.4 Actions & Logs**
 
 **Organization → Settings → Actions → General**
 
@@ -211,6 +256,7 @@ Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
 
 * Ensure the Audit Log is enabled.
 
+---
 
 ### **5.5 Define the QMS Framework**
 
