@@ -34,8 +34,9 @@ please request its removal from the branch before approval.
 ### QMS Foundations milestone
 - [x] VoE for QMS, projects, processes and actions - redwitch#6
 - [ ] Develop Change Control procedures - redwitch#7
+- [ ] CR: Establish Pull Request process - fley-qms#25
+- [ ] PR: Establish GitHub PR Process - fley-qms#28
 - [ ] GitHub export process, document retention times - fley-qms#23
-- [ ] Establish Pull Request process - fley-qms#25
 
 ### Improvements
 - [ ] Supplier Qualification SOP - fley-qms#14

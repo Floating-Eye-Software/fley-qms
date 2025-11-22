@@ -118,7 +118,7 @@ Apply the following configuration:
 | ------------------------------------------ | --------------- | ------------------------------------------------------- |
 | Require a pull request before merging      | Enabled         | Enforces controlled approval workflow                   |
 | Require approvals                          | Enabled (*)     | GitHub limitation if organization has only one approver |
-| Required number of approvals               | 1               | Minimum viable QMS approval                             |
+| Required number of approvals               | 1 (*)           | Minimum viable QMS approval                             |
 | Require review from CODEOWNERS             | Enabled (*)     | Ensures approval by QMS approvers                       |
 | Allow specified actors to bypass PRs       | Disabled        | No users, teams, or apps may bypass controls            |
 | Require linear history                     | Disabled        | Merge commits permitted for auditability                |
@@ -136,15 +136,16 @@ Apply the following configuration:
 
 Create the following tag rulesets:
 
-* **Restrict tag creation**
-  Bypass list: QMS-Approvers
-  Target tags: \*r_\*,
-  Rules: Restrict creations, Block force pushes
+* **Restrict tag creation**  
+ * Bypass list: QMS-Approvers  
+ * Target tags: \*r_\*  
+ * Rules: Restrict creations, Block force pushes  
 
-* **Restrict tag modification**
-  Bypass list: None
-  Target tags: \*r_\*,
-  Rules: Restrict updates, Restrict deletions, Block force pushes
+
+* **Restrict tag modification**  
+ * Bypass list: None  
+ * Target tags: \*r_\*  
+ * Rules: Restrict updates, Restrict deletions, Block force pushes  
 
 #### **5.2.4 CODEOWNERS Configuration**
 

@@ -1,13 +1,11 @@
 ---
-# FLEY QMS Header
-slug: TPL-GH-Objective
-revision: r1
-type: TPL
-status: draft
-effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/objective.md
+# slug: TPL-GH-Objective
+# revision: r1
+# type: TPL
+# status: draft
+# effective: null
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/objective.md
 
-# GitHub Header
 name: Objective
 about: Define and track a QMS or project objective
 title: "Objective: [Brief description]"

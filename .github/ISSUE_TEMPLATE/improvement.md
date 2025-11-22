@@ -1,13 +1,11 @@
 ---
-# FLEY QMS Header
-slug: TPL-GH-Improvement
-revision: r1
-type: TPL
-status: draft
-effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/improvement.md
+# slug: TPL-GH-Improvement
+# revision: r1
+# type: TPL
+# status: draft
+# effective: null
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/improvement.md
 
-# GitHub Header
 name: Improvement
 about: A planned improvement to QMS processes, systems, or documentation
 title: "Improvement: [Brief description]"

@@ -1,4 +1,11 @@
 ---
+# slug: TPL-GH-Nonconformance
+# revision: r1
+# type: TPL
+# status: draft
+# effective: null
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/nonconformance.md
+
 name: Nonconformance
 about: Record of non-fulfilment of a requirement
 title: "NC: [Brief description]"

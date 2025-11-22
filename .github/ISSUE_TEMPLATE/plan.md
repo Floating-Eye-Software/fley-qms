@@ -1,23 +1,15 @@
 ---
-# FLEY QMS Header
-slug: TPL-GH-Plan
-revision: r1
-type: TPL
-status: draft
-effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/plan.md
+# slug: TPL-GH-Plan
+# revision: r1
+# type: TPL
+# status: draft
+# effective: null
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/plan.md
 
-# GitHub Header
 name: Plan
-about: Specification of the procedures and associated resources to be applied when and by whom to a specific object
+about: Specification of the procedures and associated resources to be applied
 title: "Plan: [Brief description]"
 labels: ["Plan"]
----
-
-# **GitHub Plan Issue Template – FLEY QMS**
-
-**Label:** `Plan`
-
 ---
 
 ## **1. Plan Overview**
@@ -40,8 +32,6 @@ labels: ["Plan"]
 * [SOP – Risk and Opportunity Management]
 * [Other applicable SOPs/WIs]
 
----
-
 ## **2. Risks & Opportunities**
 
 | # | Risk / Opportunity | Impact / Priority | Action / Mitigation | Owner | Status / Evidence |
@@ -51,8 +41,6 @@ labels: ["Plan"]
 | 3 |                    |                   |                     |       |                   |
 
 > Reference the **Risk & Opportunity Register** for detailed tracking. Link associated Issues as needed.
-
----
 
 ## **3. Quality Objectives**
 
@@ -64,8 +52,6 @@ labels: ["Plan"]
 
 > Track objectives against the **Quality Objectives Register** and ensure traceability to MR cycles if applicable.
 
----
-
 ## **4. Deliverables / Child Issues**
 
 | # | Issue / Task | Owner | Milestone | Status | Notes / Dependencies |
@@ -75,8 +61,6 @@ labels: ["Plan"]
 | 3 |              |       |           |        |                      |
 
 > Use **blocked-by / blocks** relationships to enforce dependencies and sequencing.
-
----
 
 ## **5. Milestones / Phases**
 
@@ -88,16 +72,12 @@ labels: ["Plan"]
 
 > Milestones represent major phases or readiness triggers (e.g., Audit-Ready QMS, Project Gate Reviews).
 
----
-
 ## **6. Dependencies**
 
 * **Blocked by:** [Other Plans, MR milestones, or approvals that must complete first]
 * **Blocks:** [Plans, Projects, or MR milestones that depend on this Plan]
 
 > Use GitHub dependency links for cross-repo or cross-plan gating.
-
----
 
 ## **7. Verification of Effectiveness (VoE)**
 
@@ -115,13 +95,9 @@ labels: ["Plan"]
 
 > Record verification summary and attach evidence within this Plan Issue. Reference related MR cycles as applicable.
 
----
-
 ## **8. Notes / Lessons Learned**
 
 [Optional ongoing observations, risks, or improvement actions.]
-
----
 
 ## **9. Attachments / References**
 

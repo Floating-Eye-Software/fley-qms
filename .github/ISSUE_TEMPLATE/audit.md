@@ -1,11 +1,18 @@
 ---
+# slug: TPL-GH-Audit
+# revision: r1
+# type: TPL
+# status: draft
+# effective: null
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/audit.md
+
 name: Audit
 about: Record an internal or external audit observation, finding, or report
 title: "AUDIT: [Brief description]"
 labels: ["Audit"]
 ---
 
-## Audit Details
+## Audit
 
 **Audit Type**
 [Internal / External / Supplier / Regulatory]

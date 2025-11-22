@@ -1,11 +1,18 @@
 ---
+# slug: TPL-GH-CAPA
+# revision: r1
+# type: TPL
+# status: draft
+# effective: null
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/capa.md
+
 name: CAPA
 about: Track a corrective or preventive action based on an audit, nonconformance, or risk
 title: "CAPA: [Brief description]"
 labels: ["CAPA"]
 ---
 
-## CAPA Details
+## CAPA
 
 **Linked Issue / Observation**
 [Provide a link to the audit, nonconformance, or other issue that triggered this CAPA]
