@@ -96,7 +96,7 @@ A typical project workspace on GitHub (example: [https://github.com/Floating-Eye
 
 2. **Configure the Project Board**
 
-   * Add columns such as *Backlog*, *In Progress*, *Review*, and *Done*.
+   * Add columns such as *Backlog*, *In Progress*, *In Test*, and *Closed*.
    * Link Issues to the board so that they appear as cards.
 
 3. **Define Milestones**
@@ -129,7 +129,7 @@ A typical project workspace on GitHub (example: [https://github.com/Floating-Eye
 
 4. **Automated Tracking (Optional)**
 
-   * Configure **GitHub Actions** for notifications or automatic board updates (e.g., when an Issue closes, move to *Done*).
+   * Configure **GitHub Actions** for notifications or automatic board updates (e.g., when an Issue closes, move to *Closed*).
 
 ---
 

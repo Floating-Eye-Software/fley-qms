@@ -279,3 +279,138 @@ Shows how combined GitHub WIs satisfy:
 * Cross-WI consistency table
 * Compliance mapping
 * Optional: Repo templates, header prototypes, file stubs
+
+---
+
+# ✅ Unified Formatting & Style Guide (Recommended for All GitHub WIs)
+
+These rules bring the suite into a single, professional, audit-ready style.
+
+## **1. Headings**
+
+Use:
+
+```
+# WI – Title
+## 1. Purpose
+## 2. Scope
+## 3. References
+## 4. Responsibilities / Responsibilities and Authorities
+## 5. Procedure / Operations / Setup
+## 6. Records
+```
+
+**Never use Level 1 headers inside the body**.
+
+Use **Title Case** for section headers.
+
+---
+
+## **2. Writing Style**
+
+* Use **imperative mood** (“Configure…”, “Create…”, “Update…”).
+* Use **short, direct sentences**.
+* Avoid phrases like “This WI ensures…” unless absolutely needed.
+* Use “QMS” consistently, not switching among “quality system”, “system”, “framework”, etc.
+* Use “Issue” / “Pull Request (PR)” capitalization consistently.
+* Refer to the controlled repository as **`fley-qms`** everywhere.
+
+---
+
+## **3. Table Formatting**
+
+Use consistent table structure:
+
+* Bold column headings
+* Wrap long definitions
+* Keep column order consistent (Definition → Use / Purpose)
+
+Example:
+
+| **Label** | **Definition** | **Typical Use** |
+| --------- | -------------- | --------------- |
+
+---
+
+## **4. Code Blocks & Lists**
+
+* Use triple backticks for directory structures.
+* Use numbered lists for procedural steps.
+* Use bullets only for unordered concepts.
+
+---
+
+## **5. Terminology Consistency**
+
+Standardize:
+
+| Term               | Use This                                 | Avoid                    |
+| ------------------ | ---------------------------------------- | ------------------------ |
+| QMS roles          | Quality Manager / QMS Admin              | QMS Manager, Admin alone |
+| Issue Types        | Development / Operations                 | Dev, Ops                 |
+| Board Columns      | Backlog → In Progress → In Test → Closed | Todo / Doing / Completed |
+| Change terminology | Change Request (CR), Change              | CR, Change Ticket        |
+| MR                 | Management Review                        | Mgmt Review, M.R.        |
+| Risk & Opportunity | Use the phrase exactly                   | Risks/Opportunities, RoO |
+
+---
+
+## **6. Cross-Document References**
+
+Always reference other WIs and SOPs as:
+
+> **WI – GitHub–Document–Control**
+
+not:
+
+> GitHub-Document-Control WI
+> Document Control WI
+
+---
+
+## **7. Record Retention**
+
+Ensure all WIs use:
+
+* **Permanent**
+* **5 years**
+* **Current + 1 revision**
+
+No other retention terms.
+
+---
+
+# ✔ WI – GitHub-Project-Management (r2 draft)
+
+### **Required Consistency Adjustments**
+
+1. **Convert Section 5 to imperative WI style**
+   Currently reads like guidance.
+   Rewrite steps as actionable instructions.
+
+2. **Reduce narrative descriptions**
+   Tables such as “Overview of GitHub Project Environment” include long explanatory paragraphs.
+   Condense to the concise style used in QMS-Operations.
+
+4. **Match Issue Types and Label Definitions**
+   Do not introduce `Task`, `Review`, `Testing` unless these are official labels.
+   Use only the globally defined QMS labels.
+
+5. **Project planning**
+   Align to QMS language:
+
+* Objectives = Issues labeled `Objective`
+* Milestones = Management Review alignment (if applicable)
+* Risk = Issue Type: Operations + Label: Risk
+
+6. **Project Closure**
+   Ensure steps reference:
+
+* Verification of effectiveness
+* PR-based approval for final documentation
+* Preservation of records according to WI – GitHub-Document-Control
+
+7. **Improve integration section**
+   Use same format as Setup and Operations.
+
+---

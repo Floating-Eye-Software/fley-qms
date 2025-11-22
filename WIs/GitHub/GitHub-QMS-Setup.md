@@ -30,10 +30,10 @@ Applies to all activities required to create and configure the **QMS infrastruct
 * Repository directory structure
 * Issue Type and Label configuration
 * Project View configuration
-* Creation of QMS framework documents (Manual, Context, Policy, Process Map)
-* Users assigned to QMS GitHub teams (qms-authors, qms-approvers)
+* Creation of QMS framework documents (Manual, Context, Policy, Process Map, Org Chart)
+* Assignment of users to QMS GitHub teams (`qms-authors`, `qms-approvers`)
 * GitHub organization settings
-* Setup of automation and export routines
+* Automation and export routines
 
 ---
 
@@ -44,6 +44,7 @@ Applies to all activities required to create and configure the **QMS infrastruct
 * WI – GitHub–Document–Control
 * WI – GitHub–Change–Control
 * WI – GitHub–Version–Control
+* WI - GitHub-QMS-Operations
 * [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 
 ---
@@ -58,9 +59,10 @@ Applies to all activities required to create and configure the **QMS infrastruct
 | **Contributors / SMEs**         | Provide technical or procedural input.                                                 | Suggest edits only.                          |
 
 ---
-## **5. Establishing the QMS in GitHub**
 
-The following steps define how the FLEY QMS is formally initialized and configured in GitHub. Completing this setup establishes the baseline for controlled documentation and operational traceability.
+## **5. Procedure**
+
+The following steps define how the FLEY QMS is initialized and configured in GitHub. Completion establishes the baseline for controlled documentation and operational traceability.
 
 ### **5.1 Repository Structure**
 
@@ -78,196 +80,139 @@ Templates/
 Records/
 ```
 
-The `fley-qms` repository serves as the published, user-friendly interface for controlled QMS content.
+The `fley-qms` repository serves as the published, user-facing interface for controlled QMS content.
 
----
+### **5.2 Repository Configuration**
 
-### **5.2 Project: FLEY QMS**
+#### **5.2.1 Branch Protection Rules**
 
-#### **5.2.1 Columns & Status Colors**
+Apply the following configuration:
+
+**Repository → Settings → Branches → Add Protection Rule → `main`**
+
+| Setting                                    | Value           | Notes                                                   |
+| ------------------------------------------ | --------------- | ------------------------------------------------------- |
+| Require a pull request before merging      | Enabled         | Enforces controlled approval workflow                   |
+| Require approvals                          | Enabled (*)     | GitHub limitation if organization has only one approver |
+| Required number of approvals               | 1               | Minimum viable QMS approval                             |
+| Require review from CODEOWNERS             | Enabled (*)     | Ensures approval by QMS approvers                       |
+| Allow specified actors to bypass PRs       | Disabled        | No users, teams, or apps may bypass controls            |
+| Require linear history                     | Disabled        | Merge commits permitted for auditability                |
+| Do not allow bypassing protections         | Enabled         | Applies to admins and bypass-enabled roles              |
+| Restrict who can push to matching branches | Enabled         | Prevents direct commits                                 |
+| Push access                                | `qms-approvers` | Only qms-approvers may merge PRs                        |
+| Allow force pushes                         | Disabled        | Prevents history modification                           |
+| Allow branch deletions                     | Disabled        | Controlled branch must not be deletable                 |
+
+(\*) *Enabled only if the organization has ≥2 approvers*
+
+#### **5.2.2 Releases & Pull Requests**
+
+**Repository → Settings → General → Releases**
+
+| Setting                     | Value   | Notes                                         |
+| --------------------------- | ------- | --------------------------------------------- |
+| Enable release immutability | Enabled | Prevents modification of released assets/tags |
+
+**Repository → Settings → General → Pull Requests**
+
+| Setting             | Value    | Notes                                    |
+| ------------------- | -------- | ---------------------------------------- |
+| Allow merge commits | Enabled  | Preserves full audit trail               |
+| Squash merging      | Disabled | Squash hides intermediate history        |
+| Rebase merging      | Disabled | Rewriting commits violates recordkeeping |
+
+### **5.3 Project Configuration**
+
+#### **5.3.1 Project Columns**
+
+**Project → Settings → Status → Options**
 
 ```
-Backlog (GREY) → In Progress (GREEN) → In Test (YELLOW) → Closed (BLUE)
+Backlog → In Progress → In Test → Closed
 ```
 
-#### **5.2.2 Project Views**
+| Option      | Color  | Definition                          |
+| ------------| ------ | ----------------------------------- |
+| Backlog     | GREY   | This item hasn't been started       |
+| In Progress | GREEN  | This is actively being worked on    |
+| In Test     | YELLOW | This is being verified or validated |
+| Closed      | BLUE   | This has been completed             |
 
-| View                          | Type / Filter                       | Purpose                                  |
-| ----------------------------- | ----------------------------------- | ---------------------------------------- |
-| Development (Board)           | type:Development                    | Track QMS framework creation or updates. |
-| QMS Actions (Table)           | label:"Management Review",Objective | Plan and track leadership actions.       |
-| Changes (Table)               | label:"Change Request",Change       | Full lifecycle of changes.               |
-| Improvements (Table)          | label:Improvement                   | Continual improvement actions.           |
-| Risks & Opportunities (Table) | label:Risk,Opportunity              | Risk-based thinking dashboard.           |
-| Audits (Table)                | label:Audit                         | Internal and external audits.            |
-| CAPAs (Table)                 | label:CAPA                          | Corrective/Preventive Actions.           |
-| Nonconformances (Table)       | label:Nonconformance                | Track deviations.                        |
-| Missing Label (Table)         | no:label -type:Development          | Classification completeness check.       |
-| All Issues (Table)            | *(no filter)*                       | Complete record view.                    |
+#### **5.3.2 Project Views**
 
----
+**Project → New View**
 
-### **5.3 Issue Types & Colors**
+| View                          | Type / Filter                       | Purpose                                 |
+| ----------------------------- | ----------------------------------- | --------------------------------------- |
+| Active (Table)                | status:"In Progress","In Test"      | Currently active issues                 |
+| QMS Actions (Table)           | label:"Management Review",Objective | Plan and track leadership actions       |
+| Changes (Table)               | label:"Change Request",Change       | Full lifecycle of changes               |
+| Development (Board)           | type:Development                    | Track QMS framework creation or updates |
+| Risks & Opportunities (Table) | label:Risk,Opportunity              | Risk-based thinking dashboard           |
+| Improvements (Table)          | label:Improvement                   | Continual improvement actions           |
+| Nonconformances (Table)       | label:Nonconformance                | Track deviations                        |
+| Audits (Table)                | label:Audit                         | Internal and external audits            |
+| CAPAs (Table)                 | label:CAPA                          | Corrective/Preventive Actions           |
+| All Issues (Table)            | *(no filter)*                       | Complete record view                    |
+
+#### **5.3.3 Project Workflows**
+
+Enable the following workflows:
+
+**Project → Workflows → Default Workflows**
+
+* Auto-add sub-issues to project
+* Auto-add to project
+* Auto-close issue
+* Item added to project → Set status: Backlog
+* Item closed
+
+### **5.4 Organization Settings**
+
+In the Floating Eye Software organization:
+
+#### **5.4.1 Labels**
+
+**Organization → Settings → Repository → General → Repository Labels**
+
+| Label             | Color   | Definition                                      |
+| ----------------- | ------- | ----------------------------------------------- |
+| Audit             | #0E8A16 | Internal/external audit records                 |
+| CAPA              | #B60205 | Corrective and preventive actions               |
+| Change            | #F9D71C | Implementation of a Change Request              |
+| Change Request    | #E4B400 | Proposed change for review and approval         |
+| Improvement       | #2EA44F | General improvement actions                     |
+| Management Review | #7057FF | MR records and outputs                          |
+| Nonconformance    | #D73A49 | Record of non-fulfilment of a requirement       |
+| Objective         | #0366D6 | Quality objectives and performance tracking     |
+| Opportunity       | #34D058 | Positive improvement opportunities              |
+| Risk              | #E36209 | Risk identification, evaluation, and mitigation |
+
+Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
+
+#### **5.4.2 Issue Types**
+
+**Organization → Settings → Planning → Issue Types**
 
 | Type            | Color  | Definition                                                          | Typical Use                                       |
 | --------------- | ------ | ------------------------------------------------------------------- | ------------------------------------------------- |
 | **Development** | BLUE   | Activities that create or improve products, processes, or systems.  | QMS framework setup, automation, template design. |
 | **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems. | CAPA, Audit, Objective, Risk, Management Review.  |
 
----
+#### **5.4.3 Actions & Logs**
 
-### **5.4 Label Scheme & Colors**
+**Organization → Settings → Actions → General**
 
-| Label             | Color   | Definition                                           |
-| ----------------- | ------- | ---------------------------------------------------- |
-| Audit             | #0E8A16 | Internal/external audit records                      |
-| CAPA              | #B60205 | Corrective and preventive actions                    |
-| Change            | #F9D71C | Implementation of a Change Request                   |
-| Change Request    | #E4B400 | Proposed QMS-level change needing review or approval |
-| Improvement       | #2EA44F | General improvement actions not requiring CAPA       |
-| Management Review | #7057FF | MR records and outputs                               |
-| Nonconformance    | #D73A49 | Record of non-fulfilment of a requirement            |
-| Objective         | #0366D6 | Quality objectives and performance tracking          |
-| Opportunity       | #34D058 | Positive improvement opportunities                   |
-| Risk              | #E36209 | Risk identification, evaluation, and mitigation      |
+* Artifact and log retention: 400 days (maximum limit)
+* Allow GitHub Actions to create and approve pull requests: Disabled
 
-Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
+**Organization → Settings → Logs → Audit Log**
 
----
-
-### **5.5 Branch Protection Rules**
-
-Apply the following configuration in:
-
-**Repository → Settings → Branches → Add Protection Rule → `main`**
-
-#### **5.5.1 Pull Request & Approval Requirements**
-
-| Setting                                                 | Required                                      | Rationale                                                            |
-| ------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------- |
-| Require a pull request before merging               | ✅                                             | Enforces controlled approval workflow                                |
-| Require approvals                                   | ⚠️ *Enabled if organization has ≥2 approvers* | GitHub limitation when single-person org                             |
-| Required number of approvals                        | 1                                         | Minimum viable QMS approval                                          |
-| Require review from CODEOWNERS                      | ✅ Required                                | Ensures approval by QMS approvers (Quality Manager / Top Management) |
-| Dismiss stale approvals when new commits are pushed | Recommended                               | Ensures final commit is reviewed                                     |
-| Require conversation resolution before merging      | Recommended                               | Required in Change-Control WI                                        |
-
-#### **5.5.2 Push Restrictions**
-
-| Rule                                           | Required                  | Notes                                         |
-| ---------------------------------------------- | ------------------------- | --------------------------------------------- |
-| Restrict who can push to matching branches | Enabled               | Enforcement mechanism for no-direct-commits   |
-| Allowed pushers                            | `qms-approvers` team only | Prevents bypass except through PR merges      |
-| Allow force pushes                         | ❌ Disabled                | Prevents rewriting of controlled history      |
-| Allow branch deletion                      | ❌ Disabled                | Controlled branch must not be deletable       |
-| Allow bypassing branch protection          | ❌ Disabled                | No exceptions allowed (per Change-Control WI) |
-
-You already have:
-
-✔ Require PRs
-✔ Require CODEOWNERS
-✔ No direct pushes
-✔ No bypass
-✔ No force pushes
-✔ Require conversation resolution
-
-Two more recommended settings:
-
-| Setting                                 | Reason                                                 |
-| --------------------------------------- | ------------------------------------------------------ |
-| ✔ Require linear history = Disabled | Allows merge commits, required for auditability        |
-| ✔ Require status checks = Optional  | If you add linters or markdown schema validation later |
-
-### **5.6 Merge Strategy Restrictions**
-
-**Settings → General → Pull Requests**
-
-Set:
-
-| Setting                   | Required     | Reason                                              |
-| ------------------------- | ------------ | --------------------------------------------------- |
-| ✔ Allow merge commits | Required | Preserves full audit trail                          |
-| ❌ Squash merging          | Disable  | Merges hide intermediate history                    |
-| ❌ Rebase merging          | Disable  | Rewrites commits; violates controlled recordkeeping |
-
-This matches the workflow validated in **GitHub-Pull-Test**.
+* Ensure the Audit Log is enabled.
 
 
-### **5.7 Repository Visibility & Access Control**
-
-You should set:
-
-| Setting                            | Required                       | Reason                                       |
-| ---------------------------------- | ------------------------------ | -------------------------------------------- |
-| Repository visibility: Private | Required                       | Ensures QMS confidentiality & draft control  |
-| Manage access using teams      | `qms-authors`, `qms-approvers` | Required for separation of duties            |
-| Admin bypass: disable          | Required                       | Prevents accidental override of QMS controls |
-| Restrict forking               | Recommended                    | Avoids uncontrolled clones of draft content  |
-
-### **5.8 Protected default branch**
-
-Mandatory:
-
-| Setting                    | Required    |
-| -------------------------- | ----------- |
-| Default branch = `main`    | Required    |
-| Lock other legacy branches | Recommended |
-
-### **5.9 Disable wiki & projects unless controlled**
-
-In **Settings → Features**:
-
-| Feature      | Required                              |
-| ------------ | ------------------------------------- |
-| Wiki     | OFF                                   |
-| Projects | Optional (you use org-level projects) |
-| Issues   | ON (required for QMS workflows)       |
-
-Wiki must be off because **wiki edits are not PR-controlled**.
-
-### **5.10 Actions / Workflows Security**
-
-
-#### **5.10.1 Enable Auto-Add to Project**
-
-   * In project settings, enable *Auto-add new issues* for the repository.
-   * Ensures all new issues are automatically added to the FLEY QMS board.
-
-#### **5.10.2 Set Default Column for New Items**
-
-   * Add a workflow rule:
-     ```
-     When: Item added to project  
-     Then: Set status to "Backlog"
-     ```
-   * Ensures every new issue starts in the Backlog column.
-
-#### **5.10.3 Reference:**
-
-   See GitHub’s official documentation for setup details and advanced options:
-   [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
-
-Even if you don’t use actions yet, set:
-
-| Setting                                                           | Required |
-| ----------------------------------------------------------------- | -------- |
-| Disable “Allow GitHub Actions to create or approve pull requests” | Required |
-| Disable “Allow GitHub Actions to bypass rules”                    | Required |
-
-This prevents automation from bypassing QMS approvals.
-
-### **5.11 Audit Log Availability (Org-level)**
-
-Not a repo setting, but required for compliance:
-
-✔ Ensure GitHub **Organization Audit Log** is enabled
-✔ Retain logs for minimum retention period (5 years typical for ISO; 2 for FDA)
-
-This is automatic for paid orgs.
-
----
-
-### **5.12 Establish the QMS Framework**
+### **5.5 Define the QMS Framework**
 
 | Document             | Purpose                                        |
 | -------------------- | ---------------------------------------------- |
@@ -277,13 +222,13 @@ This is automatic for paid orgs.
 | Process Map          | Shows process relationships.                   |
 | Quality Policy       | Declares company quality commitments.          |
 
-Tracked as **Development Issues**, closed upon PR approval.
+These are tracked as **Development Issues** and closed upon approval of the associated Pull Request.
 
 The formal approval and release of the **Quality Manual** marks the **official activation of the QMS**, signifying management’s commitment and the readiness of the system to enter operation under ISO 9001 principles.
 
 ---
 
-### **5.13 Integration with Other Repositories**
+### **5.6 Integration with Other Repositories**
 
 * `fley-qms` remains the QMS master record.
 * Each product repository (e.g., redwitch, snowplow) maintains its own development board.
@@ -292,7 +237,7 @@ The formal approval and release of the **Quality Manual** marks the **official a
 
 ---
 
-### **5.14 Backup and Export**
+### **5.7 Backup and Export**
 
 Regular exports safeguard QMS continuity and provide offline verification of controlled records in the event of repository loss or service disruption.
 
