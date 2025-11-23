@@ -2,8 +2,8 @@
 slug: GitHub-Change-Control
 revision: r2
 type: WI
-status: draft
-effective: null
+status: approved
+effective: 2025-11-23
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md
 ---
 
@@ -68,6 +68,19 @@ Create a new **branch** from the protected `main` branch:
 ```bash
 git checkout -b change/42-update-change-control
 ```
+<<<<<<< HEAD
+
+### **5.3 Implement the Change**
+
+Implement and test changes as needed.
+
+Commit to the change branch with a descriptive message referencing the Issue number:
+
+```bash
+git commit -m "Fixes #42 – Updated document identification process"
+```
+=======
+>>>>>>> main
 
 ### **5.3 Implement the Change**
 
@@ -79,7 +92,7 @@ Commit to the change branch with a descriptive message referencing the Issue num
 git commit -m "Fixes #42 – Updated document identification process"
 ```
 
-> Each commit referencing an Issue provides traceability and establishes a record of implementation activity.
+Each commit referencing an Issue provides traceability and establishes a record of implementation activity.
 
 ---
 
@@ -99,6 +112,7 @@ The PR serves as the **formal review and approval record** for the change.
 
 ### **5.5 Review and Approval**
 
+<<<<<<< HEAD
 Reviewers evaluate the PR for:
 * Correctness and completeness
 * Compliance with applicable WIs, SOPs, and templates
@@ -116,6 +130,40 @@ Required reviewers are designated in the repository’s `CODEOWNERS` file.
 GitHub approval actions constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
 
 Once all required approvals are complete, the PR is ready for merge.
+=======
+All Pull Requests (PRs) must be reviewed for:
+
+* Correctness and completeness
+* Compliance with applicable WIs, SOPs, and templates
+* Proper metadata and revision control
+* Alignment with the originating Change Request (CR) Issue
+
+Reviewers provide comments or approvals in GitHub using the review tools (**Approve**, **Comment**, **Request changes**). Required reviewers are designated in the repository’s `CODEOWNERS` file.
+
+GitHub review actions and comments constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
+
+A PR is ready for merge once all required approvals are complete.
+
+#### **5.5.1 Standard Workflow (Multiple Reviewers)**
+
+For organizations with two or more personnel:
+
+* Reviewers must use GitHub’s **“Approve”** action.
+* GitHub automatically records the approver’s identity and timestamp.
+* These actions serve as the formal electronic approval.
+
+#### **5.5.2 Single-Approver Workflow**
+
+When the PR author is also the only reviewer, GitHub disables the **“Approve”** action.
+
+To maintain compliant approval records:
+
+1. The approver must add a PR comment containing an **explicit approval phrase**, such as:
+
+    **"Approved"** or **"PR Approved"**
+
+2. GitHub automatically records the approver’s identity and timestamp, which together with the approval phrase constitute the electronic approval.
+>>>>>>> main
 
 ---
 
@@ -136,6 +184,7 @@ git add .
 git commit -m "Finalize approval metadata (CR #42)"
 git push
 ```
+<<<<<<< HEAD
 
 ---
 
@@ -174,6 +223,46 @@ Tags:
 
 ---
 
+=======
+
+---
+
+### **5.7 Merge and Release**
+
+CCC verifies:
+
+* Proper CR linkage
+* Required approvals
+* Metadata correctness
+* All status checks passed (if configured)
+
+Then merges via PR.
+
+Merge constitutes **formal release approval**.
+
+---
+
+### **5.8 Create the Record Tag**
+
+After merge, create the Record Tag(s) for each controlled document updated.
+
+```bash
+git tag GitHub-Change-Control_r2
+git push origin GitHub-Change-Control_r2
+```
+
+Tags:
+
+* Must match slug + revision
+* Are immutable
+* Represent the effective revision
+* `main` always reflects the current approved version
+
+The PR, merge commit, and associated tag together form the complete electronic approval and effective-date record.
+
+---
+
+>>>>>>> main
 ### **5.9 Close-Out**
 
 * Verify the CR Issue is closed
@@ -201,7 +290,11 @@ Tags:
    objective/establish-metrics
    ```
 
+<<<<<<< HEAD
 3. After merge, local branches may be deleted to maintain repository hygiene. Remote branches are retained indefinitely for traceability. All history remains traceable in Git logs and the closed PR.
+=======
+3. After merge, local branches may be deleted. Remote branches may be retained or deleted per organizational practice. All history remains traceable in Git logs and the closed PR.
+>>>>>>> main
 
 ---
 
@@ -233,5 +326,3 @@ Tags:
 | Commits                 | Implementation history and traceability                    | Git repository      | Indefinite |
 | Tags                    | Approved and effective revision identifiers                | GitHub              | Indefinite |
 | Branch Protection Rules | Configuration record of repository controls                | Repository Settings | Indefinite |
-
-> All GitHub metadata and configuration serve as the official QMS record of change control and approval.

@@ -1,12 +1,3 @@
-<!--
-slug: TPL-GH-Pull-Request
-revision: r2
-type: TPL
-status: draft
-effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/pull_request_template.md
--->
-
 ## Pull Request
 
 **Linked Change Request Issue**  

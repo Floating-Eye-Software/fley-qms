@@ -1,13 +1,11 @@
 ---
-# FLEY QMS Header
-slug: TPL-GH-Change-Request
-revision: r2
-type: TPL
-status: draft
-effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/change-request.md
+# slug: TPL-GH-Change-Request
+# revision: r2
+# type: TPL
+# status: approved
+# effective: 2025-11-19
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/change-request.md
 
-# GitHub Header
 name: Change Request
 about: Request for a change to QMS processes, systems, or documentation
 title: "CR: [Brief description]"

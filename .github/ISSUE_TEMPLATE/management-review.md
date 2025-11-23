@@ -1,13 +1,11 @@
 ---
-# FLEY QMS Header
-slug: TPL-GH-Management-Review
-revision: r2
-type: TPL
-status: draft
-effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/management-review.md
+# slug: TPL-GH-Management-Review
+# revision: r2
+# type: TPL
+# status: approved
+# effective: 2025-11-19
+# controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/management-review.md
 
-# GitHub Header
 name: Management Review
 about: Conduct a QMS Management Review per ISO 9001 §9.3
 title: "MR: [Brief description]"
