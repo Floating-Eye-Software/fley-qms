@@ -79,7 +79,7 @@ Commit to the change branch with a descriptive message referencing the Issue num
 git commit -m "Fixes #42 – Updated document identification process"
 ```
 
-> Each commit referencing an Issue provides traceability and establishes a record of implementation activity.
+Each commit referencing an Issue provides traceability and establishes a record of implementation activity.
 
 ---
 
@@ -99,23 +99,38 @@ The PR serves as the **formal review and approval record** for the change.
 
 ### **5.5 Review and Approval**
 
-Reviewers evaluate the PR for:
+All Pull Requests (PRs) must be reviewed for:
+
 * Correctness and completeness
 * Compliance with applicable WIs, SOPs, and templates
 * Proper metadata and revision control
-* Alignment with the CR Issue scope
+* Alignment with the originating Change Request (CR) Issue
 
-Reviewers provide comments or approvals directly in GitHub using the review tools:
+Reviewers provide comments or approvals in GitHub using the review tools (**Approve**, **Comment**, **Request changes**). Required reviewers are designated in the repository’s `CODEOWNERS` file.
 
-* **Approve**
-* **Comment**
-* **Request changes**
+GitHub review actions and comments constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
 
-Required reviewers are designated in the repository’s `CODEOWNERS` file.
+A PR is ready for merge once all required approvals are complete.
 
-GitHub approval actions constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
+#### **5.5.1 Standard Workflow (Multiple Reviewers)**
 
-Once all required approvals are complete, the PR is ready for merge.
+For organizations with two or more personnel:
+
+* Reviewers must use GitHub’s **“Approve”** action.
+* GitHub automatically records the approver’s identity and timestamp.
+* These actions serve as the formal electronic approval.
+
+#### **5.5.2 Single-Approver Workflow**
+
+When the PR author is also the only reviewer, GitHub disables the **“Approve”** action.
+
+To maintain compliant approval records:
+
+1. The approver must add a PR comment containing an **explicit approval phrase**, such as:
+
+    **"Approved"** or **"PR Approved"**
+
+2. GitHub automatically records the approver’s identity and timestamp, which together with the approval phrase constitute the electronic approval.
 
 ---
 
@@ -146,7 +161,7 @@ CCC verifies:
 * Proper CR linkage
 * Required approvals
 * Metadata correctness
-* All checks passed
+* All status checks passed (if configured)
 
 Then merges via PR.
 
@@ -170,7 +185,7 @@ Tags:
 * Represent the effective revision
 * `main` always reflects the current approved version
 
-> The PR, merge commit, and associated tag together form the complete electronic approval and effective-date record.
+The PR, merge commit, and associated tag together form the complete electronic approval and effective-date record.
 
 ---
 
@@ -201,7 +216,7 @@ Tags:
    objective/establish-metrics
    ```
 
-3. After merge, local branches may be deleted to maintain repository hygiene. Remote branches are retained indefinitely for traceability. All history remains traceable in Git logs and the closed PR.
+3. After merge, local branches may be deleted. Remote branches may be retained or deleted per organizational practice. All history remains traceable in Git logs and the closed PR.
 
 ---
 
@@ -233,5 +248,3 @@ Tags:
 | Commits                 | Implementation history and traceability                    | Git repository      | Indefinite |
 | Tags                    | Approved and effective revision identifiers                | GitHub              | Indefinite |
 | Branch Protection Rules | Configuration record of repository controls                | Repository Settings | Indefinite |
-
-> All GitHub metadata and configuration serve as the official QMS record of change control and approval.
