@@ -2,8 +2,8 @@
 slug: Change-Control-SOP
 revision: r2
 type: SOP
-status: draft
-effective: null
+status: approved
+effective: 2025-11-23
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Change-Control-SOP.md
 ---
 

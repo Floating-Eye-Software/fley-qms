@@ -2,8 +2,8 @@
 slug: TPL-GH-Pull-Request
 revision: r2
 type: TPL
-status: draft
-effective: null
+status: approved
+effective: 2025-11-23
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/TPL-GH-Pull-Request.md
 ---
 
