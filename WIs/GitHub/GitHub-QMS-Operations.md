@@ -1,9 +1,9 @@
 ---
 slug: GitHub-QMS-Operations
-revision: r2
+revision: r3
 type: WI
-status: approved
-effective: 2025-11-14
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Operations.md
 ---
 
@@ -52,7 +52,7 @@ Applies to all QMS-related records and activities maintained in GitHub repositor
 
 ---
 
-## **5. QMS Operations in GitHub**
+## **5. Procedure**
 
 Day-to-day QMS activity is driven through GitHub Issues, Projects, and Pull Requests. These tools together ensure that every quality record - whether a Risk, CAPA, or Audit - is **visible, traceable, and closed through a controlled workflow**.
 
@@ -89,25 +89,25 @@ Backlog (GREY) → In Progress (GREEN) → In Test (YELLOW) → Closed (BLUE)
 
 | Type            | Definition                                                  | Use                                    |
 | --------------- | ----------------------------------------------------------- | -------------------------------------- |
-| **Development** | Creation or improvement of products, processes, or systems. | New document, automation, or template. |
-| **Operations**  | Execution or monitoring of QMS processes and records.       | CAPA, Risk, Audit, Objective, MR.      |
+| **Development** | Activities that create or improve products, processes, or systems. | QMS framework setup, automation, template design. |
+| **Operations**  | Activities that manage, maintain, or monitor processes and systems. |CAPA, Audit, Objective, Risk, Management Review.   |
 
 ---
 
 ### **5.4 QMS Label Definitions**
 
-| Label             | Definition                                | Typical Usage                       |
-| ----------------- | ----------------------------------------- | ----------------------------------- |
-| Audit             | Record of internal/external audit.        | Audit plan or report.               |
-| CAPA              | Corrective or Preventive Action.          | Linked to NC or Risk.               |
-| Change Request    | Proposed controlled change.               | Requesting a QMS update.            |
-| Change            | Implementation of approved change.        | PR merged for controlled content.   |
-| Improvement       | Continual improvement initiative.         | Minor optimizations.                |
-| Management Review | QMS review meeting record.                | Quarterly MR.                       |
-| Nonconformance    | Requirement not fulfilled.                | Deviations or failures.             |
-| Objective         | Quality KPI or goal.                      | Planning and review.                |
-| Opportunity       | Positive potential for improvement.       | Linked to MR or Risk.               |
-| Risk              | Potential negative impact or uncertainty. | Risk identification and mitigation. |
+| Label             | | Definition                                    |
+| ----------------- | ----------------------------------------------- |
+| Audit             | Internal/external audit records                 |
+| CAPA              | Corrective and preventive actions               |
+| Change Request    | Proposed change for review and approval         |
+| Change            | Implementation of a Change Request              |
+| Improvement       | General improvement actions                     |
+| Management Review | MR records and outputs                          |
+| Nonconformance    | Record of non-fulfilment of a requirement       |
+| Objective         | Quality objectives and performance tracking     |
+| Opportunity       | Positive improvement opportunities              |
+| Risk              | Risk identification, evaluation, and mitigation |
 
 ---
 
