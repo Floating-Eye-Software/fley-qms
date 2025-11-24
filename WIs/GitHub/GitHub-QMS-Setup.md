@@ -210,17 +210,18 @@ In the Floating Eye Software organization:
 
 **Organization → Settings → Repository → General → Repository Labels**
 
-| Label             | Color   | Definition                                      |
-| ----------------- | ------- | ----------------------------------------------- |
-| Audit             | #0E8A16 | Internal/external audit records                 |
-| CAPA              | #B60205 | Corrective and preventive actions               |
-| Change            | #F9D71C | Implementation of a Change Request              |
-| Change Request    | #E4B400 | Proposed change for review and approval         |
-| Improvement       | #2EA44F | General improvement actions                     |
-| Management Review | #7057FF | MR records and outputs                          |
-| Nonconformance    | #D73A49 | Record of non-fulfilment of a requirement       |
-| Objective         | #0366D6 | Quality objectives and performance tracking     |
-| Opportunity       | #34D058 | Positive improvement opportunities              |
+| Label             | Color   | Definition                                    |
+| ----------------- | ------- | --------------------------------------------- |
+| Audit             | #0E8A16 | Internal/external audit records               |
+| CAPA              | #B60205 | Corrective and preventive actions             |
+| Change            | #F9D71C | Implementation of a Change Request            |
+| Change Request    | #E4B400 | Proposed change for review and approval       |
+| Improvement       | #2EA44F | General improvement actions                   |
+| Management Review | #7057FF | MR records and outputs                        |
+| Nonconformance    | #D73A49 | Record of non-fulfilment of a requirement     |
+| Objective         | #0366D6 | Quality objectives and performance tracking   |
+| Opportunity       | #34D058 | Positive improvement opportunities            |
+| Plan              | #4C6EF5 | Coordination of work, milestones, and dependencies |
 | Risk              | #E36209 | Risk identification, evaluation, and mitigation |
 
 Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
@@ -229,10 +230,11 @@ Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
 
 **Organization → Settings → Planning → Issue Types**
 
-| Type            | Color  | Definition                                                          | Typical Use                                       |
-| --------------- | ------ | ------------------------------------------------------------------- | ------------------------------------------------- |
-| **Development** | BLUE   | Activities that create or improve products, processes, or systems.  | QMS framework setup, automation, template design. |
-| **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems. | CAPA, Audit, Objective, Risk, Management Review.  |
+| Type            | Color  | Definition                                                          | Typical Use                                 |
+| --------------- | ------ | ------------------------------------------------------------------ | -------------------------------------------------- |
+| **Development** | BLUE   | Activities that create or improve products, processes, or systems  | QMS framework setup, automation, template design. |
+| **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems | CAPA, Audit, Objective, Risk                     |
+| **Plan**        | GREEN | Records that coordinate work and execution of issues | Quality Plan, Milestone(s), Management Review                   |
 
 #### **5.4.3 Teams**
 
