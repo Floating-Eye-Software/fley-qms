@@ -75,6 +75,8 @@ If no triggering event occurs within a twelve (12) month period, a Management Re
 Each review shall consider, as applicable:
 
 1. Status of actions from previous review cycles.
+ * **Critical MR outputs** (child issues that must be completed for MR closure)
+ * **Long-term follow-ups** (tracked in milestone; reviewed in later MR cycle when actions completed)
 2. Changes in external or internal context relevant to the QMS.
 3. Performance data and metrics (objectives, KPIs, trend analysis).
 4. Results of audits and evaluations of compliance.
@@ -84,16 +86,13 @@ Each review shall consider, as applicable:
 8. Process and product performance, including incidents or nonconformities.
 9. Emerging opportunities for improvement or innovation.
 
-Inputs may be compiled through reports, dashboards, or linked records within the organization’s QMS tools.
 The Quality Manager shall verify that all required inputs listed in ISO 9001:2015 §9.3.2 are complete, current, and supported by evidence before the review begins.
-Customer satisfaction and feedback data shall include quantitative trends from the **Quality Objectives Register** or related customer metrics as defined in the **Quality-Planning-SOP**.
 
 ### **6.3 Conducting the Review**
 
 1. **Preparation** – The Quality Manager consolidates inputs and circulates a draft agenda.
 2. **Discussion and Evaluation** – Top Management reviews each input, assesses overall QMS health, and identifies needed changes.
 3. **Decision Recording** – Outcomes are captured in a *Management Review Record* noting:
-
    * Decisions made
    * Actions assigned
    * Responsible owners and dependencies
@@ -104,6 +103,18 @@ Customer satisfaction and feedback data shall include quantitative trends from t
 
 Management Review shall identify needs and opportunities for improvement, including actions related to process performance, customer satisfaction, resource adequacy, risk and opportunity status, and the effectiveness of previously implemented changes. These outputs form part of the organization’s continual improvement process.
 
+Management Review outputs are categorized into:
+
+1. **Critical MR Outputs (Child Issues)**
+   * Actions directly tied to MR decisions and strategic alignment.
+   * **Must be completed before the MR issue can be closed.**
+   * Recorded as **child issues** in GitHub for traceability and verification.
+
+2. **Long-Term Follow-Up Actions (Milestone)**
+   * Actions that are important but may extend beyond the MR cycle.
+   * **Do not block MR closure**.
+   * Tracked using a dedicated milestone or label and reviewed during the next MR cycle.
+
 Outputs shall include:
 
 * Decisions and actions related to:
@@ -112,17 +123,22 @@ Outputs shall include:
   * Resource and competence needs
   * Risk mitigation or opportunity exploitation
 * Confirmation of QMS adequacy and continued alignment with organizational direction
-* Identification of follow-up items for the next review cycle
+* Identification of follow-up items for the next review cycle, including critical outputs and long-term follow-ups
 
-Each output is entered into the **Action-Management** system for tracking and verification of effectiveness.
+Each output is entered into the project tracking system for tracking and verification.
 
 ### **6.5 Follow-Up and Effectiveness Verification**
 
-1. Each action from the Management Review is tracked until verified effective.
-2. Verification confirms that the intended result has been achieved and sustained.
-3. Any incomplete or partially effective actions are carried forward into the next review cycle.
-4. Evidence of completion (plans, reports, metrics) is linked to the governing review record.
-5. Verification should occur before the next scheduled or triggered Management Review to ensure closure timeliness.
+1. **Critical MR Outputs**
+   * Each child issue must be tracked until verified effective.
+   * Verification confirms that the intended result has been achieved and sustained.
+   * MR issue **cannot be closed** until all critical outputs are completed or dispositioned.
+2. **Long-Term Follow-Up Actions**
+   * Verified during the **next MR cycle**.
+   * Completion is not required for closure of the current MR issue.
+   * Evidence of completion (plans, reports, metrics) is linked to the governing issue.
+3. Any incomplete or partially effective actions, critical or long-term, are carried forward and referenced in the next MR cycle.
+4. Verification and traceability records are maintained in the QMS repository and linked to the MR record for audit purposes.
 
 ---
 

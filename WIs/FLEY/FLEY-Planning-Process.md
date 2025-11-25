@@ -1,6 +1,7 @@
-# **Overview of the FLEY Planning Process**
+# **FLEY Planning Process**
 
-The FLEY Planning Process defines how the organization plans, coordinates, and verifies quality-related activities across projects, programs, and organizational initiatives. It ensures traceability, structured execution, and alignment with ISO 9001:2015 planning and management requirements.
+The FLEY Planning Process defines how the organization plans, sequences, and verifies quality-related activities across projects, programs, and Management Review (MR) cycles. It uses a **Plan Issue type** in GitHub for Plans, Milestone Phases, and MR Cycles, supported by Milestones and Issue Dependencies. This ensures traceability, structured execution, and alignment with ISO 9001:2015.
+
 
 ```mermaid
 flowchart TD
@@ -26,68 +27,158 @@ flowchart TD
     style J fill:#ccf,stroke:#333,stroke-width:1px
 ```
 
-* **Controlled Quality Plan (Document Control):** The formal plan, optional for smaller initiatives.
-* **Plan Issue / Execution Record:** The GitHub (or project tracking tool) record that coordinates the work.
-* **Objectives:** The measurable goals defined in the plan.
-* **Milestones / Stage Gates:** Checkpoints grouping work or phases.
-* **Linked Actions / Issues:** Tasks or activities tied to the milestones.
-* **Dependencies:** Defines sequencing and blocking relationships between actions.
-* **Traceability Links:** Connects to relevant SOPs, documents, or standards.
-* **Verification of Effectiveness (VoE):** Confirms all actions and objectives were completed, and feeds residual risks and lessons learned into future cycles.
-* **Management Review Inputs:** Summarized VoE results contribute to leadership review.
+---
+
+## **1. Core Components**
+
+### **Quality Plan (Controlled Document)**
+
+A controlled document created only when required (regulated or high-impact work). It defines objectives, standards, roles, processes, and verification methods.
+
+### **Plan Issue**
+
+A GitHub Issue used for **every planning activity**, including:
+
+* Projects / initiatives
+* Milestone phases
+* MR cycles
+
+Each Plan Issue contains:
+
+* Objectives
+* Milestones
+* Linked actions
+* Dependencies (issue → issue)
+* Traceability to controlled documents
+* Verification of Effectiveness (VoE)
+
+Plan Issues appear on Roadmaps and support sequencing.
 
 ---
 
-## **1. Key Concepts**
+## **2. Milestones and Milestone Phase Issues**
 
-* **Quality Plan (Controlled Document):**
-  A formal document maintained in Document Control that defines objectives, applicable standards, quality processes, key roles, metrics, and verification methods. Controlled plans are required for regulated or high-impact initiatives, but not every planning activity requires a formal document.
+### **Milestones**
 
-* **Execution Record (Plan Issue):**
-  A record in the project tracking tool (e.g., GitHub Issue) used to coordinate actions, monitor progress, and maintain traceability. Every planning activity should have an execution record, even if a controlled document does not exist. This ensures all work is visible, auditable, and linked to objectives.
+Used to group work into phases.
+Milestones **cannot** have dependencies.
 
-* **Objectives:**
-  Defined measurable goals of the Plan, replacing the traditional “Scope” section in execution records. Objectives guide actions, milestones, and verification.
+### **Milestone Phase Issues (Plan Issues used as phases)**
 
-* **Milestones / Stage Gates:**
-  Key checkpoints or phases within the Plan used to organize and group work. Execution records link to milestones, which can represent deliverables, project phases, or Management Review cycles.
+A Plan Issue that represents a milestone so it can:
 
-* **Dependencies:**
-  Relationships between actions, Plans, or milestones that determine sequencing or blocking conditions. Dependencies ensure proper execution order and facilitate risk management.
+* Participate in GitHub dependencies
+* Sequence phases
+* Block/unblock other Plans
+* Roll up actions
+* Trigger Management Review cycles
 
----
+When a Milestone Phase Issue closes, the corresponding milestone may be completed (if configured).
 
-## **2. How the Process Works**
-
-1. **Plan Creation:**
-
-   * Draft a Plan in Document Control if required.
-   * Create a corresponding **Plan Issue** (execution record) in the project tracking tool.
-   * Define objectives, key activities, milestones, and dependencies in the execution record.
-
-2. **Action Coordination:**
-
-   * Link all associated actions, issues, or deliverables to the Plan Issue.
-   * Use milestones to organize work into phases or review cycles.
-   * Document dependencies between actions to ensure correct sequencing.
-
-3. **Monitoring & Traceability:**
-
-   * Track progress of actions and milestone completion via the execution record.
-   * Maintain traceability to the Plan, controlled documents, or other QMS records.
-
-4. **Verification of Effectiveness (VoE):**
-
-   * Confirm that all Plan objectives and linked actions are completed or appropriately dispositioned.
-   * Record VoE results in the execution record and reference the controlled document if applicable.
-   * Capture residual risks, lessons learned, and follow-up actions to inform future planning cycles.
+**Hierarchy:**
+**Actions → Milestone Phase Issues → Milestones → Plan Issues**
 
 ---
 
-## **3. Benefits**
+## **3. Actions**
 
-* Provides a **consistent, auditable framework** for planning across all organizational levels.
-* Ensures **visibility and traceability** of actions, milestones, and dependencies.
-* Supports both **controlled Quality Plans** and lightweight execution records.
-* Facilitates **Management Review preparation** by linking MR cycles to execution records and milestones.
-* Enables structured evaluation of plan effectiveness and continual improvement.
+Standard GitHub Issues connected to:
+
+* A Plan Issue
+* A Milestone
+* Optionally, a Milestone Phase Issue (for sequencing)
+
+Actions inherit traceability and sequencing from the Plan Issue they belong to.
+
+---
+
+## **4. Dependencies**
+
+GitHub only supports **issue → issue**, so the sequencing model is:
+
+* Plan Issue → Plan Issue
+* Plan Issue → Milestone Phase Issue
+* Milestone Phase Issue → Milestone Phase Issue
+* Actions → Actions / Phase Issues
+
+This builds a complete, GitHub-native sequencing structure across plans, phases, and MR cycles.
+
+---
+
+## **5. Management Review (MR) Cycle Plan Issue**
+
+Each MR cycle is modeled as a **Plan Issue**.
+
+MR cycles:
+
+* Receive VoE outputs from Plans
+* Carry forward residual risks and lessons learned
+* Can be **automatically unblocked** when a triggering Milestone Phase Issue closes
+  (e.g., “Audit-Ready QMS” → unblocks next MR cycle)
+
+This creates predictable, automated MR rollovers.
+
+---
+
+## **6. Verification of Effectiveness (VoE)**
+
+Performed at completion of a:
+
+* Plan
+* Milestone Phase
+* MR cycle
+
+VoE verifies that:
+
+* Objectives were met
+* Actions were completed or dispositioned
+* Traceability remains intact
+* Residual risks and lessons learned are documented
+
+VoE results feed directly into MR cycles.
+
+---
+
+## **7. Process Overview**
+
+### **1. Plan Creation**
+
+1. Create a controlled Quality Plan if required.
+2. Create a Plan Issue to manage execution.
+3. Define objectives, milestones, and dependencies.
+4. Add Milestone Phase Issues when sequencing is needed or when MR cycles depend on milestone completion.
+
+### **2. Action Coordination**
+
+* Link actions to the Plan Issue.
+* Assign actions to milestones.
+* Use Milestone Phase Issues to add dependency capabilities to milestones.
+
+### **3. Monitoring & Traceability**
+
+* Roadmaps show Plan sequencing via dependencies.
+* Actions roll up into phases → milestones → Plans → MR cycles.
+* Traceability links connect Plans to SOPs, standards, or controlled documents.
+
+### **4. Management Review Integration**
+
+* Each MR cycle is a Plan Issue.
+* VoE outputs feed into MR cycle Plans.
+* MR cycles can be blocked until a triggering Milestone Phase Issue closes.
+
+### **5. Verification of Effectiveness**
+
+* Confirms objectives and actions are completed.
+* Identifies risks and lessons learned.
+* Closes the loop between planning, execution, review, and improvement.
+
+---
+
+## **8. Benefits**
+
+* One simplified issue type for Plans, Phases, and MR cycles
+* Clean, GitHub-native execution using Issues, Milestones, Dependencies, Roadmaps
+* Automatic sequencing of phases and MR cycles
+* Consistent, auditable planning aligned with ISO 9001
+* Clear hierarchical roll-up from actions → Plans → MR cycles
+* Strong traceability and continuous improvement
