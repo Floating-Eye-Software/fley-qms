@@ -10,7 +10,7 @@ name: Plan
 about: Record that coordinates work, milestones, and dependencies
 title: "Plan: [Brief description]"
 labels: ["Plan"]
-type: Plan
+type: Planning
 ---
 
 ## Plan

@@ -1,9 +1,9 @@
 ---
 slug: GitHub-QMS-Setup
-revision: r3
+revision: r4
 type: WI
-status: approved
-effective: 2025-11-23
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Setup.md
 ---
 
@@ -173,6 +173,12 @@ Backlog → In Progress → In Test → Closed
 | In Test     | YELLOW | This is being verified or validated |
 | Closed      | BLUE   | This has been completed             |
 
+**Project → Settings → Custom Fields → New Field**
+
+Create the following fields:
+ * Field name: Start, Field type: Date
+ * Field name: Finish, Field type: Date
+
 #### **5.3.2 Project Views**
 
 **Project → New View**
@@ -189,6 +195,7 @@ Backlog → In Progress → In Test → Closed
 | Audits (Table)                | label:Audit                         | Internal and external audits            |
 | CAPAs (Table)                 | label:CAPA                          | Corrective/Preventive Actions           |
 | All Issues (Table)            | *(no filter)*                       | Complete record view                    |
+| Timeline (Roadmap)            | type:Planning                       | Calendar view                           |
 
 #### **5.3.3 Project Workflows**
 
@@ -233,8 +240,8 @@ Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
 | Type            | Color  | Definition                                                          | Typical Use                                 |
 | --------------- | ------ | ------------------------------------------------------------------ | -------------------------------------------------- |
 | **Development** | BLUE   | Activities that create or improve products, processes, or systems  | QMS framework setup, automation, template design. |
-| **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems | CAPA, Audit, Objective, Risk                     |
-| **Plan**        | GREEN | Records that coordinate work and execution of issues | Quality Plan, Milestone(s), Management Review                   |
+| **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems | CAPA, Audit, Objective, Risk  |
+| **Planning**    | GREEN | Activities that define and coordinate work to achieve objectives    | Quality Plan, Milestone, Management Review |
 
 #### **5.4.3 Teams**
 

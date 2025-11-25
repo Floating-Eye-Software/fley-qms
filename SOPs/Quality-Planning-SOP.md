@@ -34,6 +34,8 @@ Applies to all planning activities related to the QMS, including risk and opport
 * **Risk:** The effect of uncertainty that may impact conformity of products/services or customer satisfaction.
 * **Opportunity:** A favorable situation that may enhance performance, customer satisfaction, or efficiency.
 * **Quality Objectives:** Measurable goals consistent with the Quality Policy.
+* **Planning Record:** A record that defines the intended objectives, activities, and verification approach for a planned initiative. This may be a formal Quality Plan document or an execution record maintained in the project tracking tool.
+* **Execution Record:** A record maintained in the project tracking tool used to coordinate actions, scheduling, milestones, dependencies, and verification of completion for a planning activity.
 
 ---
 
@@ -129,5 +131,6 @@ Results from effectiveness verification shall serve as evidence of leadership ac
 * Risk & Opportunity Register
 * Quality Objectives Register
 * Change Records
+* Execution Records
 * Management Review Records (decisions, actions, policy updates)
 * Effectiveness verification (within Plan or Issue)

@@ -1,9 +1,9 @@
 ---
 slug: FLEY-Action-Management
-revision: r3
+revision: r4
 type: WI
-status: approved
-effective: 2025-11-14
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md
 ---
 
@@ -56,7 +56,8 @@ This WI ensures that:
 | **Term**                         | **Definition**                                                                                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **Milestone**                    | A GitHub object used to group related Issues or Pull Requests representing a defined phase, cycle, or objective within the QMS. |
-| **Management Review (MR) Issue** | A GitHub Issue that represents a formal Management Review event, documenting decisions and outcomes.                            |
+| **Planning Issue**               | A GitHub Issue that defines objectives, actions, and verification criteria.
+| **Management Review (MR) Issue** | A Planning Issue that represents a formal Management Review event, documenting decisions and outcomes.                            |
 | **MR Milestone**                 | A milestone representing the active Management Review Cycle — the period between one MR and the next.                           |
 | **Dependency**                   | A defined relationship between Issues, Plans, or Milestones indicating that one item blocks or triggers another.                |
 | **Cycle Trigger**                | A condition or event (e.g., audit completion, major project closure) that initiates a new MR Cycle.                             |
@@ -82,14 +83,15 @@ This WI ensures that:
 All actions fall under one of four tiers of control:
 
 | Tier  | Governance Level | Required Artifact          | Typical Triggers                             | Record Location         |
-| ----- | ---------------- | -------------------------- | -------------------------------------------- | ----------------------- |
-| **1** | Issue Only       | GitHub Issue               | Minor or routine QMS task                    | FLEY QMS Board          |
-| **2** | Plan             | Quality Plan               | New initiative or quality improvement effort | `/Plans/`               |
-| **3** | Project          | Project Quality Plan (PQP) | Formal project requiring defined governance  | `/Plans/<Project>/`     |
-| **4** | Design Control   | Design Control Plan (DCP)  | Regulated design/development activities      | `/Plans/<Project>/DCP/` |
+| ----- | ---------------- | ----------------------------- | -------------------------------------------- | ----------------------- |
+| **1** | Issue Only       | GitHub Issue                  | Minor or routine QMS task                    | FLEY QMS Board          |
+| **2** | Plan             | Quality Plan / Planning Issue | New initiative or quality improvement effort | `/Plans/`               |
+| **3** | Project          | Project Quality Plan (PQP)    | Formal project requiring defined governance  | `/Plans/<Project>/`     |
+| **4** | Design Control   | Design Control Plan (DCP)     | Regulated design/development activities      | `/Plans/<Project>/DCP/` |
 
+- Execution of Tier 2 Plans is coordinated through Planning Issues.
 - Tiers 3-4 follow additional procedures under GitHub-Project-Management.
-- Management Review outputs are generally tracked as Issues under a milestone representing the MR cycle.
+- Management Review outputs are tracked as Issues under a milestone representing the MR cycle.
 - Sub-issues may be created under Objectives or Improvements for detailed actionable tasks.
 
 ---
@@ -122,6 +124,12 @@ All actions fall under one of four tiers of control:
 3. Submit the Plan for **Quality Manager approval**.
 4. Create linked Issues for each deliverable and group them into **Milestones**.
 5. Track progress on the **FLEY QMS Board** or dedicated project view.
+
+#### **6.3.1 — Execution Records for Plans**
+
+A formal Quality Plan document may exist when required by scope or regulatory need, but is not mandatory for all Plans. Each Quality Plan shall have a corresponding Planning Issue in GitHub.
+
+When a Quality Plan document exists, it shall be referenced in the Planning Issue. When no formal document is required, the Planning Issue itself serves as the planning artifact.
 
 ---
 
