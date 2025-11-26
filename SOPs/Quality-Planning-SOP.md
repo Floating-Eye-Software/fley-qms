@@ -9,128 +9,174 @@ controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/S
 
 # **SOP - Quality Planning**
 
-### **1. Purpose**
+## **1. Purpose**
 
 To define the process by which the organization plans its Quality Management System (QMS), including the management of risks, opportunities, quality objectives, and changes, in accordance with ISO 9001:2015 Clause 6.
 
 ---
 
-### **2. Scope**
+## **2. Scope**
 
-Applies to all planning activities related to the QMS, including risk and opportunity management, establishment of quality objectives, and control of planned changes.
+This procedure applies to all planning activities related to the QMS, including:
+
+* Risk and opportunity management
+* Establishment and monitoring of quality objectives
+* Planning and controlling changes
+* Planning activities associated with projects, processes, or improvements that may affect product/service conformity or customer satisfaction
+
+Platform-specific workflows, templates, and execution methods are documented separately in Work Instructions (WIs).
 
 ---
 
-### **3. References**
+## **3. References**
 
-* ISO 9001:2015 § 6.3
+* ISO 9001:2015 §6.1, §6.2, §6.3
 * SOP – Risk and Opportunity Management
-* TPL - Quality-Plan-Template
+* SOP – Change Control
+* SOP – Management Review
+* TPL – Quality Plan Template
 
 ---
 
-### **4. Definitions**
+## **4. Definitions**
 
-* **Risk:** The effect of uncertainty that may impact conformity of products/services or customer satisfaction.
-* **Opportunity:** A favorable situation that may enhance performance, customer satisfaction, or efficiency.
-* **Quality Objectives:** Measurable goals consistent with the Quality Policy.
-* **Planning Record:** A record that defines the intended objectives, activities, and verification approach for a planned initiative. This may be a formal Quality Plan document or an execution record maintained in the project tracking tool.
-* **Execution Record:** A record maintained in the project tracking tool used to coordinate actions, scheduling, milestones, dependencies, and verification of completion for a planning activity.
+**Plan:**
+A documented set of intended activities, responsibilities, resources, risks, opportunities, and objectives required to achieve a desired outcome within the QMS. Plans may take the form of project plans, process plans, improvement plans, or other documented planning mechanisms defined in Work Instructions.
+
+**Risk:**
+The effect of uncertainty that may impact conformity of products/services or customer satisfaction.
+
+**Opportunity:**
+A favorable situation that may enhance performance, customer satisfaction, or efficiency.
+
+**Quality Objectives:**
+Measurable objectives consistent with the Quality Policy and relevant to the achievement of conformity and customer satisfaction.
 
 ---
 
 ## **5. Responsibilities and Authorities**
 
-| **Role**            | **Responsibilities**                                                                                                                                           | **Authorities**                                                               |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Top Management**  |  Approves quality objectives; Ensures resources are available; Reviews planning outcomes and effectiveness.                                         |  Approves QMS plans and objectives; Authorizes resource allocation.     |
-| **Quality Manager** |  Maintains the Risk & Opportunity Register; Coordinates setting and monitoring of quality objectives; Ensures annual review of planning activities. |  Approves QMS planning documentation; Final approval for SOP revisions. |
+| Role                         | Responsibilities                                                                                                                                                                                               | Authorities                                                            |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Top Management**           | Approves quality objectives; Ensures resources are available; Reviews planning outcomes and effectiveness.                                                                                                     | Approves QMS plans and objectives; Authorizes resource allocation.     |
+| **Quality Manager**          | Maintains the Risk & Opportunity Register; Coordinates setting, documenting, and monitoring of quality objectives; Ensures annual review of planning activities; Verifies integrity of the QMS during changes. | Approves QMS planning documentation; Final approval for SOP revisions. |
+| **Process / Project Owners** | Develop Plans, execute activities, monitor results, and verify effectiveness.                                                                                                                                  | Approve planning inputs, actions, and outcomes within their areas.     |
 
 ---
 
-### **6. Procedure**
+## **6. Procedure**
 
-6.1 **Risks and Opportunities**
+### **6.1 General Planning Requirements**
+
+Planning shall ensure that:
+
+1. The QMS remains suitable, adequate, and effective.
+2. Plans consider relevant inputs, including:
+   * Applicable requirements (statutory, regulatory, customer)
+   * Context of the organization and needs of interested parties
+   * Risks and opportunities
+   * Results of audits, performance data, and Management Review
+   * Resource needs and constraints
+3. Planning outputs include:
+   * Defined actions
+   * Assigned responsibilities and authorities
+   * Required resources
+   * Success criteria or acceptance metrics
+   * Expected timelines or conditions for completion
+4. Planning activities maintain traceability between:
+   * Objectives
+   * Risks and opportunities
+   * Actions
+   * Changes
+   * Verification and effectiveness results
+5. Platform-specific execution methods (issue types, fields, milestones, workflows, etc.) are defined in Work Instructions.
+
+Planning is required when:
+
+* Establishing or revising quality objectives
+* Implementing new or changed processes or capabilities
+* Addressing significant risks or opportunities
+* Making significant changes to the QMS
+* Initiating projects or improvements that may affect conformity or customer satisfaction
+
+### **6.2 Risks and Opportunities**
 
 * Risks and opportunities shall be identified from:
-  * Context of the organization (Clause 4)
+
+  * Context of the organization
   * Feedback from interested parties
-  * Audit results, process performance data, and management review inputs
+  * Audit results, process performance data, and Management Review inputs
+
 * Identified risks/opportunities shall be evaluated for significance and prioritized.
 * Actions shall be determined, implemented, and monitored for effectiveness.
-* Records shall be maintained in a structured register (see related WI).
-* Actions taken shall be proportionate to the potential impact on product and service conformity and customer satisfaction, consistent with ISO 9001:2015 § 6.1.2.
-* Integration: Mitigation or enhancement actions shall be incorporated into relevant QMS processes, plans, or procedures (see **Risk-and-Opportunity-Management-SOP § 6.3**).
-* Effectiveness of these actions shall be evaluated during Management Reviews and internal audits; results recorded in the **Risk & Opportunity Register** and linked to the originating Plan or Issue.
+* Records shall be maintained in the Risk & Opportunity Register.
+* Actions shall be integrated into relevant Plans or QMS processes.
+* Effectiveness shall be evaluated in internal audits and Management Reviews.
 
-6.2 **Quality Objectives**
+### **6.3 Quality Objectives**
 
-* Quality objectives shall be:
-  * Consistent with the Quality Policy
-  * Measurable and monitored
-  * Communicated and updated as necessary
-  * Established considering applicable statutory, regulatory, and customer requirements
-  * Documented with assigned responsibility, required resources, and target completion conditions (e.g., milestone or readiness trigger)
-  * Evaluated for achievement through defined metrics in the **Quality Objectives Register**
-* Quality objectives established during a Management Review may be **tracked within a defined cycle or milestone**, ensuring all actions required to achieve them are monitored and completed.
-* Progress toward objectives shall be reviewed regularly and evaluated during subsequent Management Reviews, maintaining traceability to the originating MR instance.
-* Customer satisfaction and process performance data used for evaluating quality objectives shall feed directly into Management Review inputs per **Management-Review-SOP §6.2**.
-* Quality objectives may include continual improvement objectives at the organizational, process, or project level, consistent with ISO 9000:2015 §2.3.5.4.
+Quality objectives shall be:
 
-6.3 **Planning Changes**
+* Consistent with the Quality Policy
+* Measurable and monitored
+* Communicated and updated as necessary
+* Established considering statutory, regulatory, and customer requirements
+* Documented with assigned responsibility, required resources, and target conditions
 
-* When significant changes to the QMS are required, the following shall be considered:
-  * Purpose of the change
-  * Potential consequences
-  * Resource requirements
-  * Responsibilities and authorities
-* Changes shall be documented and reviewed for effectiveness.
-* The Quality Manager shall ensure the integrity of the QMS is maintained during all planned or unplanned changes, in coordination with the **Change-Control-SOP** and **Leadership-SOP § 6.1**.
+Progress toward objectives shall be monitored and evaluated during Management Reviews and through performance metrics defined in the Quality Objectives Register.
 
-6.4 **Quality Planning Execution**
+Continual improvement objectives may be set at organizational, process, or project levels.
 
-* Track task completion and deliverables in the project tracking tool.
-* Update risk status and link to mitigation actions in the register.
-* Record design or process changes using **Change Control SOP**.
-* Ensure QMS records (objectives, action results) are current and auditable.
+### **6.4 Planning Changes**
 
-Effectiveness of executed actions shall be reviewed during Management Reviews per *Management-Review-SOP*.
+When significant changes to the QMS are required, planning shall consider:
 
-6.5 **Verification of Effectiveness**
+* Purpose of the change
+* Potential consequences
+* Required resources
+* Responsibilities and authorities
+* Impact on the integrity of the QMS
 
-* Verification of effectiveness confirms that planned quality activities have achieved their intended results and that the QMS remains suitable, adequate, and effective.
-* Verification outcomes may reference progress within a cycle or milestone to confirm that all Objectives, Improvements, Risks, and Opportunities from a Management Review have been completed and properly implemented.
-* Residual risks, improvement opportunities, or lessons learned shall be recorded for future planning cycles or Management Reviews.
-* Improvement actions (including corrections, corrective actions, opportunity responses, innovation, and breakthrough changes) shall be verified for effectiveness as part of the planning cycle. The results of effectiveness verification serve as evidence of continual improvement of the QMS, and are inputs to Management Review in accordance with ISO 9001:2015 §10.3.
+Changes shall be documented and reviewed for effectiveness per the Change Control SOP.
 
-The responsible **Process Owner** or **Project Owner** shall:
+### **6.5 Execution of Planning Activities**
 
-* Verify that all deliverables, planned actions, and milestones under the Plan or Project have been completed or appropriately dispositioned.  
-* Assess implementation results against defined **objectives, success criteria, and acceptance metrics** in the approved Plan.  
-* Record the verification summary, results, and supporting evidence within the governing Plan or associated Issues.  
-* Capture any residual risks, improvement opportunities, or lessons learned to inform future planning activities.  
+Execution methods (task tracking, workflow states, dependencies, templates) are defined in platform-specific WIs.
 
-**Effectiveness Outcomes:**
+During execution:
 
-| **Assessment** | **Definition** | **Required Follow-up** |
-|----------------|----------------|------------------------|
-| **Effective** | All planned objectives were achieved and controls function as intended. | Close the Plan or Project. No further action required beyond routine monitoring. |
-| **Partially Effective** | Objectives were met in principle, but one or more controls did not operate as intended or cannot yet be fully verified. | Create or link an Issue in the QMS repository to document the limitation, residual risk, or improvement action. Track the issue until resolution, re-verify effectiveness after the issue has been addressed, and include the results in the next Management Review. |
-| **Ineffective** | Objectives were not achieved or the implemented controls failed to ensure conformity or intended performance. | Escalate to Top Management. Open an Issue in the QMS repository to document the failure, identify root cause, and define corrective action per the **Corrective and Preventive Action SOP**. Effectiveness shall be re-verified after corrective measures are implemented. |
+* Actions, deliverables, and results shall be recorded in accordance with the governing Plan.
+* Risks and opportunities shall be updated and linked to their associated actions.
+* Changes shall be recorded per the Change Control SOP.
+* Records generated from planning (objectives, actions taken, evidence of completion) shall remain current and auditable.
 
-Verification outcomes and any related Issues shall be referenced in Management Review inputs and retained as controlled records.
+### **6.6 Verification of Effectiveness**
 
-Effectiveness verification shall also serve as evidence that risk and opportunity actions (per § 6.1) have achieved intended results, providing assurance that the QMS can achieve its objectives, enhance desirable effects, and prevent undesired effects.
+Verification confirms that planning activities achieved their intended results and that the QMS remains effective.
 
-Results from effectiveness verification shall serve as evidence of leadership accountability and QMS performance per **Leadership-SOP §6.1**, and be summarized in KPI dashboards or reports maintained by the Quality Manager.
+Process / Project Owners shall:
+
+* Verify completion or disposition of all planned actions.
+* Assess implementation results against defined objectives and success criteria.
+* Record verification results and supporting evidence in the governing Plan.
+* Capture residual risks, improvement opportunities, or lessons learned.
+
+#### **6.6.1 Effectiveness Outcomes**
+
+| Assessment              | Definition                                                                  | Required Follow-up                                                                                   |
+| ----------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Effective**           | Planned objectives achieved; controls function as intended.                 | Close the Plan. Routine monitoring only.                                                             |
+| **Partially Effective** | Objectives met but controls not fully verified or only partially effective. | Create or link an Issue to address limitations or residual risk; re-verify after resolution.         |
+| **Ineffective**         | Objectives not achieved or controls failed.                                 | Escalate to Top Management; open corrective action per CAPA SOP; re-verify after corrective actions. |
+
+Verification outcomes shall be retained as controlled records and included in inputs to Management Review.
 
 ---
 
-### **7. Records**
+## **7. Records**
 
 * Risk & Opportunity Register
 * Quality Objectives Register
 * Change Records
-* Execution Records
-* Management Review Records (decisions, actions, policy updates)
-* Effectiveness verification (within Plan or Issue)
+* Management Review Records
+* Verification of Effectiveness Records (within Plan or associated record)

@@ -9,36 +9,36 @@ controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/S
 
 # **SOP – Risk and Opportunity Management**
 
-# **1. Purpose**
+## **1. Purpose**
 
-This SOP defines the method for identifying, evaluating, prioritizing, addressing, and reviewing **risks** and **opportunities** that may affect the Quality Management System (QMS), product/service conformity, customer satisfaction, or organizational performance.
+This SOP defines how the organization identifies, evaluates, prioritizes, addresses, and reviews **risks** and **opportunities** that may affect the Quality Management System (QMS), product or service conformity, customer satisfaction, or organizational performance.
 
-It ensures consistent application of **risk-based thinking** per ISO 9001:2015 §6.1.
+This procedure ensures consistent application of **risk-based thinking** in accordance with ISO 9001:2015 §6.1.
 
 ---
 
-# **2. Scope**
+## **2. Scope**
 
 ### **2.1 Applicability**
 
-This procedure applies to all QMS-related processes and activities, including:
+This SOP applies to all activities within the QMS where risks or opportunities may arise, including:
 
-* Software development and technical operations
 * Process and quality planning
+* Software development and technical operations
 * Supplier and external provider management
-* Document control
-* Strategic and operational decision-making
+* Document and data control
+* Internal audits and corrective action
+* Strategic, operational, and project-level decision-making
 
 ### **2.2 Exclusions**
 
 This SOP does **not** govern:
 
-* Implementing improvements or changes, which are covered under **Change-Control-SOP**.
-* Risk management for medical devices (ISO 14971)
+* Product safety risk management for regulated domains (e.g., ISO 14971)
 
 ---
 
-# **3. References**
+## **3. References**
 
 * ISO 9001:2015 — Clause 6.1
 * ISO 31000:2018 — Risk Management (informative)
@@ -46,165 +46,150 @@ This SOP does **not** govern:
 * SOP – Change Control
 * SOP – Management Review
 * WI – FLEY Action Management
-* WI – GitHub-QMS-Setup
+* Relevant platform-specific WIs (e.g., for repository or issue tracking tools)
 
 ---
 
-# **4. Definitions**
+## **4. Definitions**
 
-| Term                            | Definition                                                                                                                                                     |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Risk**                        | A potential *negative* effect of uncertainty. Risks may affect quality, service conformity, reliability, performance, compliance, or continuity.               |
-| **Opportunity**                 | A potential *positive* effect of uncertainty that may lead to improvement if realized.                                                                         |
-| **Improvement**                 | A planned and intentional positive change. If an opportunity is approved for implementation, it becomes an Improvement and follows the Change Control process. |
-| **Tracked Item / Issue**        | A record used to document a risk or an opportunity in the QMS repository or tracking system.                                                                   |
-| **Risk & Opportunity Register** | The controlled list of all active risk and opportunity records.                                                                                                |
-| **Risk Level**                  | A qualitative evaluation of *severity × likelihood* (low/medium/high).                                                                                         |
-
----
-
-# **5. Responsibilities**
-
-| Role                    | Responsibilities                                                                                                                                 | Authority                                                          |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| **Top Management**      | Promote risk-based thinking; review significant risks/opportunities; approve major actions.                                                      | Approve actions affecting QMS strategy or major process changes.   |
-| **Quality Manager**     | Maintain the Risk & Opportunity Register; ensure evaluations are appropriate; monitor action effectiveness; escalate as needed.                  | Approve risk assessment methodology and related QMS documentation. |
-| **Process Owners**      | Identify risks/opportunities in their processes; perform evaluations; propose and implement mitigation or enhancement actions; maintain records. | Approve and implement actions within their processes.              |
-| **All Employees**       | Report new risks; suggest opportunities; support mitigation or improvement activities as assigned.                                               | Request escalation or review of risk concerns.                     |
+| Term                            | Definition                                                                                                                           |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Risk**                        | A potential negative effect of uncertainty that may impact quality, conformity, reliability, performance, compliance, or continuity. |
+| **Opportunity**                 | A potential positive effect of uncertainty that may enable improvement if realized.                                                  |
+| **Improvement**                 | A deliberate positive change. Approved opportunities that lead to changes follow the Change Control SOP.                             |
+| **Record**                      | A tracked item maintained in the QMS repository or tracking system that documents a risk or opportunity and its status.              |
+| **Risk & Opportunity Register** | The controlled list of all active risk and opportunity records.                                                                      |
+| **Risk Level**                  | A qualitative evaluation of *severity × likelihood* (Low / Medium / High).                                                           |
 
 ---
 
-# **6. Procedure**
+## **5. Responsibilities**
 
-## **6.1 Identification of Risks and Opportunities**
+| Role                | Responsibilities                                                                                                                       | Authority                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Top Management**  | Promote risk-based thinking; review significant risks and opportunities; approve major actions or escalations.                         | Approve actions affecting QMS strategy or significant changes.       |
+| **Quality Manager** | Maintain the Risk & Opportunity Register; ensure evaluations are consistent; monitor action effectiveness; escalate high-impact items. | Approve risk assessment method and related procedural documentation. |
+| **Process Owners**  | Identify risks and opportunities in their processes; evaluate and maintain related records; propose and implement actions.             | Approve and execute actions within their process areas.              |
+| **All Personnel**   | Report risks and propose opportunities; participate in mitigation or enhancement activities.                                           | Request review or escalation of risk concerns.                       |
 
-Risks and opportunities may be identified from:
+---
 
-* Internal audits
-* Nonconformances or CAPA activities
+## **6. Procedure**
+
+### **6.1 Identification**
+
+Risks and opportunities may be identified through:
+
+* Internal audits and assessments
+* Nonconformities, incidents, or CAPA activities
 * Customer complaints or feedback
-* Supplier evaluation or monitoring
-* Process performance trends
-* New tools, technologies, or infrastructure changes
-* Strategic planning and project planning
-* Staff suggestions and observations
-* Management Review
+* Supplier or external provider monitoring
+* Performance metrics or trend analysis
+* Planning activities (strategic, operational, or project-based)
+* Staff suggestions
+* Process reviews and Management Reviews
 
-### 6.1.1 Recording
+#### **6.1.1 Recording**
 
-Each Risk or Opportunity is logged as a **GitHub Issue**, containing:
+Each risk or opportunity is documented as a **record in the QMS tracking system**, capturing at minimum:
 
 1. Title
 2. Description and context
-3. Potential impact (risk) or benefit (opportunity)
-4. Initial evaluation
-5. Related Issues or linked Plans / Projects
-6. Assigned owner
+3. Potential impact (risk) or potential benefit (opportunity)
+4. Initial evaluation (severity, likelihood, or benefit)
+5. Owner
+6. Related QMS elements (processes, plans, changes, or other records)
 
-All active items collectively form the **Risk & Opportunity Register**.
+The set of all active records forms the **Risk & Opportunity Register**.
 
-## **6.2 Evaluation**
+> *Tool-specific fields or templates are defined in Work Instructions, not in this SOP.*
 
-### 6.2.1 Risk Evaluation
+### **6.2 Evaluation**
 
-Each risk is qualitatively evaluated based on:
+#### **6.2.1 Risk Evaluation**
+
+Each risk is assessed qualitatively based on:
 
 * **Severity** — Low / Medium / High
 * **Likelihood** — Low / Medium / High
 
-Risks rated as **High** in either dimension require:
+Risks with **High severity** or **High likelihood**, or both, require:
 
-* Documented mitigation
+* Documented response
 * Monitoring
-* Review during Management Review
+* Inclusion as an input to Management Review
+* Consideration in planning and decision-making
 
-Numerical scoring is optional and not required.
+*Numerical scoring is optional and not required.*
 
-### 6.2.2 Opportunity Evaluation
+#### **6.2.2 Opportunity Evaluation**
 
 Opportunities are evaluated for:
 
-* Benefit
+* Potential benefit
 * Feasibility
-* Effort
+* Effort or resource requirement
 
-Lightweight evaluation is intentionally encouraged.
+Evaluations are intentionally lightweight unless the opportunity is pursued.
 
----
+### **6.3 Decision and Response**
 
-## **6.3 Decision and Response**
+After evaluation, the owner selects an appropriate response.
 
-After evaluation, the owner selects a disposition.
+#### **6.3.1 Responses to Risks**
 
----
+Valid responses include:
 
-### **6.3.1 Risk Responses**
+* **Mitigate** – Reduce likelihood or severity
+* **Avoid** – Change processes to eliminate the risk
+* **Transfer** – Shift the exposure (e.g., contractual or supplier-based controls)
+* **Accept** – Retain the risk with justification, typically for low-level risks
 
-When addressing risks, the following response types may be used:
+Actions may be documented:
 
-* **Mitigate** — Reduce likelihood or severity
-* **Avoid** — Modify processes to remove the risk entirely
-* **Transfer** — Externalize exposure (e.g., outsourcing, contracts)
-* **Accept** — Document decision to accept low or manageable risks
+* Within the risk record
+* As part of Change Control (when the action requires a process change)
+* Through action-tracking records (e.g., corrective actions, planned actions)
 
-Mitigation actions may be documented:
+#### **6.3.2 Responses to Opportunities**
 
-* Within the same risk record
-* As part of Change Control (if the action requires a process change)
-* In the Action Tracker (if assigned through Management Review or planning)
-
----
-
-### **6.3.2 Opportunity Responses**
-
-#### **Option A — Not Pursued**
-
-Reasons may include:
-
-* Insufficient benefit
-* Not feasible
-* Not aligned with strategy
-* Excessive effort for expected value
+**Option A - Not Pursued**
+A decision may be made to not pursue an opportunity for reasons such as limited benefit, low feasibility, resource constraints, or misalignment with strategy.
 
 Closing an opportunity is **not** a nonconformance.
 
-#### **Option B — Pursued**
+**Option B — Pursued**
+When approved:
 
-If approved:
+1. The opportunity becomes an **improvement activity** per ISO 9001:2015 §10.1.
+2. If implementation requires changes, a **Change Request** is created through the Change Control SOP.
+3. The opportunity record is updated to reference the resulting plan or change record.
 
-1. Approved opportunities that require planned changes, new controls, or enhancements constitute improvement actions under ISO 9001:2015 §10.1 and are implemented through the Change Control SOP.
-2. The Opportunity record is either:
-  * converted directly into a Change Request, or
-  * linked to a newly created Change Request that will implement the improvement.
-3. The opportunity record is updated with a note indicating approval.
+### **6.4 Monitoring and Review**
 
----
+The Quality Manager and Process Owners monitor:
 
-## **6.4 Monitoring and Review**
+* The status of mitigation or enhancement actions
+* Changes in likelihood, severity, or relevance
+* New risks or opportunities emerging from process performance
 
-The Quality Manager and Process Owners must monitor:
+Effectiveness of actions is reviewed during:
 
-* Status of mitigation or enhancement actions
-* Changing relevance of risks/opportunities
-* New emerging items from feedback, audits, or changes
-
-Effectiveness is reviewed during:
-
-* Internal Audits
-* Process performance reviews
+* Internal audits
+* Process reviews
+* Quality Planning and Change Control
 * Management Review
 
-Results are documented in the Risk & Opportunity Register.
+The Risk & Opportunity Register is updated accordingly.
 
 ---
 
-# **7. Records**
+## **7. Records**
 
-
-| Record / Artifact               | Owner           | Storage Location                      | Retention              | Control Method                      |
-| ------------------------------- | --------------- | ------------------------------------- | ---------------------- | ----------------------------------- |
-| Risk & Opportunity Register     | Quality Manager | QMS Repository / Risk Tracking System | 10 years or per policy | Controlled access; revision history |
-| Risk Assessments / Action Plans | Process Owners  | Attached to Risk Records              | 10 years               | Controlled record storage           |
-| Improvements and Change Records | Quality Manager | Change Control System                 | Permanent              | Linked records / version control    |
-| Management Review Outputs       | Top Management  | MR Documentation Repository           | Permanent              | Controlled meeting records          |
-| Audit Findings related to Risks | Quality Manager | Audit Reports                         | 10 years               | Controlled repository               |
+| Record / Artifact            | Owner           | Storage Location                 | Retention                   | Control Method                |
+| ---------------------------- | --------------- | -------------------------------- | --------------------------- | ----------------------------- |
+| Risk & Opportunity Register  | Quality Manager | QMS Repository / Tracking System | Per document control policy | Revision-controlled list      |
+| Risk and Opportunity Records | Process Owners  | Stored with the tracking system  | Per policy                  | Controlled record management  |
+| Related Change Records       | Quality Manager | Change Control System            | Permanent                   | Linked record control         |
+| Management Review Outputs    | Top Management  | Management Review Repository     | Permanent                   | Controlled leadership records |
+| Audit Findings               | Quality Manager | Audit Reports                    | Per audit record policy     | Controlled repository         |
