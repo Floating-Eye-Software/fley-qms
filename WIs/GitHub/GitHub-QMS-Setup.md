@@ -25,6 +25,8 @@ This ensures that:
 
 ## **2. Scope**
 
+### **Applicability**
+
 Applies to all activities required to create and configure the **QMS infrastructure** in GitHub, including:
 
 * Repository directory structure
@@ -34,6 +36,14 @@ Applies to all activities required to create and configure the **QMS infrastruct
 * Assignment of users to QMS GitHub teams (`qms-authors`, `qms-approvers`)
 * GitHub organization settings
 * Automation and export routines
+
+### **Exclusions**
+
+This WI does **not** cover:
+
+* Daily use of GitHub (see *GitHub-QMS-Operations*)
+* Workflows or action management (see *FLEY-Action-Management*)
+* System updates or configuration changes after initial setup (must follow *GitHub-Change-Control*)
 
 ---
 
@@ -51,12 +61,12 @@ Applies to all activities required to create and configure the **QMS infrastruct
 
 ## **4. Responsibilities and Authorities**
 
-| Role                            | Responsibilities                                                                       | Authority / Decision Rights                  |
-| ------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------- |
-| **Quality Manager / QMS Admin** | Configure repository, define templates, establish project views, maintain automations. | Approve configuration and structure changes. |
-| **Top Management**              | Approve Quality Manual, Policy, and initial QMS readiness.                             | Final approval of setup completion.          |
-| **Process Owners**              | Validate SOP/WI links and process inputs.                                              | Approve documentation for their areas.       |
-| **Contributors / SMEs**         | Provide technical or procedural input.                                                 | Suggest edits only.                          |
+| Role                  | Responsibilities                                                    | Authority / Decision Rights                                     |
+| --------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **QMS Administrator** | Perform all steps in this WI; maintain configuration documentation. | Full configuration access to GitHub organization.               |
+| **Quality Manager**   | Verify installation; approve configuration.                         | Approve initial setup and any controlled configuration changes. |
+| **Process Owner**     | Ensure setup supports intended QMS processes.                       | Request changes through Change Control.                         |
+| **Top Management**    | Approve Quality Manual, Policy, and initial QMS readiness.          | Final approval of setup completion.                             |
 
 ---
 
