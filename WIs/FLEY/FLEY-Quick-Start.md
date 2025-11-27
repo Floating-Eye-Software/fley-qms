@@ -14,7 +14,7 @@ flowchart TD
     P --> VOE[Verification of Effectiveness]
 
     VOE --> RR[Residual Risks & Lessons Learned]
-    VOE --> MR[Management Review (MR) Cycle - Plan Issue]
+    VOE --> MR[Management Review Cycle - Plan Issue]
 
     style P fill:#4C6EF5,color:#fff
     style M fill:#ffea99
