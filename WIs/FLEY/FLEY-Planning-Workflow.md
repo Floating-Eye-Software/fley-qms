@@ -1,13 +1,13 @@
 ---
-slug: FLEY-Action-Management
+slug: FLEY-Planning-Workflow
 revision: r4
 type: WI
 status: draft
 effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Action-Management.md
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Planning-Workflow.md
 ---
 
-# **WI – FLEY Action & Planning Management**
+# **WI – FLEY Planning Workflow**
 
 ## **1. Purpose**
 
@@ -60,7 +60,7 @@ This WI applies to:
 
 ---
 
-# **4. Definitions**
+## **4. Definitions**
 
 | Term | Definition |
 |------|------------|
@@ -76,7 +76,7 @@ This WI applies to:
 
 ---
 
-# **5. Responsibilities and Authorities**
+## **5. Responsibilities and Authorities**
 
 | Role | Responsibilities | Authority |
 |------|------------------|-----------|
@@ -88,13 +88,13 @@ This WI applies to:
 
 ---
 
-# **6. Governance Structure**
+## **6. Governance Structure**
 
 FLEY uses a unified planning model:
 
 **Issues → Phase Issues → Milestones → Plan Issues → Management Review Issues**
 
-## **6.1 Governance Tiers**
+### **6.1 Governance Tiers**
 
 | Tier | Artifact | Use Case |
 |------|----------|----------|
@@ -106,7 +106,7 @@ FLEY uses a unified planning model:
 
 ---
 
-# **7. Planning Process (Planning Issues)**
+## **7. Planning Process (Planning Issues)**
 
 The Planning Issue is used for **every planning activity**, including:
 
@@ -126,7 +126,7 @@ Each Plan Issue includes:
 * VoE and results  
 * Lessons learned, residual risks, MR inputs  
 
-## **7.1 Plan Creation**
+### **7.1 Plan Creation**
 
 1. Create a controlled Quality Plan **when required** (regulatory or high-impact).  
 2. Create a corresponding **Plan Issue** using TPL-GH-Plan.  
@@ -137,13 +137,13 @@ Each Plan Issue includes:
    * Dependencies  
 4. Link relevant SOPs, standards, or controlled documents.
 
-## **7.2 Milestones and Phase Issues**
+### **7.2 Milestones and Phase Issues**
 
-### Milestones  
+#### Milestones  
 Used to group work and visualize progress.  
 Cannot directly participate in dependencies.
 
-### Phase Issues  
+#### Phase Issues  
 Phase Issues represent Milestones **with sequencing capability**.
 
 Phase Issues enable:
@@ -155,9 +155,9 @@ Phase Issues enable:
 
 ---
 
-# **8. Issue Execution**
+## **8. Issue Execution**
 
-## **8.1 Creating Issues**
+### **8.1 Creating Issues**
 
 Every activity is recorded as a **GitHub Issue**:
 
@@ -166,13 +166,13 @@ Every activity is recorded as a **GitHub Issue**:
 * Add dependencies where applicable  
 * Attach or link required evidence  
 
-## **8.2 Execution Tracking**
+### **8.2 Execution Tracking**
 
 * Issues appear on the QMS Board (Backlog → In Progress → In Test → Closed)  
 * Phase Issues roll up the status of their linked Issues  
 * Milestones show aggregate progress  
 
-## **8.3 Issue Closure Criteria**
+### **8.3 Issue Closure Criteria**
 
 An Issue may be closed when:
 
@@ -183,7 +183,7 @@ An Issue may be closed when:
 
 ---
 
-# **9. Dependencies and Sequencing**
+## **9. Dependencies and Sequencing**
 
 GitHub supports only **Issue → Issue** dependencies.
 
@@ -203,7 +203,7 @@ This enables:
 
 ---
 
-# **10. Verification of Effectiveness (VoE)**
+## **10. Verification of Effectiveness (VoE)**
 
 VoE is performed at completion of:
 
@@ -225,9 +225,9 @@ VoE results feed into the next Management Review cycle.
 
 ---
 
-# **11. Management Review Cycle**
+## **11. Management Review Cycle**
 
-## **11.1 MR Cycle as a Planning Issue**
+### **11.1 MR Cycle as a Planning Issue**
 
 Each MR cycle is represented by a **Management Review Issue**, containing:
 
@@ -237,7 +237,7 @@ Each MR cycle is represented by a **Management Review Issue**, containing:
 * VoE summaries from completed Plans and Phases  
 * Decisions, risks, and follow-up Issues  
 
-## **11.2 MR Cycle Triggers**
+### **11.2 MR Cycle Triggers**
 
 An MR Issue may be blocked until prerequisite Plans or Phases close.
 
@@ -248,7 +248,7 @@ Typical triggers:
 * Significant nonconformance or change  
 * Strategic initiative completion  
 
-## **11.3 MR Cycle Execution**
+### **11.3 MR Cycle Execution**
 
 1. Open MR Issue + MR Milestone  
 2. Link all relevant Plans, Phases, and Issues  
@@ -260,7 +260,7 @@ Typical triggers:
 
 ---
 
-# **12. Records**
+## **12. Records**
 
 | Record / Artifact | Owner | Location | Retention | Method |
 |-------------------|--------|----------|-----------|--------|
