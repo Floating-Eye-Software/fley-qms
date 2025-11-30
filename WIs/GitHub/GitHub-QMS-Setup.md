@@ -1,9 +1,9 @@
 ---
 slug: GitHub-QMS-Setup
-revision: r3
+revision: r4
 type: WI
-status: approved
-effective: 2025-11-23
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-QMS-Setup.md
 ---
 
@@ -25,6 +25,8 @@ This ensures that:
 
 ## **2. Scope**
 
+### **Applicability**
+
 Applies to all activities required to create and configure the **QMS infrastructure** in GitHub, including:
 
 * Repository directory structure
@@ -34,6 +36,14 @@ Applies to all activities required to create and configure the **QMS infrastruct
 * Assignment of users to QMS GitHub teams (`qms-authors`, `qms-approvers`)
 * GitHub organization settings
 * Automation and export routines
+
+### **Exclusions**
+
+This WI does **not** cover:
+
+* Daily use of GitHub (see *GitHub-QMS-Operations*)
+* Workflows or action management (see *FLEY-Action-Management*)
+* System updates or configuration changes after initial setup (must follow *GitHub-Change-Control*)
 
 ---
 
@@ -51,12 +61,12 @@ Applies to all activities required to create and configure the **QMS infrastruct
 
 ## **4. Responsibilities and Authorities**
 
-| Role                            | Responsibilities                                                                       | Authority / Decision Rights                  |
-| ------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------- |
-| **Quality Manager / QMS Admin** | Configure repository, define templates, establish project views, maintain automations. | Approve configuration and structure changes. |
-| **Top Management**              | Approve Quality Manual, Policy, and initial QMS readiness.                             | Final approval of setup completion.          |
-| **Process Owners**              | Validate SOP/WI links and process inputs.                                              | Approve documentation for their areas.       |
-| **Contributors / SMEs**         | Provide technical or procedural input.                                                 | Suggest edits only.                          |
+| Role                  | Responsibilities                                                    | Authority / Decision Rights                                     |
+| --------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **QMS Administrator** | Perform all steps in this WI; maintain configuration documentation. | Full configuration access to GitHub organization.               |
+| **Quality Manager**   | Verify installation; approve configuration.                         | Approve initial setup and any controlled configuration changes. |
+| **Process Owner**     | Ensure setup supports intended QMS processes.                       | Request changes through Change Control.                         |
+| **Top Management**    | Approve Quality Manual, Policy, and initial QMS readiness.          | Final approval of setup completion.                             |
 
 ---
 
@@ -173,6 +183,12 @@ Backlog → In Progress → In Test → Closed
 | In Test     | YELLOW | This is being verified or validated |
 | Closed      | BLUE   | This has been completed             |
 
+**Project → Settings → Custom Fields → New Field**
+
+Create the following fields:
+ * Field name: Start, Field type: Date
+ * Field name: Finish, Field type: Date
+
 #### **5.3.2 Project Views**
 
 **Project → New View**
@@ -189,6 +205,7 @@ Backlog → In Progress → In Test → Closed
 | Audits (Table)                | label:Audit                         | Internal and external audits            |
 | CAPAs (Table)                 | label:CAPA                          | Corrective/Preventive Actions           |
 | All Issues (Table)            | *(no filter)*                       | Complete record view                    |
+| Timeline (Roadmap)            | type:Planning                       | Calendar view                           |
 
 #### **5.3.3 Project Workflows**
 
@@ -210,17 +227,18 @@ In the Floating Eye Software organization:
 
 **Organization → Settings → Repository → General → Repository Labels**
 
-| Label             | Color   | Definition                                      |
-| ----------------- | ------- | ----------------------------------------------- |
-| Audit             | #0E8A16 | Internal/external audit records                 |
-| CAPA              | #B60205 | Corrective and preventive actions               |
-| Change            | #F9D71C | Implementation of a Change Request              |
-| Change Request    | #E4B400 | Proposed change for review and approval         |
-| Improvement       | #2EA44F | General improvement actions                     |
-| Management Review | #7057FF | MR records and outputs                          |
-| Nonconformance    | #D73A49 | Record of non-fulfilment of a requirement       |
-| Objective         | #0366D6 | Quality objectives and performance tracking     |
-| Opportunity       | #34D058 | Positive improvement opportunities              |
+| Label             | Color   | Definition                                    |
+| ----------------- | ------- | --------------------------------------------- |
+| Audit             | #0E8A16 | Internal/external audit records               |
+| CAPA              | #B60205 | Corrective and preventive actions             |
+| Change            | #F9D71C | Implementation of a Change Request            |
+| Change Request    | #E4B400 | Proposed change for review and approval       |
+| Improvement       | #2EA44F | General improvement actions                   |
+| Management Review | #7057FF | MR records and outputs                        |
+| Nonconformance    | #D73A49 | Record of non-fulfilment of a requirement     |
+| Objective         | #0366D6 | Quality objectives and performance tracking   |
+| Opportunity       | #34D058 | Positive improvement opportunities            |
+| Plan              | #4C6EF5 | Coordination of work, milestones, and dependencies |
 | Risk              | #E36209 | Risk identification, evaluation, and mitigation |
 
 Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
@@ -229,10 +247,11 @@ Templates for each record type are stored in `.github/ISSUE_TEMPLATE/`.
 
 **Organization → Settings → Planning → Issue Types**
 
-| Type            | Color  | Definition                                                          | Typical Use                                       |
-| --------------- | ------ | ------------------------------------------------------------------- | ------------------------------------------------- |
-| **Development** | BLUE   | Activities that create or improve products, processes, or systems.  | QMS framework setup, automation, template design. |
-| **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems. | CAPA, Audit, Objective, Risk, Management Review.  |
+| Type            | Color  | Definition                                                          | Typical Use                                 |
+| --------------- | ------ | ------------------------------------------------------------------ | -------------------------------------------------- |
+| **Development** | BLUE   | Activities that create or improve products, processes, or systems  | QMS framework setup, automation, template design. |
+| **Operations**  | PURPLE | Activities that manage, maintain, or monitor processes and systems | CAPA, Audit, Objective, Risk  |
+| **Planning**    | GREEN | Activities that define and coordinate work to achieve objectives    | Quality Plan, Milestone, Management Review |
 
 #### **5.4.3 Teams**
 

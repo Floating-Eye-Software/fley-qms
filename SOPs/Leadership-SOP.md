@@ -1,9 +1,9 @@
 ---
 slug: Leadership-SOP
-revision: r2
+revision: r3
 type: SOP
-status: approved
-effective: 2025-11-14
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Leadership-SOP.md
 ---
 
@@ -13,11 +13,13 @@ controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/S
 
 To define how top management demonstrates leadership and commitment to the Quality Management System (QMS), ensures alignment with the organization’s direction, and fosters an open, collaborative, and purpose-driven work environment.
 
+This SOP fulfills the leadership requirements of ISO 9001:2015 §5.
+
 ---
 
 ## **2. Scope**
 
-Applies to all leadership and management activities that influence quality, culture, communication, resource allocation, planning, and review within the organization’s QMS.
+This SOP applies to all leadership activities that influence QMS performance, culture, communication, planning, resource allocation, and review.
 
 ---
 
@@ -33,73 +35,90 @@ Applies to all leadership and management activities that influence quality, cult
 
 ## **4. Definitions**
 
-| **Term**                      | **Definition**                                                                                                                                                                    |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Leadership**                | Individuals responsible for guiding organizational direction, maintaining policy, and ensuring QMS effectiveness.                                                                 |
-| **Casual Work Culture**       | A collaborative, low-stress, egalitarian environment emphasizing autonomy, mutual accountability, and dependency-driven progress over formal management hierarchies or deadlines. |
-| **Dependency-Based Workflow** | A model in which work progresses when preconditions or dependent outputs are met, rather than according to fixed schedules.                                                       |
-| **Review Cycle**              | A defined period or event between Management Reviews, triggered by completion of major objectives, initiatives, or readiness milestones, rather than by calendar intervals.       |
+| Term                          | Definition                                                                                                                             |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Leadership**                | Individuals responsible for setting organizational direction, maintaining the Quality Policy, and ensuring the QMS remains effective.  |
+| **Casual Work Culture**       | A collaborative, low-stress, egalitarian environment emphasizing autonomy, mutual accountability, and dependency-driven progress.      |
+| **Dependency-Based Workflow** | A workflow model where progress is driven by completion of prerequisite conditions rather than fixed schedules.                        |
+| **Review Cycle**              | The internally defined period between Management Reviews, initiated by key events or readiness milestones rather than fixed intervals. |
 
 ---
 
 ## **5. Responsibilities and Authorities**
 
-| **Role**             | **Responsibilities**                                                                                                                                                                                                                                                                                        | **Authorities**                                                                                                                                              |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Top Management**   | Establishes and maintains the Quality Policy and strategic direction; Demonstrates leadership and commitment to the QMS; Ensures the QMS remains suitable, adequate, and effective through event-driven review cycles; Promotes a culture of openness, collaboration, and self-management. | Approve QMS strategy and resource allocation; Convene and participate in Management Reviews; Approve significant changes to policy or structure. |
-| **Quality Manager**  | Facilitates communication between leadership and process owners; Coordinates Management Reviews and ensures results are documented; Maintains alignment between operational work and leadership intent. | Approve QMS procedures and records related to leadership activities.                                                                                       |
-| **Process Owners** | Align process objectives with the Quality Policy and leadership direction; Provide feedback and data for Management Reviews; Model leadership behaviors within their process teams. |  Implement leadership decisions within their area of responsibility.                                                                                        |
-| **All Team Members** |  Contribute to leadership culture through self-direction, collaboration, and shared accountability; Participate in decisions, planning, and feedback loops as appropriate. | Raise suggestions or improvement ideas to leadership without formal hierarchy barriers.                                                                    |
+| Role                | Responsibilities                                                                                                                                                                                                    | Authorities                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Top Management**  | Establish and maintain the Quality Policy and strategic direction; ensure QMS suitability, adequacy, and effectiveness; promote risk-based thinking and a collaborative culture; participate in Management Reviews. | Approve QMS strategy, significant changes, and resource allocation; convene Management Reviews. |
+| **Quality Manager** | Facilitate communication between leadership and process owners; coordinate Management Reviews; ensure alignment between operational work and leadership intent.                                                     | Approve QMS procedures and leadership-related records.                                          |
+| **Process Owners**  | Align process objectives with leadership direction and the Quality Policy; provide performance input for reviews; model desired leadership behaviors within their teams.                                            | Implement leadership decisions within their processes.                                          |
+| **All Personnel**   | Contribute to a collaborative, transparent, and self-directed work environment; participate in planning, improvement, and decision-making.                                                                          | Raise suggestions or improvement ideas freely.                                                  |
 
 ---
 
 ## **6. Process Description**
 
-### 6.1 Leadership Commitment
+### **6.1 Leadership Commitment**
 
 Leadership demonstrates commitment to the QMS by:
 
-* Communicating the **Quality Policy**, vision, and strategy to all personnel.
-* Integrating QMS requirements into daily workflows and strategic initiatives.
+* Communicating organizational purpose, strategic direction, and the Quality Policy.
+* Ensuring QMS requirements are integrated into operational and strategic workflows.
 * Promoting risk-based thinking and continual improvement.
-* Ensuring adequate resources for quality, technology, and people development.
-* Supporting a culture that values **transparency, self-organization, and autonomy**.
-* Taking accountability for the effectiveness of the QMS by reviewing key performance indicators (KPIs), audit results, and Management Review outputs.
-* Ensuring QMS integrity is maintained during all planned or unplanned changes, in coordination with the **Change-Control-SOP**.
+* Ensuring adequate resources for technology, quality, training, and people development.
+* Supporting a culture of transparency, autonomy, and responsible self-organization.
+* Reviewing performance indicators, audit results, and Management Review outputs.
+* Ensuring QMS integrity is maintained during planned and unplanned changes in accordance with the **Change Control SOP**.
 
-### 6.2 Customer Focus
+### **6.2 Customer Focus**
 
-* Ensure customer requirements are determined, understood, and met.
-* Monitor customer satisfaction regularly and take corrective actions where required.
+Leadership ensures customer requirements are:
 
-### 6.3 Quality Policy
+* Identified and understood
+* Embedded into relevant processes
+* Met through effective planning, resource management, and review
 
-* Establish a Quality Policy that is appropriate to the organization’s context and purpose.
-* Ensure the policy is communicated, understood, and applied within the organization.
-* Review the policy periodically for ongoing suitability.
-* Verify communication and understanding of the Quality Policy during onboarding, internal audits, or periodic awareness checks.
+Customer satisfaction is monitored, and leadership ensures that concerns or trends are addressed.
 
-### 6.4 Roles, Responsibilities, and Authorities
+### **6.3 Quality Policy**
 
-* Define and communicate responsibilities and authorities throughout the organization.
-* Assign a management representative (e.g., Quality Manager) to oversee the QMS.
-* The Quality Manager shall report on QMS performance, opportunities for improvement, and customer focus trends to Top Management during Management Reviews.
-* Responsibilities and authorities shall be reviewed and updated whenever organizational changes occur to ensure ongoing clarity and compliance.
+Leadership ensures the Quality Policy is:
 
-### 6.5 Work Environment & Organizational Culture
+* Appropriate to the organization’s context and purpose
+* Communicated, understood, and applied
+* Maintained as a live statement of intent and direction
+* Reviewed periodically for continued suitability
 
-Leadership fosters a **casual, dependency-based work culture** characterized by:
+Understanding of the policy may be verified through onboarding activities, internal audits, or periodic check-ins.
 
-* **Egalitarian Collaboration** – Roles are respected but not hierarchical; decision-making is distributed based on expertise and relevance.
-* **Autonomy and Mutual Trust** – Individuals and teams manage their own work commitments; leadership provides guidance and context, not control.
-* **Dependency-Driven Execution** – Work proceeds when dependent tasks or conditions are satisfied, rather than on fixed timelines.
-* **Low-Stress Productivity** – Emphasis is placed on focus, well-being, and quality of outcomes rather than time pressure.
-* **Transparency** – All significant decisions, plans, and changes are visible and recorded to maintain shared understanding.
-* **Continuous Feedback** – Feedback occurs naturally within workflows and during review cycles rather than through rigid performance intervals.
+### **6.4 Organizational Roles, Responsibilities, and Authorities**
 
-Leadership’s role is to **enable flow**, remove obstacles, and maintain clarity of purpose - not to manage by command or schedule.
-Leadership also ensures that cultural and environmental conditions do not compromise the organization’s ability to meet customer, statutory, and regulatory requirements.
-The effectiveness of this cultural approach shall be evaluated through employee feedback, performance trends, and Management Review discussions.
+Leadership ensures that:
+
+* Roles and responsibilities are defined, communicated, and understood.
+* A management representative (Quality Manager) is assigned to oversee QMS performance.
+* Responsibilities are updated as organizational or process changes occur.
+* Authorities are granted in alignment with competency, responsibility, and process ownership.
+
+The Quality Manager reports on QMS performance, risk and opportunity trends, and customer focus during Management Review.
+
+### **6.5 Work Environment & Organizational Culture**
+
+Leadership fosters a **casual, dependency-based work culture** that supports QMS effectiveness:
+
+* **Egalitarian collaboration** — Decision-making is based on expertise and relevance, not hierarchy.
+* **Autonomy & mutual trust** — Teams manage their commitments; leadership provides context and enables flow.
+* **Dependency-driven execution** — Work progresses when preconditions are met, ensuring natural prioritization.
+* **Low-stress productivity** — Focus and well-being support high-quality outcomes.
+* **Transparency** — Plans, decisions, and changes are visible, traceable, and recorded.
+* **Continuous feedback** — Feedback occurs within normal workflows and during review cycles, not on rigid schedules.
+
+Leadership ensures that this cultural approach supports - not compromises - the fulfillment of customer, statutory, and regulatory requirements.
+
+Effectiveness of cultural conditions is assessed through:
+
+* Employee feedback
+* Performance and quality indicators
+* Management Review discussions
 
 ---
 
@@ -107,5 +126,5 @@ The effectiveness of this cultural approach shall be evaluated through employee 
 
 * Quality Policy
 * Organization Chart (roles and responsibilities)
-* Management Review Records and Action Tracker (see Management-Review-SOP)
-* Work Environment Monitoring Notes (if applicable)
+* Management Review Records and Action Tracker
+* Cultural or work environment monitoring notes (as applicable)

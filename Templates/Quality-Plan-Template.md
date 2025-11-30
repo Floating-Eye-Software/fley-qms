@@ -1,12 +1,13 @@
-# **TPL – Quality Plan Template**
-
-**Slug:** Quality-Plan-Template  
-**Revision:** r2  
-**Effective Date:** 2025-11-01  
-**Related SOP:** Quality-Planning-SOP  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Quality-Plan-Template.md  
-
 ---
+slug: Quality-Plan-Template
+revision: r3
+type: TPL
+status: draft
+effective: null
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Quality-Plan-Template.md
+---
+
+# **TPL – Quality Plan Template**
 
 ## **1. Introduction**
 
@@ -65,10 +66,9 @@
 
 ## **8. Linkage to Execution**
 
-* **Milestones:** *[Define deliverables, stage gates, design review checkpoints]*
-* **Project Board / Tracking Tool:** *[Kanban, Jira, GitHub Projects, etc.]*
-* **Pull Requests:** *[Link changes that realize or verify planned actions]*
-* **Issues / CAPA:** *[Link relevant design reviews, risk items, audit findings]*
+* **Planning issue:** *[Link to Planning Issue in project tracking tool (GitHub).]*
+* **Milestones / Phases:** *[Describe expected phases, checkpoints, or review cycles.]*
+* **Traceability:** *[Link or reference all other actions, issues, or other records used during execution.]*
 
 ---
 
