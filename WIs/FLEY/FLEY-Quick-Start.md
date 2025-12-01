@@ -7,17 +7,26 @@ effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/FLEY/FLEY-Quick-Start.md
 ---
 
-# **REF - FLEY QMS Overview**
+# **REF – FLEY QMS Quick Start**
 
 ## **Purpose**
 
-FLEY operates its entire Quality Management System (QMS) inside GitHub using a unified digital workflow.
-Two components work together:
+This Quick Start introduces how the entire FLEY / Red Witch QMS operates inside **GitHub**.
+It explains the core objects (Issues, Planning Issues, Documents), how they interact, and how the platform achieves full traceability, approvals, sequencing, and continuous improvement.
 
-1. **QMS Operations** — how Issues, Boards, Labels, and PRs run the day-to-day QMS.
-2. **Planning Workflow** — how Planning Issues (Plans, Phases, MR cycles) govern sequencing, traceability, and Verification of Effectiveness (VoE).
+This is the entry point for understanding the system.
 
-Together, they provide a **single, auditable, ISO-aligned system** for planning, executing, and improving all quality-related work.
+---
+
+# **1. Platform Architecture**
+
+The QMS runs entirely within GitHub using three pillars:
+
+1. **Controlled Documents** - Stored in version control, changed only through Pull Requests.
+2. **Issues** - Operational QMS records (Risk, CAPA, Audit, Change, NC, Objective, etc.).
+3. **Planning Workflow** - Plan, Phase, and Management Review Issues linked by dependencies.
+
+Together, they form a single, auditable workflow:
 
 ```mermaid
 flowchart TD
@@ -31,18 +40,15 @@ flowchart TD
     M --> PH[Phase Issues]
     PH --> I[Issues - CAPA, Risk, Audit, Change, etc.]
 
-    %% Dependencies apply across all Issue types
     I --> DEP[Issue → Issue Dependencies]
     PH --> DEP
     P --> DEP
     MR[Management Review Issue] --> DEP
 
-    %% VoE roll-forward
     VOE --> RR[Residual Risks & Lessons Learned]
     RR --> MR
     VOE --> MR
 
-    %% MR feeds next planning cycle
     MR --> NP[Next Plan Issue]
 
     style QP fill:#f9f,stroke:#333,stroke-width:1px
@@ -59,148 +65,138 @@ flowchart TD
 ```
 ---
 
-## **1. Core Artifacts**
+# **2. Repositories & Documents**
 
-### **Issues (Development / Operations)**
+All controlled documents (Quality Manual, SOPs, WIs, Templates, Plans) live in Git and are approved through **Pull Requests**.
 
-Execution-level work across the QMS: CAPA, Audit, Risk, Objective, Change Request, Nonconformance, etc. Issues hold evidence, traceability, and completion criteria.
+Key folders:
 
-### **Planning Issues**
+* `QMS/` - governance documents
+* `SOPs/` - standard operating procedures
+* `WIs/` - work instructions (tool specific)
+* `Templates/` - standardized Markdown templates
+* `Plans/` - Planning Issues and supporting artifacts
+* `Compliance/` - standards mappings
+* `Project-Docs/` - project-specific materials
 
-The unifying artifact for **Plans, Phases, and Management Review (MR) cycles**.
-
-Each Planning Issue contains:
-
-* Objectives
-* Milestones
-* Linked Issues
-* Dependencies (issue → issue)
-* Traceability to controlled documents
-* VoE results and roll-forward risks/opportunities
-
-### **Plan Issues**
-
-Planning Issues used for Quality Plans, PQPs, DCPs, improvement initiatives, or any structured planning activity.
-
-### **Phase Issues**
-
-Planning Issues representing phases/milestones **with sequencing capability** (dependency-enabled).
-
-### **Management Review Issues**
-
-Planning Issues used to run MR cycles, track required inputs, sequence readiness, and capture outputs and follow-up.
+PR merges, commit hashes, and tags form the **document control record** - no separate metadata files.
 
 ---
 
-## **2. QMS Operations in GitHub**
+# **3. QMS Operations (Daily Work)**
 
-### **Boards (QMS Workflow)**
+## **Issue Types**
+
+Operational records are captured as GitHub Issues:
+
+* **Audit:** Internal/external audit records
+* **CAPA:** Corrective and preventive actions
+* **Change Request:** Proposed change for review and approval
+* **Improvement:** General improvement actions
+* **Nonconformance:** Record of non-fulfilment of a requirement
+* **Objective:** Quality objectives and performance tracking
+* **Opportunity:** Positive improvement opportunities
+* **Risk:** Risk identification, evaluation, and mitigation
+
+Issues contain evidence, links, acceptance criteria, and support dependencies.
+
+## **Board Workflow**
 
 ```
 Backlog → In Progress → In Test → Closed
 ```
 
-* **Backlog:** New or proposed records
-* **In Progress:** Investigation or execution
-* **In Test:** Verification, review, approval, VoE
-* **Closed:** Verified complete
+* **Backlog:** New or proposed work
+* **In Progress:** Execution / investigation
+* **In Test:** Review, approval, validation
+* **Closed:** Verified complete (VoE if required)
 
-### **Labels**
-
-Used to classify QMS records (Risk, CAPA, Audit, Change Request, Opportunity, Objective, MR, etc.).
-Labels drive dashboard views, reporting, and MR inputs.
-
-### **Pull Requests**
-
-Formal approvals for controlled documentation.
-Linked to Change Requests.
-Merging is the **approval event**.
-
-### **Projects / Views**
-
-Dashboards for Changes, Risks, Opportunities, Improvements, CAPA, Audits, MR items, and unlabeled work.
+Labels classify Issues for reporting (Risk, CAPA, Audit, etc.).
 
 ---
 
-## **3. Planning Workflow**
+# **4. Planning Workflow (How Work Is Sequenced)**
 
-FLEY uses GitHub Issues as the single planning backbone.
-Dependencies create roadmap sequencing across Plans, Phases, and MR cycles.
-
-### **Hierarchy**
-
-**Issues → Phase Issues → Milestones → Plan Issues → MR Issues**
-
-### **Milestones**
-
-Group work; cannot hold dependencies.
-
-### **Phase Issues**
-
-Dependency-enabled phases that control sequencing, block/unblock Plans, and trigger MR cycles.
+Planning Issues provide structure and sequencing:
 
 ### **Plan Issues**
+Define objectives, milestones, required evidence, and dependencies.
 
-Define objectives, milestones, sequencing, and evidence expectations.
-Used for Quality Plans, PQPs, DCPs, improvement initiatives, or any structured project.
+### **Phase Issues**
+Represent sequenced phases or readiness gates (dependency-enabled).
 
-### **Management Review (MR) Planning**
+### **Management Review Issues**
+Collect required inputs, check dependencies, review VoE results, and produce follow-up work.
 
-Each MR is a Planning Issue containing:
-
-* Required §9.3 inputs
-* Linked Plans and Phases
-* VoE results
-* Risks, opportunities, and follow-up Issues
-* Dependency-based readiness (e.g., “Audit-Ready QMS” Phase Issue)
-
----
-
-## **4. Sequencing (Dependencies)**
-
-GitHub supports only **issue → issue**, enabling:
+### **Dependencies**
+GitHub supports only issue → issue dependencies.
+This is used to build roadmaps and readiness flows across:
 
 * Plan → Plan
 * Plan → Phase
 * Phase → Phase
-* Issue → Issue or Phase
+* Issue → Issue
 
-This builds a complete roadmap across projects, programs, and MR cycles.
-
-Dependencies allow FLEY to:
-
-* Define project and program order
-* Enforce readiness gates
-* Block MR cycles until prerequisites close
-* Visualize work in GitHub Roadmaps
+The result is an integrated, cross-project roadmap.
 
 ---
 
-## **5. Verification of Effectiveness (VoE)**
+# **5. Pull Requests (Change Control)**
 
-VoE is performed at closure of:
+All controlled documents and QMS configurations use PR-based approval:
 
-* Plan Issues
-* Phase Issues
-* MR Issues
+1. Change Request Issue → Branch
+2. Commit with traceable references
+3. PR using template
+4. Review + CODEOWNERS approvals
+5. Finalize metadata (`status`, `effective` date)
+6. Merge (approval event)
+7. Tag revision
 
-VoE confirms:
-
-* Objectives were met
-* Linked Issues are complete/dispositioned
-* Evidence and traceability are complete
-* Risks and lessons learned are captured
-
-VoE outputs feed into the next MR cycle.
+The [Pull-Test Walkthrough](https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Pull-Test.md) validates this exact process and is used to refine the Change Control WI.
 
 ---
 
-## **6. Continuous Improvement Loop**
+# **6. Verification of Effectiveness (VoE)**
 
-1. **Plan** work using Planning Issues.
-2. **Execute** work through standard Issues on the QMS Board.
-3. **Verify** via VoE and PR-based approvals.
-4. **Review** in Management Review Issues.
-5. **Improve** via new Risks, Improvements, Changes, and Planning Issues.
+VoE is performed when Plans, Phases, or MR cycles close.
 
-This creates an ISO-aligned, fully traceable digital QMS with closed-loop improvement.
+It checks:
+
+* Objectives met
+* Evidence complete
+* Linked Issues dispositioned
+* Lessons learned captured
+* Residual risks rolled forward
+
+VoE outputs feed into the next Plan and MR cycle.
+
+---
+
+# **7. Continuous Improvement Loop**
+
+The system continuously improves itself:
+
+1. **Plan** (Planning Issues)
+2. **Execute** (Issues + Boards)
+3. **Verify** (PR approval + VoE)
+4. **Review** (MR Issue)
+5. **Improve** (new Risks, Changes, Opportunities, Plans)
+
+Because all work flows through GitHub, the QMS is:
+
+* fully traceable
+* self-sustaining
+* always auditable
+
+---
+
+# **Quick Summary**
+
+* GitHub = the QMS platform
+* Issues run operations
+* Plans/Phases/MR Issues run sequencing and readiness
+* PRs run change control
+* Dependencies build the roadmap
+* VoE + MR close the loop
+* Repositories store all controlled documents and evidence

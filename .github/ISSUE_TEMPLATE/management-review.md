@@ -24,13 +24,13 @@ Evaluate the QMS for suitability, adequacy, and effectiveness, and decide on act
 ## 1. Initiation (Triggers for This MR Cycle)
 [List Phase Issues, Plans, or other dependencies (if any) that trigger or unblock this MR cycle.]
 
-## 2. Review of Previous Actions  
+## 2. Review of Previous Actions
 [Summarize the status of actions, improvements, and decisions from the previous Management Review. Include references to critical outputs (child issues) and long-term follow-ups (milestones).]
 
-## 3. Context and Interested Parties  
+## 3. Context and Interested Parties
 [Note relevant changes in internal/external context, stakeholder needs, and business environment.]
 
-## 4. QMS Performance and Effectiveness  
+## 4. QMS Performance and Effectiveness
 [Provide summary data or links to evidence]  
 - **Customer satisfaction and feedback:** [Summary/link]  
 - **Quality objectives status:** [Summary/link]  
@@ -40,10 +40,10 @@ Evaluate the QMS for suitability, adequacy, and effectiveness, and decide on act
 - **Audit results:** [Summary/link]  
 - **External provider performance:** [Summary/link]  
 
-## 5. Resources  
+## 5. Resources
 [Assess adequacy of personnel, infrastructure, environment, and support needs.]
 
-## 6. Risks, Opportunities, and Improvements  
+## 6. Risks, Opportunities, and Improvements
 [Discuss the effectiveness of prior actions and identify new or emerging risks, opportunities, and improvements.]
 
 ## 7. Outputs and Decisions
