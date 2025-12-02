@@ -4,7 +4,7 @@ revision: r1
 type: WI
 status: draft
 effective: null
-controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Config-Verification.md)
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Config-Verification.md
 ---
 
 # **WI – GitHub Configuration Verification**
@@ -15,6 +15,7 @@ To define a controlled method for verifying GitHub repository configurations int
 
 > **Note on Validation:**
 > Verification of individual configuration changes is performed using test-repo.
+> This WI governs verification only; it does not determine whether the QMS configuration is fit for purpose (validation).
 > **Full validation of the complete FLEY QMS will occur once, at the conclusion of the “QMS Foundations” milestone**, after all core workflows, records, and operational procedures have been implemented.
 
 ---
@@ -37,10 +38,11 @@ Applies to all repositories used for QMS operations where configuration behavior
 
 ## **3. References**
 
-* SOP – Change Control
-* SOP – Document Control
-* WI – GitHub–Change–Control
-* WI – GitHub–QMS–Operations
+* Change-Control-SOP
+* Document-Control-SOP
+* GitHub–Change–Control
+* GitHub–QMS–Operations
+* FLEY-Planning-Workflow (formerly FLEY-Action-Management)
 
 ---
 
@@ -82,7 +84,7 @@ Identify which configuration elements must match `fley-qms`, including:
 
 1. Replicate configuration items from `fley-qms` into test-repo.
 2. Confirm that the relevant settings match.
-3. Document equivalency confirmation within the related Issue in test-repo.
+3. Document equivalency confirmation within the related Issue in fley-qms.
 
 > **test-repo is uncontrolled** – it may be reset, overwritten, or deleted at any time.
 
@@ -95,6 +97,7 @@ Identify which configuration elements must match `fley-qms`, including:
 3. Verify that templates render as expected and labels apply correctly.
 4. Confirm that workflow behavior (branch protection, review rules, automation behavior) matches expectations.
 5. Capture simple screenshots or notes as **verification evidence** attached to the CR Issue in `fley-qms`.
+6. Evidence must show at least one successful render of each affected template, label set, or workflow item.
 
 ---
 
@@ -105,7 +108,7 @@ Identify which configuration elements must match `fley-qms`, including:
 3. Apply the verified configuration changes.
 4. Submit a Pull Request to merge into `main`.
 5. Reviewers confirm the change behaves as intended.
-6. Merge the PR—this is the formal approval event.
+6. Merge the PR - this is the formal approval event.
 
 ---
 
@@ -122,7 +125,7 @@ Identify which configuration elements must match `fley-qms`, including:
 | Record Type           | Description                                           | Location              | Retention            |
 | --------------------- | ----------------------------------------------------- | --------------------- | -------------------- |
 | Verification Evidence | Screenshots / notes supporting configuration behavior | CR Issue (`fley-qms`) | Indefinite           |
-| CR Issue              | Approved change request                               | fley-qms              | Indefinite           |
+| CR Issue              | Change request                                        | fley-qms              | Indefinite           |
 | PR                    | Review and approval                                   | fley-qms              | Indefinite           |
 | Commits / Tags        | Controlled configuration                              | fley-qms              | Indefinite           |
 | test-repo Issues      | Internal reference only                               | test-repo             | May be deleted/reset |

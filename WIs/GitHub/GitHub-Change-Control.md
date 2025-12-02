@@ -136,36 +136,49 @@ To maintain compliant approval records:
 
 ### **5.6 Finalize Metadata Before Merge**
 
-Before merge, update each controlled file’s header per GitHub-Document-Control, including:
+Immediately prior to merging the Pull Request, the **QMS Approver** updates the YAML metadata for each modified controlled document.
+
+All controlled documents remain in **status: draft** while on the change branch.
+The **Approver**, not the Author, performs the final metadata update.
+
+Update the following fields per *GitHub-Document-Control*:
 
 ```yaml
 revision: r#
-status: approved
-effective: YYYY-MM-DD
+status: released
+effective: YYYY-MM-DD   # date of intended merge
 ```
 
-Commit metadata updates to the same branch:
+Steps:
+
+1. Check out the PR branch.
+2. Update metadata fields in all controlled documents.
+3. Commit metadata updates to the same branch:
 
 ```bash
 git add .
-git commit -m "Finalize approval metadata (CR #42)"
+git commit -m "Finalize release metadata (CR #42)"
 git push
 ```
+
+4. Confirm the PR reflects the final metadata.
+
+The Approver then proceeds to the merge as the formal release event.
 
 ---
 
 ### **5.7 Merge and Release**
 
-CCC verifies:
+The **CCC** verifies:
 
 * Proper CR linkage
 * Required approvals
-* Metadata correctness
+* Correct metadata (`revision`, `status: released`, `effective:` date)
 * All status checks passed (if configured)
 
-Then merges via PR.
+The Pull Request is then merged into `main`.
 
-Merge constitutes **formal release approval**.
+**Merge constitutes formal release approval**, and the merge commit becomes the authoritative, controlled version of all included documents.
 
 ---
 
