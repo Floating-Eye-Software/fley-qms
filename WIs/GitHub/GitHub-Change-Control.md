@@ -1,9 +1,9 @@
 ---
 slug: GitHub-Change-Control
-revision: r2
+revision: r3
 type: WI
-status: approved
-effective: 2025-11-23
+status: draft
+effective: null
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md
 ---
 
@@ -145,7 +145,7 @@ Update the following fields per *GitHub-Document-Control*:
 
 ```yaml
 revision: r#
-status: released
+status: approved
 effective: YYYY-MM-DD   # date of intended merge
 ```
 
@@ -157,7 +157,7 @@ Steps:
 
 ```bash
 git add .
-git commit -m "Finalize release metadata (CR #42)"
+git commit -m "Finalize approval metadata (CR #42)"
 git push
 ```
 
@@ -173,7 +173,7 @@ The **CCC** verifies:
 
 * Proper CR linkage
 * Required approvals
-* Correct metadata (`revision`, `status: released`, `effective:` date)
+* Correct metadata (`revision`, `status: approved`, `effective:` date)
 * All status checks passed (if configured)
 
 The Pull Request is then merged into `main`.
