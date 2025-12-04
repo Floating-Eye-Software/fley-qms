@@ -2,8 +2,13 @@
 slug: Quality-Plan-Template
 revision: r3
 type: TPL
+<<<<<<< HEAD
 status: draft
 effective: null
+=======
+status: approved
+effective: 2025-12-04
+>>>>>>> origin
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Quality-Plan-Template.md
 ---
 
@@ -66,8 +71,13 @@ controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/T
 
 ## **8. Linkage to Execution**
 
+<<<<<<< HEAD
 * **Execution Record:** *[Link to execution record (Plan Issue) in project tracking tool (GitHub).]*
 * **Milestones / Stage Gates:** *[Describe expected phases, checkpoints, or review cycles.]*
+=======
+* **Planning issue:** *[Link to Planning Issue in project tracking tool (GitHub).]*
+* **Milestones / Phases:** *[Describe expected phases, checkpoints, or review cycles.]*
+>>>>>>> origin
 * **Traceability:** *[Link or reference all other actions, issues, or other records used during execution.]*
 
 ---

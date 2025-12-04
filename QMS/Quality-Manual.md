@@ -2,8 +2,8 @@
 slug: Quality-Manual
 revision: r2
 type: QMS
-status: draft
-effective: null
+status: approved
+effective: 2025-12-04
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Quality-Manual.md
 ---
 
@@ -132,13 +132,13 @@ Detailed roles are documented in [Organizational Chart](Organizational-Chart.md)
 
 ## **8. Risk and Opportunity Management**
 
-* Managed via a **GitHub-based Risk Register** covering:
+* Identified through audits, incidents, CAPAs, feedback, metrics, planning, and process reviews.
+* Risks are assessed for **severity** and **likelihood**; significant items require documented actions and MR review.
+* Opportunities are evaluated for **benefit** and **feasibility**; pursued items follow the **Change Control SOP**.
+* Risk responses: **mitigate**, **avoid**, **transfer**, or **accept**. Actions are tracked in the Risk Register or related change records.
+* Action effectiveness is monitored by the Quality Manager and Process Owners and reviewed in **Management Review**.
 
-  * Product risks (safety, privacy, reliability)
-  * QMS risks (resource, documentation, climate)
-  * Improvement opportunities (automation, maturity growth)
-* Reviewed during **Management Review**
-* Mitigation and improvement actions documented in [Quality Planning SOP](../SOPs/Quality-Planning-SOP.md) and [Continuous Improvement Plan](../Plans/Continuous-Improvement-Plan.md)
+Risks and Opportunities are documented and managed per [Risk and Opportunity Management SOP](../SOPs/Risk-and-Opportunity-Management-SOP.md).
 
 ---
 

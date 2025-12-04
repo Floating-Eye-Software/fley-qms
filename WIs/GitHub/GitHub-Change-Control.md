@@ -2,8 +2,8 @@
 slug: GitHub-Change-Control
 revision: r3
 type: WI
-status: draft
-effective: null
+status: approved
+effective: 2025-12-04
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md
 ---
 
@@ -145,7 +145,7 @@ All PRs must be reviewed for:
 
 Reviewers use GitHub’s review tools (**Approve**, **Comment**, **Request changes**). Required reviewers are defined in `CODEOWNERS`.
 
-GitHub actions constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
+GitHub review actions and comments constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
 
 #### **5.5.1 Standard Workflow (Multiple Reviewers)**
 
@@ -168,15 +168,24 @@ To remain compliant:
 
 ### **5.6 Finalize Metadata Before Merge**
 
-Before merging, update each controlled file header according to **WI – GitHub–Document-Control**:
+Immediately prior to merging the Pull Request, the **QMS Approver** updates the YAML metadata for each modified controlled document.
+
+All controlled documents remain in **status: draft** while on the change branch.
+The **Approver**, not the Author, performs the final metadata update.
+
+Update the following fields per *GitHub-Document-Control*:
 
 ```yaml
 revision: r#
 status: approved
-effective: YYYY-MM-DD
+effective: YYYY-MM-DD   # date of intended merge
 ```
 
-Commit these updates:
+Steps:
+
+1. Check out the PR branch.
+2. Update metadata fields in all controlled documents.
+3. Commit metadata updates to the same branch:
 
 ```bash
 git add .
@@ -184,18 +193,24 @@ git commit -m "Finalize approval metadata (CR #42)"
 git push
 ```
 
+4. Confirm the PR reflects the final metadata.
+
+The Approver then proceeds to the merge as the formal release event.
+
 ---
 
 ### **5.7 Merge and Release**
 
-The CCC verifies:
+The **CCC** verifies:
 
 * CR linkage
 * Required approvals
-* Metadata correctness
-* Passing checks (if configured)
+* Correct metadata (`revision`, `status: approved`, `effective:` date)
+* All status checks passed (if configured)
 
-Merging the PR constitutes **formal release approval**.
+The Pull Request is then merged into `main`.
+
+**Merge constitutes formal release approval**, and the merge commit becomes the authoritative, controlled version of all included documents.
 
 ---
 
