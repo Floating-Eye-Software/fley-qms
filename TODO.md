@@ -10,11 +10,14 @@ please request its removal from the branch before approval.
 ### QMS Needs
 
 #### **Now**  
-- Mechanism for milestone dependencies/triggers - fley-qms#22
 - Verification of branch protection - fley-qms#4
 - Verification of FLEY Action Governance Model
 - VoE for QMS Foundation milestone (also needed for fley-qms#11)
+
+#### **Verification Pending**  
 - Demonstration of fley-qms#25 effectiveness (screenshots of next PR)
+- Verification of Single-Person approvals - fley-qms#11
+- New Issue Type for Plans - fley-qms#22, fley-qms#34
 
 #### **Later**  
 - Monitoring and Measurement - fley-qms#15 (KPI's)
@@ -53,7 +56,7 @@ please request its removal from the branch before approval.
 
 ### Opportunities
 - [ ] Automation for YAML document headers - fley-qms#18
-- [ ] New Issue Type for Plans - fley-qms#22
+- [ ] New Issue Type for Plans - fley-qms#22, fley-qms#34
 
 ### Nonconformances
 - [ ] Branch protection oddities - fley-qms#4
