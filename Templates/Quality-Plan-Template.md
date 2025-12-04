@@ -2,8 +2,8 @@
 slug: Quality-Plan-Template
 revision: r3
 type: TPL
-status: draft
-effective: null
+status: approved
+effective: 2025-12-04
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/Templates/Quality-Plan-Template.md
 ---
 

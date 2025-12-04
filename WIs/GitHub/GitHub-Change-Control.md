@@ -2,8 +2,8 @@
 slug: GitHub-Change-Control
 revision: r3
 type: WI
-status: draft
-effective: null
+status: approved
+effective: 2025-12-04
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Change-Control.md
 ---
 
@@ -109,8 +109,6 @@ All Pull Requests (PRs) must be reviewed for:
 Reviewers provide comments or approvals in GitHub using the review tools (**Approve**, **Comment**, **Request changes**). Required reviewers are designated in the repository’s `CODEOWNERS` file.
 
 GitHub review actions and comments constitute **electronic signatures** under 21 CFR Part 11 and ISO 13485 §4.2.4.
-
-A PR is ready for merge once all required approvals are complete.
 
 #### **5.5.1 Standard Workflow (Multiple Reviewers)**
 

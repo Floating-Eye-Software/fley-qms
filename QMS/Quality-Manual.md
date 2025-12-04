@@ -2,8 +2,8 @@
 slug: Quality-Manual
 revision: r2
 type: QMS
-status: draft
-effective: null
+status: approved
+effective: 2025-12-04
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Quality-Manual.md
 ---
 

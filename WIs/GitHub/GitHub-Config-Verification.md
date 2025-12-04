@@ -2,8 +2,8 @@
 slug: GitHub-Config-Verification
 revision: r1
 type: WI
-status: draft
-effective: null
+status: approved
+effective: 2025-12-04
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/WIs/GitHub/GitHub-Config-Verification.md
 ---
 

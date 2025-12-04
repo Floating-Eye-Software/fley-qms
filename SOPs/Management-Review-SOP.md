@@ -2,8 +2,8 @@
 slug: Management-Review-SOP
 revision: r3
 type: SOP
-status: draft
-effective: null
+status: approved
+effective: 2025-12-04
 controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/SOPs/Management-Review-SOP.md
 ---
 

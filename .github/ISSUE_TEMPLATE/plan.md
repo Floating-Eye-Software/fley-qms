@@ -2,8 +2,8 @@
 # slug: TPL-GH-Plan
 # revision: r1
 # type: TPL
-# status: draft
-# effective: null
+# status: approved
+# effective: 2025-12-04
 # controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/.github/ISSUE_TEMPLATE/plan.md
 
 name: Plan
