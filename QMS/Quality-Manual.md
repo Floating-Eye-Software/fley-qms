@@ -1,11 +1,13 @@
-# **QMS - Quality Manual – Floating Eye Software (FLEY)**
-
-**Slug:** Quality-Manual  
-**Revision:** r1  
-**Effective Date:** 2025-10-28  
-**Controlled Source:** https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Quality-Manual.md  
-
 ---
+slug: Quality-Manual
+revision: r2
+type: QMS
+status: approved
+effective: 2025-12-04
+controlled_source: https://github.com/Floating-Eye-Software/fley-qms/blob/main/QMS/Quality-Manual.md
+---
+
+# **QMS - Quality Manual – Floating Eye Software (FLEY)**
 
 ## **1. Purpose**
 
@@ -130,13 +132,13 @@ Detailed roles are documented in [Organizational Chart](Organizational-Chart.md)
 
 ## **8. Risk and Opportunity Management**
 
-* Managed via a **GitHub-based Risk Register** covering:
+* Identified through audits, incidents, CAPAs, feedback, metrics, planning, and process reviews.
+* Risks are assessed for **severity** and **likelihood**; significant items require documented actions and MR review.
+* Opportunities are evaluated for **benefit** and **feasibility**; pursued items follow the **Change Control SOP**.
+* Risk responses: **mitigate**, **avoid**, **transfer**, or **accept**. Actions are tracked in the Risk Register or related change records.
+* Action effectiveness is monitored by the Quality Manager and Process Owners and reviewed in **Management Review**.
 
-  * Product risks (safety, privacy, reliability)
-  * QMS risks (resource, documentation, climate)
-  * Improvement opportunities (automation, maturity growth)
-* Reviewed during **Management Review**
-* Mitigation and improvement actions documented in [Quality Planning SOP](../SOPs/Quality-Planning-SOP.md) and [Continuous Improvement Plan](../Plans/Continuous-Improvement-Plan.md)
+Risks and Opportunities are documented and managed per [Risk and Opportunity Management SOP](../SOPs/Risk-and-Opportunity-Management-SOP.md).
 
 ---
 
@@ -155,10 +157,16 @@ All documents are controlled per [Document Control SOP](../SOPs/Document-Control
 
 ## **10. Management Review and Continual Improvement**
 
-* Conducted annually or following major releases
-* Inputs: Context updates, audit results, KPI performance, user feedback, risk changes, climate considerations
-* Outputs: Action plans, improvement projects, resource adjustments
-* Logged in [Continuous Improvement Plan](../Plans/Continuous-Improvement-Plan.md) and [GitHub QMS Operations](../WIs/GitHub/GitHub-QMS-Operations.md)
+Improvement is achieved through corrective actions, results of risk/opportunity management, management review decisions, and achievement of quality objectives.
+The organization conducts **Management Reviews** to evaluate the continuing suitability, adequacy, and effectiveness of the Quality Management System (QMS) and to drive continual improvement.
+Management Reviews are performed according to the [Management Review SOP](../SOPs/Management-Review-SOP.md).
+
+### **10.1 Review Frequency and Triggers**
+
+Management Review follows an **event-driven, dependency-based review-cycle**, initiated when one or more defined triggers occur (e.g., completion of major initiatives, maturity milestones, or significant risks/nonconformities).
+If no trigger occurs within twelve (12) months, a review is held proactively to maintain conformance with ISO 9001:2015 §9.3.
+
+Top Management confirms the start of each review cycle.
 
 ---
 
